@@ -1,0 +1,40 @@
+先严格遵守同目录文件 `PROMPT__00_SHARED_RULES.txt` 的全部规则。
+
+你现在只做旧仓库 `data` 根目录文件组压缩，不做别的。
+
+已知统计：
+- root_files=49
+- h1_csv=33
+- econ_csv=2
+- backup_0526=3
+- backup_0521=3
+- macro_xlsx=2
+- maintenance_md=1
+- other_root_files=5
+
+已知 other 示例：
+- macro_1h_20240101_20260525.csv
+- mx2025.hhhuu.com.har
+- news_2007-01 to 2026-05 CSV; sorted date, time; UTC.csv
+- us_yield_2y10y_1d.csv
+- vix_1d.csv
+
+你的任务：
+1. 只针对 `other_root_files=5` 做逐文件定性。
+2. 每个文件都要归到一个语义组。
+3. 每个组给出裁决。
+4. 说明如何并回现有 root group。
+5. 不要重做 `h1_csv / econ_csv / backup / macro_xlsx / maintenance_md`。
+
+裁决值只能从这些里选：
+- KEEP_OLD_FROZEN__MACRO_SOURCE_FILE
+- KEEP_OLD_FROZEN__CALENDAR_EXPORT
+- KEEP_OLD_FROZEN__RAW_MARKET_EXPORT
+- KEEP_OLD_FROZEN__BACKUP_SNAPSHOT
+- KEEP_OLD_FROZEN__MIXED_MACRO_AND_CAPTURE
+
+输出格式固定为以下 key，且只能输出这些 key：
+old_repo_data_other_root_files_object_map_v2=
+old_repo_data_other_root_files_decision_v2=
+old_repo_data_other_root_files_merge_back_v2=
+old_repo_data_other_root_files_need_manual_review_v2=

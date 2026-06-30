@@ -1,0 +1,4 @@
+sample_id,object_id,symbol,timeframe,return_quantile_input,active_trade_ratio_input,sample_note
+F002_CASE_001,SBKT_F002,ALLA,D1,0.18,0.27,short_only_preferred__low_quantile_low_active_ratio
+F002_CASE_002,SBKT_F002,ALLA,D1,0.52,0.44,long_short_filter_allowed__mid_quantile_mid_active_ratio
+F002_CASE_003,SBKT_F002,ALLA,D1,0.81,0.73,long_short_filter_allowed__residualize_review_required

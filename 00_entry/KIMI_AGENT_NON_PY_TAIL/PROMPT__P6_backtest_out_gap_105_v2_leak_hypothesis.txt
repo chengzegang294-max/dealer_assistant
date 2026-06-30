@@ -1,0 +1,58 @@
+你现在只做旧仓库 `backtest_out/temp` 中 `official_remaining_after_all_anchors=1907` 与 `reconstructed_remaining_approx=2012` 之间 `gap=105` 的“缺失 v2 规则候选”压缩，不做别的。
+
+你不是做解释，不是做迁移结论，不是做真值宣告。你只输出可回写到 repo 的 `key=value` 假设合同。
+
+固定输出要求：
+- 只输出 key=value。
+- 每行一个 key=value。
+- 不要输出标题、前言、结语。
+- 不要输出 markdown 列表。
+- 不要改 key 名。
+
+固定禁令：
+- 不要把假设写成事实。
+- 不要把 `official_remaining_after_all_anchors=1907` 改写成别的数。
+- 不要把 `reconstructed_remaining_approx=2012` 写成官方真值。
+- 不要把你猜测的命名桶直接写成“已核验通过”。
+- 如果没有稳定规则，就留给 `manual_review_gap_family`。
+
+你当前处理的是“缺口假设包”，不是当前正式删除候选计数。
+
+已知真值边界：
+- `official_remaining_after_all_anchors=1907`
+- `reconstructed_remaining_approx=2012`
+- `gap=105`
+
+已知原因边界：
+- repo 内缺失完整 `v2 match_rules`
+- 所以当前只能做“哪些命名家族看起来像还没被 `v2` 吃掉”的假设压缩
+
+repo 当前可见的可疑命名桶计数：
+- `coverage=166`
+- `pairs=181`
+- `bucket_stats=136`
+- `stats=158`
+- `rates=14`
+- `eval=12`
+- `results=4`
+
+样例路径：
+- `moved_20260625_175607/stage2/indicator_audit/20260607_b46_signalbar_pre2022_v1/b46_coverage_20260607_v1.csv`
+- `moved_20260625_175607/stage2/indicator_audit/20260604_b20_followups_all_v1/b20_stability_pairs_20260604_v1.csv`
+- `moved_20260625_175607/stage2/indicator_audit/20260603_b20_evidence_v1/b20_bucket_stats_20260603_v1.csv`
+- `moved_20260625_175607/e2_relax_results.csv`
+- `moved_20260625_175607/batch/batch_results.csv`
+- `moved_20260625_175607/p0_sweep/combo_entry_eval_20260602_v1.csv`
+
+你的任务：
+1. 只提出“最可能解释 gap=105 的缺失 v2 命名家族候选”。
+2. 优先给 3 到 6 个候选家族，不要拆太碎。
+3. 每个家族都要保持 `proposal_only` 口径，等待 repo match check。
+4. 没把握的部分统一放到 `manual_review_gap_family`。
+
+输出格式固定为以下 key，且只能输出这些 key：
+backtest_out_temp_gap_105_hypothesis_split_v6=
+backtest_out_temp_gap_105_hypothesis_match_rules_v6=
+backtest_out_temp_gap_105_hypothesis_confidence_v6=
+backtest_out_temp_gap_105_hypothesis_priority_v6=
+backtest_out_temp_gap_105_hypothesis_need_manual_review_v6=

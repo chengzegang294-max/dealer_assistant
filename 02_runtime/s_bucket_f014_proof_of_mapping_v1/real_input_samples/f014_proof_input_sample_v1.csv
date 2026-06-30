@@ -1,0 +1,4 @@
+sample_id,object_id,symbol,timeframe,turnover_proxy,momentum_proxy,mfd_sellord_raw,mfd_volinflowrate_open_m_raw,sample_note
+F014_CASE_001,SBKT_F014,ALLA,D1,0.42,0.18,1.35,0.91,normal_case__inputs_present
+F014_CASE_002,SBKT_F014,ALLA,D1,0.67,-0.11,-0.42,0.24,primary_negative__secondary_positive
+F014_CASE_003,SBKT_F014,ALLA,D1,-0.15,0.38,0.58,-0.33,mixed_sign_case

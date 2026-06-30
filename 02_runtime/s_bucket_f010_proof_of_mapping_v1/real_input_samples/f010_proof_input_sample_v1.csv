@@ -1,0 +1,4 @@
+sample_id,object_id,symbol,trading_date,snapshot_3s_input,order_queue_input,dft_volume_signal_input,peak_ratio_input,b_plus_s_input,b_minus_s_input,b_div_s_input,sample_note
+F010_CASE_001,SBKT_F010,ALLA,2020-07-03,snapshot_3s_v1,order_queue_v1,0.82,0.64,0.71,0.18,1.42,direction_case__b_div_s_strong
+F010_CASE_002,SBKT_F010,ALLA,2020-07-06,snapshot_3s_v1,order_queue_v1,0.51,0.27,0.33,0.74,0.88,stability_case__b_minus_s_strong
+F010_CASE_003,SBKT_F010,ALLA,2020-07-07,snapshot_3s_v1,order_queue_v1,0.43,0.19,0.22,0.12,0.67,weak_case__observe_only

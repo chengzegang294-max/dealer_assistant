@@ -1,0 +1,65 @@
+你现在只做旧仓库 `backtest_out/temp` 中 `remaining_after_all_anchors_family` 的继续压缩，不做别的。
+
+你不是做总结，不是做解释，不是做迁移结论。你只输出可回写到 repo 的 `key=value` 合同草案。
+
+固定输出要求：
+- 只输出 key=value。
+- 每行一个 key=value。
+- 不要输出标题、前言、结语。
+- 不要输出 markdown 列表。
+- 不要改 key 名。
+
+固定禁令：
+- 不要把 `APPROX_PRECHECK_ONLY` 写成已验证事实。
+- 不要把 `KEEP_OLD_FROZEN_UNTIL_NEXT_SPLIT` 说成“可以删除”。
+- 不要把候选拆分说成“已执行迁移”。
+- 不要把近似计数写成可直接相加的最终真值。
+- 如果某一桶没有稳定规则，保留到 manual_review，不要硬拆。
+
+你当前处理的目标不是全 `temp`，也不是全 `true_orphan=1936`，而是其中已经剔除以下正式承接锚之后的剩余尾巴：
+- `batch2_path_family=3`
+- `diag_v6_path_family(normalized)=6`
+- `l2_experiment_path_family=20`
+
+官方目标：
+- `remaining_after_all_anchors_family=1907`
+
+repo 当前只有一轮近似预检，不能当最终事实：
+- `reconstructed_remaining_approx=2012`
+- `approx_gap=105`
+- 原因：`v2 match_rules` 没有完整落在 repo，可用于预检，但不能直接当正式真值。
+
+repo 近似预检下的稳定 path 候选：
+- `p0_sweep_family_approx=986`
+- `stage2_family_approx=683`
+- `p0_sweep_truegate_family_approx=300`
+- `other_family_approx=43`
+
+repo 对 `other_family_approx=43` 的继续压缩：
+- `turning_points_residue=28`
+- `sv_eval_detail_residue=4`
+- `dd_stop_events_residue=3`
+- `singleton_misc_residue=8`
+
+样例路径：
+- `moved_20260625_175607/p0_sweep/combo_entry_delta_20260602_v1.csv`
+- `moved_20260625_175607/p0_sweep/combo_eval_20260602_v5.csv`
+- `moved_20260625_175607/p0_sweep_truegate/20260603_v1/c03_squeeze_only/audjpy/since2022/a_universal/turning_points.csv`
+- `moved_20260625_175607/stage2/indicator_audit/20260603_b20_evidence_v1/b20_bucket_stats_20260603_v1.csv`
+- `moved_20260625_175607/p0_core_validate/20260601/eurjpy/since2022/a_strict/turning_points.csv`
+- `moved_20260625_175607/p0_diag_smoke/20260601/usdjpy/since2022/a_universal/turning_points_coarse.csv`
+- `moved_20260625_175607/e2_relax_results.csv`
+- `moved_20260625_175607/macro_driver/resonance_state_switch_days_20240101_20260430.csv`
+
+你的任务：
+1. 优先按稳定 path family 压缩 `remaining_after_all_anchors_family=1907`。
+2. 如果你认为 `p0_sweep / stage2 / p0_sweep_truegate / other` 是合理主分法，就直接输出。
+3. 对 `other` 只在规则稳定时再细分；不稳定的部分留给 manual_review。
+4. 不要把 repo 的近似计数抄成最终真值；你可以复用这些名字作为候选 family 名，但要保留真值待 repo 核验。
+
+输出格式固定为以下 key，且只能输出这些 key：
+backtest_out_temp_remaining_after_all_anchors_split_v5=
+backtest_out_temp_remaining_after_all_anchors_match_rules_v5=
+backtest_out_temp_remaining_after_all_anchors_decision_v5=
+backtest_out_temp_remaining_after_all_anchors_priority_v5=
+backtest_out_temp_remaining_after_all_anchors_need_manual_review_v5=

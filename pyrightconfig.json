@@ -1,0 +1,18 @@
+{
+  "include": [
+    "02_runtime",
+    "20_tools_workspace"
+  ],
+  "exclude": [
+    "**/.venv",
+    "**/__pycache__",
+    "00_entry",
+    "01_active_objects",
+    "03_docs",
+    "04_active_main_docs",
+    "10_source_library_archive",
+    "11_frozen_summaries_archive"
+  ],
+  "venvPath": ".",
+  "venv": ".venv"
+}

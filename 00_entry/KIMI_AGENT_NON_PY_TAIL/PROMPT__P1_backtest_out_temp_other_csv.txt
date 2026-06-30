@@ -1,0 +1,38 @@
+先严格遵守同目录文件 `PROMPT__00_SHARED_RULES.txt` 的全部规则。
+
+你现在只做一件事：把旧仓库 `backtest_out/temp` 的剩余 csv 大桶继续压缩成“命名家族 -> 裁决建议”的可落盘合同。
+
+已知当前统计：
+- temp_total=10795
+- state_vector=756
+- entries_suggested_v7=69
+- paper_replay_trades=85
+- trades_family=1398
+- orders_family=0
+- positions_family=0
+- deals_family=0
+- signals_family=0
+- metrics_family=0
+- other_csv=8462
+
+已知当前规则：
+- state_vector=DELETE_CANDIDATE_AFTER_GATE
+- entries_suggested_v7=DELETE_CANDIDATE_AFTER_GATE
+- paper_replay_trades=DELETE_CANDIDATE_AFTER_GATE
+- trades_family=DELETE_CANDIDATE_AFTER_GATE
+- other_csv=KEEP_OLD_FROZEN_UNTIL_NEXT_SPLIT
+
+你的任务：
+1. 只针对 `other_csv=8462`，提出下一层命名家族拆分方案。
+2. 每个家族必须满足：能靠文件名或相对路径规则稳定识别。
+3. 不要要求运行代码，不要依赖仓库外路径。
+4. 不要讨论删除执行，只讨论分类口径。
+5. 家族数量控制在 4-8 个。
+6. 优先把最有希望继续进入 `DELETE_CANDIDATE_AFTER_GATE` 的家族单独拆出来。
+
+输出格式固定为以下 key，且只能输出这些 key：
+backtest_out_temp_other_csv_split_v2=
+backtest_out_temp_other_csv_match_rules_v2=
+backtest_out_temp_other_csv_decision_v2=
+backtest_out_temp_other_csv_priority_v2=
+backtest_out_temp_other_csv_need_manual_review_v2=

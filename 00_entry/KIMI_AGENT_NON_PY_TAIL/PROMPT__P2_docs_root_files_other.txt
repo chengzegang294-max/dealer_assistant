@@ -1,0 +1,40 @@
+先严格遵守同目录文件 `PROMPT__00_SHARED_RULES.txt` 的全部规则。
+
+你现在只做旧仓库 `docs` 根目录文件组压缩，不做别的。
+
+已知统计：
+- root_files=232
+- eval_md=45
+- commit_ready_stage_ps1=57
+- commit_ready_paths_txt=57
+- other_root_files=73
+
+已知 other 示例：
+- BATCH_7__02_原子化拆解文件__M_FILE_REVIEW__2026-06-23.md
+- COMMIT_READY__BATCH_10A__GROUP_05_cutpack_stable_layer__2026-06-24.md
+- COMMIT_READY__BATCH_10__GROUP_05_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_11A__GROUP_01_cutpack_stable_layer__2026-06-24.md
+- COMMIT_READY__BATCH_11__GROUP_01_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_12__GROUP_02_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_13__GROUP_03_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_14__GROUP_04_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_15__GROUP_07_entry_layer__2026-06-24.md
+- COMMIT_READY__BATCH_16__FROZEN_SUMMARIES_stage_deliverables_index__2026-06-24.md
+
+你的任务：
+1. 只针对 `other_root_files=73` 再拆一层命名家族。
+2. 目标是压成 3-6 组。
+3. 每组给出命名规则和迁移裁决。
+4. 不要重做 `eval_md / commit_ready_stage_ps1 / commit_ready_paths_txt`。
+
+裁决值只能从这些里选：
+- KEEP_OLD_FROZEN__BATCH_NOTE_RESIDUE
+- KEEP_OLD_FROZEN__COMMIT_NOTE_RESIDUE
+- KEEP_OLD_FROZEN__REVIEW_NOTE
+- SELECT_COPY_IF_NEW_REPO_GAP
+
+输出格式固定为以下 key，且只能输出这些 key：
+old_repo_docs_other_root_files_split_v2=
+old_repo_docs_other_root_files_match_rules_v2=
+old_repo_docs_other_root_files_decision_v2=
+old_repo_docs_other_root_files_priority_v2=

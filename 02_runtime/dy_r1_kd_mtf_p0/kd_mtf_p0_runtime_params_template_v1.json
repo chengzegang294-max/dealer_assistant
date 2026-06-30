@@ -1,0 +1,139 @@
+{
+  "version": "v1",
+  "type_id": "KD_MTF",
+  "candidate_id": "KD_MTF_P0",
+  "runtime_dir": "02_runtime\\dy_r1_kd_mtf_p0",
+  "output_csv": "kd_mtf_p0_fields_runtime_v1.csv",
+  "header_file": "kd_mtf_p0_fields_runtime_header_v1.txt",
+  "notes_file": "kd_mtf_p0_runtime_notes_v1.md",
+  "gaps_file": "kd_mtf_p0_runtime_gaps_v1.md",
+  "append_protocol_file": "kd_mtf_p0_runtime_append_protocol_v1.md",
+  "proof_input_csv": "real_input_samples\\kd_mtf_p0_proof_input_v1.csv",
+  "proof_output_csv": "real_input_samples\\kd_mtf_p0_proof_output_v1.csv",
+  "kd_config": {
+    "kd_length": 13,
+    "kd_smooth_k": 3,
+    "kd_smooth_d": 3,
+    "ma_type": "sma",
+    "price_field": "close_close",
+    "week_extreme_low": 20,
+    "week_extreme_high": 80,
+    "h4_confirm_tie_epsilon": 0.01
+  },
+  "parameter_source_contract": {
+    "rule": "Every runtime parameter must declare current source tier and upgrade rule before being treated as production-ready.",
+    "allowed_source_tiers": [
+      "source_excerpt_or_open_source",
+      "project_contract_default",
+      "stub_only_default",
+      "pending_real_binding"
+    ]
+  },
+  "parameter_source_detail": {
+    "kd_length": {
+      "current_value": 13,
+      "source_tier": "project_contract_default",
+      "source_basis": "The current KD length is frozen as the v1 project contract default for the first multi-timeframe KD diagnostic contract.",
+      "evidence_anchor": "技术指标_随机指标_多周期KD共振_P0_最小实施草案_v1.md",
+      "upgrade_rule": "Keep 13 as the v1 KD length unless a later audited source binding requires a different core definition and triggers a new version."
+    },
+    "kd_smooth_k": {
+      "current_value": 3,
+      "source_tier": "project_contract_default",
+      "source_basis": "The current K smoothing value is frozen as the v1 project contract default to keep the first runtime contract stable.",
+      "evidence_anchor": "技术指标_随机指标_多周期KD共振_P0_最小实施草案_v1.md",
+      "upgrade_rule": "Keep 3 as the v1 K smoothing value unless a later audited source binding requires a different setting and triggers a new version."
+    },
+    "kd_smooth_d": {
+      "current_value": 3,
+      "source_tier": "project_contract_default",
+      "source_basis": "The current D smoothing value is frozen as the v1 project contract default to keep the first runtime contract stable.",
+      "evidence_anchor": "技术指标_随机指标_多周期KD共振_P0_最小实施草案_v1.md",
+      "upgrade_rule": "Keep 3 as the v1 D smoothing value unless a later audited source binding requires a different setting and triggers a new version."
+    },
+    "ma_type": {
+      "current_value": "sma",
+      "source_tier": "project_contract_default",
+      "source_basis": "The first runtime contract keeps SMA as the explicit averaging mode to avoid hidden implementation drift.",
+      "evidence_anchor": "技术指标_随机指标_多周期KD共振_后续对象定义入口_v1.md",
+      "upgrade_rule": "Keep SMA in v1 unless a later audited implementation binding requires another averaging mode."
+    },
+    "price_field": {
+      "current_value": "close_close",
+      "source_tier": "project_contract_default",
+      "source_basis": "The first runtime contract uses close-based mapping only and does not expand into alternative price-field variants.",
+      "evidence_anchor": "技术指标_随机指标_多周期KD共振_后续对象定义入口_v1.md",
+      "upgrade_rule": "Keep close_close in v1 unless a later audited source binding requires another input field family."
+    },
+    "week_extreme_low": {
+      "current_value": 20,
+      "source_tier": "project_contract_default",
+      "source_basis": "The weekly oversold threshold is currently frozen as a conservative project contract default for v1 proof work.",
+      "evidence_anchor": "kd_mtf_p0_real_input_mapping_draft_v1.md",
+      "upgrade_rule": "Keep 20 in v1 until stronger audited source evidence is available; upgrade by opening a new version instead of silently editing v1."
+    },
+    "week_extreme_high": {
+      "current_value": 80,
+      "source_tier": "project_contract_default",
+      "source_basis": "The weekly overbought threshold is currently frozen as a conservative project contract default for v1 proof work.",
+      "evidence_anchor": "kd_mtf_p0_real_input_mapping_draft_v1.md",
+      "upgrade_rule": "Keep 80 in v1 until stronger audited source evidence is available; upgrade by opening a new version instead of silently editing v1."
+    },
+    "h4_confirm_tie_epsilon": {
+      "current_value": 0.01,
+      "source_tier": "stub_only_default",
+      "source_basis": "The v1 contract defaults to exact equality for h4_confirm tie detection; widen only with explicit evidence and record the chosen epsilon.",
+      "evidence_anchor": "kd_mtf_p0_b_blocker_note_v1.md",
+      "upgrade_rule": "If a non-zero epsilon becomes the default, keep it frozen in v1 and open a new version if the tie policy changes again."
+    }
+  },
+  "data_contract": {
+    "allow_placeholder_row": false,
+    "placeholder_symbol": "__PLACEHOLDER__",
+    "empty_value": "unknown",
+    "kd_week_bias_values": [
+      "up",
+      "down",
+      "unknown"
+    ],
+    "kd_day_signal_values": [
+      "golden_cross",
+      "death_cross",
+      "none",
+      "unknown"
+    ],
+    "kd_4h_confirm_values": [
+      "confirm_up",
+      "confirm_down",
+      "none",
+      "unknown"
+    ],
+    "kd_alignment_tier_values": [
+      "s",
+      "a",
+      "b",
+      "conflict",
+      "unknown"
+    ],
+    "kd_direction_filter_values": [
+      "long_preferred",
+      "short_preferred",
+      "wait",
+      "unknown"
+    ],
+    "kd_week_extreme_zone_values": [
+      "overbought",
+      "oversold",
+      "normal",
+      "unknown"
+    ]
+  },
+  "execution_boundary": {
+    "include_month_bias": false,
+    "include_1h_refine": false,
+    "include_divergence": false,
+    "include_perfect_state": false,
+    "include_dispersion": false,
+    "include_position_size_multiplier": false
+  }
+}

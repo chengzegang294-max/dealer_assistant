@@ -1,0 +1,54 @@
+先严格遵守同目录文件 `PROMPT__00_SHARED_RULES.txt` 的全部规则。
+
+你现在只做旧仓库 `backtest_out/temp` 中 `remaining_true_orphan_family=1936` 的继续压缩，不做别的。
+
+已知当前背景：
+- `backtest_out/temp other_csv=8462`
+- 已经可稳定升级的子族：
+  - `baseline_and_audit_family=3474`
+  - `mt5_raw_and_orders_family=20`
+  - `alert_and_log_family=14`
+  - `remaining_paper_trade_family=27`
+  - `remaining_ready_marker_family=1`
+- 当前剩余真尾巴：
+  - `remaining_true_orphan_family=1936`
+
+已知第一层 path anchor：
+- `diag_v6_family=6`
+- `l2_experiment_family=20`
+- `batch2_family=3`
+- `remaining_after_path_groups=1907`
+
+已知第二层 filename anchor（repo 已核）：
+- `batch2_best_by_symbol=1`
+- `batch2_meeting_family=2`
+- `entries_suggested_v3_v6_family=25`
+- `l2_detail_gap_family=24`
+- 注意：`entries_suggested_v3_v6_family` 与 `diag_v6_family` 有重叠；`l2_detail_gap_family` 与 `l2_experiment_family` 有重叠；不要把这些 count 当成彼此独立可直接相加
+
+已知样例：
+- `moved_20260625_175607/batch2/best_by_symbol.csv`
+- `moved_20260625_175607/batch2/meeting_risk_2022_2026.csv`
+- `moved_20260625_175607/batch2/meeting_table_2022_2026.csv`
+- `moved_20260625_175607/diag_v6_2025_scoreon/2025-12-31/entries_suggested_v3.csv`
+- `moved_20260625_175607/diag_v6_2025_scoreon/2025-12-31/entries_suggested_v6.csv`
+- `moved_20260625_175607/l2_range_revert_exp_2025/l2_range_revert_exp_detail.csv`
+- `moved_20260625_175607/l2_range_trap_exp_2023_2024/l2_range_trap_gap_full.csv`
+- `moved_20260625_175607/l2_time_gapfill_exp_2025/l2_time_gapfill_exp_detail.csv`
+
+你的任务：
+1. 只针对 `remaining_true_orphan_family=1936` 继续拆分。
+2. 优先使用“文件名或相对路径中稳定可匹配的模式”。
+3. 先吸收已知 path anchor：`diag_v6 / l2_experiment / batch2 / remaining_other`。
+3.1. 在 path anchor 内，继续优先吸收已知 filename anchor：`best_by_symbol / meeting_* / entries_suggested_v3_v6 / l2_*_detail_or_gap_full`。
+4. 家族数量控制在 `4-8` 个。
+5. 优先把可能进入 `DELETE_CANDIDATE_AFTER_GATE` 的组单独拆出来。
+6. 不要重做已经拆完的 `baseline / mt5 / alert / paper / ready`。
+7. 不要使用过宽规则，例如仅靠 `moved_` 或日期目录。
+
+输出格式固定为以下 key，且只能输出这些 key：
+backtest_out_temp_true_orphan_split_v4=
+backtest_out_temp_true_orphan_match_rules_v4=
+backtest_out_temp_true_orphan_decision_v4=
+backtest_out_temp_true_orphan_priority_v4=
+backtest_out_temp_true_orphan_need_manual_review_v4=

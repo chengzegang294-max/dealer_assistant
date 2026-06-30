@@ -1,0 +1,4 @@
+sample_id,object_id,symbol,quarter_end,excess_return_input,large_order_buy_ratio_input,net_main_buy_ratio_input,prior_holding_change_input,high_holding_bucket_input,disclosure_lag_days,sample_note
+F009_CASE_001,SBKT_F009,ALLA,2020Q2,0.12,0.34,0.19,0.08,high_holding,12,high_holding_case__should_be_cross_check_ready
+F009_CASE_002,SBKT_F009,ALLA,2020Q2,0.03,0.11,0.04,0.01,low_holding,12,low_holding_case__monitor_only
+F009_CASE_003,SBKT_F009,ALLA,2020Q2,0.09,0.29,0.17,0.05,high_holding,18,lagged_case__should_not_be_low_freq_ready

@@ -1,0 +1,4 @@
+sample_id,object_id,symbol,timeframe,daily_ohlcv_base,industry_mv_neutralizer,id2_std_3m_raw,hml_r_std_5m_raw,sample_note
+F006_CASE_001,SBKT_F006,ALLA,D1,ohlcv_daily_v1,industry_mv_neutralizer_v1,0.36,0.14,normal_case__inputs_present
+F006_CASE_002,SBKT_F006,ALLA,D1,ohlcv_daily_v1,industry_mv_neutralizer_v1,-0.22,0.41,primary_negative__secondary_positive
+F006_CASE_003,SBKT_F006,ALLA,D1,ohlcv_daily_v1,industry_mv_neutralizer_v1,0.08,-0.33,mixed_sign_case
