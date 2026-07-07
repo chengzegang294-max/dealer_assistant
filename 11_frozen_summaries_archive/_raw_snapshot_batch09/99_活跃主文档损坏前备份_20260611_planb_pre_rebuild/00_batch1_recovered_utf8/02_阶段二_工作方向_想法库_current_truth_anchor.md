@@ -1,0 +1,1749 @@
+# 阶段二工作方向（想法库）
+
+更新时间：2026-06-21
+
+## 2026-06-21 冻结主线当前阶段与命名边界
+
+- 主线当前已推进到：
+  - `cross-line frozen ... super23 chain manifest acceptance layer`
+  - 这意味着我们现在处在“继续把只读冻结验证链往更高层压实”的阶段，不是接 live binding，也不是切执行层。
+- 现在这条线的通俗说法就是：
+  - 先把上一层已经通过的 `index / compare / manifest`
+  - 再收成一层更高的“总入口”
+  - 再给这个总入口补 `compare`
+  - 最后补 `manifest acceptance`
+  - 然后再把这三件套收成新的 `chain index / chain compare / chain manifest`
+- 文件命名当前的问题已经很明确：
+  - `super...` 能表示层级，但越来越不贴近作用，肉眼校对和调用字符串都容易漂移。
+  - 现阶段不宜直接重命名运行时主链文件，否则会同时冲击 `stage_files`、校验脚本、文档引用和整条冻结链。
+- 更稳的改法应固定为：
+  - 运行时主链文件名先保持不动
+  - 另建“作用化别名层 / 作用索引表 / 层级映射表”
+  - 以后对外优先说“跨线冻结总入口 / 总验收 / 总链入口 / 总链验收”，不再只说 `superN`
+  - 当前已先对 `super20+` 的运行时 markdown 标题做“短作用名”减压，避免编辑器把整条超长文件名拿去做 markdown references
+- 编码问题当前也有了更稳边界：
+  - 真正确认的 `47` 个非 `UTF-8` 文本，主要集中在 `MT4 probe` 的 `mq4/mqh/ini` 与来源库 MT4 源码镜像
+  - 活跃主线文档和当前冻结 runtime 脚本不在这批里
+  - 损坏前备份目录那 `4` 份主文档，仍应单开“编码抢救 / 真值回收”处理，不和主线推进混改
+  - 当前建议顺序仍是：先继续把主线往上推，再单开 `batch1` 抢救 `备份4文件 + 两套 config ini`
+  - `batch1` 进一步缩小后应分两类：
+    - 可按文本继续抢救：`备份4文件`、`mt4probe_volty*.ini`、`terminal.ini`、`servers.ini`
+    - 不宜直接按文本硬转：`accounts.ini`、`community.ini`、`email.ini`、`notifications.ini`、`publish.ini`、`server.ini`、部分 `charts/experts` 类私有配置
+
+## 2026-06-19 双线并行边界补记
+
+- 主线继续推进时，`RSJ / PV Corr` 当前最稳的下一层已固定为：
+  - `input contract -> sample schema -> sample input csv`
+  - 先把未来真实输入样例冻结
+  - 不提前跳到 live binding
+- 当前又新增一层最小保护：
+  - `sample schema -> sample validator -> sample acceptance`
+  - 先证明样例层可稳定读取、字段不漂移
+  - 再决定是否值得进入 `sample -> append` 映射
+- 当前这一步又继续推进为：
+  - `sample input -> mapping validator -> mapping acceptance`
+  - 先证明样例层可稳定生成 append-ready row
+  - 不提前进入真实 append 联调
+- 当前这一步又继续推进为：
+  - `append-ready row -> append compatibility validator -> compatibility acceptance`
+  - 先证明映射结果可被现有 append stub 无写入接受
+  - 不提前进入真实 append 写盘或 live 源绑定
+- 当前这一步又继续推进为：
+  - `simulated append diff -> no-write replay acceptance`
+  - 先证明 sample append 到当前 proof runtime csv 后的前后差异可解释
+  - 不提前进入真实写盘
+- 当前这一步又继续推进为：
+  - `replay preview export -> preview acceptance`
+  - 先把 replay 会新增的样例行固化成独立 preview csv
+  - 不提前进入真实写盘
+- 当前这一步又继续推进为：
+  - `preview acceptance validator -> acceptance validation`
+  - 先证明 acceptance 文本与 preview csv 不漂移
+  - 不提前进入真实写盘
+- `S桶` 当前与 `Kimi` 的协作目标也进一步收紧为：
+  - 不重扫全桶
+  - 不新增候选池
+  - 不重辩 `yes / partial / no`
+  - 只把现有 `规则卡片 / 方法论卡片 / 研报候选池 / 首批对象入口` 整成脱离原材料依赖的稳定登记层
+- 因而本轮 `Kimi` 更像：
+  - `shrink assistant`
+  - 不是 `discovery engine`
+- 这轮 `Kimi` 贴回的最新结果也符合这个角色：
+  - 用 `detach_now_queue / normalize_target_names / minimal_reopen_queue / freeze_confirm` 四张表继续收口
+  - 没有新增候选对象
+  - 没有重开大盘点
+  - 没有把 `title_or_folder_inference` 抬成正文锚点
+- 因而第二条线当前最稳的吸收方式固定为：
+  - 先吸收 `detach_now_queue_v1` 作为“立即脱原材料依赖”的执行面
+  - 再吸收 `minimal_reopen_queue_v1` 作为“当前周期最多 6 个低成本重开口”
+  - 同时把 `freeze_confirm_v1` 写成冻结区，不反复重辩
+- `detach_now_queue_v1` 当前已进入真实执行面：
+  - 已先落 `A股竞价规则卡片` 第一小批 `8` 张
+  - 范围为 `R01 / R02 / R03 / R04 / R21 / R22 / R23 / R25`
+  - 做法是优先把原文锚点切成独立卡片，并在卡内写死 `evidence_level / do_not_overclaim`
+- 第二条线下一步仍应保持最小推进：
+  - 先决定是否继续补 `R05-R20` 的低成本重开
+  - 或切到 `A股心法方法论卡片` 的首批落盘
+  - 不回头扩成整桶重扫
+- 主线当前的推进策略继续固定为：
+  - 不急着接真实输入
+  - 先把 `RSJ / PV Corr` 的只读证据链收成更容易复核的总索引层
+  - 让后续继续推进时可以直接在总索引上补下一层，而不是回头重新拼 acceptance
+- 因而当前主线最稳口径变成：
+  - `preview acceptance validation layer`
+  - `replay chain validation layer`
+  - `chain summary index layer`
+  - `manifest freeze layer`
+  - 以上四层都只属于只读收口，不代表进入 live binding
+- 当前这轮再往前推后的作用分工已固定为：
+  - `chain summary acceptance compare`
+    - 负责校验总索引正文和预期 stage 清单一致
+  - `manifest freeze`
+    - 负责把当前总索引相关关键文件槽位冻结成清单层
+  - `cross-line frozen manifest index`
+    - 负责把 `RSJ / PV Corr` 两条冻结清单再收成根层统一入口
+  - `cross-line frozen acceptance compare`
+    - 负责校验根层统一入口正文与两条冻结状态一致
+  - `cross-line frozen manifest acceptance`
+    - 负责把根层统一入口、根层 compare、两条子线 manifest freeze 收成更高一层冻结验收
+  - `cross-line frozen acceptance chain index`
+    - 负责把根层三层冻结证据再收成跨线总链入口
+  - `cross-line frozen chain acceptance compare`
+    - 负责校验跨线总链索引正文与实际冻结层级一致
+  - `cross-line frozen chain manifest acceptance`
+    - 负责把总链索引、总链 compare、根层 manifest acceptance 收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-index`
+    - 负责把高层冻结收口件压成真正的跨线冻结总入口
+  - `cross-line frozen super-acceptance compare`
+    - 负责校验最顶层跨线冻结总入口正文与实际高层冻结结构一致
+  - `cross-line frozen super-manifest acceptance`
+    - 负责把 `super-index + super-compare + 上一层 chain manifest acceptance` 收成最顶层冻结总验收
+  - `cross-line frozen super-chain index`
+    - 负责把最顶层冻结总验收三件套再收成单一总链入口
+  - `cross-line frozen super-chain acceptance compare`
+    - 负责校验最顶层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-chain manifest acceptance`
+    - 负责把 `super-chain index + super-chain compare + super-manifest acceptance` 再收成更高一层的最顶层总链冻结验收
+  - `cross-line frozen acceptance super-super index`
+    - 负责把当前最顶层总链冻结收口件再压成更高一层的跨线冻结总入口
+  - `cross-line frozen super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际最顶层冻结层级一致
+  - `cross-line frozen super-super manifest acceptance`
+    - 负责把 `super-super index + super-super compare + 上一层 super-chain manifest acceptance` 收成新的最顶层冻结总验收
+  - `cross-line frozen super-super chain index`
+    - 负责把 `super-super index + super-super compare + super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super chain manifest acceptance`
+    - 负责把 `super-super chain index + super-super chain compare + super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super index`
+    - 负责把 `super-super chain index + super-super chain compare + super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super manifest acceptance`
+    - 负责把 `super-super-super index + super-super-super compare + 上一层 super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super chain index`
+    - 负责把 `super-super-super index + super-super-super compare + super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super chain index + super-super-super chain compare + super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super index`
+    - 负责把 `super-super-super chain index + super-super-super chain compare + super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super index + super-super-super-super compare + 上一层 super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super chain index`
+    - 负责把 `super-super-super-super index + super-super-super-super compare + super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super chain index + super-super-super-super chain compare + super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super index`
+    - 负责把 `super-super-super-super chain index + super-super-super-super chain compare + super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super index + super-super-super-super-super compare + 上一层 super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super index + super-super-super-super-super compare + super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super chain index + super-super-super-super-super chain compare + super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super chain index + super-super-super-super-super chain compare + super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super index + super-super-super-super-super-super compare + 上一层 super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super index + super-super-super-super-super-super compare + super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super chain index + super-super-super-super-super-super chain compare + super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super chain index + super-super-super-super-super-super chain compare + super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super index + super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super index + super-super-super-super-super-super-super compare + super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen acceptance super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 再压成更高一层跨线冻结总入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super acceptance compare`
+    - 负责校验这份更高一层跨线冻结总入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + 上一层 super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance` 收成新的更高一层冻结总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链入口
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain acceptance compare`
+    - 负责校验这份更高一层总链入口正文与实际冻结层级一致
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain manifest acceptance`
+    - 负责把 `super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain compare + super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super manifest acceptance` 再收成更高一层总链冻结验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super index / compare / manifest acceptance`
+    - 延续上一层同构模式，把 `super18 chain index + chain compare + chain manifest acceptance` 再压成新的跨线冻结总入口、总验收
+  - `cross-line frozen super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super-super chain index / compare / manifest acceptance`
+    - 继续把这份新的冻结总验收收成更高一层总链入口，并完成同构 compare / manifest acceptance 收口
+  - 以上层级都属于“证据冻结”，不属于“真实接线”
+
+## 联动规则
+
+- 想法先写在本文件。
+- 一旦决定“现在就做”，同步收敛到 `03_阶段二_当下计划_执行清单.md`。
+- 一旦做完或正式冻结，结论回填到 `01_阶段一_项目记录_过去与落地.md` 与 `关于日活.md`。
+- `临时粘贴区_外部AI与终端输出.md` 只放问题和回帖，不放裁决。
+
+## 四件套职责与新文件闸门
+
+- 根目录四件套当前职责固定为：
+  - `01`
+    - 已落地事实层
+  - `02`
+    - 方向/约束/边界层
+  - `03`
+    - 动作/验收/顺序层
+  - `关于日活`
+    - 最近一轮证据与更新日志
+- 新文件当前只允许承担这几类角色：
+  - 来源锚点
+  - 对象入口
+  - runtime 证据
+  - 批次收口
+- 若只是补一句裁决、补一条下一步、补一条边界：
+  - 优先更新已有锚点和四件套
+  - 不优先新建一份“写完就丢”的孤立文件
+- 因而后续判断一个新文件值不值得建，先问三件事：
+  - 它放哪一层
+  - 它以后怎么被调用
+  - 四件套里哪一处会引用它
+
+## 专属工作流 Skill
+
+- 已新增专属 skill：
+  - `.trae/skills/mainline-full-ingest-cn/SKILL.md`
+- 这个 skill 固化的是当前项目最容易丢的几条工作习惯：
+  - 主线不能丢
+  - 来源库要全量吃透
+  - 一轮对话里默认多做几步，不一小步一停
+  - 不默认切到多 AI
+  - 每轮都要做 durable sync
+- 它的定位不是替代：
+  - `source-sweep-batch-cn`
+  - `tool-idea-ingest-guard`
+  - `dev-guardrails`
+- 而是作为当前项目的上层推进护栏：
+  - 先锁主线
+  - 再并行推进
+  - 再落长期文档
+
+## 仓库瘦身边界
+
+- 当前仓库允许长期保留的 `12_工具运行时_TOOLING_RUNTIME` 内容，继续限定为：
+  - 可复现的 `csv / tsv / md / txt / json / py`
+  - probe 记录
+  - 合同层、参数模板、追加协议、手工审计表
+- 当前不应作为长期版本资产持续进库的内容，统一视为 runtime 噪音：
+  - `logs/`
+  - `tester/logs/`
+  - `MQL4/Logs/`
+  - `mailbox/`
+  - `profiles/lastprofile.ini`
+  - 终端自动生成的 `chr / hst / fxt / srv / sel`
+- 这样定的原因：
+  - 这些文件高频变化、可重建、不可读或研究价值很低
+  - 它们会污染 diff，也会掩盖真正有价值的证据文件
+- 因而仓库瘦身的默认原则固定为：
+  - 保留“证据”
+  - 忽略“噪音”
+  - 不删除当前仍承担真值锚点作用的 raw/source 材料
+
+## S 桶交割单裁决（不作为主线资产）
+
+- “历史交易成绩型交割单 PDF”（截图/扫描型、难结构化）不再作为主线输入源或待切对象。
+- 对应目录已直接删除：`D:\Stock\cut_file\S\02_游资悟道交割单\游资交割单 游资语录\29位交割单`。
+- 后续若需要交易记录输入，一律优先走券商可导出的 `csv/xlsx`（或少量定点手工录入），不走 PDF 全量切分。
+
+## S 桶切分边界（2026-06-18 当前版）
+
+- `S桶` 当前不再停留在“怎么分类”，而是进入三条并行线：
+  - `03_券商研报`
+    - 先做 `第一批 30 份候选池 -> 27 份可提取`
+    - 统一按 `8 字段 extraction template` 提取
+  - `01_集合竞价教程`
+    - 先做规则卡片壳
+    - 再做 `p0` 级原文验证
+  - `02_游资悟道交割单`
+    - 只吃 `epub/docx`
+    - 扫描型 PDF 不进当前切分线
+- 当前最重要的证据边界固定为：
+  - `title_or_folder_inference != 正文锚点`
+  - 只要没有真实正文摘录，就不能写成 `direct_text_support`
+- 因而 `S桶` 的稳态推进顺序固定为：
+  - 先冻结候选池
+  - 再按模板提取研报
+  - 再把 `规则卡片 / 心法卡片` 从 `title_or_folder_inference` 升级到真实文本支持
+
+## S 桶卡片证据分层（2026-06-18 当前版）
+
+- 当前 `S桶` 卡片证据强度允许分成 4 档：
+  - `direct_text_support`
+  - `excerpt_support_but_not_full_rule`
+  - `title_or_folder_inference`
+  - `needs_text_verification`
+- 当前最稳的使用边界固定为：
+  - `direct_text_support`
+    - 可进入首批可验收卡片候选
+  - `excerpt_support_but_not_full_rule`
+    - 可进入候选卡片，但不能宣称“规则已被正文完整证明”
+  - `title_or_folder_inference / needs_text_verification`
+    - 只能作为待验证壳，不可直接入库
+- 因而 `S桶` 当前不是“所有卡片一起推进”，而是：
+  - 先吃 `direct_text_support + excerpt_support_but_not_full_rule`
+  - 再点名补 `R09` 与未读取的游资 epub
+
+## S 桶研报映射边界（2026-06-18 当前版）
+
+- `27` 份研报完成 `8` 字段提取后，当前允许按 `can_map_to_fx` 分三档看：
+  - `yes`
+  - `partial`
+  - `no`
+- 但这里的 `yes` 只表示：
+  - `概念与数据依赖层面可映射`
+  - 不表示“现在就直接进 FX 主线实现”
+- 当前更稳的顺序固定为：
+  - 先从 `yes = 9` 中再挑 `1-2` 个最纯时间序列对象
+  - 再做最小对象入口或 proof-of-mapping
+  - 不把 `9` 个一起打包推进
+- `partial = 4` 当前默认不进实现队列：
+  - 先保留为“需替换数据依赖”的候选
+- `no = 14` 当前固定角色：
+  - `A股微观结构知识库`
+  - 不反向污染当前 FX/商品主线
+
+## S 桶 yes=9 当前收缩策略（2026-06-18 当前版）
+
+- 当前不采用：
+  - 把 `yes = 9` 一次性全部推进
+- 当前更稳的策略固定为：
+  - 先从中挑 `1-2` 个最纯时间序列对象
+  - 先做 `对象入口 -> 最小合同 -> proof-of-mapping`
+  - 再决定是否值得进入工具运行时层
+- 当前首批被选中的两条是：
+  - `RSJ 高波动率择时标签`
+  - `高频价量相关性诊断标签`
+- 选择原因：
+  - 都不依赖 A 股独有的 `Level2 / 逐笔 / 订单簿`
+  - 都更适合服务当前 `FX/商品` 的 `diag-only` 层
+  - 都不需要先解决 `spot_ocr / 空壳epub / 盘口结构迁移` 这些阻塞项
+- `Kimi` 当前在 `S桶` 的角色也同步降级为：
+  - 只补缺口
+  - 不再主导对象选择
+
+## S 桶两条首批对象的当前边界（2026-06-18 当前版）
+
+- 当前首批下压对象固定为：
+  - `RSJ 高波动率择时标签`
+  - `高频价量相关性诊断标签`
+- 当前两条线都已推进到：
+  - `对象入口`
+  - `P0 最小合同`
+  - `proof-of-mapping`
+- 但当前严格边界继续固定为：
+  - 只做 `diag-only`
+  - 只做最小标签映射
+  - 不改 `N01/N02` 既有口径
+  - 不直接进入主线默认字段池
+- 当前更合理的协同关系是：
+  - `RSJ`
+    - 服务 `波动率/情绪状态标签`
+  - `高频价量相关性`
+    - 服务 `价量共振/背离诊断标签`
+  - 二者都先作为“可证据化补充对象”，不是新的主线核心
+- 当前这两条线已补齐到可审计的 `runtime-notes + output-header` 层：
+  - 说明现在更适合继续做“证据化 runtime 空壳”
+  - 而不是继续扩题去开第三、第四个 `yes` 对象
+- 当前又进一步推进到：
+  - `params-template + append-stub + runtime-csv`
+  - 且已经完成 `dry-run + persist`
+- 因而现在的最稳边界是：
+  - 可以宣称“已完成最小 proof -> runtime persist 验证”
+  - 但仍不可宣称“已进入真实 raw binding”
+- 当前又进一步补上：
+  - `RSJ` 的 `append_from_raw_window` 接口空壳
+  - `价量相关性` 的 `append_from_bar_window` 接口空壳
+- 因而主线下一层应是：
+  - 先定义真实输入契约
+  - 不是马上接 live 源或把它们升级成策略门控
+- 当前已完成这一步：
+  - `RSJ raw-window input contract`
+  - `PV Corr bar-window input contract`
+- 因而 `S桶` 的方向结论也应写死为：
+  - 不是追求“全部收货=全桶切完”
+  - 而是优先做到“目录级收口 + 候选池收口 + 首批对象 runtime 化”
+
+## Skill 边界补记
+
+- 多 AI 三件套当前边界固定为：
+  - `panel-multi-ai-cn`
+    - 只管“默认叫哪些模型 + 统一发包模板”
+  - `multi-ai-discussion-guard`
+    - 只管“证据包与输出合同护栏”
+  - `multi-ai-orchestrator-cn`
+    - 只管“批次编排、回帖收口、OUTBOUND/PANEL/DIFF/BATCH_CLOSE 维护”
+- `P0` 两个 skill 当前边界固定为：
+  - `p0-exec-evidence-officer`
+    - 负责实际运行 `sweep / action / eval` 并产生版本化产物
+  - `p0-sweep-outbound-guard`
+    - 负责把既有产物收成短 OUTBOUND 摘录，不负责实际跑实验
+- 这样拆开的目的：
+  - 防止“讨论面板”和“批次维护”混成一个 skill
+  - 防止“实际跑实验”和“整理对外证据包”混成一个 skill
+
+## 当前阶段判断
+
+- 单字段/单指标阶段已经在当前口径下完成闭环。
+- 但“来源库是否逐目录、逐文件吃透”这件事并没有完成。
+- 因此当前阶段目标从“直接组合优化”切换为“全量扫库后再进入组合优化”。
+
+## “全量吃透”的完成定义（防失控）
+
+- 单元粒度：默认以“文件=1 单元”（来源库主体约 485；含冻结对照层约 509）。
+- 每个单元算“吃透”必须满足：
+  - 已写入四分流之一：`已吸收 / 可重开 / future bucket / 仅来源库保留`
+  - 有一句话理由（为什么这样分）
+  - 若为 `已吸收`：写明“对应到本仓库哪个已存在实现/脚本/字段或结论段落”
+  - 若为 `可重开`：写明“最小实现定义”（输入/输出/验收）且默认不升硬门控
+- 分级讨论规则：
+  - 第一次扫到的单元默认只做“归类 + 一句话理由”，不允许当场深挖扩题
+  - 只有进入 `可重开` 且被选为“本批 1-2 个重开实现”时，才允许深挖与写代码
+- 进入组合讨论前的前置门也继续固定为：
+  - 来源库先按批次过一遍
+  - 可量化的单字段/单对象先尽量量化
+  - 量化后先跑全品种/全历史或至少形成明确覆盖计划
+  - 以上没收口前，不进入下一步组合讨论
+
+## “可重开”的最小升级门槛（粗口径）
+
+- 先满足三件事，再允许进入实现队列：
+  - 有可复现证据命令（固定 date_tag/split/scope）
+  - 有落盘产物（coverage/summary/trade-level 等）
+  - 有角色裁决（DIAG_ONLY / DIAG_ONLY_CANDIDATE / 条件型保留候选 / 观察项）
+- 若外部 AI 提到“字段名/版本号/旧编号”，但本仓库现状未能定位到对应实现，一律标为 NEED_EVIDENCE，不写入合约与结论。
+
+## Batch 2 开题：00_指标定义&公式 的推进口径
+
+- 先走“指标家族映射”主线，不逐文件乱扫：
+  - 入口锚点：`10_来源库_SOURCE_LIBRARY\00_指标定义&公式\MT指标家族映射_v1.md`
+- 当前观察到的三类材料（对应不同处理方式）：
+  - `.mq4`：可工程化候选（能提公式/做字段/做可复现证据命令）
+  - `.txt`：大量是公式片段/参数表，优先做“概念映射到已存在家族”，不急着写新字段
+  - `.docx(GAS*)`：抽读样本显示多数为“可计算的指标公式脚本”（KDJ/RSI/资金线类），不是纯方法论；优先做同构检测后再决定是否重开
+  - 异常：发现个别 `.docx` 文件格式异常（BadZipFile），需要先修复才能抽读
+- 冻结锚点：Batch 2 的 61 文件 unit 清单已落在 `03` 的 Batch2 Step0.1（后续不再口头改名/漏项）
+
+## Batch 3 开题：02_原子化拆解文件 的推进口径
+
+- 这一批的核心资产是 `原子规则表.md`（已整理为 263 条原子规则），优先把“规则层”标准化为可落盘字段，而不是直接写大量新策略逻辑。
+- 该目录大部分文件是“交易规则/特征工程规则”，默认归入 `可重开`，但本批先做 unit 清单 + 四分流冻结，不新增量化实现。
+- `题材标选_*` 明确属于 A 股题材交易（市值/成交额/题材重合度/相关性等口径），先放 `future bucket`，避免污染当前 FX/商品的口径。
+
+## Batch 4 开题：00_交易系统书籍 的推进口径
+
+- 该目录以“已切片提炼/滚动合并/状态模板”类 `.md` 为主（并伴随大量图片资产）；本批 unit 只以 `.md` 计数，图片不计入单元数。
+- 本批先冻结 unit 清单 + 四分流，不新增量化实现；把可重开的候选（海龟规则壳、VanTharp 头寸规模/R 乘数、资金管理章节）入统一重开清单。
+
+## Batch 5 开题：00_大隐体系 的推进口径
+
+- 这批不是单一指标目录，而是“指标组 + 波浪/时间规则 + 交易系统 + 波段/超短课程”的混合来源库；先按 family 冻结比逐文件散读更稳。
+- 当前只把“可字段化规则壳”推进到统一重开清单：`stochastic 多周期指标组`、`B转A/赖皮B`、`楔形/衰竭浪 + 内部子浪 0.618`。
+- `5)超短、拔头皮技术课程` 与当前 1H 主线频率不一致，先放 future bucket；后续若要做，只能作为独立频率层，不得反向污染主线口径。
+
+## Batch 6 开题：00_周期女王 的推进口径
+
+- 这批不是通用技术指标库，而是“周期状态语言层 + A 股情绪范围定义 + 案例验证素材”的混合来源库；核心资产已经落在 `99_可用规则壳`。
+- 本批只把 3 类东西推进到统一重开清单：`状态机规则壳`、`10日区间前十/主板10cm 的观察范围定义`、`风雨检验/包容度/领涨持续度`。
+- 这批明确偏 A 股情绪与周期，不得直接接到当前 FX/商品 1H 主线；如果后续要做，只能作为 A 股状态/情绪底座的独立分支。
+
+## Batch 7 开题：01_初整理文档备份_禁止修改 的推进口径
+
+- 这批不再视为来源库，而是冻结总结层中的历史备份批；默认只读，只用于追溯，不作为当前 backlog 立题来源。
+- 如果发现其中某条总结对主线有帮助，必须“回源到对应来源库批次”处理，不能直接从备份文件开实现或改口径。
+
+## Batch 8 开题：03_迭代后核心母版V1.2 的推进口径
+
+- 这批是冻结总结层中更成熟的“迭代后母版层”，核心价值在模块索引、总表和去重后的统一语言，不在于直接开实现。
+- Batch8 的作用是给 Batch9 准备总表模板：后续海外候选资源、已扫来源库、已做/待做指标都要能按 V1.2 模块口径并表对照。
+
+## Batch 9 开题：先讨论“类型”，再收资料
+
+- Batch9 第一轮已经完成“类型裁决”，当前不再泛泛讨论要不要补，而是进入“按裁决结果分头收资料”的执行轮。
+- 当前类型裁决：
+  - 立即收集：`N01 vol regime / squeeze-shock / realized vol`、`N02 sessions / open-range / time-window context`
+  - 条件收集：`N03 market structure / breakout quality`（只收定义/确认逻辑/重绘审计资料）
+  - 不在本轮展开，但转入 A 股指标整理区后续整理：`N04 liquidity levels / imbalance / FVG`、`N05 VWAP / anchored VWAP / volume profile`、`N06 breadth / relative strength / leadership`
+- 第一轮讨论过的候选类型：
+  - `vol regime / squeeze-shock / realized vol`
+  - `sessions / open-range / time-window context`
+  - `market structure / breakout quality`
+  - `liquidity levels / imbalance / FVG`
+  - `VWAP / anchored VWAP / volume profile`
+  - `breadth / relative strength / leadership`（A股分支）
+- 原因：
+  - 这些类型能补“环境/结构/关键位/横截面”的空白，而不只是重复现有振荡器或规则壳
+  - 同时它们最容易因数据依赖、重绘、主观解释而走歪，所以必须先做类型裁决，再去找具体来源
+- 多 AI 讨论范围：
+  - 允许讨论“补不补、为什么、依赖什么数据、与现有哪类重叠、建议落在哪一层”
+  - 不允许直接跳到“马上编码/马上做硬门控/马上找某个闭源付费指标替换当前主线”
+- 资料收集轮的边界：
+  - `N01/N02` 收完整公开来源入口、下载方式、作者/团队、数据依赖
+  - `N03` 只收公开定义、无重绘/延迟确认说明、failed breakout/BOS/CHOCH 的公开解释
+  - `N04/N05/N06` 当前不进 FX 主线资料收集，但明确保留在 `A股指标整理区`，后续再单独整理，不视为放弃
+  - 明确不收闭源付费墙、黑盒课程群文件、专有 L2/orderbook 依赖内容
+
+## Kimi 拆书待入库：首批吸收口径（GROUP_05 + GROUP_06）
+
+- `01_Kimi拆书待入库` 当前不再只是临时堆放区，首批 md 已达到“可吸收清单”阶段。
+- 当前第一优先吸收两组：
+  - `GROUP_05_趋势_系统交易`
+  - `GROUP_06_Auction_MarketProfile_价格行为`
+- 当前吸收原则：
+  - 先吸收模板、对象定义、方法护栏
+  - 不直接把书稿候选字段落到当前 CSV 合约
+  - 不把 Kimi 稿直接当原书原文或源码级证据
+- `GROUP_05` 当前最值得吸收的是：
+  - 四轴状态模板：`结构轴 / 偏置轴 / 摩擦轴 / 风险轴`
+  - 趋势存在性 / 突破有效性 / 市场周期 / 波动率状态 这些“上位状态语言”
+  - 交易摩擦与风险检查条目，适合补通用研究护栏
+- `GROUP_06` 当前最值得吸收的是：
+  - `IB / Value Area / POC / Balance vs Imbalance / Day Type` 这类对象定义
+  - 其角色更像 `N02` 的后续对象层来源，而不是立刻变成字段实现
+- 当前明确后置的部分：
+  - Brooks 价格行为的主观信号条目
+  - TPO 的精细工程实现
+  - 需要原书复核页码的叙述段
+- 当前已新增两份中间产物：
+  - `GROUP_05_GROUP_06_首批可吸收清单_v1.md`
+  - `GROUP_05_GROUP_06_统一吸收壳_v1.md`
+- 当前口径变成：
+  - `GROUP_05` 先进入“状态模板壳”
+  - `GROUP_06` 先进入“对象定义壳”
+  - 二者都先服务于后续来源吸收与 `N02`/解释层，不直接落成字段实现
+- `GROUP_06` 到 `N02` 的第一版对象候选也已单独落出：
+  - `GROUP_06_to_N02_对象候选清单_v1.md`
+- 当前排序固定为：
+  - 第一优先：`IB`
+  - 第二优先：`VA / POC`
+  - 第三优先：`Balance vs Imbalance / Day Type`
+
+## 新资料给 Kimi 之前的默认流程
+
+- 当前默认不是“资料一来就直接扔给 Kimi 大切”。
+- 更稳的默认流程固定为：
+  - 先给我看一眼
+  - 我先做批次归类与价值判断
+  - 再决定：
+    - 是否值得切
+    - 用哪种切法
+    - 输出应落到哪一层
+- 原因：
+  - 不同资料适合不同切法
+  - 有些书只适合做“目录级摘要 + 对象/状态/风险壳”
+  - 有些书适合做“章节切片 + 字段候选”
+  - 直接大切容易浪费 Kimi 额度，也容易把 future bucket 的东西误切成当下主线
+- 因而当前推荐工作方式是：
+  - 你先把书名/目录/几页样张给我
+  - 我先回你“值不值得切 + 怎么切 + Kimi 指令模板”
+  - 再批量发给 Kimi
+
+## A股后续建议优先准备的书/资料类型
+
+- 多 AI 最新收口后，A 股/扩展书库的长期顺序改为四层，而不是并排补：
+  - `Layer0 = A4`
+    - `数据工程 / PIT / 回测防偏差 / 交易规则`
+    - 作用：先做研究护栏，防止后续 A 股和 FX 两边都建立在假回测/假复权上
+  - `Layer1 = A1 + A2`
+    - `A1`：A 股情绪/周期/龙头轮动
+    - `A2`：Auction / Market Profile / 集合竞价 / 开盘结构
+    - 作用：作为 A 股最有差异化的对象层/状态层来源，其中 `A2` 同时反哺当前 `N02`
+  - `Layer2 = A3 + A5`
+    - `A3`：量价、换手、成交额、筹码、涨停复盘
+    - `A5`：财报、公告、行业框架、基本面研究方法
+    - 作用：后置到第二梯队，更多服务解释层、研究层和 A 股 future bucket
+  - `Layer3 = F2 theory only + F1 theory only`
+    - `F2`：通用订单流 / 拍卖理论 / 微观结构
+    - `F1`：外汇订单流 / 外汇微观结构
+    - 作用：中期理论储备，不进入当前深切主流水线
+- 当前不优先的是：
+  - 纯喊单/纯盘感/无法复核的短视频话术稿
+  - 完全依赖闭源 Level2/席位/收费终端的数据书
+  - 没有稳定定义、只能靠语感复现的“玄学战法”
+- 多 AI 当前给出的稳定约束也要固定：
+  - `A4` 不是普通补充项，而是书库与量化研究的地基层
+  - `A1` 不能只靠“战法书”，应优先“代表书 + 游资帖 + 券商情绪研报”混合补
+  - `A2` 不是只服务 A 股，也直接服务当前 FX `N02`
+  - `F1/F2` 可以提前备理论，但默认只做索引或粗切，不强行进量化对象层
+
+## 双 EPUB 与已入库复核边界（2026-06-17）
+
+- 双 EPUB 现在不是“有两份 epub 就上”的默认动作。
+- 当前统一原则固定为：
+  - 先看现有 `cutpack/md` 质量
+  - 再看 `PDF` 是否难用
+  - 再看单 OCR 是否仍不稳
+  - 只有这三层都触发，且同一本确实存在：
+    - 无后缀 `epub = FineReaderOCR`
+    - `*_bycalibre.epub = calibre`
+    才升级到双 EPUB
+- 因而当前最应该优先处理的不是“格式最多的组”，而是“现有切割后质量最差的组”。
+- `A2 / A3 / F1` 当前属于：
+  - 先走切割质量审计
+  - 再决定 `keep_current / patch_source_audit / re_ocr_only / recut_with_dual_epub`
+- `A1 / A4 / F2` 当前属于：
+  - 不再扩大战线
+  - 但所有已入库对象都要补一次显式复核
+  - 复核重点不是“重做多少”，而是把：
+    - 主源
+    - 校对源
+    - `PDF` 角色
+    - 当前质量
+    写清楚
+- `A5` 与 `S桶` 当前已转入用户侧并行扫描：
+  - 仓库侧默认不重复开同题战线
+  - 后续只接回传结论并接入统一计划
+- 当前新的来源库主线补充为：
+  - `任务六 = 盘点更远资料和旧来源库`
+  - 其角色不是临时补洞，而是下一轮正式批次入口
+
+## 2026-06-18 A5 回传后的候审口径 + 多周期KD 第二批 proof 策略
+
+- `A5` 在用户回传切分结果之后，当前不再只算“并行扫描中”。
+- 当前更稳的承接方式不是硬塞进已有主题组，而是保留 `A5` 编号，单独建立候审承接目录：
+  - `GROUP_10_A5_财报_估值_组合管理\01_A5_cutpack_v1_final`
+- 这样做的原因已固定：
+  - 不把 `财报/估值` 与 `组合管理` 强行塞回旧组造成语义漂移
+  - 继续保留用户熟悉的 `A5` 编号入口
+  - 更符合“先承接稳定产物，再决定是否做跨书合并”的顺序
+- `A5` 当前按“书级候审入口文件”处理，而不是根层复制单本总 md：
+  - `5073` 用 `contents.md`
+  - 其余 3 本继续用各自 `INDEX.md`
+- `5073` 的 `INDEX.md` 当前应明确视为书末主题索引，不可误写成总索引入口。
+- `.tmp_*.json` 当前先保留为辅助切分痕迹，不纳入稳定入口，不抢做删除。
+- 当前严格口径已收紧为：
+  - `A5` 只是“已承接到库里待复审”
+  - 不是“已经像 A1/A2/A3/A4 那样正式通过”
+  - 必须等 `郭永清` 两章空切补回并复审通过后，才升级为正式通过
+- `多周期KD` 当前最顺推进方式也已再固定一层：
+  - 先补齐第二批 proof
+  - 再做一次 dry-run
+  - 先不急着再次 `--persist`
+- 这样做的原因是：
+  - 当前更缺的是 `s / a / b / conflict` 四档覆盖面
+  - 不是立刻改写 runtime csv
+  - 只有当 proof 档位更完整后，再决定是否做第二次 persist，证据链会更稳
+- 当前在第二批 proof 已落地后，对 `append_from_proof` 的判断也已收口：
+  - 暂不值得新增独立脚本
+  - 因为现有 `append stub` 已覆盖固定 proof 文件的 dry-run / persist
+  - 只有当后续出现“多 proof 文件切换、外部 proof 路径注入、批量合并追加”需求时，再拆独立脚本才更划算
+
+## 新的参考书这一批的预审与 Kimi 切法
+
+- 当前已看到的目录结构是：
+  - `1 本 pdf 入门书`
+    - `量化交易之路：用Python做股票量化分析.pdf`
+  - `99 份 txt 策略代码赠品`
+    - 多数来自 `JoinQuant` 社区帖子/策略示例
+  - `62 份 pdf 研究资料赠品`
+    - 分为：
+      - `量化择时`
+      - `量化资产配置`
+      - `量化选股`
+  - `1 本 epub`
+    - `量化交易从入门到精通+TOP交易员交易策略与实战手记`
+- 当前整体判断：
+  - 这批更偏 `A股 future research/data capability`
+  - 不直接进入当前 FX + TK 主线
+  - 但对后续 A 股分支非常有准备价值
+
+### 当前分流建议
+
+- `已吸收`
+  - 暂无
+- `可重开`
+  - `62 份 pdf 研究资料`
+    - 适合进入 A 股研究层来源库
+    - 尤其是：
+      - 事件驱动
+      - 多因子
+      - 行业/风格轮动
+      - 财务因子
+  - `1 本 pdf 入门书`
+    - 适合章节级切片，用作 A 股量化入门与工具层来源
+- `future bucket`
+  - `1 本 epub`
+    - 先做粗切或目录切，不急着深挖
+  - `99 份 txt 策略代码`
+    - 不值得逐篇深切
+    - 更适合作为“策略样本池/代码模板池/标题级聚类来源”
+- `仅来源库保留`
+  - `99 份 txt` 中明显属于：
+    - 作业
+    - 测试
+    - 标题党
+    - 单次回测炫绩效
+    的零散条目
+
+### Kimi 切分原则
+
+- 对 `62 份 pdf`：
+  - 不逐页乱切
+  - 按文件夹分组切：
+    - `量化择时`
+    - `量化资产配置`
+    - `量化选股`
+  - 每组输出一份总 md + 每篇 1 段摘要卡片
+- 对 `99 份 txt`：
+  - 不逐篇做长摘要
+  - 只做标题聚类 + 代码模板抽样
+  - 建议按主题切成：
+    - `择时/均线/RSRS/KDJ/MACD`
+    - `多因子/财务因子/机器学习`
+    - `轮动/行业/ETF/基金`
+    - `期货/海龟/多品种趋势`
+    - `配对/均值回归`
+    - `低质量杂项/作业/测试`
+- 对 `pdf 入门书`：
+  - 适合按章节切
+  - 输出：
+    - 章节摘要
+    - 工具/API/数据源清单
+    - 可复用代码能力点
+- 对 `epub`：
+  - 先做目录级粗切
+  - 再根据目录判断是否值得进入章节细切
+
+### Batch9 当前推进口径补充
+
+- `Batch9` 现在已经从“类型裁决/资料收集”进入“首批量化重开”阶段。
+- 当前优先顺序固定为：
+  - 先 `REOPEN_B9_N02_SESSION_OR_P0`
+  - 再 `REOPEN_B9_N01_VOL_STATE_P0`
+  - `REOPEN_B9_N03_STRUCTURE_P0` 继续保持条件型候选
+- 先做 `N02` 的原因：
+  - 它是时段与 OR 环境锚点层
+  - 能作为后续 `IB / N01 / N03` 的上下文底座
+  - 审计歧义明显低于 `N03`
+- `N02` 当前允许推进到：
+  - 字段合同
+  - 样本证据
+  - 真实输出路径草案
+  - 运行时占位行与追加协议
+  - 参数模板与追加脚本 stub
+  - `dry-run / persist` 示例行验证
+- `N01` 当前允许推进到：
+  - 最小实施草案
+  - 样本证据
+  - 运行时目录空壳
+  - header / notes / gaps / append protocol
+- `N02` 当前仍不允许推进到：
+  - 完整 ORB 策略宣称
+  - `IB acceptance` 实现宣称
+  - 直接 gate 当前主线
+- 当前并行推进补记：
+-  - `N01` 已完成第一版样本证据、运行时空壳、参数模板、追加脚本 stub、`--persist` 示例行验证；其中 `atr_length=14` 与 `atr_baseline_length=50` 已有来源页支撑，`atr_percentile_window=252` 已冻结为 Batch9 v1 比较窗口，并已落地 ATR 计算验收清单与真实输入映射草案；当前真实 runtime 已从 `EURUSD H1` 单样本推进到 `EURUSD/XAUUSD` × `H1/M15/H4`、`XBRUSD H1/H4`、`AAPL.NAS H1/H4` 与 `USTEC/US500/DE40/JP225/HK50 H1/H4` 的多周期 + 多资产类别覆盖，并已完成 `squeeze` 首批跨变体审计与 `compression_quality_score` 首批去退化修正
+  - `N02` 已完成 `--persist` 示例行验证；其中 `london -> Europe/London` 与 `new_york -> America/New_York` 已冻结成 v1 session binding registry，且已补上 DST/本地日历边界，并已落地 session calendar / DST 验收清单与真实输入映射草案，但仍不是“真实 runtime 数据接入”
+
+### 外部参考总纲补记（Smile SMC 交易系统 2.0）
+
+- 已吸收一组“视频总结稿 + 截图逻辑树”参考，形成：
+  - `10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Smile_SMC交易系统2_0\Smile_SMC交易系统2_0_吸收与总纲_v1.md`
+- 当前最有价值的不是某个 SMC 术语，而是其系统组织方式：
+  - 趋势方向
+  - 开单类型
+  - 入场确认
+  - 订单管理
+  - 实盘复盘
+- 对本仓库的启发：
+  - `N02` 先做 context
+  - `N01` 再做 state
+  - `N03` 后做 structure
+  - 后续再补 explain layer / decision tree / review layer
+- 关于“财经新闻日历”：
+  - 当前没找到按这个名字冻结成专题文档的记录
+  - 但已发现实际事件数据文件：
+    - `data\news_2007-01 to 2026-05 CSV; sorted date, time; UTC.csv`
+  - 说明这条线更像“数据已保存，专题仍未正式收口”
+  - 当前处理原则：
+    - 不把它硬塞进 `N01/N02/N03` 的 `P0` 字段层
+    - 把它当作长期维护的数据资产（需要持续更新，不是一次性任务）
+    - 未来更合理的落点是“研究补充输入/解释层/过滤层”，并保留更新时间与来源的可追溯记录
+    - 作为外汇的基本面分析来源之一，后续应能被引用到解释层，而不是直接变成硬信号
+
+## 四类资产口径
+
+### 1) SOURCE_LIBRARY
+
+- 位置：`10_来源库_SOURCE_LIBRARY`
+- 含义：来源资料、规则壳、原始拆解材料、尚未完全量化的体系内容。
+- 当前目录：
+  - `00_外部公开资料与方法论参考\\01_外部公开指标资料_Batch9`
+  - `00_指标定义&公式`
+  - `00_大隐体系`
+  - `00_周期女王`
+  - `00_交易系统书籍`
+  - `00_TK外汇`
+  - `02_原子化拆解文件`
+
+### 2) FROZEN_SUMMARIES
+
+- 位置：`11_冻结总结层_FROZEN_SUMMARIES`
+- 含义：备份层、冻结总结层、不可直接当作当前 backlog 的目录。
+- 当前目录：
+  - `01_初整理文档备份_禁止修改`
+  - `03_迭代后核心母版V1.2`
+
+### 3) TOOLING_AND_RUNTIME
+
+- 位置：`12_工具运行时_TOOLING_RUNTIME`
+- 含义：探针、便携实例、历史归档、兼容副本。
+- 当前目录：
+  - `02_MT指标家族_源码与探针`
+  - `03_MT4便携探针实例`
+  - `mt4_probe_instance`
+  - `98_MT历史数据_VTMarkets_Live2`
+  - `VTMarkets-Live 2`
+
+### 4) ACTIVE_MAIN_DOCS
+
+- 位置：仓库根目录
+- 当前主文档：
+  - `01_阶段一_项目记录_过去与落地.md`
+  - `02_阶段二_工作方向_想法库.md`
+  - `03_阶段二_当下计划_执行清单.md`
+  - `关于日活.md`
+
+## 来源库当前状态
+
+### `00_指标定义&公式`
+
+- 状态：部分吸收，未全量量化。
+- 已处理：KD、Volty、ZigZag/谐波、部分价格形态相关源码与文本。
+- 未完成：GAS、神奇数字、二维时空、波浪大块内容仍主要停留在来源层。
+
+### `00_大隐体系`
+
+- 状态：部分吸收，KD 相关已讨论，其余多数仍属来源库。
+- 已处理：KD 家族已完成阶段性讨论与收口。
+- 未完成：二维时空、波浪、超短、系统课程仍未逐条转成当前口径字段。
+
+### `00_周期女王`
+
+- 状态：规则壳可用，但不是全量逐文件吃透。
+- 备注：偏 A 股周期/情绪/状态，不算当前 FX 单字段 backlog。
+
+### `00_交易系统书籍`
+
+- 状态：多数已经作为系统模板或规则底座吸收。
+- 备注：它更像框架和方法学来源，不再按“单指标 backlog”统计。
+
+### `00_TK外汇`
+
+- 状态：只完成了最小可编程映射，没有全量拆解完全。
+- 已处理：IB/DB/CB 信号链、Fib 出场计划、部分 regime 提示。
+- 未完成：整套课程与对应指标尚未完成全量吸收。
+- Batch 1 初扫补记：
+  - 旧口径是 `11` 个文件，其中 `10` 个课程导出、`1` 个经验分享文本。
+  - 当前已新增综合整理扩展稿：
+    - `20231219TK外汇交易系统学习资料整理(6)_导出.md`
+    - 对应吸收结论：
+      - `20231219TK外汇交易系统学习资料整理(6)_吸收结论_v1.md`
+  - 因而 `00_TK外汇` 的有效来源口径已从“旧 11 文件”扩成“旧课程集 + 综合整理扩展稿”。
+  - 主题可以先拆成四组：`信号链(IB/DB/CB)`、`Fib 参数与 TP/SL`、`支撑阻力转换区/顺波段回撤`、`风险与资金管理`。
+  - 其中“信号链 + Fib TP/SL”最适合继续做可编程映射；“顺波段回撤”更像条件化应用层；“风险与资金管理”更像仓位/风控规则层，不应直接混成单字段。
+- Batch 1 正式四分流：
+  - 已吸收：`IB/DB/CB`、`Fib 基本 TP/SL`、`TK 偏震荡` 的 regime 提示
+  - 可重开：`TP3 延申链`、`顺波段回撤`、`风险报酬比/最低胜率`、`固定风险/跨品种相关性风控`
+  - future bucket：`FETP` 专有下单器、`Xbreaking` 小周期修复与历史数据导入链
+  - 仅来源库保留：`MT4/MT5 Fib` 纯界面设定技巧、快捷键和纯教学性描述
+- Batch 1 推荐重开优先级：
+  - `TK-R1 = TP3 延申链`
+  - `TK-R2 = 顺波段回撤`
+  - `TK-R3 = 风险报酬比/最低胜率`
+- 综合整理扩展稿带来的新增判断：
+  - 新增而且最值得保留的不是第 7-10 集本身，而是：
+    - 四种最佳入场法
+    - `AO divergence` 风险调整
+    - `B 区域` qualify
+    - 平台监管 / 黑资管 / `MYFXBOOK`
+    - `TP3 延伸区做单法 + SOP + Forex Tester`
+  - 当前与主线最贴近的新增对象应收敛为：
+    - `TK-R6 = IB 回撤阻挡 -> TP3 概率增强`
+    - `TK-R7 = AO divergence 风险调整标签`
+    - `TK-R8 = B 区域 qualify 壳`
+  - 当前又进一步把：
+    - `TK-R6`
+    从“可重开对象”推进成了“更明确的后续对象定义入口”
+  - 当前又进一步把：
+    - `TK-R8`
+    从“可重开对象”推进成了“更明确的后续对象定义入口”
+  - 当前又进一步把：
+    - `TK-R7`
+    从“可重开对象”推进成了“更明确的后续对象定义入口”
+  - 当前写法固定为：
+    - `TK-R6` 是 `IB/DB/CB + Fib TP3` 主线之间的结构补充对象
+    - 先留在诊断/对象层
+    - 不直接升级成硬门控或独立策略
+    - `TK-R8` 是 `ABC / B 位挂单` 的 qualify 壳入口
+    - 先留在结构 qualify / 诊断对象层
+    - 不直接升级成硬门控或独立策略
+    - `TK-R7` 是 `AO divergence` 的风险调整标签入口
+    - 先留在风险修正 / 诊断对象层
+    - 不直接升级成硬门控或独立策略
+  - 当前还补了一份统一索引：
+    - `TK_Batch1_新增对象入口索引_v1.md`
+  - 这让 `TKFX_12` 带来的新增对象现在已经形成稳定顺序：
+    - `TK-R6`
+    - `TK-R8`
+    - `TK-R7`
+  - 当前又往前补了两份最小草案：
+    - `TK-R6_IB_retest_rejection_最小标签定义_v1.md`
+    - `TK-R8_B区域_最小判据草案_v1.md`
+  - 本轮又继续补了两份第二层最小条件：
+    - `TK-R6_IB附近_最小距离口径_v1.md`
+    - `TK-R8_ABC结构失效_最小条件_v1.md`
+  - 当前又把第二层条件再补细一格：
+    - `TK-R6` 已补到 `inside_ib` 的最小 candle 触达定义
+    - `TK-R8` 已补到 `structure_break` 的最小可见价格行为特征
+  - 本轮又继续补到：
+    - `TK-R6` 的 `reject_clear` 最少价格行为特征
+    - `TK-R8` 的 `b_zone_miss` 最小距离口径
+  - 当前继续后置：
+    - `简易顺势交易策略`
+      - 这是一套新的 `EMA/WPR` 独立策略族，不应回灌当前 `IB/DB/CB + Fib` 主线
+    - `平台监管 / 黑资管 / MYFXBOOK`
+      - 保留来源价值，不混入当前可量化字段层
+    - `Forex Tester`
+      - 作为未来研究/复盘工具层，不当作字段实现
+- TK-R1 当前实现口径：
+  - 已在 `backtest_p0.py` 中新增 `b114-tk-tp3-extension`
+  - 当前是“近似诊断版”，不是 TK 原版 `TP/CB` 信号链的完整复刻
+  - 当前映射的是：`TP3 深区突破(stage1) -> 回收(stage2) -> 强回收(stage3)`
+  - 第一轮样本分布偏稀疏：`stage0=16540`、`stage2=10`、`stage3=3`
+  - 因此当前角色应定为：`DIAG_ONLY / 可继续局部调参和交互验证`，暂不直接升为硬门控
+- TK-R1 第二步结论：
+  - tuned 参数采用：`lookback=36 / deep_ratio=0.50 / wick_ratio_min=0.15 / close_pos_min=0.35 / body_ratio_min=0.20 / strong_close_pos_min=0.50`
+  - tuned 后样本变为：`stage1=62`、`stage2=540`、`stage3=277`
+  - 与 `b46 / b51 / b53` 的交互验证显示：
+    - `b46` 信号质量：`+0.97`
+    - `b53` trendbar 强度：`+0.18`
+    - `b51` reversal 分数：`+0.43`
+    - `doji`：`-0.03`
+  - 当前判断：它更像“回收型诊断 / 回收后延续诊断”，不应归类成“反转型诊断”
+  - 进一步细分时，应把 `stage2` 与 `stage3` 分开看：当前 `stage2` 比 `stage3` 更健康
+- TK-R1 第三步分拆审计：
+  - `stage2_vs_stage0`：`avg_pnl +25.84`、`b46 +1.30`、`b53 +0.29`
+  - `stage3_vs_stage0`：`avg_pnl -79.41`
+  - `stage3_vs_stage2`：`avg_pnl -105.26`、`b46 -0.96`、`b51 -0.25`、`b53 -0.31`
+  - 因此当前建议：
+    - `stage2`：升级为保留候选
+    - `stage3`：降级为观察项
+- TK-R1 第四步 stage2 单独审计：
+  - 总体上：`stage2 avg_pnl = -1.69`，明显好于 `stage0 = -27.53`
+  - 但广度不够稳定：
+    - `32` 个 symbol 中仅 `12` 个为正
+    - `3` 个 profile 中仅 `A_universal` 为正，`A_strict` 明显偏差
+  - 条件特征上：
+    - `b46` 在 `(5,8]` 与 `(8,9]` 桶更健康
+    - `b46 >= 9` 反而明显变差
+  - 因此当前角色应修正为：
+    - `stage2 = DIAG_ONLY_CANDIDATE / 条件型保留候选`
+    - 还不够升级成“更稳定的全局保留候选”
+- TK-R1 第五步条件化收缩：
+  - `b46` 中段桶有效：
+    - `(5,8] = +145.96`
+    - `(8,9] = +113.36`
+  - `b46 <= 5` 为负
+  - `b46 >= 10` 明显更差，应排除或强降权
+  - profile 分层：
+    - `A_relaxed + mid bins`：正向
+    - `A_universal + mid bins`：正向
+    - `A_strict + mid bins`：仍为负，不宜混入
+  - 因此当前最合适的条件化口径是：
+    - `stage2 AND b46 in (5,8]/(8,9] AND profile in {A_relaxed, A_universal}`
+  - 在该条件链下，`TK-R1 stage2` 可以从一般 `DIAG_ONLY_CANDIDATE` 升到：
+    - `条件型保留候选`
+
+### `02_原子化拆解文件`
+
+- 状态：原子规则很多，但不等于已经全部落成字段并完成审计。
+- 备注：这里将是全量扫库中的高优先级桥接层。
+
+## “全量吃透”后的目标不是全部量化
+
+- 可直接进入现有框架的内容：转成候选重开批次。
+- 当前市场/数据口径不适配的内容：进入 future bucket。
+- 暂时只能作为规则壳或解释层的内容：保留在来源库，不强行量化。
+
+## 外部工具评估：LLMQuant Data / LLMQuant Skills（MCP + workflow catalog）
+
+### 摘要
+
+- 它更像“研究侧 Agent 的数据与 workflow 插件生态”，适合做投研/宏观/证券材料检索与结构化，不适合直接接到本仓库的回测/执行链路里当作交易信号来源。
+
+### 后续我们用得上的地方（明确边界）
+
+- A股/ETF/宏观侧的“研究补齐”
+  - 目的：给策略侧结论补充宏观/资金/持仓/事件的可追溯解释，而不是替代回测证据
+  - 典型产出：宏观 snapshot、ETF holdings/overlap 报告、13F holder 汇总、SEC 文件摘录
+- 论文/知识检索侧的“方法学对照”
+  - 目的：当我们要复审某个指标家族/风险规则时，快速找到相关论文/术语与对照方法
+  - 典型产出：paper search + section-aware 摘录 + “可证伪的实现要点清单”
+- 多 Agent 工作流的“证据合同借鉴”
+  - 目的：借鉴它的 skill/router 思路，把我们现有脚本的输入/产物/证据字段标准化
+  - 约束：不搬运其 repo 内容；只借鉴结构与证据合同写法，落在本仓库 `.trae/skills` 的口径里
+
+### 可引用要点（证据摘取）
+
+- source：https://llmquantdata.com/
+  - what：提供 Remote MCP + 统一 bearer key 的数据接口，覆盖 equities / ETFs / SEC filings / 13F / macro / crypto / papers / wiki 等
+  - why：能把“查数据/读材料/看宏观”这种 Agent 常见动作标准化；风险是引入外部依赖与 credit 成本，且与本仓库 FX 回测主线不直接同构
+  - repo_mapping：作为“研究侧辅助数据源”，不进入 `backtest_out` 口径，不参与 baseline 对照
+- source：https://github.com/LLMQuant/skills
+  - what：按 `skills/llmquant-*` 分类的技能路由与 workflows（并强调 evidence contract，依赖 LLMQuant Data MCP）
+  - why：能复用研究写作/分析模板；风险是 workflow 假设与本仓库的字段体系不一致，需要建立“输入/输出合约映射”
+  - repo_mapping：可作为“外部 Agent 的 prompt/workflow 参考”，不直接混入本仓库 `.trae/skills`
+- source：https://llmquantdata.com/（覆盖口径）
+  - what：宏观指标历史跨度（示例 FRED）、美股价格、加密 OHLCV 等
+  - why：适合做“宏观/事件/跨市场状态解释”层；对本仓库当前 FX 1H p0_sweep 的直接增益有限
+  - repo_mapping：仅作为“解释层/研究 memo”，不改任何交易规则默认值
+
+### 本仓库映射（能还原多少）
+
+- 已具备（直接可用）
+  - 我们已有：可复现 runner + manifest 证据包（示例：[tk_r4_usd_half_risk_scheme_b_runner.py](file:///D:/Stock/trading_analysis/tools/tk_r4_usd_half_risk_scheme_b_runner.py)）
+  - 因此接外部数据的价值仅在“解释/研究/资料检索”，而不是替代内部可审计回测产物
+- 需要新增（最小缺口）
+  - 增加一层“研究侧素材落盘合约”：把外部检索到的宏观/公告/论文摘要落盘到固定目录并带 manifest（避免口头结论）
+  - 增加“证据引用格式”：每条结论必须有 source URL + query + raw excerpt（≤几行）+ 本仓库影响点
+- 暂缓（高成本/高风险/不影响主线）
+  - 不把外部 API 的数据直接喂给回测/策略执行口径
+  - 不引入自动交易/下单相关能力
+
+### 下一步最小动作（研究侧，不触碰执行）
+
+- 用它补齐“宏观/事件/材料检索”能力，但只产出研究 memo，不产出交易指令
+- 若要试用：先跑 1 个固定问题模板（例如“解释本周 USD 风险暴露的宏观背景”），输出带 source 的短证据包，然后再决定是否继续投入
+
+## 外部工具评估：a-stock-data（A 股全栈数据工具包）
+
+### 摘要
+
+- 它后期有用，但作用位点在 `A 股 research/data capability`，不在当前 `FX + Batch9 N01/N02` 主线。
+
+### 可引用要点（证据摘取）
+
+- source：`https://github.com/simonlin1212/a-stock-data/`
+  - what：仓库自述为 `A 股全栈数据工具包 — 7 层架构 · 28 个端点 · 13 个数据源 · 零第三方数据封装依赖`
+  - why：说明它不是单一 API 包，而是一个面向投研工作流的多层数据 skill
+  - repo_mapping：适合以后补 `A 股数据底座 / research memo / 题材与信号观察层`
+- source：同仓库 README
+  - what：`V3.0` 已移除 `akshare`，主要转为 `mootdx + 腾讯 + 东财 + 同花顺 + 百度股市通 + 新浪 + 财联社 + 巨潮` 直连
+  - why：对“后期自己维护可控数据能力”有价值，且比依赖单一第三方封装更稳
+  - repo_mapping：适合未来 A 股 branch，不直接进当前 FX 回测链
+- source：同仓库 README
+  - what：内含行情、研报、信号、资金面、新闻、基础数据、公告七层
+  - why：更像研究和数据采集工具，不像交易执行器
+  - repo_mapping：可作为未来 `A股分支研究层 / 来源扩充层` 参考
+
+### 本仓库映射（能还原多少）
+
+- 已具备（直接可用）
+  - 我们已有来源库、研究 memo、执行清单与可复现产物的主文档框架
+  - 因而它最适合先作为“方向记录 + 后续接入占位”
+- 需要新增（最小缺口）
+  - 若未来真的吸收，需单独开：
+    - A 股数据 contract
+    - 研究落盘目录
+    - 与现有 FX 主线隔离的 research-only runner
+- 暂缓（当前不做）
+  - 不把它接入当前 `Batch9`
+  - 不把它当作当前 FX 字段或执行链路依赖
+  - 不因为它是 skill 就直接搬进本仓库 `.trae/skills`
+
+### 当前裁决
+
+- 记录方式应固定为：
+  - `02_阶段二_工作方向_想法库.md` 记录方向、价值和边界
+  - `03_阶段二_当下计划_执行清单.md` 只留占位，不拉进当前实施主线
+- 当前最准确的定位是：
+  - `future research/data capability for A-shares`
+  - 不是当前 `FX / Batch9 / TK` 主线 backlog
+
+## N01 strictMode 当前保守冻结口径
+
+- `strictMode` 这条线当前即使没有 v3 新回帖，也已经可以继续固定边界：
+  - `strictMode != close-overlap sensitivity`
+  - `close-overlap = feature-level sensitivity`
+  - `strictMode = policy-level gating / qualify strictness`
+- 当前更稳的链路保持为：
+  - `close-overlap(feature sensitivity) + strictMode(policy gating) -> shared pocket qualify -> contained pocket -> Mature`
+- `strictMode v3` 当前已完成一轮多 AI 批次收口。
+- 当前多数结论已把最小缺口再压窄为：
+  - `threshold shift / tighter score gates` 更优先
+  - `additional qualify conditions` 继续保留为次优残余可能
+- 当前“在盯什么”也已单独写成清单：
+  - `10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\01_外部公开指标资料_Batch9\strictMode_v3_监看清单_v1.md`
+- 当前该清单也已明确写死：
+  - 这里说的“回帖”是外部 AI 回复由用户贴回
+  - 不是系统会自动收到谁的消息
+- 当前不是泛泛等回帖，而是只盯：
+  - `Q1` 能否进一步确认主机制具体抬的是哪个 threshold
+  - `Q2` 是否继续保持 `score formula / weights rewrite` 最不优先
+  - `Q3` 是否继续保持 `pocket/state qualify strictness` 这条最稳保守写法
+- 当前下一轮外问包也已继续压窄为：
+  - 只追 `compressionThreshold / matureThreshold / both`
+  - 与 `additional qualify conditions` 是主机制还是叠加项
+- 该问题包已同步到：
+  - `临时粘贴区_外部AI与终端输出.md`
+- 当前不继续往前写死的部分是：
+  - `compressionThreshold` 与 `matureThreshold` 的具体联动方式
+  - `additional qualify conditions` 是否只是附加项
+- 当前最不优先仍是：
+  - `score formula / weights rewrite`
+
+### 多 AI 面板怎么用（固定模板）
+
+- 触发条件：
+  - “要不要引入外部数据源/插件”、或“是否把某类研究结论升级为规则/门控/候选池入口”
+- 输入要求（云端模型不可用本机路径）：
+  - 粘贴 10–40 行关键摘录（包括 query、返回片段、关键数值），路径只做追溯
+- 输出要求：
+  - 一份投票 + 两条 NEED_EVIDENCE（缺什么证据）+ 两条可执行下一步
+- 已被现有总结层覆盖的内容：只做去重与索引，不重复写第二份总结。
+
+## 外部指标资源候选（海外）：只做“指标家族补齐”，不直接进交易门控
+
+### 来自截图的方向（主题识别）
+
+- market structure + sessions：BOS/CHOCH、分时段（Asia/London/NY）开盘区间、session sweep 等更偏“结构与时段”上下文
+- smart money / ICT 类：order blocks、FVG（imbalance）、liquidity sweep 等更偏“水平位 + 结构拐点”标签
+- price action：形态/分型/回撤框架，更偏“可解释的标签层”
+
+### 我们值得补充的“指标方向”（按落地优先级）
+
+- 波动率状态机（优先）：波动率估计/vol cone/squeeze-shock/expected move rails，用于把 p0_sweep 的“市场状态”显式化，默认只做 DIAG_ONLY
+  - 参考：TradingView 的 open-source “Black Merton Volatility Engine”示例（vol estimators + cone + expected move rails） https://www.tradingview.com/scripts/gamma/ （筛选 open-source） 
+- Session/时段结构（优先）：Asia/London/NY session range、session VWAP、开盘后 30/60/90 分钟状态标签，用于解释“某些 pocket 只在特定时段成立”
+  - 参考：TradingView 的 “Session Sweeps”类脚本聚合页 https://www.tradingview.com/scripts/supportandresistance/
+- Market structure（中优先）：swing high/low、fractal、BOS/CHOCH、trend leg segmentation（只做标签与审计，避免变成硬门控）
+- Liquidity / key levels（中优先）：pivot clusters、liquidity proximity heatmap（本质是“最近 pivot 集合 + 强度权重”）
+  - 参考：TradingView 的 “Support and Resistance”脚本聚合页（含 liquidity heatmap/sweep 说明） https://www.tradingview.com/scripts/supportandresistance/
+- Options/衍生品结构（future bucket，权益/指数为主）：GEX/墙/flip 等属于“外部数据驱动水平位”，对我们当前 FX 1H 主线不直接同构，但对 A 股/美股/指数可能是未来补齐方向
+  - 参考：TradingView Gamma 脚本聚合页（含 “Gamma Exposure Levels”类） https://www.tradingview.com/scripts/gamma/
+
+### 落地边界（防走歪）
+
+- 优先吃“开源 + 有 anti-repaint/confirmed-bar 说明”的实现；付费闭源（例如某些商业团队）只拿“概念与验收口径”，不搬运规则细节
+- 任何 “SMC/ICT” 类内容默认只做 DIAG_ONLY 标签与证据审计，不直接升级为 entry gate
+- 这块延后到 Batch 9：等 Batch 8 完成后，再把“全量扫库结果 + 已做/待做指标 + 海外候选资源”合成一张方向总表，然后走多 AI 讨论收口
+
+## 根目录单文件的归类口径
+
+- 总表：
+  - `docs\根目录单文件职责与归类_20260611.md`
+- 当前口径：
+  - 活跃入口脚本继续留根目录，不为整齐而硬搬
+  - 配置锚点继续留根目录
+  - 说明文档与旧索引优先逐步迁入 `docs/`
+- 已执行：
+  - `ashare_daily_ops.md` 的正式版已归到 `docs\ops\ashare_daily_ops.md`
+  - 根目录保留兼容入口，避免旧引用断裂
+- 本轮补完：
+  - `_ai_index.txt` 已正式归档到 `docs\indexes\_ai_index_legacy_20260611.txt`
+  - 根目录 `_ai_index.txt` 只保留兼容入口
+  - `generate_p0_subset.py` 已迁到 `tools\generate_p0_subset.py`
+  - 根目录 wrapper 已验证可生成 `docs\P0_规则子表_v0.1.md`
+
+## TK-R2 = 顺波段回撤
+
+- 来源锚点：
+  - `00_TK外汇\外汇交易课程第四集-斐波那契支撑阻力转换区_导出.md`
+- 当前可编程骨架：
+  - `TP1` 突破后，回撤到“信号回撤区”，目标 `TP2`
+  - `TP2` 突破后，回撤到 `TP1` 转换区，目标 `TP3`
+  - 若价格未回撤直接到达 `TP3`，取消挂单
+  - 保守模式：大周期转换区 + 小周期反向信号确认
+- 当前判断：
+  - 它比 `TK-R1` 更像“条件化执行规则壳”
+  - 首先应拆成诊断标签与 zone hit 证据，不直接做硬字段
+- 第一版证据命令已完成：
+  - `b115-tk-r2-pullback`
+- 当前第一版结论：
+  - 覆盖率已足够：`20852 / 23657 = 88.14%`
+  - `stage` 不是单调增强特征：
+    - `stage0 = +5.33`
+    - `stage1 = -42.14`
+    - `stage2 = -146.09`
+    - `stage3 = -161.02`
+  - `zone_hit=1` 是小样本正口袋：
+    - `n = 64`
+    - `avg_pnl = +440.35`
+  - `cancel_no_retrace=1` 更像负向告警：
+    - `n = 132`
+    - `avg_pnl = -246.88`
+- 因此当前定位修正为：
+  - `TK-R2` 第一版已经足够作为“诊断标签壳”
+  - `zone_hit` 暂可列为 `DIAG_ONLY_CANDIDATE`
+  - `cancel_no_retrace` 暂可列为“负向告警型 DIAG_ONLY”
+  - 还不能直接升级成统一硬门控，下一步必须先做 trade-level 分拆和 profile/symbol 广度验证
+- trade-level 分拆后的进一步修正：
+  - `stage` 本身更像状态层，而不是可直接晋升的正向特征：
+    - `stage0 = +4.16`
+    - `stage1 = -39.59`
+    - `stage2 = -145.16`
+    - `stage3 = -172.30`
+  - 其中：
+    - `stage2_vs_stage1 = -105.57`
+    - `stage3_vs_stage2 = -27.14`
+  - 因此 `stage1 / stage2 / stage3` 当前都不应进入“候选加分/过滤晋升”讨论
+- `zone_hit` 的当前口径：
+  - 全局仍过稀：
+    - `96` 个 `profile x symbol` 组合里，只有 `7` 个组合 `n>=3`
+    - 只有 `4` 个组合 `n>=5`
+  - 但局部存在正向 pocket：
+    - `A_universal + AUDJPY`
+    - `A_strict + GBPJPY`
+    - `A_relaxed + GER40`
+  - 因此更准确的角色不是“全局 DIAG_ONLY_CANDIDATE”，而是：
+    - `局部 pocket 候选 / 继续收缩观察`
+- `cancel_no_retrace` 的当前口径：
+  - 不能直接升级成全局负向 veto
+  - 原因不是它没信息，而是：
+    - `profile x symbol` 下正负方向混杂
+    - 既有强负向 pocket，也有正向 pocket
+  - 因此当前更合理的角色是：
+    - `条件化负向告警标签`
+    - 先保留 `DIAG_ONLY`，后续只在稳定 pocket 上继续讨论
+
+## TK-R3 = 风险报酬比 / 最低胜率
+
+- 当前已完成的最小量化映射：
+  - 从 `trades_baseline_*.csv` 计算 `R multiple`
+  - 将 `reason` 统一收口到：
+    - `TP1 / TP2 / TP3 / Stop / Trail`
+  - 产出各 split 下的：
+    - `avg_win_R`
+    - `avg_loss_R`
+    - `breakeven_win_rate_est`
+- 当前关键修正：
+  - `R multiple` 不能直接用每行自己的 `stop`
+  - 正确口径应以同一笔交易的 `entry_stop_ref` 复原初始风险：
+    - LONG 取该笔最小 stop
+    - SHORT 取该笔最大 stop
+- baseline 当前口径下的判断：
+  - `TP2` 已能稳定给出“最低胜率”证据
+  - 但 baseline 不产出 `TP3`
+  - 这不是数据缺失，而是回测默认逻辑只定义了：
+    - `tp_cam_[r/s]1`
+    - `tp_cam_[r/s]2`
+- 因此新增的更合理口径是双层：
+  - 长期默认口径：
+    - baseline = `TP1 / TP2 / Stop / Trail`
+  - 方案 B 实验口径：
+    - 开启 `cam_tp3`
+    - 用于观察 `TP3` 的最低胜率与 `TP2` 的差异
+- `cam_tp3` 重算后的当前结论：
+  - since2022：`TP2 breakeven ≈ 0.331`，`TP3 ≈ 0.304`
+  - pre2022：`TP2 breakeven ≈ 0.333`，`TP3 ≈ 0.306`
+  - 即 `TP3` 在当前口径下需要的最低胜率略低于 `TP2`
+- 因此 `TK-R3` 的当前角色不应是：
+  - 入场门控
+  - 单字段打分项
+- 而应收口为：
+  - `计划评估层诊断指标`
+  - `方案 B 可选实验口径（cam_tp3，默认关闭）`
+
+## TK-R4 = 固定风险 / 跨品种相关性风控
+
+- 来源锚点：
+  - `00_TK外汇\外汇交易课程第五集-风险与资金管理_导出.md`
+- 当前最小可编程映射：
+  - 不直接改仓位或执行逻辑
+  - 先把“相关性风险暴露”落成 position-level 审计：
+    - 同一 `split x profile` 下的 `USD` 同向暴露
+    - `AUD/NZD/CAD` 商品货币同向暴露
+  - 并保留“固定资本风险 / 半风险处理”作为下一层 plan audit
+- 第一版审计结果说明：
+  - `USD` 同向暴露并不稀有：
+    - since2022 三个 profile 上约 `17%-18%`
+    - pre2022 三个 profile 上约 `15%-18%`
+  - `any_corr_overlap_share` 大致在 `18%-21%`
+  - 因此“跨品种相关风险集中暴露”在当前 baseline 里是可观测现象，不是来源库空话
+- 但当前不能直接升级成硬规则：
+  - 商品货币相关性的收益/风险方向尚不稳定
+  - “有重叠”不等于“必然更差”，还需要半风险 paper audit 去验证
+- 因此当前更合适的角色是：
+  - `计划层 / 组合层 DIAG_ONLY_CANDIDATE`
+  - 后续若继续推进，应优先做：
+    - `same-theme risk halve` 的纸上重算
+    - 而不是直接改默认 `risk_per_trade`
+- half-risk paper audit 后的进一步修正：
+  - 若对“存在同主题重叠的新仓”按 `0.5x` 风险记账，则当前 baseline 上出现了稳定改善：
+    - since2022：总亏损与最大回撤同时下降
+    - pre2022：总亏损与最大回撤同时下降
+  - 说明“相关性暴露不是伪问题”，半风险处理具备实际 paper-level 价值
+- 因此 `TK-R4` 的当前角色可进一步收紧为：
+  - `方案 B 风控壳候选`
+  - 但仍必须保持：
+    - 默认关闭
+    - 先作为 plan/paper audit 口径
+
+## A1-A2-A3-A4-F1-F2 去 cut_file 依赖口径
+
+- 当前目标不是马上删除 `D:\Stock\cut_file`，而是把 `A1/A2/A3/A4/F1/F2` 逐步变成“来源库 final 可独立承接，cut_file 只保留源文件与施工辅助”的结构。
+- 固定三层：
+  - 稳定结论进入主文档
+  - 可复用 `CUTPACK` 进入 `10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\...\*_final`
+  - 主源 / 校对源 / `PDF` 角色写进对应 `CUTPACK`
+- 当前优先级：
+  - 第一梯队：`A2 / A3 / F1 / A4`
+  - 第二梯队：`A1`
+  - 第三梯队：`F2`
+- 当前裁决：
+  - `A2`：来源库 `final` 仍是旧版，必须以 `cut_file` 中已修正的 `knowledge_draft / partial_anchor_cutpack / pdf_text 主源` 口径覆盖同步。
+  - `A3`：`陈浩完整版`、`筹码形态手册 part1/part2`、`VolumeProfile` 以 `cut_file` 最新版为准，同步后来源库 `final` 才算独立。
+  - `F1`：`HeikinAshi 1-4` 与 `Wyckoff` 必须固定为 `FineReaderOCR_epub + calibre_epub_unusable + layout_anchor_only` 口径。
+  - `A4`：稳定入口只认 `04_A4_cutpack_v2_final`；根层散放副本不再作为稳定入口。
+  - `A1`：大多数单书 `r2` 已在 `final`，`情绪流龙头战法 part2 r2` 需与来源库 `final` 对齐；`cut_file\A1` 后续只保留 `RAW/pdf/epub/toc/chapters` 等源与施工辅助。
+  - `F2`：`final` 已基本独立；补入 `compliance_report_r1.json` 后闭环更完整。
+- 当前不做：
+  - 不在这一步删除 `cut_file` 里的源书 `pdf/epub/txt`
+  - 不在这一步删除来源库旧版历史文件
+  - 不把全部 `bycalibre` 一律视为有效校对源，仍按逐书审计结论处理
+    - 不直接改动 baseline 默认执行
+- 再拆 `USD vs commodity` 后的修正：
+  - `USD-only half-risk` 在 `since2022 / pre2022` 两个 split 都稳定改善了总亏损与最大回撤
+  - `commodity-only half-risk` 在 `pre2022` 出现整体变差
+- 因此 `TK-R4` 当前真正值得保留的壳应收紧为：
+  - `USD 同向主题暴露 -> 新增仓 half-risk`
+  - 而不是把 `commodity` 一并打包进默认方案 B
+- `USD-only` 已进一步推进成独立方案 B 草案脚本：
+  - `tools\tk_r4_usd_half_risk_scheme_b.py`
+  - `tools\tk_r4_usd_half_risk_scheme_b_runner.py`
+  - 只做 accounting / audit 输出，不改 baseline 默认执行
+  - 核心开关：
+    - `scheme_b_enabled` 默认关闭
+    - `trigger_col = usd_overlap_flag`
+    - `risk_scale_when_triggered = 0.5`
+- 当前已完成的工程验收：
+  - `enable_usd_half_risk=0` 时，`scheme_b` 与 `baseline` 完全一致
+  - `enable_usd_half_risk=1` 时，结果复现前面 `USD-only half-risk` 的改善
+- 因此 `TK-R4` 在想法库中的当前角色应正式固定为：
+  - `USD 主题 half-risk` 的 `默认关闭方案 B 风控壳`
+  - 先保留为独立脚本 + runner 编排入口 + 审计合约
+  - 暂不并入更靠前的 baseline 入口
+- 对 `USD overlap` 强度继续收窄后的修正：
+  - 已新增 `tools\tk_r4_usd_overlap_depth_audit.py`
+  - 把 `concurrent_usd_same_dir` 拆成 `>=1 / >=2 / >=3` 做 paper audit
+  - 当前结果不支持把触发条件收窄到更高并发：
+    - `>=1` 在 `since2022 / pre2022` 都是最强改善
+    - `>=2` 改善明显缩小
+    - `>=3` 在 `since2022` 已整体转负
+- 因此 `TK-R4` 当前值得保留的正式口径仍应是：
+  - `usd_overlap_flag`（即 `concurrent_usd_same_dir >= 1`）
+  - 而不是更窄的 `>=2/3` 版本
+- 对 `USD overlap >=1` 的异质性继续收口后的修正：
+  - 已新增 `tools\tk_r4_usd_overlap_heterogeneity_audit.py`
+  - 从 `profile / symbol / profile x symbol` 三层复核
+  - 当前证据更支持：
+    - 这是一个“有少数负向 pocket 的全局候选”
+    - 而不是“只能在零散 symbol 上保留”的局部 pocket
+- 当前对角色的更精确表述应是：
+  - `USD 主题同向暴露 -> 新增仓 half-risk`
+  - 一个默认关闭、但具备较好 profile/symbol 广度的方案 B 风控壳
+  - 若后续要再工程化，优先考虑“例外观察名单”，而不是先撤回全局壳
+- 对负向 pocket 清单继续收口后的修正：
+  - 已新增 `tools\tk_r4_usd_overlap_negative_pockets.py`
+  - 当前最值得保留的观察名单，不是大范围 symbol 清退，而是少数持续反例：
+    - `XAGUSD`
+    - `GBPUSD`
+    - 次级观察：`USDJPY / USDCAD`
+- 因此 `TK-R4` 当前更合理的后续工程方向应是：
+  - `全局 USD overlap >=1 壳 + 小型负向 pocket watchlist`
+  - 而不是先把全局壳收缩成大量 symbol 例外硬门控
+- 对最终角色收口后的修正：
+  - 已新增 `tools\tk_r4_usd_half_risk_role_finalize.py`
+  - 当前 `TK-R4` 的正式表述应固定为：
+    - `global_candidate_with_watchlist`
+    - `enabled_default = False`
+    - `hard_gate_enabled = False`
+    - `watchlist_mode = observe_only`
+- 因此后续如果再工程化，优先级应是：
+  - 保持这个全局壳的独立编排与合约化
+  - 让 watchlist 继续作为观察层
+  - 而不是提前把 watchlist 升成硬门控
+  - 当前一键复现入口与证据包已固定：
+    - 根目录入口：`tk_r4_usd_half_risk_scheme_b_runner.py`
+    - `manifest`（单文件真值：coverage / inputs_index / provenance / outputs_grouped）：
+      - `backtest_out\stage2\indicator_audit\20260611_b124_tk_r4_usd_half_risk_role_finalize_v1\b124_usd_half_risk_run_manifest_20260611_v1.json`
+
+## 全量扫库的批次顺序
+
+### 第一层：高价值且体量可控
+
+1. `00_TK外汇`（11）
+2. `00_指标定义&公式`（61）
+3. `02_原子化拆解文件`（63）
+
+### 第二层：中大型体系库
+
+4. `00_大隐体系`（132）
+5. `00_周期女王`（67）
+6. `00_交易系统书籍`（151）
+
+### 第三层：冻结总结对照
+
+7. `01_初整理文档备份_禁止修改`（12）
+8. `03_迭代后核心母版V1.2`（12）
+
+## 每一批的统一出口
+
+- 这批材料中哪些已经被现有字段覆盖。
+- 哪些可以形成新的“稳定候选重开清单”。
+- 哪些只能留在 `SOURCE_LIBRARY`。
+- 哪些应转入 `A_SHARES_ONLY_FUTURE_BUCKET` 或其他 future bucket。
+- 哪些总结层内容可以合并索引、避免重复记录。
+
+## 当前冻结决定
+
+- 现在不启动“稳定候选组合优化”第一批。
+- 先完成来源库全量扫库与统一分流。
+- 组合优化只保留为下一阶段入口，不再作为当前主任务。
+
+## 2026-06-18 去 cut_file 依赖第二阶段收口
+
+- 第一轮同步后，当前最关键的不是继续复制，而是固定唯一稳定入口。
+- 当前稳定入口只认：
+  - `A1`：`01_A1_cutpack_v2_final` 中的 r2 组；`情绪流龙头战法 part2` 以 `v2_r2` 为准
+  - `A2`：`01_A2_cutpack_v2_final` 中的 `part1_v2_r1 / part2_v2_r2 / 三本英文 v2_r1`
+  - `A4`：`04_A4_cutpack_v2_final`；GROUP 根层 4 份 A4 md 视为重复副本
+  - `F2`：`01_F2_cutpack_v2_final`，继续保持独立入口
+- 所有 `README_放这里.md / manifest_v2.tsv` 都必须只指向稳定入口，不允许继续指向旧版或根层副本。
+- 当前第二阶段顺序固定为：
+  1. 先修 stable entry 索引与 README 漂移
+  2. 再做 `A2 part2` retained excerpts 的 OCR spot check
+  3. 再做旧版目录与重复副本的 freeze / archive 说明
+- 当前仍不做：
+  - 不删 `cut_file` 中的 `pdf / epub / txt / toc / chapters / compliance`
+  - 不删 `final` 目录中已存在的旧副本，先把稳定入口口径写稳
+  - 不把 `A2 part1 / part2` 的角色重新抬高
+
+## 2026-06-18 Batch9 并入当前主线
+
+- `Batch9 = 00_外部公开资料与方法论参考\01_外部公开指标资料_Batch9` 当前不再视为“已做过的旧支线”，而是并入本轮“来源独立性 + 全量吃透”主线一起推进。
+- 当前裁决：
+  - 该批资料整体已经基本独立于 `cut_file`
+  - 已经吃透到“字段 / 合约 / 四分流 / 重开入口”这一层
+  - 但仍未达到“源码级证据全部补齐”的完成态
+- 当前最准确的角色表述：
+  - `independent_at_contract_layer`
+  - `fully_ingested_for_batch_level_decisions`
+  - `not_source_complete_yet`
+- 已有稳定锚点：
+  - `Batch9_批次收口与四分流_v1.md`
+  - `batch9_source_manifest.csv`
+  - `Batch9_外部AI补源评估_v1.md`
+- 因此后续与 A1/A2/A3/A4/F1/F2 并行推进时，`Batch9` 的重点不是重建目录，而是：
+  1. 继续补源码级缺口备注
+  2. 保持四分流与重开入口同步
+  3. 不让 `batch9_sources_kimi` 误升为原始真值层
+
+## 2026-06-18 A2 深查与 Batch9 补强层口径
+
+- `A2 part2` 的 Excerpts `11 / 12 / 13` 经过第八章正文上下文深查后，已从 `knowledge_inference` 回升为 `direct_ocr_support`。
+- 当前 `A2 part2` 的最准口径是：
+  - Excerpts `1-14 / 16-19` = OCR 锚定
+  - Excerpt `15` = 部分 OCR 锚定，其中 A股时段映射属于后加适配
+- `Batch9` 当前固定补强层标签：
+  - `secondary_structured_note`
+  - `secondary_structured_note_conflict`
+- 作用边界：
+  - 允许把 Kimi 的结构化补充写进 `manifest notes`
+  - 不允许因此把对应来源误判为“源码已补齐”
+  - `GainzAlgo` 冲突稿只保留线索，不覆盖既有 page excerpt
+
+## 2026-06-18 任务六当前口径：更远资料与旧来源库
+
+- 任务六当前不再是“继续乱扫旧目录”，而是把旧来源库按成熟度分层：
+  - `已吸收到合同层/规则底座`
+  - `可重开`
+  - `future bucket`
+  - `仅来源库保留`
+- 当前最准确的目录层判断：
+  - `00_TK外汇`：部分吸收，仍有 `TK-R6/7/8` 这类对象入口继续向前推进
+  - `00_外部公开资料与方法论参考\01_外部公开指标资料_Batch9`：已全量吃透到合同层，但不是源码级全补完
+  - `00_交易系统书籍`：多数作为方法学/规则壳底座吸收，不再按“单本 backlog”处理
+  - `02_原子化拆解文件`：是结构化规则库，核心价值在“规则层标准化 -> 字段层”
+  - `00_大隐体系`：按 family 冻结更稳，只保留少量可字段化规则壳进入重开候选
+  - `00_周期女王`：偏 A 股情绪/状态语言层，只作为独立 A 股分支候选，不接到当前 FX/商品主线
+  - `01_Kimi拆书待入库`：继续作为 `active inbox / final 承接层`，不并入任务六的“旧来源库主战场”
+- 因此当前任务六的主线顺序固定为：
+  1. 先继续收紧 `02_原子化拆解文件 / 交易系统书籍 / TK / Batch9`
+  2. 再把 `大隐 / 周期女王` 作为条件型候选来源库维持 family 级冻结
+  3. 不把课程转写和图片资产误写成“已吸收”
+- `Kimi` 的职责也同步降级：
+  - 对 `A1/A2/A3/A4/F1/F2` 不再常驻负责
+  - 默认只在我点名时补 `外部网页说明 / 新资料初扫 / 证据缺口`
+
+## 2026-06-18 任务六下一轮：明确可重开清单
+
+- `00_大隐体系` 当前不宜整包重开，宜拆成两类：
+  - `stochastic oscillator 指标组`
+    - 适合作 `定义层 + 过滤层 + 进场分层`
+    - 当前优点是多周期结构清楚：本级/上级/顶层、共振、离散、背离、完美、二次/三次进场
+    - 当前缺点是与裸K/角度线混讲较多，真正进入实现前必须先切掉主观叙述
+  - `B转A失败 -> B浪C反手 / 天王山 / 中枢反手`
+    - 适合作 `pattern-level diag-only candidate`
+    - 当前优点是“没有中枢不反手 / B浪C上不去就反手 / 天王山触发反手”这些抓手较集中
+    - 当前缺点是训练型很强、主观度高，不宜直接上硬规则
+
+## 2026-06-18 主线回切后的进一步收紧
+
+- `A2 / A3` 当前不宜再扩大为“整组重切”。
+- 更稳的做法是：
+  - `A2` 继续维持 `keep_current / keep_current_with_audit_note`
+  - `A3` 继续维持“主规则保留、案例图注降级、缺 source_audit 的再补 audit，不重做正文”
+- 其中：
+  - `A2 part2` 的核心价值在 `auction / day type / value area / spike / balance breakout`
+  - `A3` 的核心价值在 `筹码规则语言 + VolumeProfile/威科夫 的邻接解释层`
+  - 这两组当前都更适合作“对象层 / 规则层 / 解释层来源”，而不是继续消耗大量时间在格式重做上
+- `00_交易系统书籍` 本轮重新收紧后，最合适的 Batch4 口径是：
+  - `已吸收`：方法学底座与状态模板底座
+  - `可重开`：只保留 `VanTharp` 与 `海龟` 两条最小实现入口
+  - `future bucket`：`Kaufman` 统计/压力轴细化、`墨菲` 图表形态系统化
+  - `仅来源库保留`：图片资产、流程模板、archive 历史切片
+- 因此任务六下一轮不要再“整批看书”，而是直接从：
+  - `VanTharp -> R乘数/期望/头寸规模`
+  - `海龟 -> 破产风险/单位规模/灾难压力测试`
+  里挑 `1-2` 个做 `diag-only / proof-of-mapping`。
+
+## 2026-06-18 Batch4 对象层推进口径（VanTharp）
+
+- `VanTharp` 这条线已从“可重开候选”推进到“后续对象定义入口”。
+- 新入口已落在：
+  - `10_来源库_SOURCE_LIBRARY\02_原子化拆解文件\风险管理_VanTharp_R乘数_期望与头寸规模_后续对象定义入口_v1.md`
+- 当前固定边界：
+  - 先做 `diag-only` 的 `R乘数 / 期望 / 头寸规模` 字段映射
+  - 不进入真实头寸控制和自动执行
+  - 不把来源切片直接写成“已实现风控模块”
+- 与主线协同方式：
+  - `A3` 继续做来源口径收紧（audit）
+  - `VanTharp` 继续做对象层最小合同
+  - 先形成可证据化映射，再讨论是否进入工具运行时层
+
+本轮已落盘：
+
+- 已新增工具运行时层（diag-only）：
+  - `12_工具运行时_TOOLING_RUNTIME\vantharp_risk_p0_v1`
+- 已落最小合同：
+  - `vantharp_risk_p0_min_contract_v1.md`
+- 已落首份 proof-of-mapping：
+  - `vantharp_risk_p0_proof_of_mapping_v1.md`
+  - `real_input_samples\vantharp_risk_p0_proof_input_v1.csv`
+  - `real_input_samples\vantharp_risk_p0_proof_output_v1.csv`
+
+下一步最小缺口：
+
+- 冻结 `initial_risk_amount` 的来源口径：
+  - 若来自 `交割单/成交明细`：直接用金额字段作为真值
+  - 若来自 `entry/stop`：需要补 `点值换算` 的最小合同
+
+本轮已补齐：
+
+- `initial_risk_amount` 当前已冻结为双口径（并有 v2 对照 proof）：
+  - `statement_amount`
+  - `entry_stop_calc`
+- `00_周期女王` 当前最值得保留的不是案例，而是两层框架：
+  - `周期状态系统规则壳`
+    - 适合作 `A股状态标签层`
+  - `10日区间前十 + 前交易日领涨 + 包容度/补位协同`
+    - 适合作 `盘面观察面板 / trade-level checklist`
+- `02_原子化拆解文件` 当前最值得先重开的对象应优先满足“阈值已写清、适合字段化”：
+  - `技术指标_随机指标_多周期KD共振与过滤规则`
+    - 可作为 `多周期过滤层`
+  - `核心技术_威科夫_弹簧Spring与上抛UT量化判定`
+    - 可作为 `event-level candidate`
+- 当前暂缓对象：
+  - `ALBrooks 趋势强度评分`
+    - 更适合做二层评分框架，放在前两类之后
+  - `题材标选_中军筛选五维量化模型`
+    - 仍偏题材发酵期工具，不宜抢在状态机/多周期过滤前面
+
+## 2026-06-18 多周期KD 当前口径
+
+- `多周期KD` 现在已经从“可重开候选”推进到“最小实现入口”。
+- 当前最准确的边界是：
+  - 先做 `diagnostic/filter layer`
+  - 不直接做硬门控
+  - 不直接做仓位倍率
+  - 不直接把 `大隐 stochastic` 的全部高阶概念搬进 v1
+- 第一版只保留 `week/day/4h` 三层：
+  - `week` = 中期方向
+  - `day` = 主信号
+  - `4h` = 确认
+- 第一版故意不做：
+  - `month bias`
+  - `1h refine`
+  - `背离 / 离散 / 完美`
+- 这样定的原因：
+  - 先把最稳的“多周期过滤层”做出来
+  - 避免把高阶训练型概念顺手混成实现口径
+  - 给后续 `Spring/UT`、`状态机`、其他 event/object 层提供共用上游过滤底座
+- 当前已进入的阶段：
+  - 对象定义入口已落
+  - `P0` 最小实施草案已落
+  - `header / contract notes / field sample` 已落
+  - `proof-of-mapping` 草案已落
+  - `runtime notes / gaps / append_protocol` 已落
+  - 运行时目录空壳已落
+  - 第一份手工 proof 输入/输出已落
+  - `params template / append stub / dry-run acceptance` 已落
+  - 首批 `--persist` 已落
+- 所以下一步不再是继续写概念文，而是：
+  - 决定是否扩第二批 proof
+  - 再决定是否值得补 `append_from_proof` 独立脚本

@@ -1,0 +1,87 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows 的可靠文件复制                              
+-------------------------------------------------------------------------------
+
+  开始时间: 2026年7月7日 16:00:43
+        源: d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\
+      目标: d:\Stock\trading_assistant\11_frozen_summaries_archive\_raw_snapshot_batch09\
+
+      文件: *.*
+	    
+      选项: *.* /TEE /S /E /DCOPY:DAT /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   0	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\
+	  *多余文件   		     374	README.md
+	  *多余文件   		       0	robocopy_frozen__20260707.log
+	  新目录           4	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\00_active_doc_cleanup_archive_20260621\
+	    新文件    		  161302	01_fact_log_before_cleanup_20260621.md
+	    新文件    		   66227	03_current_plan_before_cleanup_20260621.md
+	    新文件    		  273095	daily_active_before_cleanup_20260621.md
+	    新文件    		    3308	mainline_index_before_refresh_20260621.md
+	  新目录          12	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\01_初整理文档备份_禁止修改\
+	    新文件    		   18889	体系GAS_核心母版.md
+	    新文件    		   23540	体系大隐_时空波浪.md
+	    新文件    		   22849	体系大隐_波段超短.md
+	    新文件    		   19616	体系大隐_闭环体系.md
+	    新文件    		   18357	体系大隐_随机指标.md
+	    新文件    		   30687	体系补充_特色优化.md
+	    新文件    		   50158	参考书_ALBrooks价格行为.md
+	    新文件    		   32053	参考书_威科夫操盘法.md
+	    新文件    		   37205	参考书_斐波那契体系.md
+	    新文件    		   32783	参考书_谐波交易者.md
+	    新文件    		   32168	参考书_题材股中军.md
+	    新文件    		   20381	量化分析体系V1.1_核心母版.md
+	  新目录           2	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\02_阶段成果索引_STAGE_DELIVERABLES\
+	    新文件    		    6750	00_阶段成果总索引.md
+	    新文件    		    2732	01_根目录入口与归类_20260621.md
+	  新目录           2	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\
+	    新文件    		   10800	#量化分析体系V1.2.md
+	    新文件    		    8669	体系GAS_可量化逻辑拆解归档V1.2.md
+	  新目录           5	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\01_核心技术体系模块\
+	    新文件    		   18520	[模块]ALBrooks_入场信号与交易执行.md
+	    新文件    		   11209	[模块]ALBrooks_趋势判定与基础定义.md
+	    新文件    		   14004	[模块]威科夫_四阶段量价突破体系.md
+	    新文件    		   11596	[模块]斐波那契_回调扩展时间共振体系.md
+	    新文件    		   14832	[模块]谐波交易_六大形态风控体系.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\02_题材与标的选择模块\
+	    新文件    		   11427	[模块]题材中军_筛选建仓协同撤退全体系.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\03_交易策略执行模块\
+	    新文件    		   18032	[模块]交易策略与优化_波段超短特色优化综合体系.md
+	  新目录           2	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\04_技术指标用法模块\
+	    新文件    		   16448	[模块]技术指标_KD随机指标与补充技术综合分析体系.md
+	    新文件    		   10603	[模块]时空波浪_计数推动共振分析体系.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\03_迭代后核心母版V1.2\05_交易系统闭环模块\
+	    新文件    		   10771	[模块]交易系统_五步骤资金风控复盘心理全体系.md
+	  新目录           4	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\99_活跃主文档损坏前备份_20260611_planb_pre_rebuild\
+	    新文件    		  168719	01_阶段一_项目记录_过去与落地.md
+	    新文件    		  213357	02_阶段二_工作方向_想法库.md
+	    新文件    		   70731	03_阶段二_当下计划_执行清单.md
+	    新文件    		  369293	关于日活.md
+	  新目录          10	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\11_冻结总结层_FROZEN_SUMMARIES\99_活跃主文档损坏前备份_20260611_planb_pre_rebuild\00_batch1_recovered_utf8\
+	    新文件    		  120474	01_阶段一_项目记录_过去与落地_best_effort_gb18030.md
+	    新文件    		  145607	01_阶段一_项目记录_过去与落地_current_truth_anchor.md
+	    新文件    		  159712	02_阶段二_工作方向_想法库_best_effort_gb18030.md
+	    新文件    		  111971	02_阶段二_工作方向_想法库_current_truth_anchor.md
+	    新文件    		   55101	03_阶段二_当下计划_执行清单_best_effort_gb18030.md
+	    新文件    		   65945	03_阶段二_当下计划_执行清单_current_truth_anchor.md
+	    新文件    		     731	COMPARE_NOTES_round1.md
+	    新文件    		     326	README_batch1.md
+	    新文件    		  310844	关于日活_best_effort_gb18030.md
+	    新文件    		  271443	关于日活_current_truth_anchor.md
+
+------------------------------------------------------------------------------
+
+                  总数        复制        跳过       不匹配        失败        其他
+       目录:        12        11         1         0         0         0
+       文件:        44        44         0         0         0         2
+       字节:    2.93 m    2.93 m         0         0         0       374
+       时间:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+       速度:           37,478,841 字节/秒。
+       速度:            2,144.556 MB/分钟。
+   已结束: 2026年7月7日 16:00:43
+
