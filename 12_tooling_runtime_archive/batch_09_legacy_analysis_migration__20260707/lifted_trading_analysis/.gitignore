@@ -30,7 +30,6 @@ Thumbs.db
 
 # IDE
 .vscode/*
-!.vscode/settings.json
 
 # Trae auto-generated skill folders (local only)
 .trae/skills/
