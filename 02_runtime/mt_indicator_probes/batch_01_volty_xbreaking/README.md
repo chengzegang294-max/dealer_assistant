@@ -52,6 +52,7 @@
   - `environment_snapshots/`
 - `IGNORE_LOCAL_TEMP`，应忽略：
   - 根目录 `_tmp_*.ini`
+  - `artifacts/**/runtime_config/_tmp_*.ini`
   - 这类文件是本地一次性 runtime 拼装物，不是批次默认入口，也不应充当长期证据
 
 ## 当前状态
