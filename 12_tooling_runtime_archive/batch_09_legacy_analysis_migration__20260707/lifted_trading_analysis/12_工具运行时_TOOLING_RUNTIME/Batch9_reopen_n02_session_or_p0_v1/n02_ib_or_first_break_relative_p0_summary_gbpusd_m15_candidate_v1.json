@@ -1,0 +1,98 @@
+{
+  "producer": "n02_ib_or_first_break_relative_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_FIRST_BREAK_RELATIVE_P0",
+  "status": "fresh_run_first_break_relative_sample_summary",
+  "evidence_mode": "fresh_run_derived_from_ib_or_relation_sample",
+  "source_path": {
+    "ib_or_relation_sample_csv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_relation_p0_sample_gbpusd_m15_candidate_v1.csv"
+  },
+  "repo_path": {
+    "first_break_relative_sample_csv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_first_break_relative_p0_sample_gbpusd_m15_candidate_v1.csv",
+    "summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_first_break_relative_p0_summary_gbpusd_m15_candidate_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T15:55:51Z",
+  "boundary": {
+    "writes_to_n02_p0_runtime_csv": false,
+    "writes_to_n02_ib_runtime_csv": false,
+    "writes_to_ib_or_relation_csv": false,
+    "includes_acceptance": false,
+    "includes_failed_breakout": false,
+    "includes_retest_reject": false,
+    "includes_day_type": false,
+    "confirms_ib_break_only_when_shared_edge": true
+  },
+  "input_rows": 534,
+  "output_rows_written": 534,
+  "first_break_relative_case_counts": {
+    "no_break": 23,
+    "or_break_with_ib_same_side_gap_remaining": 449,
+    "shared_edge_break": 62
+  },
+  "first_break_direction_counts": {
+    "down": 255,
+    "none": 23,
+    "up": 256
+  },
+  "first_break_mode_counts": {
+    "ambiguous": 22,
+    "close": 279,
+    "none": 1,
+    "wick": 232
+  },
+  "shared_edge_break_rows": 62,
+  "gap_remaining_rows": 449,
+  "can_confirm_ib_break_rows": 62,
+  "requires_break_price_rows": 449,
+  "requires_break_price_ratio": 0.8408239700374532,
+  "by_session": {
+    "london": {
+      "rows": 267,
+      "shared_edge_break_rows": 22,
+      "gap_remaining_rows": 234,
+      "requires_break_price_rows": 234,
+      "shared_edge_break_ratio": 0.08239700374531835,
+      "first_local_date": "2021-06-16",
+      "last_local_date": "2026-06-11"
+    },
+    "new_york": {
+      "rows": 267,
+      "shared_edge_break_rows": 40,
+      "gap_remaining_rows": 215,
+      "requires_break_price_rows": 215,
+      "shared_edge_break_ratio": 0.149812734082397,
+      "first_local_date": "2021-06-16",
+      "last_local_date": "2026-06-11"
+    }
+  },
+  "same_side_gap_to_ib_stats": {
+    "min": "0.00000",
+    "max": "0.01178",
+    "avg": "0.0004463405088062622309197651663"
+  },
+  "output_columns": [
+    "relative_id",
+    "relative_family",
+    "relative_level",
+    "relative_status",
+    "source_relation_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "ib_window_minutes",
+    "opening_range_window_minutes",
+    "first_break_direction",
+    "first_break_mode",
+    "break_side",
+    "or_break_edge_value",
+    "ib_same_side_edge_value",
+    "same_side_gap_to_ib",
+    "shared_boundary_on_break_side",
+    "first_break_relative_case",
+    "can_confirm_ib_break_from_current_fields",
+    "requires_break_price_for_ib_confirmation",
+    "inference_scope",
+    "width_error_day"
+  ]
+}

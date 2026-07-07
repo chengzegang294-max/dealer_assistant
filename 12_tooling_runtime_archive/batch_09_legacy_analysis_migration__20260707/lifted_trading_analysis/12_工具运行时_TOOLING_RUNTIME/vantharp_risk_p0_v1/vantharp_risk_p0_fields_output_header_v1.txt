@@ -1,0 +1,1 @@
+trade_id,net_pnl,max_risk_amount,risk_usage_ratio,r_multiple,risk_model_state,position_sizing_state,expectancy_group_id,expectancy_r,trade_count,expectancy_confidence_state,proof_basis

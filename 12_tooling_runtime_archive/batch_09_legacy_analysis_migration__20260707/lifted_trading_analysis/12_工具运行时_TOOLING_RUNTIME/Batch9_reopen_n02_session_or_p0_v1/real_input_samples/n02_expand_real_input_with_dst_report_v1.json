@@ -1,0 +1,71 @@
+{
+  "producer": "n02_expand_real_input_with_dst_v1.py",
+  "scope": "REOPEN_B9_N02_REAL_INPUT_EXPAND_SAMPLE_P0",
+  "status": "fresh_run_expand_sample",
+  "evidence_mode": "fresh_run_merge_main_bars_and_dst_supplement",
+  "source_path": {
+    "inputs": [
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv.bak_20260704T154435Z",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_spring_20260327_20260331_bars.csv",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_spring_20260306_20260310_bars.csv",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_fall_20251023_20251028_bars.csv",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_fall_20251031_20251104_bars.csv"
+    ]
+  },
+  "repo_path": {
+    "output_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv",
+    "backup_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv.bak_20260704T154531Z",
+    "report_json": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_expand_real_input_with_dst_report_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T15:45:31Z",
+  "allowed_symbol_timeframes": [
+    "EURUSD/M1"
+  ],
+  "input_reports": [
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv.bak_20260704T154435Z",
+      "rows": 99500,
+      "kept_rows": 99500,
+      "skipped_rows": 0,
+      "first_bar_time": "2026-03-06T17:09:00Z",
+      "last_bar_time": "2026-06-12T00:00:00Z"
+    },
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_spring_20260327_20260331_bars.csv",
+      "rows": 2877,
+      "kept_rows": 2877,
+      "skipped_rows": 0,
+      "first_bar_time": "2026-03-27T00:00:00Z",
+      "last_bar_time": "2026-03-31T00:00:00Z"
+    },
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_spring_20260306_20260310_bars.csv",
+      "rows": 1724,
+      "kept_rows": 1724,
+      "skipped_rows": 0,
+      "first_bar_time": "2026-03-06T19:13:00Z",
+      "last_bar_time": "2026-03-10T00:00:00Z"
+    },
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_fall_20251023_20251028_bars.csv",
+      "rows": 864,
+      "kept_rows": 0,
+      "skipped_rows": 864,
+      "first_bar_time": "2025-10-23T00:00:00Z",
+      "last_bar_time": "2025-10-27T23:55:00Z"
+    },
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_fall_20251031_20251104_bars.csv",
+      "rows": 576,
+      "kept_rows": 0,
+      "skipped_rows": 576,
+      "first_bar_time": "2025-10-31T00:00:00Z",
+      "last_bar_time": "2025-11-03T23:55:00Z"
+    }
+  ],
+  "duplicate_replacements": 4601,
+  "filtered_out_rows": 1440,
+  "output_rows": 99500,
+  "output_first_bar_time": "2026-03-06T17:09:00Z",
+  "output_last_bar_time": "2026-06-12T00:00:00Z"
+}

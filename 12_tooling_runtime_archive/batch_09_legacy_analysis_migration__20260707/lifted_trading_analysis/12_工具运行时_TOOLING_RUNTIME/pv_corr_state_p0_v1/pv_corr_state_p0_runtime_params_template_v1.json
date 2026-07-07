@@ -1,0 +1,84 @@
+{
+  "version": "v1",
+  "type_id": "PV_CORR_STATE",
+  "candidate_id": "PV_CORR_STATE_P0",
+  "runtime_dir": ".\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\pv_corr_state_p0_v1",
+  "output_csv": "pv_corr_state_p0_fields_runtime_v1.csv",
+  "header_file": "pv_corr_state_p0_fields_output_header_v1.txt",
+  "notes_file": "pv_corr_state_p0_runtime_notes_v1.md",
+  "append_acceptance_file": "pv_corr_state_p0_runtime_append_acceptance_v1.md",
+  "bar_window_input_contract_file": "pv_corr_state_p0_bar_window_input_contract_v1.md",
+  "bar_window_input_header_file": "pv_corr_state_p0_bar_window_input_header_v1.txt",
+  "bar_window_sample_schema_file": "pv_corr_state_p0_bar_window_sample_schema_v1.md",
+  "bar_window_sample_input_csv": "real_input_samples\\pv_corr_state_p0_bar_window_sample_input_v1.csv",
+  "bar_window_sample_validator_file": "pv_corr_state_p0_validate_bar_window_sample_v1.py",
+  "bar_window_sample_acceptance_file": "pv_corr_state_p0_bar_window_sample_acceptance_v1.md",
+  "bar_window_mapping_validator_file": "pv_corr_state_p0_validate_bar_window_mapping_v1.py",
+  "bar_window_mapping_acceptance_file": "pv_corr_state_p0_bar_window_mapping_acceptance_v1.md",
+  "append_compatibility_validator_file": "pv_corr_state_p0_validate_append_compatibility_v1.py",
+  "append_compatibility_acceptance_file": "pv_corr_state_p0_append_compatibility_acceptance_v1.md",
+  "simulate_append_diff_file": "pv_corr_state_p0_simulate_append_diff_v1.py",
+  "simulate_append_diff_acceptance_file": "pv_corr_state_p0_simulate_append_diff_acceptance_v1.md",
+  "replay_preview_export_file": "pv_corr_state_p0_export_replay_preview_v1.py",
+  "replay_preview_csv": "pv_corr_state_p0_replay_preview_rows_v1.csv",
+  "replay_preview_acceptance_file": "pv_corr_state_p0_replay_preview_acceptance_v1.md",
+  "replay_preview_acceptance_validator_file": "pv_corr_state_p0_validate_replay_preview_acceptance_v1.py",
+  "replay_preview_acceptance_validation_file": "pv_corr_state_p0_replay_preview_acceptance_validation_v1.md",
+  "replay_chain_validator_file": "pv_corr_state_p0_validate_replay_chain_v1.py",
+  "replay_chain_acceptance_file": "pv_corr_state_p0_replay_chain_acceptance_v1.md",
+  "chain_summary_export_file": "pv_corr_state_p0_export_chain_summary_index_v1.py",
+  "chain_summary_index_file": "pv_corr_state_p0_chain_summary_index_v1.md",
+  "chain_summary_acceptance_compare_validator_file": "pv_corr_state_p0_validate_chain_summary_acceptance_compare_v1.py",
+  "chain_summary_acceptance_compare_file": "pv_corr_state_p0_chain_summary_acceptance_compare_v1.md",
+  "manifest_freeze_export_file": "pv_corr_state_p0_export_manifest_freeze_v1.py",
+  "manifest_freeze_file": "pv_corr_state_p0_manifest_freeze_v1.md",
+  "proof_input_csv": "real_input_samples\\pv_corr_state_p0_proof_input_v1.csv",
+  "proof_output_csv": "real_input_samples\\pv_corr_state_p0_proof_output_v1.csv",
+  "pv_config": {
+    "corr_threshold": 0.30
+  },
+  "bar_window_interface": {
+    "binding_state": "unbound",
+    "source_kind": "pending_bar_window_series",
+    "window_bars_field": "window_bars",
+    "corr_field": "pv_corr_score",
+    "price_change_field": "price_net_change",
+    "volume_change_field": "volume_net_change",
+    "append_target": "pv_corr_state_p0_fields_runtime_v1.csv"
+  },
+  "data_contract": {
+    "allow_placeholder_row": false,
+    "placeholder_trade_id": "__PLACEHOLDER__",
+    "empty_value": "unknown",
+    "pv_sync_state_values": [
+      "confirm",
+      "diverge",
+      "neutral",
+      "unknown"
+    ],
+    "pv_pressure_bias_values": [
+      "up_confirm",
+      "down_confirm",
+      "mixed",
+      "none",
+      "unknown"
+    ],
+    "pv_extreme_flag_values": [
+      "price_up_volume_down",
+      "price_down_volume_up",
+      "none",
+      "unknown"
+    ],
+    "pv_model_state_values": [
+      "valid",
+      "invalid",
+      "unknown"
+    ]
+  },
+  "execution_boundary": {
+    "append_from_proof_only": true,
+    "allow_live_binding": false,
+    "allow_signal_generation": false,
+    "allow_bar_window_append": false
+  }
+}

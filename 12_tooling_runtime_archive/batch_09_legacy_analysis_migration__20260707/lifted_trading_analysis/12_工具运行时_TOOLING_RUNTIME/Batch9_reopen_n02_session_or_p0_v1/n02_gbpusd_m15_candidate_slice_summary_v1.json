@@ -1,0 +1,41 @@
+{
+  "producer": "n02_gbpusd_m15_candidate_slice_build_v1.py",
+  "scope": "REOPEN_B9_N02_GBPUSD_M15_CANDIDATE_SLICE",
+  "status": "fresh_run_candidate_slice_from_mixed_runtime",
+  "evidence_mode": "fresh_run_filtered_from_candidate_runtime_copy_plus_append",
+  "source_path": {
+    "or_candidate_runtime_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_p0_fields_runtime_gbpusd_m15_candidate_v1.csv",
+    "ib_candidate_runtime_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_fields_runtime_gbpusd_m15_candidate_v1.csv"
+  },
+  "repo_path": {
+    "or_slice_runtime_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_p0_fields_runtime_gbpusd_m15_slice_v1.csv",
+    "ib_slice_runtime_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_fields_runtime_gbpusd_m15_slice_v1.csv",
+    "summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_gbpusd_m15_candidate_slice_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:04:44Z",
+  "boundary": {
+    "symbol": "GBPUSD",
+    "timeframe": "M15",
+    "writes_main_runtime": false,
+    "is_slice_only": true,
+    "includes_failed_breakout": false
+  },
+  "or_input_rows": 622,
+  "or_slice_rows": 457,
+  "or_defined_rows": 396,
+  "ib_input_rows": 595,
+  "ib_slice_rows": 457,
+  "ib_defined_rows": 396,
+  "session_ids": [
+    "london",
+    "new_york"
+  ],
+  "or_date_range": {
+    "first_bar_time": "2021-06-15T07:30:00Z",
+    "last_bar_time": "2022-03-18T14:00:00Z"
+  },
+  "ib_date_range": {
+    "first_local_date": "2021-06-15",
+    "last_local_date": "2022-03-18"
+  }
+}

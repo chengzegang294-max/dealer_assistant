@@ -1,0 +1,74 @@
+{
+  "producer": "n02_second_fx_subhour_terminal_export_insufficient_build_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SUBHOUR_TERMINAL_EXPORT_INSUFFICIENT_P0",
+  "generated_at_utc": "2026-07-05T09:40:30Z",
+  "inputs": {
+    "archive_root": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\mt5_bar_export\\fix2_gbpusd_m15_short_tmgm_20260705T1737",
+    "run_summary_json": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\mt5_bar_export\\fix2_gbpusd_m15_short_tmgm_20260705T1737\\run_summary.json",
+    "tester_log": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\mt5_bar_export\\fix2_gbpusd_m15_short_tmgm_20260705T1737\\log\\20260705.log",
+    "compile_log": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_02_mt_indicator_family\\metaeditor_compile_MT5BarExportProbe.log",
+    "mq5": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_02_mt_indicator_family\\MT5BarExportProbe.mq5",
+    "ini": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_02_mt_indicator_family\\MT5BarExportProbe.ini",
+    "run_ps1": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\run_mt5_bar_export_once.ps1"
+  },
+  "output_paths": {
+    "summary_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_terminal_export_insufficient_summary_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_terminal_export_insufficient_summary_v1.json"
+  },
+  "terminal_export_run": {
+    "archive_tag": "fix2_gbpusd_m15_short_tmgm_20260705T1737",
+    "environment_label": "TradeMaxGlobal-Demo__60088394",
+    "chart_period": "M15",
+    "from_date": "2024.01.01",
+    "to_date": "2024.01.08",
+    "process_exited": true,
+    "report_fallback_attempted": true,
+    "runtime_set_write_mode": "written"
+  },
+  "tester_observation": {
+    "block_marker": "testing of Experts\\MT5BarExportProbe.ex5 from 2024.01.01 00:00 to 2024.01.08 00:00",
+    "input_export_tf_value": 15,
+    "ondeinit_reason": 1,
+    "done_file_name": "MT5_bars_export_GBPUSD_M15_20240105_230059__42162.csv",
+    "copied_bars": 2287,
+    "bars_value": 2287,
+    "export_tf": "PERIOD_M15",
+    "chart_tf": "PERIOD_M15",
+    "ticks_generated": 289461,
+    "bars_generated": 96
+  },
+  "csv_analysis": {
+    "csv_path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\MT5_bars_export_GBPUSD_M15_20240105_230059__42162.csv",
+    "row_count": 2287,
+    "line_count": 2288,
+    "latest_bar_time_utc": "2024-01-05T23:00:00Z",
+    "earliest_bar_time_utc": "2023-01-02T00:00:00Z",
+    "step_minutes_histogram": {
+      "60": 2094,
+      "1440": 140,
+      "2940": 15,
+      "4320": 35,
+      "4380": 2
+    },
+    "unique_minute_components": [
+      "00"
+    ],
+    "has_subhour_minute_component": false,
+    "has_15m_spacing": false,
+    "has_hourly_spacing": true
+  },
+  "gate": {
+    "status": "terminal_export_completed_but_subhour_not_observed",
+    "terminal_export_run_succeeded": true,
+    "requested_symbol": "GBPUSD",
+    "requested_timeframe": "M15",
+    "do_not_ingest_current_export": true,
+    "observed_subhour_output": false,
+    "observed_output_is_hourly_only": true,
+    "preferred_next_step": "build_or_reuse_hcc_reader_then_convert_to_canonical_bars",
+    "blocked_reason": "terminal_export_csv_for_requested_m15_still_contains_hourly_only_timestamps",
+    "writes_main_m1_runtime": false,
+    "is_acquisition_only": true,
+    "declares_canonical_export_done": false
+  }
+}

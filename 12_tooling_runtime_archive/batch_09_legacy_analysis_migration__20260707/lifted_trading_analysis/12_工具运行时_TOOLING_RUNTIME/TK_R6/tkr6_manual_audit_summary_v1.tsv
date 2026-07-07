@@ -1,0 +1,6 @@
+ib_retest_quality	count	tp3_reached_count	tp3_reached_rate
+no_retest	0	0	0.0000
+retest_touch_only	0	0	0.0000
+retest_reject_weak	0	0	0.0000
+retest_reject_clear	0	0	0.0000
+unknown	1	0	0.0000

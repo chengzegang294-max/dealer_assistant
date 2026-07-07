@@ -1,0 +1,238 @@
+{
+  "producer": "n02_second_fx_subhour_input_acquisition_build_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_ACQUISITION_P0",
+  "status": "fresh_run_second_fx_subhour_input_acquisition_summary",
+  "evidence_mode": "fresh_run_inventory_acquisition_without_polluting_main_m1_runtime",
+  "source_path": {
+    "data_root": "D:\\Stock\\trading_analysis\\data",
+    "mt4_history_dirs": [
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03"
+    ]
+  },
+  "repo_path": {
+    "summary_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_acquisition_summary_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_acquisition_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T16:54:40Z",
+  "boundary": {
+    "writes_main_m1_runtime": false,
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_acquisition_only": true
+  },
+  "data_inventory": {
+    "inventory_root": "D:\\Stock\\trading_analysis\\data",
+    "subhour_file_count": 11,
+    "subhour_symbols": [
+      "EURUSD"
+    ],
+    "subhour_timeframes": [
+      "M1",
+      "M5",
+      "M15"
+    ],
+    "matched_files": [
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\batch\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M15",
+        "relative_path": "mt_exports_drop\\batch9_n01_second_cycle\\eurusd_m15.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\batch_verify\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_fall_20251023_20251028\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_fall_20251023_20251028\\eurusd_m5.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_spring_20260327_20260331\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_spring_20260328_20260330\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "relative_path": "mt_exports_drop\\dst_windows\\ny_fall_20251031_20251104\\eurusd_m5.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\ny_spring_20260306_20260310\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\jobs\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\jobs_verify\\eurusd_m1.csv"
+      }
+    ]
+  },
+  "mt4_history_inventory": {
+    "history_dirs": [
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03"
+    ],
+    "subhour_file_count": 8,
+    "subhour_symbols": [
+      "EURUSD"
+    ],
+    "subhour_files": [
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD1.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M15",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD15.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M30",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD30.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD5.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD1.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M15",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD15.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M30",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD30.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD5.hst"
+      }
+    ],
+    "higher_tf_file_count": 10,
+    "higher_tf_symbols": [
+      "EURUSD",
+      "GBPUSD",
+      "USDCHF",
+      "USDJPY"
+    ],
+    "higher_tf_files": [
+      {
+        "symbol": "EURUSD",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD240.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "H1",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD60.hst"
+      },
+      {
+        "symbol": "GBPUSD",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "GBPUSD240.hst"
+      },
+      {
+        "symbol": "USDCHF",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "USDCHF240.hst"
+      },
+      {
+        "symbol": "USDJPY",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\03_MT4\u4fbf\u643a\u63a2\u9488\u5b9e\u4f8b\\history\\ICMarketsSC-Demo03",
+        "filename": "USDJPY240.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD240.hst"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "H1",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "EURUSD60.hst"
+      },
+      {
+        "symbol": "GBPUSD",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "GBPUSD240.hst"
+      },
+      {
+        "symbol": "USDCHF",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "USDCHF240.hst"
+      },
+      {
+        "symbol": "USDJPY",
+        "timeframe": "H4",
+        "history_dir": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\mt4_probe_instance\\history\\ICMarketsSC-Demo03",
+        "filename": "USDJPY240.hst"
+      }
+    ]
+  },
+  "acquisition_gate": {
+    "status": "blocked_by_missing_second_fx_subhour_across_known_sources",
+    "data_second_fx_subhour_symbols_excluding_eurusd": [],
+    "mt4_second_fx_subhour_symbols_excluding_eurusd": [],
+    "combined_second_fx_subhour_symbols_excluding_eurusd": [],
+    "known_higher_tf_fx_symbols_without_subhour": [
+      "GBPUSD",
+      "USDCHF",
+      "USDJPY"
+    ],
+    "blocked_reason": "known_data_and_mt4_history_sources_do_not_contain_second_fx_subhour_input",
+    "recommended_target_symbol": "GBPUSD",
+    "recommended_target_timeframe": "M15",
+    "recommended_target_reason": "gbpusd_is_already_the_selected_second_fx_h1_gate_symbol_and_m15_matches_existing_subhour_validation_style"
+  }
+}

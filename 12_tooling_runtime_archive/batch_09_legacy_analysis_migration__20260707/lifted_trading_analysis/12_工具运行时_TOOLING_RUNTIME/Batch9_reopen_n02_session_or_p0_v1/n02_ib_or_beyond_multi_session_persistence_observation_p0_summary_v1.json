@@ -1,0 +1,67 @@
+{
+  "producer": "n02_ib_or_multi_session_persistence_and_stability_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BEYOND_MULTI_SESSION_PERSISTENCE_P0",
+  "status": "fresh_run_second_next_session_first_30m_observation",
+  "evidence_mode": "fresh_run_derived_from_next_session_success_rows_and_second_next_session_bars",
+  "source_path": {
+    "input_observation_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_continuation_observation_p0_sample_v1.csv",
+    "bars_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv"
+  },
+  "repo_path": {
+    "output_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_multi_session_persistence_observation_p0_sample_v1.csv",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_multi_session_persistence_observation_p0_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T04:07:09Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "observation_scope_second_next_session_first_30m_only": true
+  },
+  "rows": 2,
+  "status_counts": {
+    "second_next_session_first_30m_all_closes_beyond_prior_ib": 2
+  },
+  "direction_counts": {
+    "down": 1,
+    "up": 1
+  },
+  "mode_counts": {
+    "close": 1,
+    "wick": 1
+  },
+  "second_next_session_first_30m_bar_count_30_rows": 2,
+  "second_next_session_first_bar_expected_side_rows": 2,
+  "by_session": {
+    "new_york": {
+      "rows": 2,
+      "status_second_next_session_first_30m_all_closes_beyond_prior_ib": 2
+    }
+  },
+  "output_columns": [
+    "observation_id",
+    "observation_family",
+    "observation_level",
+    "observation_status",
+    "source_observation_id",
+    "source_candidate_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "prior_session_local_date",
+    "next_session_local_date",
+    "second_next_session_local_date",
+    "cross_direction",
+    "cross_mode",
+    "prior_ib_same_side_edge_value",
+    "second_next_session_open_utc",
+    "second_next_session_first_bar_open",
+    "second_next_session_first_bar_close",
+    "second_next_session_first_30m_bar_count",
+    "second_next_session_first_bar_expected_side",
+    "second_next_session_first_30m_all_closes_expected_side",
+    "second_next_session_first_30m_any_close_opposite_or_at_boundary",
+    "observation_scope"
+  ]
+}

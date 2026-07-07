@@ -1,0 +1,77 @@
+{
+  "producer": "n02_ib_or_or_break_only_same_day_session_close_split_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BREAK_ONLY_SESSION_CLOSE_NOT_BEYOND_OR_CARD_P0",
+  "status": "fresh_run_branch_card_summary",
+  "evidence_mode": "fresh_run_derived_from_or_break_only_same_day_session_close_candidates",
+  "source_path": {
+    "input_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_not_beyond_or_candidates_p0_sample_gbpusd_m15_slice_v1.csv"
+  },
+  "repo_path": {
+    "card_md": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_not_beyond_or_card_gbpusd_m15_slice_v1.md",
+    "summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_not_beyond_or_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:20:32Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_branch_card_only": true
+  },
+  "rows": 157,
+  "by_session": {
+    "london": {
+      "rows": 79,
+      "direction_up": 40,
+      "mode_close": 48,
+      "direction_down": 39,
+      "mode_wick": 31
+    },
+    "new_york": {
+      "rows": 78,
+      "direction_up": 41,
+      "mode_wick": 38,
+      "direction_down": 37,
+      "mode_close": 40
+    }
+  },
+  "direction_counts": {
+    "down": 76,
+    "up": 81
+  },
+  "mode_counts": {
+    "close": 88,
+    "wick": 69
+  },
+  "extension_bucket_counts": {
+    "0.00010_to_0.00049": 14,
+    "ge_0.00050": 136,
+    "lt_0.00010": 7
+  },
+  "input_columns": [
+    "candidate_id",
+    "candidate_family",
+    "candidate_level",
+    "candidate_status",
+    "source_candidate_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "first_break_direction",
+    "first_break_mode",
+    "break_bar_time_utc",
+    "break_trigger_price",
+    "or_break_edge_value",
+    "ib_same_side_edge_value",
+    "same_side_gap_to_ib_before_break",
+    "bars_after_break_count",
+    "return_inside_or_observed_same_day",
+    "first_return_inside_or_bar_time_utc",
+    "max_extension_price_same_day",
+    "max_extension_distance_over_or",
+    "session_close_price",
+    "session_close_beyond_or",
+    "observation_scope"
+  ]
+}

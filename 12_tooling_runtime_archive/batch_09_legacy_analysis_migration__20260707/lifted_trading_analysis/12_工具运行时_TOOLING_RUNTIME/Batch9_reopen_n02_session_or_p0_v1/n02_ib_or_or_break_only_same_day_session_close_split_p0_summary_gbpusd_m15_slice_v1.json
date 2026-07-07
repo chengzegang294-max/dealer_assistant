@@ -1,0 +1,71 @@
+{
+  "producer": "n02_ib_or_or_break_only_same_day_session_close_split_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BREAK_ONLY_SAME_DAY_SESSION_CLOSE_SPLIT_P0",
+  "status": "fresh_run_or_break_only_same_day_session_close_split",
+  "evidence_mode": "fresh_run_derived_from_or_break_only_candidates_and_same_day_bars",
+  "source_path": {
+    "or_break_only_candidates_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_candidates_p0_sample_gbpusd_m15_slice_v1.csv",
+    "bars_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_m15_v1.csv"
+  },
+  "repo_path": {
+    "return_inside_or_candidates_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_return_inside_or_same_day_candidates_p0_sample_gbpusd_m15_slice_v1.csv",
+    "session_close_beyond_or_candidates_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_beyond_or_candidates_p0_sample_gbpusd_m15_slice_v1.csv",
+    "session_close_not_beyond_or_candidates_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_not_beyond_or_candidates_p0_sample_gbpusd_m15_slice_v1.csv",
+    "summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_same_day_session_close_split_p0_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:20:32Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "same_day_only": true
+  },
+  "rows": 325,
+  "return_inside_or_observed_same_day_rows": 312,
+  "return_inside_or_observed_same_day_ratio": 0.96,
+  "session_close_beyond_or_rows": 168,
+  "session_close_beyond_or_ratio": 0.5169230769230769,
+  "session_close_not_beyond_or_rows": 157,
+  "session_close_not_beyond_or_ratio": 0.48307692307692307,
+  "by_session": {
+    "london": {
+      "rows": 167,
+      "return_inside_or_rows": 165,
+      "session_close_beyond_or_rows": 88,
+      "session_close_not_beyond_or_rows": 79
+    },
+    "new_york": {
+      "rows": 158,
+      "return_inside_or_rows": 147,
+      "session_close_beyond_or_rows": 80,
+      "session_close_not_beyond_or_rows": 78
+    }
+  },
+  "output_columns": [
+    "candidate_id",
+    "candidate_family",
+    "candidate_level",
+    "candidate_status",
+    "source_candidate_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "first_break_direction",
+    "first_break_mode",
+    "break_bar_time_utc",
+    "break_trigger_price",
+    "or_break_edge_value",
+    "ib_same_side_edge_value",
+    "same_side_gap_to_ib_before_break",
+    "bars_after_break_count",
+    "return_inside_or_observed_same_day",
+    "first_return_inside_or_bar_time_utc",
+    "max_extension_price_same_day",
+    "max_extension_distance_over_or",
+    "session_close_price",
+    "session_close_beyond_or",
+    "observation_scope"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "producer": "n02_second_fx_subhour_input_gate_build_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_GATE_P0",
+  "status": "fresh_run_second_fx_subhour_input_gate_summary",
+  "evidence_mode": "fresh_run_inventory_gate_without_polluting_main_m1_runtime",
+  "source_path": {
+    "data_root": "D:\\Stock\\trading_analysis\\data"
+  },
+  "repo_path": {
+    "summary_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_gate_summary_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_gate_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T16:41:49Z",
+  "boundary": {
+    "writes_main_m1_runtime": false,
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_input_gate_only": true
+  },
+  "inventory": {
+    "inventory_root": "D:\\Stock\\trading_analysis\\data",
+    "fx_subhour_file_count": 11,
+    "fx_subhour_symbols": [
+      "EURUSD"
+    ],
+    "fx_subhour_symbol_count": 1,
+    "fx_subhour_timeframes": [
+      "M1",
+      "M5",
+      "M15"
+    ],
+    "second_fx_subhour_symbols_excluding_eurusd": [],
+    "second_fx_subhour_symbol_count": 0,
+    "matched_files": [
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\batch\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M15",
+        "relative_path": "mt_exports_drop\\batch9_n01_second_cycle\\eurusd_m15.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\batch_verify\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_fall_20251023_20251028\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_fall_20251023_20251028\\eurusd_m5.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_spring_20260327_20260331\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\london_spring_20260328_20260330\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M5",
+        "relative_path": "mt_exports_drop\\dst_windows\\ny_fall_20251031_20251104\\eurusd_m5.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\dst_windows\\ny_spring_20260306_20260310\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\jobs\\eurusd_m1.csv"
+      },
+      {
+        "symbol": "EURUSD",
+        "timeframe": "M1",
+        "relative_path": "mt_exports_drop\\jobs_verify\\eurusd_m1.csv"
+      }
+    ]
+  },
+  "gate": {
+    "status": "blocked_by_missing_second_fx_subhour_input",
+    "blocked_reason": "data_root_has_fx_subhour_files_but_only_eurusd_is_present",
+    "candidate_symbols": []
+  }
+}

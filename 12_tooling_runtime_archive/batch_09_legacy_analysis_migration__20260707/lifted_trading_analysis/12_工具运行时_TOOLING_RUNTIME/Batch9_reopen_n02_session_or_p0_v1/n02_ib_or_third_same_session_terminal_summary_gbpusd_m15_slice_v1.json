@@ -1,0 +1,41 @@
+{
+  "producer": "n02_ib_or_third_same_session_terminal_summary_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_THIRD_SAME_SESSION_TERMINAL_SUMMARY_P0",
+  "status": "fresh_run_terminal_summary",
+  "evidence_mode": "fresh_run_derived_from_third_same_session_branch_cards",
+  "source_path": {
+    "beyond_card_summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_third_same_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+    "not_beyond_card_summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_not_beyond_third_same_session_stability_card_summary_gbpusd_m15_slice_v1.json"
+  },
+  "repo_path": {
+    "terminal_summary_md": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_third_same_session_terminal_summary_gbpusd_m15_slice_v1.md",
+    "terminal_summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_third_same_session_terminal_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:05:31Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_terminal_summary_only": true
+  },
+  "total_rows": 11,
+  "resolved_rows": 8,
+  "missing_rows": 3,
+  "beyond_rows": 2,
+  "beyond_persistent_rows": 1,
+  "beyond_failed_rows": 0,
+  "beyond_missing_rows": 1,
+  "not_beyond_rows": 9,
+  "not_beyond_stable_rows": 6,
+  "not_beyond_unstable_rows": 1,
+  "not_beyond_missing_rows": 2,
+  "beyond_status_counts": {
+    "missing_third_next_session_first_30m_data": 1,
+    "third_next_session_first_30m_all_closes_beyond_prior_ib": 1
+  },
+  "not_beyond_status_counts": {
+    "missing_third_next_session_first_30m_data": 2,
+    "third_next_session_first_30m_all_closes_inside_prior_ib": 6,
+    "third_next_session_first_30m_not_all_closes_inside_prior_ib": 1
+  }
+}

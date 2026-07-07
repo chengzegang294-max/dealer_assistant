@@ -1,0 +1,371 @@
+# n01_p0_runtime_append_acceptance v1
+
+- ARCHIVE_ONLY_RUNTIME_MIRROR: 本文件记录旧 `REOPEN_B9_N01_VOL_STATE_P0` runtime append 的历史验收结果，不作为当前默认验收入口。
+- 当前 repo-first 入口先看：
+  - `d:\Stock\trading_assistant\01_active_objects\`
+  - `d:\Stock\trading_assistant\02_runtime\`
+  - `d:\Stock\trading_assistant\04_active_main_docs\`
+
+## 目的
+
+- 记录 `REOPEN_B9_N01_VOL_STATE_P0` 首批 runtime append 证据的验收结论。
+- 把“proof 已存在”推进到“runtime csv 已有真实行且边界已写清”。
+
+## 本次验收对象
+
+- proof 输入：
+  - `real_input_samples\n01_proof_of_mapping_output_v1.csv`
+- append 脚本：
+  - `n01_p0_runtime_append_from_proof_v1.py`
+- runtime csv：
+  - `n01_p0_fields_runtime_v1.csv`
+
+## 验收结果
+
+- append 已在旧链路中成功落地。
+- 示例行已被真实 proof 行替换。
+- 当前 runtime csv 为：
+  - `EURUSD`
+  - `H1`
+  - `M15`
+  - `H4`
+  - `XAUUSD`
+  - `H1`
+  - `M15`
+  - `H4`
+  - `XBRUSD`
+  - `H1`
+  - `H4`
+  - `AAPL.NAS`
+  - `H1`
+  - `H4`
+  - `USTEC`
+  - `H1`
+  - `H4`
+  - `US500`
+  - `H1`
+  - `H4`
+  - `DE40`
+  - `H1`
+  - `H4`
+  - `JP225`
+  - `H1`
+  - `H4`
+  - `HK50`
+  - `H1`
+  - `H4`
+  - 跨品种 + 多周期 + 多资产类别（含多地区指数分支）真实 bars 输出
+- 本轮历史上已从“首批 append 验收”推进到：
+  - `atr_percentile` 真实值接入验收
+  - `atr_percentile_regime` 真实分档验收
+  - `squeeze_is_on / squeeze_tier / squeeze_fired` 真实值接入验收
+  - `compression_quality_score` 真实值接入验收
+  - 第二品种（`XAUUSD H1`）真实 append 验收
+  - 第二周期（`EURUSD M15 + XAUUSD M15`）真实 append 验收
+  - 第三周期（`EURUSD H4 + XAUUSD H4`）真实 append 验收
+  - 新资产类别（`XBRUSD H1 + XBRUSD H4`）真实 append 验收
+  - 股票类新资产类别（`AAPL.NAS H1 + AAPL.NAS H4`）真实 append 验收
+  - 指数类新资产类别（`USTEC H1 + USTEC H4`）真实 append 验收
+  - 指数分支扩样（`US500 H1 + US500 H4 + DE40 H1 + DE40 H4`）真实 append 验收
+  - 亚洲指数分支扩样（`JP225 H1 + JP225 H4`）真实 append 验收
+  - 港股指数分支扩样（`HK50 H1 + HK50 H4`）真实 append 验收
+  - `squeeze` 首批跨变体审计（`tier!=off` 对比 `mid-only`）证据
+  - `compression_quality_score` 首批跨变体审计与 `range_score` 去退化修正证据
+  - `compression_quality_score` 源码等价审计（参数/权重/阈值骨架对齐）证据
+  - `compression_state` 影子分箱审计（`62/80` 阈值，仅诊断不落盘）证据
+  - `strictMode v3` 多 AI 批次收口证据
+
+## strictMode 当前可接受口径
+
+- 当前多数意见已支持把这条线从：
+  - `threshold shift`
+  - vs `additional qualify conditions`
+  再收窄一层为：
+  - `threshold shift / tighter score gates` 更优先
+  - `additional qualify conditions` 作为次优残余可能
+  - `score formula / weights rewrite` 继续最不优先
+- 当前最稳保守写法继续保持：
+  - `strictMode = pocket/state qualify strictness`
+  - 且上游于 `Mature`
+- 当前仍不接受写满的部分：
+  - 不接受把它写成源码等价
+  - 不接受把 `additional qualify conditions` 彻底删除
+  - 不接受把 `delta` 数值、具体阈值位点或是否双阈值联动写死
+
+## 关键统计
+
+- `runtime_rows = 156300`
+- `AAPL.NAS H1 rows = 2517`
+- `AAPL.NAS H4 rows = 719`
+- `DE40 H1 rows = 8357`
+- `DE40 H4 rows = 2194`
+- `EURUSD H1 rows = 8976`
+- `EURUSD M15 rows = 35954`
+- `EURUSD H4 rows = 2248`
+- `HK50 H1 rows = 5977`
+- `HK50 H4 rows = 1879`
+- `JP225 H1 rows = 8574`
+- `JP225 H4 rows = 2230`
+- `US500 H1 rows = 8525`
+- `US500 H4 rows = 2230`
+- `USTEC H1 rows = 8524`
+- `USTEC H4 rows = 2230`
+- `XAUUSD H1 rows = 8537`
+- `XAUUSD M15 rows = 34142`
+- `XAUUSD H4 rows = 2235`
+- `XBRUSD H1 rows = 8016`
+- `XBRUSD H4 rows = 2236`
+- `AAPL.NAS H1 atr_percentile_non_na = 2253`
+- `AAPL.NAS H4 atr_percentile_non_na = 455`
+- `DE40 H1 atr_percentile_non_na = 8093`
+- `DE40 H4 atr_percentile_non_na = 1930`
+- `EURUSD H1 atr_percentile_non_na = 8712`
+- `EURUSD M15 atr_percentile_non_na = 35690`
+- `EURUSD H4 atr_percentile_non_na = 1984`
+- `HK50 H1 atr_percentile_non_na = 5713`
+- `HK50 H4 atr_percentile_non_na = 1615`
+- `JP225 H1 atr_percentile_non_na = 8310`
+- `JP225 H4 atr_percentile_non_na = 1966`
+- `US500 H1 atr_percentile_non_na = 8261`
+- `US500 H4 atr_percentile_non_na = 1966`
+- `USTEC H1 atr_percentile_non_na = 8260`
+- `USTEC H4 atr_percentile_non_na = 1966`
+- `XAUUSD H1 atr_percentile_non_na = 8273`
+- `XAUUSD M15 atr_percentile_non_na = 33878`
+- `XAUUSD H4 atr_percentile_non_na = 1971`
+- `XBRUSD H1 atr_percentile_non_na = 7752`
+- `XBRUSD H4 atr_percentile_non_na = 1972`
+- `AAPL.NAS H1 squeeze_is_on_1 = 966`
+- `AAPL.NAS H4 squeeze_is_on_1 = 171`
+- `DE40 H1 squeeze_is_on_1 = 4080`
+- `DE40 H4 squeeze_is_on_1 = 888`
+- `EURUSD H1 squeeze_is_on_1 = 4777`
+- `EURUSD M15 squeeze_is_on_1 = 19248`
+- `EURUSD H4 squeeze_is_on_1 = 1126`
+- `HK50 H1 squeeze_is_on_1 = 2375`
+- `HK50 H4 squeeze_is_on_1 = 695`
+- `JP225 H1 squeeze_is_on_1 = 3818`
+- `JP225 H4 squeeze_is_on_1 = 1070`
+- `US500 H1 squeeze_is_on_1 = 3958`
+- `US500 H4 squeeze_is_on_1 = 930`
+- `USTEC H1 squeeze_is_on_1 = 3836`
+- `USTEC H4 squeeze_is_on_1 = 882`
+- `XAUUSD H1 squeeze_is_on_1 = 4299`
+- `XAUUSD M15 squeeze_is_on_1 = 18562`
+- `XAUUSD H4 squeeze_is_on_1 = 999`
+- `XBRUSD H1 squeeze_is_on_1 = 3748`
+- `XBRUSD H4 squeeze_is_on_1 = 981`
+- `AAPL.NAS H1 squeeze_fired_1 = 78`
+- `AAPL.NAS H4 squeeze_fired_1 = 19`
+- `DE40 H1 squeeze_fired_1 = 273`
+- `DE40 H4 squeeze_fired_1 = 80`
+- `EURUSD H1 squeeze_fired_1 = 302`
+- `EURUSD M15 squeeze_fired_1 = 1250`
+- `EURUSD H4 squeeze_fired_1 = 79`
+- `HK50 H1 squeeze_fired_1 = 205`
+- `HK50 H4 squeeze_fired_1 = 73`
+- `JP225 H1 squeeze_fired_1 = 300`
+- `JP225 H4 squeeze_fired_1 = 73`
+- `US500 H1 squeeze_fired_1 = 293`
+- `US500 H4 squeeze_fired_1 = 80`
+- `USTEC H1 squeeze_fired_1 = 299`
+- `USTEC H4 squeeze_fired_1 = 81`
+- `XAUUSD H1 squeeze_fired_1 = 285`
+- `XAUUSD M15 squeeze_fired_1 = 1139`
+- `XAUUSD H4 squeeze_fired_1 = 75`
+- `XBRUSD H1 squeeze_fired_1 = 288`
+- `XBRUSD H4 squeeze_fired_1 = 91`
+- `EURUSD H1 squeeze_tier_counts = off:4199 / low:2372 / medium:2123 / high:282`
+- `EURUSD M15 squeeze_tier_counts = off:16706 / low:10114 / medium:7905 / high:1229`
+- `XAUUSD H1 squeeze_tier_counts = off:4238 / low:2240 / medium:1791 / high:268`
+- `XAUUSD M15 squeeze_tier_counts = off:15580 / low:9675 / medium:7984 / high:903`
+- `squeeze_variant_audit current_any_on = 77409`
+- `squeeze_variant_audit mid_only_on = 36329`
+- `squeeze_variant_audit on_diff = 41080`
+- `squeeze_variant_audit current_any_fired = 5363`
+- `squeeze_variant_audit mid_only_fired = 4907`
+- `squeeze_variant_audit fired_diff = 456`
+- `squeeze_tier_totals = off:78891 / low:41080 / medium:32135 / high:4194`
+- `compression_range_score_pre_fix_mean = 0.00`
+- `compression_range_score_post_scale_fix_mean = 100.00`
+- `compression_range_score_post_threshold_fix_mean = 57.85`
+- `compression_subscore_means_after_fix = atr:33.54 / range:57.85 / noise:48.33 / contain:60.72`
+- `compression_variant_audit current_mean = 49.23`
+- `compression_variant_audit equal_weight_mean = 50.11`
+- `compression_variant_audit no_containment_mean = 45.27`
+- `compression_variant_audit corr_equal_weight = 0.9957`
+- `compression_variant_audit corr_no_containment = 0.9626`
+- `compression_variant_audit mad_equal_weight = 2.12`
+- `compression_variant_audit mad_no_containment = 5.19`
+- `compression_source_audit matched_params = atrLen:14 / baselineLen:50 / rangeWindow:20 / noiseWindow:10 / containmentWindow:24`
+- `compression_source_audit matched_weights = atr:30 / range:30 / noise:20 / containment:20`
+- `compression_source_audit matched_thresholds = compressionThreshold:62 / matureThreshold:80`
+- `compression_source_audit unmatched_core = range/noise/containment exact formulas / strictMode / action engine / state machine branches`
+- `compression_state_shadow_totals = Loose:118973 / Building:18035 / Tight:13851 / Mature:4201`
+- `compression_state_shadow_examples = EURUSD H1 -> 6774/1183/813/144 ; EURUSD M15 -> 25251/4214/4503/1924 ; XAUUSD H1 -> 6710/1045/645/75 ; DE40 H1 -> 6645/900/590/160`
+- `EURUSD H1 regime_counts = unknown:264 / normal:3300 / calm:1850 / squeeze:1050 / elevated:1571 / extreme:941`
+- `EURUSD M15 regime_counts = unknown:264 / extreme:4060 / elevated:7240 / normal:13131 / calm:7003 / squeeze:4256`
+- `XAUUSD H1 regime_counts = unknown:264 / squeeze:1072 / calm:1543 / normal:2961 / elevated:1527 / extreme:1170`
+- `XAUUSD M15 regime_counts = unknown:264 / normal:12372 / calm:6744 / squeeze:4102 / elevated:6754 / extreme:3906`
+- `last_bar_time = 2026-06-12T14:00:00Z`
+
+## 当前可接受结论
+
+- `atr_value` 已具备首批真实 runtime append 证据。
+- `atr_ratio` 已具备首批真实 runtime append 证据。
+- `atr_percentile` 已具备首批真实 runtime append 证据。
+- `atr_percentile_regime` 已具备首批真实 runtime append 证据。
+- `squeeze_is_on / squeeze_tier / squeeze_fired` 已具备首批真实 runtime append 证据。
+- `squeeze` 已具备首批跨变体审计证据：`tier!=off` 相比 `mid-only` 明显放宽 `on` 覆盖，但对 `fired` 的放大量相对有限。
+- `compression_quality_score` 已具备首批真实 runtime append 证据。
+- `compression_quality_score` 已具备首批跨变体审计与去退化修正证据：`range_score` 先从全局失效项修到同尺度，再把阈值收敛到真实分布附近，当前四项子评分均已具备非退化分布。
+- `compression_quality_score` 已完成第一轮源码等价审计：当前实现已对齐 AG Pro 的参数窗口、权重结构与状态阈值骨架，但仍不是核心计算段逐项等价。
+- `compression_quality_score` 已完成第二轮细化审计：
+  - `atrScore` 已锁定为“高语义对齐，但 `0.60/1.10` 仍是工程冻结阈值”
+  - `rangeScore` 已锁定为“窗口骨架对齐，但 `baseline_range=sum(tr_window)` 与 `0.17/0.34` 仍属工程代理”
+  - `noiseScore` 已锁定为“覆盖 body + flips，但仍缺源码级 `drift` 与精确权重”
+  - `containmentScore` 已锁定为“覆盖 pocket containment 语义，但当前 `25%-75% close-only` 仍非源码等价”
+  - 因而当前总分只能写成“结构对齐后的 AG-Pro-like 连续分数”
+- `compression_state` 已具备影子分箱证据：当前 `compression_quality_score + 62/80` 阈值能够在 20 组样本上产生稳定四档分布，但在核心公式未完成逐项等价前仍不提前落盘。
+- `compression_quality_score / compression_state` 的等价矩阵已固化到 runtime notes：已对齐、半对齐、缺源码无法判定三类边界已明确。
+- `compression_state` 的不等价边界已进一步固化：
+  - `Loose / Building / Tight / Mature` 枚举骨架可保留
+  - `Building/Tight` 的中间切点 `70` 仍只是影子诊断切点
+  - `Mature` 所需的 `noise/containment confirm` 已确认是来源语义要求，但仍未实现成可审计门槛
+  - `strictMode` 已确认作用方向是“收紧 score gates”，但仍未绑定到具体 gating 规则
+  - `Action Engine` 已确认存在 `Watch Edge / Monitor Mature / Track Compression / Build Context` 等建议层分支，但当前不进入 P0 字段
+  - 公开页正文还确认存在 `Compression Mature / Compression State Change` 告警语义，说明内部状态迁移可稳定暴露，但仍不等于拿到状态机源码
+  - 公开页更新日志还确认：
+    - `resolved compression areas` 存在
+    - preview labels 可在非 active 时继续显示，但不能被视为 active confirmation
+  - 因而当前继续维持：
+    - `active pocket / active state` 属于主状态层
+    - `resolved/archive/preview/action labels` 属于展示或后处理层
+  - 参数面板分层还确认：
+    - `strictMode` 属于 `Core Engine`
+    - `showPocket / archivePockets / projectPocketBars` 属于 `Compression Pocket Visuals`
+  - 因而当前把 `strictMode` 继续视为核心资格/过滤层输入，不视为展示开关
+  - 公开页总述还把 `display controls` 与 `advanced options` 分开，因此当前也不把 `strictMode` 视为 labels/panel/theme 一类显示链路开关
+  - `strictMode` 参数描述还直接写到 `more selective compression pockets`，再结合公开页开头强调 `cleaner, more contained compression conditions`，以及 `matureThreshold` 写明 `noise and containment confirm`，因此当前更优先怀疑它会收紧 contained pocket / pocket qualify，而不只是 active/mature 后置 gating
+  - 这层边界本轮又继续收窄为：
+    - 更先收紧 `close-overlap` 这一前置敏感度子门
+    - 再进入 `pocket qualify`
+    - 再影响 `contained pocket / containment quality`
+    - `Mature gating` 更像其下游结果层
+  - 这一步的额外依据是：
+    - 原始页面把 `local overlap behavior` 放在 `Noise evaluation`
+    - 把 `Structural containment` 单列为后一项
+    - 因而 `close-overlap` 当前更像前置过滤输入，`contained pocket` 更像被筛后的结构结果
+    - `Key Inputs` 又明确写到：
+      - `stricter filtering`
+      - `additional sensitivity controls for ... close-overlap behavior`
+    - 因而当前更不把 `close-overlap` 直接等同于 `pocket qualify` 条件名本身
+    - 也不把 `strictMode` 直接写成 `close-overlap` 旋钮本身
+    - 更保守的口径是：
+      - `strictMode` 属于更总括的 filtering/gating 开关
+      - `close-overlap behavior` 属于同组但相对独立的 sensitivity input
+    - 句式本身也支持这种拆分：
+      - `stricter filtering`
+      - `and additional sensitivity controls for wick behavior and close-overlap behavior`
+    - 因而当前更优先把二者视为并列能力，而不是把 `strictMode` 直接等同于 `close-overlap sensitivity`
+    - 若再细一层，当前更优先写成：
+      - `close-overlap` 更偏 feature-level sensitivity
+      - `strictMode` 更偏 policy-level gating / qualify strictness
+      - 二者更可能在 `shared pocket qualify` 一侧汇合
+    - 当前更优先把 `close-overlap` 视为：进入 `pocket qualify` 之前的可调 sensitivity input
+    - 再把 `strictMode` 视为：同组 advanced filtering family 中更总括的 qualify/gating 收紧
+  - 同时 `projectPocketBars` 更像 pocket 区域的展示延伸控制，不视为 `releaseUp / releaseDown` 的触发证据
+  - 源码结构顺序还确认：
+    - `Scoring engine + State machine` 在前
+    - `Pocket detection + Archive management` 在中
+    - `Action Engine + Event Labels` 在后
+  - `batch9_sources_kimi` 还把：
+    - `State 判定`
+    - `Action Engine 输出`
+    明确写成前后两个章节
+  - 因而当前顺序可继续写死为：
+    - `compressionScore -> state bucket -> isMature/isTight/isBuilding -> action labels`
+    - `noise + containment -> Mature confirm` 位于 `release/nearEdge` 之前
+  - 因而当前把 `releaseUp / releaseDown` 继续视为状态机之后的下游解释层，不把它们倒推成 state/pocket qualify 前置条件
+  - 页面还直接声明 `It does not attempt to forecast direction`，因此当前也不把 `releaseUp / releaseDown` 解释成 breakout direction prediction
+  - 后续追索顺序当前固定为：
+    - 先追 `close-overlap` 作为 sensitivity input
+    - 再追 `strictMode` 是否额外收紧 qualify/gating
+    - 再追它们是否共同进入 `shared pocket qualify`
+    - 再追 `contained pocket`
+    - 再追 `noise + containment -> Mature confirm`
+  - `strictMode_kimi_followup` 的 v1 回帖当前可吸收为：
+    - 继续支持 `strictMode != close-overlap sensitivity`
+    - 继续支持 `close-overlap sensitivity + strictMode broader gating -> pocket qualify -> contained pocket -> Mature`
+    - 继续支持 `strictMode` 不应先锁死为 `Mature` 末端 gating
+  - 同时外部回帖也再次确认：
+    - `strictMode` 的精确实现方式
+    - `close-overlap sensitivity` 的注入位置
+    - 二者是否 additive / multiplicative / 独立并列
+    当前仍都属于 `NEED_EVIDENCE`
+  - 但基于当前参数区与公开页正文，`close-overlap sensitivity` 的归属当前可进一步收紧为：
+    - 更优先怀疑属于 `Noise evaluation` 一侧的 feature-level sensitivity
+    - 再经 `shared pocket qualify` 间接影响 `contained pocket`
+    - 暂不优先写成 `Structural containment` 主归属
+  - `strictMode_kimi_followup` 的 v2 回帖当前还可继续吸收为：
+    - `Q1=B; Q2=A; Q3=A; Q4=C`
+    - 这进一步支持：
+      - `close-overlap = feature-level sensitivity`
+      - `strictMode = policy-level gating / qualify strictness`
+      - `strictMode + close-overlap` 更可能共同汇入 `shared pocket qualify`
+    - 当前也进一步不优先写成：
+      - `strictMode == close-overlap sensitivity`
+      - `strictMode -> Mature only`
+  - 在“具体机制”层，当前还能再保守收紧一条：
+    - `score formula / weights rewrite` 是当前最不优先机制
+    - 当前更优先顺序是：
+      - 先 `threshold shift / qualify strictness`
+      - 再 `additional qualify conditions`
+      - 最后才 `score formula / weights rewrite`
+    - `strictMode_kimi_followup` 的 v3 问题包本轮再次检查仍无回帖
+    - 因而当前可继续接受的最稳写法只是：
+      - `strictMode` 更像 `pocket/state qualify strictness`
+      - `threshold shift` 与 `additional qualify conditions` 都仍保留
+      - 但二者先后顺序仍属 `NEED_EVIDENCE`
+    - 最后追 `releaseUp / releaseDown` 与 resolved pocket 退出事件
+- `AAPL.NAS H1` 已具备股票类新资产类别真实 runtime append 证据。
+- `AAPL.NAS H4` 已具备股票类更高周期真实 runtime append 证据。
+- `USTEC H1` 已具备指数类新资产类别真实 runtime append 证据。
+- `USTEC H4` 已具备指数类更高周期真实 runtime append 证据。
+- `US500 H1 / H4` 已具备指数分支真实 runtime append 证据。
+- `DE40 H1 / H4` 已具备欧洲指数分支真实 runtime append 证据。
+- `JP225 H1 / H4` 已具备亚洲指数分支真实 runtime append 证据。
+- `HK50 H1 / H4` 已具备港股指数分支真实 runtime append 证据。
+- `XAUUSD H1` 已具备第二品种真实 runtime append 证据。
+- `EURUSD M15 + XAUUSD M15` 已具备第二周期真实 runtime append 证据。
+- `EURUSD H4 + XAUUSD H4` 已具备第三周期真实 runtime append 证据。
+- `XBRUSD H1 + XBRUSD H4` 已具备原油类新资产类别真实 runtime append 证据。
+- 当前 runtime csv 已不再只是格式锚点。
+- 这一步足以支撑：
+  - “N01 已有真实 append 证据”
+  - “N01 已完成 atr_percentile 字段级补缺验收”
+  - “N01 已完成 squeeze 三字段真实值接入验收”
+  - “N01 已完成 compression_quality_score 真实值接入验收”
+  - “N01 已完成多周期 + 多资产类别扩样（`EURUSD/XAUUSD` × `H1/M15/H4` + `XBRUSD H1/H4` + `AAPL.NAS H1/H4` + `USTEC/US500/DE40/JP225/HK50 H1/H4`）”
+  - 但不足以支撑“vol state 全字段已完成”
+
+## 当前不通过项
+
+- `compression_quality_score` 当前已完成去退化修正与首批跨变体审计，但仍未完成与原脚本源码的逐项等价审计。
+- `compression_state` 当前仍未实现；虽然阈值 `62/80` 已完成来源绑定，但 `70` 仍只是影子诊断切点，且在 `noise/containment confirm`、`strictMode` 未绑定前不提前落盘。
+- `strictMode`
+  - 已知来源页存在，且已确认其作用方向为“收紧 score gates”
+  - 但当前既未实现，也没有足够证据冻结其精确收紧规则。
+- `atr_contraction_score / range_tightness_score / noise_cleanliness_score / containment_score`
+  - 仍未作为独立字段落盘（当前只输出合成分数）。
+- 当前 `squeeze` 相关字段已完成首批 `current_any_vs_mid_only` 一致性审计，但仍未覆盖更广 TTM 变体或源码等价审计。
+
+## 本次验收结论
+
+- 通过：
+  - `runtime append skeleton -> first real append evidence`
+  - `atr_percentile real-value acceptance`
+  - `squeeze real-value acceptance`
+- 未通过：
+  - `full N01 runtime validation`
+  - `full vol-state field completion`

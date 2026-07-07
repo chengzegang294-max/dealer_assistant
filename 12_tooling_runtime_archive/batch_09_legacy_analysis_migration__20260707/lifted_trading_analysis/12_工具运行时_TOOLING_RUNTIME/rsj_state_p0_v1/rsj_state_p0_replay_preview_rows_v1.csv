@@ -1,0 +1,4 @@
+trade_id,rsj_score,rsj_state,rsj_extreme_flag,rsj_timing_bias,rsj_model_state,proof_basis
+RSJ_RAW_SAMPLE_001,0.6727,warm,extreme_high,risk_on,valid,rv_up_gt_rv_down_strong
+RSJ_RAW_SAMPLE_002,0.0200,neutral,none,wait,valid,balanced_window
+RSJ_RAW_SAMPLE_003,-0.6800,cold,extreme_low,risk_off,valid,rv_down_gt_rv_up_strong

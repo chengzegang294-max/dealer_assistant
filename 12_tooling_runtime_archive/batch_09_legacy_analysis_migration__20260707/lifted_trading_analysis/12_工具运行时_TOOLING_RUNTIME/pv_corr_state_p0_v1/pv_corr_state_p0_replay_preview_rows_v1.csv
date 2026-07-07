@@ -1,0 +1,4 @@
+trade_id,pv_sync_state,pv_pressure_bias,pv_extreme_flag,pv_model_state,proof_basis
+PVC_BAR_SAMPLE_001,confirm,up_confirm,none,valid,strong_positive_corr_same_direction
+PVC_BAR_SAMPLE_002,diverge,mixed,price_up_volume_down,valid,strong_corr_opposite_direction
+PVC_BAR_SAMPLE_003,neutral,none,price_down_volume_up,valid,low_absolute_corr

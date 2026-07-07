@@ -1,0 +1,4 @@
+trade_id,symbol,timeframe,bar_time,window_bars,pv_corr_score,price_net_change,volume_net_change,input_volume_kind,input_source_tier,input_note
+PVC_BAR_SAMPLE_001,EURUSD,H1,2026-06-19T00:00:00Z,24,0.68,0.0120,1540,tick_volume,synthetic_window,confirm_up_demo_window
+PVC_BAR_SAMPLE_002,XAUUSD,H1,2026-06-19T04:00:00Z,24,-0.57,0.0090,-1210,synthetic_volume,synthetic_window,diverge_demo_window
+PVC_BAR_SAMPLE_003,USDJPY,H1,2026-06-19T08:00:00Z,24,0.08,-0.0015,140,tick_volume,pending_real_binding,neutral_demo_window

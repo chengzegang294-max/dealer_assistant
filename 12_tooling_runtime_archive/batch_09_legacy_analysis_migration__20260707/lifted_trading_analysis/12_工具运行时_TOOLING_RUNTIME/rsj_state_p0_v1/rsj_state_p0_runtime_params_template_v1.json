@@ -1,0 +1,85 @@
+{
+  "version": "v1",
+  "type_id": "RSJ_STATE",
+  "candidate_id": "RSJ_STATE_P0",
+  "runtime_dir": ".\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\rsj_state_p0_v1",
+  "output_csv": "rsj_state_p0_fields_runtime_v1.csv",
+  "header_file": "rsj_state_p0_fields_output_header_v1.txt",
+  "notes_file": "rsj_state_p0_runtime_notes_v1.md",
+  "append_acceptance_file": "rsj_state_p0_runtime_append_acceptance_v1.md",
+  "raw_window_input_contract_file": "rsj_state_p0_raw_window_input_contract_v1.md",
+  "raw_window_input_header_file": "rsj_state_p0_raw_window_input_header_v1.txt",
+  "raw_window_sample_schema_file": "rsj_state_p0_raw_window_sample_schema_v1.md",
+  "raw_window_sample_input_csv": "real_input_samples\\rsj_state_p0_raw_window_sample_input_v1.csv",
+  "raw_window_sample_validator_file": "rsj_state_p0_validate_raw_window_sample_v1.py",
+  "raw_window_sample_acceptance_file": "rsj_state_p0_raw_window_sample_acceptance_v1.md",
+  "raw_window_mapping_validator_file": "rsj_state_p0_validate_raw_window_mapping_v1.py",
+  "raw_window_mapping_acceptance_file": "rsj_state_p0_raw_window_mapping_acceptance_v1.md",
+  "append_compatibility_validator_file": "rsj_state_p0_validate_append_compatibility_v1.py",
+  "append_compatibility_acceptance_file": "rsj_state_p0_append_compatibility_acceptance_v1.md",
+  "simulate_append_diff_file": "rsj_state_p0_simulate_append_diff_v1.py",
+  "simulate_append_diff_acceptance_file": "rsj_state_p0_simulate_append_diff_acceptance_v1.md",
+  "replay_preview_export_file": "rsj_state_p0_export_replay_preview_v1.py",
+  "replay_preview_csv": "rsj_state_p0_replay_preview_rows_v1.csv",
+  "replay_preview_acceptance_file": "rsj_state_p0_replay_preview_acceptance_v1.md",
+  "replay_preview_acceptance_validator_file": "rsj_state_p0_validate_replay_preview_acceptance_v1.py",
+  "replay_preview_acceptance_validation_file": "rsj_state_p0_replay_preview_acceptance_validation_v1.md",
+  "replay_chain_validator_file": "rsj_state_p0_validate_replay_chain_v1.py",
+  "replay_chain_acceptance_file": "rsj_state_p0_replay_chain_acceptance_v1.md",
+  "chain_summary_export_file": "rsj_state_p0_export_chain_summary_index_v1.py",
+  "chain_summary_index_file": "rsj_state_p0_chain_summary_index_v1.md",
+  "chain_summary_acceptance_compare_validator_file": "rsj_state_p0_validate_chain_summary_acceptance_compare_v1.py",
+  "chain_summary_acceptance_compare_file": "rsj_state_p0_chain_summary_acceptance_compare_v1.md",
+  "manifest_freeze_export_file": "rsj_state_p0_export_manifest_freeze_v1.py",
+  "manifest_freeze_file": "rsj_state_p0_manifest_freeze_v1.md",
+  "proof_input_csv": "real_input_samples\\rsj_state_p0_proof_input_v1.csv",
+  "proof_output_csv": "real_input_samples\\rsj_state_p0_proof_output_v1.csv",
+  "rsj_config": {
+    "state_warm_threshold": 0.20,
+    "state_cold_threshold": -0.20,
+    "extreme_high_threshold": 0.50,
+    "extreme_low_threshold": -0.50
+  },
+  "raw_window_interface": {
+    "binding_state": "unbound",
+    "source_kind": "pending_raw_window_series",
+    "window_bars_field": "window_bars",
+    "rv_up_field": "rv_up",
+    "rv_down_field": "rv_down",
+    "append_target": "rsj_state_p0_fields_runtime_v1.csv"
+  },
+  "data_contract": {
+    "allow_placeholder_row": false,
+    "placeholder_trade_id": "__PLACEHOLDER__",
+    "empty_value": "unknown",
+    "rsj_state_values": [
+      "warm",
+      "cold",
+      "neutral",
+      "unknown"
+    ],
+    "rsj_extreme_flag_values": [
+      "extreme_high",
+      "extreme_low",
+      "none",
+      "unknown"
+    ],
+    "rsj_timing_bias_values": [
+      "risk_on",
+      "risk_off",
+      "wait",
+      "unknown"
+    ],
+    "rsj_model_state_values": [
+      "valid",
+      "invalid",
+      "unknown"
+    ]
+  },
+  "execution_boundary": {
+    "append_from_proof_only": true,
+    "allow_live_binding": false,
+    "allow_signal_generation": false,
+    "allow_raw_window_append": false
+  }
+}

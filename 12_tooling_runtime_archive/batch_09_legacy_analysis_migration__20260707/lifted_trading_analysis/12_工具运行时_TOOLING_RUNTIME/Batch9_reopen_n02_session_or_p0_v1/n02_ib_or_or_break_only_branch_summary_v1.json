@@ -1,0 +1,55 @@
+{
+  "producer": "n02_ib_or_post_cross_path_and_or_break_only_card_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BREAK_ONLY_CARD_P0",
+  "status": "fresh_run_or_break_only_card_summary",
+  "evidence_mode": "fresh_run_derived_from_or_break_only_candidates",
+  "source_path": {
+    "or_break_only_candidates_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_candidates_p0_sample_v1.csv"
+  },
+  "repo_path": {
+    "branch_card_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_branch_card_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_branch_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-03T16:52:59Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_branch_card_only": true
+  },
+  "rows": 123,
+  "by_session": {
+    "london": {
+      "rows": 67,
+      "direction_up": 39,
+      "mode_close": 39,
+      "mode_wick": 28,
+      "direction_down": 28
+    },
+    "new_york": {
+      "rows": 56,
+      "direction_up": 34,
+      "mode_close": 30,
+      "direction_down": 22,
+      "mode_wick": 26
+    }
+  },
+  "direction_counts": {
+    "down": 50,
+    "up": 73
+  },
+  "mode_counts": {
+    "close": 69,
+    "wick": 54
+  },
+  "trigger_source_counts": {
+    "close": 69,
+    "high": 27,
+    "low": 27
+  },
+  "gap_bucket_counts": {
+    "0.00010_to_0.00049": 64,
+    "ge_0.00050": 30,
+    "lt_0.00010": 29
+  }
+}

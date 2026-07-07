@@ -1,0 +1,97 @@
+{
+  "producer": "n02_runtime_ref_check_v1.py",
+  "scope": "REOPEN_B9_N02_RUNTIME_REF_CHECK_V1",
+  "status": "ref_check_no_rebuild",
+  "evidence_mode": "check_only_no_rebuild",
+  "generated_at_utc": "2026-07-06T03:11:24Z",
+  "source_path": {
+    "runtime_dir": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1",
+    "repo_root": "D:\\Stock\\trading_assistant",
+    "downstream_summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_gbpusd_m15_slice_downstream_summary_v1.json",
+    "or_only_beyond_multi_session_summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_p0_summary_gbpusd_m15_slice_v1.json",
+    "or_only_beyond_multi_session_card_summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+    "main_index_md": "D:\\Stock\\trading_assistant\\04_active_main_docs\\batch_01_selected\\00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md",
+    "full_repo_migration_map_md": "D:\\Stock\\trading_assistant\\00_entry\\FULL_REPO_MIGRATION_MAP.md",
+    "ref_check_py": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_runtime_ref_check_v1.py"
+  },
+  "repo_path": {
+    "report_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_runtime_ref_check_report_v1.json"
+  },
+  "expected_gate_status": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done_without_failed_breakout",
+  "files": {
+    "n02_gbpusd_m15_slice_downstream_summary_v1.json": {
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_gbpusd_m15_slice_downstream_summary_v1.json",
+      "exists": true,
+      "size_bytes": 11998
+    },
+    "n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_p0_summary_gbpusd_m15_slice_v1.json": {
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_p0_summary_gbpusd_m15_slice_v1.json",
+      "exists": true,
+      "size_bytes": 3578
+    },
+    "n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_card_summary_gbpusd_m15_slice_v1.json": {
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+      "exists": true,
+      "size_bytes": 2436
+    },
+    "00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md": {
+      "path": "D:\\Stock\\trading_assistant\\04_active_main_docs\\batch_01_selected\\00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md",
+      "exists": true,
+      "size_bytes": 96393
+    },
+    "FULL_REPO_MIGRATION_MAP.md": {
+      "path": "D:\\Stock\\trading_assistant\\00_entry\\FULL_REPO_MIGRATION_MAP.md",
+      "exists": true,
+      "size_bytes": 4481
+    },
+    "n02_runtime_ref_check_v1.py": {
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_runtime_ref_check_v1.py",
+      "exists": true,
+      "size_bytes": 8814
+    }
+  },
+  "checks": {
+    "downstream_gate_status": {
+      "expected": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done_without_failed_breakout",
+      "observed": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done_without_failed_breakout",
+      "ok": true
+    },
+    "or_only_beyond_multi_session_status_counts_match_rows": {
+      "rows": 105,
+      "status_counts_sum": 105,
+      "ok": true
+    },
+    "or_only_beyond_multi_session_card_status_counts_match_rows": {
+      "rows": 105,
+      "status_counts_sum": 105,
+      "ok": true
+    },
+    "main_index_contains_expected_gate": {
+      "path": "D:\\Stock\\trading_assistant\\04_active_main_docs\\batch_01_selected\\00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md",
+      "exists": true,
+      "primary": {
+        "path": "D:\\Stock\\trading_assistant\\04_active_main_docs\\batch_01_selected\\00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md",
+        "exists": true,
+        "needle": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done_without_failed_breakout",
+        "contains": false
+      },
+      "fallback": {
+        "path": "D:\\Stock\\trading_assistant\\04_active_main_docs\\batch_01_selected\\00_\u4e3b\u7ebf\u68c0\u7d22\u7d22\u5f15.md",
+        "exists": true,
+        "needle": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done",
+        "contains": true
+      },
+      "contains": true,
+      "matched": [
+        "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done"
+      ]
+    },
+    "full_repo_migration_map_contains_expected_gate": {
+      "path": "D:\\Stock\\trading_assistant\\00_entry\\FULL_REPO_MIGRATION_MAP.md",
+      "exists": true,
+      "needle": "gbpusd_m15_slice_downstream_plus_or_break_only_beyond_multi_session_persistence_done_without_failed_breakout",
+      "contains": true
+    }
+  },
+  "ok": true
+}

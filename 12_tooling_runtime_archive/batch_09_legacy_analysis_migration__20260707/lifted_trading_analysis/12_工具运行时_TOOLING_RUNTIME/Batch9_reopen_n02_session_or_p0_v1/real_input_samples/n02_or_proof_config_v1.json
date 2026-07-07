@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "sessions": {
+    "london": {
+      "session_timezone": "Europe/London",
+      "session_open_local_hhmm": "08:00",
+      "opening_range_window_minutes": 30
+    },
+    "new_york": {
+      "session_timezone": "America/New_York",
+      "session_open_local_hhmm": "09:30",
+      "opening_range_window_minutes": 30
+    }
+  }
+}

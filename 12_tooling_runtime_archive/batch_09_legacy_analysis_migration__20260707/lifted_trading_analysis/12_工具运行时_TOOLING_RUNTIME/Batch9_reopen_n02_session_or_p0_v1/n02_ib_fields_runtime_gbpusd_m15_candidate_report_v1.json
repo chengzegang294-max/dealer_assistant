@@ -1,0 +1,36 @@
+{
+  "total_rows": 595,
+  "defined_rows": 534,
+  "undefined_rows": 61,
+  "defined_ratio": 0.8974789915966387,
+  "by_session": {
+    "london": {
+      "defined": 267,
+      "total": 288,
+      "ratio": 0.9270833333333334
+    },
+    "new_york": {
+      "defined": 267,
+      "total": 307,
+      "ratio": 0.8697068403908795
+    }
+  },
+  "weekday_only": {
+    "total_rows": 536,
+    "defined_rows": 534,
+    "undefined_rows": 2,
+    "defined_ratio": 0.996268656716418,
+    "by_session": {
+      "london": {
+        "defined": 267,
+        "total": 268,
+        "ratio": 0.996268656716418
+      },
+      "new_york": {
+        "defined": 267,
+        "total": 268,
+        "ratio": 0.996268656716418
+      }
+    }
+  }
+}

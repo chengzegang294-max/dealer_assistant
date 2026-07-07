@@ -1,0 +1,109 @@
+{
+  "producer": "n02_ib_or_break_bar_evidence_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BREAK_BAR_EVIDENCE_P0",
+  "status": "fresh_run_break_bar_evidence_sample_summary",
+  "evidence_mode": "fresh_run_derived_from_relation_sample_and_real_input_bars",
+  "source_path": {
+    "relative_sample_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_first_break_relative_p0_sample_v1.csv",
+    "relation_sample_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_relation_p0_sample_v1.csv",
+    "bars_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv"
+  },
+  "repo_path": {
+    "break_bar_evidence_sample_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_break_bar_evidence_p0_sample_v1.csv",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_break_bar_evidence_p0_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-03T15:28:44Z",
+  "boundary": {
+    "writes_to_n02_p0_runtime_csv": false,
+    "writes_to_n02_ib_runtime_csv": false,
+    "writes_to_ib_or_relation_csv": false,
+    "writes_to_first_break_relative_csv": false,
+    "includes_acceptance": false,
+    "includes_failed_breakout": false,
+    "includes_retest_reject": false,
+    "includes_day_type": false
+  },
+  "input_rows": 138,
+  "output_rows_written": 138,
+  "ib_same_side_cross_confirmed_rows": 15,
+  "ib_same_side_not_crossed_rows": 123,
+  "ib_same_side_cross_confirmed_ratio": 0.10869565217391304,
+  "evidence_status_counts": {
+    "ib_same_side_cross_confirmed": 15,
+    "or_break_bar_found_but_ib_same_side_not_crossed": 123
+  },
+  "direction_mode_match_rows": 137,
+  "direction_mode_mismatch_rows": 1,
+  "first_break_direction_counts": {
+    "down": 56,
+    "up": 82
+  },
+  "first_break_mode_counts": {
+    "close": 75,
+    "wick": 63
+  },
+  "break_trigger_source_counts": {
+    "close": 75,
+    "high": 34,
+    "low": 29
+  },
+  "by_session": {
+    "london": {
+      "rows": 69,
+      "cross_confirmed_rows": 2,
+      "not_crossed_rows": 67,
+      "cross_confirmed_ratio": 0.028985507246376812,
+      "first_local_date": "2026-03-09",
+      "last_local_date": "2026-06-11"
+    },
+    "new_york": {
+      "rows": 69,
+      "cross_confirmed_rows": 13,
+      "not_crossed_rows": 56,
+      "cross_confirmed_ratio": 0.18840579710144928,
+      "first_local_date": "2026-03-09",
+      "last_local_date": "2026-06-11"
+    }
+  },
+  "ib_same_side_cross_distance_stats": {
+    "min": "-0.00413",
+    "max": "0.00016",
+    "avg": "-0.0002910869565217405797101449275"
+  },
+  "output_columns": [
+    "evidence_id",
+    "evidence_family",
+    "evidence_level",
+    "evidence_status",
+    "source_relative_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "ib_window_minutes",
+    "opening_range_window_minutes",
+    "upstream_first_break_direction",
+    "upstream_first_break_mode",
+    "first_break_direction",
+    "first_break_mode",
+    "direction_mode_match_to_relation",
+    "break_bar_time_utc",
+    "break_bar_open",
+    "break_bar_high",
+    "break_bar_low",
+    "break_bar_close",
+    "or_break_edge_value",
+    "ib_same_side_edge_value",
+    "break_trigger_price",
+    "break_trigger_source",
+    "same_side_gap_to_ib_before_break",
+    "ib_same_side_cross_confirmed",
+    "ib_same_side_cross_direction",
+    "ib_same_side_cross_distance",
+    "requires_break_price_for_ib_confirmation_before",
+    "requires_break_price_for_ib_confirmation_after",
+    "evidence_scope",
+    "width_error_day"
+  ]
+}

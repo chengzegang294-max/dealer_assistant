@@ -1,0 +1,189 @@
+{
+  "producer": "n02_second_fx_subhour_input_cache_recovery_ready_build_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_CACHE_RECOVERY_READY_P0",
+  "status": "fresh_run_second_fx_subhour_input_cache_recovery_ready_summary",
+  "evidence_mode": "fresh_run_mt5_cache_inventory_and_log_proof_without_declaring_canonical_export",
+  "source_path": {
+    "data_root": "D:\\Stock\\trading_analysis\\data",
+    "mt5_data_root": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C",
+    "trademax_base_root": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo",
+    "common_files_dir": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files",
+    "repo_validation_log": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\gbpusd_h1_tmgm_longwin_20260702T0250\\log\\20260702.log"
+  },
+  "repo_path": {
+    "summary_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_cache_recovery_ready_summary_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_subhour_input_cache_recovery_ready_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T17:08:48Z",
+  "boundary": {
+    "writes_main_m1_runtime": false,
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_acquisition_only": true,
+    "declares_canonical_export_done": false
+  },
+  "data_inventory": {
+    "inventory_root": "D:\\Stock\\trading_analysis\\data",
+    "gbpusd_m15_csv_count": 0,
+    "gbpusd_m15_csv_files": [],
+    "gbpusd_any_csv_count": 1,
+    "gbpusd_any_csv_files": [
+      {
+        "path": "D:\\Stock\\trading_analysis\\data\\gbpusd_1h.csv",
+        "size_bytes": 3669743,
+        "mtime_utc": "2026-06-10T11:21:48Z"
+      }
+    ]
+  },
+  "mt5_cache_inventory": {
+    "trade_max_base_root": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo",
+    "gbpusd_history_dir": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD",
+    "gbpusd_hcc_count": 6,
+    "gbpusd_hcc_files": [
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2021.hcc",
+        "filename": "2021.hcc",
+        "size_bytes": 44028,
+        "mtime_utc": "2026-07-01T17:47:53Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2022.hcc",
+        "filename": "2022.hcc",
+        "size_bytes": 79635,
+        "mtime_utc": "2026-07-01T17:47:53Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2023.hcc",
+        "filename": "2023.hcc",
+        "size_bytes": 195555,
+        "mtime_utc": "2026-07-01T17:47:53Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2024.hcc",
+        "filename": "2024.hcc",
+        "size_bytes": 19156764,
+        "mtime_utc": "2026-07-01T17:47:53Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2025.hcc",
+        "filename": "2025.hcc",
+        "size_bytes": 22301895,
+        "mtime_utc": "2026-07-01T17:47:51Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\history\\GBPUSD\\2026.hcc",
+        "filename": "2026.hcc",
+        "size_bytes": 11870235,
+        "mtime_utc": "2026-07-03T07:15:54Z"
+      }
+    ],
+    "gbpusd_ticks_dat": {
+      "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\bases\\TradeMaxGlobal-Demo\\ticks\\GBPUSD\\ticks.dat",
+      "size_bytes": 115452,
+      "mtime_utc": "2026-07-03T07:15:54Z"
+    },
+    "has_gbpusd_ticks_dat": true
+  },
+  "common_files_inventory": {
+    "common_files_dir": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files",
+    "gbpusd_probe_csv_count": 4,
+    "gbpusd_probe_csv_files": [
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_GBPUSD_H1_20241202_000000.csv",
+        "filename": "XBreaking_probe_GBPUSD_H1_20241202_000000.csv",
+        "size_bytes": 5155,
+        "mtime_utc": "2026-07-01T18:21:27Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_GBPUSD_H4_20241202_000000.csv",
+        "filename": "XBreaking_probe_GBPUSD_H4_20241202_000000.csv",
+        "size_bytes": 5155,
+        "mtime_utc": "2026-07-01T17:48:25Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_GBPUSD_H4_20250102_000000.csv",
+        "filename": "XBreaking_probe_GBPUSD_H4_20250102_000000.csv",
+        "size_bytes": 5155,
+        "mtime_utc": "2026-07-01T03:17:35Z"
+      },
+      {
+        "path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_GBPUSD_H4_20250103_000000.csv",
+        "filename": "XBreaking_probe_GBPUSD_H4_20250103_000000.csv",
+        "size_bytes": 5155,
+        "mtime_utc": "2026-07-01T07:39:26Z"
+      }
+    ]
+  },
+  "repo_validation_log_scan": {
+    "path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\gbpusd_h1_tmgm_longwin_20260702T0250\\log\\20260702.log",
+    "exists": true,
+    "matched_line_count": 10,
+    "matches": [
+      {
+        "line_no": 332,
+        "pattern": "GBPUSD: preliminary downloading of M1 history started",
+        "line": "GL\t0\t01:47:47.349\tTester\tGBPUSD: preliminary downloading of M1 history started"
+      },
+      {
+        "line_no": 339,
+        "pattern": "GBPUSD: preliminary downloading of M1 history completed",
+        "line": "ER\t0\t01:47:53.671\tTester\tGBPUSD: preliminary downloading of M1 history completed in 0:00:06.750"
+      },
+      {
+        "line_no": 340,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "ON\t0\t01:47:53.671\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 341,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "GH\t0\t01:47:53.671\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 394,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "MP\t0\t01:48:24.535\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 395,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "EK\t0\t01:48:24.535\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 932,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "EO\t0\t02:20:55.260\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 933,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "QF\t0\t02:20:55.264\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 981,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "NP\t0\t02:21:26.213\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      },
+      {
+        "line_no": 982,
+        "pattern": "GBPUSD: history data begins from",
+        "line": "FJ\t0\t02:21:26.213\tTester\tGBPUSD: history data begins from 2021.07.23 00:00"
+      }
+    ]
+  },
+  "recovery_gate": {
+    "status": "cache_recovery_ready_without_canonical_export",
+    "has_repo_drop_gbpusd_m15_export": false,
+    "has_mt5_cache_history_hcc": true,
+    "has_mt5_ticks_dat": true,
+    "has_common_files_gbpusd_probe_csv": true,
+    "has_repo_log_history_download_proof": true,
+    "recommended_target_symbol": "GBPUSD",
+    "recommended_target_timeframe": "M15",
+    "recommended_source_environment": "TradeMaxGlobal-Demo__60088394",
+    "preferred_next_step": "terminal_export_to_drop_then_ingest_with_n02_mt5_export_ingest_v1",
+    "fallback_next_step": "build_or_reuse_hcc_reader_then_convert_to_canonical_bars",
+    "blocked_reason": "canonical_gbpusd_m15_export_csv_is_still_missing_under_known_drop_paths"
+  }
+}

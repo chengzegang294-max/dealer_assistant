@@ -1,0 +1,72 @@
+{
+  "producer": "n02_ib_or_third_same_session_persistence_and_stability_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_BEYOND_THIRD_SAME_SESSION_PERSISTENCE_P0",
+  "status": "fresh_run_third_next_session_first_30m_observation",
+  "evidence_mode": "fresh_run_derived_from_multi_session_success_rows_and_third_next_session_bars",
+  "source_path": {
+    "input_observation_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_multi_session_persistence_observation_p0_sample_gbpusd_m15_slice_v1.csv",
+    "bars_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_m15_v1.csv"
+  },
+  "repo_path": {
+    "output_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_third_same_session_persistence_observation_p0_sample_gbpusd_m15_slice_v1.csv",
+    "summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_beyond_third_same_session_persistence_observation_p0_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:05:30Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "observation_scope_third_next_session_first_30m_only": true
+  },
+  "rows": 2,
+  "status_counts": {
+    "missing_third_next_session_first_30m_data": 1,
+    "third_next_session_first_30m_all_closes_beyond_prior_ib": 1
+  },
+  "direction_counts": {
+    "down": 1,
+    "up": 1
+  },
+  "mode_counts": {
+    "close": 2
+  },
+  "third_next_session_first_30m_bar_count_30_rows": 0,
+  "third_next_session_first_bar_expected_side_rows": 1,
+  "by_session": {
+    "london": {
+      "rows": 1,
+      "status_third_next_session_first_30m_all_closes_beyond_prior_ib": 1
+    },
+    "new_york": {
+      "rows": 1,
+      "status_missing_third_next_session_first_30m_data": 1
+    }
+  },
+  "output_columns": [
+    "observation_id",
+    "observation_family",
+    "observation_level",
+    "observation_status",
+    "source_observation_id",
+    "source_candidate_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "prior_session_local_date",
+    "next_session_local_date",
+    "second_next_session_local_date",
+    "third_next_session_local_date",
+    "cross_direction",
+    "cross_mode",
+    "prior_ib_same_side_edge_value",
+    "third_next_session_open_utc",
+    "third_next_session_first_bar_open",
+    "third_next_session_first_bar_close",
+    "third_next_session_first_30m_bar_count",
+    "third_next_session_first_bar_expected_side",
+    "third_next_session_first_30m_all_closes_expected_side",
+    "third_next_session_first_30m_any_close_opposite_or_at_boundary",
+    "observation_scope"
+  ]
+}

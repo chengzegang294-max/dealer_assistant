@@ -1,0 +1,5 @@
+symbol,timeframe,bar_time,session_id,session_timezone,opening_range_window_minutes,opening_range_high,opening_range_low,opening_range_mid,opening_range_width,opening_range_width_pct_open,session_open_price,opening_range_defined,first_break_direction,first_break_mode,width_error_day
+EURUSD,M1,2026-06-10T07:30:00Z,london,Europe/London,30,1.15506,1.15467,1.15487,0.00039,0.0338,1.15502,1,down,close,0
+EURUSD,M1,2026-06-11T07:30:00Z,london,Europe/London,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M1,2026-06-09T14:00:00Z,new_york,America/New_York,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M1,2026-06-10T14:00:00Z,new_york,America/New_York,30,1.15572,1.15503,1.15538,0.00069,0.0597,1.15559,1,down,close,0

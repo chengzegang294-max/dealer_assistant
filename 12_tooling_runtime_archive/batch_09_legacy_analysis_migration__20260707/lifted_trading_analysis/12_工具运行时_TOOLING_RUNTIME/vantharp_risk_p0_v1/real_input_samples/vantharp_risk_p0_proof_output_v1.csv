@@ -1,0 +1,6 @@
+trade_id,net_pnl,max_risk_amount,risk_usage_ratio,r_multiple,risk_model_state,position_sizing_state,expectancy_group_id,expectancy_r,trade_count,expectancy_confidence_state,proof_basis
+T001,200,100,1.0,2.0,valid,acceptable,VT_RISK_P0_PROOF_V1,0.5,5,low,net_pnl=210-8-2; r=200/100
+T002,-60,100,1.2,-0.5,valid,aggressive,VT_RISK_P0_PROOF_V1,0.5,5,low,net_pnl=-50-8-2; r=-60/120
+T003,40,100,0.8,0.5,valid,acceptable,VT_RISK_P0_PROOF_V1,0.5,5,low,net_pnl=45-3-2; r=40/80
+T004,-150,100,1.5,-1.0,valid,aggressive,VT_RISK_P0_PROOF_V1,0.5,5,low,net_pnl=-145-3-2; r=-150/150
+T005,135,100,0.9,1.5,valid,acceptable,VT_RISK_P0_PROOF_V1,0.5,5,low,net_pnl=140-3-2; r=135/90

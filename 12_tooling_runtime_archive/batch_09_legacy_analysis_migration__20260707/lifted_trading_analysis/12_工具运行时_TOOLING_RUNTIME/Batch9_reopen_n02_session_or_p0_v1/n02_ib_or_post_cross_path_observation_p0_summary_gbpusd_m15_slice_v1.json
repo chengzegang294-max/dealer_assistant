@@ -1,0 +1,65 @@
+{
+  "producer": "n02_ib_or_post_cross_path_and_or_break_only_card_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_POST_CROSS_PATH_P0",
+  "status": "fresh_run_post_cross_observation",
+  "evidence_mode": "fresh_run_derived_from_outcome_shell_and_same_day_bars",
+  "source_path": {
+    "confirmed_cross_candidates_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_confirmed_cross_candidates_p0_sample_gbpusd_m15_slice_v1.csv",
+    "confirmed_cross_outcome_shell_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_confirmed_cross_outcome_shell_p0_sample_gbpusd_m15_slice_v1.csv",
+    "bars_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_m15_v1.csv"
+  },
+  "repo_path": {
+    "post_cross_observation_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_post_cross_path_observation_p0_sample_gbpusd_m15_slice_v1.csv",
+    "summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_post_cross_path_observation_p0_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:04:45Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "observation_scope_same_day_only": true
+  },
+  "rows": 48,
+  "return_inside_ib_observed_same_day_rows": 45,
+  "return_inside_ib_observed_same_day_ratio": 0.9375,
+  "session_close_beyond_ib_rows": 27,
+  "session_close_beyond_ib_ratio": 0.5625,
+  "by_session": {
+    "london": {
+      "rows": 20,
+      "return_inside_ib_rows": 19,
+      "session_close_beyond_ib_rows": 13
+    },
+    "new_york": {
+      "rows": 28,
+      "return_inside_ib_rows": 26,
+      "session_close_beyond_ib_rows": 14
+    }
+  },
+  "output_columns": [
+    "observation_id",
+    "observation_family",
+    "observation_level",
+    "observation_status",
+    "source_outcome_shell_id",
+    "source_confirmed_candidate_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "cross_direction",
+    "cross_mode",
+    "cross_bar_time_utc",
+    "cross_trigger_price",
+    "ib_same_side_edge_value",
+    "bars_after_cross_count",
+    "return_inside_ib_observed_same_day",
+    "first_return_inside_ib_bar_time_utc",
+    "max_extension_price_same_day",
+    "max_extension_distance_over_ib",
+    "session_close_price",
+    "session_close_beyond_ib",
+    "observation_scope"
+  ]
+}

@@ -1,0 +1,16 @@
+symbol,timeframe,bar_time,session_id,session_timezone,opening_range_window_minutes,opening_range_high,opening_range_low,opening_range_mid,opening_range_width,opening_range_width_pct_open,session_open_price,opening_range_defined,first_break_direction,first_break_mode,width_error_day
+EURUSD,M5,2025-10-23T07:30:00Z,london,Europe/London,30,1.15959,1.15906,1.15932,0.00053,0.0457,1.15929,1,up,close,0
+EURUSD,M5,2025-10-24T07:30:00Z,london,Europe/London,30,1.16092,1.16058,1.16075,0.00034,0.0293,1.16091,1,down,close,0
+EURUSD,M5,2025-10-25T07:30:00Z,london,Europe/London,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M5,2025-10-27T08:30:00Z,london,Europe/London,30,1.16265,1.16210,1.16237,0.00055,0.0473,1.16246,1,up,wick,0
+EURUSD,M5,2025-10-31T08:30:00Z,london,Europe/London,30,1.15721,1.15663,1.15692,0.00058,0.0501,1.15720,1,up,close,0
+EURUSD,M5,2025-11-03T08:30:00Z,london,Europe/London,30,1.15378,1.15343,1.15360,0.00035,0.0303,1.15350,1,up,close,0
+EURUSD,M5,2025-10-22T14:00:00Z,new_york,America/New_York,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M5,2025-10-23T14:00:00Z,new_york,America/New_York,30,1.15938,1.15856,1.15897,0.00082,0.0707,1.15922,1,down,wick,0
+EURUSD,M5,2025-10-24T14:00:00Z,new_york,America/New_York,30,1.16168,1.16123,1.16146,0.00045,0.0387,1.16147,1,down,close,0
+EURUSD,M5,2025-10-26T14:00:00Z,new_york,America/New_York,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M5,2025-10-27T14:00:00Z,new_york,America/New_York,30,1.16442,1.16374,1.16408,0.00068,0.0584,1.16391,1,up,close,0
+EURUSD,M5,2025-10-30T14:00:00Z,new_york,America/New_York,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M5,2025-10-31T14:00:00Z,new_york,America/New_York,30,1.15723,1.15673,1.15698,0.00050,0.0432,1.15695,1,up,close,0
+EURUSD,M5,2025-11-02T15:00:00Z,new_york,America/New_York,30,na,na,na,na,na,na,0,none,none,1
+EURUSD,M5,2025-11-03T15:00:00Z,new_york,America/New_York,30,1.15224,1.15167,1.15196,0.00057,0.0495,1.15191,1,down,wick,0

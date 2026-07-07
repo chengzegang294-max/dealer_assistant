@@ -1,0 +1,80 @@
+{
+  "version": "v1",
+  "type_id": "N02",
+  "candidate_id": "REOPEN_B9_N02_SESSION_OR_P0",
+  "runtime_dir": "D:\\Stock\\trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1",
+  "output_csv": "n02_p0_fields_runtime_v1.csv",
+  "header_file": "n02_p0_fields_runtime_header_v1.txt",
+  "notes_file": "n02_p0_runtime_notes_v1.md",
+  "gaps_file": "n02_p0_runtime_gaps_v1.md",
+  "append_protocol_file": "n02_p0_runtime_append_protocol_v1.md",
+  "session_config": {
+    "session_id": "london",
+    "session_timezone": "Europe/London",
+    "opening_range_window_minutes": 30
+  },
+  "parameter_source_contract": {
+    "rule": "Every runtime parameter must declare current source tier and upgrade rule before being treated as production-ready.",
+    "allowed_source_tiers": [
+      "source_excerpt_or_open_source",
+      "project_contract_default",
+      "stub_only_default",
+      "pending_real_binding"
+    ]
+  },
+  "session_binding_registry": {
+    "london": {
+      "session_timezone": "Europe/London",
+      "binding_tier": "project_contract_default",
+      "binding_basis": "Batch9 v1 sample evidence and runtime skeleton freeze London as the default session binding for the first implementation pass.",
+      "calendar_basis": "Use a London session calendar aligned to Europe/London local date.",
+      "dst_handling": "Timezone-aware conversion is mandatory; DST shifts must be resolved from Europe/London rather than hard-coded UTC offsets."
+    },
+    "new_york": {
+      "session_timezone": "America/New_York",
+      "binding_tier": "project_contract_default",
+      "binding_basis": "Batch9 v1 sample evidence already uses New York as the second supported reference session for runtime demonstration.",
+      "calendar_basis": "Use a New York session calendar aligned to America/New_York local date.",
+      "dst_handling": "Timezone-aware conversion is mandatory; DST shifts must be resolved from America/New_York rather than hard-coded UTC offsets."
+    }
+  },
+  "parameter_source_detail": {
+    "session_id": {
+      "current_value": "london",
+      "source_tier": "project_contract_default",
+      "source_basis": "Batch9 v1 freezes london as the default runtime session binding for the first implementation pass, while still allowing later expansion through the binding registry.",
+      "evidence_anchor": "REOPEN_B9_N02_SESSION_OR_P0_最小实施草案_v1.md + n02_p0_field_sample_v1.csv",
+      "upgrade_rule": "Keep london as the v1 default binding; add new session ids through the registry and open a new version if semantics or calendars change."
+    },
+    "session_timezone": {
+      "current_value": "Europe/London",
+      "source_tier": "project_contract_default",
+      "source_basis": "The london -> Europe/London mapping is frozen in the v1 session binding registry and matches the current sample evidence.",
+      "evidence_anchor": "n02_p0_field_sample_v1.csv + REOPEN_B9_N02_SESSION_OR_P0_最小实施草案_v1.md",
+      "upgrade_rule": "Keep timezone derived from the v1 registry; if DST policy or exchange calendar handling changes, record it in notes and open a new version."
+    },
+    "opening_range_window_minutes": {
+      "current_value": 30,
+      "source_tier": "project_contract_default",
+      "source_basis": "Current v1 contract freezes a 30-minute OR window for the first runtime skeleton and sample evidence.",
+      "evidence_anchor": "REOPEN_B9_N02_SESSION_OR_P0_最小实施草案_v1.md",
+      "upgrade_rule": "If another session template is adopted, record the new window in notes and open a new version if semantics change."
+    }
+  },
+  "data_contract": {
+    "allow_placeholder_row": false,
+    "placeholder_symbol": "__PLACEHOLDER__",
+    "first_break_direction_values": [
+      "up",
+      "down",
+      "none"
+    ],
+    "empty_value": "na"
+  },
+  "execution_boundary": {
+    "include_ib_fields": false,
+    "include_acceptance_fields": false,
+    "include_failed_breakout_fields": false,
+    "split_close_vs_wick": false
+  }
+}

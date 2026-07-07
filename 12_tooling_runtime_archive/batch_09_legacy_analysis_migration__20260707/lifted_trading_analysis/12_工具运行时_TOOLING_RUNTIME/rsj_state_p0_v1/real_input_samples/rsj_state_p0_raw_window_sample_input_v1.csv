@@ -1,0 +1,4 @@
+trade_id,symbol,timeframe,bar_time,window_bars,rv_up,rv_down,input_source_tier,input_note
+RSJ_RAW_SAMPLE_001,XAUUSD,H1,2026-06-19T00:00:00Z,24,0.92,0.18,synthetic_window,warm_state_demo_window
+RSJ_RAW_SAMPLE_002,EURUSD,H1,2026-06-19T04:00:00Z,24,0.51,0.49,synthetic_window,neutral_state_demo_window
+RSJ_RAW_SAMPLE_003,GBPUSD,H1,2026-06-19T08:00:00Z,24,0.16,0.84,pending_real_binding,cold_state_demo_window

@@ -1,0 +1,21 @@
+{
+  "producer": "n02_aggregate_bars_to_m5_v1.py",
+  "scope": "REOPEN_B9_N02_REAL_INPUT_AGGREGATE_EURUSD_M5_FROM_MAIN_M1_P0",
+  "status": "fresh_run_aggregate_main_m1_to_m5",
+  "evidence_mode": "fresh_run_from_main_canonical_bars",
+  "source_path": {
+    "input_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_first_real_input_bars_v1.csv"
+  },
+  "repo_path": {
+    "output_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_eurusd_m5_from_m1_main_v1.csv",
+    "report_json": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_eurusd_m5_from_m1_main_report_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T15:54:52Z",
+  "symbol": "EURUSD",
+  "input_rows_filtered": 99500,
+  "bucket_groups_total": 19929,
+  "bucket_groups_dropped_partial": 89,
+  "output_rows": 19840,
+  "output_first_bar_time": "2026-03-06T17:10:00Z",
+  "output_last_bar_time": "2026-06-11T23:50:00Z"
+}

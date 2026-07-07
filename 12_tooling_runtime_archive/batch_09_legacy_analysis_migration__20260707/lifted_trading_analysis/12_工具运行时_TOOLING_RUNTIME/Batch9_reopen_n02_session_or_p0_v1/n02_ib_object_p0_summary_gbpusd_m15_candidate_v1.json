@@ -1,0 +1,82 @@
+{
+  "producer": "n02_ib_object_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OBJECT_P0",
+  "status": "fresh_run_object_sample_summary",
+  "evidence_mode": "fresh_run_derived_from_ib_runtime_csv",
+  "source_path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_fields_runtime_gbpusd_m15_candidate_v1.csv",
+  "repo_path": {
+    "sample_csv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_object_p0_sample_gbpusd_m15_candidate_v1.csv",
+    "summary_json": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_object_p0_summary_gbpusd_m15_candidate_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T15:55:38Z",
+  "boundary": {
+    "writes_to_n02_p0_runtime_csv": false,
+    "includes_acceptance": false,
+    "includes_failed_breakout": false,
+    "includes_retest_reject": false,
+    "includes_day_type": false
+  },
+  "source_rows": 595,
+  "source_defined_rows": 534,
+  "source_undefined_rows": 61,
+  "object_rows_written": 534,
+  "symbol_values": [
+    "EURUSD",
+    "GBPUSD"
+  ],
+  "timeframe_values": [
+    "M1",
+    "M15"
+  ],
+  "by_session": {
+    "london": {
+      "source_rows": 288,
+      "defined_rows": 267,
+      "undefined_rows": 21,
+      "defined_ratio": 0.9270833333333334,
+      "object_rows": 267,
+      "first_local_date": "2021-06-16",
+      "last_local_date": "2026-06-11",
+      "min_ib_range": "0.00025",
+      "max_ib_range": "0.00477"
+    },
+    "new_york": {
+      "source_rows": 307,
+      "defined_rows": 267,
+      "undefined_rows": 40,
+      "defined_ratio": 0.8697068403908795,
+      "object_rows": 267,
+      "first_local_date": "2021-06-16",
+      "last_local_date": "2026-06-11",
+      "min_ib_range": "0.00045",
+      "max_ib_range": "0.01347"
+    }
+  },
+  "ib_range_stats": {
+    "min": "0.00025",
+    "max": "0.01347",
+    "avg": "0.001441123595505617977528089888"
+  },
+  "first_object_id": "IB|GBPUSD|M15|london|2021-06-16|60",
+  "last_object_id": "IB|EURUSD|M1|new_york|2026-06-11|60",
+  "output_columns": [
+    "object_id",
+    "object_family",
+    "object_level",
+    "object_status",
+    "source_runtime_row_key",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "ib_window_minutes",
+    "ib_start_utc",
+    "ib_end_utc",
+    "ib_high",
+    "ib_low",
+    "ib_range",
+    "ib_mid",
+    "bars_in_ib_window"
+  ]
+}

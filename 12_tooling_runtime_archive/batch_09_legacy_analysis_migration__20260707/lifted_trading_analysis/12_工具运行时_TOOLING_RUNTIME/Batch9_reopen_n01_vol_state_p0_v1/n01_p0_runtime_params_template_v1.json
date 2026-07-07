@@ -1,0 +1,83 @@
+{
+  "version": "v1",
+  "type_id": "N01",
+  "candidate_id": "REOPEN_B9_N01_VOL_STATE_P0",
+  "runtime_dir": "D:\\Stock\\trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\Batch9_reopen_n01_vol_state_p0_v1",
+  "output_csv": "n01_p0_fields_runtime_v1.csv",
+  "header_file": "n01_p0_fields_runtime_header_v1.txt",
+  "notes_file": "n01_p0_runtime_notes_v1.md",
+  "gaps_file": "n01_p0_runtime_gaps_v1.md",
+  "append_protocol_file": "n01_p0_runtime_append_protocol_v1.md",
+  "atr_config": {
+    "atr_length": 14,
+    "atr_baseline_length": 50,
+    "atr_percentile_window": 252,
+    "squeeze_mode": "ttm_pro_like"
+  },
+  "parameter_source_contract": {
+    "rule": "Every runtime parameter must declare current source tier and upgrade rule before being treated as production-ready.",
+    "allowed_source_tiers": [
+      "source_excerpt_or_open_source",
+      "project_contract_default",
+      "stub_only_default",
+      "pending_real_binding"
+    ]
+  },
+  "parameter_source_detail": {
+    "atr_length": {
+      "current_value": 14,
+      "source_tier": "source_excerpt_or_open_source",
+      "source_basis": "GainzAlgo supporting evidence states ATR = SMA(True Range, default 14), which is sufficient to freeze ATR(14) as the v1 default input length.",
+      "evidence_anchor": "Volatility_Regimes__GainzAlgo__page_excerpt.md",
+      "upgrade_rule": "Keep 14 as the v1 ATR input length unless a later audited source or implementation binding explicitly requires a different ATR core definition."
+    },
+    "atr_baseline_length": {
+      "current_value": 50,
+      "source_tier": "source_excerpt_or_open_source",
+      "source_basis": "GainzAlgo supporting evidence states that Baseline ATR uses a long-period average with default 50 bars.",
+      "evidence_anchor": "Volatility_Regimes__GainzAlgo__page_excerpt.md",
+      "upgrade_rule": "Keep 50 as the v1 frozen baseline unless a later audited source requires a different baseline definition and triggers a new version."
+    },
+    "atr_percentile_window": {
+      "current_value": 252,
+      "source_tier": "project_contract_default",
+      "source_basis": "CHE evidence confirms ATR percentile must use a rolling window but does not freeze a single default length; Batch9 v1 freezes 252 as the cross-asset comparison window for the first runtime contract.",
+      "evidence_anchor": "ATR_Regime_Study__CHE__page_excerpt.md + REOPEN_B9_N01_VOL_STATE_P0_最小实施草案_v1.md",
+      "upgrade_rule": "Keep 252 in v1 for comparability; if a later code-level audited source freezes another window, open a new version instead of silently changing v1."
+    },
+    "squeeze_mode": {
+      "current_value": "ttm_pro_like",
+      "source_tier": "source_excerpt_or_open_source",
+      "source_basis": "Current mode is intentionally labeled as TTM-Pro-like to reflect source-inspired behavior without claiming a full source-identical engine.",
+      "evidence_anchor": "TTM_Squeeze_Pro__TradingView_page_excerpt.md",
+      "upgrade_rule": "If later bound to a specific TTM variant, record the exact variant name and keep v1 as the source-inspired placeholder contract."
+    }
+  },
+  "data_contract": {
+    "allow_placeholder_row": false,
+    "placeholder_symbol": "__PLACEHOLDER__",
+    "atr_percentile_scale": "0_100",
+    "atr_percentile_regime_values": [
+      "extreme",
+      "elevated",
+      "normal",
+      "calm",
+      "squeeze",
+      "unknown"
+    ],
+    "squeeze_tier_values": [
+      "high",
+      "medium",
+      "low",
+      "off"
+    ],
+    "empty_value": "na"
+  },
+  "execution_boundary": {
+    "include_atr_baseline_value": false,
+    "include_compression_state": false,
+    "include_vol_regime_code": false,
+    "include_breakout_fields": false,
+    "include_compression_subscores": false
+  }
+}

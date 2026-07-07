@@ -1,0 +1,111 @@
+{
+  "producer": "n02_second_fx_symbol_input_gate_gbpusd_h1_build_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SYMBOL_INPUT_GATE_GBPUSD_H1_P0",
+  "status": "fresh_run_second_fx_input_gate_summary",
+  "evidence_mode": "fresh_run_input_gate_without_polluting_main_m1_runtime",
+  "source_path": {
+    "data_root": "D:\\Stock\\trading_analysis\\data",
+    "bars_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_h1_v1.csv",
+    "ib_proof_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_ib_proof_of_mapping_output_gbpusd_h1_v1.csv",
+    "config_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_or_proof_config_v1.json"
+  },
+  "repo_path": {
+    "summary_md": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_symbol_input_gate_gbpusd_h1_summary_v1.md",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_second_fx_symbol_input_gate_gbpusd_h1_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T16:33:23Z",
+  "boundary": {
+    "writes_main_m1_runtime": false,
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_input_gate_only": true
+  },
+  "inventory": {
+    "inventory_root": "D:\\Stock\\trading_analysis\\data",
+    "fx_h1_symbols": [
+      "AUDJPY",
+      "AUDNZD",
+      "AUDUSD",
+      "CADJPY",
+      "CHFJPY",
+      "EURAUD",
+      "EURCHF",
+      "EURGBP",
+      "EURJPY",
+      "EURNZD",
+      "EURUSD",
+      "GBPCHF",
+      "GBPJPY",
+      "GBPUSD",
+      "NZDJPY",
+      "NZDUSD",
+      "USDCAD",
+      "USDCHF",
+      "USDJPY"
+    ],
+    "fx_h1_symbol_count": 19,
+    "second_fx_symbols_excluding_eurusd": [
+      "AUDJPY",
+      "AUDNZD",
+      "AUDUSD",
+      "CADJPY",
+      "CHFJPY",
+      "EURAUD",
+      "EURCHF",
+      "EURGBP",
+      "EURJPY",
+      "EURNZD",
+      "GBPCHF",
+      "GBPJPY",
+      "GBPUSD",
+      "NZDJPY",
+      "NZDUSD",
+      "USDCAD",
+      "USDCHF",
+      "USDJPY"
+    ]
+  },
+  "bars_validation": {
+    "rows": 64897,
+    "symbol": "GBPUSD",
+    "timeframe": "H1",
+    "first_bar_time": "2016-01-03T22:00:00Z",
+    "last_bar_time": "2026-06-10T00:00:00Z",
+    "timezone_heuristic": "first_bar_utc_like_sunday_reopen"
+  },
+  "ib_validation": {
+    "rows": 5414,
+    "defined_rows": 5412,
+    "undefined_rows": 2,
+    "defined_ratio": 0.9996305873660879,
+    "by_session": {
+      "london": 2707,
+      "new_york": 2707
+    }
+  },
+  "or_gate": {
+    "status": "blocked_by_timeframe_granularity",
+    "timeframe": "H1",
+    "timeframe_minutes": 60,
+    "observed_command_failure": "ValueError: max() iterable argument is empty",
+    "blocked_sessions": [
+      {
+        "session_id": "london",
+        "session_open_local_hhmm": "08:00",
+        "opening_range_window_minutes": 30,
+        "timeframe_minutes": 60,
+        "window_shorter_than_timeframe": true,
+        "session_open_not_aligned_to_timeframe": false
+      },
+      {
+        "session_id": "new_york",
+        "session_open_local_hhmm": "09:30",
+        "opening_range_window_minutes": 30,
+        "timeframe_minutes": 60,
+        "window_shorter_than_timeframe": true,
+        "session_open_not_aligned_to_timeframe": true
+      }
+    ]
+  }
+}

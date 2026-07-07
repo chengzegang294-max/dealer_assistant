@@ -1,0 +1,44 @@
+{
+  "producer": "n02_expand_real_input_with_dst_v1.py",
+  "scope": "REOPEN_B9_N02_REAL_INPUT_EXPAND_SAMPLE_P0",
+  "status": "fresh_run_expand_sample",
+  "evidence_mode": "fresh_run_merge_main_bars_and_dst_supplement",
+  "source_path": {
+    "inputs": [
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_fall_20251023_20251028_bars.csv",
+      "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_fall_20251031_20251104_bars.csv"
+    ]
+  },
+  "repo_path": {
+    "output_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_eurusd_m5_fall_dst_v1.csv",
+    "backup_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_eurusd_m5_fall_dst_v1.csv.bak_20260704T154641Z",
+    "report_json": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_eurusd_m5_fall_dst_report_v1.json"
+  },
+  "generated_at_utc": "2026-07-04T15:46:41Z",
+  "allowed_symbol_timeframes": [
+    "EURUSD/M5"
+  ],
+  "input_reports": [
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_london_fall_20251023_20251028_bars.csv",
+      "rows": 864,
+      "kept_rows": 864,
+      "skipped_rows": 0,
+      "first_bar_time": "2025-10-23T00:00:00Z",
+      "last_bar_time": "2025-10-27T23:55:00Z"
+    },
+    {
+      "path": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_dst_newyork_fall_20251031_20251104_bars.csv",
+      "rows": 576,
+      "kept_rows": 576,
+      "skipped_rows": 0,
+      "first_bar_time": "2025-10-31T00:00:00Z",
+      "last_bar_time": "2025-11-03T23:55:00Z"
+    }
+  ],
+  "duplicate_replacements": 0,
+  "filtered_out_rows": 0,
+  "output_rows": 1440,
+  "output_first_bar_time": "2025-10-23T00:00:00Z",
+  "output_last_bar_time": "2025-11-03T23:55:00Z"
+}

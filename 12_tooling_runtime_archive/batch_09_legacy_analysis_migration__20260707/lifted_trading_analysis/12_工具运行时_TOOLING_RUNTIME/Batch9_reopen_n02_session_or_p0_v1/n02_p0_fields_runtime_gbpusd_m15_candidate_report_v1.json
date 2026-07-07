@@ -1,0 +1,33 @@
+{
+  "total_rows": 622,
+  "or_defined_rows": 534,
+  "or_undefined_rows": 88,
+  "or_defined_ratio": 0.8585209003215434,
+  "by_session": {
+    "london": {
+      "total_rows": 300,
+      "or_defined_rows": 267,
+      "or_defined_ratio": 0.89,
+      "width_error_day_rows": 33,
+      "width_error_day_ratio": 0.11
+    },
+    "new_york": {
+      "total_rows": 322,
+      "or_defined_rows": 267,
+      "or_defined_ratio": 0.8291925465838509,
+      "width_error_day_rows": 55,
+      "width_error_day_ratio": 0.17080745341614906
+    }
+  },
+  "first_break_direction_counts": {
+    "down": 255,
+    "none": 111,
+    "up": 256
+  },
+  "first_break_mode_counts": {
+    "ambiguous": 22,
+    "close": 279,
+    "none": 89,
+    "wick": 232
+  }
+}

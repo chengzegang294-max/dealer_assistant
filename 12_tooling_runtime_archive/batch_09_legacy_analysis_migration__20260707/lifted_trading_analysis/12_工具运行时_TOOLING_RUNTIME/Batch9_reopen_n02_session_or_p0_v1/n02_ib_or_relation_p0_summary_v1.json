@@ -1,0 +1,98 @@
+{
+  "producer": "n02_ib_or_relation_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_RELATION_P0",
+  "status": "fresh_run_relation_sample_summary",
+  "evidence_mode": "fresh_run_join_of_ib_object_and_or_runtime",
+  "source_path": {
+    "ib_object_sample_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_object_p0_sample_v1.csv",
+    "or_runtime_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_p0_fields_runtime_v2.csv"
+  },
+  "repo_path": {
+    "relation_sample_csv": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_relation_p0_sample_v1.csv",
+    "summary_json": "d:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_relation_p0_summary_v1.json"
+  },
+  "generated_at_utc": "2026-07-03T14:54:17Z",
+  "boundary": {
+    "writes_to_n02_p0_runtime_csv": false,
+    "writes_to_n02_ib_runtime_csv": false,
+    "includes_acceptance": false,
+    "includes_failed_breakout": false,
+    "includes_retest_reject": false,
+    "includes_day_type": false
+  },
+  "ib_object_rows_input": 138,
+  "or_runtime_rows_input": 165,
+  "relation_rows_written": 138,
+  "missing_or_match_rows": 0,
+  "or_inside_ib_rows": 138,
+  "or_inside_ib_ratio": 1.0,
+  "ib_equals_or_rows": 14,
+  "width_error_day_rows": 0,
+  "first_break_direction_counts": {
+    "down": 56,
+    "up": 82
+  },
+  "first_break_mode_counts": {
+    "close": 76,
+    "wick": 62
+  },
+  "by_session": {
+    "london": {
+      "relation_rows": 69,
+      "or_inside_ib_rows": 69,
+      "or_inside_ib_ratio": 1.0,
+      "ib_equals_or_rows": 2,
+      "width_error_day_rows": 0,
+      "first_local_date": "2026-03-09",
+      "last_local_date": "2026-06-11"
+    },
+    "new_york": {
+      "relation_rows": 69,
+      "or_inside_ib_rows": 69,
+      "or_inside_ib_ratio": 1.0,
+      "ib_equals_or_rows": 12,
+      "width_error_day_rows": 0,
+      "first_local_date": "2026-03-09",
+      "last_local_date": "2026-06-11"
+    }
+  },
+  "ib_width_to_or_width_ratio_stats": {
+    "min": "1",
+    "max": "7.970414201183431952662721893",
+    "avg": "1.680635081590976929201851848"
+  },
+  "missing_or_match_keys": [],
+  "output_columns": [
+    "relation_id",
+    "relation_family",
+    "relation_level",
+    "relation_status",
+    "source_ib_object_id",
+    "source_or_row_key",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "ib_window_minutes",
+    "opening_range_window_minutes",
+    "ib_start_utc",
+    "ib_end_utc",
+    "or_bar_time_utc",
+    "ib_high",
+    "ib_low",
+    "ib_range",
+    "opening_range_high",
+    "opening_range_low",
+    "opening_range_width",
+    "or_inside_ib",
+    "ib_equals_or",
+    "ib_width_minus_or_width",
+    "ib_width_to_or_width_ratio",
+    "or_high_to_ib_high_gap",
+    "or_low_to_ib_low_gap",
+    "first_break_direction",
+    "first_break_mode",
+    "width_error_day"
+  ]
+}

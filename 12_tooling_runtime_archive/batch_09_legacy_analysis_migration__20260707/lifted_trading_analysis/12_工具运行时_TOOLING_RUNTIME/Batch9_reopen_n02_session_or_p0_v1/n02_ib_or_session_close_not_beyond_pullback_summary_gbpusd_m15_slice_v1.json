@@ -1,0 +1,70 @@
+{
+  "producer": "n02_ib_or_session_close_beyond_and_not_beyond_cards_p0_build_v1.py",
+  "scope": "REOPEN_B9_N02_IB_OR_SESSION_CLOSE_NOT_BEYOND_PULLBACK_CARD_P0",
+  "status": "fresh_run_branch_card_summary",
+  "evidence_mode": "fresh_run_derived_from_session_close_split_candidates",
+  "source_path": {
+    "input_csv": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_session_close_not_beyond_ib_candidates_p0_sample_gbpusd_m15_slice_v1.csv"
+  },
+  "repo_path": {
+    "card_md": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_session_close_not_beyond_pullback_card_gbpusd_m15_slice_v1.md",
+    "summary_json": "12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\n02_ib_or_session_close_not_beyond_pullback_summary_gbpusd_m15_slice_v1.json"
+  },
+  "generated_at_utc": "2026-07-05T16:04:46Z",
+  "boundary": {
+    "defines_failed_breakout": false,
+    "defines_retest_reject": false,
+    "defines_day_type": false,
+    "is_branch_card_only": true
+  },
+  "rows": 21,
+  "by_session": {
+    "london": {
+      "rows": 7,
+      "direction_down": 3,
+      "mode_close": 4,
+      "direction_up": 4,
+      "mode_wick": 3
+    },
+    "new_york": {
+      "rows": 14,
+      "direction_down": 7,
+      "mode_wick": 9,
+      "direction_up": 7,
+      "mode_close": 5
+    }
+  },
+  "direction_counts": {
+    "down": 10,
+    "up": 11
+  },
+  "mode_counts": {
+    "close": 9,
+    "wick": 12
+  },
+  "extension_bucket_counts": {
+    "0.001_to_0.00299": 9,
+    "ge_0.003": 3,
+    "lt_0.001": 9
+  },
+  "input_columns": [
+    "candidate_id",
+    "candidate_family",
+    "candidate_level",
+    "candidate_status",
+    "source_observation_id",
+    "symbol",
+    "timeframe",
+    "session_id",
+    "session_timezone",
+    "session_local_date",
+    "cross_direction",
+    "cross_mode",
+    "cross_bar_time_utc",
+    "first_return_inside_ib_bar_time_utc",
+    "session_close_price",
+    "session_close_beyond_ib",
+    "max_extension_distance_over_ib",
+    "split_scope"
+  ]
+}

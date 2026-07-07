@@ -1,0 +1,46 @@
+{
+  "producer": "n02_mt4_hst_ingest_v1.py",
+  "scope": "REOPEN_B9_N02_SECOND_FX_SUBHOUR_HISTORICAL_RECOVERY_GBPUSD_M15_P0",
+  "status": "historical_recovered_mt4_hst_to_canonical_bars",
+  "evidence_mode": "historical_recovered_mt4_hst_to_canonical_bars_without_touching_main_m1_runtime",
+  "generated_at_utc": "2026-07-05T09:50:14Z",
+  "source_path": {
+    "hst_input": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\VTMarkets-Live 2\\GBPUSD-VIP15.hst"
+  },
+  "repo_path": {
+    "canonical_bars_csv": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_m15_v1.csv",
+    "canonical_bars_backup": null,
+    "report_json": "D:\\Stock\\trading_analysis\\12_\u5de5\u5177\u8fd0\u884c\u65f6_TOOLING_RUNTIME\\Batch9_reopen_n02_session_or_p0_v1\\real_input_samples\\n02_real_input_gbpusd_m15_report_v1.json"
+  },
+  "boundary": {
+    "writes_main_m1_runtime": false,
+    "historical_recovered": true,
+    "declares_terminal_fresh_export": false,
+    "declares_failed_breakout": false
+  },
+  "contract": {
+    "symbol": "GBPUSD",
+    "timeframe": "M15",
+    "timeframe_minutes": 15,
+    "timezone_assumption": "utc_direct_from_mt4_hst_epoch_timestamps",
+    "header_size": 148,
+    "record_size": 60
+  },
+  "analysis": {
+    "record_count": 19032,
+    "first_bar_time": "2021-06-15T15:30:00Z",
+    "last_bar_time": "2022-03-18T23:45:00Z",
+    "unique_minute_components": [
+      "00",
+      "15",
+      "30",
+      "45"
+    ],
+    "step_minutes_histogram": {
+      "15": 18991,
+      "45": 1,
+      "2895": 37,
+      "2955": 2
+    }
+  }
+}
