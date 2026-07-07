@@ -85,7 +85,7 @@
 ## 当前优先顺序
 
 1. 旧主文档第二轮清理与 `04_active_main_docs` 镜像承接
-2. `20_tools_workspace` 继续推进 `PY-04 = tk_r6~r8` 手工表家族裁决
+2. `20_tools_workspace` 保持 `PY-04 = tk_r6~r8` 手工表家族的新仓维护态；模板级 smoke 已通过，`Batch9` 当前已完成 `IB fresh-run + N02 P0 latest persist + IB_OBJECT_P0 sample/summary fresh-run + IB_OR relation sample/summary fresh-run + conservative first_break relative sample/summary fresh-run + break_bar evidence sample/summary fresh-run + cross outcome split sample/summary fresh-run + post-cross path / OR break only card fresh-run + return_inside / session_close split fresh-run + session_close branch cards fresh-run + next session continuation / pullback stability fresh-run + next session branch cards fresh-run + multi-session persistence / stability fresh-run + multi-session branch cards fresh-run + third same-session persistence / stability fresh-run + third same-session branch cards fresh-run + third same-session terminal summary fresh-run + other timeframe validation(EURUSD M5 fall DST) fresh-run + wider history validation(EURUSD M5 from main M1) fresh-run + other symbol validation(XAUUSD M1 tail) fresh-run + other symbol + other timeframe validation(XAUUSD M5 jobs) fresh-run + second FX symbol input gate(GBPUSD H1) fresh-run + second FX sub-hour input gate fresh-run + second FX sub-hour input acquisition fresh-run + second FX sub-hour input cache recovery ready fresh-run`，下一步固定 `TradeMaxGlobal-Demo__60088394: terminal export -> n02_mt5_export_ingest_v1`，若失败再退 `hcc reader`，仍不进 `failed breakout`
 3. `10_source_library_archive` 继续按“先吃透、再迁入”的批次方式推进
 4. `12_tooling_runtime_archive` 与活跃对象 runtime 家族按对象入口分批迁入
 5. `21_trae_system_archive` 继续补合适 skill 副本

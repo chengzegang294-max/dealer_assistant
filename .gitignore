@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+.vscode/settings.json
+.trae/
+.dbg/
+trae-debug-log-*.ndjson
+debug-*.md
+02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/_tmp_*.ini

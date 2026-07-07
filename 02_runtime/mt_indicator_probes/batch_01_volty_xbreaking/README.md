@@ -7,21 +7,245 @@
 ## 当前文件
 
 - `BATCH_01_EXECUTION_CARD.md`
+- `BATCH_01_ACCEPTANCE_CHECK.md`
 - `BATCH_01_ARTIFACT_INDEX_TEMPLATE.md`
 - `BATCH_01_PROVENANCE_NOTEBOARD.md`
 - `MT4_MT5_FIRST_RUN_PLAYBOOK.md`
+- `MT4Probe_Volty_dumpseries_0_6.ini`
+- `mt4probe_volty_dumpseries_portable.ini`
+- `fill_mt4_eurusd_h1_history_v1.py`
+- `run_volty_dumpseries_gui_once.ps1`
 - `probe_artifact_ingest_v1.py`
+- `probe_mt_environment_inventory.ps1`
+- `probe_batch_acceptance_v1.py`
+- `run_xbreaking_validation_matrix.ps1`
+
+## Git 归口裁决
+
+- `INDEX_NOTE`，应跟踪：
+  - `README.md`
+  - `BATCH_01_EXECUTION_CARD.md`
+  - `BATCH_01_ACCEPTANCE_CHECK.md`
+  - `BATCH_01_ARTIFACT_INDEX_TEMPLATE.md`
+  - `BATCH_01_PROVENANCE_NOTEBOARD.md`
+  - `MT4_MT5_FIRST_RUN_PLAYBOOK.md`
+  - `PURCHASED_MARKET_DATA_INVENTORY.md`
+- `GENERATOR`，应跟踪：
+  - `probe_artifact_ingest_v1.py`
+  - `probe_batch_acceptance_v1.py`
+  - `probe_mt_environment_inventory.ps1`
+  - `fill_mt4_eurusd_h1_history_v1.py`
+  - `normalize_purchased_csv_contract_v1.py`
+  - `purchased_csv_contract_preview_index_v1.py`
+  - `purchased_csv_contract_preview_acceptance_v1.py`
+  - `run_volty_dumpseries_gui_once.ps1`
+  - `run_xbreaking_probe_once.ps1`
+  - `run_xbreaking_validation_matrix.ps1`
+  - `run_mt5_bar_export_once.ps1`
+  - `run_mt5_symbol_dump_once.ps1`
+  - `MT4Probe_Volty_dumpseries_0_6.ini`
+  - `mt4probe_volty_dumpseries_portable.ini`
+  - `tools/`
+- `ARTIFACT`，应跟踪：
+  - `artifacts/`
+  - `acceptance_snapshots/`
+  - `environment_snapshots/`
+- `IGNORE_LOCAL_TEMP`，应忽略：
+  - 根目录 `_tmp_*.ini`
+  - 这类文件是本地一次性 runtime 拼装物，不是批次默认入口，也不应充当长期证据
 
 ## 当前状态
 
 - 这批已经把运行时落盘口径固定下来。
-- `XBreaking` 首份 `csv` 已回收到 `artifacts\xbreaking\csv`。
-- `Volty` 首份历史 `csv` 与 `tester report` 已回收到 `artifacts\volty\...`。
-- `XBreaking` 已额外回收一份弱相关终端日志和摘录，但仍缺明确 `tester log / report`。
-- `Volty` 本机终端目录仍未发现新的 `csv`，且 `log` 仍待继续回收。
-- `XBreaking tester_report` 仍待继续回收。
+- `XBreaking` 已补齐一轮 `MT5` fresh-run `csv + tester report + terminal log + tester log`。
+- `XBreaking` 已额外补齐一轮 `EURUSD / H4` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\eurusd_h4_20260701_setmode\`。
+- `XBreaking` 已额外补齐一轮 `GBPUSD / H4` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\gbpusd_h4_20260701T\`。
+- `XBreaking` 已额外补齐一轮 `USDJPY / H4` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\usdjpy_h4_20260701T\`。
+- `XBreaking` 已额外补齐一轮 `USDJPY / H1` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\usdjpy_h1_20260701T\`。
+- `XBreaking` 已额外补齐一轮 `XAUUSD / H4` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\xauusd_h4_20260701T\`。
+- `XBreaking` 已额外补齐一轮 `US30 / H4` validation-matrix fresh-run，当前新样本已落在 `artifacts\xbreaking\validation_matrix\us30_h4_20260701T\`。
+- `XBreaking` 已额外补齐两组日期窗口 validation-matrix fresh-run：
+  - `EURUSD / H4 / 2025.01.03~2025.01.10` -> `artifacts\xbreaking\validation_matrix\eurusd_h4_jan0310_20260701T124339_window_a\`
+  - `XAUUSD / H4 / 2025.01.03~2025.01.10` -> `artifacts\xbreaking\validation_matrix\xauusd_h4_jan0310_20260701T124339_window_a\`
+  - `EURUSD / H4 / 2025.01.07~2025.01.14` -> `artifacts\xbreaking\validation_matrix\eurusd_h4_jan0714_20260701T124459_window_b\`
+  - `XAUUSD / H4 / 2025.01.07~2025.01.14` -> `artifacts\xbreaking\validation_matrix\xauusd_h4_jan0714_20260701T124459_window_b\`
+- 当前已补一份环境盘点快照：
+  - `environment_snapshots\mt_environment_inventory_latest.json`
+  - 当前结论：本机发现 `1` 套 `MT4` 与 `2` 套 `MT5` 安装；`MT5` 当前环境为 `ICMarketsSC-Demo / 52886989 / HK-Demo` 与 `TradeMaxGlobal-Demo / 60088394`
+  - 当前快照已额外写入 `environment_label`，可直接用于后续 rerun 入口选环境
+  - 当前 `probe_mt_environment_inventory.ps1` 已支持 `origin.txt` 与目录结构双路径发现；若后续出现没有 `origin.txt` 的 `MT5 data_root`，快照会以 `discovery_mode=structure_only` 记录候选
+- `XBreaking` 已额外补齐一轮 `DataRootOverride` 显式选择烟测：
+  - `artifacts\xbreaking\validation_matrix\eurusd_h4_overridecheck_20260701T\`
+- `XBreaking` 已额外补齐一轮 `environment inventory selector` 选环境烟测：
+  - `artifacts\xbreaking\validation_matrix\eurusd_h4_envselect_20260701T1305\`
+- `Volty` 已额外拿到 `EURUSD / H1 / DumpSeries=1` 的 fresh-run `csv + tester report + tester log`。
+- `XBreaking` 当前最新 fresh-run `csv` 为 `XBreaking_probe_EURUSD_H1_20250102_000030.csv`。
+- `XBreaking` 当前最新 `tester report` 为 `xbreaking_probe_portable.htm`。
+- `XBreaking` 当前已回收强相关 `tester log`：`20260701_20260701T041405.log`。
+- `XBreaking` 当前已确认非默认输入要通过 `runtime .set + ExpertParameters` 注入，不能再把 `Inp...=` 直接写进 tester `.ini` 当作默认可靠做法。
+- `Volty` 已确认 GUI 自动化与 `H1` 历史补齐脚本都可用，当前 `series_row_count = 350`。
+- `Volty / XBreaking` 当前都已达到批次级 fresh-run 证据闭环；`XBreaking` 主线已完成第二套 `MT5` 环境接入与跨环境实跑，当前验收为 `next_actions=[]`。
 - `artifacts\volty\*` 与 `artifacts\xbreaking\*` 回收目录已建好。
 - 已补一个专用 ingest 脚本，用来扫描 `MetaQuotes` 终端目录并复制候选产物到本批 `artifacts`。
 - 其中 `log` 现在支持按家族默认关键词和手动 `--log-keyword` 做内容筛选。
 - 其中 `log` 还支持 `--log-filename-keyword`、`--log-tail-lines` 和摘录 `.txt` 自动落盘。
+- 其中 `log` 现已优先选择更强相关的 `tester\logs`，避免默认先拿到弱相关 terminal log。
 - 当前已补一份批次级备注总表，用于说明每个核心文件的来源、作用和证据强弱。
+- 当前已补一份批次级验收脚本与验收单，用于在新产物入库前先做结构与内容校验。
+- 当前已支持把最新验收结果写成：
+  - `acceptance_snapshots\probe_batch_01_acceptance_latest.json`
+  - 当前验收快照除主 `artifacts` 外，也会额外汇总 `artifacts\xbreaking\validation_matrix\` 的最近归档、`selection_mode`、`environment_label` 与 `ingest_manifest` 状态
+  - 当前验收快照还会额外汇总 `manifest_source_backed_archive_count` 及 `latest_manifest_has_source_backed_records / latest_manifest_is_mixed_provenance / latest_manifest_is_repo_existing_only`，用于快速判断最新归档的溯源强度
+- 当前验收快照还会额外汇总 `inventory_mt5_environment_count / inventory_mt5_environment_labels / validation_matrix_environment_label_count / validation_matrix_environment_labels / cross_environment_ready / cross_environment_verified`，用于显式判断第二环境是否已就绪、跨环境实跑是否已发生；当前状态已更新为 `2` 套 `MT5` 环境、`cross_environment_verified=true`，且第二环境硬证据已扩展到 `US30/H4 + US30/H1 + EURUSD/H4 + EURUSD/H1 + USDJPY/H1 + USDJPY/H4 + GBPUSD/H4 + GBPUSD/H1 + XAUUSD/H4 + XAUUSD/H1 + XAGUSD/H1 + XAGUSD/H4 + NAS100/H1 + NAS100/H4 + XTIUSD/H1 + XTIUSD/H4 + XBRUSD/H1 + XBRUSD/H4 + USIDX/H1 + USIDX/H4 + US500/H1 + US500/H4 + GER40/H1 + GER40/H4 + AUDUSD/H1 + AUDUSD/H4 + USDCHF/H1 + USDCHF/H4 + USDCAD/H1 + USDCAD/H4 + NZDUSD/H1 + NZDUSD/H4 + EURJPY/H1 + EURJPY/H4 + GBPJPY/H1 + GBPJPY/H4 + EURGBP/H1 + EURGBP/H4 + CHFJPY/H1 + CHFJPY/H4 + EURCHF/H1 + EURCHF/H4 + AUDNZD/H1 + AUDNZD/H4 + CADJPY/H1 + CADJPY/H4 + EURAUD/H1 + EURAUD/H4 + GBPCHF/H1 + GBPCHF/H4 + EURNZD/H1 + EURNZD/H4 + AUDJPY/H1 + AUDJPY/H4 + NZDJPY/H1 + NZDJPY/H4`
+- 当前已支持把 `validation_matrix` 批次级总览写成：
+  - `artifacts\xbreaking\validation_matrix\validation_matrix_index_latest.json`
+  - 当前总览索引会汇总每个 archive 的 `symbol / chart_period / indicator_period / environment_label / selection_mode / manifest_record_count`
+  - 若旧 `run_summary.json` 缺 `environment` 字段，总览索引会尝试从 `run_summary.files.*.source` 路径中提取 `MetaQuotes\\Terminal\\<hash>`，并结合 `environment_snapshots\\mt_environment_inventory_latest.json` 推断 `environment_label / server / login / access_server`，同时标记 `environment_inferred=true`
+  - 当前总览索引会统计 `selection_mode_missing_count` 并列出 `selection_mode_missing_archive_tags`（最多 30 个），用于明确哪些 archive 还缺“环境选择方式”信息
+  - 当前总览索引还会额外统计 manifest 溯源质量：`manifest_source_backed_archive_count / manifest_full_source_backed_archive_count / manifest_mixed_provenance_archive_count / manifest_repo_existing_only_archive_count`
+  - 当前总览索引还会额外统计跨环境 readiness：`inventory_mt5_environment_count / inventory_mt5_environment_labels / validation_matrix_environment_label_count / validation_matrix_environment_labels / cross_environment_ready / cross_environment_verified`
+  - 当前总览索引还会额外给出 `recommended_cross_environment_seed_*`，用于自动挑选最适合做第二环境对照的代表样本；优先考虑 `selection_mode`、manifest 溯源强度与归档完整性，而不是简单取最新 archive
+- 当前推荐 seed 已切到 `usidx_h4_tmgm_longwin_20260703T0248`，说明 `USIDX/H4` 已成为当前更适合做跨环境 bootstrap 的代表样本
+  - 当前总览索引顶层还会直接给出最新归档的 manifest 摘要：`latest_manifest_source_record_count / latest_manifest_repo_existing_record_count / latest_manifest_fresh_run_index_record_count / latest_manifest_historical_recovered_record_count / latest_manifest_has_source_backed_records / latest_manifest_is_mixed_provenance`
+  - 每个 archive 也会暴露 `manifest_source_record_count / manifest_repo_existing_record_count / manifest_fresh_run_index_record_count / manifest_historical_recovered_record_count`，用于区分“run_summary 可追溯 source”与“仅 repo 内历史回填”
+- 已顺手清理一个失败遗留空 archive：`eurusd_h4_jan0310_20260701T124043_window_a`，当前总览 archive 数已到 `90`
+- 当前已额外把旧仓已购/已补充历史数据整理成独立清单：
+  - `PURCHASED_MARKET_DATA_INVENTORY.md`
+  - 目前最稳定的已购数据识别已分成两条证据链：`VTMarkets-Live 2` 目录下的大量 `VIP*.hst` 与 `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\` 根目录本层的 `CSV/XLSX`
+  - 外汇与黄金在 `VTMarkets-Live 2` 中以 `VIP*.hst` 最明显，股指则主要通过同目录的 `DJ30 / NAS100 / SP500 / US2000 / CHINA50` `.hst` 文件识别；而 `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\` 根目录本层当前已确认有 `41` 个已购 `csv/xlsx`
+  - 当前清单还额外区分了“已被新仓脚本实际消费”与“仅登记、尚未接入当前主线”的消费状态，便于后续旧仓迁移按优先级落地
+  - 当前清单已新增 `data` 根目录 `41` 个直购文件的文件级映射，并标出 `P1/P2` 迁移优先级，便于后续从清单直接推进到可执行迁移计划
+  - 当前还额外补了 `P1` 文件的候选消费者/字段契约入口，可直接把 `eurusd_1h.csv / gbpusd_1h.csv / usdjpy_1h.csv / xauusd_1h.csv / xagusd_1h.csv / US30_1h.csv / nas100_1h.csv` 接到下一轮迁移计划；其中 `nas100_1h.csv` 当前已拥有对应的 `NAS100/H1/H4` 主线对照样本
+  - 当前还新增了 `P1` 字段契约草案入口，先固定首批要比对的时间列、OHLC 与 volume 辅助列，便于下一轮从文档直接进入实现
+- 当前还补了商品 broker alias 备注：在 TMGM 第二环境里 `USOIL`、`UKOIL`、`XCUUSD` 与 `DOLLARIDXUSD` 都会报 `symbol not exist`；当前应优先使用 `XTIUSD` 作为 `USOIL` 的原油商品主线 probe symbol，使用 `XBRUSD` 作为 `UKOIL` 的 Brent 商品主线 probe symbol，并使用 `USIDX` 作为 `DOLLARIDXUSD` 的美元指数主线 probe symbol；`UKOIL/H1`、`XCUUSD/H1` 与 `DOLLARIDXUSD/H1` 已分别在 `ukoil_h1_tmgm_longwin_20260702T1918`、`xcuusd_h1_tmgm_longwin_20260702T1950`、`dollaridxusd_h1_tmgm_longwin_20260702T1959` 留下旧命名失败别名证据，而 `coppercmdusd_h1_tmgm_longwin_20260703T0216`、`usdx_h1_tmgm_longwin_20260703T0222` 与 `dxy_h1_tmgm_longwin_20260703T0226` 也进一步证实 `COPPERCMDUSD / USDX / DXY` 在当前 broker 下都不是可用收敛别名
+- 当前还补了 TMGM 公共产品面排除证据：公开 `Trading Hours` / `Swap Free Account` 页面把 `CHCUSD` 明确列为 `CHINA A50`，而公开 `Precious Metals` 页面只列 `XAUUSD / XAGUSD / XPTUSD`，因此 `CHCUSD` 不能继续作为 `XCUUSD` 候选 alias，且截至当前公共产品面也未发现 TMGM 对外暴露的铜类 instrument ticker
+- 当前还把旧仓 `usoil_1h.csv` 与 `xtiusd_1h.csv` 的商品输入锚点进一步收敛到 `XTIUSD/H1/H4`，使“旧命名商品 CSV -> broker alias -> 第二环境硬证据”形成一条可直接复用的对照链
+  - 当前还把 `us500_1h.csv` 对应的第二环境实跑样本补到了 `US500/H1/H4`，使旧仓已购股指数据与跨环境 validation matrix 再新增一条可消费对照链
+  - 当前还把 `ger40_1h.csv` 对应的第二环境实跑样本补到了 `GER40/H1/H4`，使旧仓德指数据也接入跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `audusd_1h.csv` 对应的第二环境实跑样本补到了 `AUDUSD/H1/H4`，使旧仓已购外汇数据也接入跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `usdchf_1h.csv` 对应的第二环境实跑样本补到了 `USDCHF/H1/H4`，使旧仓已购外汇数据再新增一条主线对照链，并接替成为当前 bootstrap seed
+- 当前还把 `usdcad_1h.csv` 对应的第二环境实跑样本补到了 `USDCAD/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `nzdusd_1h.csv` 对应的第二环境实跑样本补到了 `NZDUSD/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `eurjpy_1h.csv` 对应的第二环境实跑样本补到了 `EURJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `gbpjpy_1h.csv` 对应的第二环境实跑样本补到了 `GBPJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `EURGBP_1h.csv` 对应的第二环境实跑样本补到了 `EURGBP/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `CHFJPY_1h.csv` 对应的第二环境实跑样本补到了 `CHFJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `EURCHF_1h.csv` 对应的第二环境实跑样本补到了 `EURCHF/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `AUDNZD_1h.csv` 对应的第二环境实跑样本补到了 `AUDNZD/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `CADJPY_1h.csv` 对应的第二环境实跑样本补到了 `CADJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `EURAUD_1h.csv` 对应的第二环境实跑样本补到了 `EURAUD/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `GBPCHF_1h.csv` 对应的第二环境实跑样本补到了 `GBPCHF/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `EURNZD_1h.csv` 对应的第二环境实跑样本补到了 `EURNZD/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当时的 bootstrap seed
+- 当前还把 `AUDJPY_1h.csv` 对应的第二环境实跑样本补到了 `AUDJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `NZDJPY_1h.csv` 对应的第二环境实跑样本补到了 `NZDJPY/H1/H4`，使旧仓已购外汇数据继续扩展跨环境 validation matrix 对照链，并接替成为当前 bootstrap seed
+- 当前还把 `GBRIDXGBP_1h.csv` 对应的第二环境探测样本补到了 `gbridxgbp_h1_tmgm_longwin_20260703T0125`，其中 tester 日志已明确记录 `symbol GBRIDXGBP not exist`，因此该旧仓英股/英镑指数命名当前只能先沉淀为 broker alias 失败证据，不能直接当 TMGM 默认 tester symbol 使用
+- 当前还把 `UKOIL_1h.csv` 对应的第二环境可用别名样本补到了 `XBRUSD/H1/H4`，使旧仓 Brent 商品 CSV 从“旧命名失败证据”推进到“可用 broker alias + 第二环境硬证据”的收敛状态，并接替成为当前 bootstrap seed
+- 当前还把 `dollaridxusd_1h.csv` 对应的第二环境可用别名样本补到了 `USIDX/H1/H4`，使旧仓美元指数 CSV 从“旧命名失败 + 候选 alias 失败证据”推进到“可用 broker alias + 第二环境硬证据”的收敛状态，并接替成为当前 bootstrap seed
+  - 当前还补了一条德指历史命名失败证据：`GER30/H1` 在 TMGM 第二环境里也会报 `symbol GER30 not exist`，因此旧仓 `GER30_1h.csv` 后续不能直接映射到 `GER30` tester symbol，而应优先向 `GER40` 对照链收敛
+- 当前已落成 `normalize_purchased_csv_contract_v1.py`，并已生成已购 CSV 标准化预览归档：
+    - `artifacts\purchased_csv_contract_preview\p1_contract_preview_20260702T0428\`（首份小样本：`xauusd_1h / nas100_1h / usoil_1h`）
+    - `artifacts\purchased_csv_contract_preview\p1_contract_preview_20260702T0702\`（扩容版：`sample_count = 10`，覆盖 `eurusd_1h / gbpusd_1h / usdjpy_1h / xauusd_1h / xagusd_1h / _xau_test_1h / US30_1h / nas100_1h / usoil_1h / xtiusd_1h`）
+    - `artifacts\purchased_csv_contract_preview\p1_contract_preview_20260702T1730\`（`--preset p1_core` 首次批量入口实跑；同时把 `_xau_test_1h.csv` 显式归一到 `XAUUSD/1H`）
+    - `artifacts\purchased_csv_contract_preview\p2_contract_preview_20260703T1115\`（`--preset p2_ohlc_all` 首次批量入口实跑：把 P2 的外汇交叉/股指/商品/美元指数 OHLC CSV 一次性归一到可消费契约；其中 `UKOIL_1h -> XBRUSD`、`dollaridxusd_1h -> USIDX`、`GER30_1h -> GER40` 已在标准化层与第二环境 alias 结论对齐）
+  - 当前索引与验收快照：
+    - `artifacts\purchased_csv_contract_preview\purchased_csv_contract_preview_index_latest.json`
+    - `acceptance_snapshots\purchased_csv_contract_preview_acceptance_latest.json`
+- 当前已新增一份“币安 / OKX 币圈数据接入方案”记录稿：
+    - `03_docs\mt_indicator_engineering\crypto_exchange_data_onramp_plan_v1.md`
+    - 角色：先固定未来扩展到交易所原生币圈数据时的入口、字段契约和分阶段方案；当前不抢占 `MT5 / XBreaking` 默认主线
+- 当前已补一组批次内 `Volty DumpSeries` 快捷模板，避免下次实跑仍靠手填参数。
+- 当前已补一份批次内 `MT5 XBreaking` 自动 rerun 脚本：
+  - `run_xbreaking_probe_once.ps1`
+  - 用途：自动部署 `XBreakingProbe.ex5 / XBreaking.ex5`、生成 `runtime .set + runtime .ini`、执行 `/config` 测试并等待新 `csv / report / log`
+
+## 当前建议入口
+
+- `Volty DumpSeries fresh-run`
+  - 先看 `MT4_MT5_FIRST_RUN_PLAYBOOK.md`
+  - 若当前旧实例 `EURUSD/H1` 历史有断层，可先跑：
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\fill_mt4_eurusd_h1_history_v1.py`
+  - 若想直接复用本批参数，不再手工逐项输入：
+    - 把 `MT4Probe_Volty_dumpseries_0_6.ini` 复制为终端 `tester\MT4Probe_Volty.ini`
+    - 把 `mt4probe_volty_dumpseries_portable.ini` 复制到便携终端 `config\`
+  - 若想直接做一次桌面会话自动尝试：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_volty_dumpseries_gui_once.ps1`
+  - 跑完后立刻执行：
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_artifact_ingest_v1.py --family volty --kind csv --copy-latest`
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_artifact_ingest_v1.py --family volty --kind csv --normalize-volty-series`
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_batch_acceptance_v1.py --json-only`
+  - 当前最新闭环事实：
+    - `MT4_probe_Volty_EURUSD_H1_20250102_000000_20260701T035759.csv`
+    - `series_row_count = 350`
+- `XBreaking MT5 rerun`
+  - 直接执行前需先显式给出目标环境：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_probe_once.ps1 -InstallRoot <MT5_INSTALL_ROOT>`
+  - 若想先确认本机有哪些 `MetaQuotes` 环境可用：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_mt_environment_inventory.ps1 -OutputJson 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\environment_snapshots\mt_environment_inventory_latest.json`
+  - 若要切换非默认场景，可直接带参数：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_probe_once.ps1 -ChartPeriod H4 -IndicatorPeriod H4 -ReportStem xbreaking_probe_eurusd_h4 -ArchiveTag eurusd_h4_20260701_setmode`
+  - 若第二环境已经出现在环境盘点里、但不想依赖 `origin.txt` 自动匹配，可显式指定：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_probe_once.ps1 -InstallRoot <MT5_INSTALL_ROOT> -DataRootOverride <MT5_DATA_ROOT> -ChartPeriod H4 -IndicatorPeriod H4 -ReportStem xbreaking_probe_eurusd_h4_overridecheck -ArchiveTag eurusd_h4_overridecheck_20260701T`
+  - 若第二环境已经在快照里，想直接按环境标签或 hash 选：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_probe_once.ps1 -EnvironmentInventoryJson 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\environment_snapshots\mt_environment_inventory_latest.json -EnvironmentSelector <MT5_ENVIRONMENT_LABEL_OR_HASH> -ChartPeriod H4 -IndicatorPeriod H4 -ReportStem xbreaking_probe_eurusd_h4_envselect -ArchiveTag eurusd_h4_envselect_20260701T1305`
+  - 若第二环境刚接入、想最快完成 bootstrap：
+    - 先刷新 inventory：
+      - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_mt_environment_inventory.ps1 -OutputJson 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\environment_snapshots\mt_environment_inventory_latest.json`
+    - 若 inventory 已出现第二个 `environment_label`，直接按 selector 跑；当前 `run_xbreaking_probe_once.ps1` 已支持在未显式传 `InstallRoot` 时自动采用 inventory 命中的 `origin_path`，模板会优先跟随 `validation_matrix_index_latest.json` 里的 `recommended_cross_environment_seed_*`
+    - 若 inventory 只扫到 `structure_only` 候选，直接按 install/data root 显式跑；同样优先跟随这组推荐 seed 参数
+  - 当前脚本行为：
+    - 自动生成 `MQL5\Profiles\Tester\XBreakingProbe.runtime.<report_stem>.set`
+    - 通过 `ExpertParameters=` 引用该 `.set`
+    - 自动把 `csv / report / terminal log / tester log / runtime ini / runtime set / run_summary.json` 归档到 `artifacts\xbreaking\validation_matrix\<ArchiveTag>\`
+    - `run_summary.json` 现已额外记录 `install_root / data_root / server / login / access_server / environment_label`
+    - 默认不再回退到任何机器私有 `MT5` 安装目录；必须显式传 `InstallRoot`，或用 `EnvironmentSelector` 从 inventory 解析
+    - 支持 `DataRootOverride=` 显式选择目标 `MT5 data root`
+    - 支持 `EnvironmentInventoryJson + EnvironmentSelector` 从环境快照按 `environment_label / data_root_hash / server / login` 选择目标 `MT5` 环境
+    - 若命中 inventory selector，`run_summary.json` 还会记录 `selection_mode / inventory_json / inventory_selector / inventory_match_field / inventory_match_value`
+    - 若是手工跑测试器、只想回收“最新文件到某个 tag”，可用 `probe_artifact_ingest_v1.py --archive-tag <tag>` 直接落到 `validation_matrix`
+    - 通过 `probe_artifact_ingest_v1.py --archive-tag <tag>` 回收时，当前会额外写出 `validation_matrix\<tag>\ingest_manifest.json`，记录 `source_path / repo_path / matched_keywords / excerpt_path`
+    - 当前 `probe_artifact_ingest_v1.py --write-validation-matrix-index` 可显式刷新 `validation_matrix_index_latest.json`
+    - 若走 `--archive-tag` 回收链，脚本也会自动刷新 `validation_matrix_index_latest.json`
+    - 若某些历史 `validation_matrix/<tag>/` 归档缺 `ingest_manifest.json`，可用 `probe_artifact_ingest_v1.py --archive-tag <tag> --backfill-ingest-manifest-from-archive` 从 repo 现存归档反向补齐（会标记为 `historical_recovered`）
+    - 若想一次性补齐所有缺失的 `ingest_manifest.json`，可用 `probe_artifact_ingest_v1.py --backfill-missing-ingest-manifests` 扫描并批量补齐（同样标记为 `historical_recovered`）
+    - `probe_batch_acceptance_v1.py` 当前会把最近 `validation_matrix` 归档的 `run_summary / ingest_manifest / selection_mode / environment_label` 直接写进验收快照
+  - 若想按日期窗口批量跑并让 tag 可读：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_validation_matrix.ps1 -Symbols EURUSD,XAUUSD -Periods H4 -FromDate 2025.01.03 -ToDate 2025.01.10 -WindowTag jan03_10 -TagSuffix window_a`
+  - 回收后立刻执行：
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_artifact_ingest_v1.py --family xbreaking --kind csv --copy-latest`
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_artifact_ingest_v1.py --family xbreaking --kind report --copy-latest`
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_artifact_ingest_v1.py --family xbreaking --kind log --copy-latest --log-tail-lines 400`
+    - `python 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\probe_batch_acceptance_v1.py --json-only`
+  - 当前最新闭环事实：
+    - `XBreaking_probe_EURUSD_H1_20250102_000030.csv`
+    - `xbreaking_probe_portable.htm`
+    - `20260701_20260701T041405.log`
+  - 当前最新跨场景验证事实：
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_20260701_setmode\csv\XBreaking_probe_EURUSD_H4_20250102_000030.csv`
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_20260701_setmode\report\xbreaking_probe_eurusd_h4.htm`
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_20260701_setmode\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\gbpusd_h4_20260701T\csv\XBreaking_probe_GBPUSD_H4_20250102_000000.csv`
+    - `artifacts\xbreaking\validation_matrix\gbpusd_h4_20260701T\report\xbreaking_probe_gbpusd_h4.htm`
+    - `artifacts\xbreaking\validation_matrix\gbpusd_h4_20260701T\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h4_20260701T\csv\XBreaking_probe_USDJPY_H4_20250102_000000.csv`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h4_20260701T\report\xbreaking_probe_usdjpy_h4.htm`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h4_20260701T\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h1_20260701T\csv\XBreaking_probe_USDJPY_H1_20250102_000000.csv`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h1_20260701T\report\xbreaking_probe_usdjpy_h1.htm`
+    - `artifacts\xbreaking\validation_matrix\usdjpy_h1_20260701T\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\xauusd_h4_20260701T\csv\XBreaking_probe_XAUUSD_H4_20250102_010000.csv`
+    - `artifacts\xbreaking\validation_matrix\xauusd_h4_20260701T\report\xbreaking_probe_xauusd_h4.htm`
+    - `artifacts\xbreaking\validation_matrix\xauusd_h4_20260701T\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\us30_h4_20260701T\csv\XBreaking_probe_US30_H4_20250102_010000.csv`
+    - `artifacts\xbreaking\validation_matrix\us30_h4_20260701T\report\xbreaking_probe_us30_h4.htm`
+    - `artifacts\xbreaking\validation_matrix\us30_h4_20260701T\log\20260701.log`
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_jan0310_20260701T124339_window_a\csv\XBreaking_probe_EURUSD_H4_20250103_000000.csv`
+    - `artifacts\xbreaking\validation_matrix\xauusd_h4_jan0310_20260701T124339_window_a\csv\XBreaking_probe_XAUUSD_H4_20250103_010000.csv`
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_jan0714_20260701T124459_window_b\csv\XBreaking_probe_EURUSD_H4_20250107_000000.csv`
+    - `artifacts\xbreaking\validation_matrix\xauusd_h4_jan0714_20260701T124459_window_b\csv\XBreaking_probe_XAUUSD_H4_20250107_010000.csv`
+    - `artifacts\xbreaking\validation_matrix\eurusd_h4_overridecheck_20260701T\csv\XBreaking_probe_EURUSD_H4_20250103_000000.csv`
+
+- `XBreaking validation matrix`
+  - 批量执行入口：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_validation_matrix.ps1`
+  - 建议先用小样本跑通，再扩大全矩阵：
+    - `powershell -ExecutionPolicy Bypass -File 02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\run_xbreaking_validation_matrix.ps1 -Symbols GBPUSD -Periods H4 -TagSuffix matrix_sample`
