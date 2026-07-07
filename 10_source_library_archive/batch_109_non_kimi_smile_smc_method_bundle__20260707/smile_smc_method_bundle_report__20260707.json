@@ -1,0 +1,16 @@
+﻿{
+    "format":  "smile_smc_method_bundle_v1",
+    "generated_at_utc":  "2026-07-07T15:00:17.3240609Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\_raw_snapshot_batch09\\10_来源库_SOURCE_LIBRARY\\00_外部公开资料与方法论参考\\02_外部视频与方法论参考\\Smile_SMC交易系统2_0",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_109_non_kimi_smile_smc_method_bundle__20260707",
+    "file_count":  6,
+    "total_bytes":  94307,
+    "buckets":  {
+                    "overview":  3,
+                    "evidence":  1,
+                    "raw_materials":  2
+                },
+    "mode":  "method_reference_bundle",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_109_non_kimi_smile_smc_method_bundle__20260707\\smile_smc_method_bundle_manifest__20260707.tsv"
+}

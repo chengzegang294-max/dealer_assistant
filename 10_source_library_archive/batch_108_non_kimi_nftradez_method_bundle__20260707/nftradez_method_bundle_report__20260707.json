@@ -1,0 +1,18 @@
+﻿{
+    "format":  "nftradez_method_bundle_v1",
+    "generated_at_utc":  "2026-07-07T14:51:55.4887665Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\_raw_snapshot_batch09\\10_来源库_SOURCE_LIBRARY\\00_外部公开资料与方法论参考\\02_外部视频与方法论参考\\Norman_NFTRADEZ_ICT_Trader_NYC",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_108_non_kimi_nftradez_method_bundle__20260707",
+    "file_count":  8,
+    "total_bytes":  38714,
+    "buckets":  {
+                    "overview":  2,
+                    "evidence":  1,
+                    "glossary":  2,
+                    "premarket":  2,
+                    "handoff":  1
+                },
+    "mode":  "method_reference_bundle",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_108_non_kimi_nftradez_method_bundle__20260707\\nftradez_method_bundle_manifest__20260707.tsv"
+}

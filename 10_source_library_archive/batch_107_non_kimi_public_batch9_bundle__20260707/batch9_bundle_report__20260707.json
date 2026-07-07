@@ -1,0 +1,17 @@
+﻿{
+    "format":  "public_batch9_bundle_v1",
+    "generated_at_utc":  "2026-07-07T14:44:45.6660929Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\_raw_snapshot_batch09\\10_来源库_SOURCE_LIBRARY\\00_外部公开资料与方法论参考\\01_外部公开指标资料_Batch9",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_107_non_kimi_public_batch9_bundle__20260707",
+    "file_count":  9,
+    "total_bytes":  49996,
+    "buckets":  {
+                    "overview":  2,
+                    "indices":  2,
+                    "reopen":  2,
+                    "contracts":  3
+                },
+    "mode":  "research_contract_ready_reopen_ready",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_107_non_kimi_public_batch9_bundle__20260707\\batch9_bundle_manifest__20260707.tsv"
+}
