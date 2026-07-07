@@ -1,0 +1,11 @@
+{
+  "format": "source_library_mirror_gap_analysis_v1",
+  "generated_at_utc": "2026-07-07T07:43:31+00:00",
+  "repo_root": "D:\\Stock\\trading_assistant",
+  "mirror_root": "D:\\Stock\\trading_assistant\\10_source_library_archive\\mirror_kimi_inbox",
+  "gaps_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_alignment_gaps__20260707.tsv",
+  "row_count": 876,
+  "hit_any_count": 81,
+  "hit_any_ratio": 0.09246575342465753,
+  "limit_per_basename": 5
+}

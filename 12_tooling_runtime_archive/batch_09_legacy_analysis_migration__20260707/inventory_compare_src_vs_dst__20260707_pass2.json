@@ -1,0 +1,14 @@
+{
+  "format": "inventory_compare_report_v1",
+  "generated_at_utc": "2026-07-07T07:27:30+00:00",
+  "left_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\inventory_v2_src_excluded_sha256__20260707_pass2.tsv",
+  "right_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\inventory_v2_dst_excluded_sha256__20260707_pass2.tsv",
+  "left_count": 4061,
+  "right_count": 4061,
+  "only_left_count": 0,
+  "only_right_count": 0,
+  "mismatch_count": 0,
+  "only_left_head": [],
+  "only_right_head": [],
+  "mismatches": []
+}

@@ -1,0 +1,13 @@
+{
+  "format": "lifted_alignment_gaps_v1",
+  "generated_at_utc": "2026-07-07T07:58:36+00:00",
+  "audit_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_alignment_audit__20260707.tsv",
+  "out_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\gaps_data__20260707.tsv",
+  "row_count": 210,
+  "only_categories": [
+    "data_unclassified"
+  ],
+  "category_counts": {
+    "data_unclassified": 210
+  }
+}

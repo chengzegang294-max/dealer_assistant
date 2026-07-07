@@ -1,0 +1,2651 @@
+{
+  "format": "legacy_analysis_ref_rewrite_report_v1",
+  "generated_at_utc": "2026-07-07T07:15:49+00:00",
+  "repo_root": "D:\\Stock",
+  "lifted_prefix_posix": "12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis",
+  "write": true,
+  "changed_file_count": 660,
+  "total_hit_count": 31412,
+  "changes": [
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/legacy_analysis_path_map_v1.tsv",
+      "hit_count": 26095
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_repo_refscan_for_final_delete_list_v1.tsv",
+      "hit_count": 665
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_repo_refscan_for_final_delete_list_v1.tsv",
+      "hit_count": 665
+    },
+    {
+      "path": "trading_analysis/docs/indexes/_ai_index_legacy_20260611.txt",
+      "hit_count": 257
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/00_active_doc_cleanup_archive_20260621/daily_active_before_cleanup_20260621.md",
+      "hit_count": 208
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/00_batch1_recovered_utf8/关于日活_current_truth_anchor.md",
+      "hit_count": 208
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/txt_md_index_v1.tsv",
+      "hit_count": 198
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/txt_md_index_v1.tsv",
+      "hit_count": 198
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_external_ops_plan_v1.tsv",
+      "hit_count": 81
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_ops_plan_v1.tsv",
+      "hit_count": 81
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/06_pdf_retained_cut_v2/manifest_v2.tsv",
+      "hit_count": 65
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/06_pdf_retained_cut_v2/manifest_v2.tsv",
+      "hit_count": 65
+    },
+    {
+      "path": "trading_assistant/04_active_main_docs/batch_01_selected/关于日活.md",
+      "hit_count": 56
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_external_ops_preflight_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_materials_catalog_v1.md",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_materials_catalog_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_research_pdf_最终删除勾选_逐条清单_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_前后路径台账_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_ops_preflight_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_materials_catalog_v1.md",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_materials_catalog_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_research_pdf_最终删除勾选_逐条清单_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_前后路径台账_v1.tsv",
+      "hit_count": 54
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__01_集合竞价教程__v1.tsv",
+      "hit_count": 49
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_external_move_plan_v1.tsv",
+      "hit_count": 47
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_move_plan_v1.tsv",
+      "hit_count": 47
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_p0_runtime_session_calendar_dst_checklist_v1.md",
+      "hit_count": 45
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_external_delete_candidate_plan_v1.tsv",
+      "hit_count": 34
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_delete_candidate_plan_v1.tsv",
+      "hit_count": 34
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_delete_candidates_ref_cleanup_list_v1.md",
+      "hit_count": 29
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_delete_candidates_ref_cleanup_list_v1.tsv",
+      "hit_count": 29
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_delete_candidates_ref_cleanup_list_v1.md",
+      "hit_count": 29
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_delete_candidates_ref_cleanup_list_v1.tsv",
+      "hit_count": 29
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_repo_refscan_summary_v1.tsv",
+      "hit_count": 27
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_repo_refscan_summary_v1.tsv",
+      "hit_count": 27
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/Norman_NFTRADEZ_manifest_v1.tsv",
+      "hit_count": 26
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/SKILLS_INDEX.md",
+      "hit_count": 26
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/PURCHASED_MARKET_DATA_INVENTORY.md",
+      "hit_count": 23
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p2_contract_preview_20260703T1115/ingest_manifest.json",
+      "hit_count": 23
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p2_contract_preview_20260703T1115/run_summary.json",
+      "hit_count": 23
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_gbpusd_m15_slice_downstream_summary_v1.json",
+      "hit_count": 20
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/00_batch1_recovered_utf8/关于日活_best_effort_gb18030.md",
+      "hit_count": 11
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/关于日活.md",
+      "hit_count": 11
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_runtime_ref_check_report_v1.json",
+      "hit_count": 10
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T0702/ingest_manifest.json",
+      "hit_count": 10
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T0702/run_summary.json",
+      "hit_count": 10
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T1730/ingest_manifest.json",
+      "hit_count": 10
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T1730/run_summary.json",
+      "hit_count": 10
+    },
+    {
+      "path": "trading_analysis/.trae/README__ARCHIVE_ONLY.md",
+      "hit_count": 9
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 9
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_05_趋势_系统交易/01_F1_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 9
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/02_A3C1_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 9
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/00_本地证据锚点__集合竞价教程/manifest_v1.tsv",
+      "hit_count": 9
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v1.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v10.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v11.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v12.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v13.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v14.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v15.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v16.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v17.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v18.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v19.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v2.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v20.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v21.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v22.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v23.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v24.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v25.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v26.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v27.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v28.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v29.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v3.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v30.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v31.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v32.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v33.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v34.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v35.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v36.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v37.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v38.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v39.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v4.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v40.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v42.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v43.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v44.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v45.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v46.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v47.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v48.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v49.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v5.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v50.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v51.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v6.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v7.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v8.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v9.tsv",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_historical_recovery_gbpusd_m15_summary_v1.json",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_assistant/00_entry/FULL_REPO_MIGRATION_MAP.md",
+      "hit_count": 8
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/01_A1_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 7
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_KIMI_batch1_round3_function_core_direct_message_v1.txt",
+      "hit_count": 7
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_KIMI_batch1_round3_function_core_prompt_v1.txt",
+      "hit_count": 7
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/BATCH_01_PROVENANCE_NOTEBOARD.md",
+      "hit_count": 7
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/batch_01_selected/README.md",
+      "hit_count": 7
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_IB_OBJECT_P0_对象入口_v1.md",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_KIMI_batch1_round2_direct_message_v2.txt",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v41.tsv",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/00_batch1_recovered_utf8/01_阶段一_项目记录_过去与落地_best_effort_gb18030.md",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/01_阶段一_项目记录_过去与落地.md",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_same_day_session_close_split_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 6
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2/manifest_v2.tsv",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/03_A3_extra_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_KIMI_batch1_priority_read_prompt_v1.txt",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_gbpusd_m15_candidate_slice_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_continuation_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_continuation_observation_p0_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_break_bar_evidence_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_break_bar_evidence_p0_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_cross_outcome_split_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_cross_outcome_split_p0_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_pullback_stability_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_pullback_stability_observation_p0_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_post_cross_path_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_post_cross_path_observation_p0_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_other_symbol_other_timeframe_validation_xauusd_m5_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_other_symbol_validation_xauusd_m1_tail_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_other_timeframe_validation_eurusd_m5_fall_dst_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_symbol_input_gate_gbpusd_h1_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_wider_history_validation_eurusd_m5_from_m1_summary_v1.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/volty/history_patch/fill_mt4_eurusd_h1_history_latest.json",
+      "hit_count": 5
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_manifest_v1.tsv",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_吸收与总纲_v1.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/04_A4_cutpack_v2_final/manifest_v2.tsv",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/manifest_v2.tsv",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_10_A5_财报_估值_组合管理/01_A5_cutpack_v1_final/manifest_v2.tsv",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_KIMI_batch1_prompt_v1.txt",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R03_白点未匹配量与红绿柱观察卡_v1.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n01_vol_state_p0_v1/real_input_samples/README.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_multi_session_persistence_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_multi_session_persistence_observation_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_third_same_session_persistence_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_third_same_session_persistence_observation_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_multi_session_stability_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_multi_session_stability_observation_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_third_same_session_stability_observation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_third_same_session_stability_observation_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_beyond_or_next_session_continuation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_relation_p0_summary_gbpusd_m15_candidate_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_relation_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_relation_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_return_inside_ib_same_day_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_return_inside_ib_same_day_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_beyond_split_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_beyond_split_p0_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_third_same_session_terminal_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_third_same_session_terminal_summary_v1.json",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_historical_recovery_gbpusd_m15_runtime_notes_v1.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/real_input_samples/README.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R7/README_放这里.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R8/README_放这里.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/kd_mtf_p0_v1/kd_mtf_p0_runtime_append_acceptance_v1.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/DY_R1_KD_MTF_P0/kd_mtf_p0_runtime_append_acceptance_v1.md",
+      "hit_count": 4
+    },
+    {
+      "path": "trading_analysis/.trae/skills/multi-ai-discussion-guard/SKILL.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/.trae/skills/p0-lab/SKILL.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v1.txt",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v2__agentA.txt",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v1.txt",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v2__agentB.txt",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R01_9点15到9点20可撤单与假单诱导_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R02_9点20到9点25不可撤单与挂单更真实_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R04_9点25真实成交与9点25前飙升片段卡_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R22_9点20前后可信度分界_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R23_白点多与量能活跃不等于直接涨停片段卡_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R25_撮合量放大与抛压变化片段卡_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/04_MT_export_scripts/README.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_object_p0_summary_gbpusd_m15_candidate_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_object_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_object_p0_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_continuation_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_multi_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_multi_session_persistence_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_third_same_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_beyond_third_same_session_persistence_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_first_break_relative_p0_summary_gbpusd_m15_candidate_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_first_break_relative_p0_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_first_break_relative_p0_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_multi_session_stability_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_multi_session_stability_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_stability_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_third_same_session_stability_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_not_beyond_third_same_session_stability_card_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_branch_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_branch_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_beyond_or_multi_session_persistence_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_beyond_or_next_session_continuation_card_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_beyond_or_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_or_break_only_session_close_not_beyond_or_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_beyond_ib_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_beyond_ib_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_not_beyond_pullback_summary_gbpusd_m15_slice_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_or_session_close_not_beyond_pullback_summary_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_ib_runtime_notes_v1.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/real_input_samples/n02_real_input_xauusd_m5_from_m1_tail_report_v1.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R6/README_放这里.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/OLD_REPO_TO_NEW_REPO_PROGRESS.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/data/mt_exports_drop/README.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T0428/ingest_manifest.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/purchased_csv_contract_preview/p1_contract_preview_20260702T0428/run_summary.json",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_assistant/ROOT_TOOLING_CONFIG_NOTE.md",
+      "hit_count": 3
+    },
+    {
+      "path": "trading_analysis/.trae/agents/README__ARCHIVE_ONLY.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_mechanism_v3.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v2.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/README_放这里.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_主题锚点勾验_v1.tsv",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/Kimi拆书待入库_批次检查_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_stage_proof__03_券商研报__representatives_v52.tsv",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R21_9点20前涨停封单可撤单片段卡_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n01_vol_state_p0_v1/n01_p0_runtime_notes_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_p0_runtime_notes_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_acquisition_summary_v1.json",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_cache_recovery_ready_summary_v1.json",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_gate_summary_v1.json",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_terminal_export_insufficient_summary_v1.json",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_runtime_append_acceptance_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_runtime_append_acceptance_v1.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/DY_R1_KD_MTF_P0/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/docs/TK-R4_USD_half_risk_SchemeB_Quickstart.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/docs/ops/ashare_daily_ops.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/.trae/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/BATCH_01_EXECUTION_CARD.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/04_active_main_docs/batch_01_selected/02_阶段二_工作方向_想法库.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/README_放这里.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_主题锚点勾验_v1.tsv",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/README_放这里.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_05_legacy_mt4_probe_assets__20260706/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_06_legacy_commit_helpers__20260706/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_07_legacy_docs_batches__20260706/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/rewrite_legacy_analysis_refs_v1.py",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/batch_02_selected/README.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/batch_02_selected/p0-exec-evidence-officer_PROMPT.md",
+      "hit_count": 2
+    },
+    {
+      "path": "trading_analysis/.trae/skills/INDEX.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/.trae/skills/ashare-ops-guard/SKILL.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/.trae/skills/mt5-audit/SKILL.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/01_阶段一_项目记录_过去与落地.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_OTHER_TIMEFRAME_VALIDATION_XAUUSD_M5_P0_关系入口_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_VALIDATION_XAUUSD_M1_TAIL_P0_关系入口_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_GATE_P0_关系入口_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SYMBOL_INPUT_GATE_GBPUSD_H1_P0_关系入口_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_AGENT_STATUS__2026-06-23.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_shrink_v1__imported.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_v1__imported.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/README.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_逐帧运行过程_文字化_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/21 果核量化出品 -- BIAS_QL乖离率策略指数择时1.0.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/27 RSRS指标择时（30分钟线）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/29 KD指标量化交易策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/37 个股止损.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/40 kdj指标配合accer过滤.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/45 布林带策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/52 布林带1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/58 MACD金叉买入，死叉卖出.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/66 高于MA10买入低于MA20卖出回测半年收益率20.4%.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/69 阻力支撑相对强度（RSRS）指标择时策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/70 蓝筹&均线.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/76 MACD——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/77 RSRS大盘择时优化.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/78 GFTD第二版.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/79 DMI——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/90 MA均线金叉买入，死叉卖出.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/91 Stoch（KDJ）——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/93 RSRS——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/03 机器学习多因子策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/07 穿越牛熊基业长青的价值精选策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/08 MACD单因子多头策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/12 【均值回归】基于zscore的均值回归策略（胜率100%）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/18 均值回归策略分享.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/30 基于LSTM模型预测股票价格走势.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/31 低PB价值投资策略分享.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/34 成长策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/39 因子分析——利用JoinQuant因子分析模块选取因子并封装为策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/41 多因子模型（三）-交易回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/42 低估值+TRIX+RSI 低回撤策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/43 无模型评估的多因子模型.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/67 多因子回测完整模板（筛选和买卖条件强于‘策略生成器’）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/75 财务因子策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/92 多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/94 PE和PB策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/98 机器学习SVM用法示例策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/25 简单市值轮动策略-学习.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/33 买入每个行业市值最大的股票.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/51 HS300--随机森林拐点识别.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/59 小市值轮动，修改了内容，剔除了停牌股，同时PE要求为正的股票。.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/64 12年年化34%，Sharpe1.2，银行股轮动.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/65 8只基金按PE调仓.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/68 板块轮动不动？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/72 基金定投-沪深300-5年回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/74 基于沪深300的增强.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/81 申万行业轮动策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/82 次新+小市值+KAMA择时 轮动.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/83 沪深300ETF-1060双均线.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/01 AdaptiveMA自适应均线 过滤器 期货多品种模型 收益稳定增长.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/04 趋势交易能赚钱吗？商品期货动量效应挖掘初探.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/09 商品期货 多品种日频双均线模型 作为给入门者的小礼物.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/17 商品期货截面动量模型，真的靠谱吗？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/22 海龟交易法则升级版---（分钟级回测+合约变更移仓）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/49 海龟克隆优化.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/13 招行_海天配对策略-改进版.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/19 招行_海天配对策略（学习招行伊利配对）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/50 简单配对交易.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/55 中小板-中证500配对交易.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/38 一个简单的跟踪聪明钱策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/73 跟着港资（北向资金）买A股.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/95 资金流策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/02 我好像破解了聚宽擂台排第一的策略？！.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/05 兄台且慢，去天台排队不如看看这个策略先.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/06 为什么股票市值是当前的样子？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/10 追三板策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/11 酒股地中短线策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/14 抗击熊市的中短期低市值策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/15 基于多期限的选股策略（一）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/16 投资学作业.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/20 分钟K线数据重构 ATR自适应通道 请高手来迭代.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/23 Principle by Jim Slater 祖鲁法则在A股的实现与改进.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/24 自选策略1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/26 向导式-1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/28 收益策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/32 测试策略1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/35 投资学作业——简单多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/36 投资学作业——简单多因子选股策略改进.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/44 新手初来，写了一个价值投资策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/46 Get API 新技能，研究中写策略并回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/47 次新小盘策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/48 再测一支.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/53 小市值策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/54 中长线买入卖出点选择.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/56 爱神的箭放声大哭.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/57 黄泽森策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/60 投资期末作业.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/61 向导式策略生成器生成的成长股精选策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/62 选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/63 向导式.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/80 向导式 价值分析(一),成功避开股灾,大盘震荡跌时小涨.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/84 投资策略说明.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/85 【第一次玩】我就是要买便宜股系列.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/86 5日线穿十日线策略（供初学）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/87 选股策略说明——张燕兰 16318320.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/88 一位小白编辑的多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/89 test1：简单的多均线择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/96 沪港两地上市的银行股翻倍策略报告.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/97 银行翻倍策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/99 一个中信证券的向导策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/GROUP_08_SOURCE_RAW_需要你找回的源头书本_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/README_放这里.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/00_batch1_recovered_utf8/03_阶段二_当下计划_执行清单_best_effort_gb18030.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/03_阶段二_当下计划_执行清单.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/02_MT指标家族_源码与探针/NOTE__INI_CONFIGS_ARE_ARCHIVE_ONLY__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/03_MT4便携探针实例/NOTE__INI_CONFIGS_ARE_ARCHIVE_ONLY__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/03_MT4便携探针实例/history/README.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_historical_recovery_gbpusd_m15_summary_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_acquisition_runtime_notes_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_cache_recovery_ready_runtime_notes_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/n02_second_fx_subhour_input_gate_runtime_notes_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/real_input_samples/n02_mt4_hst_ingest_v1.py",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/Batch9_reopen_n02_session_or_p0_v1/real_input_samples/n02_real_input_gbpusd_m15_report_v1.json",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R6/tkr6_manual_audit_summary_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R7/tkr7_manual_audit_summary_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/TK_R8/tkr8_manual_audit_summary_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_acceptance_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_manifest_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_chain_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_super_manifest_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_append_compatibility_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_bar_window_mapping_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_bar_window_sample_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_bar_window_stub_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_chain_summary_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_chain_summary_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_manifest_freeze_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_replay_chain_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_replay_preview_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_replay_preview_acceptance_validation_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_runtime_params_template_v1.json",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/pv_corr_state_p0_v1/pv_corr_state_p0_simulate_append_diff_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_append_compatibility_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_chain_summary_acceptance_compare_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_chain_summary_index_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_manifest_freeze_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_raw_window_mapping_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_raw_window_sample_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_raw_window_stub_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_replay_chain_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_replay_preview_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_replay_preview_acceptance_validation_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_runtime_params_template_v1.json",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/12_工具运行时_TOOLING_RUNTIME/rsj_state_p0_v1/rsj_state_p0_simulate_append_diff_acceptance_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/DY_R1_KD_MTF_P0/kd_mtf_p0_runtime_params_template_v1.json",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/ashare_daily_ops.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/docs/P0_规则子表_v0.1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/docs/README__ARCHIVE_ONLY_BACKLOG_DOCS_MOVED__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/docs/README__ARCHIVE_ONLY_BATCH_DOCS_MOVED__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/docs/README__ARCHIVE_ONLY_COMMIT_HELPERS_MOVED__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_analysis/docs/README__ARCHIVE_ONLY_DOCS_SCOPE__20260706.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/.vscode/settings.json",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/00_entry/MAINLINE_FULL_INGEST_AND_MIGRATION_PLAN__2026-06-26.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/21 果核量化出品 -- BIAS_QL乖离率策略指数择时1.0.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/27 RSRS指标择时（30分钟线）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/29 KD指标量化交易策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/37 个股止损.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/40 kdj指标配合accer过滤.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/45 布林带策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/52 布林带1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/58 MACD金叉买入，死叉卖出.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/66 高于MA10买入低于MA20卖出回测半年收益率20.4%.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/69 阻力支撑相对强度（RSRS）指标择时策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/70 蓝筹&均线.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/76 MACD——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/77 RSRS大盘择时优化.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/78 GFTD第二版.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/79 DMI——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/90 MA均线金叉买入，死叉卖出.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/91 Stoch（KDJ）——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/93 RSRS——大盘择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/03 机器学习多因子策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/07 穿越牛熊基业长青的价值精选策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/08 MACD单因子多头策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/12 【均值回归】基于zscore的均值回归策略（胜率100%）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/18 均值回归策略分享.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/30 基于LSTM模型预测股票价格走势.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/31 低PB价值投资策略分享.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/34 成长策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/39 因子分析——利用JoinQuant因子分析模块选取因子并封装为策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/41 多因子模型（三）-交易回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/42 低估值+TRIX+RSI 低回撤策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/43 无模型评估的多因子模型.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/67 多因子回测完整模板（筛选和买卖条件强于‘策略生成器’）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/75 财务因子策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/92 多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/94 PE和PB策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/98 机器学习SVM用法示例策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/25 简单市值轮动策略-学习.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/33 买入每个行业市值最大的股票.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/51 HS300--随机森林拐点识别.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/59 小市值轮动，修改了内容，剔除了停牌股，同时PE要求为正的股票。.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/64 12年年化34%，Sharpe1.2，银行股轮动.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/65 8只基金按PE调仓.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/68 板块轮动不动？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/72 基金定投-沪深300-5年回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/74 基于沪深300的增强.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/81 申万行业轮动策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/82 次新+小市值+KAMA择时 轮动.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/83 沪深300ETF-1060双均线.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/01 AdaptiveMA自适应均线 过滤器 期货多品种模型 收益稳定增长.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/04 趋势交易能赚钱吗？商品期货动量效应挖掘初探.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/09 商品期货 多品种日频双均线模型 作为给入门者的小礼物.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/17 商品期货截面动量模型，真的靠谱吗？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/22 海龟交易法则升级版---（分钟级回测+合约变更移仓）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/49 海龟克隆优化.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/13 招行_海天配对策略-改进版.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/19 招行_海天配对策略（学习招行伊利配对）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/50 简单配对交易.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/55 中小板-中证500配对交易.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/38 一个简单的跟踪聪明钱策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/73 跟着港资（北向资金）买A股.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/95 资金流策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/02 我好像破解了聚宽擂台排第一的策略？！.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/05 兄台且慢，去天台排队不如看看这个策略先.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/06 为什么股票市值是当前的样子？.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/10 追三板策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/11 酒股地中短线策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/14 抗击熊市的中短期低市值策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/15 基于多期限的选股策略（一）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/16 投资学作业.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/20 分钟K线数据重构 ATR自适应通道 请高手来迭代.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/23 Principle by Jim Slater 祖鲁法则在A股的实现与改进.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/24 自选策略1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/26 向导式-1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/28 收益策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/32 测试策略1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/35 投资学作业——简单多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/36 投资学作业——简单多因子选股策略改进.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/44 新手初来，写了一个价值投资策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/46 Get API 新技能，研究中写策略并回测.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/47 次新小盘策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/48 再测一支.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/53 小市值策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/54 中长线买入卖出点选择.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/56 爱神的箭放声大哭.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/57 黄泽森策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/60 投资期末作业.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/61 向导式策略生成器生成的成长股精选策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/62 选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/63 向导式.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/80 向导式 价值分析(一),成功避开股灾,大盘震荡跌时小涨.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/84 投资策略说明.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/85 【第一次玩】我就是要买便宜股系列.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/86 5日线穿十日线策略（供初学）.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/87 选股策略说明——张燕兰 16318320.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/88 一位小白编辑的多因子选股策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/89 test1：简单的多均线择时.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/96 沪港两地上市的银行股翻倍策略报告.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/97 银行翻倍策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/99 一个中信证券的向导策略.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_before_after_path_ledger_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_delete_candidate_plan_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_move_plan_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_external_ops_plan_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_repo_refscan_for_final_delete_list_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_research_pdf_final_ticklist_NOTE__2026-07-06.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/10_source_library_archive/mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_第七批树外目录与旧来源层反查_v1.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/11_frozen_summaries_archive/batch_01_selected/00_阶段成果总索引.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_04_legacy_backtest_out__20260706/README.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_06_legacy_commit_helpers__20260706/BATCH_06_EXECUTION_CARD.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/README.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/legacy_docs_backlog/SOURCE_CONTROL_BACKLOG_TRIAGE__2026-06-23.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/legacy_docs_backlog/SOURCE_LIBRARY_BACKLOG__新增真值文件__2026-06-23.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/legacy_docs_backlog/SOURCE_LIBRARY_BACKLOG__来源层真实迁移__2026-06-23.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/legacy_docs_backlog/SOURCE_LIBRARY_BACKLOG__误删候选__2026-06-23.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/BATCH_02_REVIEW.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/README.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/21_trae_system_archive/SKILLS_GROUP_VIEW.md",
+      "hit_count": 1
+    },
+    {
+      "path": "trading_assistant/ROOT_VSCODE_SETTINGS_TEMPLATE.jsonc",
+      "hit_count": 1
+    }
+  ]
+}

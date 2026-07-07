@@ -1,0 +1,1215 @@
+{
+  "format": "inventory_compare_report_v1",
+  "generated_at_utc": "2026-07-07T07:25:43+00:00",
+  "left_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\inventory_v2_src_excluded_sha256__20260707.tsv",
+  "right_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\inventory_v2_dst_excluded_sha256__20260707.tsv",
+  "left_count": 4061,
+  "right_count": 4061,
+  "only_left_count": 0,
+  "only_right_count": 0,
+  "mismatch_count": 200,
+  "only_left_head": [],
+  "only_right_head": [],
+  "mismatches": [
+    {
+      "rel_path": ".trae/README__ARCHIVE_ONLY.md",
+      "field": "size_bytes",
+      "left": "2453",
+      "right": "1733"
+    },
+    {
+      "rel_path": ".trae/README__ARCHIVE_ONLY.md",
+      "field": "sha256",
+      "left": "b413f7e2180a3cba957a4d45c5b3f810f3e0eb08d9bad0e8c6194d3ec1fab7fd",
+      "right": "218cb9a115937fd28657f27eb45cd4c5062eee34fd151f743d3caec51d7fd46f"
+    },
+    {
+      "rel_path": ".trae/agents/README__ARCHIVE_ONLY.md",
+      "field": "size_bytes",
+      "left": "1240",
+      "right": "1080"
+    },
+    {
+      "rel_path": ".trae/agents/README__ARCHIVE_ONLY.md",
+      "field": "sha256",
+      "left": "52a9c9c19ec7ba9ad7828525843233f468acea7dce92b4fd41c59bdeb3279526",
+      "right": "0b18c5c5bae34d4914a2ef5cf40976fd2b5f0952070ab3b46ed867db0c06ee76"
+    },
+    {
+      "rel_path": ".trae/skills/INDEX.md",
+      "field": "size_bytes",
+      "left": "2557",
+      "right": "2521"
+    },
+    {
+      "rel_path": ".trae/skills/INDEX.md",
+      "field": "sha256",
+      "left": "77bd77f7462308f194a4749ea17083cecae9bfb1e9b6d96dfa918b516ea788f6",
+      "right": "f454ad393d54b1af687669ff2195195e53b4df1ee66303d708d46e85df7da1c1"
+    },
+    {
+      "rel_path": ".trae/skills/ashare-ops-guard/SKILL.md",
+      "field": "size_bytes",
+      "left": "7131",
+      "right": "7201"
+    },
+    {
+      "rel_path": ".trae/skills/ashare-ops-guard/SKILL.md",
+      "field": "sha256",
+      "left": "ce808652b8292b9f7c7163b2df774537dd6cbd721e33a24d6062043093ef1673",
+      "right": "e9bdccdcc6b06e59bef063fa1d0323b7df793f872b8dd2139237309f2cdc61c4"
+    },
+    {
+      "rel_path": ".trae/skills/mt5-audit/SKILL.md",
+      "field": "size_bytes",
+      "left": "7238",
+      "right": "7245"
+    },
+    {
+      "rel_path": ".trae/skills/mt5-audit/SKILL.md",
+      "field": "sha256",
+      "left": "a4903067cbc8fd136eb606d4911e8f355bc98497514d64ccd7e58bf7f1431afc",
+      "right": "6a2a4d589492231f62aabaa017dfc87a2fcc8e447792c1a64cb069b58721d5a3"
+    },
+    {
+      "rel_path": ".trae/skills/multi-ai-discussion-guard/SKILL.md",
+      "field": "size_bytes",
+      "left": "11594",
+      "right": "11658"
+    },
+    {
+      "rel_path": ".trae/skills/multi-ai-discussion-guard/SKILL.md",
+      "field": "sha256",
+      "left": "0a2561eaba93bcda660ec2cdbabdc08e1337501e64a0bb587113305352a3b213",
+      "right": "f20e760c53dd9ec06cc1a5fedefcd77abfb77562cf7f37a46fc52837d6f68b6b"
+    },
+    {
+      "rel_path": ".trae/skills/p0-lab/SKILL.md",
+      "field": "size_bytes",
+      "left": "7841",
+      "right": "7785"
+    },
+    {
+      "rel_path": ".trae/skills/p0-lab/SKILL.md",
+      "field": "sha256",
+      "left": "6ef9db7c1152abf25635e942e87fe7be1373e2900ee7f5fa4f5a85c269e60578",
+      "right": "98b7becf59b54f76c5b8a1540f17461e44fe1d3396c40f85416c217b11236c40"
+    },
+    {
+      "rel_path": "01_阶段一_项目记录_过去与落地.md",
+      "field": "size_bytes",
+      "left": "4923",
+      "right": "4843"
+    },
+    {
+      "rel_path": "01_阶段一_项目记录_过去与落地.md",
+      "field": "sha256",
+      "left": "966ed2ff92f7d8f9ad59ccc7468363a18f93557ca00c1e4de3f2ca2883fccf62",
+      "right": "9ff1e165b9ec3aa3d6c0acd0052e830ee21e7986dbb9f03f8617fbce2aac4554"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_IB_OBJECT_P0_对象入口_v1.md",
+      "field": "size_bytes",
+      "left": "7327",
+      "right": "6847"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_IB_OBJECT_P0_对象入口_v1.md",
+      "field": "sha256",
+      "left": "398a4d74433e6f3bcfe14fd3b4c2f32bf021acea289ff3fc85f003c1ec2e2613",
+      "right": "8162272add251163510df405a849813bcac6d216cdcaeab61e7917d931115baf"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_OTHER_TIMEFRAME_VALIDATION_XAUUSD_M5_P0_关系入口_v1.md",
+      "field": "size_bytes",
+      "left": "4033",
+      "right": "3963"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_OTHER_TIMEFRAME_VALIDATION_XAUUSD_M5_P0_关系入口_v1.md",
+      "field": "sha256",
+      "left": "b227ea16067b3245f10ed4123961c90526acba5fc3d0e0e90603abb3fd5bceb0",
+      "right": "e9850d4efe9d39953d464566db742bc19990e658c61d6e00b60be77454f409e0"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_VALIDATION_XAUUSD_M1_TAIL_P0_关系入口_v1.md",
+      "field": "size_bytes",
+      "left": "3856",
+      "right": "3786"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_OTHER_SYMBOL_VALIDATION_XAUUSD_M1_TAIL_P0_关系入口_v1.md",
+      "field": "sha256",
+      "left": "ba3d89523415bc7b8950ce8527fd00ea63f44021057608baeeb12ea2b80db047",
+      "right": "8b60dc6def3766ecd1628b6bccdb078c0dffc0c58962cff7537ac3e1c3e254a6"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_GATE_P0_关系入口_v1.md",
+      "field": "size_bytes",
+      "left": "2752",
+      "right": "2682"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SUBHOUR_INPUT_GATE_P0_关系入口_v1.md",
+      "field": "sha256",
+      "left": "3472a641e02d0a40395845737a679eb71a455cdef3f65b2fcca5cf770b5db0a4",
+      "right": "39257c4e1df86cc9241c47218dc4a25caa98804d6268cc51cd5b7c5bf09eabd0"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SYMBOL_INPUT_GATE_GBPUSD_H1_P0_关系入口_v1.md",
+      "field": "size_bytes",
+      "left": "3888",
+      "right": "3818"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/REOPEN_B9_N02_SECOND_FX_SYMBOL_INPUT_GATE_GBPUSD_H1_P0_关系入口_v1.md",
+      "field": "sha256",
+      "left": "b77f6189eeea9a00fe4bbd93c47453987ac50948efe41a3255ae76da3c2a4865",
+      "right": "6b547182df9aca98f33690d4f87c6413b3565e01671eab819048e877faa8b3bd"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_mechanism_v3.md",
+      "field": "size_bytes",
+      "left": "3389",
+      "right": "3249"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_mechanism_v3.md",
+      "field": "sha256",
+      "left": "01d669f59684c84c745fe65c947eccc32f246a61466333f69bf5375afe17c6f2",
+      "right": "85a398d3095cd0fe12fc169cf5c35b30daa22decaafcdf82d81b696658d24dab"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v1.md",
+      "field": "size_bytes",
+      "left": "6924",
+      "right": "6784"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v1.md",
+      "field": "sha256",
+      "left": "76f72f76016aeacf719bd98234dff6ed8f484679db33f03b5e58319b547cac65",
+      "right": "29e588a31d0afacff76cab5065a6ccf808463fa8531791f603f3b65e056100a9"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v2.md",
+      "field": "size_bytes",
+      "left": "6249",
+      "right": "6109"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/batch9_sources_kimi/N01/strictMode_kimi_followup/OUTBOUND__strictMode_vs_close_overlap_v2.md",
+      "field": "sha256",
+      "left": "6e494c169056007cb1c287dc2f677c0ade1c8079de61bf49236974b9e66b28d2",
+      "right": "d696707f9d9fd25b0de7421d7d211e3c5066793c396eab8665d7628f8ff833a8"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_AGENT_STATUS__2026-06-23.md",
+      "field": "size_bytes",
+      "left": "3693",
+      "right": "3623"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_AGENT_STATUS__2026-06-23.md",
+      "field": "sha256",
+      "left": "2a96ff1dcf74ba0ef0c5337b72ca9486051b539b95af62e77c79bffe3485a027",
+      "right": "5331e9b216130751c61e38aaac723a84e5f7659d32968c9ce979f9790dc6e638"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v1.txt",
+      "field": "size_bytes",
+      "left": "1446",
+      "right": "1237"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v1.txt",
+      "field": "sha256",
+      "left": "e5a3a6a327196c080f5f46ba4eb9b85fe35cf947ee1e5ad624a31d1ffa867410",
+      "right": "0c66c1c2014ed4e19c804f77c0448b0b1e77c5c956b6d1a3947d3b718e35e5bc"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v2__agentA.txt",
+      "field": "size_bytes",
+      "left": "1153",
+      "right": "944"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v2__agentA.txt",
+      "field": "sha256",
+      "left": "b0afad90ee274a8c73b877e140409041fea50b2ff42314a0084d4b16143184a5",
+      "right": "9c0977ab4cc18fd7b6fa429d4820c6c6cc4dde91972083c3b32fd647eba1889c"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv",
+      "field": "size_bytes",
+      "left": "3547",
+      "right": "3128"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv",
+      "field": "sha256",
+      "left": "1ee6ff03277c3e57a64698ab7b5ddf8f4b650b4791fa1d62494fe061b2bde78c",
+      "right": "8248181933d39f3b8c0563c39848ae7523e9f30879b94109426c703cb76d34b0"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_shrink_v1__imported.md",
+      "field": "size_bytes",
+      "left": "2335",
+      "right": "2265"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_shrink_v1__imported.md",
+      "field": "sha256",
+      "left": "274456e200d8a5adbed718e94018a36430ec648dd093d4c654956d875258d702",
+      "right": "320e688371f32dcfad8fd4db7fd622e7f58b19a1dcc58fa191285f60e409eb70"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v1.txt",
+      "field": "size_bytes",
+      "left": "1522",
+      "right": "1313"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v1.txt",
+      "field": "sha256",
+      "left": "4b02c2fc79eb907f9753a0d37e3344fe85bcc5eba81fb0baf63a623fe7557c84",
+      "right": "1daaef7869ad907169d564c47671df3bea83bdbc30844822a653917b5b2288d1"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v2__agentB.txt",
+      "field": "size_bytes",
+      "left": "1167",
+      "right": "958"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_direct_message_v2__agentB.txt",
+      "field": "sha256",
+      "left": "783bdd617f070dc66de6ba120c8e3eaa7fd5e0ce76f1306dee8bfa581e5cae73",
+      "right": "7fdfe442b3e7df05d4e104c551a5960373c661c6863ed68f17f894a1f2af5910"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_manifest_v1.tsv",
+      "field": "size_bytes",
+      "left": "2317",
+      "right": "2038"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_manifest_v1.tsv",
+      "field": "sha256",
+      "left": "f489f33b3984d9af3c34db1d794cf20e72405a08c0707a6892f92ab488a7c8f0",
+      "right": "62693b872505c5e1cff0c651d40f49dd7a0759cf45ec284b5afb27fab2b65cfb"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_v1__imported.md",
+      "field": "size_bytes",
+      "left": "3436",
+      "right": "3459"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_v1__imported.md",
+      "field": "sha256",
+      "left": "251f2076dfe9723a4fe6b45f95ec662738e87bbf17e0c123eef187a8b8955452",
+      "right": "04d7be8de3f5309fd3decd5af7faf540cd2288ca4d83b87cacf5f787c97af73c"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/Norman_NFTRADEZ_manifest_v1.tsv",
+      "field": "size_bytes",
+      "left": "16055",
+      "right": "14262"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/Norman_NFTRADEZ_manifest_v1.tsv",
+      "field": "sha256",
+      "left": "3d6e6b614efcfb3d32be5c64fc562ac67172143045175462914f287be7b6b9ec",
+      "right": "a74edf9175e4cf7371140a7c98f4e66d1cdbcad69b4f069636513828e0d37676"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/README.md",
+      "field": "size_bytes",
+      "left": "3170",
+      "right": "3100"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/README.md",
+      "field": "sha256",
+      "left": "dc1cb0cfdddf6adacfc3411ae4f56bdcb3fa107a4838f98eec5628c6073a9bf1",
+      "right": "3a3ecd5c3d66dff73102fa94abbf08b6e7ed5982a90b57fab442c2f2bb78ebf6"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_吸收与总纲_v1.md",
+      "field": "size_bytes",
+      "left": "7655",
+      "right": "7375"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_吸收与总纲_v1.md",
+      "field": "sha256",
+      "left": "31454c789fbda9e0542ec6ecbbd72bb4f71cd7f1b8bbbae7e10cbbabb447a6c9",
+      "right": "542977f0191eaaa872c7083734be626d43dd3acc5c619ea1c55787dfaf5f16dc"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_逐帧运行过程_文字化_v1.md",
+      "field": "size_bytes",
+      "left": "4185",
+      "right": "4115"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/Smile_SMC交易系统2_0_逐帧运行过程_文字化_v1.md",
+      "field": "sha256",
+      "left": "190b7cfd380e3f0234885975a89493b2ebb4591bf44f7e7b38f66e3b306b6b9d",
+      "right": "564778e17dfbb047642286cb57855e85a9b1ac93d28214ab02b647d50860d1a4"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/manifest_v2.tsv",
+      "field": "size_bytes",
+      "left": "2971",
+      "right": "2351"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/manifest_v2.tsv",
+      "field": "sha256",
+      "left": "9e6251f88250d021d9ea4c9205d608aaa3d7d3ca2b34a45c09c901b0cd8e4b10",
+      "right": "d55b75a12662b476ef464f93fa8e9426c61f49ba3957dcc5fd7356ee79ecc73a"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_05_趋势_系统交易/01_F1_cutpack_v2_final/manifest_v2.tsv",
+      "field": "size_bytes",
+      "left": "3073",
+      "right": "2453"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_05_趋势_系统交易/01_F1_cutpack_v2_final/manifest_v2.tsv",
+      "field": "sha256",
+      "left": "1d83f36318f26c0faaba035527dd39b92b89e124366409988e4e8fd99fe416e9",
+      "right": "112497aeea023aa1bd7ee610daaa6db8aa8987a3eccd5d4c8bdc2ccf9823e709"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2/manifest_v2.tsv",
+      "field": "size_bytes",
+      "left": "1583",
+      "right": "1236"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2/manifest_v2.tsv",
+      "field": "sha256",
+      "left": "6a5de45c57675a4ef3aca096faaa94ba826b9acfafb5cccbb6f085ed7d2e0182",
+      "right": "fb5ae6facf6b49c1a8bc688c1d264b2598bb538bdec536e035a2afdc1f67cb22"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final/manifest_v2.tsv",
+      "field": "size_bytes",
+      "left": "1677",
+      "right": "1333"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final/manifest_v2.tsv",
+      "field": "sha256",
+      "left": "92247d81ac844763c746bd5d42b77908277ea2c4862177016b4a66e1db69ebc8",
+      "right": "82056b3da8736c667d541c02fc264ea829438acee66421d9feb883fb3db20f03"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/README_放这里.md",
+      "field": "size_bytes",
+      "left": "1061",
+      "right": "942"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/README_放这里.md",
+      "field": "sha256",
+      "left": "461f1a730efe79399b17792ab7a8b44da378225d57d69543a5cfef40df43a378",
+      "right": "308e4e475975925d318025c500f853e401bde28ce539b61849f84a74f87b183a"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/21 果核量化出品 -- BIAS_QL乖离率策略指数择时1.0.md",
+      "field": "size_bytes",
+      "left": "4802",
+      "right": "4877"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/21 果核量化出品 -- BIAS_QL乖离率策略指数择时1.0.md",
+      "field": "sha256",
+      "left": "0b7ee4b8822fd589caee554a26ceaa84db91c42ae7f3e5c8c66bf1531629b92d",
+      "right": "5376999e69a7ceb2863bd8bceadeae86f0a09ece103f08a76e1aa342f6159f1d"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/27 RSRS指标择时（30分钟线）.md",
+      "field": "size_bytes",
+      "left": "3124",
+      "right": "3135"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/27 RSRS指标择时（30分钟线）.md",
+      "field": "sha256",
+      "left": "51627f3f4f9c33ec635418a3ba7a9e51e205d43a2fddec345125adf3250d6150",
+      "right": "da447e1b403485e4e7d45bcfab5cc2342554b2af07e2d42344863ac0c94c0ec1"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/29 KD指标量化交易策略.md",
+      "field": "size_bytes",
+      "left": "3779",
+      "right": "3808"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/29 KD指标量化交易策略.md",
+      "field": "sha256",
+      "left": "e2ae33682fc6c8550c5aa78432a2c1da3c377ab6c639796e6d12badb212d1624",
+      "right": "e39109ea19a91913ed4391672ffcfe50dc1037bc6e2232681638c2f9e33ef611"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/37 个股止损.md",
+      "field": "size_bytes",
+      "left": "15333",
+      "right": "15726"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/37 个股止损.md",
+      "field": "sha256",
+      "left": "06eedc9bb7b66a76e52d92d6befd1df89cc2a47335d68e8eec9a806350fc2ff4",
+      "right": "ab3b6a95e71c7133c57ab0b7a9fc33ce5f2245151c54ef6be9488e24af9ea5da"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/40 kdj指标配合accer过滤.md",
+      "field": "size_bytes",
+      "left": "4065",
+      "right": "4101"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/40 kdj指标配合accer过滤.md",
+      "field": "sha256",
+      "left": "29d2e171d47f4ad50a74991c23c3ba6d941b8d0d5b515c783df93a3d7fbfa8b8",
+      "right": "d86c2e03219b18c911a07ee67ab9827691e89e924f1f8f9ae6123e913f0308b1"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/45 布林带策略.md",
+      "field": "size_bytes",
+      "left": "3974",
+      "right": "4017"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/45 布林带策略.md",
+      "field": "sha256",
+      "left": "780626a6568f289a5f788a0b99d0d2852482714dc557f1f7a6879a8c01c1fa4d",
+      "right": "4edd7db278f422e71cf1c11ae3771fae74b2c8e5cfab471dce923297ae8532c4"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/52 布林带1.md",
+      "field": "size_bytes",
+      "left": "3467",
+      "right": "3491"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/52 布林带1.md",
+      "field": "sha256",
+      "left": "dea0d4e220b39b83f24cb9699ffd3fe4a921cac2947d0a2800b78300358fbec3",
+      "right": "edfabef42e2c2a2d3ac47f07fbed5e37e2d7b7bc6f396ce64577d27d32acd809"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/58 MACD金叉买入，死叉卖出.md",
+      "field": "size_bytes",
+      "left": "15893",
+      "right": "16296"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/58 MACD金叉买入，死叉卖出.md",
+      "field": "sha256",
+      "left": "bb900475267b28509d495cde63a3bbf2eef4b6e440f3d695fa85cbf7287a4ed5",
+      "right": "7b60d9c2c43e6551e65a381f0e28425167e371af7f96b4a144bcc5e8b1dbf827"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/66 高于MA10买入低于MA20卖出回测半年收益率20.4%.md",
+      "field": "size_bytes",
+      "left": "2539",
+      "right": "2530"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/66 高于MA10买入低于MA20卖出回测半年收益率20.4%.md",
+      "field": "sha256",
+      "left": "5a6d08d635bdda06807f5d05eb854c2b8285014af6da808267d35fc03cafc2d6",
+      "right": "393874221862b3c1bdd6ff49cb57adb611d67c8da96e877aceb9e902ceca1328"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/69 阻力支撑相对强度（RSRS）指标择时策略.md",
+      "field": "size_bytes",
+      "left": "3379",
+      "right": "3394"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/69 阻力支撑相对强度（RSRS）指标择时策略.md",
+      "field": "sha256",
+      "left": "c7a24a4535146ff6d4c5937489e2f92ca983de63437a45d28464a52b7617e24f",
+      "right": "1713991b205b01a0b54017335bc7729951a2e67fe2146ad40ffe14adeb4b66ee"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/70 蓝筹&均线.md",
+      "field": "size_bytes",
+      "left": "15435",
+      "right": "15829"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/70 蓝筹&均线.md",
+      "field": "sha256",
+      "left": "8bb5b56d4d765039c858f2edddba85f2c6ea5d5577fc8f399687b569cd0d776c",
+      "right": "077a98692774c8e4ff535595c415e9cd92c9b29cfb47b49fcdbbc682accf67fb"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/76 MACD——大盘择时.md",
+      "field": "size_bytes",
+      "left": "2923",
+      "right": "2920"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/76 MACD——大盘择时.md",
+      "field": "sha256",
+      "left": "1a1492fee3e3625eee7a99f8eab8ea65a3706177ed2c8ca6e43d4db8dbd37a10",
+      "right": "cd61f6da75188306f3f6f751539dc3e296f82bcb164b4d88c445635d752845c8"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/77 RSRS大盘择时优化.md",
+      "field": "size_bytes",
+      "left": "6157",
+      "right": "6248"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/77 RSRS大盘择时优化.md",
+      "field": "sha256",
+      "left": "bb1e115756d795ad0cf3c110783e74e0759ddd499be3ad56aabc34837340a316",
+      "right": "aa430e057ad6aace9df968b0aee636297857a0bd46272b0447123e7e0e62e775"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/78 GFTD第二版.md",
+      "field": "size_bytes",
+      "left": "6090",
+      "right": "6173"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/78 GFTD第二版.md",
+      "field": "sha256",
+      "left": "a22dc6d4c71772a8aa2938d79757ebb15f909e04bb0b43a784c0f4c06eea1bcf",
+      "right": "f874799d7e36022a29e250f027ab0c2e3ac5eb1a34b28b3fef256518d61a3905"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/79 DMI——大盘择时.md",
+      "field": "size_bytes",
+      "left": "2676",
+      "right": "2677"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/79 DMI——大盘择时.md",
+      "field": "sha256",
+      "left": "92bfaf851f1bb16fcc2d7a1988833d863149bf8f95143b82de74cad772537284",
+      "right": "77e66b4bac046c0e76b5da3ece1912cf908ba27d68e1558cd4bda4983c233708"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/90 MA均线金叉买入，死叉卖出.md",
+      "field": "size_bytes",
+      "left": "15572",
+      "right": "15967"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/90 MA均线金叉买入，死叉卖出.md",
+      "field": "sha256",
+      "left": "d0a712fb73d37c527685d1a178f988e8a2726c9b5bc4a1cbbc3f5f947804c1dc",
+      "right": "dd6e848192b8b27215c2af35f613994696c18a0c16965f0ea12736901e1ef6f1"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/91 Stoch（KDJ）——大盘择时.md",
+      "field": "size_bytes",
+      "left": "3493",
+      "right": "3500"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/91 Stoch（KDJ）——大盘择时.md",
+      "field": "sha256",
+      "left": "29d4e5277d85172e38260ffaa67233c5e443a69bd621ae9166ccfd058a15bbf4",
+      "right": "fe99bd231203ff578d7685c05f7ce8ad8542212e89eb2476c7b16b39895b9bf1"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/93 RSRS——大盘择时.md",
+      "field": "size_bytes",
+      "left": "6237",
+      "right": "6319"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/93 RSRS——大盘择时.md",
+      "field": "sha256",
+      "left": "21eb54c45cfc174dbff6ab3f12852edf03da9497546a9bfd1c59820ae4fb7aa9",
+      "right": "77e8ed95480ef7f983ed2060f1eee35a1ce9db8944f93483ebf53a5d646077c9"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/03 机器学习多因子策略.md",
+      "field": "size_bytes",
+      "left": "4604",
+      "right": "4645"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/03 机器学习多因子策略.md",
+      "field": "sha256",
+      "left": "1f2360403b2655fb466dfa4acafc689dff5de52f94ca25e1198757ffe253ff63",
+      "right": "0d31f4964a0365ec15a73ec471ca8b543aa15bdd70fe77ff251511dbca312447"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/07 穿越牛熊基业长青的价值精选策略.md",
+      "field": "size_bytes",
+      "left": "9344",
+      "right": "9508"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/07 穿越牛熊基业长青的价值精选策略.md",
+      "field": "sha256",
+      "left": "985706bccba9a4a24fe0462ebc5d1ea0258ca91e94221858bc9cd1869a6e026e",
+      "right": "d9d3b3637d8fe923aea37ca6a71dcbe8282b19f9f0943b1002011fa5030042d2"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/08 MACD单因子多头策略.md",
+      "field": "size_bytes",
+      "left": "15650",
+      "right": "16043"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/08 MACD单因子多头策略.md",
+      "field": "sha256",
+      "left": "0c1e21c148068a942d73445f589809b793fc5b64bf01c1a9863b0f4491041687",
+      "right": "431e63558585767f56291110d694c5c76915d28c9cc51bafb2d48bc27af35c3f"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/12 【均值回归】基于zscore的均值回归策略（胜率100%）.md",
+      "field": "size_bytes",
+      "left": "3944",
+      "right": "3968"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/12 【均值回归】基于zscore的均值回归策略（胜率100%）.md",
+      "field": "sha256",
+      "left": "50428d595b9efd0bc5723323ee6ac051b65c23dba2ee823fe1d45ab5028abcf2",
+      "right": "75e3ba72aa042fca50936d48c4c4bc76ce59d05c2967ee25ea073459a8e44c53"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/18 均值回归策略分享.md",
+      "field": "size_bytes",
+      "left": "13823",
+      "right": "14144"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/18 均值回归策略分享.md",
+      "field": "sha256",
+      "left": "dbd54be1362cecdc9fe5cad74c6996aed3c91265aa085a23b6dfabbba0ac6859",
+      "right": "847759fdf7672df34989b8daa9a3f93aa361bccc2c7f2a6a3e9658f5321065cd"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/30 基于LSTM模型预测股票价格走势.md",
+      "field": "size_bytes",
+      "left": "5817",
+      "right": "5816"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/30 基于LSTM模型预测股票价格走势.md",
+      "field": "sha256",
+      "left": "c6e99442d0d0a2bd8a590567a213d45f736c68a43bdc9a11c32aae55b57e7b11",
+      "right": "481232ad228a9c654571e4c68f1e658dd43b4f2500b57e85ee54215fefe097e5"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/31 低PB价值投资策略分享.md",
+      "field": "size_bytes",
+      "left": "20383",
+      "right": "20761"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/31 低PB价值投资策略分享.md",
+      "field": "sha256",
+      "left": "cbbf68100d6727f85dbb8d2adb70953be320665309b84fdfbbb55fd99666bb36",
+      "right": "7a55c0d37c4334ce3a4a29965b28f2c3727c2e2227da16583776766e4b1a9997"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/34 成长策略.md",
+      "field": "size_bytes",
+      "left": "15749",
+      "right": "16146"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/34 成长策略.md",
+      "field": "sha256",
+      "left": "9eba0858f033e16dc169e5ef77964bd2cd3d41ec9ecc599e068a675d24659eab",
+      "right": "fb35790b3ea020aa2fe343ccdf9f490c93f7fb56ab6f69420e796337bb9b17c4"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/39 因子分析——利用JoinQuant因子分析模块选取因子并封装为策略.md",
+      "field": "size_bytes",
+      "left": "2150",
+      "right": "2138"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/39 因子分析——利用JoinQuant因子分析模块选取因子并封装为策略.md",
+      "field": "sha256",
+      "left": "d3f72007b4e105a9797215e1f9b5551dde083d5244a68ce44041592672db2ed7",
+      "right": "afc7e90184dac0a68b93147679d6e29b6d539d749beb6c72b3bf6b1168a9aba8"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/41 多因子模型（三）-交易回测.md",
+      "field": "size_bytes",
+      "left": "4310",
+      "right": "4345"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/41 多因子模型（三）-交易回测.md",
+      "field": "sha256",
+      "left": "738c4926559dfde9c09dd4d1842328a74d3092aca726718394d92655244a97ea",
+      "right": "6c569dbde596e079848c244e5336ae57cf92ab4eff15f2cce6b9848b929c69cf"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/42 低估值+TRIX+RSI 低回撤策略.md",
+      "field": "size_bytes",
+      "left": "11318",
+      "right": "11581"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/42 低估值+TRIX+RSI 低回撤策略.md",
+      "field": "sha256",
+      "left": "6f103594a730dedeb47ebbf6640db936c784317a87dc028a08ca73073338aa4f",
+      "right": "2003aab978242a286b87b1eb194b412d326a69827ec624bf9eeb2f132f127c11"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/43 无模型评估的多因子模型.md",
+      "field": "size_bytes",
+      "left": "5157",
+      "right": "5205"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/43 无模型评估的多因子模型.md",
+      "field": "sha256",
+      "left": "e7ccb65fc8978e12a1471939bf32708a1199589524a8b5fe26cf00daeab46b81",
+      "right": "e8459a6b60243120d63a25e6d1ecdf15367e85b80ec331bc6ec3d84121153dd0"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/67 多因子回测完整模板（筛选和买卖条件强于‘策略生成器’）.md",
+      "field": "size_bytes",
+      "left": "11234",
+      "right": "11432"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/67 多因子回测完整模板（筛选和买卖条件强于‘策略生成器’）.md",
+      "field": "sha256",
+      "left": "7d40cf3c251605c0b14590acd5b4b2bd9b1621a9a2a0c979566be6d587abe591",
+      "right": "b06a07ffb32881cf4efcbd9ee46b53c4a9e630ab064dc488f9c2d76ae8aa3e86"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.md",
+      "field": "size_bytes",
+      "left": "9439",
+      "right": "9610"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.md",
+      "field": "sha256",
+      "left": "5c557ebca7fb6dfad8f63a26a6b4bf8bf42d16be0bbd24a8078903b796800af3",
+      "right": "bc39c9d35dff3057682e485f91aa7cc19e0a6ca1c8803405b4fb781e9088d4ab"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/75 财务因子策略.md",
+      "field": "size_bytes",
+      "left": "15914",
+      "right": "16310"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/75 财务因子策略.md",
+      "field": "sha256",
+      "left": "ac0da72a3b47d2ff08c1bf75c0b73465d07994e5536f30816c9f5c4f0bed27e4",
+      "right": "07fe74b96c955644108b2d5824842fbdec3e00fe2fab4b8083155ebfbbc9e844"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/92 多因子选股策略.md",
+      "field": "size_bytes",
+      "left": "7528",
+      "right": "7653"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/92 多因子选股策略.md",
+      "field": "sha256",
+      "left": "91af44c45208b6e3e5bc3156bfe8aa0c8d3cde636791f871af3096751e6de9ee",
+      "right": "ef5b9a17d049fcef5c2dd728ad3a3758a2f31dc4c6cf5c626bd6f34714680281"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/94 PE和PB策略.md",
+      "field": "size_bytes",
+      "left": "15698",
+      "right": "16092"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/94 PE和PB策略.md",
+      "field": "sha256",
+      "left": "31d9b17b609971816c45b2132461292c02596033f7d5bdcfdbfa593877a8a3f0",
+      "right": "9af197a9db20e16bfa65905c7f2bbc22bda38ff3515488944bb371bc219173c8"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/98 机器学习SVM用法示例策略.md",
+      "field": "size_bytes",
+      "left": "4179",
+      "right": "4231"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/98 机器学习SVM用法示例策略.md",
+      "field": "sha256",
+      "left": "d68a4d3a76c8a7962414511e35af434b73057fcf1decd61f0ce67dbeb38879af",
+      "right": "258451d9ea1002182cb44f0da446e319220a4d738a9878e1c52326f49ac38ecb"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/25 简单市值轮动策略-学习.md",
+      "field": "size_bytes",
+      "left": "3045",
+      "right": "3055"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/25 简单市值轮动策略-学习.md",
+      "field": "sha256",
+      "left": "1181885763ddc018b15a34d99f3ad256893fc707241b192ff6dc71655d7264a9",
+      "right": "2ef5dd1e7918b48d18a06d14306a07c04708004ce4fc47a074fb972a9a9bc94b"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/33 买入每个行业市值最大的股票.md",
+      "field": "size_bytes",
+      "left": "46474",
+      "right": "47471"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/33 买入每个行业市值最大的股票.md",
+      "field": "sha256",
+      "left": "1d802a2e1c4090fb604913003f1416906effad4b3be4d7980ee47574bef3472e",
+      "right": "16778010bf63aee45b064bc8accf2397518a13a3fcdb192e005c369c7cd09843"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/51 HS300--随机森林拐点识别.md",
+      "field": "size_bytes",
+      "left": "32972",
+      "right": "33722"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/51 HS300--随机森林拐点识别.md",
+      "field": "sha256",
+      "left": "dcae47c65aaa414a0c3f6ec0fd64c0921a0332c708ec281c4b286d16e4f9ac75",
+      "right": "81666ae03a14aa99d4d81c7985964d03f812e6c2ba110bf10f5917038f633bf5"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/59 小市值轮动，修改了内容，剔除了停牌股，同时PE要求为正的股票。.md",
+      "field": "sha256",
+      "left": "0703c07a9e97fcaaae138b32a52ce2d510da8ab7f6a1356b05bcc99ae9d85c18",
+      "right": "957da0be668b9975f69827b6a033a8ef45d4a269366459cb39a750ff2f15eb82"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/64 12年年化34%，Sharpe1.2，银行股轮动.md",
+      "field": "size_bytes",
+      "left": "15986",
+      "right": "16388"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/64 12年年化34%，Sharpe1.2，银行股轮动.md",
+      "field": "sha256",
+      "left": "f354ecfd5f224fe5d24e97e994245d09c90951390d44bbbd753c2090937796f0",
+      "right": "7ccc2d474419b61b1704d53010061fa213ac7d107c174670e0fee58eb69bf273"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/65 8只基金按PE调仓.md",
+      "field": "size_bytes",
+      "left": "5489",
+      "right": "5562"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/65 8只基金按PE调仓.md",
+      "field": "sha256",
+      "left": "fcff1c955a0d104bfc34ed2b1c368ba3484d4378052119b4b37ffc7685f8d838",
+      "right": "8bb155a96754316177280ae0830ac61db672ae321a3df9d1f1a0fd3f083827f5"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/68 板块轮动不动？.md",
+      "field": "size_bytes",
+      "left": "8507",
+      "right": "8644"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/68 板块轮动不动？.md",
+      "field": "sha256",
+      "left": "1520d4595c5050394630d3c6871c0e3f4b02a6012f08742c50e07fc3831fe0f8",
+      "right": "088ab94957b52ef0fc7b895f26eca1605172cdca86e651772015b3cec2e29ad2"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/72 基金定投-沪深300-5年回测.md",
+      "field": "size_bytes",
+      "left": "6546",
+      "right": "6633"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/72 基金定投-沪深300-5年回测.md",
+      "field": "sha256",
+      "left": "8a581ff1e0a7430c29ee4f86b4bc7b07ca043908a8836febc6eab8cfc427c82a",
+      "right": "954dd6ab058aa76dbe384f327b3220b3144b9361ea0e7f3f7c8aab8d59cdd992"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/74 基于沪深300的增强.md",
+      "field": "size_bytes",
+      "left": "15870",
+      "right": "16269"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/74 基于沪深300的增强.md",
+      "field": "sha256",
+      "left": "32144a7a07d06b75a22b7560bf7b32884cc8aecd67bf1c4330f390e0b2d943ba",
+      "right": "5edac3328e46fed635ccf9375e65b9f0c202fc4a4e0645f01a3fa73a7cd79047"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/81 申万行业轮动策略.md",
+      "field": "size_bytes",
+      "left": "6817",
+      "right": "6913"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/81 申万行业轮动策略.md",
+      "field": "sha256",
+      "left": "9223970953952c7f4d49934684432be4b361c8a07f11b0f629bdf28ccc1fa820",
+      "right": "1fc9c5d52ac0b1bbf78386dd3b32e7621f6ce450c69597a9af6ca053d9769b56"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/82 次新+小市值+KAMA择时 轮动.md",
+      "field": "size_bytes",
+      "left": "6207",
+      "right": "6296"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/82 次新+小市值+KAMA择时 轮动.md",
+      "field": "sha256",
+      "left": "5c3803aa9c0ba3207aeea659fb0d52cbfb014a8db92878a064410a0d8d1d46ad",
+      "right": "327c040c9f2f402f888b655665590fe98d5dff14a04bb5a388221d46b147aa12"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/83 沪深300ETF-1060双均线.md",
+      "field": "size_bytes",
+      "left": "1881",
+      "right": "1863"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/83 沪深300ETF-1060双均线.md",
+      "field": "sha256",
+      "left": "09d4f28103845574bd8874460e2f45dd9abf12a3ad2c80b3d0fe786818e61b39",
+      "right": "8a0afc505e617853a9d9b6fe0228d99a0fd38ce0486f9f645c1e118218beb9ea"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/01 AdaptiveMA自适应均线 过滤器 期货多品种模型 收益稳定增长.md",
+      "field": "size_bytes",
+      "left": "15923",
+      "right": "16197"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/01 AdaptiveMA自适应均线 过滤器 期货多品种模型 收益稳定增长.md",
+      "field": "sha256",
+      "left": "7c91a25fa59b3ff69798301a31f35de11192589b2261306397ac7dfb821294e3",
+      "right": "6e86455b27763a6af8c993f2d1be3c5ae56104d4e0e8839bc20ba9da28095ec7"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/04 趋势交易能赚钱吗？商品期货动量效应挖掘初探.md",
+      "field": "size_bytes",
+      "left": "15967",
+      "right": "16245"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/04 趋势交易能赚钱吗？商品期货动量效应挖掘初探.md",
+      "field": "sha256",
+      "left": "f7f87b5b6f83c9e161be15c2e27da56e1ad2a70f8432e215d1cb2c053e7fd905",
+      "right": "ed8f0c4a17ed26bcb23ecc277b29690ad4db10a98a4a6a2826a94e1efbfafd90"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/09 商品期货 多品种日频双均线模型 作为给入门者的小礼物.md",
+      "field": "size_bytes",
+      "left": "16120",
+      "right": "16399"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/09 商品期货 多品种日频双均线模型 作为给入门者的小礼物.md",
+      "field": "sha256",
+      "left": "0fc5ad95e9c5f6ca45f22815df35cfd4d39d4442566a746cfae1a3d7bbc14a85",
+      "right": "e74c7cc8c0d5ecd6d19483ff8e8be336263f79e8bb497c5f74bbb3058a5ba03a"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/17 商品期货截面动量模型，真的靠谱吗？.md",
+      "field": "size_bytes",
+      "left": "18869",
+      "right": "19203"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/17 商品期货截面动量模型，真的靠谱吗？.md",
+      "field": "sha256",
+      "left": "4c0aa4ee3dc25cc79b330de049c1db8d6360c32bd140682ab051f9aba06ab126",
+      "right": "b52a287b8f4c61fec5739d67d605d53846086698a81211feaeb9e7a0514e0726"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/22 海龟交易法则升级版---（分钟级回测+合约变更移仓）.md",
+      "field": "size_bytes",
+      "left": "13292",
+      "right": "13508"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/22 海龟交易法则升级版---（分钟级回测+合约变更移仓）.md",
+      "field": "sha256",
+      "left": "a2bfced5145243d79576b7160a5f90316b19a5aea0072d5503ff2e7bfa6870a5",
+      "right": "1b762cdf2ee2060251678bd3f7a2574e8636f88c23eee1035bf815e517ee94a3"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/49 海龟克隆优化.md",
+      "field": "size_bytes",
+      "left": "16576",
+      "right": "16907"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/49 海龟克隆优化.md",
+      "field": "sha256",
+      "left": "c4f8f755815c0fc7e5b176839fdfdb880aa31f521fe086efd01f4c86be7bc94d",
+      "right": "eb871639b6c1b82f33545e6a6b17457a3e815bc98bd190453e165c1073e1f6a4"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/13 招行_海天配对策略-改进版.md",
+      "field": "size_bytes",
+      "left": "4663",
+      "right": "4736"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/13 招行_海天配对策略-改进版.md",
+      "field": "sha256",
+      "left": "cc9c0168324427e20acea1d4228eaec04fb96fb2e6176f05f85feeb3b9d2842a",
+      "right": "3572c243749dd47d7771a455f3f1c462be61047be2c42efd105719a80d86398b"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/19 招行_海天配对策略（学习招行伊利配对）.md",
+      "field": "size_bytes",
+      "left": "4693",
+      "right": "4766"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/19 招行_海天配对策略（学习招行伊利配对）.md",
+      "field": "sha256",
+      "left": "7d43a2e56d7a3a9650541baab4c6089bc198e0197dedf358a00da2afa7df37bb",
+      "right": "0b283ad53aa31ab85246dc6cf3725fb086af00c42e2a233ff70c278bea4bcd17"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/50 简单配对交易.md",
+      "field": "size_bytes",
+      "left": "6650",
+      "right": "6743"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/50 简单配对交易.md",
+      "field": "sha256",
+      "left": "29e151131d3d2e4a9c718270b66d11cf5deb804ee7b7917f6ceb4a0aaf75a344",
+      "right": "360e79706d5829eec6a286aabc134c20e40dae94a3f201c97fbf088b2f7c5d94"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/55 中小板-中证500配对交易.md",
+      "field": "size_bytes",
+      "left": "4653",
+      "right": "4726"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/55 中小板-中证500配对交易.md",
+      "field": "sha256",
+      "left": "4bab501e9c1b7b766ae9cee002d7bce373884accdc887a4874de04a75f82f140",
+      "right": "62b1c2fc102741de9bd65a6041c75719b8ad1ea8ac05882bf949d745ee2ef69c"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/38 一个简单的跟踪聪明钱策略.md",
+      "field": "size_bytes",
+      "left": "9038",
+      "right": "9226"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/38 一个简单的跟踪聪明钱策略.md",
+      "field": "sha256",
+      "left": "a9b6b18d21367f22969d932815c78ed6fc8d77065171aa4638b515f0665b75f7",
+      "right": "01b30b1e2c25e45d7cffcfbf788c27552621428eb85451c4e42ab55ffb7aa1b4"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/73 跟着港资（北向资金）买A股.md",
+      "field": "size_bytes",
+      "left": "7324",
+      "right": "7421"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/73 跟着港资（北向资金）买A股.md",
+      "field": "sha256",
+      "left": "aa07bf5856ec803477ccb51ce5dbf1c1a6d6ef99ab0cd1f81e545f30c7f19031",
+      "right": "7ebdbc0b5457ffcae1e0a7152d0146029cc99894753beb5000a93f001cafdac7"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/95 资金流策略.md",
+      "field": "size_bytes",
+      "left": "15995",
+      "right": "16395"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/95 资金流策略.md",
+      "field": "sha256",
+      "left": "cee40a69c93fbfaf8bc825c35e1eb7c8b0e90dd0904fd80a4e343109baceea07",
+      "right": "d5f0908048fc9aca8041fdedab356eaecd6fededb84477dba7f09be9c6ebbe3b"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/02 我好像破解了聚宽擂台排第一的策略？！.md",
+      "field": "size_bytes",
+      "left": "4689",
+      "right": "4762"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/02 我好像破解了聚宽擂台排第一的策略？！.md",
+      "field": "sha256",
+      "left": "008dfd4173c48a627d33ecdde713505b280da9a49cc2645912ab0672344d28c6",
+      "right": "7819109faa127ee31d5bf5c9fa812afbbbb52b51055d890cfa851beb70289100"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/05 兄台且慢，去天台排队不如看看这个策略先.md",
+      "field": "size_bytes",
+      "left": "6785",
+      "right": "6902"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/05 兄台且慢，去天台排队不如看看这个策略先.md",
+      "field": "sha256",
+      "left": "f4eda9cef3aae2544a4f0b334619bd30f043735e17476065df5ec5a0f95064e7",
+      "right": "c7288d6a29e4fc6a62533c3f2fc5e99730bbf5f67c89844d24d282fb0e1416fb"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/06 为什么股票市值是当前的样子？.md",
+      "field": "size_bytes",
+      "left": "5449",
+      "right": "5509"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/06 为什么股票市值是当前的样子？.md",
+      "field": "sha256",
+      "left": "9e9a11a3a5f26e2e9f2d869b80165dcec85ce725ee835b3651b10b5261392dc3",
+      "right": "c3d19ddd53dcd45d0384f4ebb33214d84e08700de4023fec8cc41051ecdf57da"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/10 追三板策略.md",
+      "field": "size_bytes",
+      "left": "6285",
+      "right": "6396"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/10 追三板策略.md",
+      "field": "sha256",
+      "left": "08febf68409c7df90d8aa55e9c7e976aedc6e2d26eb70f6f81a53f11d2268f67",
+      "right": "acd7058988a4a2c13d42f938079010ed97639cf13204e5a2f5c083b5b2a87982"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/11 酒股地中短线策略.md",
+      "field": "size_bytes",
+      "left": "2431",
+      "right": "2430"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/11 酒股地中短线策略.md",
+      "field": "sha256",
+      "left": "5e74002a6ffacb0b4a0ab97ce72c74eb0e52ee162c6c4422e686d60c29c3ab2f",
+      "right": "8d4c2667abd407742d547d6cef0b01b104cd4fdc5f5bee329d72d8ea3c35d1de"
+    },
+    {
+      "rel_path": "10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/14 抗击熊市的中短期低市值策略.md",
+      "field": "size_bytes",
+      "left": "2502",
+      "right": "2500"
+    }
+  ]
+}

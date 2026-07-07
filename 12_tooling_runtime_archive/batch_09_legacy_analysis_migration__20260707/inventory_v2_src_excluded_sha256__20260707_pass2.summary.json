@@ -1,0 +1,15 @@
+{
+  "format": "legacy_analysis_inventory_v2",
+  "root": "D:\\Stock\\trading_analysis",
+  "root_url": "file:///D%3A%5CStock%5Ctrading_analysis",
+  "generated_at_utc": "2026-07-07T07:27:02+00:00",
+  "do_hash": true,
+  "excluded_dirnames": [
+    ".git",
+    ".venv",
+    ".venv_mt5",
+    "__pycache__"
+  ],
+  "file_count": 4061,
+  "total_bytes": 5501899588
+}

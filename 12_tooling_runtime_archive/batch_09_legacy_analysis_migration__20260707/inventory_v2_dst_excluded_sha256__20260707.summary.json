@@ -1,0 +1,10 @@
+{
+  "format": "legacy_analysis_inventory_v2",
+  "root": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_trading_analysis",
+  "root_url": "file:///D%3A%5CStock%5Ctrading_assistant%5C12_tooling_runtime_archive%5Cbatch_09_legacy_analysis_migration__20260707%5Clifted_trading_analysis",
+  "generated_at_utc": "2026-07-07T07:25:37+00:00",
+  "do_hash": true,
+  "excluded_dirnames": [],
+  "file_count": 4061,
+  "total_bytes": 5501703979
+}

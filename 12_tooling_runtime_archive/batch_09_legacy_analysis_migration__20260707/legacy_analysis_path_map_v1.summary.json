@@ -1,0 +1,9 @@
+{
+  "format": "legacy_analysis_path_map_v1",
+  "generated_at_utc": "2026-07-07T07:27:52+00:00",
+  "legacy_prefix": "legacy_analysis",
+  "lifted_prefix": "12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis",
+  "row_count": 4061,
+  "total_bytes": 5501899588,
+  "sha256_coverage": 1.0
+}
