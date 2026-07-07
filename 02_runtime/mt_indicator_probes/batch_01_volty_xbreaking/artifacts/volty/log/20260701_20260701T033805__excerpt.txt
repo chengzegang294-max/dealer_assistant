@@ -1,0 +1,26 @@
+0	02:48:43.332	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	02:48:43.335	Tester: start with configuration file
+1	02:48:47.626	TestGenerator: no history data 'EURUSD60' from 2025.01.01 to 2025.01.15
+0	02:48:48.301	Expert MT4Probe_Volty EURUSD,H1: removed
+0	02:52:18.623	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	02:52:18.626	Tester: start with configuration file
+1	02:52:22.041	TestGenerator: no history data 'EURUSD60' from 2025.01.01 to 2025.01.15
+0	02:52:22.689	Expert MT4Probe_Volty EURUSD,H1: removed
+0	02:54:14.628	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	02:54:14.630	Tester: start with configuration file
+1	02:54:18.271	TestGenerator: no history data 'EURUSD60' from 2025.01.01 to 2025.01.15
+0	02:54:18.994	Expert MT4Probe_Volty EURUSD,H1: removed
+0	03:00:55.334	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	03:00:55.337	Tester: start with configuration file
+1	03:00:58.604	TestGenerator: no history data 'EURUSD60' from 2025.01.01 to 2025.01.15
+0	03:00:59.195	Expert MT4Probe_Volty EURUSD,H1: removed
+0	03:35:38.006	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	03:35:38.009	Tester: start with configuration file
+...
+0	03:37:41.907	History: download EURUSD,M30 [2025.12.29 19:00]
+2	03:37:41.945	2025.01.01 00:00:00  MT4Probe_Volty inputs: ProbeTimeframe=60; MaxModes=8; MaxShifts=50; 
+0	03:37:41.955	2025.01.02 00:00:00  MT4Probe_Volty EURUSD,H1: MT4Probe_Volty: RunProbe begin symbol=EURUSD chart_tf=60 indicator_tf=60
+0	03:37:41.955	2025.01.02 00:00:00  MT4Probe_Volty EURUSD,H1: MT4Probe_Volty: FileOpen ok file=MT4_probe_Volty_EURUSD_H1_20250102_000000.csv common=false
+0	03:37:41.973	2025.01.02 00:00:00  MT4Probe_Volty EURUSD,H1: MT4Probe_Volty: DONE file=MT4_probe_Volty_EURUSD_H1_20250102_000000.csv common=false
+0	03:37:42.035	EURUSD,H1: 604068 tick events (216 bars, 605069 bar states) processed in 0:00:00.093 (total time 0:02:03.765)
+0	03:37:42.352	Expert MT4Probe_Volty EURUSD,H1: removed

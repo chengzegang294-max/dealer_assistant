@@ -1,0 +1,59 @@
+{
+    "chart_period":  "H1",
+    "indicator_name":  "XBreaking",
+    "environment":  {
+                        "install_root":  "D:\\Work\\TMGM",
+                        "server":  "TradeMaxGlobal-Demo",
+                        "inventory_selector":  "TradeMaxGlobal-Demo__60088394",
+                        "access_server":  "",
+                        "selection_mode":  "inventory_selector",
+                        "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C",
+                        "inventory_json":  "02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\environment_snapshots\\mt_environment_inventory_latest.json",
+                        "inventory_match_field":  "environment_label",
+                        "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\Config\\common.ini",
+                        "data_root_hash":  "C9F9BDDC460DF35F331B73B79A3DD57C",
+                        "environment_label":  "TradeMaxGlobal-Demo__60088394",
+                        "account_mode":  "1",
+                        "inventory_match_value":  "TradeMaxGlobal-Demo__60088394",
+                        "login":  "60088394"
+                    },
+    "archive_root":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\audusd_h1_tmgm_longwin_20260702T2022",
+    "run_timeout_seconds":  180,
+    "max_buffers":  8,
+    "runtime_set_write_mode":  "written",
+    "from_date":  "2024.12.01",
+    "process_exited":  true,
+    "to_date":  "2025.03.01",
+    "symbol":  "AUDUSD",
+    "report_fallback_attempted":  true,
+    "report_stem":  "xbreaking_probe_audusd_h1_tmgm_longwin",
+    "files":  {
+                  "tester_log":  {
+                                     "archive_status":  "updated",
+                                     "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\Tester\\logs\\20260702.log"
+                                 },
+                  "csv":  {
+                              "archive_status":  "updated",
+                              "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_AUDUSD_H1_20241202_000000.csv"
+                          },
+                  "report":  {
+                                 "archive_status":  "updated",
+                                 "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\xbreaking_probe_audusd_h1_tmgm_longwin.htm"
+                             },
+                  "runtime_ini":  {
+                                      "archive_status":  "updated",
+                                      "source":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\_tmp_xbreaking_probe_runtime.ini"
+                                  },
+                  "terminal_log":  {
+                                       "archive_status":  "updated",
+                                       "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\logs\\20260702.log"
+                                   },
+                  "runtime_set":  {
+                                      "archive_status":  "updated",
+                                      "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\MQL5\\Profiles\\Tester\\XBreakingProbe.runtime.xbreaking_probe_audusd_h1_tmgm_longwin.set"
+                                  }
+              },
+    "indicator_period":  "H1",
+    "bars_to_probe":  200,
+    "archive_tag":  "audusd_h1_tmgm_longwin_20260702T2022"
+}

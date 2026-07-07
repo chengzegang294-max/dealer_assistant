@@ -1,0 +1,64 @@
+{
+  "format": "fill_mt4_eurusd_h1_history_v1",
+  "run_mode": "write",
+  "legacy_root": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\03_MT4便携探针实例",
+  "source_file": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\03_MT4便携探针实例\\history\\VTMarkets-Live 2\\EURUSD-VIP60.hst",
+  "source_record_count": 27518,
+  "source_window": {
+    "window_count": 217,
+    "window_first": "2025-01-02T00:00:00+00:00",
+    "window_last": "2025-01-15T00:00:00+00:00"
+  },
+  "targets": [
+    {
+      "label": "ICMarketsSC-Demo03",
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\03_MT4便携探针实例\\history\\ICMarketsSC-Demo03\\EURUSD60.hst",
+      "backup_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\volty\\history_patch\\backups\\EURUSD60.hst.20260630T193522Z.bak",
+      "before_record_count": 3665,
+      "after_record_count": 27639,
+      "before_first": "2021-02-26T16:00:00+00:00",
+      "before_last": "2026-06-09T18:00:00+00:00",
+      "after_first": "2021-02-26T16:00:00+00:00",
+      "after_last": "2026-06-09T18:00:00+00:00",
+      "inserted_records": 23974,
+      "before_window": {
+        "window_count": 0,
+        "window_first": null,
+        "window_last": null
+      },
+      "after_window": {
+        "window_count": 217,
+        "window_first": "2025-01-02T00:00:00+00:00",
+        "window_last": "2025-01-15T00:00:00+00:00"
+      }
+    },
+    {
+      "label": "default",
+      "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\03_MT4便携探针实例\\history\\default\\EURUSD60.hst",
+      "backup_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\volty\\history_patch\\backups\\EURUSD60.hst.20260630T193522Z.bak",
+      "before_record_count": 3664,
+      "after_record_count": 27638,
+      "before_first": "2021-02-26T16:00:00+00:00",
+      "before_last": "2025-08-04T16:00:00+00:00",
+      "after_first": "2021-02-26T16:00:00+00:00",
+      "after_last": "2025-08-05T07:00:00+00:00",
+      "inserted_records": 23974,
+      "before_window": {
+        "window_count": 0,
+        "window_first": null,
+        "window_last": null
+      },
+      "after_window": {
+        "window_count": 217,
+        "window_first": "2025-01-02T00:00:00+00:00",
+        "window_last": "2025-01-15T00:00:00+00:00"
+      }
+    }
+  ],
+  "fxt": {
+    "path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\03_MT4便携探针实例\\tester\\history\\EURUSD60_0.fxt",
+    "exists_before": true,
+    "backup_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\volty\\history_patch\\backups\\EURUSD60_0.fxt.20260630T193522Z.bak",
+    "deleted": true
+  }
+}

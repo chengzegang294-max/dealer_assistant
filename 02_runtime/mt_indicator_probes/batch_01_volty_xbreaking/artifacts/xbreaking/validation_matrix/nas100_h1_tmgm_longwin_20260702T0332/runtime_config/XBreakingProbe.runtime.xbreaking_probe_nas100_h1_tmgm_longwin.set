@@ -1,0 +1,4 @@
+InpIndicatorName=XBreaking
+InpIndicatorTf=16385
+InpBarsToProbe=200
+InpMaxBuffers=8

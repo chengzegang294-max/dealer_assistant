@@ -1,0 +1,4 @@
+0	02:48:43.332	Expert Probe\MT4Probe_Volty EURUSD,H1: loaded successfully
+0	02:48:43.335	Tester: start with configuration file
+1	02:48:47.626	TestGenerator: no history data 'EURUSD60' from 2025.01.01 to 2025.01.15
+0	02:48:48.301	Expert MT4Probe_Volty EURUSD,H1: removed

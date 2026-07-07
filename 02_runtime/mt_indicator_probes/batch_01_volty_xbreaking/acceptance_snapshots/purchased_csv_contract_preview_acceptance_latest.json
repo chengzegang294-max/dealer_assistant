@@ -1,0 +1,35 @@
+{
+  "format": "purchased_csv_contract_preview_acceptance_v1",
+  "generated_at": "2026-07-03T10:44:54",
+  "index_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\purchased_csv_contract_preview_index_latest.json",
+  "archive_count": 4,
+  "latest_archive_tag": "p2_contract_preview_20260703T1115",
+  "latest_archive_generated_at": "2026-07-03T10:44:19",
+  "checks": [
+    {
+      "archive_tag": "p1_contract_preview_20260702T0428",
+      "archive_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "archive_tag": "p1_contract_preview_20260702T0702",
+      "archive_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0702",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "archive_tag": "p1_contract_preview_20260702T1730",
+      "archive_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T1730",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "archive_tag": "p2_contract_preview_20260703T1115",
+      "archive_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p2_contract_preview_20260703T1115",
+      "ok": true,
+      "issues": []
+    }
+  ],
+  "next_actions": []
+}

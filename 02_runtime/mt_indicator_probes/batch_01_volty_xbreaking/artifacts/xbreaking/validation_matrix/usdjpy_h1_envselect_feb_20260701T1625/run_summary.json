@@ -1,0 +1,59 @@
+{
+    "chart_period":  "H1",
+    "indicator_name":  "XBreaking",
+    "environment":  {
+                        "install_root":  "D:\\Work\\MT5",
+                        "server":  "ICMarketsSC-Demo",
+                        "inventory_selector":  "ICMarketsSC-Demo__52886989",
+                        "access_server":  "HK-Demo",
+                        "selection_mode":  "inventory_selector",
+                        "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744",
+                        "inventory_json":  "02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\environment_snapshots\\mt_environment_inventory_latest.json",
+                        "inventory_match_field":  "environment_label",
+                        "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Config\\common.ini",
+                        "data_root_hash":  "AC48B16F101CC6359ADC4B870ED6B744",
+                        "environment_label":  "ICMarketsSC-Demo__52886989",
+                        "account_mode":  "1",
+                        "inventory_match_value":  "ICMarketsSC-Demo__52886989",
+                        "login":  "52886989"
+                    },
+    "archive_root":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\usdjpy_h1_envselect_feb_20260701T1625",
+    "run_timeout_seconds":  180,
+    "max_buffers":  8,
+    "runtime_set_write_mode":  "written",
+    "from_date":  "2025.02.03",
+    "process_exited":  true,
+    "to_date":  "2025.02.10",
+    "symbol":  "USDJPY",
+    "report_fallback_attempted":  true,
+    "report_stem":  "xbreaking_probe_usdjpy_h1_envselect_feb",
+    "files":  {
+                  "tester_log":  {
+                                     "archive_status":  "updated",
+                                     "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Tester\\logs\\20260701.log"
+                                 },
+                  "csv":  {
+                              "archive_status":  "updated",
+                              "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_USDJPY_H1_20250203_000000.csv"
+                          },
+                  "report":  {
+                                 "archive_status":  "updated",
+                                 "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\xbreaking_probe_usdjpy_h1_envselect_feb.htm"
+                             },
+                  "runtime_ini":  {
+                                      "archive_status":  "updated",
+                                      "source":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\_tmp_xbreaking_probe_runtime.ini"
+                                  },
+                  "terminal_log":  {
+                                       "archive_status":  "updated",
+                                       "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\logs\\20260701.log"
+                                   },
+                  "runtime_set":  {
+                                      "archive_status":  "updated",
+                                      "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\MQL5\\Profiles\\Tester\\XBreakingProbe.runtime.xbreaking_probe_usdjpy_h1_envselect_feb.set"
+                                  }
+              },
+    "indicator_period":  "H1",
+    "bars_to_probe":  200,
+    "archive_tag":  "usdjpy_h1_envselect_feb_20260701T1625"
+}

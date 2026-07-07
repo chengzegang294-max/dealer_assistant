@@ -1,0 +1,53 @@
+{
+    "chart_period":  "H4",
+    "indicator_name":  "XBreaking",
+    "environment":  {
+                        "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Config\\common.ini",
+                        "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744",
+                        "login":  "52886989",
+                        "access_server":  "HK-Demo",
+                        "install_root":  "D:\\Work\\MT5",
+                        "environment_label":  "ICMarketsSC-Demo__52886989",
+                        "account_mode":  "1",
+                        "server":  "ICMarketsSC-Demo"
+                    },
+    "archive_root":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_overridecheck_20260701T",
+    "run_timeout_seconds":  180,
+    "max_buffers":  8,
+    "runtime_set_write_mode":  "written",
+    "from_date":  "2025.01.03",
+    "process_exited":  true,
+    "to_date":  "2025.01.10",
+    "symbol":  "EURUSD",
+    "report_fallback_attempted":  true,
+    "report_stem":  "xbreaking_probe_eurusd_h4_overridecheck",
+    "files":  {
+                  "tester_log":  {
+                                     "archive_status":  "updated",
+                                     "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Tester\\logs\\20260701.log"
+                                 },
+                  "csv":  {
+                              "archive_status":  "updated",
+                              "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_EURUSD_H4_20250103_000000.csv"
+                          },
+                  "report":  {
+                                 "archive_status":  "updated",
+                                 "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\xbreaking_probe_eurusd_h4_overridecheck.htm"
+                             },
+                  "runtime_ini":  {
+                                      "archive_status":  "updated",
+                                      "source":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\_tmp_xbreaking_probe_runtime.ini"
+                                  },
+                  "terminal_log":  {
+                                       "archive_status":  "updated",
+                                       "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\logs\\20260701.log"
+                                   },
+                  "runtime_set":  {
+                                      "archive_status":  "updated",
+                                      "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\MQL5\\Profiles\\Tester\\XBreakingProbe.runtime.xbreaking_probe_eurusd_h4_overridecheck.set"
+                                  }
+              },
+    "indicator_period":  "H4",
+    "bars_to_probe":  200,
+    "archive_tag":  "eurusd_h4_overridecheck_20260701T"
+}

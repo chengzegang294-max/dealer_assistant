@@ -1,0 +1,45 @@
+{
+  "format": "probe_artifact_ingest_manifest_v1",
+  "family": "purchased_csv_contract_preview",
+  "archive_tag": "p1_contract_preview_20260702T0428",
+  "archive_root": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428",
+  "updated_at": "2026-07-02T02:50:45",
+  "records": [
+    {
+      "family": "purchased_csv_contract_preview",
+      "kind": "csv",
+      "archive_tag": "p1_contract_preview_20260702T0428",
+      "copied_at": "2026-07-02T02:50:45",
+      "selection_mode": "historical_recovered",
+      "source_path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\data\\xauusd_1h.csv",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized\\xauusd_1h__normalized.csv",
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized",
+      "evidence_mode": "historical_recovered",
+      "note": "normalized from legacy purchased csv into preview contract"
+    },
+    {
+      "family": "purchased_csv_contract_preview",
+      "kind": "csv",
+      "archive_tag": "p1_contract_preview_20260702T0428",
+      "copied_at": "2026-07-02T02:50:45",
+      "selection_mode": "historical_recovered",
+      "source_path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\data\\nas100_1h.csv",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized\\nas100_1h__normalized.csv",
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized",
+      "evidence_mode": "historical_recovered",
+      "note": "normalized from legacy purchased csv into preview contract"
+    },
+    {
+      "family": "purchased_csv_contract_preview",
+      "kind": "csv",
+      "archive_tag": "p1_contract_preview_20260702T0428",
+      "copied_at": "2026-07-02T02:50:45",
+      "selection_mode": "historical_recovered",
+      "source_path": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\\data\\usoil_1h.csv",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized\\usoil_1h__normalized.csv",
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\purchased_csv_contract_preview\\p1_contract_preview_20260702T0428\\normalized",
+      "evidence_mode": "historical_recovered",
+      "note": "normalized from legacy purchased csv into preview contract"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+0	22:35:41.828	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998410.hungarian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998410.hungarian'
+0	22:35:41.829	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998411.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998411.indonesian'
+0	22:35:41.831	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998412.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998412.italian'
+...
+0	22:35:41.854	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998435.hungarian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998435.hungarian'
+0	22:35:41.854	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998436.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998436.indonesian'
+0	22:35:41.854	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998437.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998437.italian'
+...
+0	22:35:41.888	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998460.hungarian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998460.hungarian'
+0	22:35:41.888	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998461.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998461.indonesian'
+0	22:35:41.888	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998462.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998462.italian'
+...
+0	22:35:41.922	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998485.hungarian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998485.hungarian'
+0	22:35:41.922	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998486.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998486.indonesian'
+0	22:35:41.922	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998487.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998487.italian'
+...
+0	22:35:41.958	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998510.hungarian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998510.hungarian'
+0	22:35:41.959	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998511.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998511.indonesian'
+0	22:35:41.960	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998512.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998512.italian'
+...
+0	22:35:41.991	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998535.italian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998535.italian'
+0	22:35:41.993	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998536.indonesian' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998536.indonesian'
+0	22:35:41.994	Migration: copied from 'D:\Work\MT4\history\mailbox\1356998536.japanese' to 'C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\595F766A2D53496828EF67C5F4B89A58\history\mailbox\1356998536.japanese'

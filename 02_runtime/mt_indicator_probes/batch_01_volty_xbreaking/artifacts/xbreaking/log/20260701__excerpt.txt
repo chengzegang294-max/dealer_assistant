@@ -1,0 +1,22 @@
+FS	0	04:09:08.581	Startup	successfully initialized from start config "D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini"
+JL	0	04:09:08.985	Terminal	MetaTrader 5 IC Markets Global x64 build 5836 started for Raw Trading Ltd
+...
+PN	0	04:09:08.985	Terminal	C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\AC48B16F101CC6359ADC4B870ED6B744
+HS	0	04:09:08.985	Terminal	launched with D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini
+FK	0	04:09:11.678	Network	'52886989': authorized on ICMarketsSC-Demo through Access Server HK-Demo (ping: 265.34 ms, build 5830)
+...
+LR	0	04:09:18.020	Terminal	shutdown with 0
+HL	0	04:11:33.689	Startup	successfully initialized from start config "D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini"
+MD	0	04:11:33.721	Terminal	MetaTrader 5 IC Markets Global x64 build 5836 started for Raw Trading Ltd
+...
+CF	0	04:11:33.721	Terminal	C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\AC48B16F101CC6359ADC4B870ED6B744
+KK	0	04:11:33.721	Terminal	launched with D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini
+GS	0	04:11:36.161	Network	'52886989': authorized on ICMarketsSC-Demo through Access Server HK-Demo (ping: 265.34 ms, build 5830)
+...
+HP	0	04:11:38.915	Terminal	shutdown with 0
+QM	0	04:12:02.885	Startup	successfully initialized from start config "D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini"
+LF	0	04:12:02.916	Terminal	MetaTrader 5 IC Markets Global x64 build 5836 started for Raw Trading Ltd
+...
+FD	0	04:12:02.916	Terminal	C:\Users\91883\AppData\Roaming\MetaQuotes\Terminal\AC48B16F101CC6359ADC4B870ED6B744
+NE	0	04:12:02.916	Terminal	launched with D:\Stock\trading_assistant\02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\_tmp_xbreaking_probe_runtime.ini
+DE	0	04:12:05.392	Network	'52886989': authorized on ICMarketsSC-Demo through Access Server HK-Demo (ping: 265.34 ms, build 5830)

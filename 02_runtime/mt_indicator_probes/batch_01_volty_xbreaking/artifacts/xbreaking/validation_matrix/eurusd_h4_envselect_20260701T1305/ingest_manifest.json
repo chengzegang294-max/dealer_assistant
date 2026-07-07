@@ -1,0 +1,69 @@
+{
+  "format": "probe_artifact_ingest_manifest_v1",
+  "family": "xbreaking",
+  "archive_tag": "eurusd_h4_envselect_20260701T1305",
+  "archive_root": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305",
+  "updated_at": "2026-07-01T13:23:10",
+  "records": [
+    {
+      "family": "xbreaking",
+      "kind": "csv",
+      "archive_tag": "eurusd_h4_envselect_20260701T1305",
+      "copied_at": "2026-07-01T13:22:49",
+      "selection_mode": "source",
+      "source_path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_EURUSD_H4_20250103_000000.csv",
+      "source_mtime": "2026-07-01T13:06:21",
+      "source_size": 5155,
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\csv",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\csv\\XBreaking_probe_EURUSD_H4_20250103_000000.csv",
+      "matched_keywords": [],
+      "matched_filename_keywords": [],
+      "log_keyword_override": [],
+      "log_filename_keywords": [],
+      "log_tail_lines": 0,
+      "excerpt_path": ""
+    },
+    {
+      "family": "xbreaking",
+      "kind": "log",
+      "archive_tag": "eurusd_h4_envselect_20260701T1305",
+      "copied_at": "2026-07-01T13:23:10",
+      "selection_mode": "source",
+      "source_path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Tester\\logs\\20260701.log",
+      "source_mtime": "2026-07-01T13:06:21",
+      "source_size": 225994,
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\log",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\log\\20260701.log",
+      "matched_keywords": [
+        "XBreakingProbe",
+        "DONE"
+      ],
+      "matched_filename_keywords": [],
+      "log_keyword_override": [
+        "XBreakingProbe",
+        "DONE"
+      ],
+      "log_filename_keywords": [],
+      "log_tail_lines": 400,
+      "excerpt_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\log\\20260701__excerpt.txt"
+    },
+    {
+      "family": "xbreaking",
+      "kind": "report",
+      "archive_tag": "eurusd_h4_envselect_20260701T1305",
+      "copied_at": "2026-07-01T13:23:00",
+      "selection_mode": "source",
+      "source_path": "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\xbreaking_probe_eurusd_h4_envselect.htm",
+      "source_mtime": "2026-07-01T13:06:22",
+      "source_size": 22584,
+      "repo_target_dir": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\report",
+      "repo_path": "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_envselect_20260701T1305\\report\\xbreaking_probe_eurusd_h4_envselect.htm",
+      "matched_keywords": [],
+      "matched_filename_keywords": [],
+      "log_keyword_override": [],
+      "log_filename_keywords": [],
+      "log_tail_lines": 0,
+      "excerpt_path": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+    "generated_at":  "2026-07-02T01:52:22",
+    "metaquotes_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal",
+    "items":  [
+                  {
+                      "platform":  "mt4",
+                      "data_root_hash":  "595F766A2D53496828EF67C5F4B89A58",
+                      "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\595F766A2D53496828EF67C5F4B89A58",
+                      "origin_present":  true,
+                      "origin_path":  "D:\\Work\\MT4",
+                      "discovery_mode":  "origin_txt",
+                      "terminal_path":  "D:\\Work\\MT4\\terminal.exe",
+                      "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\595F766A2D53496828EF67C5F4B89A58\\Config\\common.ini",
+                      "login":  "",
+                      "server":  "",
+                      "access_server":  "",
+                      "account_mode":  "",
+                      "environment_label":  "595F766A2D53496828EF67C5F4B89A58"
+                  },
+                  {
+                      "platform":  "mt5",
+                      "data_root_hash":  "AC48B16F101CC6359ADC4B870ED6B744",
+                      "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744",
+                      "origin_present":  true,
+                      "origin_path":  "D:\\Work\\MT5",
+                      "discovery_mode":  "origin_txt",
+                      "terminal_path":  "D:\\Work\\MT5\\terminal64.exe",
+                      "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Config\\common.ini",
+                      "login":  "52886989",
+                      "server":  "ICMarketsSC-Demo",
+                      "access_server":  "HK-Demo",
+                      "account_mode":  "1",
+                      "environment_label":  "ICMarketsSC-Demo__52886989"
+                  },
+                  {
+                      "platform":  "mt5",
+                      "data_root_hash":  "C9F9BDDC460DF35F331B73B79A3DD57C",
+                      "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C",
+                      "origin_present":  true,
+                      "origin_path":  "D:\\Work\\TMGM",
+                      "discovery_mode":  "origin_txt",
+                      "terminal_path":  "D:\\Work\\TMGM\\terminal64.exe",
+                      "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\Config\\common.ini",
+                      "login":  "60088394",
+                      "server":  "TradeMaxGlobal-Demo",
+                      "access_server":  "",
+                      "account_mode":  "1",
+                      "environment_label":  "TradeMaxGlobal-Demo__60088394"
+                  }
+              ],
+    "item_count":  3
+}

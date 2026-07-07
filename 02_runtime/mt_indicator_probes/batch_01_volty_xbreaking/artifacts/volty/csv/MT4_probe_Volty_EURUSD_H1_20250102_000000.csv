@@ -1,0 +1,16 @@
+symbol;EURUSD
+chart_tf;60
+indicator_tf;60
+indicator_name;Probe\VoltyChannel_Stop_v2_1M
+max_modes;8
+max_shifts;50
+used_common;0
+mode;0;non_empty;16;err_count;0;first_valid;1.04050400;last_valid;1.03969800
+mode;1;non_empty;34;err_count;0;first_valid;1.04102400;last_valid;1.04607200
+mode;2;non_empty;0;err_count;0;first_valid;2147483647.00000000;last_valid;2147483647.00000000
+mode;3;non_empty;1;err_count;0;first_valid;1.04607200;last_valid;1.04607200
+mode;4;non_empty;50;err_count;0;first_valid;1.02985600;last_valid;1.03969800
+mode;5;non_empty;50;err_count;0;first_valid;1.04102400;last_valid;1.04647800
+mode;6;non_empty;50;err_count;0;first_valid;-1.00000000;last_valid;1.00000000
+mode;7;non_empty;50;err_count;0;first_valid;0.00000000;last_valid;0.00000000
+status;DONE

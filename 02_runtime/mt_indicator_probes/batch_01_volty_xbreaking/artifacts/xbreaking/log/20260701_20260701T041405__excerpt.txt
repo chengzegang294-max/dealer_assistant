@@ -1,0 +1,59 @@
+PL	0	04:09:10.358	Tester	Cloud servers switched off
+PP	0	04:09:15.438	Tester	"XBreakingProbe.ex5" X64
+QI	0	04:09:15.597	Tester	EURUSD: history data begins from 2011.08.31 00:00
+...
+EN	0	04:09:16.350	Core 01	authorized (agent build 5836)
+OG	0	04:09:16.361	Tester	EURUSD,H1 (ICMarketsSC-Demo): testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00
+HE	0	04:09:16.370	Core 01	common synchronization completed
+...
+RM	0	04:09:16.616	Core 01	21881 bytes of symbols list loaded (2726 symbols)
+DD	0	04:09:16.616	Core 01	expert file added: Experts\XBreakingProbe.ex5. 19348 bytes loaded
+FH	0	04:09:16.616	Core 01	16802 Mb available, 209 blocks set for ticks generating
+...
+RE	0	04:09:16.616	Core 01	EURUSD,H1 (ICMarketsSC-Demo): every tick generating
+KM	0	04:09:16.616	Core 01	EURUSD,H1: testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00 started with inputs:
+NR	0	04:09:16.616	Core 01	  InpIndicatorName=XBreaking
+...
+MD	0	04:09:16.616	Core 01	program file added: \Indicators\XBreaking.ex5. 57515 bytes loaded
+MK	0	04:09:16.616	Core 01	2025.01.02 00:00:30   XBreakingProbe: DONE
+EQ	3	04:09:16.616	Core 01	2025.01.02 00:00:30   ExpertRemove() function called
+...
+JM	0	04:11:34.900	Tester	Cloud servers switched off
+MQ	0	04:11:36.789	Tester	"XBreakingProbe.ex5" X64
+RJ	0	04:11:36.918	Tester	EURUSD: history data begins from 2011.08.31 00:00
+...
+GO	0	04:11:37.448	Core 01	authorized (agent build 5836)
+OH	0	04:11:37.459	Tester	EURUSD,H1 (ICMarketsSC-Demo): testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00
+KD	0	04:11:37.467	Core 01	common synchronization completed
+...
+PI	0	04:11:37.539	Core 01	21881 bytes of symbols list loaded (2726 symbols)
+RH	0	04:11:37.539	Core 01	expert file added: Experts\XBreakingProbe.ex5. 19348 bytes loaded
+LM	0	04:11:37.539	Core 01	16203 Mb available, 202 blocks set for ticks generating
+...
+JP	0	04:11:37.539	Core 01	EURUSD,H1 (ICMarketsSC-Demo): every tick generating
+CH	0	04:11:37.539	Core 01	EURUSD,H1: testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00 started with inputs:
+NN	0	04:11:37.539	Core 01	  InpIndicatorName=XBreaking
+...
+MH	0	04:11:37.539	Core 01	program file added: \Indicators\XBreaking.ex5. 57515 bytes loaded
+MO	0	04:11:37.539	Core 01	2025.01.02 00:00:30   XBreakingProbe: DONE
+ME	3	04:11:37.539	Core 01	2025.01.02 00:00:30   ExpertRemove() function called
+...
+EH	0	04:12:04.033	Tester	Cloud servers switched off
+KM	0	04:12:06.989	Tester	"XBreakingProbe.ex5" X64
+FE	0	04:12:07.111	Tester	EURUSD: history data begins from 2011.08.31 00:00
+...
+DR	0	04:12:07.643	Core 01	authorized (agent build 5836)
+KS	0	04:12:07.653	Tester	EURUSD,H1 (ICMarketsSC-Demo): testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00
+EI	0	04:12:07.663	Core 01	common synchronization completed
+...
+RE	0	04:12:07.760	Core 01	21881 bytes of symbols list loaded (2726 symbols)
+PM	0	04:12:07.760	Core 01	expert file added: Experts\XBreakingProbe.ex5. 19348 bytes loaded
+JQ	0	04:12:07.760	Core 01	16243 Mb available, 202 blocks set for ticks generating
+...
+PL	0	04:12:07.760	Core 01	EURUSD,H1 (ICMarketsSC-Demo): every tick generating
+MD	0	04:12:07.760	Core 01	EURUSD,H1: testing of Experts\XBreakingProbe.ex5 from 2025.01.01 00:00 to 2025.01.15 00:00 started with inputs:
+LE	0	04:12:07.760	Core 01	  InpIndicatorName=XBreaking
+...
+KM	0	04:12:07.760	Core 01	program file added: \Indicators\XBreaking.ex5. 57515 bytes loaded
+KS	0	04:12:07.760	Core 01	2025.01.02 00:00:30   XBreakingProbe: DONE
+CI	3	04:12:07.760	Core 01	2025.01.02 00:00:30   ExpertRemove() function called

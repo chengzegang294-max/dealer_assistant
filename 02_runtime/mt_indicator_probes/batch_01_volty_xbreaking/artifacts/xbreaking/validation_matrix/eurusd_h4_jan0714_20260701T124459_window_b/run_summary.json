@@ -1,0 +1,43 @@
+{
+    "bars_to_probe":  200,
+    "run_timeout_seconds":  180,
+    "symbol":  "EURUSD",
+    "max_buffers":  8,
+    "files":  {
+                  "tester_log":  {
+                                     "archive_status":  "updated",
+                                     "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\Tester\\logs\\20260701.log"
+                                 },
+                  "csv":  {
+                              "archive_status":  "updated",
+                              "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\XBreaking_probe_EURUSD_H4_20250107_000000.csv"
+                          },
+                  "report":  {
+                                 "archive_status":  "updated",
+                                 "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\xbreaking_probe_eurusd_h4_jan0714.htm"
+                             },
+                  "runtime_ini":  {
+                                      "archive_status":  "updated",
+                                      "source":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\_tmp_xbreaking_probe_runtime.ini"
+                                  },
+                  "terminal_log":  {
+                                       "archive_status":  "updated",
+                                       "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\logs\\20260701.log"
+                                   },
+                  "runtime_set":  {
+                                      "archive_status":  "updated",
+                                      "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\AC48B16F101CC6359ADC4B870ED6B744\\MQL5\\Profiles\\Tester\\XBreakingProbe.runtime.xbreaking_probe_eurusd_h4_jan0714.set"
+                                  }
+              },
+    "report_stem":  "xbreaking_probe_eurusd_h4_jan0714",
+    "runtime_set_write_mode":  "written",
+    "archive_tag":  "eurusd_h4_jan0714_20260701T124459_window_b",
+    "report_fallback_attempted":  true,
+    "process_exited":  true,
+    "chart_period":  "H4",
+    "to_date":  "2025.01.14",
+    "indicator_period":  "H4",
+    "from_date":  "2025.01.07",
+    "indicator_name":  "XBreaking",
+    "archive_root":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\xbreaking\\validation_matrix\\eurusd_h4_jan0714_20260701T124459_window_b"
+}

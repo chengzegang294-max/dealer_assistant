@@ -1,0 +1,52 @@
+{
+    "report_stem":  "mt5_bar_export_probe_gbpusd_m15",
+    "run_timeout_seconds":  300,
+    "symbol":  "GBPUSD",
+    "producer":  "MT5BarExportProbe.ex5",
+    "files":  {
+                  "csv":  {
+                              "archive_status":  "updated",
+                              "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\Common\\Files\\MT5_bars_export_GBPUSD_M15_20240102_000000__1204375.csv"
+                          },
+                  "terminal_log":  {
+                                       "archive_status":  "updated",
+                                       "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\logs\\20260705.log"
+                                   },
+                  "runtime_ini":  {
+                                      "archive_status":  "updated",
+                                      "source":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\_tmp_mt5_bar_export_runtime.ini"
+                                  },
+                  "tester_log":  {
+                                     "archive_status":  "updated",
+                                     "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\Tester\\logs\\20260705.log"
+                                 },
+                  "report":  {
+                                 "archive_status":  "updated",
+                                 "source":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\mt5_bar_export_probe_gbpusd_m15.htm"
+                             }
+              },
+    "environment":  {
+                        "install_root":  "D:\\Work\\TMGM",
+                        "server":  "TradeMaxGlobal-Demo",
+                        "inventory_selector":  "TradeMaxGlobal-Demo__60088394",
+                        "access_server":  "",
+                        "selection_mode":  "inventory_selector",
+                        "data_root":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C",
+                        "inventory_json":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\environment_snapshots\\mt_environment_inventory_latest.json",
+                        "inventory_match_field":  "environment_label",
+                        "config_path":  "C:\\Users\\91883\\AppData\\Roaming\\MetaQuotes\\Terminal\\C9F9BDDC460DF35F331B73B79A3DD57C\\Config\\common.ini",
+                        "data_root_hash":  "C9F9BDDC460DF35F331B73B79A3DD57C",
+                        "environment_label":  "TradeMaxGlobal-Demo__60088394",
+                        "account_mode":  "1",
+                        "inventory_match_value":  "TradeMaxGlobal-Demo__60088394",
+                        "login":  "60088394"
+                    },
+    "archive_tag":  "diag_gbpusd_m15_tmgm_20260705T0938",
+    "report_fallback_attempted":  true,
+    "chart_period":  "M15",
+    "to_date":  "2025.07.01",
+    "producer_source":  "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_02_mt_indicator_family\\MT5BarExportProbe.mq5",
+    "from_date":  "2024.01.01",
+    "process_exited":  true,
+    "archive_root":  "D:\\Stock\\trading_assistant\\02_runtime\\mt_indicator_probes\\batch_01_volty_xbreaking\\artifacts\\mt5_bar_export\\diag_gbpusd_m15_tmgm_20260705T0938"
+}
