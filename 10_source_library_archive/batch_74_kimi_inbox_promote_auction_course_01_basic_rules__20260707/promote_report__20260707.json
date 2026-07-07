@@ -1,0 +1,21 @@
+{
+  "format": "promote_incoming_prefix_v1",
+  "generated_at_utc": "2026-07-07T09:33:27+00:00",
+  "repo_root": "D:\\Stock\\trading_assistant",
+  "ledger_tsv": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_09_legacy_source_library_alignment__20260707\\mirror_gap_decision_ledger__20260707.tsv",
+  "incoming_root": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_09_legacy_source_library_alignment__20260707\\mirror_kimi_inbox_incoming",
+  "mirror_root": "D:\\Stock\\trading_assistant\\10_source_library_archive\\mirror_kimi_inbox",
+  "incoming_prefix": "S_BUCKET__staging/01_集合竞价教程/01.股票《集合竞价基础规则》共3集/",
+  "mirror_prefix": "S_BUCKET__staging/01_集合竞价教程/01.股票《集合竞价基础规则》共3集/",
+  "manifest_path": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_74_kimi_inbox_promote_auction_course_01_basic_rules__20260707\\promote_manifest__20260707.tsv",
+  "conflict_dir": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_74_kimi_inbox_promote_auction_course_01_basic_rules__20260707\\conflicts",
+  "hash_limit_bytes": 314572800,
+  "stat": {
+    "selected": 1,
+    "copied": 1,
+    "skipped_exists_same_sha": 0,
+    "conflicts": 0,
+    "missing_source": 0,
+    "total_bytes_copied": 124149
+  }
+}

@@ -1,0 +1,17 @@
+﻿{
+    "format":  "vantharp_r_bundle_v2",
+    "generated_at_utc":  "2026-07-07T14:34:19.5121760Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\vantharp_risk_p0_v1",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_106_non_kimi_atomic_vantharp_r_bundle__20260707",
+    "file_count":  6,
+    "total_bytes":  15159,
+    "buckets":  {
+                    "objects":  1,
+                    "contracts":  2,
+                    "proof":  1,
+                    "samples":  2
+                },
+    "mode":  "diag_only_proof_ready_contract_frozen",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_106_non_kimi_atomic_vantharp_r_bundle__20260707\\vantharp_r_bundle_manifest__20260707.tsv"
+}

@@ -1,0 +1,31 @@
+theme_cluster	frozen_file	line_range	evidence_key	why_match	note
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L10-L12	sys_5step_flow	五步闭环把“先流程再交易”写成标准链路，与 YZ-A 的计划/反思/慢决策同主题	主题簇级对照，不并旧卡号
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L15-L40	sys_step1_step2	选股/择时的量化步骤与“等待更强信号”支持“无标的/不冲动/先计划”语义	不迁移阈值，只做同主题证据
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L58-L59	sys_stop_execute	“触及止损位立即执行”与 YZ-A 的“错了就割/不抱幻想”同主题	纪律层证据
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L63-L66	sys_core_constraint	“闭环必须完整执行”与 YZ-A 的“操作对错优先/过程先行”同主题	强调过程而非结果
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L224-L225	sys_position_upper_bound	资金管理禁忌与仓位上限（单笔>25%等）明确为禁止项，与 YZ-A 的“风控优先”同主题	仓位上限证据
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L42-L46	sys_entry_after_close	“入场K线收盘后买入 + 入场同时设止损/目标 + 低R:R禁止买入”与 YZ-A 的“慢决策/先定退出/不幻想”同主题	执行细节证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L185-L189	sys_single_trade_risk_cap	单笔风险与单笔仓位上限写成硬约束，与 YZ-A 的“风险优先/先活下来”同主题	风险上限证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L45-L46	sys_rr_filter	“买入设止损/目标 + 低 R:R 禁止买入”属于风险过滤条件，与 YZ-A 的去幻想/风险优先同主题	仍不升级为自动门控
+psychology_state	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L151-L153	sys_emotion_traps	“FOMO/报复交易/盈利膨胀”的识别与应对，与 YZ-A 的三类高风险状态/连胜回撤同主题	心理预警证据
+psychology_state	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L143-L145	sys_emotion_score_rule	情绪评分高则减仓或禁止交易，与 YZ-A 的“高风险状态要克制”同主题	只做对照，不做阈值迁移
+psychology_state	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L143-L146	sys_emotion_score_threshold	明确“>18分禁止交易”，与 YZ-A 的“状态不对就降频/降仓/不交易”同主题	阈值只做证据，不升级为自动门控
+psychology_state	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L163-L167	sys_forced_rest_rules	强制休息规则（单日亏损、连续亏损、情绪评分）与 YZ-A 的“回撤后降频/停手”同主题	状态管理证据
+psychology_state	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L170-L172	sys_state_bad_no_trade	“状态不好时不交易是最好的交易”与 YZ-A 的“状态不对就不交易/降频”同主题	心理模块硬约束证据
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L154-L154	sys_preset_stop_order	“预设止损单，不参与决策”与 YZ-A 的“止损执行/不犹豫”同主题	止损执行机制证据
+waiting_and_patience	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L38-L40	sys_wait_stronger_signal	“C级信号：等待更强信号”与 YZ-A 的“无标的/不冲动/等待”同主题	等待与延迟出手证据
+waiting_and_patience	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L50-L55	sys_observe_wait_zone	“震荡期：观察等待”的量化条件与 YZ-A 的“空仓/观望/不硬做”同主题	等待的可执行口径证据
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L97-L103	sys_weekly_review_plan	周复盘流程以“制定下周交易计划”收口，与 YZ-A 的“计划先行”同主题	复盘-计划闭环证据
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L65-L66	sys_incomplete_trade_rule	“缺失任一步骤即为不完整交易”与 YZ-A 的“流程完整性/不跳步”同主题	流程完整性证据
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L118-L120	sys_review_mandatory	“不复盘直接继续交易”为禁忌，复盘是系统进化前提，与 YZ-A 的“复盘-计划先行”同主题	复盘硬约束证据
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L104-L108	sys_monthly_opt_drawdown_pause	月度回撤与连续亏损触发“检查/暂停实盘”，与 YZ-A 的“回撤后降频/停手/先修系统”同主题	回撤与停手证据
+planning_and_process	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L110-L115	sys_kpi_risk_targets	KPI 中“最大回撤≤8%/月”等目标属于硬约束方向，与 YZ-A 的风险优先同主题	风险目标证据
+waiting_and_patience	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L214-L221	m06_position_base	基础仓位模型里“无趋势=0%=空仓”，与 YZ-A 的“空仓是主动等待”同主题	等待与空仓纪律
+risk_filter	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L191-L192	m03_board_forbidden_in_weak	“震荡/弱势行情禁止打板”等禁忌与 YZ-A 的“状态不对少做/不做”同主题	弱势环境下的不交易证据
+psychology_state	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L187-L188	m03_2loss_stop_3days	“连续2笔超短亏损=停止超短操作3天”与 YZ-A 的“亏损后降频/停手”同主题	连续亏损停手证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L260-L269	sys_systemic_risk_actions	系统性风险应对（暴跌/黑天鹅/外部冲击等）包含“空仓观望/清仓减仓”，与 YZ-A 的风险优先与等待明朗同主题	系统性风险应对证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L306-L309	m06_signal_downgrade_rule	信号降级条件（大盘/板块/重大消息面前后降级或不交易）与 YZ-A 的“状态不对少做/不做”同主题	环境风险过滤证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L270-L273	sys_risk_trigger_no_trade	风控触发后继续交易属于禁忌，与 YZ-A 的“触发风险就停手/不硬做”同主题	风控禁忌证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L268-L269	sys_external_shock_flat	外部冲击（重大政策/国际事件）应对为“空仓观望”，与 YZ-A 的“风险优先/等待明朗”同主题	外部冲击空仓证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L238-L240	m06_system_risk_flat	“系统性风险=仓位×0.0=空仓”，与 YZ-A 的风险优先/状态不好不交易同主题	系统风险下的空仓规则证据
+mindset_bias	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L155-L155	sys_anchor_bias	“锚定效应：不问成本”属于认知偏差纠正，与 YZ-A 的“去形式偏执”同主题	偏差校正类证据

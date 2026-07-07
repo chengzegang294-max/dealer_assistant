@@ -1,0 +1,1 @@
+trade_id,trend_existence_state,breakout_validity_state,volatility_regime_state,crowd_extremity_state,transaction_cost_load_state,liquidity_adequacy_state,proof_basis

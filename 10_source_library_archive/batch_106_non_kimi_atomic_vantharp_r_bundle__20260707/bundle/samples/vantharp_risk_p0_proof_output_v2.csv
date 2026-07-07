@@ -1,0 +1,7 @@
+trade_id,expectancy_group_id,net_pnl,initial_risk_amount_used,max_risk_amount,risk_usage_ratio,r_multiple,risk_model_state,position_sizing_state,expectancy_r,trade_count,expectancy_confidence_state,proof_basis
+S001,VT_RISK_P0_V2_STATEMENT,200,100,100,1.0,2.0,valid,acceptable,0.5833,3,low,statement_amount; net=210-8-2; r=200/100
+S002,VT_RISK_P0_V2_STATEMENT,-60,80,100,0.8,-0.75,valid,acceptable,0.5833,3,low,statement_amount; net=-50-8-2; r=-60/80
+S003,VT_RISK_P0_V2_STATEMENT,60,120,100,1.2,0.5,valid,aggressive,0.5833,3,low,statement_amount; net=65-3-2; r=60/120
+E001,VT_RISK_P0_V2_ENTRY_STOP,100,100,100,1.0,1.0,valid,acceptable,0.1667,3,low,entry_stop_calc; risk=abs(1.2-1.19)*10000*1=100; net=105-3-2; r=100/100
+E002,VT_RISK_P0_V2_ENTRY_STOP,-100,100,100,1.0,-1.0,valid,acceptable,0.1667,3,low,entry_stop_calc; risk=abs(1900-1899)*100*1=100; net=-95-3-2; r=-100/100
+E003,VT_RISK_P0_V2_ENTRY_STOP,50,100,100,1.0,0.5,valid,acceptable,0.1667,3,low,entry_stop_calc; risk=abs(25000-24950)*2*1=100; net=55-3-2; r=50/100

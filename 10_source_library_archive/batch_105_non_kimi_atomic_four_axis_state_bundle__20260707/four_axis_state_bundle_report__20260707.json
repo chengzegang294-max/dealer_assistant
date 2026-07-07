@@ -1,0 +1,17 @@
+﻿{
+    "format":  "four_axis_state_bundle_v2",
+    "generated_at_utc":  "2026-07-07T14:34:19.0789599Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\_raw_snapshot_batch09\\10_来源库_SOURCE_LIBRARY\\02_原子化拆解文件",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_105_non_kimi_atomic_four_axis_state_bundle__20260707",
+    "file_count":  6,
+    "total_bytes":  8253,
+    "buckets":  {
+                    "objects":  1,
+                    "contracts":  2,
+                    "proof":  1,
+                    "samples":  2
+                },
+    "mode":  "diag_only_proof_ready_contract_frozen",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_105_non_kimi_atomic_four_axis_state_bundle__20260707\\four_axis_state_bundle_manifest__20260707.tsv"
+}

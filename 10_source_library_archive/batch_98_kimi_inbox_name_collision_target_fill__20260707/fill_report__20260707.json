@@ -1,0 +1,20 @@
+{
+  "format": "finalize_gap_resolution_v1",
+  "generated_at_utc": "2026-07-07T10:14:26+00:00",
+  "repo_root": "D:\\Stock\\trading_assistant",
+  "mode": "collision",
+  "gaps_tsv": "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_alignment_gaps__20260707.tsv",
+  "review_tsv": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_09_legacy_source_library_alignment__20260707\\name_collision_manual_review__20260707.tsv",
+  "mirror_root": "D:\\Stock\\trading_assistant\\10_source_library_archive\\mirror_kimi_inbox",
+  "manifest_path": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_98_kimi_inbox_name_collision_target_fill__20260707\\fill_manifest__20260707.tsv",
+  "conflict_dir": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_98_kimi_inbox_name_collision_target_fill__20260707\\conflicts",
+  "hash_limit_bytes": 314572800,
+  "stat": {
+    "selected": 22,
+    "copied": 22,
+    "skipped_exists_same_sha": 0,
+    "conflicts": 0,
+    "missing_source": 0,
+    "total_bytes_copied": 1813665
+  }
+}

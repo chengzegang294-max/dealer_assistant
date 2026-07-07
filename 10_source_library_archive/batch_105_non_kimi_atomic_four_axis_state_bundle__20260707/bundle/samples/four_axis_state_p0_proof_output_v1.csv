@@ -1,0 +1,4 @@
+trade_id,trend_existence_state,breakout_validity_state,volatility_regime_state,crowd_extremity_state,transaction_cost_load_state,liquidity_adequacy_state,proof_basis
+FA001,trend_up,valid,normal,neutral,acceptable,adequate,"slope>0.002; breakout>=0.7; atr_pct in [0.005,0.015); spread<=8; depth>=1.0"
+FA002,no_trend,false_breakout_risk,shock,overbought,heavy,thin,"abs(slope)<=0.002; breakout<0.7; atr_pct>=0.03; crowd_z>=1.0; spread>8; depth<1.0"
+FA003,trend_down,valid,high,oversold,acceptable,adequate,"slope<-0.002; breakout>=0.7; atr_pct in [0.015,0.03); crowd_z<=-1.0; spread<=8; depth>=1.0"

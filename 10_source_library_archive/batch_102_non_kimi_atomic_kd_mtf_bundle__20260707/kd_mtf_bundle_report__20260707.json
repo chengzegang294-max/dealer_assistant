@@ -1,0 +1,15 @@
+﻿{
+    "format":  "kd_mtf_bundle_v1",
+    "generated_at_utc":  "2026-07-07T14:10:39.8889432Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\_raw_snapshot_batch09\\10_来源库_SOURCE_LIBRARY\\02_原子化拆解文件",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_102_non_kimi_atomic_kd_mtf_bundle__20260707",
+    "file_count":  7,
+    "total_bytes":  25737,
+    "buckets":  {
+                    "rules":  1,
+                    "objects":  3,
+                    "contracts":  3
+                },
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_102_non_kimi_atomic_kd_mtf_bundle__20260707\\kd_mtf_bundle_manifest__20260707.tsv"
+}

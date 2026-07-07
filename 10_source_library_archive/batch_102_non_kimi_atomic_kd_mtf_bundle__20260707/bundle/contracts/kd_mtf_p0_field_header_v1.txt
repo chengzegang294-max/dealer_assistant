@@ -1,0 +1,1 @@
+symbol,timeframe,bar_time,kd_week_bias,kd_day_signal,kd_4h_confirm,kd_alignment_tier,kd_direction_filter,kd_week_extreme_zone

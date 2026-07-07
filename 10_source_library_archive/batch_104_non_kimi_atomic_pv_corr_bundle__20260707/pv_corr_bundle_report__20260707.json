@@ -1,0 +1,18 @@
+﻿{
+    "format":  "pv_corr_bundle_v2",
+    "generated_at_utc":  "2026-07-07T14:29:18.6273886Z",
+    "repo_root":  "D:\\Stock\\trading_assistant",
+    "source_root":  "D:\\Stock\\trading_assistant\\12_tooling_runtime_archive\\batch_09_legacy_analysis_migration__20260707\\lifted_trading_analysis\\12_工具运行时_TOOLING_RUNTIME\\pv_corr_state_p0_v1",
+    "batch_root":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_104_non_kimi_atomic_pv_corr_bundle__20260707",
+    "file_count":  7,
+    "total_bytes":  17533,
+    "buckets":  {
+                    "objects":  1,
+                    "contracts":  2,
+                    "proof":  1,
+                    "runtime":  1,
+                    "samples":  2
+                },
+    "mode":  "entry_plus_contract_proof_runtime",
+    "manifest_path":  "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_104_non_kimi_atomic_pv_corr_bundle__20260707\\pv_corr_bundle_manifest__20260707.tsv"
+}

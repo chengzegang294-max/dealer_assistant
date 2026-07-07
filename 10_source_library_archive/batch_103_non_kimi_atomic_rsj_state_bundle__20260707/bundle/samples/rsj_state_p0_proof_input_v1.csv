@@ -1,0 +1,6 @@
+trade_id,symbol,timeframe,bar_time,window_bars,rv_up,rv_down,input_note
+RSJ_P0_001,EURUSD,H1,2026-06-18T00:00:00Z,20,0.90,0.10,strong_positive_window
+RSJ_P0_002,XAUUSD,H1,2026-06-18T01:00:00Z,20,0.70,0.30,positive_window
+RSJ_P0_003,US500,H1,2026-06-18T02:00:00Z,20,0.50,0.50,balanced_window
+RSJ_P0_004,DE40,H1,2026-06-18T03:00:00Z,20,0.30,0.70,negative_window
+RSJ_P0_005,USDJPY,H1,2026-06-18T04:00:00Z,20,0.10,0.90,strong_negative_window
