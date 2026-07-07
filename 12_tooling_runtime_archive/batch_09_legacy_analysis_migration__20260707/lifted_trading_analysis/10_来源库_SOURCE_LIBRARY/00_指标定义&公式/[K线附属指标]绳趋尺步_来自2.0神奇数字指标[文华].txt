@@ -1,0 +1,38 @@
+# [K线附属指标]绳趋尺步
+# 来源: 2.0神奇数字指标[文华].doc
+# ============================================================
+
+XUN:=8;
+KUAI:=13;
+ZHONG:=21;
+MAN:=55;
+JIE:=144;
+快线:EMA(CLOSE,KUAI),RGB(255,128,64);
+中线:EMA(CLOSE,ZHONG),COLORWHITE,DASH;
+慢线:EMA(CLOSE,MAN),RGB(128,128,255);
+界线:EMA(CLOSE,JIE),COLORGRAY;
+E最小值:=MIN1(快线,中线,慢线);
+E最大值:=MAX1(快线,中线,慢线);
+E3等分:=0.382*E最小值+0.618*E最大值;
+多头趋势:=E3等分>界线 AND 快线>慢线;
+多头排列:=E3等分>界线 AND 快线>中线 AND 中线>慢线;
+空头趋势:=E3等分<界线 AND 快线<慢线;
+空头排列:=E3等分<界线 AND 快线<中线 AND 中线<慢线;
+标准差:=STD(CLOSE,ZHONG);
+上轨:=中线+1.960*标准差;
+下轨:=中线-1.960*标准差;
+布林线带宽:=((上轨-下轨)/中线);
+平均布林线带宽:=EMA(布林线带宽,JIE);
+布林线紧口:=布林线带宽<0.618*平均布林线带宽;
+DIFF:=快线-中线;
+DEA:=EMA(DIFF,XUN);
+M2等分:=0.500*DIFF+0.500*DEA;
+M分水岭:=EMA(ABS(M2等分),JIE);
+M下限:=-0.618*M分水岭;
+M上限:=0.618*M分水岭;
+M震荡:=(M下限<DIFF AND DIFF<M上限) AND (M下限<DEA AND DEA<M上限);
+PARTLINE(多头趋势,界线,COLORMAGENTA),LINETHICK2;
+PARTLINE(空头趋势,界线,COLORYELLOW),LINETHICK2;
+PARTLINE(多头排列,界线,COLORRED),LINETHICK2;
+PARTLINE(空头排列,界线,RGB(0,120,0)),LINETHICK2;
+PARTLINE(布林线紧口 AND M震荡,中线,COLORWHITE),LINETHICK3;

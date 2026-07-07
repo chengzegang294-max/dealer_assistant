@@ -1,0 +1,121 @@
+﻿paper_id	token_type	match_count	outside_group08_count	outside_group08_sample
+A-001	basename	5	0	
+A-001	fullpath	5	0	
+A-002	basename	5	0	
+A-002	fullpath	5	0	
+A-003	basename	5	0	
+A-003	fullpath	5	0	
+A-004	basename	5	0	
+A-004	fullpath	5	0	
+A-005	basename	5	0	
+A-005	fullpath	5	0	
+A-006	basename	5	0	
+A-006	fullpath	5	0	
+A-007	basename	5	0	
+A-007	fullpath	5	0	
+A-008	basename	5	0	
+A-008	fullpath	5	0	
+A-009	basename	9	0	
+A-009	fullpath	5	0	
+A-010	basename	5	0	
+A-010	fullpath	5	0	
+A-011	basename	5	0	
+A-011	fullpath	5	0	
+A-012	basename	5	0	
+A-012	fullpath	5	0	
+A-013	basename	5	0	
+A-013	fullpath	5	0	
+A-014	basename	5	0	
+A-014	fullpath	5	0	
+A-015	basename	5	0	
+A-015	fullpath	5	0	
+A-016	basename	5	0	
+A-016	fullpath	5	0	
+S-001	basename	5	0	
+S-001	fullpath	5	0	
+S-002	basename	5	0	
+S-002	fullpath	5	0	
+S-003	basename	8	3	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch3_topic_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-003	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-004	basename	5	0	
+S-004	fullpath	5	0	
+S-005	basename	9	0	
+S-005	fullpath	5	0	
+S-006	basename	5	0	
+S-006	fullpath	5	0	
+S-007	basename	5	0	
+S-007	fullpath	5	0	
+S-008	basename	5	0	
+S-008	fullpath	5	0	
+S-009	basename	11	3	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch4_topic_anchor.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\Kimi拆书待入库_批次检查_v1.md | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-009	fullpath	5	0	
+S-010	basename	7	2	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch3_topic_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-010	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-011	basename	5	0	
+S-011	fullpath	5	0	
+S-012	basename	9	0	
+S-012	fullpath	5	0	
+S-013	basename	5	0	
+S-013	fullpath	5	0	
+S-014	basename	11	0	
+S-014	fullpath	8	0	
+S-015	basename	5	0	
+S-015	fullpath	5	0	
+S-016	basename	5	0	
+S-016	fullpath	5	0	
+S-017	basename	5	0	
+S-017	fullpath	5	0	
+S-018	basename	5	0	
+S-018	fullpath	5	0	
+S-019	basename	5	0	
+S-019	fullpath	5	0	
+S-020	basename	5	0	
+S-020	fullpath	5	0	
+S-021	basename	5	0	
+S-021	fullpath	5	0	
+S-022	basename	5	0	
+S-022	fullpath	5	0	
+S-023	basename	5	0	
+S-023	fullpath	5	0	
+S-024	basename	5	0	
+S-024	fullpath	5	0	
+S-025	basename	5	0	
+S-025	fullpath	5	0	
+S-026	basename	5	0	
+S-026	fullpath	5	0	
+S-027	basename	11	0	
+S-027	fullpath	8	0	
+S-028	basename	5	0	
+S-028	fullpath	5	0	
+S-029	basename	5	0	
+S-029	fullpath	5	0	
+S-030	basename	5	0	
+S-030	fullpath	5	0	
+S-031	basename	5	0	
+S-031	fullpath	5	0	
+S-032	basename	5	0	
+S-032	fullpath	5	0	
+S-033	basename	5	0	
+S-033	fullpath	5	0	
+S-034	basename	5	0	
+S-034	fullpath	5	0	
+S-035	basename	5	0	
+S-035	fullpath	5	0	
+S-036	basename	5	0	
+S-036	fullpath	5	0	
+S-037	basename	11	3	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch4_topic_anchor.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-037	fullpath	7	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-038	basename	8	3	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch3_topic_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-038	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-039	basename	7	2	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-039	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-040	basename	7	2	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-040	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-041	basename	8	2	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\tools\group08_batch2_series_copy.py | 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+S-041	fullpath	6	1	12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_INDEX__2026-06-17.tsv
+T-001	basename	5	0	
+T-001	fullpath	5	0	
+T-002	basename	5	0	
+T-002	fullpath	5	0	
+T-003	basename	5	0	
+T-003	fullpath	5	0	

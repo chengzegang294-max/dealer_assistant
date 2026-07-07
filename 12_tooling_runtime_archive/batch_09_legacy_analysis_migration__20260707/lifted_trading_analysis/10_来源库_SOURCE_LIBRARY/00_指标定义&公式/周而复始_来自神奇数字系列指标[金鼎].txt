@@ -1,0 +1,42 @@
+# 周而复始
+# 来源: 神奇数字系列指标[金鼎].doc
+# ============================================================
+
+XUN:=8;
+KUAI:=13;
+ZHONG:=21;
+JIE:=144;
+快线:=EMA(CLOSE,KUAI);
+中线:=EMA(CLOSE,ZHONG);
+DIFF:快线-中线,COLORMAGENTA;
+DEA:EMA(DIFF,XUN),COLORYELLOW;
+MACD:2*(DIFF-DEA),COLORSTICK;
+M最小值:=MIN(DIFF,DEA);
+M最大值:=MAX(DIFF,DEA);
+分水岭:=EMA(ABS(DIFF),JIE);
+A1:=BARSLAST(REF(CROSS(DIFF,DEA),1));
+M底背离:=DIFF>REF(DIFF,A1+1) AND M最大值<0 AND REF(CLOSE,A1+1)>CLOSE AND CROSS(DIFF,DEA);
+A2:=BARSLAST(REF(CROSS(DEA,DIFF),1));
+M顶背离:=DIFF<REF(DIFF,A2+1) AND M最小值>0 AND REF(CLOSE,A2+1)<CLOSE AND CROSS(DEA,DIFF);
+低位金叉:=DIFF<-1.96*分水岭 AND CROSS(DIFF,DEA);
+高位死叉:=DIFF>1.96*分水岭 AND CROSS(DEA,DIFF);
+零下买点:=M最大值<0 AND CROSS(DIFF,DEA);
+零下起买点:=DIFF<-分水岭 AND 零下买点;
+BT1:=BARSLAST(REF(零下起买点,1));
+BJOUNT1:=COUNT(M最大值>0,BARSLAST(零下起买点));
+零下买进:=DIFF>REF(DIFF,BT1+1) AND BJOUNT1=0 AND 零下买点;
+BJOUNT2:=COUNT((零下买进),BARSLAST(零下起买点));
+零下二次金叉:=BJOUNT2=1 AND 零下买进;
+零上卖点:=M最小值>0 AND CROSS(DEA,DIFF);
+零上起卖点:=DIFF>分水岭 AND 零上卖点;
+ST1:=BARSLAST(REF(零上起卖点,1));
+SCOUNT1:=COUNT(M最小值<0,BARSLAST(零上起卖点));
+零上卖出:=DIFF<REF(DIFF,ST1+1) AND SCOUNT1=0 AND 零上卖点;
+SCOUNT2:=COUNT((零上卖出),BARSLAST(零上起卖点));
+零上二次死叉:=SCOUNT2=1 AND 零上卖出;
+DRAWTEXT(M底背离,(1.191*分水岭),'M底'),COLORWHITE;
+DRAWTEXT(M顶背离,(-1.382*分水岭),'M顶'),COLORWHITE;
+DRAWTEXT(低位金叉,(1.500*分水岭),'低位金叉'),COLORGREEN;
+DRAWTEXT(高位死叉,(-1.809*分水岭),'高位死叉'),COLORGREEN;
+DRAWTEXT(零下二次金叉,(1.809*分水岭),'二次金叉'),COLORFFA500;
+DRAWTEXT(零上二次死叉,(-2.382*分水岭),'二次死叉'),COLORA020F0;

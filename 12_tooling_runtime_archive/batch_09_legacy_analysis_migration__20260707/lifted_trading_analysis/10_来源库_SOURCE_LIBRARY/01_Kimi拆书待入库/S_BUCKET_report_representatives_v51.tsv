@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	04_多因子	逐鹿Alpha专题报告18：Model Zoo.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告18：Model Zoo.pdf	多因子分桶里偏因子模型库整理与横向比较的代表	STAGE_PROOF_V51
+2	03_券商研报	04_多因子	逐鹿Alpha专题报告1：一致预期因子深度挖掘.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告1：一致预期因子深度挖掘.pdf	多因子分桶里偏一致预期因子深挖的代表	STAGE_PROOF_V51
+3	03_券商研报	04_多因子	逐鹿Alpha专题报告2：q-factor在A股实证及改进.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告2：q-factor在A股实证及改进.pdf	多因子分桶里偏 q-factor 在 A 股实证改进的代表	STAGE_PROOF_V51
+4	03_券商研报	04_多因子	逐鹿Alpha专题报告3：聪明的资金流向数据.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告3：聪明的资金流向数据.pdf	多因子分桶里偏资金流向数据因子化的代表	STAGE_PROOF_V51
+5	03_券商研报	04_多因子	逐鹿Alpha专题报告4：基于南向资金的选股择时策略.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告4：基于南向资金的选股择时策略.pdf	多因子分桶里偏南向资金选股择时的代表	STAGE_PROOF_V51
+6	03_券商研报	04_多因子	逐鹿Alpha专题报告5：杠杆因子和盈利收益因子的风格轮动.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告5：杠杆因子和盈利收益因子的风格轮动.pdf	多因子分桶里偏杠杆与盈利收益风格轮动的代表	STAGE_PROOF_V51
+7	03_券商研报	04_多因子	逐鹿Alpha专题报告6：基于北向机构持仓的选股分析.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告6：基于北向机构持仓的选股分析.pdf	多因子分桶里偏北向机构持仓选股分析的代表	STAGE_PROOF_V51
+8	03_券商研报	04_多因子	逐鹿Alpha专题报告7：基于超预期的事件驱动策略.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告7：基于超预期的事件驱动策略.pdf	多因子分桶里偏超预期事件驱动因子的代表	STAGE_PROOF_V51

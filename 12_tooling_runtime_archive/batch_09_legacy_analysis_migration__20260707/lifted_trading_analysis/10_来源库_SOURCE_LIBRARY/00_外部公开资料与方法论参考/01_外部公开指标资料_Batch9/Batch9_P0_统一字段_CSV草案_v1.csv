@@ -1,0 +1,32 @@
+csv_order,type_id,standard_field_name,actual_landing_name_v1,field_type,null_allowed,recommended_default,mapping_status,layer,landing_priority,landing_status,evidence_status,notes
+1,N02,session_id,session_id,string,no,unknown_session,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多市场 session 样本
+2,N02,session_timezone,session_timezone,string,no,UTC,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 DST 和多市场样本补强
+3,N02,opening_range_window_minutes,opening_range_window_minutes,int,no,30,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更广窗口样本
+4,N02,opening_range_high,opening_range_high,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多来源交叉验证
+5,N02,opening_range_low,opening_range_low,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多来源交叉验证
+6,N02,opening_range_mid,opening_range_mid,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,主要依赖 OR high 和 OR low 派生
+7,N02,opening_range_width,opening_range_width,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,主要依赖 OR high 和 OR low 派生
+8,N02,opening_range_width_pct_open,opening_range_width_pct_open,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 open 异常值处理样本
+9,N02,session_open_price,session_open_price,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺不同市场 session 开盘定义补强
+10,N02,opening_range_defined,opening_range_defined,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺跨实现定义差异补强
+11,N02,first_break_direction,first_break_direction,string,no,none,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 close 和 wick 进一步切分
+12,N02,width_error_day,width_error_day,int,no,0,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,阈值仍主要来自 joveteo 系
+13,N01,atr_value,atr_value,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺不同来源 ATR 窗口统一口径
+14,N01,atr_ratio,atr_ratio,float,yes,na,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,仍缺 GainzAlgo 源码级基线 ATR 细节
+15,N01,atr_percentile,atr_percentile,float,yes,na,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多窗口样本
+16,N01,atr_percentile_regime,atr_percentile_regime,string,no,unknown,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 CHE panel 和 table 字段名
+17,N01,squeeze_is_on,squeeze_is_on,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多跨实现对照
+18,N01,squeeze_tier,squeeze_tier,string,no,off,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,已补到 Beardy_Fred 版本 1.0 1.5 2.0 ATR KC
+19,N01,squeeze_fired,squeeze_fired,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,已补到 NoSqz and not NoSqz[1]
+20,N01,compression_quality_score,compression_quality_score,float,yes,na,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,已补到 AG Pro 权重和阈值骨架但仍缺核心计算段源码
+21,N03,swing_mode,swing_mode,string,no,unknown,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多 custom mode 实例
+22,N03,swing_left_bars,swing_left_bars,int,yes,na,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,并非所有来源都显式暴露
+23,N03,swing_right_bars,swing_right_bars,int,yes,na,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,并非所有来源都显式暴露
+24,N03,swing_high_confirmed,swing_high_confirmed,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 live 未确认对象的统一对照
+25,N03,swing_low_confirmed,swing_low_confirmed,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺 live 未确认对象的统一对照
+26,N03,break_confirmation_mode,break_confirmation_mode,string,no,close,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,仍缺更多源码级 close 和 wick 实现核验
+27,N03,break_level_price,break_level_price,float,yes,na,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,仍缺对象级 tracked level 暴露一致性
+28,N03,bos_event,bos_event,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多最小实现对照样本
+29,N03,choch_event,choch_event,int,no,0,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺更多最小实现对照样本
+30,N03,structure_direction,structure_direction,string,no,neutral,planned_same_name,A,P0,ready_for_landing,strong_enough_for_p0,仍缺方向初始化口径统一
+31,N03,structure_event_bar_close_confirmed,structure_event_bar_close_confirmed,int,no,1,planned_same_name,A,P0,ready_for_landing,usable_but_incomplete,仍缺对象级 close confirm 落点核验

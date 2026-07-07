@@ -1,0 +1,63 @@
+# [副图指标]周而复始
+# 来源: 神奇数字系列指标[文华]2.0.doc
+# ============================================================
+
+XUN:=8;
+KUAI:=13;
+ZHONG:=21;
+JIE:=144;
+快线:=EMA(CLOSE,KUAI);
+中线:=EMA(CLOSE,ZHONG);
+DIFF:快线-中线,RGB(255,128,64);
+DEA:EMA(DIFF,XUN),RGB(128,128,255);
+MACD:2*(DIFF-DEA),COLORSTICK;
+MACD2平均:=(DIFF+DEA)/2;
+M分水岭:=EMA(ABS(MACD2平均),JIE);
+零下买点:=MACD2平均<0 AND CROSS(DIFF,DEA);
+零下起买点:=DIFF<-M分水岭 AND 零下买点;
+BT1:=BARSLAST(REF(零下起买点,1));
+BJCOUNT1:=COUNT(MACD2平均>0,BARSLAST(零下起买点));
+零下买进:=DIFF>REF(DIFF,BT1+1) AND BJCOUNT1=0 AND 零下买点;
+BJCOUNT2:=COUNT((零下买进),BARSLAST(零下起买点));
+零下二次金叉:=BJCOUNT2=1 AND 零下买进;
+零上卖点:=MACD2平均>0 AND CROSS(DEA,DIFF);
+零上起卖点:=DIFF>M分水岭 AND 零上卖点;
+ST1:=BARSLAST(REF(零上起卖点,1));
+SCOUNT1:=COUNT(MACD2平均<0,BARSLAST(零上起卖点));
+零上卖出:=DIFF<REF(DIFF,ST1+1) AND SCOUNT1=0 AND 零上卖点;
+SCOUNT2:=COUNT((零上卖出),BARSLAST(零上起卖点));
+零上二次死叉:=SCOUNT2=1 AND 零上卖出;
+BT2:=BARSLAST(REF(CROSS(DIFF,DEA),1));
+M底背离:=DIFF>REF(DIFF,BT2+1)  AND  MACD2平均<0  AND  REF(CLOSE,BT2+1)>CLOSE
+AND CROSS(DIFF,DEA);
+ST2:=BARSLAST(REF(CROSS(DEA,DIFF),1));
+M顶背离:=DIFF<REF(DIFF,ST2+1)  AND  MACD2平均>0  AND  REF(CLOSE,ST2+1)<CLOSE
+AND CROSS(DEA,DIFF);
+低位金叉:=DIFF<-1.960*M分水岭 AND CROSS(DIFF,DEA);
+高位死叉:=DIFF>1.960*M分水岭 AND CROSS(DEA,DIFF);
+二金叉:=IF(零下二次金叉,1,0);
+二死叉:=IF(零上二次死叉,1,0);
+底背离:=IF(M底背离,1,0);
+顶背离:=IF(M顶背离,1,0);
+低金叉:=IF(低位金叉,1,0);
+高死叉:=IF(高位死叉,1,0);
+揸沽:(二金叉+底背离+低金叉)-(二死叉+顶背离+高死叉),NODRAW;
+STICKLINE(零下二次金叉,0,(0.809*M分水岭),COLORLIGHTRED,0);
+STICKLINE(零上二次死叉,0,(-0.809*M分水岭),RGB(0,120,0),0);
+STICKLINE(M底背离,0,(0.382*M分水岭),COLORMAGENTA,0);
+STICKLINE(M顶背离,0,(-0.382*M分水岭),COLORYELLOW,0);
+STICKLINE(低位金叉,0,(0.618*M分水岭),RGB(255,128,64),0);
+STICKLINE(高位死叉,0,(-0.618*M分水岭),RGB(128,128,255),0);
+DRAWTEXT(零下二次金叉,(1.809*M分水岭),'二次金叉'),COLORLIGHTRED;
+DRAWTEXT(零上二次死叉,(-2.382*M分水岭),'二次死叉'),RGB(0,120,0);
+DRAWTEXT(M底背离,(1.191*M分水岭),'M底'),COLORMAGENTA;
+DRAWTEXT(M顶背离,(-1.382*M分水岭),'M顶'),COLORYELLOW;
+DRAWLINE3(M底背离,DEA,0,M底背离,REF(DEA,BT2+1),BT2+1,0),COLORMAGENTA,LINETHI
+CK2;
+DRAWLINE3(M顶背离,DEA,0,M顶背离,REF(DEA,ST2+1),ST2+1,0),COLORYELLOW,LINETHIC
+K2;
+DRAWTEXT(低位金叉,(1.500*M分水岭),'低位金叉'),RGB(255,128,64);
+DRAWTEXT(高位死叉,(-1.809*M分水岭),'高位死叉'),RGB(128,128,255);
+DRAWICON(M底背离 AND (低位金叉 OR 零下二次金叉),(2.382*M分水岭),'ICO1');
+DRAWICON(M顶背离 AND (高位死叉 OR 零上二次死叉),(-2.809*M分水岭),'ICO2');
+BACKGROUNDSTYLE(0);

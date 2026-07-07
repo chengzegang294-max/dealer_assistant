@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20191113-海通证券-金融工程专题报告：高频因子在不同周期和域下的表现及影响因素分析.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20191113-海通证券-金融工程专题报告：高频因子在不同周期和域下的表现及影响因素分析.pdf	高频微观里偏高频因子跨周期跨域表现分析的代表	STAGE_PROOF_V14
+2	03_券商研报	01_高频微观	20210606-长江证券-基础因子研究（十八）：高频因子（十二），日内与日间.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20210606-长江证券-基础因子研究（十八）：高频因子（十二），日内与日间.pdf	高频微观里偏日内与日间结构对比的代表	STAGE_PROOF_V14
+3	03_券商研报	03_机器学习	Machine Learning for Financial Risk Management with Python.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning for Financial Risk Management with Python.pdf	机器学习分桶里偏金融风险管理 Python 实操的代表	STAGE_PROOF_V14
+4	03_券商研报	03_机器学习	华泰人工智能系列15：人工智能选股卷积神经网络.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列15：人工智能选股卷积神经网络.pdf	机器学习分桶里偏卷积神经网络选股实证的代表	STAGE_PROOF_V14
+5	03_券商研报	03_机器学习	华泰人工智能系列22：基于CSCV框架的回测过拟合概率.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列22：基于CSCV框架的回测过拟合概率.pdf	机器学习分桶里偏回测过拟合概率评估的代表	STAGE_PROOF_V14
+6	03_券商研报	04_多因子	华泰多因子系列5：单因子测试之换手率类因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列5：单因子测试之换手率类因子.pdf	多因子分桶里偏换手率类单因子测试的代表	STAGE_PROOF_V14
+7	03_券商研报	04_多因子	国盛多因子系列15：分析师盈利修正后的股价漂移.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛多因子系列15：分析师盈利修正后的股价漂移.pdf	多因子分桶里偏分析师盈利修正因子的代表	STAGE_PROOF_V14
+8	03_券商研报	04_多因子	中信因子深度研究系列8：分析师超预期因子选股策略.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\中信因子深度研究系列8：分析师超预期因子选股策略.pdf	多因子分桶里偏分析师超预期选股策略的代表	STAGE_PROOF_V14

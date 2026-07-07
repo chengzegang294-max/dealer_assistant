@@ -1,0 +1,194 @@
+[
+  [
+    11,
+    "COLNE UNS  a  a  ST rrr pn evens eat  ee ee  Preface  xi  Acknowledgments  xv  Chapter 1  Introduction  1  PART ONE  FOUNDATIONS  Chapter 2  Consensus Expected Returns: The Capital  Asset Pricing Model  11  Chapter 3  Risk  41  Chapter 4  Exceptional Return, Benchmarks, and Value Added  87  Chapter "
+  ],
+  [
+    12,
+    "Viii  Contents  Chapter 8  Valuation in Theory  199  Chapter 9  Valuation in Practice  225  PART THREE  INFORMATION PROCESSING  Chapter 10  Forecasting Basics  261  Chapter 11  Advanced Forecasting  295  Chapter 12  Information Analysis  315  Chapter 13  The Information Horizon  347  PART FOUR  IMPL"
+  ],
+  [
+    13,
+    "Contents  ix  Chapter 18  Asset Allocation  517  Chapter 19  Benchmark Timing  541  Chapter 20  The Historical Record for Active Management  559  Chapter 21  Open Questions  573  Chapter 22  Summary  577  Appendix A  Standard Notation  581  Appendix B  Glossary  583  Appendix C  Return and Statistic"
+  ],
+  [
+    15,
+    "PY R_E.F  A CLE  Why a second edition? Why take time from busy lives? Why devote  the energy to improving an existing text rather than writing an  entirely new one? Why toy with success?  The short answer is: our readers. We have been extremely  gratified by Active Portfolio Management's reception i"
+  ],
+  [
+    23,
+    "CHAPTER  1  Introduction  The art of investing is evolving into the science of investing. This  evolution has been happening slowly and will continue for some  time. The direction is clear; the pace varies. As new generations of  increasingly scientific investment managers come to the task, they  wi"
+  ],
+  [
+    33,
+    "CHAPTER  2  Consensus Expected  Returns: The Capital Asset  Pricing Model  INTRODUCTION  Risk and expected return are the key players in the game of active  management. We will introduce these players in this chapter and  the next, which begin the “Foundations” section of the book.  This chapter con"
+  ],
+  [
+    49,
+    "Consensus Expected Returns: The Capital Asset Pricing Model  27,  level of return. The CAPM reduces to the proposition that portfolio  Q is the market portfolio.  Mathematical Notation  For clarity, we will represent scalars in plain text, vectors as bold  lowercase letters, and matrices as bold upp"
+  ],
+  [
+    53,
+    "Consensus Expected Returns: The Capital Asset Pricing Model  31  is the attribute. Every portfolio’s exposure to e, (e, = Dhp,) measures  the extent of its investment. If ep = 1, then the portfolio is fully  invested. Portfolio C, the characteristic portfolio for attribute e, is  the minimum-risk fu"
+  ],
+  [
+    55,
+    "Consensus Expected Returns: The Capital Asset Pricing Model  33  Sr ee  ee  oe vee aa ee  eee ee ee ee  RS  pecs  (2A.27)  4. If pp, is the correlation between portfolios P and g, then  SRp = pp,SR,  (2A.28)  5. The fraction of g invested in risky assets is given by  2  ¢e, = bees  (2A.29)  Proof  F"
+  ],
+  [
+    56,
+    "34  Foundations  Op, = OpO% = B40. However, a; = 0 by construction, and so portfo-  lios A and B are uncorrelated, and B, = 0.  In many cases, we will find it convenient to assume that there  is a fully invested portfolio that explains expected excess returns.  That will be the case if the expected "
+  ],
+  [
+    63,
+    "CHAPTER  3  Risk  INTRODUCTION  In the previous chapter we presented the CAPM as a model of  consensus expected return. Expected return is the protagonist in  the drama of active management. Risk is the antagonist.  This section will present the definition of risk that is used  throughout the book. "
+  ],
+  [
+    89,
+    "Risk  67  sures the portfolio’s inherent risk: its exposure to movements of  the index. The MMI portfolio beta is 0.96. This implies that if the  S&P 500 excess return were 100 basis points, we would expect the  portfolio return to be 96 basis points.  As all economists know, life is led at the marg"
+  ],
+  [
+    109,
+    "CHAPTER  4  Exceptional Return,  Benchmarks, and  Value Added  INTRODUCTION  The CAPM provides consensus expected returns. A multiple-factor  model can help to control risk. Consensus forecasts and risk control  are available to all active managers. We need one more crucial  ingredient in order to b"
+  ],
+  [
+    120,
+    "98  Foundations  Expected  Excess  Return  0%  10%  20%  30%  10%  50%  Figure 4.4  If we are willing to have cash in our portfolio, then we have  the situation shown in Fig. 4.4. The efficient frontier consists of  all the portfolios on the line from F through Q. The optimal portfolio,  call it P, "
+  ],
+  [
+    131,
+    "CHAPTER  5  Residual Risk and Return:  The Information Ratio  INTRODUCTION  The theory of investments is based on the premise that assets are  fairly valued. This is reassuring for the financial economist and  frustrating to the active manager. The active manager needs theoret-  ical support. In the"
+  ],
+  [
+    138,
+    "116  Foundations  nn  nee IEEE EES EUEE EES  EEUEE ESSERE  for the portfolio using only the active holdings.* The alpha for  portfolio P is  @p = (1.50%)  * (0.10) + (=2.00%)  > (0.15)  +> (1.75%)  (015) 1.257%) (OO  a  The risk of this active position is 2.04 percent.’  Notice that portfolio L is j"
+  ],
+  [
+    169,
+    "CHAPTER  6  The Fundamental Law of  Active Management  INTRODUCTION  In Chap. 5, the information ratio played the role of the “assumed  can opener” for our investigation of active strategies. In this chapter,  we will give that can opener more substance by finding the attri-  butes of an investment "
+  ],
+  [
+    195,
+    "CHAPTER  7  SB  a SN  EE  Expected Returns and the  Arbitrage Pricing Theory  INTRODUCTION  We have now completed our treatment of fundamentals. The next  three chapters cover expected returns and valuation.  The arbitrage pricing theory (APT) is an interesting and power-  ful alternative to the CAP"
+  ],
+  [
+    221,
+    "CHAPTER  8  Valuation in Theory  INTRODUCTION  Valuation is the central concept of active management. Active man-  agers must believe that their assessment of value is better than the  market or consensus assessment. In this chapter, we describe a  basic theory of valuation. The following chapters w"
+  ],
+  [
+    247,
+    "CHAPTER  9  Valuation in Practice  INTRODUCTION  The previous chapter investigated the theory of valuation. That  theory has proved useful in valuing options, futures, and other  derivative instruments, but has yet to be used for the valuation of  equities. In this chapter, we will look at some of t"
+  ],
+  [
+    274,
+    "252  Expected Returns and Valuation  whole? These forecasts might rely on extrapolations of past factor  returns, e.g., using moving averages. More sophisticated forecasting  might use economic indicators such as long and short interest  rates, changes in interest rates, corporate bond spreads, or a"
+  ],
+  [
+    277,
+    "Valuation in Practice  255  Fama, Eugene F.,, and Kenneth R. French. “Taxes, Financing Decisions, and Firm  Value.” Journal of Finance, vol. 53, no. 3, 1998, pp. 819-843.  Fouse, William. “Risk and Liquidity: The Keys to Stock Price Behavior.” Financial  Analysts Journal, vol. 32, no. 3, 1976, pp. 3"
+  ],
+  [
+    283,
+    "CHAPTER  10  Forecasting Basics  INTRODUCTION  We have completed our discussion of expected returns and valua-  tion. We now move on to the third major section of the book:  information processing. We now assume some source of alpha  information. In this section, we tackle a critical problem: how to"
+  ],
+  [
+    317,
+    "CHAPTER  11  Advanced Forecasting  INTRODUCTION  Chapter 10 covered forecasting basics, especially the insight that  refined alphas control for volatility, skill, and expectations. In the  context of a single asset, Chapter 10 also examined how to combine  multiple signals, and even briefly presente"
+  ],
+  [
+    318,
+    "296  Information Processing  MULTIPLE ASSETS  The standard situation for an institutional manager involves multi-  ple assets: choosing a portfolio that will outperform the benchmark.  The chapters in Part 1, “Foundations,” discussed exactly this case.  First, we must point out that the basic foreca"
+  ],
+  [
+    337,
+    "CHAPTER  12  Information Analysis  INTRODUCTION  Information is the vital input into any active management strategy.  Information separates active management from passive manage-  ment. Information, properly applied, allows active managers to  outperform their informationless benchmarks.  Informatio"
+  ],
+  [
+    341,
+    "Information Analysis  319  STEP 1: INFORMATION INTO PORTFOLIOS  Let’s start with step 1, turning predictions into portfolios. Since we  have predictions for each time period, we will generate portfolios  for each time period.' There are a great many ways to generate  portfolios from predictions, and"
+  ],
+  [
+    369,
+    "CHAPTER  13  The Information  Horizon  INTRODUCTION  There is a time dimension to information. Information arrives at  different rates and is valuable over longer or shorter periods. For  most signals, the arrival rate is fixed. The shelf life (or information  horizon) is the main focus of interest."
+  ],
+  [
+    399,
+    "CHAPTER  14  Portfolio Construction  INTRODUCTION  Implementation is the efficient translation of research into portfo-  lios. Implementation is not glamorous, but it is important. Good  implementation can’t help poor research, but poor implementation  can foil good research.  A manager with excelle"
+  ],
+  [
+    409,
+    "Portfolio Construction  387  $102. Stock 2’s current price is also $100. The price of stock 2 will  increase to $108 over the next 24 months and then remain at $108.  The cost of buying and selling each stock is $0.75. The annual alpha  for both stock 1 and stock 2 is 4 percent. To contrast the two "
+  ],
+  [
+    410,
+    "388  Implementation  aversion, and the optimal active risk. Repeating that result here,  translated from residual to active return and risk,  IR  ha = 5, fp  (14.3)  The point is that we have more intuition about our information  ratio and our desired amount of active risk. Hence, we can use Eq.  (1"
+  ],
+  [
+    418,
+    "396  Implementation  It is also possible to set up a linear program with explicit  transactions costs, a limit on turnover, and upper and lower position  limits on each stock. The objective of the linear program is to  maximize the portfolio’s alpha less transactions costs, while re-  maining close "
+  ],
+  [
+    422,
+    "400  Implementation  it surpassed all the other techniques, and it exhibited consistent  performance around that average. A stratified portfolio had the  single highest ex post information ratio, but no consistency over  time. The screening methods in general do not methodically control  for risk, a"
+  ],
+  [
+    441,
+    "CHAPTER  15  Long/Short Investing  INTRODUCTION  U.S. institutions have invested using long/short strategies since at  least the late 1980s. These strategies have generated controversy,  and, over time, increasing acceptance as a worthwhile innovation.  Long/short strategies offer a distinct advanta"
+  ],
+  [
+    467,
+    "CHAPTER  16  Transactions Costs,  Turnover,  and Trading  INTRODUCTION  Transactions costs, turnover, and trading are the details involved  in moving your current portfolio to your target portfolio.’ These  details are important. Studies show that, on average, active U.S.  equity managers underperfo"
+  ],
+  [
+    468,
+    "446  Implementation  Chapter 14 dealt with transactions costs as an input to the  portfolio construction exercise.  Now we will deal with transactions  costs and turnover more broadly (how they arise), more concretely  (how to estimate them), and more strategically (how to reduce  these costs while "
+  ],
+  [
+    475,
+    "Transactions Costs, Turnover, and Trading  453  es  ee  4.50%  4.00%  One-way  Total  Cost  1.00%  8 One-way Total Cost  —— Square Root Fit  0  5  10  15  20  Des,  Order Size ($ millions)  Figure 16.1  which can provide more dynamic and accurate estimates.’ They  can also provide more industrial-st"
+  ],
+  [
+    499,
+    "CHAPTER  17  Performance Analysis  INTRODUCTION  Are you winning or losing? Why? Performance measurement will  answer the first question and can help to answer the second. A  sophisticated performance analysis system can provide valuable  feedback for an active manager. The manager can tie his or he"
+  ],
+  [
+    502,
+    "480  Implementation  and they will. Those with neither skill nor luck are doomed. Natural  selection is cruel but just. But what about the two other categories?  Those managers with skill but no luck are forlorn. Their historical  performance will not reflect their true skill. And, finally, there is"
+  ],
+  [
+    503,
+    "Performance Analysis  481  We can view the basic predicament from another angle. What  if you are truly a top quartile manager, with an information ratio  of 0.5? What is the probability that your monthly, quarterly, annual  returns are positive? Figure 17.2 shows the result as the horizon  varies. "
+  ],
+  [
+    511,
+    "Performance Analysis  489  of the alpha’s statistical significance. A rule of thumb is that a t  statistic of 2 or more indicates that the performance of the portfolio  is due to skill rather than luck. The probability of observing such  a large alpha by chance is only 5 percent, assuming normal dis"
+  ],
+  [
+    539,
+    "CHAPTER  18  Asset Allocation  INTRODUCTION  In Chap. 4 we developed a utility function for active management  which separated benchmark timing from asset selection. The in-  tervening chapters have focused on asset selection, postponing  treatment of benchmark timing to Chap. 19. Before moving on t"
+  ],
+  [
+    563,
+    "CHAPTER  19  Benchmark Timing  INTRODUCTION  In Chap. 4 we separated active management into benchmark timing  and stock selection and postponed consideration of benchmark  timing until a later chapter. We can postpone it no longer. In this  chapter we will explore benchmark timing as another avenue "
+  ],
+  [
+    581,
+    "CHAPTER  20  The Historical Record  for Active Management  INTRODUCTION  What makes for successful active management? We have argued  that the process of successful active management consists of effi-  ciently utilizing superior information. It has two key elements:  finding superior information, an"
+  ],
+  [
+    582,
+    "560  Implementation  STUDIES OF PERFORMANCE  As we discussed in Chap. 17, studies of active managers’ perfor-  mance began soon after the development of the CAPM, which  provided a framework for performance analysis. Pioneers in this  field included Jensen (1968), Sharpe (1966), and Treynor (1965). "
+  ],
+  [
+    593,
+    "The Historical Record for Active Management  571  . “The Persistence of Equity Style Performance: Evidence from Mutual Fund  Data.” In The Handbook of Equity Style Management, 2d ed., edited by J. Daniel  Coggin, Frank J. Fabozzi, and Robert D. Arnott (New Hope, Pa. Frank J.  Fabozzi Associates, 199"
+  ],
+  [
+    595,
+    "CHAPTER  21  Open Questions  INTRODUCTION  For 20 chapters, we have aspired to be magicians. We have at-  tempted to present a comprehensive and seamless theory: covering  every aspect of active portfolio management, and smoothly flowing  from foundations to expected returns and valuation to informa"
+  ],
+  [
+    599,
+    "CHAPTER  22  Summary  In Active Portfolio Management, we have attempted to provide a  comprehensive treatment of the process of active management,  covering both basic principles and many practical details. In sum-  mary, we will review what we have covered, the major themes of  the book, and what i"
+  ]
+]

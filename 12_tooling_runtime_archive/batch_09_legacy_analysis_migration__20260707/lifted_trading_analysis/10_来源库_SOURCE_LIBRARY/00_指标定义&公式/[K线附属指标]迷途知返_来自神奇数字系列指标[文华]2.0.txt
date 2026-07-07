@@ -1,0 +1,35 @@
+# [K线附属指标]迷途知返
+# 来源: 神奇数字系列指标[文华]2.0.doc
+# ============================================================
+
+CHI:=5;
+KUAI:=13;
+ZHONG:=21;
+HUAN:=34;
+MAN:=55;
+DUN:=89;
+快线:=EMA(CLOSE,KUAI);
+中线:=EMA(CLOSE,ZHONG);
+缓线:=EMA(CLOSE,HUAN);
+慢线:=EMA(CLOSE,MAN);
+钝线:=EMA(CLOSE,DUN);
+EMA4平均:=(中线+缓线+慢线+钝线)/4;
+MTR:=MAX1((HIGH-LOW),ABS(REF(CLOSE,1)-HIGH),ABS(REF(CLOSE,1)-LOW));
+ATR3平均:=(EMA(MTR,HUAN)+EMA(MTR,MAN)+EMA(MTR,DUN))/3;
+S5:EMA4平均+5.500*ATR3平均,COLORBLUE,LINETHICK1,NOTEXT;
+卖货:EMA4平均+2.750*ATR3平均,RGB(128,64,0),LINETHICK1;
+S1:EMA4平均+1.375*ATR3平均,COLORGRAY,DASH,NOTEXT;
+中轴:EMA4平均,COLORWHITE,LINETHICK1;
+B1:EMA4平均-1.375*ATR3平均,COLORGRAY,DASH,NOTEXT;
+买货:EMA4平均-2.750*ATR3平均,RGB(128,64,0),LINETHICK1;
+B5:EMA4平均-5.500*ATR3平均,COLORBLUE,LINETHICK1,NOTEXT;
+抛物线转向点:=SAR(CHI,0.001*KUAI,0.01*ZHONG);
+雨后春笋:=抛物线转向点>0;
+危如累卵:=抛物线转向点<0;
+扬帆起航:=抛物线转向点>0 AND 快线>中线;
+江河日下:=抛物线转向点<0 AND 快线<中线;
+多空:(雨后春笋+扬帆起航)-(危如累卵+江河日下),NODRAW;
+IF(雨后春笋,ABS(抛物线转向点),NULL),RGB(255,128,64),CROSSDOT,NOTEXT;
+IF(危如累卵,ABS(抛物线转向点),NULL),RGB(128,128,255),CROSSDOT,NOTEXT;
+IF(扬帆起航,ABS(抛物线转向点),NULL),COLORMAGENTA,CIRCLEDOT,NOTEXT;
+IF(江河日下,ABS(抛物线转向点),NULL),COLORYELLOW,CIRCLEDOT,NOTEXT;

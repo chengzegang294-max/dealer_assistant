@@ -1,0 +1,3 @@
+symbol,timeframe,bar_time,session_id,session_timezone,opening_range_window_minutes,opening_range_high,opening_range_low,opening_range_mid,opening_range_width,opening_range_width_pct_open,session_open_price,opening_range_defined,first_break_direction,width_error_day
+EURUSD,H1,2026-06-12T13:30:00Z,london,Europe/London,30,1.2754,1.2728,1.2741,0.0026,0.00204,1.2730,1,up,0
+XAUUSD,H1,2026-06-12T13:00:00Z,new_york,America/New_York,30,na,na,na,na,na,3362.50,0,none,0

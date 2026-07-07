@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	海通选股因子系列研究71：逐笔大单因子与大资金行为.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\海通选股因子系列研究71：逐笔大单因子与大资金行为.pdf	高频微观里偏逐笔大单与大资金行为刻画的代表	STAGE_PROOF_V40
+2	03_券商研报	01_高频微观	海通选股因子系列研究75：限价订单簿LOB的还原和应用.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\海通选股因子系列研究75：限价订单簿LOB的还原和应用.pdf	高频微观里偏限价订单簿 LOB 还原与应用的代表	STAGE_PROOF_V40
+3	03_券商研报	03_机器学习	Hands-On Artificial Intelligence for Banking.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Hands-On Artificial Intelligence for Banking.pdf	机器学习分桶里偏银行场景人工智能应用工程化的代表	STAGE_PROOF_V40
+4	03_券商研报	03_机器学习	Quantum Machine Learning and Optimisation in Finance_ On the Road to Quantum Advantage.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Quantum Machine Learning and Optimisation in Finance_ On the Road to Quantum Advantage.pdf	机器学习分桶里偏量子机器学习与金融优化前沿视角的代表	STAGE_PROOF_V40
+5	03_券商研报	03_机器学习	Financial Technology_ Case Studies in Fintech Innovation-Kogan Page (2020).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Financial Technology_ Case Studies in Fintech Innovation-Kogan Page (2020).pdf	机器学习分桶里偏金融科技案例化创新应用的代表	STAGE_PROOF_V40
+6	03_券商研报	04_多因子	海通选股因子系列研究40：预期因子的底层数据处理.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究40：预期因子的底层数据处理.pdf	多因子分桶里偏预期因子底层数据处理工程的代表	STAGE_PROOF_V40
+7	03_券商研报	04_多因子	广发多因子系列6：从宏观角度观察Alpha因子趋势.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列6：从宏观角度观察Alpha因子趋势.pdf	多因子分桶里偏宏观视角下 Alpha 因子趋势观察的代表	STAGE_PROOF_V40
+8	03_券商研报	04_多因子	广发多因子系列8：观宏观经济周期,察风格因子轮动.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列8：观宏观经济周期,察风格因子轮动.pdf	多因子分桶里偏宏观周期与风格轮动联动的代表	STAGE_PROOF_V40

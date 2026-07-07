@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20170505-海通证券-选股因子系列研究（十九）：高频因子之股票收益分布特征.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20170505-海通证券-选股因子系列研究（十九）：高频因子之股票收益分布特征.pdf	高频微观里偏收益分布特征刻画的代表	STAGE_PROOF_V6
+2	03_券商研报	01_高频微观	20200623-海通证券-选股因子系列研究（六十七）：短周期高频因子与组合调仓收益增强.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200623-海通证券-选股因子系列研究（六十七）：短周期高频因子与组合调仓收益增强.pdf	高频微观里偏短周期调仓增强的代表	STAGE_PROOF_V6
+3	03_券商研报	02_指数增强	海通选股因子系列研究68：基金重仓超配因子及其对指数增强组合的影响.pdf	D:\Stock\cut_file\S\03_券商研报\02_指数增强\海通选股因子系列研究68：基金重仓超配因子及其对指数增强组合的影响.pdf	指数增强里偏基金重仓超配信息增强的代表	STAGE_PROOF_V6
+4	03_券商研报	02_指数增强	渤海多因子模型研究系列12：沪深300指数增强组合业绩归因分析.pdf	D:\Stock\cut_file\S\03_券商研报\02_指数增强\渤海多因子模型研究系列12：沪深300指数增强组合业绩归因分析.pdf	指数增强里偏组合业绩归因的代表	STAGE_PROOF_V6
+5	03_券商研报	03_机器学习	20180826-安信证券-机器学习与CTA：本周行情有利于中高频策略.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\20180826-安信证券-机器学习与CTA：本周行情有利于中高频策略.pdf	机器学习分桶里偏中高频CTA应用的代表	STAGE_PROOF_V6
+6	03_券商研报	03_机器学习	Hands-On Machine Learning for Algorithmic Trading.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Hands-On Machine Learning for Algorithmic Trading.pdf	机器学习分桶里偏算法交易实操型英文资料代表	STAGE_PROOF_V6
+7	03_券商研报	04_多因子	中信因子深度研究系列13：分析师预期调整事件增强选股策略全攻略.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\中信因子深度研究系列13：分析师预期调整事件增强选股策略全攻略.pdf	多因子分桶里偏分析师预期调整增强的代表	STAGE_PROOF_V6
+8	03_券商研报	04_多因子	华泰多因子系列12：结构化多因子风险模型.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列12：结构化多因子风险模型.pdf	多因子分桶里偏结构化风险模型的代表	STAGE_PROOF_V6

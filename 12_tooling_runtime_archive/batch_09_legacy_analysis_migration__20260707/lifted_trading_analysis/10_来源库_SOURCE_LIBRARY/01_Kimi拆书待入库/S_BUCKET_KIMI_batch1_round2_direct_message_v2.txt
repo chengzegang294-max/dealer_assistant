@@ -1,0 +1,63 @@
+你现在不要再做 OCR 检查，也不要判断是否有文本层。
+
+OCR 结论已经确认：
+- `SBKT_F014`：`no_ocr_needed`
+- `SBKT_F006`：`no_ocr_needed`
+- `SBKT_F002`：`no_ocr_needed`
+
+你现在做的是“第二轮正文级精读收缩”，不是重复摘要。
+
+请只处理这 3 个对象：
+- `SBKT_F014`
+- `SBKT_F006`
+- `SBKT_F002`
+
+先以 repo 内默认入口和真值文件为准：
+- repo 默认入口：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round2_focus_README_v1.md`
+- repo 真值 manifest：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round2_focus_manifest_v1.tsv`
+- repo 真值 prompt：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round2_focus_prompt_v1.txt`
+- repo 回帖副本：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\99_回收与外部回帖_IMPORTS\S_BUCKET_batch1_round2_focus_v1__text_review__imported_2026-06-24.md`
+- repo durable truth：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv`
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\99_回收与外部回帖_IMPORTS\S_BUCKET_batch1_round2_focus_v1__text_review__imported_2026-06-24.md`
+
+PDF 只读取这个外部目录：
+`D:\Stock\cut_file\data\__KIMI_batches\S_BUCKET_batch1_round2_focus_v1`
+
+注意：
+- 外部目录只作为 PDF 读取位置，不是默认入口。
+- 文本真值与回收状态以 repo 内文件为准。
+
+硬约束：
+1. 不要再汇报 OCR 状态。
+2. 不要扫描其他目录。
+3. 每个对象必须保留 `object_id`。
+4. 必须把“正文明确说了什么”和“你推断的部分”分开。
+5. 如果正文不支持更细收缩，就写“无法继续收缩，待核”。
+
+本轮聚焦问题：
+1. `SBKT_F014`：从 50 个资金流向因子、8 个类别中，收缩出最值得保留的核心代表因子和最小组合。
+2. `SBKT_F006`：从 8 个波动率因子中，给出最小非冗余集合；明确哪些因子因为高度相关应淘汰、二选一，或只做降维后保留。
+3. `SBKT_F002`：验证 2017 年后衰减是否在正文中被明确支持；确认风格中性后为什么失去多头超额，只剩多空用途。
+
+每个对象输出结构：
+- `object_id:`
+- `object_name:`
+- `round2_focus:`
+- `正文明确结论:`
+- `可保留核心因子或最小集合:`
+- `建议淘汰或降维对象:`
+- `仍待核点:`
+- `适合怎样进入功能映射表:`
+- `失效边界或使用限制:`
+- `证据摘录:`
+
+最后再输出一个总表：
+- `round2_priority_order`
+- `can_enter_function_core_now`
+- `should_stay_candidate_only`
+- `no_ocr_needed_or_need_ocr`

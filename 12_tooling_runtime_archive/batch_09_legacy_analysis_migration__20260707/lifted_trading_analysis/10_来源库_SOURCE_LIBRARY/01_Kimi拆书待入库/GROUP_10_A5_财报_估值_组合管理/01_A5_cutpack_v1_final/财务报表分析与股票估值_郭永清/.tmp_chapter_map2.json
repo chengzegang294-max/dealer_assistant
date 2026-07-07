@@ -1,0 +1,128 @@
+[
+  {
+    "title": "推荐序一以价值为核心的财务报表分析",
+    "src": "main-1.xhtml",
+    "file_start": 0,
+    "file_end": 111,
+    "num_files": 111
+  },
+  {
+    "title": "推荐序二用管理思维进行财务报表分析 和股票估值",
+    "src": "main-2.xhtml",
+    "file_start": 111,
+    "file_end": 135,
+    "num_files": 24
+  },
+  {
+    "title": "前言 财报分析：知行合一，学以致用",
+    "src": "main-3.xhtml",
+    "file_start": 135,
+    "file_end": 146,
+    "num_files": 11
+  },
+  {
+    "title": "第1章财报基础",
+    "src": "main-4.xhtml",
+    "file_start": 146,
+    "file_end": 23,
+    "num_files": 0
+  },
+  {
+    "title": "第2章财报原理及财报质量",
+    "src": "main-12.xhtml",
+    "file_start": 23,
+    "file_end": 67,
+    "num_files": 44
+  },
+  {
+    "title": "第3章公司财报分析的框架",
+    "src": "main-16.xhtml",
+    "file_start": 67,
+    "file_end": 134,
+    "num_files": 67
+  },
+  {
+    "title": "第5章财报项目之间的逻辑关系",
+    "src": "main-29.xhtml",
+    "file_start": 134,
+    "file_end": 136,
+    "num_files": 2
+  },
+  {
+    "title": "第6章从投资活动现金流量看一家公司 的战略和未来",
+    "src": "main-30.xhtml",
+    "file_start": 136,
+    "file_end": 148,
+    "num_files": 12
+  },
+  {
+    "title": "第7章从筹资活动现金流量看一家公司 的资本管理能力",
+    "src": "main-41.xhtml",
+    "file_start": 148,
+    "file_end": 153,
+    "num_files": 5
+  },
+  {
+    "title": "第8章资产和资本分析",
+    "src": "main-46.xhtml",
+    "file_start": 153,
+    "file_end": 171,
+    "num_files": 18
+  },
+  {
+    "title": "第9章股权价值增加表分析",
+    "src": "main-62.xhtml",
+    "file_start": 171,
+    "file_end": 203,
+    "num_files": 32
+  },
+  {
+    "title": "第10章 资产资本表和股权价值增加表的 综合分析",
+    "src": "main-91.xhtml",
+    "file_start": 203,
+    "file_end": 8,
+    "num_files": 0
+  },
+  {
+    "title": "第11章 回归现金：经营活动现金流量分 析",
+    "src": "main-106.xhtml",
+    "file_start": 8,
+    "file_end": 29,
+    "num_files": 21
+  },
+  {
+    "title": "第12章股票价格和股票价值",
+    "src": "main-125.xhtml",
+    "file_start": 29,
+    "file_end": 37,
+    "num_files": 8
+  },
+  {
+    "title": "第13章常见的相对估值法",
+    "src": "main-132.xhtml",
+    "file_start": 37,
+    "file_end": 44,
+    "num_files": 7
+  },
+  {
+    "title": "第14章终极方法：绝对估值法",
+    "src": "main-139.xhtml",
+    "file_start": 44,
+    "file_end": 49,
+    "num_files": 5
+  },
+  {
+    "title": "第15章 运用自由现金流贴现模型进行股 票估值",
+    "src": "main-143.xhtml",
+    "file_start": 49,
+    "file_end": 64,
+    "num_files": 15
+  },
+  {
+    "title": "第16章我的投资实战案例",
+    "src": "main-157.xhtml",
+    "file_start": 64,
+    "file_end": 213,
+    "num_files": 149
+  }
+]

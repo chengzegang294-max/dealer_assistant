@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	04_多因子	渤海多因子模型研究系列11：多因子模型的行业分类方法.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\渤海多因子模型研究系列11：多因子模型的行业分类方法.pdf	多因子分桶里偏行业分类框架构建的代表	STAGE_PROOF_V50
+2	03_券商研报	04_多因子	渤海多因子模型研究系列14：技术因子的再挖掘Alpha 101.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\渤海多因子模型研究系列14：技术因子的再挖掘Alpha 101.pdf	多因子分桶里偏技术因子再挖掘与 Alpha 101 扩展的代表	STAGE_PROOF_V50
+3	03_券商研报	04_多因子	石川_ 刘洋溢_ 连祥斌 - 因子投资：方法与实践-电子工业出版社 (2020).pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\石川_ 刘洋溢_ 连祥斌 - 因子投资：方法与实践-电子工业出版社 (2020).pdf	多因子分桶里偏因子投资方法论总览的代表	STAGE_PROOF_V50
+4	03_券商研报	04_多因子	逐鹿Alpha专题报告12：AlphaZero，基于AutoML_Zero的.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告12：AlphaZero，基于AutoML_Zero的.pdf	多因子分桶里偏 AutoML Zero 因子生成尝试的代表	STAGE_PROOF_V50
+5	03_券商研报	04_多因子	逐鹿Alpha专题报告13：基于openFE的.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告13：基于openFE的.pdf	多因子分桶里偏 openFE 特征生成方法的代表	STAGE_PROOF_V50
+6	03_券商研报	04_多因子	逐鹿Alpha专题报告14：基本面因子与量价因子融合模型.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告14：基本面因子与量价因子融合模型.pdf	多因子分桶里偏基本面与量价融合建模的代表	STAGE_PROOF_V50
+7	03_券商研报	04_多因子	逐鹿Alpha专题报告15：基于领域知识生成的基本面因子挖掘框架.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告15：基于领域知识生成的基本面因子挖掘框架.pdf	多因子分桶里偏领域知识驱动基本面因子挖掘的代表	STAGE_PROOF_V50
+8	03_券商研报	04_多因子	逐鹿Alpha专题报告17：基于TiDE及其改进的因子融合模型.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告17：基于TiDE及其改进的因子融合模型.pdf	多因子分桶里偏 TiDE 因子融合模型的代表	STAGE_PROOF_V50

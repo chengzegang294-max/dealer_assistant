@@ -1,0 +1,73 @@
+# [副图指标]循环往复
+# 来源: 神奇数字系列指标[文华].doc
+# ============================================================
+
+BEN:=3;
+KUAI:=13;
+MAN:=55;
+SHI:=233;
+RSV势:=(CLOSE-LLV(LOW,SHI))/(HHV(HIGH,SHI)-LLV(LOW,SHI))*100;
+K势:SMA(RSV势,MAN,1),RGB(192,192,192),LINETHICK3;
+D势:SMA(K势,MAN,1),COLORBLACK,LINETHICK3;
+RSV慢:=(CLOSE-LLV(LOW,MAN))/(HHV(HIGH,MAN)-LLV(LOW,MAN))*100;
+K慢:SMA(RSV慢,KUAI,1),COLORRED,LINETHICK2;
+D慢:SMA(K慢,KUAI,1),RGB(0,120,0),LINETHICK2;
+RSV快:=(CLOSE-LLV(LOW,KUAI))/(HHV(HIGH,KUAI)-LLV(LOW,KUAI))*100;
+K快:SMA(RSV快,BEN,1),RGB(255,128,0),DOT;
+D快:SMA(K快,BEN,1),RGB(128,0,255),DOT;
+REFLINE:20,50,80;
+BACKGROUNDSTYLE(0);
+
+                               随机振荡器模板
+AAAA:zz,NODRAW;
+BBBB:yy,NODRAW;
+CCCC:xx,NODRAW;
+灵:=AAAA*10;
+敏:=AAAA*3;
+逐:=BBBB*10;
+渐:=BBBB*3;
+滞:=CCCC*10;
+后:=CCCC*3;
+RSV滞后:=(CLOSE-LLV(LOW,滞))/(HHV(HIGH,滞)-LLV(LOW,滞))*100;
+K滞后:MA(RSV滞后,后),RGB(192,192,192),LINETHICK3;
+D滞后:MA(K滞后,后),COLORBLACK,LINETHICK3;
+RSV逐渐:=(CLOSE-LLV(LOW,逐))/(HHV(HIGH,逐)-LLV(LOW,逐))*100;
+K逐渐:MA(RSV逐渐,渐),COLORRED,LINETHICK2;
+D逐渐:MA(K逐渐,渐),RGB(0,120,0),LINETHICK2;
+RSV灵敏:=(CLOSE-LLV(LOW,灵))/(HHV(HIGH,灵)-LLV(LOW,灵))*100;
+K灵敏:MA(RSV灵敏,敏),RGB(255,128,0),DOT;
+D灵敏:MA(K灵敏,敏),RGB(128,0,255),DOT;
+KD滞后较小值:=MIN(K滞后,D滞后);
+KD滞后较大值:=MAX(K滞后,D滞后);
+KD逐渐较小值:=MIN(K逐渐,D逐渐);
+KD逐渐较大值:=MAX(K逐渐,D逐渐);
+低位金叉:=KD滞后较大值<30 AND KD逐渐较大值<20 AND CROSS(K逐渐,D逐渐);
+高位死叉:=KD滞后较小值>70 AND KD逐渐较小值>80 AND CROSS(D逐渐,K逐渐);
+KD更小值:=MIN(KD滞后较小值,KD逐渐较小值);
+KD更大值:=MAX(KD滞后较大值,KD逐渐较大值);
+DRAWICON(低位金叉,KD更小值,'ICO92');
+DRAWICON(高位死叉,KD更大值,'ICO91');
+REFLINE:20,50,80;
+BACKGROUNDSTYLE(0);
+
+                             随机振荡器通用参数
+①1分钟
+灵敏：伍分:5
+逐渐：拾伍分:15
+滞后：半时:30
+②15分钟
+灵敏：壹时:4
+逐渐：叁时:12
+滞后：陆时:24
+③3小时
+灵敏：玖时:3
+逐渐：壹日:8
+滞后：贰日:16
+④日线
+灵敏：半周:2.5
+逐渐：壹周:5
+滞后：叁周:15
+⑤周线
+灵敏：贰周:2
+逐渐：壹月:4
+滞后：壹季:12

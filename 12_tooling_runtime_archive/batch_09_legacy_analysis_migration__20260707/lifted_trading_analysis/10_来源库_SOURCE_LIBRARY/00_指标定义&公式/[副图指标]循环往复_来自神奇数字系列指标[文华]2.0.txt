@@ -1,0 +1,26 @@
+# [副图指标]循环往复
+# 来源: 神奇数字系列指标[文华]2.0.doc
+# ============================================================
+
+BEN:=3;
+KUAI:=13;
+MAN:=55;
+SHI:=233;
+RSV快:=(CLOSE-LLV(LOW,KUAI))/(HHV(HIGH,KUAI)-LLV(LOW,KUAI))*100;
+K快:SMA(RSV快,BEN,1),RGB(255,128,64),DASH;
+D快:SMA(K快,BEN,1),RGB(128,128,255),DASH;
+RSV慢:=(CLOSE-LLV(LOW,MAN))/(HHV(HIGH,MAN)-LLV(LOW,MAN))*100;
+K慢:SMA(RSV慢,KUAI,1),COLORMAGENTA;
+D慢:SMA(K慢,KUAI,1),COLORYELLOW;
+RSV势:=(CLOSE-LLV(LOW,SHI))/(HHV(HIGH,SHI)-LLV(LOW,SHI))*100;
+K势:SMA(RSV势,MAN,1),COLORLIGHTRED,LINETHICK3;
+D势:SMA(K势,MAN,1),RGB(0,120,0),LINETHICK3;
+势金叉:=IF(K势>D势,1,0);
+势死叉:=IF(K势<D势,1,0);
+慢金叉:=IF(K慢>D慢,1,0);
+慢死叉:=IF(K慢<D慢,1,0);
+快金叉:=IF(K快>D快,1,0);
+快死叉:=IF(K快<D快,1,0);
+揸沽:(势金叉+慢金叉+快金叉)-(势死叉+慢死叉+快死叉),NODRAW;
+REFLINE:20,50,80;
+BACKGROUNDSTYLE(0);

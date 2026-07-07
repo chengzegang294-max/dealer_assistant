@@ -1,0 +1,7 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20170813-方正证券-“聆听高频世界的声音”系列研究（六）：本福特的启示，从分钟成交量看机构痕迹.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20170813-方正证券-“聆听高频世界的声音”系列研究（六）：本福特的启示，从分钟成交量看机构痕迹.pdf	高频微观里偏分钟成交量与机构痕迹识别的代表	STAGE_PROOF_V41
+2	03_券商研报	01_高频微观	海通选股因子系列研究70：日内市场微观结构与高频因子选股能力.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\海通选股因子系列研究70：日内市场微观结构与高频因子选股能力.pdf	高频微观里偏市场微观结构与高频因子选股能力联动的代表	STAGE_PROOF_V41
+3	03_券商研报	03_机器学习	Robert Carver - Systematic Trading_ A unique new method for designing trading and investing systems-Harriman House (2015).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Robert Carver - Systematic Trading_ A unique new method for designing trading and investing systems-Harriman House (2015).pdf	机器学习分桶里当前剩余未入选对象中偏系统化交易设计方法论的代表；本批后机器学习池在当前口径下视为耗尽	STAGE_PROOF_V41
+4	03_券商研报	04_多因子	海通选股因子系列研究41：医药行业因子选股研究.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究41：医药行业因子选股研究.pdf	多因子分桶里偏行业内因子选股研究的代表	STAGE_PROOF_V41
+5	03_券商研报	04_多因子	海通选股因子系列研究42：因子失效预警_因子拥挤.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究42：因子失效预警_因子拥挤.pdf	多因子分桶里偏因子拥挤与失效预警的代表	STAGE_PROOF_V41
+6	03_券商研报	04_多因子	海通选股因子系列研究45：质量因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究45：质量因子.pdf	多因子分桶里偏质量因子基础整理的代表	STAGE_PROOF_V41

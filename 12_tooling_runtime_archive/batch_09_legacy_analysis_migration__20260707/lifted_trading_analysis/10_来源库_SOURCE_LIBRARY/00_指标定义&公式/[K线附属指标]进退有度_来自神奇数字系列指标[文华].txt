@@ -1,0 +1,54 @@
+# [K线附属指标]进退有度
+# 来源: 神奇数字系列指标[文华].doc
+# ============================================================
+
+XUN:=8;
+KUAI:=13;
+ZHONG:=21;
+HUAN:=34;
+MAN:=55;
+DUN:=89;
+JIE:=144;
+快线:=EMA(CLOSE,KUAI);
+中线:=EMA(CLOSE,ZHONG);
+缓线:=EMA(CLOSE,HUAN);
+慢线:=EMA(CLOSE,MAN);
+钝线:=EMA(CLOSE,DUN);
+EMA4平均:=(中线+缓线+慢线+钝线)/4;
+MTR:=MAX1((HIGH-LOW),ABS(REF(CLOSE,1)-HIGH),ABS(REF(CLOSE,1)-LOW));
+ATR3平均:=(EMA(MTR,HUAN)+EMA(MTR,MAN)+EMA(MTR,DUN))/3;
+S5:EMA4平均+5.500*ATR3平均,COLORBLUE,LINETHICK1;
+卖货:EMA4平均+2.750*ATR3平均,RGB(128,64,0),LINETHICK1;
+S1:EMA4平均+1.375*ATR3平均,COLORGRAY,DASH;
+中轴:EMA4平均,COLORWHITE,LINETHICK1;
+B1:EMA4平均-1.375*ATR3平均,COLORGRAY,DASH;
+买货:EMA4平均-2.750*ATR3平均,RGB(128,64,0),LINETHICK1;
+B5:EMA4平均-5.500*ATR3平均,COLORBLUE,LINETHICK1;
+TYPICAL:=(2*CLOSE+HIGH+LOW)/4;
+支撑线:(HHV(EMA(HIGH,KUAI),KUAI)+HHV(EMA(HIGH,ZHONG),ZHONG))/2-
+3.142*ATR3平均,NODRAW;
+压力线:(LLV(EMA(LOW,KUAI),KUAI)+LLV(EMA(LOW,ZHONG),ZHONG))/2+3.142*ATR3平均,
+NODRAW;
+多空信号:=IF(CLOSE>REF(HHV(HIGH,89),1),1,IF(CLOSE<REF(LLV(LOW,89),1),-
+1,0));
+信号编译:=REF(多空信号,BARSLAST(多空信号));
+多头状态:=信号编译=1;
+空头状态:=信号编译=-1;
+多头支撑:=EMA(TYPICAL,5)>支撑线 AND 多头状态;
+空头压力:=EMA(TYPICAL,5)<压力线 AND 空头状态;
+标准差:=STD(CLOSE,ZHONG);
+上轨:=中线+1.960*标准差;
+下轨:=中线-1.960*标准差;
+布林线带宽:=((上轨-下轨)/中线);
+平均布林线带宽:=EMA(布林线带宽,JIE);
+布林线紧口:=布林线带宽<0.618*平均布林线带宽;
+DIFF:=快线-中线;
+DEA:=EMA(DIFF,XUN);
+MACD2平均:=(DIFF+DEA)/2;
+M分水岭:=EMA(ABS(MACD2平均),JIE);
+M下限:=-0.618*M分水岭;
+M上限:=0.618*M分水岭;
+M震荡:=(M下限<DIFF AND DIFF<M上限) AND (M下限<DEA AND DEA<M上限);
+PARTLINE(多头支撑,支撑线,COLORMAGENTA),LINETHICK3;
+PARTLINE(空头压力,压力线,COLORYELLOW),LINETHICK3;
+PARTLINE(布林线紧口 AND M震荡,中线,COLORWHITE),LINETHICK3;

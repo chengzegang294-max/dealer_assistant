@@ -1,0 +1,20 @@
+Use the prompt template from docs\playbooks\PLAYBOOK_滚动模板.md
+Template ID: S_BUCKET_FUNCTIONAL_OBJECT_CARD__KIMI_BATCH
+
+Default repo entry:
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_SUMMARY__2026-06-17.md
+
+Repo truth files:
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_prompt_v1.txt
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\99_回收与外部回帖_IMPORTS\S_BUCKET_functional_cards_batch1_v15_v16__draft__imported_2026-06-24.md
+
+PDF input folder only:
+D:\Stock\cut_file\data\__KIMI_batches\S_BUCKET_functional_cards_batch1_v15_v16
+
+Read only this external folder and manifest.tsv.
+Do not treat the external folder as the default entry.
+Text truth and imported reply stay in repo.
+For every file, keep the object_id from manifest.tsv in your output.
+Do not infer beyond available evidence.
+Output functional object card drafts for all files in this batch.

@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20210428-海通证券-高频数据应用系列研究（一）：使用高频数据跟踪核心资产的公募基金持仓变化.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20210428-海通证券-高频数据应用系列研究（一）：使用高频数据跟踪核心资产的公募基金持仓变化.pdf	高频微观里偏高频数据跟踪机构持仓变化的代表	STAGE_PROOF_V16
+2	03_券商研报	01_高频微观	20210730-国泰君安-算法交易系列二：利用高频数据监测机构动向.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20210730-国泰君安-算法交易系列二：利用高频数据监测机构动向.pdf	高频微观里偏机构动向监测与算法交易接口的代表	STAGE_PROOF_V16
+3	03_券商研报	03_机器学习	Reinforcement Learning for Finance_ Solve Problems in Finance with CNN and RNN Using the TensorFlow Library.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Reinforcement Learning for Finance_ Solve Problems in Finance with CNN and RNN Using the TensorFlow Library.pdf	机器学习分桶里偏强化学习金融应用实操的代表	STAGE_PROOF_V16
+4	03_券商研报	03_机器学习	华泰人工智能系列17：人工智能选股数据标注方法实证.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列17：人工智能选股数据标注方法实证.pdf	机器学习分桶里偏选股标签设计实证的代表	STAGE_PROOF_V16
+5	03_券商研报	03_机器学习	华泰人工智能系列30：从关联到逻辑：因果推断初探.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列30：从关联到逻辑：因果推断初探.pdf	机器学习分桶里偏因果推断与模型解释边界的代表	STAGE_PROOF_V16
+6	03_券商研报	04_多因子	华泰多因子系列7：单因子测试之资金流向因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列7：单因子测试之资金流向因子.pdf	多因子分桶里偏资金流向类单因子测试的代表	STAGE_PROOF_V16
+7	03_券商研报	04_多因子	国盛因子择时：风险溢价时钟视角下的攻守因子配置.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛因子择时：风险溢价时钟视角下的攻守因子配置.pdf	多因子分桶里偏因子择时与攻守配置框架的代表	STAGE_PROOF_V16
+8	03_券商研报	04_多因子	广发多因子系列13：考虑非线性特征的多因子Alpha策略 .pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列13：考虑非线性特征的多因子Alpha策略 .pdf	多因子分桶里偏非线性特征 alpha 策略的代表	STAGE_PROOF_V16

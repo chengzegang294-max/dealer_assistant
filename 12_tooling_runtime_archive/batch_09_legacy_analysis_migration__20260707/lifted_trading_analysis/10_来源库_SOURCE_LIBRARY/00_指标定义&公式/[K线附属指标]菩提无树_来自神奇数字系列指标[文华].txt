@@ -1,0 +1,12 @@
+# [K线附属指标]菩提无树
+# 来源: 神奇数字系列指标[文华].doc
+# ============================================================
+
+KUAI:=13;
+ZHONG:=21;
+MAN:=55;
+JIE:=144;
+快线:EMA(CLOSE,KUAI),RGB(255,128,0),LINETHICK2;
+中线:EMA(CLOSE,ZHONG),COLORBLUE,DOT;
+慢线:EMA(CLOSE,MAN),RGB(128,0,255),LINETHICK2;
+界线:EMA(CLOSE,JIE),COLORBLACK,LINETHICK3;

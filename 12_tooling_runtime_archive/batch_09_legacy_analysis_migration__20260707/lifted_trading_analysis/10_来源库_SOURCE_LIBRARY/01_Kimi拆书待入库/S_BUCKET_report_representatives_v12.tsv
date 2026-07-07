@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20191029-招商证券-“琢璞”系列报告之二：高频数据中的知情交易.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20191029-招商证券-“琢璞”系列报告之二：高频数据中的知情交易.pdf	高频微观里偏知情交易主题首篇展开的代表	STAGE_PROOF_V12
+2	03_券商研报	01_高频微观	20210107-招商证券-“高频寻踪”系列之二：轻装上阵，高频数据因子的应用.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20210107-招商证券-“高频寻踪”系列之二：轻装上阵，高频数据因子的应用.pdf	高频微观里偏高频数据因子落地应用的代表	STAGE_PROOF_V12
+3	03_券商研报	03_机器学习	Financial Signal Processing and Machine Learning.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Financial Signal Processing and Machine Learning.pdf	机器学习分桶里偏金融信号处理结合机器学习的代表	STAGE_PROOF_V12
+4	03_券商研报	03_机器学习	Machine Learning for Asset Managers-Cambridge University Press (2020).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning for Asset Managers-Cambridge University Press (2020).pdf	机器学习分桶里偏资管场景机器学习方法论的代表	STAGE_PROOF_V12
+5	03_券商研报	03_机器学习	华泰人工智能系列13：人工智能选股损失函数的改进.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列13：人工智能选股损失函数的改进.pdf	机器学习分桶里偏选股损失函数改进实证的代表	STAGE_PROOF_V12
+6	03_券商研报	04_多因子	中信因子深度研究系列4：市值因子择时.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\中信因子深度研究系列4：市值因子择时.pdf	多因子分桶里偏市值因子择时方法的代表	STAGE_PROOF_V12
+7	03_券商研报	04_多因子	华泰多因子系列3：单因子测试之成长类因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列3：单因子测试之成长类因子.pdf	多因子分桶里偏成长类单因子测试的代表	STAGE_PROOF_V12
+8	03_券商研报	04_多因子	国盛多因子系列11：主题的风险与收益.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛多因子系列11：主题的风险与收益.pdf	多因子分桶里偏主题风险收益刻画的代表	STAGE_PROOF_V12

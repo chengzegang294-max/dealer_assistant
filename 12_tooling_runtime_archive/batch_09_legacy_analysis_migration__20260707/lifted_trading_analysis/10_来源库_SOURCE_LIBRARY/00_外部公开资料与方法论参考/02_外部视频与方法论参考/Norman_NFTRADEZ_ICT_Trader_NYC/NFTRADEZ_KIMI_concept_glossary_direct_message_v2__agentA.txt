@@ -1,0 +1,19 @@
+﻿你是 Agent A。
+
+你只处理概念词典批次，不处理盘前模板批次。
+
+只读这个目录中的 manifest 指定文件：
+12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC
+
+只以这两个 repo 真值文件为准：
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv
+- 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_concept_glossary_prompt_v1.txt
+
+不要扫描其他目录。
+不要处理 premarket_template。
+不要做交易建议。
+不要输出胜率宣传。
+
+输出必须保留每个 object_id。
+最后附 glossary_crosswalk。
+

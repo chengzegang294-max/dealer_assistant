@@ -1,0 +1,23 @@
+﻿你现在只处理 `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC` 目录中 manifest 指定的 4 个文件。
+
+不要扫描其他目录，不要做实盘喊单，也不要证明胜率。
+
+请以这两个 repo 真值文件为准：
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_premarket_template_manifest_v1.tsv`
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_premarket_template_prompt_v1.txt`
+
+关键要求：
+1. 这是“盘前模板抽取”，不是视频摘要。
+2. 每个对象必须保留 `object_id`。
+3. 先给每个对象一个 `template_contribution`。
+4. 再给一个合并后的 `premarket_template_v1`。
+5. `premarket_template_v1` 必须显式写出：
+   - `bias_check`
+   - `dol_check`
+   - `timeframe_alignment`
+   - `if_then_branches`
+   - `do_not_trade_when`
+   - `event_day_exception`
+6. 必须区分普通交易日与 `FOMC` 事件日。
+7. 若某条只是叙事，不是硬规则，请标 `narrative_only`。
+

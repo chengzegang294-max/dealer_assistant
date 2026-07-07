@@ -1,0 +1,181 @@
+//@version=5
+indicator("BOS & CHOCH with FVG & Fib Zones", shorttitle="BOS-CHOCH", overlay=true)
+
+// Input parameters
+showBOS = input.bool(true, "Show Break of Structure", group="Display Options")
+showCHOCH = input.bool(true, "Show Change of Character", group="Display Options")
+showDualCHOCH = input.bool(true, "Show Dual Change of Character", group="Display Options")
+showFVG = input.bool(true, "Show Fair Value Gaps", group="Display Options")
+showFib = input.bool(true, "Show Fibonacci Zones", group="Display Options")
+
+// Color inputs
+bosColor = input.color(color.blue, "BOS Color", group="Colors")
+chochColor = input.color(color.red, "CHOCH Color", group="Colors")
+dualChochColor = input.color(color.purple, "Dual CHOCH Color", group="Colors")
+fvgColor = input.color(color.yellow, "FVG Color", group="Colors")
+fibColor = input.color(color.orange, "Fibonacci Color", group="Colors")
+
+// Fibonacci levels
+fib50 = input.float(0.5, "Fibonacci 0.5 Level", minval=0.0, maxval=1.0, step=0.1, group="Fibonacci Settings")
+fib60 = input.float(0.6, "Fibonacci 0.6 Level", minval=0.0, maxval=1.0, step=0.1, group="Fibonacci Settings")
+
+// Lookback period for swing detection
+lookback = input.int(10, "Swing Detection Lookback", minval=5, maxval=50, group="Settings")
+
+// Variables for swing detection
+var float swingHigh = na
+var float swingLow = na
+var int swingHighBar = na
+var int swingLowBar = na
+var bool isUptrend = false
+var bool isDowntrend = false
+
+// Variables for BOS and CHOCH
+var float lastBOS = na
+var float lastCHOCH = na
+var float lastDualCHOCH = na
+var int bosBar = na
+var int chochBar = na
+var int dualChochBar = na
+
+// Variables for Fair Value Gaps
+var array<float> fvgHighs = array.new<float>()
+var array<float> fvgLows = array.new<float>()
+var array<int> fvgHighBars = array.new<int>()
+var array<int> fvgLowBars = array.new<int>()
+
+// Local variables for FVG calculations
+var float fvgLow = na
+var float fvgHigh = na
+var int fvgBar = na
+
+// Local variables for FVG drawing loop
+var float currentFvgHigh = na
+var float currentFvgLow = na
+var int currentFvgBar = na
+
+// Local variables for Fibonacci calculations
+var float fib50Level = na
+var float fib60Level = na
+
+// Local variables for calculations
+var float retracement1 = na
+var float retracement2 = na
+var float priceRange = na
+
+// Function to check for 2-candle retracement
+isRetracement(price, level, bars) =>
+    if bars >= 2
+        localRetracement1 = math.abs(close[1] - price) / math.abs(high[1] - low[1])
+        localRetracement2 = math.abs(close[2] - price) / math.abs(high[2] - low[2])
+        localRetracement1 >= 0.5 and localRetracement2 >= 0.5
+    else
+        false
+
+// Main logic - Detect swings directly (not in function)
+// Detect swing high
+if high[lookback] == ta.highest(high, lookback * 2 + 1)
+    swingHigh := high[lookback]
+    swingHighBar := bar_index - lookback
+
+// Detect swing low
+if low[lookback] == ta.lowest(low, lookback * 2 + 1)
+    swingLow := low[lookback]
+    swingLowBar := bar_index - lookback
+
+// Detect Fair Value Gaps directly
+// Bullish FVG (gap up)
+if low > high[1]
+    fvgLow := low[1]
+    fvgHigh := high
+    array.push(fvgLows, fvgLow)
+    array.push(fvgHighs, fvgHigh)
+    array.push(fvgLowBars, bar_index)
+    array.push(fvgHighBars, bar_index)
+
+// Bearish FVG (gap down)
+if high < low[1]
+    fvgLow := low
+    fvgHigh := high[1]
+    array.push(fvgLows, fvgLow)
+    array.push(fvgHighs, fvgHigh)
+    array.push(fvgLowBars, bar_index)
+    array.push(fvgHighBars, bar_index)
+
+// Determine trend
+if not na(swingHigh) and not na(swingLow)
+    isUptrend := swingHigh > swingLow
+    isDowntrend := swingHigh < swingLow
+else
+    isUptrend := false
+    isDowntrend := false
+
+// Detect Break of Structure (BOS)
+if showBOS and not na(swingHigh) and not na(swingLow)
+    if isUptrend and close > swingHigh and isRetracement(swingHigh, 0.5, bar_index - swingHighBar)
+        lastBOS := swingHigh
+        bosBar := bar_index
+        label.new(bosBar, swingHigh, "BOS", color=bosColor, style=label.style_label_down, textcolor=color.white)
+    
+    if isDowntrend and close < swingLow and isRetracement(swingLow, 0.5, bar_index - swingLowBar)
+        lastBOS := swingLow
+        bosBar := bar_index
+        label.new(bosBar, swingLow, "BOS", color=bosColor, style=label.style_label_up, textcolor=color.white)
+
+// Detect Change of Character (CHOCH)
+if showCHOCH and not na(swingHigh) and not na(swingLow)
+    if isUptrend and close < swingLow and isRetracement(swingLow, 0.5, bar_index - swingLowBar)
+        lastCHOCH := swingLow
+        chochBar := bar_index
+        label.new(chochBar, swingLow, "CHOCH", color=chochColor, style=label.style_label_up, textcolor=color.white)
+    
+    if isDowntrend and close > swingHigh and isRetracement(swingHigh, 0.5, bar_index - swingHighBar)
+        lastCHOCH := swingHigh
+        chochBar := bar_index
+        label.new(chochBar, swingHigh, "CHOCH", color=chochColor, style=label.style_label_down, textcolor=color.white)
+
+// Detect Dual Change of Character
+if showDualCHOCH and not na(lastCHOCH)
+    if isUptrend and close > lastCHOCH and isRetracement(lastCHOCH, 0.5, bar_index - chochBar)
+        lastDualCHOCH := lastCHOCH
+        dualChochBar := bar_index
+        label.new(dualChochBar, lastCHOCH, "Dual CHOCH", color=dualChochColor, style=label.style_label_down, textcolor=color.white)
+    
+    if isDowntrend and close < lastCHOCH and isRetracement(lastCHOCH, 0.5, bar_index - chochBar)
+        lastDualCHOCH := lastCHOCH
+        dualChochBar := bar_index
+        label.new(dualChochBar, lastCHOCH, "Dual CHOCH", color=dualChochColor, style=label.style_label_up, textcolor=color.white)
+
+// Draw Fair Value Gaps
+if showFVG
+    for i = 0 to array.size(fvgHighs) - 1
+        if bar_index - array.get(fvgHighBars, i) <= 50  // Show last 50 FVGs
+            currentFvgHigh := array.get(fvgHighs, i)
+            currentFvgLow := array.get(fvgLows, i)
+            currentFvgBar := array.get(fvgHighBars, i)
+            
+            // Draw FVG rectangle
+            box.new(currentFvgBar, currentFvgHigh, currentFvgBar + 1, currentFvgLow, bgcolor=color.new(fvgColor, 80), border_color=fvgColor)
+
+// Draw Fibonacci retracement zones
+if showFib and not na(swingHigh) and not na(swingLow)
+    priceRange := swingHigh - swingLow
+    
+    // 0.5 Fibonacci level
+    fib50Level := swingLow + priceRange * fib50
+    line.new(swingLowBar, fib50Level, bar_index, fib50Level, color=color.new(fibColor, 50), width=2)
+    label.new(bar_index, fib50Level, "Fib " + str.tostring(fib50), color=color.new(fibColor, 80), style=label.style_label_left, textcolor=fibColor)
+    
+    // 0.6 Fibonacci level
+    fib60Level := swingLow + priceRange * fib60
+    line.new(swingLowBar, fib60Level, bar_index, fib60Level, color=color.new(fibColor, 50), width=2)
+    label.new(bar_index, fib60Level, "Fib " + str.tostring(fib60), color=color.new(fibColor, 80), style=label.style_label_left, textcolor=fibColor)
+
+// Plot swing points
+plotshape(not na(swingHigh), title="Swing High", location=location.abovebar, color=color.gray, style=shape.circle, size=size.small)
+plotshape(not na(swingLow), title="Swing Low", location=location.belowbar, color=color.gray, style=shape.circle, size=size.small)
+
+// Alert conditions
+alertcondition(not na(lastBOS), title="BOS Detected", message="Break of Structure detected at {{close}}")
+alertcondition(not na(lastCHOCH), title="CHOCH Detected", message="Change of Character detected at {{close}}")
+alertcondition(not na(lastDualCHOCH), title="Dual CHOCH Detected", message="Dual Change of Character detected at {{close}}") 

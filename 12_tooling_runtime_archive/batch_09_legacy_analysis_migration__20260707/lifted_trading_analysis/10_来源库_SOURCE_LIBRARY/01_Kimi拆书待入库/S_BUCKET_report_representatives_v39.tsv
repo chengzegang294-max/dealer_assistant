@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20201228-华安证券-“学海拾珠”系列之二十四：知情交易的高频指标.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20201228-华安证券-“学海拾珠”系列之二十四：知情交易的高频指标.pdf	高频微观里偏知情交易高频指标提炼的代表	STAGE_PROOF_V39
+2	03_券商研报	01_高频微观	海通选股因子系列研究46：日内分时成交中的玄机.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\海通选股因子系列研究46：日内分时成交中的玄机.pdf	高频微观里偏日内分时成交结构挖掘的代表	STAGE_PROOF_V39
+3	03_券商研报	03_机器学习	渤海多因子模型研究系列13：基于机器学习模型的因子择时框架.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\渤海多因子模型研究系列13：基于机器学习模型的因子择时框架.pdf	机器学习分桶里偏机器学习因子择时框架的代表	STAGE_PROOF_V39
+4	03_券商研报	03_机器学习	【2022新书】机器学习在金融时间序列分析与预测中的应用，385页pdf.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\【2022新书】机器学习在金融时间序列分析与预测中的应用，385页pdf.pdf	机器学习分桶里偏金融时间序列分析与预测教材化总结的代表	STAGE_PROOF_V39
+5	03_券商研报	03_机器学习	Artificial Intelligence, Learning and Computation in Economics and Finance.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Artificial Intelligence, Learning and Computation in Economics and Finance.pdf	机器学习分桶里偏经济金融人工智能与计算框架的代表	STAGE_PROOF_V39
+6	03_券商研报	04_多因子	海通选股因子系列研究34：宏观经济数据可以用来选股吗.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究34：宏观经济数据可以用来选股吗.pdf	多因子分桶里偏宏观经济数据选股可用性验证的代表	STAGE_PROOF_V39
+7	03_券商研报	04_多因子	海通选股因子系列研究35：宏观经济的不确定性在A股中的定价.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究35：宏观经济的不确定性在A股中的定价.pdf	多因子分桶里偏宏观不确定性定价研究的代表	STAGE_PROOF_V39
+8	03_券商研报	04_多因子	海通选股因子系列研究36：哪些宏观经济指标存在选股效应.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\海通选股因子系列研究36：哪些宏观经济指标存在选股效应.pdf	多因子分桶里偏宏观指标选股效应筛选的代表	STAGE_PROOF_V39

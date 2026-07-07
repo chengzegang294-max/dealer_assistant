@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20201231-开源证券-量化评论（13）：高频股东数据的隐含信息量.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20201231-开源证券-量化评论（13）：高频股东数据的隐含信息量.pdf	高频微观里偏高频股东数据隐含信息的代表	STAGE_PROOF_V24
+2	03_券商研报	01_高频微观	中信因子深度研究系列10：买卖报单流动性因子构建.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\中信因子深度研究系列10：买卖报单流动性因子构建.pdf	高频微观里偏报单流动性因子构建的代表	STAGE_PROOF_V24
+3	03_券商研报	03_机器学习	华泰人工智能系列46：AlphaNet改进：结构和损失函数.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列46：AlphaNet改进：结构和损失函数.pdf	机器学习分桶里偏 AlphaNet 结构损失函数优化的代表	STAGE_PROOF_V24
+4	03_券商研报	03_机器学习	华泰人工智能系列52：神经网络组合优化初探.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列52：神经网络组合优化初探.pdf	机器学习分桶里偏神经网络组合优化的代表	STAGE_PROOF_V24
+5	03_券商研报	03_机器学习	华泰人工智能系列53：揭秘微软AI量化研究.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列53：揭秘微软AI量化研究.pdf	机器学习分桶里偏微软AI量化研究体系的代表	STAGE_PROOF_V24
+6	03_券商研报	04_多因子	国盛多因子系列7：对成长的分解及多维度寻找成长因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛多因子系列7：对成长的分解及多维度寻找成长因子.pdf	多因子分桶里偏成长因子分解的代表	STAGE_PROOF_V24
+7	03_券商研报	04_多因子	广发多因子系列45：基于SemiBeta的因子研究.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列45：基于SemiBeta的因子研究.pdf	多因子分桶里偏 SemiBeta 因子研究的代表	STAGE_PROOF_V24
+8	03_券商研报	04_多因子	广发多因子系列46：股价跳跃因子研究.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列46：股价跳跃因子研究.pdf	多因子分桶里偏股价跳跃因子研究的代表	STAGE_PROOF_V24

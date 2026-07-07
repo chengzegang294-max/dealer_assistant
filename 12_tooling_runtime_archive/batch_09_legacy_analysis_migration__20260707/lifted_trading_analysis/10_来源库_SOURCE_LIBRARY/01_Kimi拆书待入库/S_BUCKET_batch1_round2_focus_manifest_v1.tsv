@@ -1,0 +1,4 @@
+object_id	file_name	current_path	focus_topic	current_priority	known_issue	current_status
+SBKT_F014	华泰多因子系列7：单因子测试之资金流向因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列7：单因子测试之资金流向因子.pdf	代表因子收缩：从50因子8类收缩到最值得保留的核心代表因子与类间最小组合	HIGH	50因子类内高度相关，持仓仅10日，需收成核心可复用子集	TEXT_EVIDENCE_IMPORTED__NO_OCR
+SBKT_F006	华泰多因子系列6：单因子测试之波动率类因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列6：单因子测试之波动率类因子.pdf	共线性收缩：从8个波动率因子里找最小非冗余集合，明确哪些必须淘汰或降维	HIGH	除 hml_r_std_5m 外高度相关，多重共线性明显	TEXT_EVIDENCE_IMPORTED__NO_OCR
+SBKT_F002	20200810-长江证券-基础因子研究（十二），高频因子（七）：分布估计下的主动成交占比.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200810-长江证券-基础因子研究（十二），高频因子（七）：分布估计下的主动成交占比.pdf	近年衰减验证：确认2017年后衰减、风格中性后失效边界和是否只剩多空用途	HIGH	近年有效性衰减，和波动率/反转高相关，风格中性后无多头超额	TEXT_EVIDENCE_IMPORTED__NO_OCR

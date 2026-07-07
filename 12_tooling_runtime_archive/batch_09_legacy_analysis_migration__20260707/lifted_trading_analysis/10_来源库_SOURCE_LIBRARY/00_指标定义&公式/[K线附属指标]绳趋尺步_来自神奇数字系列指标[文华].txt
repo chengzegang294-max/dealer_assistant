@@ -1,0 +1,23 @@
+# [K线附属指标]绳趋尺步
+# 来源: 神奇数字系列指标[文华].doc
+# ============================================================
+
+KUAI:=13;
+ZHONG:=21;
+MAN:=55;
+JIE:=144;
+快线:EMA(CLOSE,KUAI),RGB(255,128,64);
+中线:EMA(CLOSE,ZHONG),COLORWHITE,DOT;
+慢线:EMA(CLOSE,MAN),RGB(128,128,255);
+界线:EMA(CLOSE,JIE),COLORGRAY;
+E最小值:=MIN1(快线,中线,慢线);
+E最大值:=MAX1(快线,中线,慢线);
+EMA三等分:=0.382*E最小值+0.618*E最大值;
+多头趋势:=EMA三等分>界线 AND 快线>慢线;
+空头趋势:=EMA三等分<界线 AND 快线<慢线;
+多头排列:=EMA三等分>界线 AND 快线>中线 AND 中线>慢线;
+空头排列:=EMA三等分<界线 AND 快线<中线 AND 中线<慢线;
+PARTLINE(多头趋势,界线,COLORMAGENTA),LINETHICK2;
+PARTLINE(空头趋势,界线,COLORYELLOW),LINETHICK2;
+PARTLINE(多头排列,界线,COLORLIGHTRED),LINETHICK2;
+PARTLINE(空头排列,界线,RGB(0,120,0)),LINETHICK2;

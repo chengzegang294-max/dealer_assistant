@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20130620-国泰君安-2013年夏季金融工程沙龙：高频交易，海外发展与国内展望.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20130620-国泰君安-2013年夏季金融工程沙龙：高频交易，海外发展与国内展望.pdf	高频微观里偏高频交易海外发展脉络与国内展望的代表	STAGE_PROOF_V11
+2	03_券商研报	01_高频微观	20170801-天风证券-利用高频数据拓展盘口数据：买卖压力失衡.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20170801-天风证券-利用高频数据拓展盘口数据：买卖压力失衡.pdf	高频微观里偏盘口买卖压力失衡刻画的代表	STAGE_PROOF_V11
+3	03_券商研报	03_机器学习	Empirical Asset Pricing via Machine Learning.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Empirical Asset Pricing via Machine Learning.pdf	机器学习分桶里偏资产定价实证机器学习框架的代表	STAGE_PROOF_V11
+4	03_券商研报	03_机器学习	Machine Learning in Asset Pricing-Princeton Univ Pr (2021).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning in Asset Pricing-Princeton Univ Pr (2021).pdf	机器学习分桶里偏资产定价教材化体系的代表	STAGE_PROOF_V11
+5	03_券商研报	03_机器学习	华泰人工智能系列12：人工智能选股特征选择.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列12：人工智能选股特征选择.pdf	机器学习分桶里偏选股特征选择实务的代表	STAGE_PROOF_V11
+6	03_券商研报	04_多因子	Quantitative Strategies for Achieving Alpha (McGraw-Hill Finance & Investing)-McGraw-Hill Finance & Investing (2008).pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\Quantitative Strategies for Achieving Alpha (McGraw-Hill Finance & Investing)-McGraw-Hill Finance & Investing (2008).pdf	多因子分桶里偏系统化 alpha 策略总览的代表	STAGE_PROOF_V11
+7	03_券商研报	04_多因子	华泰多因子系列2：单因子测试之估值类因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列2：单因子测试之估值类因子.pdf	多因子分桶里偏估值类单因子测试框架的代表	STAGE_PROOF_V11
+8	03_券商研报	04_多因子	国盛多因子系列10：行业内选股初探.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛多因子系列10：行业内选股初探.pdf	多因子分桶里偏行业内选股切面的代表	STAGE_PROOF_V11

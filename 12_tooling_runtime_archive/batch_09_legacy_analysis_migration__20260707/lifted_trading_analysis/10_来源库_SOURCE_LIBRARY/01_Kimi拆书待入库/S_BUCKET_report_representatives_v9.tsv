@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20200223-海通证券-选股因子系列研究（五十九）：基于逐笔成交数据的高频因子梳理.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200223-海通证券-选股因子系列研究（五十九）：基于逐笔成交数据的高频因子梳理.pdf	高频微观里偏逐笔成交数据因子梳理的代表	STAGE_PROOF_V9
+2	03_券商研报	01_高频微观	20200730-海通证券-选股因子系列研究（六十九）：高频因子的现实与幻想.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200730-海通证券-选股因子系列研究（六十九）：高频因子的现实与幻想.pdf	高频微观里偏高频因子边界与反思的代表	STAGE_PROOF_V9
+3	03_券商研报	03_机器学习	Artificial Intelligence in Finance_ A Python-Based Guide.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Artificial Intelligence in Finance_ A Python-Based Guide.pdf	机器学习分桶里偏 Python 实操型 AI 金融资料代表	STAGE_PROOF_V9
+4	03_券商研报	03_机器学习	Machine Learning for Algorithmic Trading.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning for Algorithmic Trading.pdf	机器学习分桶里偏算法交易机器学习框架的代表	STAGE_PROOF_V9
+5	03_券商研报	03_机器学习	Machine Learning for Finance.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning for Finance.pdf	机器学习分桶里偏金融机器学习通用教材的代表	STAGE_PROOF_V9
+6	03_券商研报	04_多因子	101 Formulaic Alphas - arXiv.org.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\101 Formulaic Alphas - arXiv.org.pdf	多因子分桶里偏经典公式化 alpha 库的代表	STAGE_PROOF_V9
+7	03_券商研报	04_多因子	Finding Alphas.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\Finding Alphas.pdf	多因子分桶里偏 alpha 挖掘方法论的代表	STAGE_PROOF_V9
+8	03_券商研报	04_多因子	华泰多因子系列10：因子合成方法实证分析.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列10：因子合成方法实证分析.pdf	多因子分桶里偏因子合成方法实证的代表	STAGE_PROOF_V9

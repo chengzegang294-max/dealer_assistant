@@ -1,0 +1,24 @@
+﻿你现在只处理 `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC` 目录中 manifest 指定的 6 个文件。
+
+不要扫描其他目录，不要补充别的视频，也不要做交易建议。
+
+请以这两个 repo 真值文件为准：
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv`
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Norman_NFTRADEZ_ICT_Trader_NYC\NFTRADEZ_KIMI_concept_glossary_prompt_v1.txt`
+
+关键要求：
+1. 这是“概念词典收缩”，不是策略化改写。
+2. 每个对象必须保留 `object_id`。
+3. 必须写出：
+   - `plain_definition`
+   - `core_mechanics`
+   - `must_have_conditions`
+   - `invalid_when`
+   - `confusable_with`
+   - `best_role`
+4. 不能把 `SMT / FVG / OB / BOS` 写成看见就能进场的信号。
+5. 若正文只支持“偏见工具 / 解释层”，就直接这样写。
+
+最后请附：
+- `glossary_crosswalk`
+

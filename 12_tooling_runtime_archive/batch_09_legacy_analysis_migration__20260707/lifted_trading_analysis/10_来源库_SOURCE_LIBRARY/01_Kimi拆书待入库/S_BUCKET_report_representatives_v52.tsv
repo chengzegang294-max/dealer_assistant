@@ -1,0 +1,3 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	04_多因子	逐鹿Alpha专题报告8：北向机构持仓深入挖掘.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告8：北向机构持仓深入挖掘.pdf	多因子分桶里偏北向机构持仓深挖与细分扩展的代表	STAGE_PROOF_V52
+2	03_券商研报	04_多因子	逐鹿Alpha专题报告巡礼：不同类型策略过去表现.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\逐鹿Alpha专题报告巡礼：不同类型策略过去表现.pdf	多因子分桶里偏不同类型策略表现巡礼与总览的代表	STAGE_PROOF_V52

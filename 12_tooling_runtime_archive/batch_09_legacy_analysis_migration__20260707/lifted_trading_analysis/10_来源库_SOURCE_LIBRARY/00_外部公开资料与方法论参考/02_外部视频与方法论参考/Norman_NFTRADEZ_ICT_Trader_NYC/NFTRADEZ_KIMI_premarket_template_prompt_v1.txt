@@ -1,0 +1,36 @@
+你现在处理的是 `NFTRADEZ` 第一轮“盘前模板抽取”，不是复述视频，不是做实盘喊单，也不是去证明胜率。
+
+请只处理这 4 个对象：
+- `NFTZ_P001`
+- `NFTZ_P002`
+- `NFTZ_P003`
+- `NFTZ_P004`
+
+本轮任务：
+1. 从这 4 个文件中抽出一个可复用的“盘前模板骨架”。
+2. 模板只允许包含：
+   - `bias_check`
+   - `dol_check`
+   - `timeframe_alignment`
+   - `if_then_branches`
+   - `do_not_trade_when`
+   - `event_day_exception`
+3. 每个字段必须尽量写成检查项或条件分支，不要写成长散文。
+
+输出要求：
+1. 每个对象保留 `object_id`。
+2. 先给每个对象一个 `template_contribution`，说明它对盘前模板贡献了什么。
+3. 再给一个合并后的 `premarket_template_v1`。
+4. `premarket_template_v1` 必须显式区分：
+   - 普通交易日
+   - 事件日（只允许用 `NFTZ_P004` 提供的边界）
+5. 必须显式写出：
+   - `bias != dol` 时怎么处理
+   - 没有清晰偏见时怎么处理
+   - 什么时候只能观望，不能进场
+
+特别边界：
+- 不要输出具体品种喊单。
+- 不要把案例里的行情方向当成通用结论。
+- 不要把 `FOMC` 模板泛化为所有交易日。
+- 若某条是经验叙事而不是硬规则，要标 `narrative_only`。

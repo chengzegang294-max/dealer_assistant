@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20190810-长江证券-基础因子研究（十）：高频因子（五），高频因子和交易行为.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20190810-长江证券-基础因子研究（十）：高频因子（五），高频因子和交易行为.pdf	高频微观里偏交易行为视角下高频因子刻画的代表	STAGE_PROOF_V13
+2	03_券商研报	01_高频微观	20200227-方正证券-市场微观结构剖析系列6：量价关系的高频乐章 .pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200227-方正证券-市场微观结构剖析系列6：量价关系的高频乐章 .pdf	高频微观里偏量价关系微观结构拆解的代表	STAGE_PROOF_V13
+3	03_券商研报	03_机器学习	Algorithmic Trading Methods_ Applications Using Advanced Statistics, Optimization, and Machine Learning Techniques-Academic Press (2020).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Algorithmic Trading Methods_ Applications Using Advanced Statistics, Optimization, and Machine Learning Techniques-Academic Press (2020).pdf	机器学习分桶里偏算法交易方法与机器学习结合的代表	STAGE_PROOF_V13
+4	03_券商研报	03_机器学习	华泰人工智能系列14：对抗过拟合：从时序交叉验证谈起.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列14：对抗过拟合：从时序交叉验证谈起.pdf	机器学习分桶里偏时序交叉验证与过拟合控制的代表	STAGE_PROOF_V13
+5	03_券商研报	03_机器学习	华泰人工智能系列21：基于遗传规划的选股因子挖掘.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\华泰人工智能系列21：基于遗传规划的选股因子挖掘.pdf	机器学习分桶里偏遗传规划因子挖掘的代表	STAGE_PROOF_V13
+6	03_券商研报	04_多因子	华泰多因子系列4：单因子测试之动量类因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列4：单因子测试之动量类因子.pdf	多因子分桶里偏动量类单因子测试的代表	STAGE_PROOF_V13
+7	03_券商研报	04_多因子	国盛多因子系列12：无形资产估值因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛多因子系列12：无形资产估值因子.pdf	多因子分桶里偏无形资产估值因子的代表	STAGE_PROOF_V13
+8	03_券商研报	04_多因子	广发多因子系列11：考虑换手率限制的多因子Alpha模型.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\广发多因子系列11：考虑换手率限制的多因子Alpha模型.pdf	多因子分桶里偏换手率约束下 alpha 模型构建的代表	STAGE_PROOF_V13

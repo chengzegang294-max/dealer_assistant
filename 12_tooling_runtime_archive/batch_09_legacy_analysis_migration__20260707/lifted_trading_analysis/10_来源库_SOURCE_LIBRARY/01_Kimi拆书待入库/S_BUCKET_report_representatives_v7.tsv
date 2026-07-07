@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20181101-海通证券-金融工程专题报告：高频量价因子在股票与期货中的表现.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20181101-海通证券-金融工程专题报告：高频量价因子在股票与期货中的表现.pdf	高频微观里偏量价因子跨股票与期货验证的代表	STAGE_PROOF_V7
+2	03_券商研报	01_高频微观	20200610-华安证券-高频视角下成交额蕴藏的Alpha：市场微观结构剖析之七.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200610-华安证券-高频视角下成交额蕴藏的Alpha：市场微观结构剖析之七.pdf	高频微观里偏成交额微观结构 Alpha 的代表	STAGE_PROOF_V7
+3	03_券商研报	02_指数增强	海通选股因子系列研究63：剔除高频多因子空头组合后的沪深300指数增强策略.pdf	D:\Stock\cut_file\S\03_券商研报\02_指数增强\海通选股因子系列研究63：剔除高频多因子空头组合后的沪深300指数增强策略.pdf	指数增强里偏沪深300高频空头组合修正的代表	STAGE_PROOF_V7
+4	03_券商研报	02_指数增强	逐鹿Alpha专题报告10：光伏行业因子投资框架，如何构建光伏行业指数增强策略.pdf	D:\Stock\cut_file\S\03_券商研报\02_指数增强\逐鹿Alpha专题报告10：光伏行业因子投资框架，如何构建光伏行业指数增强策略.pdf	指数增强里偏行业主题增强框架的代表	STAGE_PROOF_V7
+5	03_券商研报	03_机器学习	Financial Machine Learning.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Financial Machine Learning.pdf	机器学习分桶里偏金融机器学习综述型英文资料代表	STAGE_PROOF_V7
+6	03_券商研报	03_机器学习	Marcos López de Prado - Advances in Financial Machine Learning-John Wiley & Sons, Inc. (2018).pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Marcos López de Prado - Advances in Financial Machine Learning-John Wiley & Sons, Inc. (2018).pdf	机器学习分桶里偏 Lopez de Prado 体系的代表	STAGE_PROOF_V7
+7	03_券商研报	04_多因子	中信因子深度研究系列14：券商金股组合深度解析及分析师因子再增强.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\中信因子深度研究系列14：券商金股组合深度解析及分析师因子再增强.pdf	多因子分桶里偏券商金股与分析师因子增强的代表	STAGE_PROOF_V7
+8	03_券商研报	04_多因子	华泰多因子系列9：单因子测试之一致预期因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列9：单因子测试之一致预期因子.pdf	多因子分桶里偏一致预期因子的代表	STAGE_PROOF_V7

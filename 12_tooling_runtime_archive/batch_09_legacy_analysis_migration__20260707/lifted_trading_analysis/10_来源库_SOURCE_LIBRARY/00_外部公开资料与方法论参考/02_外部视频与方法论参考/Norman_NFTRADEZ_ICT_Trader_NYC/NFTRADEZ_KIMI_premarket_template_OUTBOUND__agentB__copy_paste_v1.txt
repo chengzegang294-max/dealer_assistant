@@ -1,0 +1,73 @@
+你是 Agent B。
+
+你现在只处理 `NFTRADEZ` 的 `premarket_template` 批次，不处理 `concept_glossary`。
+
+如果你的界面支持上传文件，请同时上传下面这 4 个导出 markdown 文件；如果不支持上传，就让用户把这 4 个文件正文分段贴给你：
+- `NFTZ_P001` = `3分钟告诉你，我是如何在开盘前预判今天走势的_导出.md`
+- `NFTZ_P002` = `5 分钟学会判断今天涨跌：Daily Bias 新手最强入门_导出.md`
+- `NFTZ_P003` = `5 分钟学会判断今天涨跌：复盘篇_导出.md`
+- `NFTZ_P004` = `一个视频，让你彻底学会 FOMC 怎么交易_导出.md`
+
+你只能处理这 4 个对象，不要扫描或扩展到其他视频、其他目录、其他批次。
+
+下面是本轮 manifest 真值，请严格按它执行：
+
+```tsv
+object_id	file_name	current_path	focus_topic	current_priority	known_issue	current_status
+NFTZ_P001	3分钟告诉你，我是如何在开盘前预判今天走势的_导出.md	D:\Stock\cut_file\诺曼NFTRADEZ\3分钟告诉你，我是如何在开盘前预判今天走势的_导出.md	盘前剧本模板：从高时间周期到开盘前预演，再到 1 分钟执行衔接	HIGH	容易被写成具体喊单；实际上应抽成盘前检查项与 if-then 剧本	TEXT_EVIDENCE_IMPORTED__NO_OCR
+NFTZ_P002	5 分钟学会判断今天涨跌：Daily Bias 新手最强入门_导出.md	D:\Stock\cut_file\诺曼NFTRADEZ\5 分钟学会判断今天涨跌：Daily Bias 新手最强入门_导出.md	Daily Bias 模板：交付源头、FG 尊重/无视、Bias 与 DOL 区分	HIGH	容易把 Bias 和 DOL 混成一件事；需强制拆开	TEXT_EVIDENCE_IMPORTED__NO_OCR
+NFTZ_P003	5 分钟学会判断今天涨跌：复盘篇_导出.md	D:\Stock\cut_file\诺曼NFTRADEZ\5 分钟学会判断今天涨跌：复盘篇_导出.md	If-Then 剧本模板：Bias / DOL 一致与分歧、FVG 尊重与失效分支	HIGH	容易把案例复盘写成普适策略；需抽成分支模板	TEXT_EVIDENCE_IMPORTED__NO_OCR
+NFTZ_P004	一个视频，让你彻底学会 FOMC 怎么交易_导出.md	D:\Stock\cut_file\诺曼NFTRADEZ\一个视频，让你彻底学会 FOMC 怎么交易_导出.md	事件日模板：FOMC 的 accumulation / manipulation / distribution 叙事骨架	HIGH	事件特异性强，不能直接泛化为所有交易日模板	TEXT_EVIDENCE_IMPORTED__NO_OCR
+```
+
+下面是本轮 prompt 真值，请严格按它输出：
+
+你现在处理的是 `NFTRADEZ` 第一轮“盘前模板抽取”，不是复述视频，不是做实盘喊单，也不是去证明胜率。
+
+请只处理这 4 个对象：
+- `NFTZ_P001`
+- `NFTZ_P002`
+- `NFTZ_P003`
+- `NFTZ_P004`
+
+本轮任务：
+1. 从这 4 个文件中抽出一个可复用的“盘前模板骨架”。
+2. 模板只允许包含：
+   - `bias_check`
+   - `dol_check`
+   - `timeframe_alignment`
+   - `if_then_branches`
+   - `do_not_trade_when`
+   - `event_day_exception`
+3. 每个字段必须尽量写成检查项或条件分支，不要写成长散文。
+
+输出要求：
+1. 每个对象保留 `object_id`。
+2. 先给每个对象一个 `template_contribution`，说明它对盘前模板贡献了什么。
+3. 再给一个合并后的 `premarket_template_v1`。
+4. `premarket_template_v1` 必须显式区分：
+   - 普通交易日
+   - 事件日（只允许用 `NFTZ_P004` 提供的边界）
+5. 必须显式写出：
+   - `bias != dol` 时怎么处理
+   - 没有清晰偏见时怎么处理
+   - 什么时候只能观望，不能进场
+
+特别边界：
+- 不要输出具体品种喊单。
+- 不要把案例里的行情方向当成通用结论。
+- 不要把 `FOMC` 模板泛化为所有交易日。
+- 若某条是经验叙事而不是硬规则，要标 `narrative_only`。
+
+最终请直接按下面结构回复：
+1. `NFTZ_P001` 的 `template_contribution`
+2. `NFTZ_P002` 的 `template_contribution`
+3. `NFTZ_P003` 的 `template_contribution`
+4. `NFTZ_P004` 的 `template_contribution`
+5. 合并后的 `premarket_template_v1`
+
+再次强调：
+- 不要处理 `concept_glossary`
+- 不要扩展到别的对象
+- 不要做交易建议
+- 不要证明胜率

@@ -1,0 +1,47 @@
+# [K线附属指标]飞天遁地
+# 来源: 神奇数字和通用数字指标[文华].doc
+# ============================================================
+
+BEN:=3;
+XUN:=8;
+KUAI:=13;
+ZHONG:=21;
+MAN:=55;
+JIE:=144;
+快线:=EMA(CLOSE,KUAI);
+中线:EMA(CLOSE,ZHONG),COLORBLUE,DOT;
+慢线:=EMA(CLOSE,MAN);
+界线:=EMA(CLOSE,JIE);
+标准差:=STD(CLOSE,ZHONG);
+顶轨:中线+2.58*标准差,RGB(0,120,0),DASH;
+上轨:中线+1.96*标准差,RGB(128,0,255),DASH;
+下轨:中线-1.96*标准差,RGB(255,128,0),DASH;
+底轨:中线-2.58*标准差,COLORRED,DASH;
+布林线带宽:=((上轨-下轨)/中线);
+平均布林线带宽:=EMA(布林线带宽,JIE);
+布林线紧口:=布林线带宽<=0.618*平均布林线带宽;
+DIFF:=快线-中线;
+DEA:=EMA(DIFF,XUN);
+M下限:=-0.382*EMA(ABS(DIFF),JIE);
+M上限:=0.382*EMA(ABS(DIFF),JIE);
+M震荡:=(M下限<DIFF AND DIFF<M上限) AND (M下限<DEA AND DEA<M上限);
+盘整:=布林线紧口 AND M震荡;
+MTR:=MAX(MAX((HIGH-LOW),ABS(REF(CLOSE,1)-HIGH)),ABS(REF(CLOSE,1)-LOW));
+ATR:=EMA(MTR,ZHONG);
+支撑线:=HHV(EMA(HIGH,ZHONG),ZHONG)-BEN*ATR;
+压力线:=LLV(EMA(LOW,ZHONG),ZHONG)+BEN*ATR;
+指针:=快线-慢线;
+刻度:=EMA(指针,JIE);
+转多:=指针>刻度 OR 指针>0;
+转空:=指针<刻度 OR 指针<0;
+多势:=转多 AND CLOSE>界线;
+空势:=转空 AND CLOSE<界线;
+升起:=CLOSE>中线 AND COUNT(CLOSE>中线,BARSLAST(空势))=1;
+降落:=CLOSE<中线 AND COUNT(CLOSE<中线,BARSLAST(多势))=1;
+上升:=EVERY(CLOSE>支撑线 OR CLOSE>界线,BARSLAST(升起));
+下降:=EVERY(CLOSE<压力线 OR CLOSE<界线,BARSLAST(降落));
+多头:=上升 AND NOT(下降 AND 空势);
+空头:=下降 AND NOT(上升 AND 多势);
+PARTLINE(盘整,中线,COLORBLACK),LINETHICK3;
+PARTLINE(多头,底轨,COLORMAGENTA),LINETHICK2;
+PARTLINE(空头,顶轨,RGB(128,0,0)),LINETHICK2;

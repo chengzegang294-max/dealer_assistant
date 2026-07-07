@@ -1,0 +1,66 @@
+你现在做的是“正文级精读复核”，不是只看文件名做草稿。
+
+先以 repo 内默认入口和真值文件为准：
+- repo 默认入口：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_SUMMARY__2026-06-17.md`
+- repo 提示词真值：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_priority_read_prompt_v1.txt`
+- repo 回帖副本：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\99_回收与外部回帖_IMPORTS\S_BUCKET_batch1_priority_read_v1__text_review__imported_2026-06-24.md`
+- repo durable truth：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv`
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\99_回收与外部回帖_IMPORTS\S_BUCKET_batch1_priority_read_v1__text_review__imported_2026-06-24.md`
+
+PDF 只读取这个外部目录：
+D:\Stock\cut_file\data\__KIMI_batches\S_BUCKET_batch1_priority_read_v1
+
+注意：
+- 外部目录只作为 PDF 读取位置，不是默认入口。
+- 文本真值与回收状态以 repo 内文件为准。
+
+任务目标：
+1. 对这 5 个优先对象做正文级复核。
+2. 基于 PDF 正文，修正我们上一轮仅基于文件名得到的 draft。
+3. 如果某个 PDF 看不清、打不开、抽不出正文、目录损坏、扫描过差，请不要硬猜，直接回 `NEED_OCR`。
+
+强约束：
+1. 只读取这个目录及其中的 `manifest.tsv`、`README.md`，不要扫描其他目录。
+2. 每个对象输出时，必须保留 `object_id`。
+3. 必须优先使用 PDF 正文证据；如果正文无法读取，再明确写 `NEED_OCR`。
+4. 不能只复述标题。
+5. 不能把猜测写成确定结论。
+6. 不能把“值得研究”写成“已经可实现”。
+7. 如果正文与上一轮 draft 冲突，以正文为准，并明确指出“修订点”。
+
+如果可正常读取，请对每个对象输出以下结构：
+- object_id:
+- object_name:
+- readable_status: OK
+- source_anchor:
+- function_bucket:
+- process_layer:
+- scope_tags:
+- maturity_level:
+- role_type:
+- input_requirement:
+- output_form:
+- best_use_case:
+- cannot_do_yet:
+- combines_with:
+- overlaps_with:
+- failure_modes:
+- evidence_note:
+- revision_vs_draft:
+
+如果不可正常读取，请输出以下结构：
+- object_id:
+- object_name:
+- readable_status: NEED_OCR
+- unreadable_reason:
+- evidence_note:
+- suggested_next_step:
+
+最后再输出：
+- 本批已完成正文级复核的对象
+- 本批需要 OCR 的对象
+- 建议优先进入正文级功能映射表的对象

@@ -1,0 +1,84 @@
+你现在不要再做 OCR 检查，也不要重复第二轮正文收缩摘要。
+
+你现在做的是“第三轮功能核心对象卡固化”，目标是把已经完成 round2 收缩的对象，整理成可直接进入功能层的稳定对象卡。
+
+请只处理这 3 个对象：
+- `SBKT_F014`
+- `SBKT_F006`
+- `SBKT_F002`
+
+已知上轮真值，请直接沿用，不要回退：
+1. `SBKT_F014`
+   - 正文明确：前 4 类有效，后 4 类无效
+   - 当前最小组合候选：`mfd_sellord + mfd_volinflowrate_open_m`
+   - 注意：`4 类 -> 2 因子` 属于基于绩效与代表性的收缩，不是正文逐字结论
+2. `SBKT_F006`
+   - 正文明确：`hml_r_std_5m` 独立，其余 7 个高度相关
+   - 当前最小集合候选：`id2_std_3m + hml_r_std_5m`
+   - 注意：`7 个高相关因子 -> 1 个代表因子` 属于收缩推断，不是正文逐字结论
+3. `SBKT_F002`
+   - 正文明确：2017 年后衰减、风格中性后多头失效
+   - 当前用途边界：仅保留 `空头 / 多空`
+   - 注意：失效原因尚未完成剥离归因
+
+先以 repo 内默认入口和真值文件为准：
+- repo 默认入口：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_README_v1.md`
+- repo 真值 manifest：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_manifest_v1.tsv`
+- repo 真值 prompt：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round3_function_core_prompt_v1.txt`
+- repo 直发消息：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round3_function_core_direct_message_v1.txt`
+- repo durable truth：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv`
+
+PDF 只读取这个外部目录：
+`D:\Stock\cut_file\data\__KIMI_batches\S_BUCKET_batch1_round3_function_core_v1`
+
+文本真值以这些 repo 文件为准：
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_manifest_v1.tsv`
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv`
+
+注意：
+- 外部目录只作为 PDF 读取位置，不是默认入口。
+- 文本真值与回收状态以 repo 内文件为准。
+
+硬约束：
+1. 不要再汇报 OCR 状态。
+2. 不要重新证明第二轮已经确认的结论。
+3. 每个对象必须保留 `object_id`。
+4. 必须把“正文直接支持”和“基于上轮收缩继续固化的推断”分开。
+5. 不要把“可作为功能核心”写成“已经实盘可上”。
+6. 如果最小输入/输出无法确认到字段级，就写“待核”，不要编造。
+
+本轮要解决的问题：
+1. `SBKT_F014`：作为“资金流向最小组合对象”，最小输入、最小输出、适用持仓、适用场景、禁用场景分别是什么？
+2. `SBKT_F006`：作为“波动率非冗余对象”，它在组合里最适合扮演什么角色？需要避免哪些重复暴露？
+3. `SBKT_F002`：作为“边界型对象”，怎样明确写出“可用但受限”，避免后续被误当成通用多头 alpha？
+4. 这 3 个对象如果一起放进功能层，优先顺序、互补关系、替代关系怎样写最稳？
+
+每个对象输出固定结构：
+- `object_id:`
+- `object_name:`
+- `function_core_name:`
+- `role_type:`
+- `minimum_input:`
+- `minimum_output:`
+- `use_when:`
+- `avoid_when:`
+- `combine_with:`
+- `overlap_or_conflict:`
+- `boundary_note:`
+- `正文直接支持:`
+- `基于既有收缩继续固化的推断:`
+- `upgrade_decision:` 只允许写：
+  - `ENTER_FUNCTION_CORE`
+  - `ENTER_FUNCTION_CORE_WITH_BOUNDARY`
+  - `KEEP_AS_LIMITED_CANDIDATE`
+
+最后再输出一个总表：
+- `recommended_priority_order`
+- `can_enter_function_core_now`
+- `must_keep_boundary_label`
+- `best_three_object_chain`

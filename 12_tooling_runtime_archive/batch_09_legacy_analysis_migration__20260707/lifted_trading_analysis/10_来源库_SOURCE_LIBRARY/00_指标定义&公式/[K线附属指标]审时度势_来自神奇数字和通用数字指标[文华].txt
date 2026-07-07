@@ -1,0 +1,47 @@
+# [K线附属指标]审时度势
+# 来源: 神奇数字和通用数字指标[文华].doc
+# ============================================================
+
+BEN:=3;
+KUAI:=13;
+ZHONG:=21;
+MAN:=55;
+JIE:=144;
+快线:EMA(CLOSE,KUAI),RGB(255,128,0),LINETHICK2;
+中线:EMA(CLOSE,ZHONG),COLORBLUE,DOT;
+慢线:EMA(CLOSE,MAN),RGB(128,0,255),LINETHICK2;
+界线:EMA(CLOSE,JIE),COLORBLACK,LINETHICK3;
+MTR:=MAX(MAX((HIGH-LOW),ABS(REF(CLOSE,1)-HIGH)),ABS(REF(CLOSE,1)-LOW));
+ATR:=EMA(MTR,ZHONG);
+支撑线:=HHV(EMA(HIGH,ZHONG),ZHONG)-BEN*ATR;
+压力线:=LLV(EMA(LOW,ZHONG),ZHONG)+BEN*ATR;
+多头警戒线:=REF(LLV(LOW,ZHONG),1);
+空头警戒线:=REF(HHV(HIGH,ZHONG),1);
+多头警戒支撑线:=MIN(多头警戒线,支撑线);
+空头警戒压力线:=MAX(空头警戒线,压力线);
+放弃空头:=CLOSE>空头警戒压力线;
+放弃多头:=CLOSE<多头警戒支撑线;
+警戒信号:=IF(放弃空头,1,IF(放弃多头,-1,0));
+警戒译码:=REF(警戒信号,BARSLAST(警戒信号));
+尝试做多:=警戒译码=1;
+尝试做空:=警戒译码=-1;
+多头生命线:=REF(LLV(LOW,JIE),1),COLORMAGENTA,DASH;
+空头生命线:=REF(HHV(HIGH,JIE),1),RGB(128,0,0),DASH;
+止损空头:=CLOSE>空头生命线;
+止损多头:=CLOSE<多头生命线;
+生命信号:=IF(止损空头,1,IF(止损多头,-1,0));
+生命译码:=REF(生命信号,BARSLAST(生命信号));
+正式做多:=生命译码=1;
+正式做空:=生命译码=-1;
+开始做多:=尝试做多 AND 正式做空;
+开始做空:=尝试做空 AND 正式做多;
+止盈空头:=开始做多 AND COUNT(开始做多,BARSLAST(尝试做空))=1;
+止盈多头:=开始做空 AND COUNT(开始做空,BARSLAST(尝试做多))=1;
+PARTLINE(开始做多 OR 正式做多,多头生命线,COLORBLUE),LINETHICK2;
+PARTLINE(开始做空 OR 正式做空,空头生命线,COLORBLUE),LINETHICK2;
+PARTLINE(正式做多,多头生命线,COLORMAGENTA),LINETHICK2;
+PARTLINE(正式做空,空头生命线,RGB(128,0,0)),LINETHICK2;
+PARTLINE(开始做多 OR 正式做多,多头警戒支撑线,COLORMAGENTA),DASH;
+PARTLINE(开始做空 OR 正式做空,空头警戒压力线,RGB(128,0,0)),DASH;
+DRAWICON(止盈空头,多头生命线-0.809*ATR,'ICO107');
+DRAWICON(止盈多头,空头生命线+0.191*ATR,'ICO106');

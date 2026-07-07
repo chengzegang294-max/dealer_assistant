@@ -1,0 +1,71 @@
+你现在不要再做 OCR 检查，也不要重复第二轮正文收缩摘要。
+
+你现在做的是“第三轮功能核心对象卡固化”。
+
+请只处理这 3 个对象：
+- `SBKT_F014`
+- `SBKT_F006`
+- `SBKT_F002`
+
+先以 repo 内默认入口和真值文件为准：
+- repo 默认入口：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_README_v1.md`
+- repo 真值 manifest：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_manifest_v1.tsv`
+- repo 真值 prompt：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round3_function_core_prompt_v1.txt`
+- repo 直发消息：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round3_function_core_direct_message_v1.txt`
+- repo durable truth：
+  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_功能映射表_v1.tsv`
+
+PDF 只读取这个外部目录：
+`D:\Stock\cut_file\data\__KIMI_batches\S_BUCKET_batch1_round3_function_core_v1`
+
+文本真值以这些 repo 文件为准：
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_batch1_round3_function_core_manifest_v1.tsv`
+- `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\S_BUCKET_KIMI_batch1_round3_function_core_prompt_v1.txt`
+
+注意：
+- 外部目录只作为 PDF 读取位置，不是默认入口。
+- 文本真值与回收状态以 repo 内文件为准。
+
+已知上轮真值，请直接沿用，不要回退：
+1. `SBKT_F014`
+   - 正文明确：前 4 类有效，后 4 类无效
+   - 当前最小组合候选：`mfd_sellord + mfd_volinflowrate_open_m`
+2. `SBKT_F006`
+   - 正文明确：`hml_r_std_5m` 独立，其余 7 个高度相关
+   - 当前最小集合候选：`id2_std_3m + hml_r_std_5m`
+3. `SBKT_F002`
+   - 正文明确：2017 年后衰减、风格中性后多头失效
+   - 当前用途边界：仅保留 `空头 / 多空`
+
+硬约束：
+1. 不要再汇报 OCR 状态。
+2. 不要扫描其他目录。
+3. 每个对象必须保留 `object_id`。
+4. 必须区分“正文直接支持”和“基于既有收缩继续固化的推断”。
+5. 不要把“进入功能核心”写成“可以直接实盘上线”。
+
+每个对象输出固定结构：
+- `object_id:`
+- `object_name:`
+- `function_core_name:`
+- `role_type:`
+- `minimum_input:`
+- `minimum_output:`
+- `use_when:`
+- `avoid_when:`
+- `combine_with:`
+- `overlap_or_conflict:`
+- `boundary_note:`
+- `正文直接支持:`
+- `基于既有收缩继续固化的推断:`
+- `upgrade_decision:`
+
+最后再输出：
+- `recommended_priority_order`
+- `can_enter_function_core_now`
+- `must_keep_boundary_label`
+- `best_three_object_chain`

@@ -1,0 +1,9 @@
+select_order	bucket_l1	bucket_l2	file_name	current_path	selection_reason	stage_decision
+1	03_券商研报	01_高频微观	20200630-招商证券-“琢璞”系列报告之十七：高频数据中的知情交易（二）.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200630-招商证券-“琢璞”系列报告之十七：高频数据中的知情交易（二）.pdf	高频微观里偏知情交易二阶延展的代表	STAGE_PROOF_V10
+2	03_券商研报	01_高频微观	20200829-海通证券-金融工程专题报告：选股因子系列研究（七十），日内市场微观结构与高频因子选股能力.pdf	D:\Stock\cut_file\S\03_券商研报\01_高频微观\20200829-海通证券-金融工程专题报告：选股因子系列研究（七十），日内市场微观结构与高频因子选股能力.pdf	高频微观里偏日内市场微观结构选股能力的代表	STAGE_PROOF_V10
+3	03_券商研报	03_机器学习	Deep Learning for Finance.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Deep Learning for Finance.pdf	机器学习分桶里偏深度学习金融应用的代表	STAGE_PROOF_V10
+4	03_券商研报	03_机器学习	Machine Learning in Finance_ From Theory to Practice.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Machine Learning in Finance_ From Theory to Practice.pdf	机器学习分桶里偏从理论到实务落地的代表	STAGE_PROOF_V10
+5	03_券商研报	03_机器学习	Probabilistic Machine Learning for Finance and Investing.pdf	D:\Stock\cut_file\S\03_券商研报\03_机器学习\Probabilistic Machine Learning for Finance and Investing.pdf	机器学习分桶里偏概率机器学习在投资中的应用代表	STAGE_PROOF_V10
+6	03_券商研报	04_多因子	华泰多因子系列11：单因子测试之海量技术因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列11：单因子测试之海量技术因子.pdf	多因子分桶里偏技术因子库扩展的代表	STAGE_PROOF_V10
+7	03_券商研报	04_多因子	华泰多因子系列13：单因子测试之历史分位数因子.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\华泰多因子系列13：单因子测试之历史分位数因子.pdf	多因子分桶里偏历史分位数因子的代表	STAGE_PROOF_V10
+8	03_券商研报	04_多因子	国盛因子择时：的三个标尺，因子动量、因子离散度与因子拥挤度.pdf	D:\Stock\cut_file\S\03_券商研报\04_多因子\国盛因子择时：的三个标尺，因子动量、因子离散度与因子拥挤度.pdf	多因子分桶里偏因子择时框架的代表	STAGE_PROOF_V10
