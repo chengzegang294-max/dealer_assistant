@@ -1,0 +1,89 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows 的可靠文件复制                              
+-------------------------------------------------------------------------------
+
+  开始时间: 2026年7月7日 16:00:57
+        源: d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\
+      目标: d:\Stock\trading_assistant\21_trae_system_archive\_raw_snapshot_batch09\.trae\
+
+      文件: *.*
+	    
+      选项: *.* /TEE /S /E /DCOPY:DAT /COPY:DAT /NP /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                   8	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\
+	    新文件    		    2453	README__ARCHIVE_ONLY.md
+	    新文件    		     144	recover_01.md
+	    新文件    		     390	recover_01_from_blob.md
+	    新文件    		     170	recover_02.md
+	    新文件    		     170	recover_02_from_blob.md
+	    新文件    		     302	recover_03.md
+	    新文件    		     302	recover_03_from_blob.md
+	    新文件    		     672	recover_about.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\agents\
+	    新文件    		    1240	README__ARCHIVE_ONLY.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\agents\p0-exec-evidence-officer\
+	    新文件    		    2182	PROMPT.md
+	  新目录           2	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\
+	    新文件    		    2557	INDEX.md
+	    新文件    		     736	README__ARCHIVE_ONLY.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\artifact-provenance-note-guard-cn\
+	    新文件    		    3794	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\ashare-ops-guard\
+	    新文件    		    7131	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\dev-guardrails\
+	    新文件    		    5790	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\dual-epub-pdf-truth-anchor-cn\
+	    新文件    		    6575	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\indicator-audit-shrink-loop-cn\
+	    新文件    		    3982	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\knowledge-intake-quantize-cn\
+	    新文件    		    3397	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\main-doc-contract-mirror-cn\
+	    新文件    		    7908	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\mainline-full-ingest-cn\
+	    新文件    		    6435	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\mt-indicator-engineering-cn\
+	    新文件    		    3037	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\mt5-audit\
+	    新文件    		    7238	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\multi-ai-discussion-guard\
+	    新文件    		   11594	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\multi-ai-orchestrator-cn\
+	    新文件    		    8337	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\multi-ai-suite-entry-cn\
+	    新文件    		    3410	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\p0-exec-evidence-officer\
+	    新文件    		    4190	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\p0-lab\
+	    新文件    		    7841	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\p0-suite-entry-cn\
+	    新文件    		    3114	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\p0-sweep-outbound-guard\
+	    新文件    		    3296	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\panel-multi-ai-cn\
+	    新文件    		    5002	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\proof-of-mapping-standard-cn\
+	    新文件    		    4764	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\rolling-playbook-cn\
+	    新文件    		    2045	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\source-sweep-batch-cn\
+	    新文件    		    5179	SKILL.md
+	  新目录           1	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\tool-idea-ingest-guard\
+	    新文件    		    3175	SKILL.md
+
+------------------------------------------------------------------------------
+
+                  总数        复制        跳过       不匹配        失败        其他
+       目录:        26        25         1         0         0         0
+       文件:        34        34         0         0         0         0
+       字节:   125.5 k   125.5 k         0         0         0         0
+       时间:   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+       速度:           6,765,894 字节/秒。
+       速度:             387.148 MB/分钟。
+   已结束: 2026年7月7日 16:00:57
+

@@ -1,0 +1,1 @@
+﻿- 褰撳墠 CORE锛堜互 `deploy_core.csv` 涓哄噯锛夛細`XAU, GBPJPY`锛堝姹囬樁娈?鍙斁 GBPJPY锛汦2 涓嶆墽琛岋級
