@@ -1,0 +1,8 @@
+symbol,timeframe,bar_time,kd_week_bias,kd_day_signal,kd_4h_confirm,kd_alignment_tier,kd_direction_filter,kd_week_extreme_zone,proof_basis
+EURUSD,H1,2025-01-29T00:00:00Z,unknown,death_cross,confirm_down,a,short_preferred,unknown,real_a_down_from_n01_h1__week_unknown_utc_closed_buckets_v1
+EURUSD,H1,2025-02-13T04:00:00Z,unknown,golden_cross,confirm_up,a,long_preferred,unknown,real_a_up_from_n01_h1__week_unknown_utc_closed_buckets_v1
+EURUSD,H1,2025-04-30T00:00:00Z,up,death_cross,confirm_up,conflict,wait,overbought,real_conflict_from_n01_h1__utc_closed_buckets_v1
+EURUSD,H1,2025-05-09T00:00:00Z,down,death_cross,confirm_down,s,short_preferred,overbought,real_s_down_from_n01_h1__utc_closed_buckets_v1
+EURUSD,H1,2025-06-06T00:00:00Z,up,death_cross,confirm_down,conflict,wait,normal,real_conflict_from_n01_h1__utc_closed_buckets_v1
+EURUSD,H1,2025-06-12T00:00:00Z,up,golden_cross,confirm_up,s,long_preferred,normal,real_s_up_from_n01_h1__utc_closed_buckets_v1
+EURUSD,H1,2025-08-29T00:00:00Z,up,golden_cross,confirm_up,s,long_preferred,normal,real_s_up_from_n01_h1__utc_closed_buckets_v1

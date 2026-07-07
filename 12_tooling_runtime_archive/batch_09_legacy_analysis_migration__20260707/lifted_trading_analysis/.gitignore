@@ -1,0 +1,81 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.dc_cache/
+.venv/
+.cache/
+
+# Backtest outputs (keep only the final decision table tracked)
+backtest_out/**
+!backtest_out/
+!backtest_out/p1_final_validate3/
+!backtest_out/p1_final_validate3/deploy_core.csv
+!backtest_out/p1_final_validate3/deploy_observe.csv
+!backtest_out/p1_final_validate3/deploy_exclude.csv
+!backtest_out/p1_final_validate3/p1_final_decision_table.csv
+
+# Local market data exports
+data/*
+*.har
+
+# Keep offline ladder page assets (auditable, no credentials)
+!data/quicktiny_ladder_web/
+!data/quicktiny_ladder_web/**
+
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+
+# Trae auto-generated skill folders (local only)
+.trae/skills/
+.trae/skills/**
+
+# Tool/runtime noise inside audited runtime snapshots
+12_工具运行时_TOOLING_RUNTIME/**/logs/
+12_工具运行时_TOOLING_RUNTIME/**/tester/logs/
+12_工具运行时_TOOLING_RUNTIME/**/MQL4/Logs/
+12_工具运行时_TOOLING_RUNTIME/**/mailbox/
+12_工具运行时_TOOLING_RUNTIME/**/profiles/lastprofile.ini
+12_工具运行时_TOOLING_RUNTIME/**/profiles/*.chr
+12_工具运行时_TOOLING_RUNTIME/**/profiles/*.hst
+12_工具运行时_TOOLING_RUNTIME/**/profiles/*.fxt
+12_工具运行时_TOOLING_RUNTIME/**/profiles/*.srv
+12_工具运行时_TOOLING_RUNTIME/**/profiles/*.sel
+12_工具运行时_TOOLING_RUNTIME/cross_line_frozen*.md
+12_工具运行时_TOOLING_RUNTIME/cross_line_frozen*.py
+12_工具运行时_TOOLING_RUNTIME/a2_*deepcheck.txt
+12_工具运行时_TOOLING_RUNTIME/a2_*context_dump.txt
+12_工具运行时_TOOLING_RUNTIME/a2_*spotcheck_evidence.txt
+
+其他ai的回答.md
+临时粘贴区_*.md
+
+# Local book library (large binaries) — keep only index tracked
+完善体系_书籍/**
+!完善体系_书籍/INDEX.md
+
+# Kimi raw sources (large binaries). Only keep the cut md outputs tracked.
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/**__SOURCE_RAW/**
+
+# Local S_BUCKET staging copies (large derived binaries). Keep only TSV evidence tracked.
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET__staging/
+
+# GROUP_08 local external-import staging copies. Keep ledgers/runbooks tracked instead.
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/00_external_import_staging/
+
+# Local staging outputs from Kimi agent (keep final md under Source Library instead)
+kimi输出/**
+
+# Local staging outputs (will be deleted after ingest)
+~kimi输出/**
+~视频参考,总结后删/**
+~完善体系_书籍/**
+
+# Kimi cutpack QA traces (do not track)
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/**/compliance_report_r1.json
