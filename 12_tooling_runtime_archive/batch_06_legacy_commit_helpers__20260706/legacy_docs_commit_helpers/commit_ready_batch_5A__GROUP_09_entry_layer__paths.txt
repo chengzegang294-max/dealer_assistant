@@ -1,0 +1,6 @@
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/README_放这里.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_09_完善体系书库_切割产物/manifest_v2.tsv
+docs/GROUP_09__EVAL__2026-06-23.md
+docs/COMMIT_READY__BATCH_5A__GROUP_09_entry_layer__2026-06-23.md
+docs/commit_ready_batch_5A__GROUP_09_entry_layer__paths.txt
+docs/commit_ready_stage_batch_5A__GROUP_09_entry_layer__2026-06-23.ps1

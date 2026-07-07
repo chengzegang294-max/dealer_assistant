@@ -1,0 +1,37 @@
+# Commit Ready Batch 13 - GROUP_03 entry layer - 2026-06-24
+
+## Goal
+
+- stage the clean root entry layer under `GROUP_03`
+- keep this cut limited to the three root master files only
+
+## Exact Files To Stage
+
+- `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_03_组合管理_风险模型_交易成本/GROUP_03_portfolio_risk_master_part_01.md`
+- `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_03_组合管理_风险模型_交易成本/GROUP_03_portfolio_risk_master_part_02.md`
+- `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_03_组合管理_风险模型_交易成本/GROUP_03_portfolio_risk_master_part_03.md`
+- `docs/BATCH_13__GROUP_03_entry_layer__EVAL__2026-06-24.md`
+- `docs/COMMIT_READY__BATCH_13__GROUP_03_entry_layer__2026-06-24.md`
+- `docs/commit_ready_batch_13__group_03_entry_layer__paths.txt`
+- `docs/commit_ready_stage_batch_13__group_03_entry_layer__2026-06-24.ps1`
+
+## Included In This Pack
+
+- portfolio construction pipeline root file
+- constraints and frictions root file
+- backtest bias checklist root file
+
+## Excluded In This Pack
+
+- all unopened `GROUP_04 / GROUP_07` directories
+- any completed `Batch 9A` through `Batch 12` files outside this pack
+
+## Suggested Commit Message
+
+- `docs: add Batch 13 GROUP_03 entry layer`
+
+## Stage Command
+
+- use:
+  - `docs/commit_ready_stage_batch_13__group_03_entry_layer__2026-06-24.ps1`
+  - `docs/commit_ready_batch_13__group_03_entry_layer__paths.txt`

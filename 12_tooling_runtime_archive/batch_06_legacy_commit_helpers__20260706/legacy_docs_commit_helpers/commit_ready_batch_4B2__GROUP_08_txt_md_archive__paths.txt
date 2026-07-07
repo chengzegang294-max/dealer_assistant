@@ -1,0 +1,104 @@
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/README_放这里.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/21 果核量化出品 -- BIAS_QL乖离率策略指数择时1.0.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/27 RSRS指标择时（30分钟线）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/29 KD指标量化交易策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/37 个股止损.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/40 kdj指标配合accer过滤.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/45 布林带策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/52 布林带1.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/58 MACD金叉买入，死叉卖出.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/66 高于MA10买入低于MA20卖出回测半年收益率20.4%.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/69 阻力支撑相对强度（RSRS）指标择时策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/70 蓝筹&均线.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/76 MACD——大盘择时.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/77 RSRS大盘择时优化.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/78 GFTD第二版.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/79 DMI——大盘择时.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/90 MA均线金叉买入，死叉卖出.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/91 Stoch（KDJ）——大盘择时.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-01_择时_指标_大盘信号/93 RSRS——大盘择时.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/03 机器学习多因子策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/07 穿越牛熊基业长青的价值精选策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/08 MACD单因子多头策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/12 【均值回归】基于zscore的均值回归策略（胜率100%）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/18 均值回归策略分享.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/30 基于LSTM模型预测股票价格走势.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/31 低PB价值投资策略分享.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/34 成长策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/39 因子分析——利用JoinQuant因子分析模块选取因子并封装为策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/41 多因子模型（三）-交易回测.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/42 低估值+TRIX+RSI 低回撤策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/43 无模型评估的多因子模型.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/67 多因子回测完整模板（筛选和买卖条件强于‘策略生成器’）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/75 财务因子策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/92 多因子选股策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/94 PE和PB策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-02_因子_价值_财务_ML/98 机器学习SVM用法示例策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/25 简单市值轮动策略-学习.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/33 买入每个行业市值最大的股票.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/51 HS300--随机森林拐点识别.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/59 小市值轮动，修改了内容，剔除了停牌股，同时PE要求为正的股票。.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/64 12年年化34%，Sharpe1.2，银行股轮动.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/65 8只基金按PE调仓.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/68 板块轮动不动？.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/72 基金定投-沪深300-5年回测.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/74 基于沪深300的增强.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/81 申万行业轮动策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/82 次新+小市值+KAMA择时 轮动.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-03_行业_ETF_轮动_指数增强/83 沪深300ETF-1060双均线.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/01 AdaptiveMA自适应均线 过滤器 期货多品种模型 收益稳定增长.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/04 趋势交易能赚钱吗？商品期货动量效应挖掘初探.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/09 商品期货 多品种日频双均线模型 作为给入门者的小礼物.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/17 商品期货截面动量模型，真的靠谱吗？.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/22 海龟交易法则升级版---（分钟级回测+合约变更移仓）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-04_期货_趋势_动量系统/49 海龟克隆优化.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/13 招行_海天配对策略-改进版.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/19 招行_海天配对策略（学习招行伊利配对）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/50 简单配对交易.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-05_配对_统计套利_相关性/55 中小板-中证500配对交易.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/38 一个简单的跟踪聪明钱策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/73 跟着港资（北向资金）买A股.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-06_资金流_事件驱动/95 资金流策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/02 我好像破解了聚宽擂台排第一的策略？！.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/05 兄台且慢，去天台排队不如看看这个策略先.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/06 为什么股票市值是当前的样子？.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/10 追三板策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/11 酒股地中短线策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/14 抗击熊市的中短期低市值策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/15 基于多期限的选股策略（一）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/16 投资学作业.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/20 分钟K线数据重构 ATR自适应通道 请高手来迭代.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/23 Principle by Jim Slater 祖鲁法则在A股的实现与改进.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/24 自选策略1.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/26 向导式-1.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/28 收益策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/32 测试策略1.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/35 投资学作业——简单多因子选股策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/36 投资学作业——简单多因子选股策略改进.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/44 新手初来，写了一个价值投资策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/46 Get API 新技能，研究中写策略并回测.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/47 次新小盘策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/48 再测一支.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/53 小市值策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/54 中长线买入卖出点选择.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/56 爱神的箭放声大哭.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/57 黄泽森策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/60 投资期末作业.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/61 向导式策略生成器生成的成长股精选策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/62 选股策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/63 向导式.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/80 向导式 价值分析(一),成功避开股灾,大盘震荡跌时小涨.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/84 投资策略说明.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/85 【第一次玩】我就是要买便宜股系列.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/86 5日线穿十日线策略（供初学）.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/87 选股策略说明——张燕兰 16318320.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/88 一位小白编辑的多因子选股策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/89 test1：简单的多均线择时.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/96 沪港两地上市的银行股翻倍策略报告.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/97 银行翻倍策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/TX-07_杂项_练习_待筛/99 一个中信证券的向导策略.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/txt_md_index_v1.tsv
+docs/COMMIT_READY__BATCH_4B2__GROUP_08_txt_md_archive__2026-06-23.md
+docs/commit_ready_batch_4B2__GROUP_08_txt_md_archive__paths.txt
+docs/commit_ready_stage_batch_4B2__GROUP_08_txt_md_archive__2026-06-23.ps1

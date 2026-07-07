@@ -1,0 +1,7 @@
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_SUMMARY__2026-06-17.md
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_INDEX__2026-06-17.tsv
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_功能映射表_v1.tsv
+10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/S_BUCKET_功能归类最小框架_v1.md
+docs/COMMIT_READY__BATCH_3A__S_BUCKET_core__2026-06-23.md
+docs/commit_ready_batch_3A__S_BUCKET_core__paths.txt
+docs/commit_ready_stage_batch_3A__S_BUCKET_core__2026-06-23.ps1

@@ -1,0 +1,5 @@
+﻿12_工具运行时_TOOLING_RUNTIME/kd_mtf_p0_v1
+docs/BATCH_22__TOOLING_RUNTIME_kd_mtf_p0_v1__EVAL__2026-06-24.md
+docs/COMMIT_READY__BATCH_22__TOOLING_RUNTIME_kd_mtf_p0_v1__2026-06-24.md
+docs/commit_ready_batch_22__tooling_runtime_kd_mtf_p0_v1__paths.txt
+docs/commit_ready_stage_batch_22__tooling_runtime_kd_mtf_p0_v1__2026-06-24.ps1
