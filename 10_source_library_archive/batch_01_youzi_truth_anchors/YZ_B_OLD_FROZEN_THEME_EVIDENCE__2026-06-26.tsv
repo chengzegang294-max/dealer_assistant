@@ -28,3 +28,8 @@ risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环�
 risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L260-L269	sys_systemic_risk_actions	系统性风险应对（暴跌/黑天鹅/外部冲击）包含“空仓观望/清仓减仓”，与 YZ-B 的防守、风险过滤和退潮撤退叙事同主题	系统性风险证据，不升级为硬门控；顺口=动作层只执行：暴跌/黑天鹅先空仓观望或清仓减仓，不拿主线热度硬顶
 risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L270-L273	sys_no_trade_after_risk_trigger	风控触发后继续交易属于禁忌，与 YZ-B 的纪律和风险过滤同主题	风控触发后禁交易证据；顺口=动作层只执行：风控一旦触发，先停手，不讨论例外
 risk_filter	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L306-L309	m06_signal_downgrade_rule	大盘/板块/重大消息面前后信号降级或不交易，与 YZ-B 的风险过滤和主线风险控制同主题	环境降级/不交易证据；顺口=动作层只执行：大盘/板块/消息面不对就降级或不交易，不拿局部强势硬开仓
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L77-L85	gas_layered_stoploss_defense	分层止损与移动止盈的出场框架可作为 YZ-B 执行纪律的旧冻结层可检索锚点	分层防护：初始止损/技术止损/极限止损/移动止盈/目标止盈
+risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L100-L112	gas_position_formula_and_caps	仓位=三维取最小值+各维上限，可作为 YZ-B 风控与仓位约束的旧冻结层可检索锚点	实际仓位=min(信号等级仓位,趋势强度仓位,品种画像上限)
+leader_and_mainline	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L93-L98	gas_midcap_leader_lag_ratio	中军/龙头/补涨的仓位配比可作为 YZ-B 主线协同与层级识别的旧冻结层可检索锚点	中军:龙头:补涨=4:3:2（只做主题簇级对照）
+risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L120-L127	gas_filter_sources_table	过滤条件的多源归档与禁忌过滤框架，可作为 YZ-B 风控过滤的旧冻结层可检索锚点	过滤条件模块：牛熊分界/大周期/量价/评分阈值/形态误差/KD超买超卖
+risk_filter	11_frozen_summaries_archive\batch_01_selected\#量化分析体系V1.2.md	L100-L106	quant_iter_backtest_gate_rr	迭代规则要求回测验证（R:R>1.5）可作为 YZ-B 风控过滤的旧冻结层可检索锚点	只作为验收门槛对照，不升级为硬门控
