@@ -25,6 +25,7 @@
   - `akshare_daily_probe_v1.py`
   - `baostock_daily_probe_v1.py`
   - `baostock_daily_fetch_to_raw_v1.py`
+  - `build_weekly_from_daily_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
   - `probe_outputs/*`
@@ -34,3 +35,5 @@
   - `acceptance_outputs/artifact_index_v1.tsv`
   - `probe_outputs/artifact_index_v1.tsv`
   - `data/raw/daily_ohlcv/catalog_v1.tsv`
+  - `acceptance_samples/sample_provenance_index_v1.tsv`
+  - `acceptance_samples/ytc_daily_weekly_sample_plan_v1.tsv`

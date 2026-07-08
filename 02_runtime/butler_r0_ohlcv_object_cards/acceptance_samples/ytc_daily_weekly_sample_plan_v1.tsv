@@ -1,0 +1,5 @@
+object_card	symbol	daily_sample	weekly_sample	status	optional_intraday	current_runtime_policy	note
+YTC_P0_E	300302.SZ	acceptance_samples/clean_subset/300302_SZ_1d.csv	acceptance_samples/weekly_subset/300302_SZ_1w.csv	daily_weekly_ready	60m_pending__5m_pending	daily_weekly_only	用于先验证 S/R 框架、测试与假突破降级逻辑
+YTC_P0_E	300750.SZ	acceptance_samples/clean_subset/300750_SZ_1d.csv	acceptance_samples/weekly_subset/300750_SZ_1w.csv	daily_weekly_ready	60m_pending__5m_pending	daily_weekly_only	补一只高关注 A股样本
+YTC_P0_E	601991.SH	acceptance_samples/watchlist_subset/601991_SH_1d.csv	acceptance_samples/weekly_subset/601991_SH_1w.csv	daily_weekly_ready	60m_pending__5m_pending	daily_weekly_only	关注池样本，适合观察多周波动结构
+YTC_P0_E	301666.SZ	acceptance_samples/watchlist_subset/301666_SZ_1d.csv	acceptance_samples/weekly_subset/301666_SZ_1w.csv	daily_weekly_ready	60m_pending__5m_pending	daily_weekly_only	关注池样本，保留后续分钟级补位入口
