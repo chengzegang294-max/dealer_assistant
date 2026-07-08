@@ -47,7 +47,7 @@
 - `04_active_main_docs/BATCH_01_PLAN.md`
 - `04_active_main_docs/BATCH_01_REVIEW.md`
   - 问题：迁移台账误放在日常入口层
-  - 建议：回收到 `00_entry/`
+  - 处理：已回收到 `00_entry/BATCH_01_PLAN.md` 与 `00_entry/BATCH_01_REVIEW.md`
 
 - `ROOT_NOTES.md`
 - `ROOT_VSCODE_SETTINGS_TEMPLATE.jsonc`
@@ -60,6 +60,11 @@
 2. 再拆 `00_assets` 的最确定样本块
 3. 再拆 `20_tools_workspace`
 4. 最后处理 `21_trae_system_archive`
+
+## 已完成
+
+- `04_active_main_docs/BATCH_01_PLAN.md` -> `00_entry/BATCH_01_PLAN.md`
+- `04_active_main_docs/BATCH_01_REVIEW.md` -> `00_entry/BATCH_01_REVIEW.md`
 
 ## 本轮不直接动的内容
 

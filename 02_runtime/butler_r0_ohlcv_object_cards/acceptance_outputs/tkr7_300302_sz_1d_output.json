@@ -1,0 +1,22 @@
+{
+  "object_id": "TKR7_P0_E",
+  "input_rows": 565,
+  "as_of_date": "2026-05-08",
+  "signal_payload": {
+    "object_id": "TKR7_P0_E",
+    "ao_value": 6.463794,
+    "ao_direction": "positive",
+    "ao_divergence_type": "NONE",
+    "ao_divergence_strength": 0.0,
+    "ao_divergence_confidence": 0.0,
+    "ao_divergence_age": 0,
+    "ao_signal_type": "NONE",
+    "ao_signal_strength": 0,
+    "ao_recommendation": "STANDBY"
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": true,
+    "degrade_reason": "no_recent_divergence_detected"
+  }
+}

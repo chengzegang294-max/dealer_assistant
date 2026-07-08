@@ -1,0 +1,3 @@
+object_card	symbol	daily_sample	lookback	status	note
+TKR7_P0_E	300302.SZ	acceptance_samples/clean_subset/300302_SZ_1d.csv	34_plus_bars	minimal_runner_ready	先验证 AO 值、方向、近端背离检测与 recommendation 输出
+TKR7_P0_E	601991.SH	acceptance_samples/watchlist_subset/601991_SH_1d.csv	34_plus_bars	pending_optional	作为第二样本观察牛市环境下是否持续无背离或出现退出信号

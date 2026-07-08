@@ -4,7 +4,7 @@
 
 ## 用途
 
-- 为 `VOLFAC / BPB / VP / TKR7 / VOLTARGET / PERIOD_QUEEN` 等对象卡准备最小可跑入口。
+- 为 `VOLFAC / BPB / VP / TKR7 / YTC / CHZL_BSD / VOLTARGET / PERIOD_QUEEN` 等对象卡准备最小可跑入口。
 - 这里只放运行协议、参数模板、验收样本入口；不放来源文档。
 
 ## 当前范围
@@ -31,6 +31,8 @@
   - `run_chzl_bsd_sample_stub_v1.py`
   - `run_voltarget_minimal_v1.py`
   - `run_period_queen_proxy_minimal_v1.py`
+  - `run_vp_minimal_v1.py`
+  - `run_tkr7_minimal_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
   - `probe_outputs/*`
@@ -44,4 +46,6 @@
   - `acceptance_samples/ytc_daily_weekly_sample_plan_v1.tsv`
   - `acceptance_samples/voltarget_sample_plan_v1.tsv`
   - `acceptance_samples/period_queen_proxy_sample_plan_v1.tsv`
+  - `acceptance_samples/vp_sample_plan_v1.tsv`
+  - `acceptance_samples/tkr7_sample_plan_v1.tsv`
   - `acceptance_samples/chzl_bsd_structure_bundle/bundle_index_v1.tsv`

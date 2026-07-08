@@ -1,0 +1,46 @@
+{
+  "object_id": "VP_P0_E",
+  "input_rows": 1538,
+  "as_of_date": "2026-05-13",
+  "signal_payload": {
+    "object_id": "VP_P0_E",
+    "vp_poc": 4.0106,
+    "vp_vah": 4.4794,
+    "vp_val": 3.6981,
+    "vp_hvn_levels": [
+      3.6981,
+      3.8544,
+      4.0106,
+      4.1669,
+      4.3231,
+      4.4794,
+      4.7919,
+      5.4169
+    ],
+    "vp_lvn_levels": [
+      4.6356,
+      5.1044,
+      5.2606,
+      5.5731,
+      5.7294,
+      5.8856,
+      6.1981,
+      6.3544,
+      6.5106,
+      6.8231,
+      6.9794,
+      7.1356
+    ],
+    "vp_current_rel_position": "above",
+    "vp_trend_shape": "descending",
+    "vp_signal_type": "LVN_MOMENTUM",
+    "vp_signal_strength": 7,
+    "vp_suggested_stop": 4.0106,
+    "vp_suggested_target": 10.7294
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": false,
+    "degrade_reason": ""
+  }
+}
