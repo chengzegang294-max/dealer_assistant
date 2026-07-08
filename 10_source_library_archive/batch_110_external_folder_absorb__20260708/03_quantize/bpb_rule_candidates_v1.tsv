@@ -1,0 +1,9 @@
+rule_id	object_card	concept	measurable_definition	required_data	ashare_proxy	output_fields	status	source_ref
+BPB-R01	BPB	突破点定义	breakout_level = 前N根K线的区间上沿（或关键枢轴高点）被收盘价有效突破（close > level 且实体占比>=x）	OHLCV	OHLCV	feature_breakout_level,feature_breakout_confirm	needs_calibration	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R02	BPB	回调腿数	leg_count = 突破后回调中“低点抬高/下破失败”形成的回调波段计数（1-legged / 2-legged）	OHLCV	OHLCV	feature_pullback_leg_count	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R03	BPB	回调深度	pullback_depth = (breakout_level - pullback_low) / (breakout_level - breakout_start) 或按Fib(0.382/0.5/0.618)落区	OHLCV	OHLCV	feature_pullback_depth_bucket	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R04	BPB	信号条质量	signal_bar_quality = (实体/全振幅) + (收盘位置) + (相对成交量) 的组合评分	OHLCV	OHLCV	feature_signal_bar_score	needs_calibration	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R05	BPB	趋势/震荡上下文	context_regime = trend/channel/trading_range（用ADX/均线斜率/区间宽度等代理）	OHLCV	OHLCV	feature_context_regime	needs_calibration	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R06	BPB	二次入场	low2_buy_candidate = 回调第二腿结束后出现反转条 + 不再创新低（或突破回调下压线）	OHLCV	OHLCV	signal_low2_buy	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R07	BPB	无效突破过滤	false_breakout_filter = 突破后K根内快速回落到突破区间内且成交量/波动异常	OHLCV	OHLCV	filter_false_breakout	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#AlBrooks
+BPB-R08	BPB	R:R门槛	risk_reward_ok = (target - entry) / (entry - stop) >= rr_min	OHLCV	OHLCV	rr,rr_ok	already_in_system	TRADING_BLOGGER_REFERENCE_v1.0.md#Risk

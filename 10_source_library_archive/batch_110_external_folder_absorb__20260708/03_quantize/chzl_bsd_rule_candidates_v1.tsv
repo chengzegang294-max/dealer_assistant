@@ -1,0 +1,8 @@
+rule_id	object_card	concept	measurable_definition	required_data	ashare_proxy	output_fields	status	source_ref
+CHZL-R01	CHZL_BSD	分型	底分型=中间K线 low 最低且 high 也低于两侧；顶分型=中间K线 high 最高且 low 也高于两侧	OHLCV	OHLCV	fractal_type,fractal_idx	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R02	CHZL_BSD	笔	笔=相邻异向分型的连接，要求最小间隔K线数>=k_min且不被新极值破坏	OHLCV	OHLCV	stroke_points	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R03	CHZL_BSD	线段/级别	线段=若干笔的结构化合并；级别=按笔/线段层级递归生成	OHLCV	OHLCV	segment_points,level_id	needs_spec	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R04	CHZL_BSD	中枢	中枢区间=连续三段（或三笔）重叠区间 [max(low_i), min(high_i)] 且宽度>0	OHLCV	OHLCV	zhongshu_low,zhongshu_high	candidate	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R05	CHZL_BSD	买卖点（1/2/3）	先只做“结构候选”：在中枢/离开-回抽-再离开的序列里标注候选点，不直接下交易动作	OHLCV	OHLCV	chzl_candidate_type,confidence	shell_only	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R06	CHZL_BSD	背驰（降级）	背驰代理=价格创新高/新低但动量(如MACD面积/ATR归一动量)未同步创新高/新低	OHLCV	OHLCV	divergence_flag	needs_calibration	TRADING_BLOGGER_REFERENCE_v1.0.md#CHZL
+CHZL-R07	CHZL_BSD	哲学/心法降级	禅宗/心法类文本一律标记 NOT_QUANT_YET，不进入对象卡逻辑	文本	文本	note_only	decision_fixed	TRADING_BLOGGER_REFERENCE_v1.0.md#Principles
