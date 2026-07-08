@@ -1,0 +1,16 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 MFLOW_P0_A	fixed_literal	eq_MFLOW_P0_A	no_degrade
+mflow_sellord_ratio	float	yes	主力流出单数占比	real_money_flow_or_simulated_proxy	0_le_value_le_1	use_0_5_if_total_orders_missing
+mflow_inflow_ratio	float	yes	净流入占比	net_inflow_over_total_amount	value_in_reasonable_range	use_0_if_total_amount_missing
+mflow_open_intent	enum	yes	STRONG_BUY/MODERATE_BUY/NEUTRAL/MODERATE_SELL/STRONG_SELL	open_flow_classifier	in_allowed_set	default_NEUTRAL
+mflow_divergence_score	float	yes	价格与资金方向背离评分	price_vs_money_flow	0_le_value_le_1	default_0
+mflow_net_inflow	float	yes	大单净流入金额	large_buy_minus_large_sell	numeric_or_nan	use_proxy_if_simulated
+mflow_data_mode	enum	yes	real/simulated/none	input_router	in_allowed_set	default_none
+mflow_signal_type	enum	yes	NONE/MAIN_FORCE_OUT/MAIN_FORCE_IN/OPEN_RUSH_BUY/OPEN_DUMP_SELL/DIVERGENCE_WARN	rules_engine	in_allowed_set	default_NONE
+mflow_signal_strength	int	yes	-2..2 或 0 方向强度	money_flow_rules	value_in_range_-2_2	default_0
+mflow_kd_filter_action	enum	yes	PASS/ENHANCE/DOWNGRADE/BLOCK/REVERSE	rules_engine	in_allowed_set	default_PASS
+mflow_lock_status	enum	yes	UNLOCKED/LOCKED	trend_persistence	in_allowed_set	default_UNLOCKED
+mflow_risk_action	enum	yes	NONE/HALT_DAY_TRADE/REDUCE_POSITION	rules_engine	in_allowed_set	default_NONE
+mflow_size_scalar	float	yes	仓位缩放 0..2	risk_mapping	0_le_value_le_2	default_1
+mflow_volume_integrity_score	float	no	量能完整性过滤分数	vp_or_volume_integrity_filter	0_le_value_le_1	use_empty_if_not_available
+mflow_abort_reason	string	no	降级或禁做原因	rules_engine	string_or_empty	empty_if_pass
