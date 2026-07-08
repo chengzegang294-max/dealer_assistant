@@ -1,6 +1,6 @@
 # Repo Layout Realignment Execution Plan
 
-更新时间：2026-07-08
+更新时间：2026-07-09
 
 ## 目标
 
@@ -22,6 +22,10 @@
   - 当前进度：
     - 已完成 `ashare_clean` -> `02_runtime/.../data/raw/daily_ohlcv/batch09_promoted/ashare_clean`
     - 已完成 `ashare_watchlist/kline_1d` -> `02_runtime/.../data/raw/daily_ohlcv/batch09_promoted/watchlist_kline_1d`
+    - 已完成 `ashare_watchlist` 剩余非 `kline_1d` 三分流：
+      - `topN_day/week`、`focus_pool`、`core_pool`、`watchlist_screen`、`factors_ladder` -> `02_runtime/.../data/raw/watchlist_inputs/`
+      - 对应 `.txt` 文本快照 -> `10_source_library_archive/.../ashare_watchlist_text_snapshot/`
+      - `blogroom_* / mx2025_summary_*` -> `12_tooling_runtime_archive/.../batch_09_watchlist_ocr_artifacts__20260708/`
 
 - `20_tools_workspace/`
   - 问题：合同外顶层目录，当前混放在维护工具、历史脚本、临时材料。
@@ -70,6 +74,7 @@
 - `04_active_main_docs/BATCH_01_REVIEW.md` -> `00_entry/BATCH_01_REVIEW.md`
 - `00_assets/_raw_snapshot_batch09/ashare_clean` -> `02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/batch09_promoted/ashare_clean`
 - `00_assets/_raw_snapshot_batch09/ashare_watchlist/kline_1d` -> `02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/batch09_promoted/watchlist_kline_1d`
+- `00_assets/_raw_snapshot_batch09/ashare_watchlist` 剩余非 `kline_1d` 文件已按 runtime structured inputs / source text snapshot / tooling OCR artifacts 三分流归位
 
 ## 本轮不直接动的内容
 

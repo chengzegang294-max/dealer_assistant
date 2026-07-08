@@ -203,6 +203,75 @@ def aggregate(card_results: list[dict[str, object]]) -> dict[str, object]:
     }
 
 
+def build_vote_input_snapshot(card_results: list[dict[str, object]]) -> list[dict[str, object]]:
+    snapshot: list[dict[str, object]] = []
+    for card in card_results:
+        snapshot.append(
+            {
+                "object_id": card["object_id"],
+                "card_role": card["card_role"],
+                "signal_type": card["signal_type"],
+                "signal_direction": card["signal_direction"],
+                "signal_strength": card["signal_strength"],
+                "confidence": card["confidence"],
+                "filter_action": card["filter_action"],
+                "risk_action": card["risk_action"],
+                "size_scalar": card["size_scalar"],
+            }
+        )
+    return snapshot
+
+
+def build_final_decision_card(summary: dict[str, object]) -> dict[str, object]:
+    final_signal = str(summary["final_signal"])
+    blockers = list(summary["blockers"])
+    permission = str(summary["permission"])
+    if final_signal == "NO_TRADE":
+        trade_gate = "BLOCKED"
+        rationale = "hard_blocker_or_environment_halt"
+    elif final_signal == "BUY":
+        trade_gate = "ALLOW"
+        rationale = "buy_score_dominates_and_no_hard_block"
+    elif final_signal == "SELL":
+        trade_gate = "EXIT"
+        rationale = "sell_score_dominates"
+    else:
+        trade_gate = "WAIT"
+        rationale = "score_not_decisive"
+    return {
+        "final_signal": final_signal,
+        "trade_gate": trade_gate,
+        "permission": permission,
+        "buy_votes": summary["buy_votes"],
+        "sell_votes": summary["sell_votes"],
+        "neutral_votes": summary["neutral_votes"],
+        "buy_score": summary["buy_score"],
+        "sell_score": summary["sell_score"],
+        "net_score": summary["net_score"],
+        "blockers": blockers,
+        "hard_block": bool(blockers and final_signal == "NO_TRADE"),
+        "rationale": rationale,
+    }
+
+
+def build_size_policy_card(card_results: list[dict[str, object]], summary: dict[str, object]) -> dict[str, object]:
+    pq = next(card for card in card_results if str(card["object_id"]) == "PERIOD_QUEEN_P0_F")
+    voltarget = next(card for card in card_results if str(card["object_id"]) == "VOLTARGET_P0_R")
+    volfac = next(card for card in card_results if str(card["object_id"]) == "VOLFAC_P0_A")
+    pq_size_cap = float(pq["size_scalar"])
+    voltarget_size = float(voltarget["size_scalar"])
+    filter_scalar = float(volfac["size_scalar"])
+    recommended = min(pq_size_cap, voltarget_size) if summary["final_signal"] != "NO_TRADE" else 0.0
+    return {
+        "environment_cap": pq_size_cap,
+        "voltarget_scalar": voltarget_size,
+        "volfac_filter_scalar": filter_scalar,
+        "avg_size_scalar": summary["avg_size_scalar"],
+        "recommended_size_scalar": round(recommended, 6),
+        "size_policy": "blocked_to_zero" if summary["final_signal"] == "NO_TRADE" else "min(environment_cap, voltarget_scalar)",
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Registry v0: aggregate minimal runnable object cards.")
     parser.add_argument("--input-csv", required=True)
@@ -231,14 +300,16 @@ def main() -> int:
         normalize_period_queen(period_queen),
     ]
     summary = aggregate(normalized)
-
     payload = {
         "registry_id": "registry_v0_minimal",
         "input_csv": str(input_path).replace("\\", "/"),
         "market_proxy_csv": str(proxy_path).replace("\\", "/"),
         "as_of_date": rows[-1]["date"],
         "cards_run": [card["object_id"] for card in normalized],
+        "vote_input_snapshot": build_vote_input_snapshot(normalized),
         "aggregate_summary": summary,
+        "final_decision_card": build_final_decision_card(summary),
+        "size_policy_card": build_size_policy_card(normalized, summary),
         "card_results": normalized,
     }
 

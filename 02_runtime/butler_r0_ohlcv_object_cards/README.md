@@ -1,6 +1,6 @@
 # Butler R0 OHLCV Object Cards Runtime
 
-更新时间：2026-07-08
+更新时间：2026-07-09
 
 ## 用途
 
@@ -9,7 +9,7 @@
 
 ## 当前范围
 
-- 当前已覆盖 A 股日线 OHLCV 样本、由日线合成的周线样本，以及 `YTC / CHZL_BSD / VOLTARGET / PERIOD_QUEEN` 的最小降级或半自动运行入口。
+- 当前已覆盖 A 股日线 OHLCV 样本、由日线合成的周线样本，以及 `YTC / CHZL_BSD / VOLTARGET / PERIOD_QUEEN / VP / TKR7 / registry_v0` 的最小降级、半自动或聚合运行入口。
 - 未来再扩到分钟级、更多对象卡真实外部输入，以及跨市场。
 
 ## 上游合同
@@ -44,6 +44,8 @@
   - `acceptance_outputs/artifact_index_v1.tsv`
   - `probe_outputs/artifact_index_v1.tsv`
   - `data/raw/daily_ohlcv/catalog_v1.tsv`
+  - `data/raw/watchlist_inputs/README.md`
+  - `data/raw/watchlist_inputs/catalog_v1.tsv`
   - `acceptance_samples/sample_provenance_index_v1.tsv`
   - `acceptance_samples/ytc_daily_weekly_sample_plan_v1.tsv`
   - `acceptance_samples/voltarget_sample_plan_v1.tsv`
@@ -52,3 +54,14 @@
   - `acceptance_samples/tkr7_sample_plan_v1.tsv`
   - `acceptance_samples/registry_v0_sample_plan_v1.tsv`
   - `acceptance_samples/chzl_bsd_structure_bundle/bundle_index_v1.tsv`
+  - `registry_vote_input_contract_v1.tsv`
+  - `registry_output_contract_v1.tsv`
+
+## 本轮推进
+
+- `registry_v0` 已从“6 张卡串跑”推进到“有显式输入/输出合同”的最小正式聚合入口。
+- `acceptance_outputs/registry_v0_601991_sh_output.json` 现已显式输出 `vote_input_snapshot / aggregate_summary / final_decision_card / size_policy_card`。
+- `00_assets/_raw_snapshot_batch09/ashare_watchlist` 剩余非 `kline_1d` 文件已完成三分流：
+  - 结构化 watchlist 输入归 `data/raw/watchlist_inputs/`
+  - 文本快照归 `10_source_library_archive/.../ashare_watchlist_text_snapshot/`
+  - `blogroom_* / mx2025_summary_*` 归 `12_tooling_runtime_archive/.../batch_09_watchlist_ocr_artifacts__20260708/`

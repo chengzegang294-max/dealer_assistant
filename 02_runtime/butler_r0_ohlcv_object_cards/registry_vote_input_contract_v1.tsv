@@ -1,0 +1,10 @@
+field	type	required	source	meaning
+object_id	string	yes	card_result	对象卡唯一标识，如 VOLFAC_P0_A
+card_role	enum	yes	card_result	聚合角色：environment/filter/voter/sizer
+signal_type	string	yes	card_result	对象卡当前输出的信号类型
+signal_direction	enum	yes	card_result	投票方向：buy/sell/neutral
+signal_strength	float	yes	card_result	信号强度，供加权聚合
+confidence	float	yes	card_result	当前信号可信度
+filter_action	enum	yes	card_result	过滤动作：PASS/REDUCE_WEIGHT/EXCLUDE
+risk_action	string	yes	card_result	风控动作或建议，如 FULL/HALT_DAY_TRADE/HOLD
+size_scalar	float	yes	card_result	当前卡给出的仓位缩放或上限

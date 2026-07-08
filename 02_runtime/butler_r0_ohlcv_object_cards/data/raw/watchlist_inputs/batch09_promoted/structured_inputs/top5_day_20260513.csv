@@ -1,0 +1,5 @@
+﻿top_rank,code,ticker,name,pct,price,asof,error,source,board,tradable
+1,301666,301666.SZ,大普微-UW,65.41,,2026-05-13,"eastmoney kline fetch failed after retries: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",cached_daily_top,CYB,True
+2,300736,300736.SZ,百邦科技,64.02,,2026-05-13,"eastmoney kline fetch failed after retries: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",cached_daily_top,CYB,True
+3,601991,601991.SH,大唐发电,60.92,,2026-05-13,"eastmoney kline fetch failed after retries: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",cached_daily_top,SH_MAIN,True
+4,300302,300302.SZ,同有科技,54.44,,2026-05-13,"eastmoney kline fetch failed after retries: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",cached_daily_top,CYB,True

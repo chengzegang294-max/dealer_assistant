@@ -1,0 +1,9 @@
+﻿top_rank,rank,code,name,pct,price,exchange,board,tradable,ticker,asof,source
+1,1,301666,大普微-UW,65.41,,SZ,CYB,True,301666.SZ,2026-05-13,sohu_stage_rank_5d_fallback
+2,2,300736,百邦科技,64.02,,SZ,CYB,True,300736.SZ,2026-05-13,sohu_stage_rank_5d_fallback
+3,2,601991,大唐发电,60.92,,SH,SH_MAIN,True,601991.SH,2026-05-13,sohu_stage_rank_5d_fallback
+4,4,300302,同有科技,54.44,,SZ,CYB,True,300302.SZ,2026-05-13,sohu_stage_rank_5d_fallback
+5,5,300449,汉邦高科,52.12,,SZ,CYB,True,300449.SZ,2026-05-13,sohu_stage_rank_5d_fallback
+6,4,600396,华电辽能,51.79,,SH,SH_MAIN,True,600396.SH,2026-05-13,sohu_stage_rank_5d_fallback
+7,6,603045,福达合金,50.17,,SH,SH_MAIN,True,603045.SH,2026-05-13,sohu_stage_rank_5d_fallback
+8,7,300983,尤安设计,49.97,,SZ,CYB,True,300983.SZ,2026-05-13,sohu_stage_rank_5d_fallback
