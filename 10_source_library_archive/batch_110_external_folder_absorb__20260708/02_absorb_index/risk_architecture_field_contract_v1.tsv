@@ -1,0 +1,15 @@
+layer	field_name	type	required	desc	acceptance_check	degrade_rule	note
+van_tharp	van_tharp_pass	bool	yes	单票风险是否通过2%硬上限	bool_present_and_false_aborts	no_degrade	绝对红线
+van_tharp	van_tharp_risk_pct	float	yes	单票风险占账户比例	0_le_value_le_0.02_when_pass	no_degrade	超过直接ABORT
+van_tharp	van_tharp_action	enum	yes	PASS/ABORT/HALT_NEW_POSITIONS	in_allowed_set	no_degrade	总风险可扩展到6%
+kelly	kelly_f_star	float	yes	Kelly 最优比例	0_le_value_le_1	use_default_0_25_if_trade_log_missing	历史不足时默认半凯利
+kelly	kelly_size_scalar	float	yes	Kelly 仓位缩放	value_ge_0_and_value_le_1	default_half_kelly_times_penalty	A股默认带T+1惩罚
+kelly	kelly_mode	enum	yes	default_half_kelly/half_kelly/quarter_kelly/adaptive/crisis	in_allowed_set	fallback_to_default_half_kelly	近期表现差可降级
+kelly	kelly_crisis	bool	yes	连续亏损危机模式	bool_present	default_false	危机模式 scalar=0.1
+voltarget	vt_scalar	float	yes	目标波动率/当前波动率	0.1_le_value_le_2.0	default_1_0_if_vol_missing	环境层调制
+voltarget	vt_size_scalar	float	yes	最终环境仓位缩放	0.1_le_value_le_2.0	default_1_0_if_vol_missing	与 vt_scalar 等价
+voltarget	vt_vol_regime	enum	yes	LOW_VOL/NORMAL_VOL/HIGH_VOL/EXTREME_VOL	in_allowed_set	default_NORMAL_VOL	来自VOLFAC
+period_queen	pq_position_max_size	float	yes	周期环境仓位上限	0_le_value_le_1	default_0_3_when_unknown	环境限制
+final	final_size_scalar	float	yes	min(kelly,vt,pq,1.0)	0_le_value_le_1	abort_if_le_0_05	最终仓位
+audit	abort_reason	string	no	触发终止原因	string_or_empty	empty_if_pass	写入风控日志
+audit	triggered_risk_layer	enum	no	van_tharp/kelly/voltarget/period_queen	in_allowed_set_or_empty	empty_if_pass	复盘必备

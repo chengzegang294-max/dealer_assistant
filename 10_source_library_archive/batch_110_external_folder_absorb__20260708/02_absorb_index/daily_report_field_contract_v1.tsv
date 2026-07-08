@@ -1,0 +1,17 @@
+section	field_name	type	required	source_or_module	desc	acceptance_check	degrade_rule
+summary	report_date	string	yes	system_clock	日报日期	yyyy_mm_dd_format	block_generation_if_missing
+summary	generated_at	string	yes	system_clock	生成时间	iso_or_datetime_format	block_generation_if_missing
+summary	executive_summary_md	string	yes	report_generator	摘要文本	non_empty	degrade_to_stub_summary
+macro	macro_score	float	yes	macro_environment_scorer	宏观综合评分	0_le_value_le_100	use_neutral_50
+macro	macro_dimension_breakdown	json	yes	macro_environment_scorer	五维度明细	has_5_dimensions	use_partial_and_mark_missing
+market	index_overview	json	yes	market_data_adapter	核心指数与涨跌/成交	has_csi300_and_turnover	use_minimal_index_set
+market	sentiment_snapshot	json	no	market_data_adapter	涨跌家数/涨跌停/资金流	has_counts_or_empty	omit_optional_block
+governance	governance_mode	string	yes	governance_engine	当前制度模式	non_empty	use_unknown_mode
+governance	memorials_today	json	no	governance_engine	今日票拟记录	list_or_empty	omit_optional_block
+portfolio	portfolio_summary	json	yes	portfolio_adapter	总资产/现金/市值/收益	has_total_and_cash	block_portfolio_section_if_missing
+portfolio	position_diagnosis	json	no	portfolio_adapter	持仓明细与风险扫描	list_or_empty	omit_positions_block
+watchlist	watchlist_rankings	json	no	watchlist_engine	关注池排行与候选	list_or_empty	omit_watchlist_block
+alerts	alerts_and_tomorrow_focus	json	no	risk_engine_and_calendar	预警与次日关注	list_or_empty	omit_alerts_block
+weekly	bias_analysis	json	no	bias_analysis_engine	偏差分析（周一）	week_only_or_empty	omit_when_not_monday
+output	report_markdown	string	yes	report_generator	markdown 输出	starts_with_title	block_if_missing
+output	report_json	json	yes	report_generator	json 输出	required_sections_present	block_if_missing
