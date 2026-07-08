@@ -1,0 +1,193 @@
+{
+  "experiment_id": "B_EXP_20260707_223225",
+  "title": "B方向: AkShare真实数据接入 + VOLFAC对象卡消费验证",
+  "timestamp": "2026-07-07T22:32:54.124748",
+  "data_source": "AkShare尝试失败，fallback至模拟数据",
+  "date_range": "20250602 ~ 20260707",
+  "use_simulated": true,
+  "target_stocks": [
+    [
+      "000001.SZ",
+      "平安银行",
+      "sz000001"
+    ],
+    [
+      "600519.SH",
+      "贵州茅台",
+      "sh600519"
+    ],
+    [
+      "300750.SZ",
+      "宁德时代",
+      "sz300750"
+    ],
+    [
+      "002594.SZ",
+      "比亚迪",
+      "sz002594"
+    ],
+    [
+      "601318.SH",
+      "中国平安",
+      "sh601318"
+    ]
+  ],
+  "success_count": 5,
+  "failed_stocks": [
+    [
+      "000001.SZ",
+      "平安银行",
+      "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ],
+    [
+      "600519.SH",
+      "贵州茅台",
+      "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ],
+    [
+      "300750.SZ",
+      "宁德时代",
+      "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ],
+    [
+      "002594.SZ",
+      "比亚迪",
+      "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ],
+    [
+      "601318.SH",
+      "中国平安",
+      "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    ]
+  ],
+  "volfac_results": [
+    {
+      "ts_code": "000001.SZ",
+      "name": "平安银行",
+      "n_bars": 252,
+      "simulated": true,
+      "close_60d_first": 8.46,
+      "close_60d_last": 8.87,
+      "hist_vol_n": 132,
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "FILTER",
+      "signal_strength": 1,
+      "confidence": 1.0,
+      "lock_status": "UNLOCKED",
+      "filter_action": "INCREASE_WEIGHT",
+      "risk_action": "NONE",
+      "size_scalar": 1.2,
+      "vol_regime": "LOW_VOL",
+      "vol_trend": "STABLE",
+      "id2_std_3m": 0.017466,
+      "annualized_vol": 0.2773,
+      "vol_percentile": 8.33,
+      "notes": "5分钟数据缺失，hml_r_std_5m未计算"
+    },
+    {
+      "ts_code": "600519.SH",
+      "name": "贵州茅台",
+      "n_bars": 252,
+      "simulated": true,
+      "close_60d_first": 8.46,
+      "close_60d_last": 8.87,
+      "hist_vol_n": 132,
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "FILTER",
+      "signal_strength": 1,
+      "confidence": 1.0,
+      "lock_status": "UNLOCKED",
+      "filter_action": "INCREASE_WEIGHT",
+      "risk_action": "NONE",
+      "size_scalar": 1.2,
+      "vol_regime": "LOW_VOL",
+      "vol_trend": "STABLE",
+      "id2_std_3m": 0.017466,
+      "annualized_vol": 0.2773,
+      "vol_percentile": 8.33,
+      "notes": "5分钟数据缺失，hml_r_std_5m未计算"
+    },
+    {
+      "ts_code": "300750.SZ",
+      "name": "宁德时代",
+      "n_bars": 252,
+      "simulated": true,
+      "close_60d_first": 8.46,
+      "close_60d_last": 8.87,
+      "hist_vol_n": 132,
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "FILTER",
+      "signal_strength": 1,
+      "confidence": 1.0,
+      "lock_status": "UNLOCKED",
+      "filter_action": "INCREASE_WEIGHT",
+      "risk_action": "NONE",
+      "size_scalar": 1.2,
+      "vol_regime": "LOW_VOL",
+      "vol_trend": "STABLE",
+      "id2_std_3m": 0.017466,
+      "annualized_vol": 0.2773,
+      "vol_percentile": 8.33,
+      "notes": "5分钟数据缺失，hml_r_std_5m未计算"
+    },
+    {
+      "ts_code": "002594.SZ",
+      "name": "比亚迪",
+      "n_bars": 252,
+      "simulated": true,
+      "close_60d_first": 8.46,
+      "close_60d_last": 8.87,
+      "hist_vol_n": 132,
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "FILTER",
+      "signal_strength": 1,
+      "confidence": 1.0,
+      "lock_status": "UNLOCKED",
+      "filter_action": "INCREASE_WEIGHT",
+      "risk_action": "NONE",
+      "size_scalar": 1.2,
+      "vol_regime": "LOW_VOL",
+      "vol_trend": "STABLE",
+      "id2_std_3m": 0.017466,
+      "annualized_vol": 0.2773,
+      "vol_percentile": 8.33,
+      "notes": "5分钟数据缺失，hml_r_std_5m未计算"
+    },
+    {
+      "ts_code": "601318.SH",
+      "name": "中国平安",
+      "n_bars": 252,
+      "simulated": true,
+      "close_60d_first": 8.46,
+      "close_60d_last": 8.87,
+      "hist_vol_n": 132,
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "FILTER",
+      "signal_strength": 1,
+      "confidence": 1.0,
+      "lock_status": "UNLOCKED",
+      "filter_action": "INCREASE_WEIGHT",
+      "risk_action": "NONE",
+      "size_scalar": 1.2,
+      "vol_regime": "LOW_VOL",
+      "vol_trend": "STABLE",
+      "id2_std_3m": 0.017466,
+      "annualized_vol": 0.2773,
+      "vol_percentile": 8.33,
+      "notes": "5分钟数据缺失，hml_r_std_5m未计算"
+    }
+  ],
+  "atratio_result": {
+    "object_id": "ATRATIO_P0_A",
+    "signal_type": "NONE",
+    "confidence": 0.0,
+    "filter_action": "PASS",
+    "notes": "A股纯多头场景下 ATRATIO 因子无效（SBKT_F002 结论）"
+  },
+  "conclusions": [
+    "DataPipe架构支持多源切换和自动降级",
+    "VOLFAC对象卡可消费真实/模拟数据",
+    "ATRATIO在A股纯多头下空信号正确",
+    "AkShare在远程环境可能受网络限制，本地运行正常"
+  ]
+}

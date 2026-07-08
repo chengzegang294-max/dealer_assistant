@@ -1,0 +1,131 @@
+{
+  "stock": "603893.SH",
+  "name": "瑞芯微",
+  "date": "2026-07-07",
+  "price": 190.71,
+  "change_pct": 8.28,
+  "card_results": [
+    {
+      "object_id": "PERIOD_QUEEN_P0_F",
+      "signal_type": "STATE_ATTACK_INITIAL",
+      "signal_strength": 0.5,
+      "confidence": 0.65,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "HOLD",
+      "signal_strength": -0.4,
+      "confidence": 0.7,
+      "filter_action": "PASS",
+      "size_scalar": 0.82
+    },
+    {
+      "object_id": "VOLTARGET_P0_R",
+      "signal_type": "VOL_ADJUST",
+      "signal_strength": 0.82,
+      "confidence": 0.75,
+      "filter_action": "PASS",
+      "size_scalar": 0.82
+    },
+    {
+      "object_id": "CHZL_BSD_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.6,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "BPB_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "TKR7_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.6,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "MFLOW_P0_A",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.55,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "INSTB_P0_A",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "KELLY_P0_R",
+      "signal_type": "POSITION_SIZE",
+      "signal_strength": 0,
+      "confidence": 0.6,
+      "filter_action": "PASS",
+      "size_scalar": 0
+    },
+    {
+      "object_id": "VP_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.55,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "YTC_P0_E",
+      "signal_type": "BUY",
+      "signal_strength": 1.5,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "ATRATIO_P0_A",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "size_scalar": 1.0
+    }
+  ],
+  "aggregate": {
+    "buy_votes": 1,
+    "sell_votes": 0,
+    "neutral_votes": 7,
+    "buy_score": 0.75,
+    "sell_score": 0,
+    "net_score": 0.75,
+    "avg_size_scalar": 0.61,
+    "permission": "PERMISSION_FULL",
+    "final_signal": "NEUTRAL",
+    "blockers": []
+  },
+  "fundamentals": {
+    "股票代码": "603893.SH",
+    "公司全称": "瑞芯微电子股份有限公司",
+    "主营业务": "AIoT芯片设计（SoC）",
+    "旗舰产品": "RK3588, RK3576, RV11系列",
+    "2024营收": "31.36亿元 (+46.94%)",
+    "2024净利润": "5.95亿元 (+341.01%)",
+    "2024EPS": "1.42元 (+343.75%)",
+    "总市值": "约800亿元",
+    "半导体排名": "板块第11/160",
+    "最新价格": "190.71元 (+8.28%)",
+    "PE_TTM估": "约134倍（高估值）",
+    "催化剂": "AI端侧需求、汽车电子、机器人芯片"
+  }
+}

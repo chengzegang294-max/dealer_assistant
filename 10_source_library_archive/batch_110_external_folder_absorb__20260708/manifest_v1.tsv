@@ -5,3 +5,5 @@ M003	02_absorb_index/trading_blogger_reference_index_v1.tsv	tsv	absorb_index	act
 M004	robocopy__external_feature__20260708.log	log	import_log	archived	外部快照复制日志（用于追溯与验收）
 M005	03_quantize/bpb_rule_candidates_v1.tsv	tsv	quantize	active	BPB（Al Brooks）规则候选清单：可直接进入对象卡字段化/实现排期
 M006	03_quantize/chzl_bsd_rule_candidates_v1.tsv	tsv	quantize	active	CHZL_BSD（缠论结构）规则候选清单：先做结构化代理与可检索锚点
+M007	02_absorb_index/raw_snapshot_promotion_map_v1.tsv	tsv	absorb_index	active	raw_snapshot 中脚本/数据/报告的提升归位映射表（不改动原快照）
+M008	04_runtime/promoted_from_raw_snapshot/README.md	md	runtime_note	active	提升归位目录的使用边界与后续验收要求
