@@ -11,3 +11,4 @@ M009	02_absorb_index/endgame_private_invest_butler_contract_v0.1.md	md	contract	
 M010	03_quantize/promoted_code_from_raw_snapshot/README.md	md	quantize_note	active	提升归位代码目录（.py 副本）使用边界与后续验收要求
 M011	02_absorb_index/multi_ai_discussion_prompt_pack_v1.md	md	contract	active	多 AI 讨论题面与结构化输出格式（强制可吸收）
 M012	02_absorb_index/internal_rebuild_requirements_from_kimi_v1.md	md	contract	active	Kimi 全库材料压缩后的“我们要实现的内容与技术指标清单”（用于内部重做与重分类）
+M013	02_absorb_index/kimi_raw_snapshot_module_router_v1.md	md	absorb_index	active	raw_snapshot 模块级路由索引（重分类导航，不改原文）
