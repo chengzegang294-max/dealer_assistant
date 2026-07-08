@@ -33,6 +33,9 @@
 - `leader_and_mainline/m05_synergy_principles`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L222-L226`（中军稳则题材续，中军倒则撤退）
 - `topic_cycle/m05_cycle_table`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L229-L236`（发酵/高潮/分化/退潮与对应策略）
 - `intraday_shape/m06_tail_rules`：`[模块]交易策略与优化_波段超短特色优化综合体系.md` `L179-L191`（尾盘偷袭板禁止接力等口径）
+- `topic_cycle/m05_retreat_order_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L238-L242`（清仓补涨→清仓龙头→中军减仓→清仓中军）
+- `topic_cycle/m05_tide_clear_rule_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L41`（题材退潮信号出现=立即清仓，动作层）
+- `risk_filter/m06_position_dynamic_formula_v12`：`[模块]交易策略与优化_波段超短特色优化综合体系.md` `L241-L245`（实际仓位公式 + 单笔仓位上限）
 - `psychology_state/sys_emotion_score_threshold`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L143-L145`（总分>18 禁止交易；阈值仅作为证据）
 - `risk_filter/sys_position_upper_bound`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L185-L188`（单笔风险与仓位上限硬约束）
 
