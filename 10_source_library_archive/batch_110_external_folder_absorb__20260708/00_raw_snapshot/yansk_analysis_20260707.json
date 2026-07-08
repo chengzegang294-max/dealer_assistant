@@ -1,0 +1,181 @@
+{
+  "stock_code": "002195.SZ",
+  "stock_name": "岩山科技",
+  "date": "2026-07-07",
+  "price": 6.15,
+  "user_cost": 8.1,
+  "aggregate": {
+    "buy_votes": 1,
+    "sell_votes": 2,
+    "neutral_votes": 6,
+    "net_score": -1.75,
+    "final_signal": "SELL",
+    "permission": "PERMISSION_REDUCED"
+  },
+  "card_results": [
+    {
+      "object_id": "PERIOD_QUEEN_P0_F",
+      "signal_type": "STATE_POWER_TRANSITION",
+      "signal_strength": 2.8,
+      "confidence": 0.65,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "PERMISSION_REDUCED",
+      "size_scalar": 0.5,
+      "detail": {
+        "volatility_annual": 1.195,
+        "trend_20d": -0.284,
+        "state": "POWER_TRANSITION"
+      }
+    },
+    {
+      "object_id": "VOLFAC_P0_A",
+      "signal_type": "SELL",
+      "signal_strength": 2.0,
+      "confidence": 0.7,
+      "lock_status": "UNLOCKED",
+      "filter_action": "BLOCK",
+      "risk_action": "NORMAL",
+      "size_scalar": 0.28,
+      "detail": {
+        "annual_vol": 0.887,
+        "percentile": 1.0,
+        "regime": "EXTREME_VOL"
+      }
+    },
+    {
+      "object_id": "CHZL_BSD_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.6,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "bottom_fractal": false,
+        "top_fractal": false
+      }
+    },
+    {
+      "object_id": "BPB_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0,
+      "confidence": 0.5,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {}
+    },
+    {
+      "object_id": "TKR7_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.6,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "ao_current": 0.413,
+        "ao_trend": -0.09
+      }
+    },
+    {
+      "object_id": "MFLOW_P0_A",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.55,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "up_down_ratio": 0.42
+      }
+    },
+    {
+      "object_id": "INSTB_P0_A",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.5,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "vol_vs_ma20": 1.78
+      }
+    },
+    {
+      "object_id": "KELLY_P0_R",
+      "signal_type": "POSITION_SIZE",
+      "signal_strength": 0,
+      "confidence": 0.6,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "SCALE_POSITION",
+      "size_scalar": 0,
+      "detail": {
+        "half_kelly": 0,
+        "win_rate": 0.48
+      }
+    },
+    {
+      "object_id": "VP_P0_E",
+      "signal_type": "NEUTRAL",
+      "signal_strength": 0.0,
+      "confidence": 0.55,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "poc_zone": 10,
+        "current_zone": 5
+      }
+    },
+    {
+      "object_id": "YTC_P0_E",
+      "signal_type": "SELL",
+      "signal_strength": -1.5,
+      "confidence": 0.5,
+      "lock_status": "UNLOCKED",
+      "filter_action": "BLOCK",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "body_range_ratio": 0.95
+      }
+    },
+    {
+      "object_id": "ATRATIO_P0_A",
+      "signal_type": "BUY",
+      "signal_strength": 0.8,
+      "confidence": 0.5,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "NORMAL",
+      "size_scalar": 1.0,
+      "detail": {
+        "vol_ratio": 1.78
+      }
+    },
+    {
+      "object_id": "VOLTARGET_P0_R",
+      "signal_type": "VOL_ADJUST",
+      "signal_strength": 0.28,
+      "confidence": 0.75,
+      "lock_status": "UNLOCKED",
+      "filter_action": "PASS",
+      "risk_action": "SCALE_POSITION",
+      "size_scalar": 0.28,
+      "detail": {
+        "target_vol": 0.25,
+        "current_vol": 0.887,
+        "position_scalar": 0.28
+      }
+    }
+  ]
+}

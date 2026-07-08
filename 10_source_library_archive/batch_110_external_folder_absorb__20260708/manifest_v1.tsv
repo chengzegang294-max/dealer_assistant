@@ -1,0 +1,5 @@
+item_id	rel_path	kind	source_role	status	note
+M001	01_kimi_outputs/TRADING_BLOGGER_REFERENCE_v1.0.md	md	kimi_generated	ingested	按对象卡匹配交易博主资源的参考索引（后续抽出 TSV 索引）
+M002	provenance.md	md	contract	active	外部来源与收口裁决说明
+M003	02_absorb_index/trading_blogger_reference_index_v1.tsv	tsv	absorb_index	active	对象卡->平台->资源的可检索索引（用于优先级裁决与后续规则提取）
+M004	robocopy__external_feature__20260708.log	log	import_log	archived	外部快照复制日志（用于追溯与验收）

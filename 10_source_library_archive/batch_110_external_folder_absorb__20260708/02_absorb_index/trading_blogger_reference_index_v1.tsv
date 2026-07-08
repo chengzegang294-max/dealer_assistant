@@ -1,0 +1,10 @@
+object_card	platform	creator_or_channel	search_keywords	priority	fit_for_us	main_action	note
+BPB	youtube	Al Brooks	Al Brooks|Brooks Trading Course	P0	直接对齐 BPB（突破回调），可用 OHLC 做近似	提取可量化触发条件（腿数/回调深度/信号条质量）	不照搬整套课程，只抽“可编码规则候选”
+CHZL_BSD	bilibili	谷粟	谷粟解禅|谷粟解缠	P0	结构化强（分型/笔/中枢/买卖点）	提取最小定义（分型/笔/中枢/背驰/三买卖）	哲学/心法降级为 NOT_QUANT_YET
+CHZL_BSD	bilibili	北斗解缠	北斗解缠|缠论 笔 线段 中枢	P1	讲解细致，适合做定义对齐	补齐“级别/中枢划分”的可检索锚点	优先当定义校验，不当新规则源
+VP	youtube	Trader Dale	Trader Dale|Volume Profile	P1	POC/VAH/VAL/HVN/LVN 可对象化	提取 VP 关键输出与参数口径	A股数据降级：用 OHLCV 近似，不做 footprint/delta
+YTC	youtube	Jigsaw Trading	Jigsaw Trading|Order Flow Trading	P2	帮助理解微观结构概念	只抽概念词表与映射，不直接做规则	没有 tick/DOM 数据时不进硬门控
+VP	bilibili	德湃订单流交易分享	德湃订单流|Volume Profile|POC|VAH|VAL	P1	中文 VP 入门更高效	抽 VP 术语与示例，形成“近似实现边界”	同样遵守 A 股数据降级
+SYSTEM	youtube	Adam Grimes	Adam Grimes|The Art and Science of Trading	P1	对齐“概率/验证/系统化”方法论	抽“回测诚实性/验证流程”入合同层	更像流程规范而非对象卡规则
+PERIOD_QUEEN	youtube	Mark Minervini	Mark Minervini|Trend Template	P2	状态分类可借鉴	抽状态机输入候选（趋势模板条件）	美股语境，需做 A 股适配审计
+VOLFAC/VOLTARGET	youtube	TastyTrade	TastyTrade|Tom Sosnoff|IV Rank	P2	波动率与仓位框架可借鉴	抽“仓位与风险口径”到风控层	A股隐含波动率数据可用性需审计

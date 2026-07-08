@@ -1,0 +1,160 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows 的可靠文件复制                              
+-------------------------------------------------------------------------------
+
+  开始时间: 2026年7月8日 16:00:48
+        源: E:\downloads\Desktop\找系统\特征\
+      目标: D:\Stock\trading_assistant\10_source_library_archive\batch_110_external_folder_absorb__20260708\00_raw_snapshot\
+
+      文件: *.*
+	    
+Exc 文件: *.pyc
+	    
+  执行目录: __pycache__
+	    
+      选项: *.* /TEE /S /E /DCOPY:DA /COPY:DAT /XJ /R:1 /W:1 
+
+------------------------------------------------------------------------------
+
+	                 126	E:\downloads\Desktop\找系统\特征\
+	    新文件    		   19400	A5_FUNDAMENTAL_INTEGRATION_v1.0.md100%  
+	    新文件    		    4394	ALTERNATIVE_DATA_v1.0.md100%  
+	    新文件    		   13267	A_AUDIT_REPORT_v1.0.md100%  
+	    新文件    		   30546	BACKTEST_AND_ATTRIBUTION_DESIGN_v1.0.md100%  
+	    新文件    		   45698	BACKTEST_FRAMEWORK_DESIGN_v1.0.md100%  
+	    新文件    		   21975	BACKTEST_REPORT_TEMPLATE_v1.0.md100%  
+	    新文件    		    7837	BACKTEST_ROBUSTNESS_v1.0.md100%  
+	    新文件    		    4040	B_EXPERIMENT_B_EXP_20260707_223225_REPORT.md100%  
+	    新文件    		    5511	B_EXP_20260707_223225_REPORT.json100%  
+	    新文件    		   12159	CHZL_ZS_量化公式与互锁视图_v1.0.md100%  
+	    新文件    		   18960	Code X?投研=私人投研管家_导出.md100%  
+	    新文件    		    3864	CONVERTIBLE_BOND_v1.0.md100%  
+	    新文件    		   19662	DAILY_REPORT_GENERATOR_v1.0.md100%  
+	    新文件    		   14299	dashboard_preview.html100%  
+	    新文件    		   21030	DATA_AVAILABILITY_AUDIT_v1.0.md100%  
+	    新文件    		   18427	data_pipeline.py100%  
+	    新文件    		   25111	DATA_PIPELINE_ETL_v1.0.md100%  
+	    新文件    		    7237	DATA_PROVIDER_GUIDE_v1.0.md100%  
+	    新文件    		   20687	DEPLOYMENT_AND_OPERATIONS_v1.0.md100%  
+	    新文件    		   17293	DEVELOPER_HANDOVER_v1.0.md100%  
+	    新文件    		   26104	DOCUMENT_CATALOG_HANDBOOK_v1.0.md100%  
+	    新文件    		   15633	DY_INTEGRATION_v1.0.md100%  
+	    新文件    		   54933	EMPEROR_CONSOLE_UI_v1.0.md100%  
+	    新文件    		   15430	ERROR_HANDLING_DEGRADATION_v1.0.md100%  
+	    新文件    		   25341	EXTERNAL_STRATEGY_RAW_MATERIAL_v1.0.md100%  
+	    新文件    		   24201	EXTERNAL_STRATEGY_RAW_MATERIAL_v2.0.md100%  
+	    新文件    		   21323	EXTERNAL_STRATEGY_RAW_MATERIAL_v3.0.md100%  
+	    新文件    		   17139	EXTERNAL_STRATEGY_RAW_MATERIAL_v4.0.md100%  
+	    新文件    		   18615	EXTERNAL_STRATEGY_RAW_MATERIAL_v5.0.md100%  
+	    新文件    		   12778	EXTERNAL_STRATEGY_RAW_MATERIAL_v6.0.md100%  
+	    新文件    		    6286	EXTERNAL_STRATEGY_RAW_MATERIAL_v7.0.md100%  
+	    新文件    		   41906	EXTERNAL_SYSTEM_FUNCTION_MAP_v0.1.md100%  
+	    新文件    		   22671	EXTERNAL_SYSTEM_REFERENCE_v1.0.md100%  
+	    新文件    		   11670	EXTERNAL_SYSTEM_REFERENCE_v2.0.md100%  
+	    新文件    		    8397	E_DIRECTION_EXTRA_SEARCH_v1.0.md100%  
+	    新文件    		   22318	GAS_12_INDICATOR_MAP_P0_A_v1.0.md100%  
+	    新文件    		   12233	GLM_DELIVERY_04_CHANLUN_FULL_QUANT_v1.0.md100%  
+	    新文件    		    7610	GLM_DELIVERY_05_TK_FOREX_OPTIMIZATION_v1.0.md100%  
+	    新文件    		    9960	GLM_DELIVERY_06_TIER1_EXECUTION_FIELDS_v1.0.md100%  
+	    新文件    		   12106	GLM_DELIVERY_07_TIER1_EXECUTION_FIELDS_v2.0.md100%  
+	    新文件    		   10403	GLM_DELIVERY_09_A股跨市场适配审计与因子提取_v1.0.md100%  
+	    新文件    		    6670	GLM_MATERIAL_PACKAGE_INDEX.md100%  
+	    新文件    		   20552	GLM_SEARCH_01_执行层补充_跨市场_风控_另类数据_v1.0.md100%  
+	    新文件    		    5375	GLM_SEARCH_TASK_INSTRUCTION.md100%  
+	    新文件    		    5389	GLM_TASK_02_CHANLUN_OBJECT_CARD.md100%  
+	    新文件    		   10323	GLM_TASK_04_CHANLUN_FULL_QUANT_FORMULA.md100%  
+	    新文件    		    9440	GLM_TASK_05_TK_FOREX_OPTIMIZATION.md100%  
+	    新文件    		    9902	GLM_TASK_06_BACKTEST_FRAMEWORK.md100%  
+	    新文件    		    9243	GLM_TASK_07_A股特殊因子字段化提取.md100%  
+	    新文件    		    9623	GLM_TASK_08_第二优先级执行层对象卡.md100%  
+	    新文件    		   11388	GLM_TASK_09_A股跨市场适配审计.md100%  
+	    新文件    		    3714	GLOBAL_MACRO_v1.0.md100%  
+	    新文件    		   49389	governance_architecture.py100%  
+	    新文件    		   35383	GOVERNANCE_ARCHITECTURE_CHINA_v1.0.md100%  
+	    新文件    		   38774	GOVERNANCE_ARCHITECTURE_OPTIONS_v1.0.md100%  
+	    新文件    		    6543	INDEX_ENHANCEMENT_v1.0.md100%  
+	    新文件    		   13901	INDEX_v2.0.md100%  
+	    新文件    		   56856	LIVE_TRADING_SYSTEM_DESIGN_v1.0.md100%  
+	    新文件    		   25971	MACRO_ENVIRONMENT_SCORER_v1.0.md100%  
+	    新文件    		   11907	MASTER_INDEX_v1.0.md100%  
+	    新文件    		   21374	MASTER_PROGRAMMING_INSTRUCTION_v1.0.md100%  
+	    新文件    		   43750	MING_CABINET_HYBRID_ARCHITECTURE_v1.0.md100%  
+	    新文件    		   15349	MTF_SEB_v0.1.md100%  
+	    新文件    		   13130	object_card_atratio.py100%  
+	    新文件    		   18250	OBJECT_CARD_ATRATIO_P0_A__ActiveTradeRatio_v1.0.md100%  
+	    新文件    		   18778	OBJECT_CARD_BACKTEST_SCHEDULE_v1.0.md100%  
+	    新文件    		   18962	object_card_bpb.py100%  
+	    新文件    		   32000	OBJECT_CARD_BPB_P0_E__Brooks_Breakout_Pullback_v1.0.md100%  
+	    新文件    		   19361	object_card_chzl_bsd.py100%  
+	    新文件    		    9240	OBJECT_CARD_CHZL_BSD_P0_E__Chanlun_Buy_Sell_Signals_v1.0.md100%  
+	    新文件    		   23059	object_card_instb.py100%  
+	    新文件    		   16033	OBJECT_CARD_INSTB_P0_A__InstitutionalBehavior_v1.0.md100%  
+	    新文件    		   16760	object_card_kelly.py100%  
+	    新文件    		   19848	OBJECT_CARD_KELLY_P0_R__KellyCriterion_v1.0.md100%  
+	    新文件    		   20476	object_card_mflow.py100%  
+	    新文件    		   13160	OBJECT_CARD_MFLOW_P0_A__MoneyFlow_v1.0.md100%  
+	    新文件    		   24756	object_card_period_queen.py100%  
+	    新文件    		   25524	OBJECT_CARD_PERIOD_QUEEN_P0_F__CycleStateSystem_v1.0.md100%  
+	    新文件    		   17372	object_card_registry.py100%  
+	    新文件    		   17501	object_card_tkr7.py100%  
+	    新文件    		   24649	OBJECT_CARD_TKR7_P0_E__AO_Divergence_v1.0.md100%  
+	    新文件    		   17337	object_card_volfac.py100%  
+	    新文件    		   17110	OBJECT_CARD_VOLFAC_P0_A__VolatilityFactor_v1.0.md100%  
+	    新文件    		   23949	object_card_voltarget.py100%  
+	    新文件    		   21876	OBJECT_CARD_VOLTARGET_P0_R__VolatilityTargeting_v1.0.md100%  
+	    新文件    		   21804	object_card_vp.py100%  
+	    新文件    		   22276	OBJECT_CARD_VP_P0_E__VolumeProfile_v1.0.md100%  
+	    新文件    		   39862	object_card_ytc.py100%  
+	    新文件    		   35704	OBJECT_CARD_YTC_P0_E__YTC_Microstructure_v1.0.md100%  
+	    新文件    		   20441	PERFORMANCE_OPTIMIZATION_GUIDE_v1.0.md100%  
+	    新文件    		   38895	PROGRAMMING_AI_ULTIMATE_TASK_PACKAGE_v1.0.md100%  
+	    新文件    		   30812	prototype_console.py100%  
+	    新文件    		   57159	prototype_console_v2.py100%  
+	    新文件    		   14333	README_FOR_PROGRAMMING_AI.md100%  
+	    新文件    		    4399	REGULATORY_COMPLIANCE_v1.0.md100%  
+	    新文件    		   26706	RISK_ARCHITECTURE_P0_R_v1.0.md100%  
+	    新文件    		   25491	rkx_analysis.py100%  
+	    新文件    		    3401	rkx_analysis_20260707.json100%  
+	    新文件    		     146	rkx_price.csv100%  
+	    新文件    		   11251	SEARCH_RESERVE_LIST_HIJKLMNOPQ_v1.0.md100%  
+	    新文件    		    7827	SENTIMENT_INDICATORS_v1.0.md100%  
+	    新文件    		   27466	STRATEGY_BUNDLES_v1.0.md100%  
+	    新文件    		   20536	STRATEGY_DESIGN_REFERENCE_v1.0.md100%  
+	    新文件    		   30054	STRATEGY_DESIGN_REFERENCE_v2.0.md100%  
+	    新文件    		   22260	SYSTEM_ARCHITECTURE_DRAFT.md100%  
+	    新文件    		   40532	SYSTEM_ENHANCEMENT_DESIGN_v1.0.md100%  
+	    新文件    		    6984	TCA_DESIGN_v1.0.md100%  
+	    新文件    		   24702	TESTING_SPECIFICATION_v1.0.md100%  
+	    新文件    		   18611	TK外汇核心概念对象卡_Kimi版_v1.0.md100%  
+	    新文件    		   15257	TRADING_BLOGGER_REFERENCE_v1.0.md100%  
+	    新文件    		   18028	TRADING_SYSTEM_BLUEPRINT_v1.0.md100%  
+	    新文件    		   19812	TRADING_SYSTEM_COMPARISON_DESIGN_v1.0.md100%  
+	    新文件    		   31432	USER_IDEAS_INTEGRATION_v1.0.md100%  
+	    新文件    		   13499	USER_OPERATION_MANUAL_v1.0.md100%  
+	    新文件    		   33056	VOTE_DECISION_TABLE_P0_E_v1.0.md100%  
+	    新文件    		    4527	yansk_analysis_20260707.json100%  
+	    新文件    		     139	yansk_price.csv100%  
+	    新文件    		   22450	全仓库功能映射大表_v1.0.md100%  
+	    新文件    		   35598	全仓库功能映射大表_v2.0.md100%  
+	    新文件    		    6813	后续方向建议清单.md100%  
+	    新文件    		    3838	岩山科技对象卡分析报告_20260707.md100%  
+	    新文件    		    9512	执行层字段化优先级清单.md100%  
+	    新文件    		    4640	瑞芯微对象卡分析报告_20260707.md100%  
+	    新文件    		   28043	第二届因子大赛选手直言，绝大多数人不管炒股还是做因子，都栽在主观盘感上，主观交易有四个致命短板？（注：视频根据公开资料分享，如有侵犯相关权益，可联系删除）#因子量化[话题]# #交易员[话题]# #第二届因子大赛[话题]# #获奖感言[话题]# #PandaAI[话题]#_导出.md100%  
+	    新文件    		     289	问题2.txt100%  
+	    新文件    		    9038	问题3.txt100%  
+
+------------------------------------------------------------------------------
+
+                  总数        复制        跳过       不匹配        失败        其他
+       目录:         2         0         2         0         0         0
+       文件:       126       126         0         0         0         0
+       字节:    2.27 m    2.27 m         0         0         0         0
+       时间:   0:00:01   0:00:01                       0:00:00   0:00:00
+
+
+       速度:           1,490,333 字节/秒。
+       速度:              85.278 MB/分钟。
+   已结束: 2026年7月8日 16:00:50
+
