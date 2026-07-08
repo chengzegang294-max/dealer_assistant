@@ -17,3 +17,12 @@
 - `01_active_objects/butler_r0_object_cards_p0/*_field_contract_v1.tsv`
 - `01_active_objects/butler_r0_object_cards_p0/object_cards_p0_acceptance_matrix_v1.tsv`
 
+## 当前生成入口与产物
+
+- `GENERATOR`:
+  - `run_object_card_minimal_v1.py`
+- `ARTIFACT`:
+  - `acceptance_outputs/*.json`
+- `INDEX_NOTE`:
+  - `runtime_execution_card_v1.md`
+  - `acceptance_outputs/artifact_index_v1.tsv`
