@@ -1,0 +1,13 @@
+dimension	field	desc	primary_source	fallback_source	update_freq	cost_level	acceptance_check	degrade_rule	note
+interest_rate	cgb10y	中国10年期国债收益率（当前值）	Wind	tushare/akshare	daily	paid_or_free	current_not_null	DEGRADE_TO_NEUTRAL_50	用于历史分位+趋势调整
+interest_rate	cgb10y_history_5y	10Y收益率历史序列（约5年）	Wind	tushare/akshare	daily	paid_or_free	len>=252	DEGRADE_TO_NEUTRAL_50	用于分位计算
+exchange_rate	usdcny	在岸人民币兑美元当前值	Wind	tushare/akshare	daily	paid_or_free	current_not_null	DEGRADE_TO_NEUTRAL_50	用于20日变化率+波动率扣分
+exchange_rate	usdcny_history_5y	USDCNY历史序列（约5年）	Wind	tushare/akshare	daily	paid_or_free	len>=252	DEGRADE_TO_NEUTRAL_50	用于趋势/波动/偏离
+liquidity	m2_yoy	M2同比增速（最新可用）	Wind/央行官网	manual_input	monthly	paid_or_free	value_in_reasonable_range	KEEP_LAST_VALUE	月频滞后，日更时用最新值
+liquidity	shibor_overnight	SHIBOR隔夜利率	Wind/shibor.org	manual_input	daily	paid_or_free	current_not_null	DEGRADE_TO_NEUTRAL_50	短期资金成本代理
+liquidity	ashare_turnover	两市成交额（或市场成交量）	OHLCV聚合	manual_input	daily	free	current_not_null	DEGRADE_TO_NEUTRAL_50	作为“市场实际流动性”子指标
+liquidity	ashare_turnover_history_20d	两市成交额20日历史序列	OHLCV聚合	manual_input	daily	free	len>=20	DEGRADE_TO_NEUTRAL_50	用于volume_ratio
+risk_appetite	hv20_csi300	沪深300 20日历史波动率（HV20）	OHLCV计算	Wind	daily	free	current_not_null	DEGRADE_TO_NEUTRAL_50	风险偏好主代理
+risk_appetite	vix	VIX指数（可选）	Wind/Yahoo	none	daily	paid_or_free	if_null_ok	USE_HV_ONLY	缺失则只用HV20
+policy	policy_events	政策事件列表（可规则识别或人工录入）	rule_scrape/manual	manual_input	event_weekly	free_or_manual	list_ok	DEFAULT_EMPTY_LIST	事件驱动，默认空列表
+policy	policy_analyst_input	人工覆盖（可选）	manual_input	none	weekly	free_or_manual	if_null_ok	NO_OVERRIDE	默认不覆盖，保持中性

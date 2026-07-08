@@ -12,3 +12,4 @@ M010	03_quantize/promoted_code_from_raw_snapshot/README.md	md	quantize_note	acti
 M011	02_absorb_index/multi_ai_discussion_prompt_pack_v1.md	md	contract	active	多 AI 讨论题面与结构化输出格式（强制可吸收）
 M012	02_absorb_index/internal_rebuild_requirements_from_kimi_v1.md	md	contract	active	Kimi 全库材料压缩后的“我们要实现的内容与技术指标清单”（用于内部重做与重分类）
 M013	02_absorb_index/kimi_raw_snapshot_module_router_v1.md	md	absorb_index	active	raw_snapshot 模块级路由索引（重分类导航，不改原文）
+M014	02_absorb_index/macro_5d_score_field_contract_v1.tsv	tsv	contract	active	宏观5维评分的数据字段合同（数据源/频率/验收/降级）
