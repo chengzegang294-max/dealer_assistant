@@ -19,3 +19,4 @@ M017	02_absorb_index/daily_report_field_contract_v1.tsv	tsv	contract	active	日�
 M018	02_absorb_index/data_source_probe_targets_v1.tsv	tsv	absorb_index	active	数据源落点核查结果与下一动作
 M019	02_absorb_index/daily_ohlcv_recovery_or_substitute_plan_v1.tsv	tsv	contract	active	日线 OHLCV 恢复/替代清单（含真实已存在样本落点）
 M020	02_absorb_index/daily_ohlcv_real_landing_decision_v1.md	md	contract	active	日线 OHLCV 真实落点裁决（立即可用 vs 标准目标）
+M021	02_absorb_index/provider_priority_decision_contract_v1.tsv	tsv	contract	active	主备数据源优先级与启用条件裁决
