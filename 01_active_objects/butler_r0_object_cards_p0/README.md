@@ -16,3 +16,4 @@
 
 - `*_field_contract_v1.tsv`：对象卡字段合同（我们自己的版本）
 - `object_cards_p0_acceptance_matrix_v1.tsv`：最小验收样本与运行入口矩阵
+- `object_cards_p1_runtime_dependency_matrix_v1.tsv`：下一批对象卡的 runtime 输入依赖与降级边界

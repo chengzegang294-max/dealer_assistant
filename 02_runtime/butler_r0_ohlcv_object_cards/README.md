@@ -24,6 +24,7 @@
   - `tushare_daily_probe_v1.py`
   - `akshare_daily_probe_v1.py`
   - `baostock_daily_probe_v1.py`
+  - `baostock_daily_fetch_to_raw_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
   - `probe_outputs/*`

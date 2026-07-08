@@ -11,6 +11,7 @@
   - `02_runtime/butler_r0_ohlcv_object_cards/tushare_daily_probe_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/akshare_daily_probe_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/baostock_daily_probe_v1.py`
+  - `02_runtime/butler_r0_ohlcv_object_cards/baostock_daily_fetch_to_raw_v1.py`
 - `INDEX_NOTE`:
   - 当前文件
   - `catalog_v1.tsv`
@@ -25,9 +26,11 @@
 
 - 首个提升样本来自 `Baostock` 成功探测：
   - `300302_SZ__1d__baostock__20240101_20240131.csv`
+- 后续新增标的优先通过 `baostock_daily_fetch_to_raw_v1.py` 正式写入，并自动更新 `catalog_v1.tsv`
 - 当前仍是最小正式入口，不等于完整主数据仓。
 
 ## 证据强度
 
 - `probe_outputs/*.json` 与 probe 原始 csv：`hard`
 - 当前目录内由 probe 提升的正式输入副本：`hard_promoted_from_probe`
+- 当前目录内由正式 fetch 直接生成的 csv 与 metadata：`hard`

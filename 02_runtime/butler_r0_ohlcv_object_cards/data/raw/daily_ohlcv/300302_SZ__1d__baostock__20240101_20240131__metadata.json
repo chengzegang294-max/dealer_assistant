@@ -1,0 +1,29 @@
+{
+  "fetch_name": "baostock_daily_fetch_to_raw_v1",
+  "symbol": "300302.SZ",
+  "bs_symbol": "sz.300302",
+  "timeframe": "1d",
+  "provider": "Baostock",
+  "start_date": "20240101",
+  "end_date": "20240131",
+  "producer": "baostock_daily_fetch_to_raw_v1.py",
+  "repo_role": "formal_raw_daily_ohlcv",
+  "catalog_path": "02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/catalog_v1.tsv",
+  "output_csv": "02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/300302_SZ__1d__baostock__20240101_20240131.csv",
+  "status": "success",
+  "rows": 22,
+  "columns": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "amount",
+    "pct_chg",
+    "symbol",
+    "provider_code"
+  ],
+  "first_trade_date": "2024-01-02",
+  "last_trade_date": "2024-01-31"
+}
