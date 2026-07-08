@@ -32,3 +32,8 @@ mindset_bias	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环
 risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L54-L60	gas_resonance_level_rr_and_position	共振级别给出仓位上限与最小 R:R，可作为 YZ-A 风控与等待的旧冻结层可检索锚点	同主题证据：S/A/B/C/D 分级与 10%试仓
 execution_discipline	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L77-L85	gas_layered_stoploss_defense	分层止损与移动止盈的出场框架可作为 YZ-A 执行纪律的旧冻结层可检索锚点	分层防护：初始止损/技术止损/极限止损/移动止盈/目标止盈
 risk_filter	11_frozen_summaries_archive\batch_01_selected\#量化分析体系V1.2.md	L100-L106	quant_iter_backtest_gate_rr	迭代规则要求回测验证（R:R>1.5）可作为 YZ-A 风控过滤的旧冻结层可检索锚点	只作为验收门槛对照，不升级为硬门控
+planning_and_process	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L8-L12	sys_5step_flow_v12	五步闭环的标准化交易链路定义可作为 YZ-A 计划/流程优先的旧冻结层可检索锚点	选股→择时→买入→持仓管理→卖出
+execution_discipline	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L42-L46	sys_rr_filter_v12	买入同时设止损/目标与 R:R 门槛过滤可作为 YZ-A 执行纪律与风控过滤的旧冻结层可检索锚点	R:R<1:1.5 禁止买入
+planning_and_process	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L97-L102	sys_weekly_review_plan_v12	周复盘流程明确收口到“制定下周交易计划”，可作为 YZ-A 复盘-计划闭环的旧冻结层可检索锚点	统计指标→分析共性→制定下周计划
+psychology_state	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L143-L145	sys_emotion_score_threshold_v12	情绪评分阈值直接给出禁交易规则，可作为 YZ-A 状态不对就停手的旧冻结层可检索锚点	总分>18分：禁止交易
+psychology_state	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L147-L155	sys_emotion_traps_rules_v12	FOMO/报复交易/盈利膨胀/亏损恐惧/锚定效应的量化应对可作为 YZ-A 心理管理对照证据	只交易计划内标的；连续亏损强制休息；预设止损单不参与决策；不问成本
