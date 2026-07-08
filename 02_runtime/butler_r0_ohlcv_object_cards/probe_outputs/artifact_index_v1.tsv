@@ -1,0 +1,2 @@
+artifact_file	repo_path	producer	scope	evidence_mode	status	note
+tushare_daily_probe__300302_SZ__20240101_20240131__metadata.json	02_runtime/butler_r0_ohlcv_object_cards/probe_outputs/tushare_daily_probe__300302_SZ__20240101_20240131__metadata.json	tushare_daily_probe_v1.py	300302.SZ 20240101-20240131	hard	failed_token_missing	当前终端实跑；已证明本机尚未配置 TUSHARE_TOKEN

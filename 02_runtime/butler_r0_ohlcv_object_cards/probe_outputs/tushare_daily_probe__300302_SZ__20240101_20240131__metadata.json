@@ -1,0 +1,12 @@
+{
+  "probe_name": "tushare_daily_probe_v1",
+  "symbol": "300302.SZ",
+  "start_date": "20240101",
+  "end_date": "20240131",
+  "producer": "tushare_daily_probe_v1.py",
+  "repo_role": "probe_output",
+  "status": "failed",
+  "token_source": "missing",
+  "output_csv": "02_runtime/butler_r0_ohlcv_object_cards/probe_outputs/tushare_daily_probe__300302_SZ__20240101_20240131.csv",
+  "failure_reason": "tushare_token_missing"
+}
