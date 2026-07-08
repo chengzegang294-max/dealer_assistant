@@ -1,0 +1,13 @@
+{
+  "probe_name": "akshare_daily_probe_v1",
+  "symbol": "300302.SZ",
+  "symbol6": "300302",
+  "start_date": "20240101",
+  "end_date": "20240131",
+  "producer": "akshare_daily_probe_v1.py",
+  "repo_role": "probe_output",
+  "status": "failed",
+  "output_csv": "02_runtime/butler_r0_ohlcv_object_cards/probe_outputs/akshare_daily_probe__300302__20240101_20240131.csv",
+  "failure_reason": "akshare_api_error",
+  "failure_detail": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+}

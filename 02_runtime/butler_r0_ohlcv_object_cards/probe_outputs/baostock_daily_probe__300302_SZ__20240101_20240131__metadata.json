@@ -1,0 +1,25 @@
+{
+  "probe_name": "baostock_daily_probe_v1",
+  "symbol": "300302.SZ",
+  "bs_symbol": "sz.300302",
+  "start_date": "20240101",
+  "end_date": "20240131",
+  "producer": "baostock_daily_probe_v1.py",
+  "repo_role": "probe_output",
+  "status": "success",
+  "output_csv": "02_runtime/butler_r0_ohlcv_object_cards/probe_outputs/baostock_daily_probe__300302_SZ__20240101_20240131.csv",
+  "rows": 22,
+  "columns": [
+    "date",
+    "code",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "amount",
+    "pctChg"
+  ],
+  "first_trade_date": "2024-01-02",
+  "last_trade_date": "2024-01-31"
+}
