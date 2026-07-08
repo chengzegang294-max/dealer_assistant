@@ -9,7 +9,9 @@
 
 - `volfac_300302_sz_1d_output.json`
 - `bpb_601991_sh_1d_output.json`
+- `ytc_601991_sh_daily_weekly_output.json`
 
 ## 生成入口
 
 - `02_runtime/butler_r0_ohlcv_object_cards/run_object_card_minimal_v1.py`
+- `02_runtime/butler_r0_ohlcv_object_cards/run_ytc_daily_weekly_minimal_v1.py`

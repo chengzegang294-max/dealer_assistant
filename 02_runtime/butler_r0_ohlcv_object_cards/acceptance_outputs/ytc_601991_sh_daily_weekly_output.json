@@ -1,0 +1,31 @@
+{
+  "object_id": "YTC_P0_E",
+  "input_rows": {
+    "daily": 1538,
+    "weekly": 326
+  },
+  "as_of_date": "2026-05-13",
+  "signal_payload": {
+    "object_id": "YTC_P0_E",
+    "ytc_srf_tf_level": null,
+    "ytc_srf_htf_level": null,
+    "ytc_srf_zone_width": 0.15625,
+    "ytc_srf_is_valid": true,
+    "ytc_srf_type": "none",
+    "ytc_signal_type": "NONE",
+    "ytc_signal_subtype": "NONE",
+    "ytc_direction": "NONE",
+    "ytc_signal_strength": 0,
+    "ytc_signal_confidence": 0.45,
+    "ytc_filter_action": "WAIT",
+    "ytc_risk_action": "NONE",
+    "ytc_size_scalar": 0.0,
+    "ytc_astock_period_limit": "daily_weekly",
+    "ytc_abort_reason": "no_daily_weekly_event_detected"
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": true,
+    "degrade_reason": "daily_weekly_only_without_intraday_60m_5m"
+  }
+}
