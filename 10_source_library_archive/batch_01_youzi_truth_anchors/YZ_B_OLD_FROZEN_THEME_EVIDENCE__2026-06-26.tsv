@@ -41,3 +41,6 @@ intraday_shape	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核
 intraday_shape	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L179-L179	m06_tail_sell_rule_v12	四卖（尾盘卖）清仓条目化，可作为 YZ-B 尾盘动作层对照证据	动作层只执行：尾盘卖出条件触发就清仓
 risk_filter	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L184-L185	m06_ultrashort_position_caps_v12	单只/单日超短仓位上限条目化，可作为 YZ-B 风险过滤对照证据	单只≤20%，单日≤50%
 execution_discipline	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L187-L187	m06_2loss_pause_v12	连续亏损触发停手规则条目化，可作为 YZ-B 执行纪律/停手对照证据	连续2笔超短亏损=停止超短3天
+topic_cycle	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L238-L242	m05_retreat_order_v12	风险信号与撤退顺序条目化，可作为 YZ-B 的撤退顺序主证据	清仓补涨→清仓龙头→中军减仓→清仓中军
+topic_cycle	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L41-L41	m05_tide_clear_rule_v12	题材退潮信号出现=立即清仓，可作为 YZ-B 的退潮动作层对照证据	动作层只执行：退潮信号一出就清仓
+risk_filter	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L241-L245	m06_position_dynamic_formula_v12	仓位动态公式与单笔仓位上限条目化，可作为 YZ-B 的仓位动态与风险过滤对照证据	实际仓位=基础仓位×信号质量乘数×市场环境系数；单笔仓位=min(实际仓位,25%账户资金)
