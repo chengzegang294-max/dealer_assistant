@@ -18,6 +18,8 @@
 - 当前边界：
   - `Volty` 有源码，可先做公式骨架和字段草案
   - `XBreaking` 当前只有 probe 和二进制本体，先做 probe 级字段草案
+  - `Volty` 当前已补齐 `EURUSD/H1` fresh-run `DumpSeries` 证据，`series_row_count = 350`
+  - `XBreaking` 当前已补齐 `EURUSD/H1` fresh-run `csv + tester report + tester log`
 
 ## Volty 家族
 
@@ -135,6 +137,63 @@
 - 当前已观测到的 buffer 访问形态（首轮）：
   - `buffer_0` 可读：`copied=200|non_empty=200|first_valid=0|last_valid=0`
   - `buffer_1..7` 不可读：`copied=-1|err=4806`
+- 当前第二轮 fresh-run 仍重复得到：
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第三轮 validation-matrix（`EURUSD / H4 / IndicatorTf=H4`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第四轮 validation-matrix（`GBPUSD / H4 / IndicatorTf=H4`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第五轮 validation-matrix（`USDJPY / H4 / IndicatorTf=H4`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第六轮 validation-matrix（`USDJPY / H1 / IndicatorTf=H1`）仍重复得到：
+  - `chart_tf=PERIOD_H1`
+  - `indicator_tf=PERIOD_H1`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第七轮 validation-matrix（`XAUUSD / H4 / IndicatorTf=H4`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第八轮 validation-matrix（`US30 / H4 / IndicatorTf=H4`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前第九至第十二轮 validation-matrix（`EURUSD / H4` 与 `XAUUSD / H4`，窗口分别为 `2025.01.03~2025.01.10`、`2025.01.07~2025.01.14`）仍重复得到：
+  - `chart_tf=PERIOD_H4`
+  - `indicator_tf=PERIOD_H4`
+  - `handle=10`
+  - `init_err=0`
+  - `buffer_0 copied=200|non_empty=200|last_valid=0`
+  - `buffer_1..7 copied=-1|err=4806`
+- 当前已补充强相关运行佐证：
+  - `tester report = xbreaking_probe_portable.htm`
+  - `tester log = 20260701_20260701T041405.log`
 - 当前不能确认：
   - 每个 buffer 的交易语义
   - 最终突破判定公式
@@ -173,14 +232,24 @@
 ## 当前裁决
 
 - `Volty`
-  - 已达到“可写字段草案”的程度
-  - 下一步更适合做 `probe 结果入口 + 字段映射`
+  - 已达到“字段草案 + series 级证据闭环”的程度
+  - `mode 0..6` 当前已拿到 `H1 DumpSeries` 行级证据，可继续升级 `field_ready_v1`
 - `XBreaking`
-  - 先保留为 `probe-first` 家族
-  - 下一步更适合做 `buffer 语义验证`，不是直接接策略
+  - 已达到“probe + report + journal 证据闭环”的程度
+  - 已额外通过 `EURUSD / H4` 与 `GBPUSD / H4` validation-matrix 复核 `buffer0_only`
+  - 已额外通过 `USDJPY / H4` validation-matrix 复核 `buffer0_only`
+  - 已额外通过 `USDJPY / H1` validation-matrix 复核 `buffer0_only`
+  - 已额外通过 `XAUUSD / H4` 与 `US30 / H4` validation-matrix 复核 `buffer0_only`
+  - 已额外通过两组日期窗口（`2025.01.03~2025.01.10`、`2025.01.07~2025.01.14`）复核 `buffer0_only`
+  - 当前这些验证仍集中在单一 `MT5` 环境：`ICMarketsSC-Demo__52886989`
+- 当前 rerun 入口已支持 `DataRootOverride`，为第二环境接入预留了显式 data root 选择能力
+- 当前 rerun / matrix 入口已支持 `EnvironmentInventoryJson + EnvironmentSelector`，可直接按 `environment_label / data_root_hash / server / login` 从环境快照选择目标 `MT5` 环境
+  - 仍保留为 `probe-first` 家族
+  - 下一步更适合做 `buffer 语义验证`，不是继续补 report，也不是直接接策略
 
 ## 下一步建议
 
-1. 在新仓库为 `Volty` 开一份 `probe result intake` 入口
-2. 在新仓库为 `XBreaking` 开一份 `buffer semantics log`
-3. 若未来通过外部途径拿到 `XBreaking` 源码或公式说明，再升级 `XBreaking` 字段草案到 v1
+1. 用 `Volty` 最新 `H1 DumpSeries` 行级证据复核 `mode 0..6 -> field` 映射
+2. 用 `XBreaking` 已补齐的 `EURUSD/H1 + EURUSD/H4 + GBPUSD/H4 + USDJPY/H4 + USDJPY/H1 + XAUUSD/H4 + US30/H4 + 两组日期窗口样本` 结果继续复核 `buffer0_only` 是否稳定
+3. 下一轮优先改 broker/demo 环境或补更远日期段，再判断 `buffer0_only` 是否可升为更稳定的平台特征
+4. 若未来通过外部途径拿到 `XBreaking` 源码或公式说明，再升级 `XBreaking` 字段草案到 v1

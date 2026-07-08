@@ -10,6 +10,7 @@
 - `volty_xbreaking_field_draft_v1.md`
 - `volty_probe_result_intake_v1.md`
 - `xbreaking_buffer_semantics_log_v1.md`
+- `crypto_exchange_data_onramp_plan_v1.md`
 
 ## 当前运行时锚点
 
@@ -23,3 +24,4 @@
 
 - 这层文档负责把 `12_tooling_runtime_archive` 里的 MT 家族锚点继续推进成字段和工程口径。
 - 当前已从“字段草案”继续推进到“probe intake / semantics log + runtime batch pack”层。
+- 当前还额外记录了一份“币安 / OKX 币圈数据接入方案”，用于未来把交易所原生数据接入到新仓标准化契约，而不直接改当前 `MT5` 主线。

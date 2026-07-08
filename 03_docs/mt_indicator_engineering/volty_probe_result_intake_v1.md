@@ -76,11 +76,13 @@
 
 ## 当前状态
 
-- 当前已经把一份历史 `Volty` probe 结果正式落回新仓库。
-- 这份证据来自旧仓库已落盘产物回收，不是 `20260626` 在本机终端目录自动新扫出来的最新文件。
-- `20260626` 已对本机 `MetaQuotes` 终端目录做过一次自动扫描：
-  - `csv`: `not found`
-  - 说明当前本机终端目录里还没有新的 `Volty csv`
+- 当前已经同时持有两层 `Volty` 证据：
+  - 一份 `H4` 历史回收证据
+  - 一份 `H1 + DumpSeries=1` fresh-run 证据
+- 当前 `Volty` 侧最关键的推进不是“又找到一个 report”，而是：
+  - 已补齐旧实例 `EURUSD/H1` 历史缺口
+  - 已把 `MT4Probe_Volty` 升级到带 `DumpSeries` 的编译物
+  - 已拿到 `series_row_count = 350`
 
 ## 第一份历史回收证据
 
@@ -127,7 +129,41 @@
 
 ## 下一步
 
-1. 继续补 `Volty` 的明确 `tester log / journal`
-2. 若本机 MT4 终端后续再跑出新 `csv`，把它和这份历史证据做一次前后对照
-3. 结合 `mode 1/4/5/6/7` 的稳定性，复核字段草案里的 `mode -> field` 映射
-4. 再决定哪些 `Volty` 字段可以升级到 `field_ready_v1`
+## 第二份 fresh-run 证据
+
+- 证据批次：
+  - `date_tag`: `20260701_fresh_run`
+  - `platform`: `MT4`
+  - `symbol`: `EURUSD`
+  - `timeframe`: `H1`
+  - `evidence_mode`: `fresh_run`
+- 产物路径：
+  - `csv`: `02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\artifacts\volty\csv\MT4_probe_Volty_EURUSD_H1_20250102_000000_20260701T035759.csv`
+  - `tester_report`: `02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\artifacts\volty\tester_report\mt4probe_volty_dumpseries_portable_20260701T035759.htm`
+  - `log`: `02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\artifacts\volty\log\20260701_20260701T035759.log`
+  - `history_patch_summary`: `02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\artifacts\volty\history_patch\fill_mt4_eurusd_h1_history_latest.json`
+- probe 结论：
+  - `mode_count`: `8`
+  - `non_empty_modes`: `0,1,3,4,5,6,7`
+  - `stable_modes`: `1,4,5,6,7`
+  - `error_modes`: `none`
+  - `used_common`: `0`
+  - `status_row`: `DONE`
+  - `series_row_count`: `350`
+  - `volty_trend_state`: `up`
+- 关键链路：
+  - `tester log` 已明确记录第一次失败原因为 `EURUSD60` 历史断层
+  - `fill_mt4_eurusd_h1_history_v1.py` 已把 `VTMarkets-Live 2\EURUSD-VIP60.hst` 的缺失 bar 合并进当前旧实例
+  - `run_volty_dumpseries_gui_once.ps1` 已完成自动 rerun
+  - 当前 `csv` 已包含 `series;...` 行，`DumpSeries=1 / DumpModeStart=0 / DumpModeEnd=6` 已被实证
+- 字段化裁决：
+  - `volty_up_stop / volty_dn_stop`：`field_ready`
+  - `volty_trend_state`：`field_ready`
+  - `volty_flip_signal`：`field_ready_candidate`
+  - `volty_lower_band_raw / volty_upper_band_raw`：`field_ready`
+
+## 下一步
+
+1. 用这份 fresh-run `series` 结果回看 `volty_xbreaking_field_draft_v1.md` 的 `mode -> field` 映射
+2. 决定 `volty_flip_signal` 是否可从 `diag_only` 升级为正式字段
+3. 把当前主阻塞切换到 `XBreaking tester report`
