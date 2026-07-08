@@ -191,7 +191,8 @@
 1. `YZ-A01/A02/A03` 的显式映射检查已经完成，当前继续维持对象级锚点，不强行并入旧卡号体系。
 2. `YZ-B01 / YZ-B02 / YZ-B03 / YZ-B04` 已完成首批真实摘录卡，`YZ-B` 对象组入口短摘要、主题簇映射证据与旧冻结层同主题证据表已落盘（不升级成硬门控、不并旧卡号）。
 3. 当前维护态优先继续做 `YZ-A / YZ-B` 的主题簇对照与行号证据增强，不继续加更多书，也不升级成硬门控。
-4. 完成后同步回写：
+4. `2026-07-08` 已完成一轮默认同步集回填；当前最顺主线固定为 `batch_01_youzi_truth_anchors` 的维护态同步，不另开新包。
+5. 完成后同步回写：
    - `10_source_library_archive\batch_01_youzi_truth_anchors\README.md`
    - `10_source_library_archive\batch_01_youzi_truth_anchors\youzi_truth_anchor_manifest_v1.tsv`
    - `S_BUCKET_02_YOUZI_TRUTH_ANCHOR_CANDIDATES__2026-06-26.md`
