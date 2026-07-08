@@ -33,3 +33,7 @@ risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻
 leader_and_mainline	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L93-L98	gas_midcap_leader_lag_ratio	中军/龙头/补涨的仓位配比可作为 YZ-B 主线协同与层级识别的旧冻结层可检索锚点	中军:龙头:补涨=4:3:2（只做主题簇级对照）
 risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L120-L127	gas_filter_sources_table	过滤条件的多源归档与禁忌过滤框架，可作为 YZ-B 风控过滤的旧冻结层可检索锚点	过滤条件模块：牛熊分界/大周期/量价/评分阈值/形态误差/KD超买超卖
 risk_filter	11_frozen_summaries_archive\batch_01_selected\#量化分析体系V1.2.md	L100-L106	quant_iter_backtest_gate_rr	迭代规则要求回测验证（R:R>1.5）可作为 YZ-B 风控过滤的旧冻结层可检索锚点	只作为验收门槛对照，不升级为硬门控
+topic_cycle	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L80-L86	m05_fade_criteria_v12	题材退潮综合判定条目化可作为 YZ-B 的群体性退潮判据主证据（判据层）	满足2项以上触发：涨停数下降/龙头大跌/补涨跌停潮/中军跌破均线/成交额衰减/指数跌破
+topic_cycle	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L88-L91	m05_exit_priority_ladder_v12	止损/退潮/系统性风险的退出优先级可作为 YZ-B 的阶段撤退优先级主证据	止损优先于止盈；退潮信号优先于技术卖点；系统性风险优先于个股
+leader_and_mainline	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L117-L127	m05_roles_table_v12	中军/龙头/补涨的角色区分表可作为 YZ-B 主线/协同/末期识别的旧冻结层可检索锚点	市值/涨停特征/走势/资金性质/持续性/风险偏好六维区分
+leader_and_mainline	11_frozen_summaries_archive\_raw_snapshot_batch09\03_迭代后核心母版V1.2\02_题材与标的选择模块\[模块]题材中军_筛选建仓协同撤退全体系.md	L128-L131	m05_midcap_timing_v12	中军识别时机（发酵第1-5天）可作为 YZ-B 中军识别时机与板块扩散效应主证据	第1-3天观察；第3-5天确认；确认后不更换
