@@ -1,0 +1,21 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 KELLY_P0_R	fixed_literal	eq_KELLY_P0_R	no_degrade
+kelly_p	float	yes	胜率	trade_log_stats	0_le_value_le_1	sample_lt_30_sets_zero
+kelly_q	float	yes	败率 = 1-p	trade_log_stats	0_le_value_le_1	recompute_from_p
+kelly_b	float	yes	赔率（盈亏比）	trade_log_stats	value_ge_0	use_small_epsilon_if_zero
+kelly_w	float	yes	平均盈利	trade_log_stats	value_ge_0	use_0_if_no_wins
+kelly_l	float	yes	平均亏损绝对值	trade_log_stats	value_ge_0	use_small_epsilon_if_zero
+kelly_cost_rate	float	yes	交易成本率	market_config	value_ge_0	use_market_default
+kelly_sample_size	int	yes	样本量	trade_log_stats	value_ge_0	sample_lt_30_marks_insufficient
+kelly_t1_penalty_factor	float	no	A股T+1惩罚系数	market_config	0_le_value_le_1	default_0_8_for_ashare
+kelly_limit_freeze_flag	bool	no	涨跌停冻结	A_stock_limit_filter	bool_present	default_false
+kelly_astock_enabled	bool	yes	A股模式开关	market_config	bool_present	default_true_for_ashare
+kelly_f_star	float	yes	Kelly 原始理论仓位	kelly_formula	value_ge_0	use_0_if_negative_edge
+kelly_f_half	float	yes	半凯利	kelly_formula	value_ge_0	use_0_if_f_star_zero
+kelly_f_quarter	float	yes	四分之一凯利	kelly_formula	value_ge_0	use_0_if_f_star_zero
+kelly_regime	enum	yes	normal/high_vol/low_vol/crisis/recovery	regime_engine	in_allowed_set	default_normal
+kelly_adaptive_factor	float	yes	自适应系数 0.25-1.0	regime_engine	0.0_le_value_le_1.0	default_0_5
+kelly_confidence_score	int	yes	参数置信度 0-10	sample_and_stability	0_le_value_le_10	default_0
+kelly_f_actual	float	yes	实际执行仓位	min_formula_and_caps	0_le_value_le_1	default_0
+kelly_risk_budget	float	yes	最终风险预算	capital_times_actual	value_ge_0	default_0
+kelly_abort_reason	string	no	禁做或降级原因	rules_engine	string_or_empty	empty_if_pass

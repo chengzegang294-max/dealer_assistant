@@ -1,0 +1,29 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 PERIOD_QUEEN_P0_F	fixed_literal	eq_PERIOD_QUEEN_P0_F	no_degrade
+pq_state	enum	yes	七态状态机核心输出	pq_rules_engine	in_allowed_set	default_ATTACK_UNSUSTAINED
+pq_state_prev	enum	no	上一状态	state_history	in_allowed_set_or_empty	empty_if_first_run
+pq_state_duration	int	yes	当前状态持续天数	state_history	value_ge_0	default_0
+pq_state_confidence	float	yes	状态识别置信度 0-1	evidence_scoring	0_le_value_le_1	default_0_3
+pq_transition_trigger	string	yes	状态切换原因	rules_engine	non_empty	use_state_blur_trigger
+pq_leading_stock	string	no	领涨个股	top_rank_and_limit_time	string_or_empty	empty_if_missing
+pq_leading_stock_sustained	bool	yes	领涨持续性	rank_follow_up	bool_present	default_false
+pq_leading_stock_new_high	bool	yes	领涨是否收盘创新高	daily_ohlcv	bool_present	default_false
+pq_space_board_sustained	bool	yes	空间板是否持续	board_tracker	bool_present	default_false
+pq_space_board_count	int	yes	当前空间板高度	board_tracker	value_ge_0	default_0
+pq_attack_formation_count	int	yes	攻击阵型个股数	top_rank_cluster	value_ge_0	default_0
+pq_attack_formation_valid	bool	yes	攻击阵型是否有效	top_rank_cluster	bool_present	default_false
+pq_tolerance_exist	bool	yes	包容度是否存在	failed_stock_repair_tracker	bool_present	default_false
+pq_tolerance_score	float	yes	包容度评分 0-1	repair_tracker	0_le_value_le_1	default_0
+pq_tide_force_exist	bool	yes	退潮力量是否存在	tide_tracker	bool_present	default_false
+pq_tide_force_score	float	yes	退潮力量评分 0-1	tide_tracker	0_le_value_le_1	default_0
+pq_ten_day_rank	json	yes	10日区间涨幅榜前十	top_rank_source	json_array_or_empty	use_empty_array_and_halt
+pq_ten_day_rank_change	int	yes	前十换人数	rank_diff	value_ge_0	default_0
+pq_cutting_condition_met	bool	yes	切割条件是否满足	cutting_rule	bool_present	default_false
+pq_gestation_new_faces	int	yes	孕化阶段新面孔数	rank_tracker	value_ge_0	default_0
+pq_gestation_new_faces_sustained	bool	yes	新面孔是否持续	rank_tracker	bool_present	default_false
+pq_trading_permission	enum	yes	FULL/REDUCED/EXIT_ONLY/HALT	state_mapping	in_allowed_set	default_HALT
+pq_position_max_size	float	yes	状态上限仓位 0-1	state_mapping	0_le_value_le_1	default_0
+pq_strategy_bundle	string	no	当前状态策略包名	state_mapping	string_or_empty	empty_if_none
+pq_allowed_objects	json	yes	允许对象卡列表	state_mapping	json_array_or_empty	use_empty_array
+pq_forbidden_objects	json	yes	禁止对象卡列表	state_mapping	json_array_or_empty	use_empty_array
+pq_entry_min_votes_adjusted	int	yes	调整后的投票门槛	state_mapping	value_ge_0	default_4
