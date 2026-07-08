@@ -29,3 +29,6 @@ risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环�
 risk_filter	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L268-L269	sys_external_shock_flat	外部冲击（重大政策/国际事件）应对为“空仓观望”，与 YZ-A 的“风险优先/等待明朗”同主题	外部冲击空仓证据
 risk_filter	11_frozen_summaries_archive\batch_01_selected\03_交易策略执行模块\[模块]交易策略与优化_波段超短特色优化综合体系.md	L238-L240	m06_system_risk_flat	“系统性风险=仓位×0.0=空仓”，与 YZ-A 的风险优先/状态不好不交易同主题	系统风险下的空仓规则证据
 mindset_bias	11_frozen_summaries_archive\batch_01_selected\05_交易系统闭环模块\[模块]交易系统_五步骤资金风控复盘心理全体系.md	L155-L155	sys_anchor_bias	“锚定效应：不问成本”属于认知偏差纠正，与 YZ-A 的“去形式偏执”同主题	偏差校正类证据
+risk_filter	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L54-L60	gas_resonance_level_rr_and_position	共振级别给出仓位上限与最小 R:R，可作为 YZ-A 风控与等待的旧冻结层可检索锚点	同主题证据：S/A/B/C/D 分级与 10%试仓
+execution_discipline	11_frozen_summaries_archive\batch_01_selected\体系GAS_可量化逻辑拆解归档V1.2.md	L77-L85	gas_layered_stoploss_defense	分层止损与移动止盈的出场框架可作为 YZ-A 执行纪律的旧冻结层可检索锚点	分层防护：初始止损/技术止损/极限止损/移动止盈/目标止盈
+risk_filter	11_frozen_summaries_archive\batch_01_selected\#量化分析体系V1.2.md	L100-L106	quant_iter_backtest_gate_rr	迭代规则要求回测验证（R:R>1.5）可作为 YZ-A 风控过滤的旧冻结层可检索锚点	只作为验收门槛对照，不升级为硬门控
