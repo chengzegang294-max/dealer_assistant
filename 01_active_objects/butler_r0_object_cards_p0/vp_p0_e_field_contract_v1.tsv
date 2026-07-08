@@ -1,0 +1,13 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 VP_P0_E	fixed_literal	eq_VP_P0_E	no_degrade
+vp_poc	float	yes	控制点价格	ohlcv_window	numeric_and_within_profile_range	no_signal_if_window_lt_10
+vp_vah	float	yes	价值区上沿	ohlcv_window	vah_ge_poc_or_adjacent	no_signal_if_window_lt_10
+vp_val	float	yes	价值区下沿	ohlcv_window	val_le_poc_or_adjacent	no_signal_if_window_lt_10
+vp_hvn_levels	json	yes	HVN 列表	profile_bins	json_array_or_empty	use_empty_array
+vp_lvn_levels	json	yes	LVN 列表	profile_bins	json_array_or_empty	use_empty_array
+vp_current_rel_position	enum	yes	inside/above/below/at_poc	current_price_vs_va	in_allowed_set	default_inside
+vp_trend_shape	enum	yes	ascending/descending/balanced/single_peak	hvn_distribution	in_allowed_set	default_balanced
+vp_signal_type	enum	yes	VA_BREAKOUT/POC_REVERSION/LVN_MOMENTUM/HVN_CONSOLIDATION	rules_engine	in_allowed_set	default_NONE
+vp_signal_strength	int	yes	0..10 强度	vroc_plus_position	0_le_value_le_10	default_0
+vp_suggested_stop	float	no	建议止损	price_location_and_atr	numeric_or_nan	no_trade_if_missing
+vp_suggested_target	float	no	建议目标	next_hvn_or_poc	numeric_or_nan	no_trade_if_missing

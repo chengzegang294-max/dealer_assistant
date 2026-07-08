@@ -12,3 +12,7 @@
 - `10_source_library_archive/batch_110_external_folder_absorb__20260708/00_raw_snapshot/`
 - `10_source_library_archive/batch_110_external_folder_absorb__20260708/02_absorb_index/internal_rebuild_requirements_from_kimi_v1.md`
 
+## 当前已落资产
+
+- `*_field_contract_v1.tsv`：对象卡字段合同（我们自己的版本）
+- `object_cards_p0_acceptance_matrix_v1.tsv`：最小验收样本与运行入口矩阵

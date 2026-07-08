@@ -1,0 +1,11 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 TKR7_P0_E	fixed_literal	eq_TKR7_P0_E	no_degrade
+ao_value	float	yes	当前 AO 值	ohlcv_34	numeric_or_nan	insufficient_data_if_len_lt_34
+ao_direction	enum	yes	positive/negative/crossing_up/crossing_down	ao_series	in_allowed_set	default_unknown
+ao_divergence_type	enum	yes	NONE/REGULAR/HIDDEN/EXTENDED bull/bear	divergence_detector	in_allowed_set	default_NONE
+ao_divergence_strength	float	yes	0..1 背离强度	price_ao_peaks	0_le_value_le_1	default_0
+ao_divergence_confidence	float	yes	0..1 置信度	price_ao_peaks	0_le_value_le_1	default_0
+ao_divergence_age	int	yes	背离已持续K线数	series_tracking	value_ge_0	default_0
+ao_signal_type	enum	yes	CONFIRM/FORCE_EXIT/NONE	rules_engine	in_allowed_set	default_NONE
+ao_signal_strength	int	yes	0..10 强度	divergence_plus_filters	0_le_value_le_10	default_0
+ao_recommendation	enum	yes	HOLD/REDUCE/CLOSE/STANDBY	rules_engine	in_allowed_set	default_HOLD

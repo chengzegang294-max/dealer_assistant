@@ -1,0 +1,13 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 VOLFAC_P0_A	fixed_literal	eq_VOLFAC_P0_A	no_degrade
+volfac_id2_std_3m	float	yes	60日对数收益率标准差	daily_ohlcv	len_60_and_value_ge_0	insufficient_data_if_len_lt_40
+volfac_annualized_vol	float	yes	年化波动率	id2_std_3m	value_ge_0	cannot_compute_without_daily
+volfac_vol_percentile	float	yes	一年历史分位	daily_ohlcv_1y	0_le_value_le_100	use_industry_avg_for_new_stock
+volfac_vol_regime	enum	yes	LOW/NORMAL/HIGH/EXTREME	percentile	in_allowed_set	default_NORMAL_VOL
+volfac_vol_trend	enum	yes	EXPANDING/CONTRACTING/STABLE	rolling_vol_series	in_allowed_set	default_STABLE
+signal_type	enum	yes	固定 FILTER	fixed_literal	eq_FILTER	no_degrade
+signal_strength	int	yes	-2..2 离散强度	regime_plus_trend	value_in_range_-2_2	default_0
+filter_action	enum	yes	PASS/REDUCE_WEIGHT/EXCLUDE/INCREASE_WEIGHT	regime_mapping	in_allowed_set	default_PASS
+risk_action	enum	yes	NONE/HALT_DAY_TRADE/REDUCE_POSITION	regime_and_intraday	in_allowed_set	default_NONE
+size_scalar	float	yes	仓位缩放 0.2-1.5	regime_mapping	0.0_le_value_le_2.0	default_1_0
+confidence	float	yes	基于数据完整性	daily_ohlcv	0_le_value_le_1	decrease_if_new_stock_or_missing

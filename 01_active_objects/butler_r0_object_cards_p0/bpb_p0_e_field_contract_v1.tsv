@@ -1,0 +1,14 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 BPB_P0_E	fixed_literal	eq_BPB_P0_E	no_degrade
+bpb_trend_direction	enum	yes	up/down/sideways	ohlcv_lookback	in_allowed_set	default_sideways
+bpb_breakout_level	float	yes	关键突破价位	ohlcv_structure	numeric_or_nan	use_none_if_no_breakout
+bpb_breakout_body_pct	float	yes	突破K线实体比例	last_breakout_bar	0_le_value_le_1	no_signal_if_lt_0_3
+bpb_breakout_volume_ratio	float	yes	突破量比	ohlcv_volume	value_ge_0	no_signal_if_lt_1_0
+bpb_is_valid_breakout	bool	yes	有效突破判定	breakout_quality	bool_present	false_if_body_or_volume_weak
+bpb_pullback_depth_ratio	float	no	回调深度比率	post_breakout_bars	value_ge_0	waiting_if_missing
+bpb_pullback_quality	enum	no	PERFECT/GOOD/DEEP/FAILED/TOO_EARLY	depth_mapping	in_allowed_set	default_TOO_EARLY
+bpb_signal_type	enum	yes	BPB/BOF/WAITING/TOO_DEEP/THIRD_PULLBACK	rules_engine	in_allowed_set	default_NONE
+bpb_signal_strength	int	yes	0..10 强度	quality_plus_context	0_le_value_le_10	default_0
+bpb_entry_price	float	no	建议入场价	confirm_bar	numeric_or_nan	no_trade_if_missing
+bpb_stop_loss_price	float	no	建议止损价	pullback_low_high_plus_buffer	numeric_or_nan	no_trade_if_missing
+bpb_target_price	float	no	建议目标价	rr_mapping	numeric_or_nan	no_trade_if_missing
