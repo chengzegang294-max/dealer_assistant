@@ -1,0 +1,23 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 YTC_P0_E	fixed_literal	eq_YTC_P0_E	no_degrade
+ytc_srf_tf_level	float	no	当前周期关键 S/R 水平	auto_sr_framework_or_manual_level	numeric_or_nan	no_signal_if_missing_all_sr_levels
+ytc_srf_htf_level	float	no	大周期 S/R 水平	weekly_ohlcv_or_manual_level	numeric_or_nan	use_nan_if_htf_missing
+ytc_srf_zone_width	float	yes	S/R 区宽度	sr_framework_plus_atr	value_ge_0	use_atr_times_default_mult
+ytc_srf_is_valid	bool	yes	S/R 框架是否有效	sr_framework_validator	bool_present	false_if_less_than_two_levels
+ytc_srf_type	enum	yes	RESISTANCE/SUPPORT/CONGESTION_HIGH/CONGESTION_LOW/none	sr_framework	in_allowed_set	default_none
+ytc_signal_type	enum	yes	TST/BOF/BP/P/NONE	rules_engine	in_allowed_set	default_NONE
+ytc_signal_subtype	enum	no	TST_SWING_HIGH/TST_SWING_LOW/TST_CONGESTION/BOF_WEAK/BOF_STRONG/BP_SHALLOW/BP_DEEP	signal_classifier	in_allowed_set	default_NONE
+ytc_direction	enum	no	LONG/SHORT/NONE	signal_classifier	in_allowed_set	default_NONE
+ytc_test_price	float	no	测试或突破极值价	breakout_or_test_bar	numeric_or_nan	no_trade_if_missing
+ytc_test_bar_idx	int	no	测试发生的 K 线索引	state_tracker	value_ge_0	use_minus_1_if_missing
+ytc_retrace_price	float	no	回撤或收回价格	post_breakout_tracker	numeric_or_nan	use_nan_if_missing
+ytc_retrace_bar_idx	int	no	回撤发生的 K 线索引	state_tracker	value_ge_0	use_minus_1_if_missing
+ytc_signal_quality	enum	no	A_PLUS/A/B/C/D	quality_engine	in_allowed_set	default_C
+ytc_signal_strength	int	yes	-2..2 或降级为 0	quality_plus_confirmation	value_in_range_-2_2	default_0
+ytc_signal_confidence	float	yes	0..1 置信度	quality_plus_confirmation	0_le_value_le_1	default_0
+ytc_filter_action	enum	yes	PASS/WAIT/REDUCE_WEIGHT	rules_engine	in_allowed_set	default_WAIT
+ytc_risk_action	enum	yes	NONE/TIGHTEN_STOP	rules_engine	in_allowed_set	default_NONE
+ytc_size_scalar	float	yes	仓位系数 0..1	risk_mapping	0_le_value_le_1	default_0
+ytc_integer_level_sr	bool	no	整数关口 S/R 敏感度	ashare_psych_level_detector	bool_present	default_false
+ytc_astock_period_limit	enum	no	daily_weekly/all	A_stock_runtime_policy	in_allowed_set	default_daily_weekly
+ytc_abort_reason	string	no	降级或禁做原因	rules_engine	string_or_empty	empty_if_pass

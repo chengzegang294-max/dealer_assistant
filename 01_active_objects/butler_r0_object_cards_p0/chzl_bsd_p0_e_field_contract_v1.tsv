@@ -1,0 +1,21 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 CHZL_BSD_P0_E	fixed_literal	eq_CHZL_BSD_P0_E	no_degrade
+chzl_fractal_type	enum	yes	top/bottom/none 分型状态	daily_ohlcv_structure	in_allowed_set	default_none_if_no_fractal
+chzl_bi_direction	enum	yes	up/down/none 最近一笔方向	chanlun_strokes_or_recompute	in_allowed_set	default_none_if_structure_missing
+chzl_zs_state	enum	no	active/inactive/none 关联中枢状态	zhongshu_overlap_detector	in_allowed_set	default_none_if_no_zhongshu
+chzl_zs_zg	float	no	中枢上沿价格	chanlun_strokes_zs	numeric_or_nan	use_nan_if_no_zhongshu
+chzl_zs_zd	float	no	中枢下沿价格	chanlun_strokes_zs	numeric_or_nan	use_nan_if_no_zhongshu
+chzl_divergence_flag	bool	no	是否存在背驰确认	chanlun_divergence_or_proxy	bool_present	false_if_missing
+chzl_bsd_type	enum	yes	1B/2B/3B/1S/2S/3S/NONE	rules_engine	in_allowed_set	default_NONE
+chzl_trigger_price	float	no	信号触发价	last_confirm_bar	numeric_or_nan	no_trade_if_missing
+chzl_stop_loss_price	float	no	动态止损价	fractal_or_prev_swing_or_zhongshu_plus_atr	numeric_or_nan	no_trade_if_missing
+chzl_sl_logic	enum	no	FRACTAL_BREAK/PREV_SWING/ZS_REENTRY	stop_loss_engine	in_allowed_set	default_empty_if_none
+chzl_is_trailing	bool	no	是否启用追踪止损	rules_engine	bool_present	default_false
+chzl_signal_strength	int	yes	0..10 信号强度	structure_plus_filters	0_le_value_le_10	default_0
+chzl_signal_confidence	float	yes	0..1 置信度	structure_quality_and_dependencies	0_le_value_le_1	default_0
+chzl_filter_action	enum	yes	APPROVE/OBSERVE/REJECT/DEGRADE	rules_engine	in_allowed_set	default_REJECT
+chzl_risk_action	enum	yes	FULL_SIZE/HALF_SIZE/QUARTER_SIZE/NO_TRADE	rules_engine	in_allowed_set	default_NO_TRADE
+chzl_size_scalar	float	yes	仓位系数 0..1	risk_mapping	0_le_value_le_1	default_0
+chzl_limit_fractal_type	enum	no	normal/limit_up_merge/limit_down_merge 涨跌停分型处理	ashare_limit_adapter	in_allowed_set	default_normal
+chzl_suspend_merge_logic	bool	no	停牌合并开关	ashare_suspend_adapter	bool_present	default_false
+chzl_abort_reason	string	no	降级或禁做原因	rules_engine	string_or_empty	empty_if_pass
