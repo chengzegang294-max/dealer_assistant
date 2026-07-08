@@ -14,11 +14,12 @@
 - `GENERATOR`:
   - `02_runtime/butler_r0_ohlcv_object_cards/tushare_daily_probe_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/akshare_daily_probe_v1.py`
+  - `02_runtime/butler_r0_ohlcv_object_cards/baostock_daily_probe_v1.py`
 
 ## 当前作用
 
-- 用极短日期区间验证 `Tushare Pro / AkShare` 是否可用。
-- 先探测，再决定是否正式创建 `data/raw/daily_ohlcv/` 与 catalog 入口。
+- 用极短日期区间验证 `Tushare Pro / AkShare / Baostock` 是否可用。
+- 这里只保留 probe 证据；正式在线日线入口提升到 `02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/`。
 
 ## 当前结果
 

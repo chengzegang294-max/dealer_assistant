@@ -21,8 +21,15 @@
 
 - `GENERATOR`:
   - `run_object_card_minimal_v1.py`
+  - `tushare_daily_probe_v1.py`
+  - `akshare_daily_probe_v1.py`
+  - `baostock_daily_probe_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
+  - `probe_outputs/*`
+  - `data/raw/daily_ohlcv/*`
 - `INDEX_NOTE`:
   - `runtime_execution_card_v1.md`
   - `acceptance_outputs/artifact_index_v1.tsv`
+  - `probe_outputs/artifact_index_v1.tsv`
+  - `data/raw/daily_ohlcv/catalog_v1.tsv`
