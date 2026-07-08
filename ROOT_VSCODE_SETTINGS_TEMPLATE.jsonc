@@ -1,0 +1,22 @@
+{
+  // Copy this file to .vscode/settings.json manually if needed.
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  // Debug aid for Markdown language service issues during this cleanup round.
+  "markdown.trace.server": "verbose",
+  "files.watcherExclude": {
+    "**/11_frozen_summaries_archive/_raw_snapshot_batch09/**": true,
+    "**/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/**": true
+  },
+  "search.exclude": {
+    "**/11_frozen_summaries_archive/_raw_snapshot_batch09/**": true,
+    "**/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/**": true
+  },
+  "python.analysis.exclude": [
+    "**/.dc_cache/**",
+    "**/backtest_out/**",
+    "**/.venv/**",
+    "**/__pycache__/**",
+    "**/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/**"
+  ]
+}

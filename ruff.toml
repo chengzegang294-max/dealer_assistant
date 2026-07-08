@@ -1,0 +1,7 @@
+target-version = "py312"
+
+[lint]
+ignore = [
+  "UP007",
+  "UP045",
+]
