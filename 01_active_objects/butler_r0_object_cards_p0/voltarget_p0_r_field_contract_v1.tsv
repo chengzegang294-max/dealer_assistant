@@ -1,0 +1,12 @@
+field_name	type	required	desc	input_source	acceptance_check	degrade_rule
+object_id	string	yes	固定为 VOLTARGET_P0_R	fixed_literal	eq_VOLTARGET_P0_R	no_degrade
+vt_target_vol	float	yes	目标年化波动率	params_or_market_profile	value_gt_0	use_market_default
+vt_atr14	float	yes	14日ATR	daily_ohlcv_or_precalc	value_ge_0	block_if_missing
+vt_current_price	float	yes	当前价格	latest_close	value_gt_0	block_if_missing
+vt_log_return_std_20	float	no	20日对数收益率标准差	daily_ohlcv	value_ge_0	fallback_to_atr_vol
+vt_current_vol	float	yes	当前年化波动率	atr_or_log_return	value_ge_0	block_if_missing
+vt_vol_ratio	float	yes	当前/目标波动率比	current_vol_target_vol	value_ge_0	block_if_missing
+vt_position_scalar	float	yes	仓位缩放系数 0.2-2.0	vol_ratio	0.2_le_value_le_2.0	clamp_to_bounds
+vt_scalar_ema	float	no	平滑后的缩放系数	ema_of_scalar	0.2_le_value_le_2.0	fallback_to_position_scalar
+vt_adjusted_position	float	yes	调整后仓位	base_position_times_scalar	value_ge_0	use_base_position_if_scalar_missing
+vt_vol_regime	enum	yes	low/normal/high/extreme	regime_mapping	in_allowed_set	default_normal_vol
