@@ -1,0 +1,23 @@
+{
+  "object_id": "VOLTARGET_P0_R",
+  "input_rows": 565,
+  "as_of_date": "2026-05-08",
+  "signal_payload": {
+    "object_id": "VOLTARGET_P0_R",
+    "vt_target_vol": 0.1,
+    "vt_atr14": 2.057857,
+    "vt_current_price": 35.5,
+    "vt_log_return_std_20": 0.04301335,
+    "vt_current_vol": 0.682816,
+    "vt_vol_ratio": 6.828158,
+    "vt_position_scalar": 0.2,
+    "vt_scalar_ema": 0.2,
+    "vt_adjusted_position": 0.2,
+    "vt_vol_regime": "extreme_vol"
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": false,
+    "degrade_reason": ""
+  }
+}

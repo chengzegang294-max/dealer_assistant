@@ -1,0 +1,57 @@
+{
+  "object_id": "PERIOD_QUEEN_P0_F",
+  "input_rows": 1538,
+  "as_of_date": "2026-05-13",
+  "evidence_mode": "proxy_single_symbol_market_regime",
+  "signal_payload": {
+    "object_id": "PERIOD_QUEEN_P0_F",
+    "pq_state": "ATTACK_SUSTAINED",
+    "pq_state_prev": "",
+    "pq_state_duration": 1,
+    "pq_state_confidence": 0.85,
+    "pq_transition_trigger": "ret20=0.9344|ret5=0.6092|new_high=True",
+    "pq_leading_stock": "601991.SH",
+    "pq_leading_stock_sustained": true,
+    "pq_leading_stock_new_high": true,
+    "pq_space_board_sustained": true,
+    "pq_space_board_count": 6,
+    "pq_attack_formation_count": 4,
+    "pq_attack_formation_valid": false,
+    "pq_tolerance_exist": true,
+    "pq_tolerance_score": 0.80917,
+    "pq_tide_force_exist": false,
+    "pq_tide_force_score": 0.0,
+    "pq_ten_day_rank": [
+      "601991.SH"
+    ],
+    "pq_ten_day_rank_change": 0,
+    "pq_cutting_condition_met": false,
+    "pq_gestation_new_faces": 0,
+    "pq_gestation_new_faces_sustained": false,
+    "pq_trading_permission": "FULL",
+    "pq_position_max_size": 1.0,
+    "pq_strategy_bundle": "attack_sustained",
+    "pq_allowed_objects": [
+      "CHZL_BSD",
+      "BPB",
+      "VP",
+      "TKR7",
+      "VOLFAC",
+      "VOLTARGET"
+    ],
+    "pq_forbidden_objects": [
+      "YTC",
+      "MFLOW",
+      "INSTB",
+      "KELLY",
+      "PERIOD_QUEEN",
+      "ATRATIO"
+    ],
+    "pq_entry_min_votes_adjusted": 3
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": true,
+    "degrade_reason": "single_symbol_proxy_instead_of_market_breadth_rank_board_inputs"
+  }
+}

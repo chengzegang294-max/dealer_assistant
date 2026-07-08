@@ -1,0 +1,68 @@
+# Repo Layout Realignment Execution Plan
+
+更新时间：2026-07-08
+
+## 目标
+
+- 把当前仍不符合 `DIRECTORY_ROLE_CONTRACT_v1.md` 的大块目录，按“可执行批次”拆成归位清单。
+- 先收最确定、最不会引起语义歧义的部分，再处理需要拆分判定的大块。
+
+## P1 目录
+
+- `00_assets/`
+  - 问题：合同外顶层目录，内部混装来源快照、原始数据、运行产物、导出物。
+  - 处理原则：
+    - `ashare_clean`、`ashare_watchlist/kline_1d` 这类真实行情样本，归 `02_runtime/.../acceptance_samples` 或 `02_runtime/.../data/raw`
+    - 外部资料快照、HAR、网页素材，归 `10_source_library_archive/<batch>/00_raw_snapshot`
+    - 旧导出、探针、运行结果、网页壳运行时，归 `12_tooling_runtime_archive/<batch>`
+  - 第一批优先：
+    - `00_assets/_raw_snapshot_batch09/ashare_clean`
+    - `00_assets/_raw_snapshot_batch09/ashare_watchlist/kline_1d`
+    - 其余先做目录台账，不直接整包搬
+
+- `20_tools_workspace/`
+  - 问题：合同外顶层目录，当前混放在维护工具、历史脚本、临时材料。
+  - 处理原则：
+    - 仍在维护且直接服务主线的脚本，归 `02_runtime/`
+    - 历史工具运行时、历史脚本快照，归 `12_tooling_runtime_archive/<batch>`
+    - 临时材料或会话剪贴，按主题落 `10_source_library_archive/<batch>/00_raw_snapshot`
+  - 第一批优先：
+    - `20_tools_workspace/smoke_validation`
+    - `20_tools_workspace/_raw_snapshot_batch09`
+    - `20_tools_workspace/session_clip`
+
+- `21_trae_system_archive/`
+  - 问题：合同外顶层目录，整体属于系统材料与 AI 产物归档层。
+  - 处理原则：
+    - skills/router/prompt/history 等整体按批次归 `10_source_library_archive/<batch_trae_system_absorb>`
+    - 若有已冻结裁决或阶段性总结，再二次筛入 `11_frozen_summaries_archive`
+    - 若是当前仍有效的仓库级治理文档，再回到 `00_entry/`
+  - 第一批优先：
+    - `SKILLS_INDEX.md`
+    - `SKILLS_GROUP_VIEW.md`
+    - `recover_*`
+
+## P2 目录与文件
+
+- `04_active_main_docs/BATCH_01_PLAN.md`
+- `04_active_main_docs/BATCH_01_REVIEW.md`
+  - 问题：迁移台账误放在日常入口层
+  - 建议：回收到 `00_entry/`
+
+- `ROOT_NOTES.md`
+- `ROOT_VSCODE_SETTINGS_TEMPLATE.jsonc`
+  - 问题：根目录散放说明卡和配置模板
+  - 建议：合并进 `00_entry/` 或并入根 `README.md`
+
+## 执行顺序
+
+1. 先做 `README` 与全局入口口径收敛，避免继续按旧骨架入库
+2. 再拆 `00_assets` 的最确定样本块
+3. 再拆 `20_tools_workspace`
+4. 最后处理 `21_trae_system_archive`
+
+## 本轮不直接动的内容
+
+- 需要逐文件判定角色的大杂烩目录
+- 尚未确认是否为当前主线活跃资产的脚本/配置
+- 任何会影响现有可跑入口的路径，先补回链与索引，再移动

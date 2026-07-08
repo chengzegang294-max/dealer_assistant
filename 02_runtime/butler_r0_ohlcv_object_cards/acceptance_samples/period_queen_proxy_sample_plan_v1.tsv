@@ -1,0 +1,3 @@
+object_card	symbol	daily_sample	proxy_mode	status	note
+PERIOD_QUEEN_P0_F	601991.SH	acceptance_samples/watchlist_subset/601991_SH_1d.csv	single_symbol_proxy_market_regime	minimal_runner_ready	先用长历史样本代理市场情绪，验证 state/permission/position_max_size 输出链路
+PERIOD_QUEEN_P0_F	300302.SZ	acceptance_samples/clean_subset/300302_SZ_1d.csv	single_symbol_proxy_market_regime	pending_optional	作为第二个代理样本，用于横向校验状态映射稳定性

@@ -1,0 +1,3 @@
+object_card	symbol	daily_sample	params	status	note
+VOLTARGET_P0_R	300302.SZ	acceptance_samples/clean_subset/300302_SZ_1d.csv	target_vol=0.10;base_position=1.0	minimal_runner_ready	以真实 A股日线样本验证 ATR/波动率/仓位缩放链路
+VOLTARGET_P0_R	601991.SH	acceptance_samples/watchlist_subset/601991_SH_1d.csv	target_vol=0.10;base_position=0.7	minimal_runner_ready	用关注池样本验证不同基准仓位下的缩放结果
