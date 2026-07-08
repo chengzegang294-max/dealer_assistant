@@ -1,0 +1,38 @@
+{
+  "object_id": "CHZL_BSD_P0_E",
+  "input_rows": {
+    "daily": 565,
+    "weekly": 121,
+    "annotation_rows": 3
+  },
+  "as_of_date": "2024-04-22",
+  "evidence_mode": "weak_manual_seed",
+  "signal_payload": {
+    "object_id": "CHZL_BSD_P0_E",
+    "chzl_fractal_type": "bottom",
+    "chzl_bi_direction": "down",
+    "chzl_zs_state": "active",
+    "chzl_zs_zg": 10.03,
+    "chzl_zs_zd": 9.41,
+    "chzl_divergence_flag": true,
+    "chzl_bsd_type": "2B",
+    "chzl_trigger_price": null,
+    "chzl_stop_loss_price": null,
+    "chzl_sl_logic": "PREV_SWING",
+    "chzl_is_trailing": false,
+    "chzl_signal_strength": 8,
+    "chzl_signal_confidence": 0.78,
+    "chzl_filter_action": "APPROVE",
+    "chzl_risk_action": "HALF_SIZE",
+    "chzl_size_scalar": 0.5,
+    "chzl_limit_fractal_type": "normal",
+    "chzl_suspend_merge_logic": false,
+    "chzl_abort_reason": ""
+  },
+  "acceptance_flags": {
+    "passed_annotation_binding": true,
+    "degraded": true,
+    "degrade_reason": "manual_annotation_seed_without_auto_chanlun_engine"
+  },
+  "note": "人工 seed：回踩未破前低，作为 2B 候选；仅用于 stub 验证"
+}

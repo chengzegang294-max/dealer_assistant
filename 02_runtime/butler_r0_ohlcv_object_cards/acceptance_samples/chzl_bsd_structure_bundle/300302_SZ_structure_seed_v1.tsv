@@ -1,0 +1,4 @@
+symbol	timeframe	bar_date	fractal_type	bi_direction	zs_state	zs_zg	zs_zd	divergence_flag	bsd_type	stop_logic	note
+300302.SZ	1d	2024-04-16	bottom	down	inactive			true	1B	FRACTAL_BREAK	人工 seed：连续下跌后出现局部底分型，先作为 1B 候选
+300302.SZ	1d	2024-04-18	top	up	inactive			false	NONE		人工 seed：反抽顶分型，仅作结构连接
+300302.SZ	1d	2024-04-22	bottom	down	active	10.03	9.41	true	2B	PREV_SWING	人工 seed：回踩未破前低，作为 2B 候选；仅用于 stub 验证

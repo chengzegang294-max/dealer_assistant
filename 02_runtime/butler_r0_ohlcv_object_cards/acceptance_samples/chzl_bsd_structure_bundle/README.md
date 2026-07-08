@@ -15,12 +15,15 @@
   - 记录每个结构样本包绑定哪份 `1d` 样本、哪份 `1w` 样本、使用哪个模板
 - `structure_annotation_template_v1.tsv`
   - 统一结构标注字段模板
+- `300302_SZ_structure_seed_v1.tsv`
+  - 基于真实日线窗口做的最小人工 seed 标注，只作为 stub 验证输入，不冒充完整真值
 
 ## 当前口径
 
 - `daily_sample` 是主样本基座。
 - `weekly_sample` 是辅助的大周期结构上下文。
 - `annotation_template` 目前只有模板，没有伪造结构标签。
+- `annotation_seed` 若存在，只代表最小人工 seed，用于验证字段合同、索引回链和 stub 输出格式。
 - 若 `chanlun_strokes_zs / chanlun_divergence` 仍缺失，则 `CHZL_BSD` 不得冒充为可跑完成态，只能保留为 `sample_bundle_ready`。
 
 ## 后续动作

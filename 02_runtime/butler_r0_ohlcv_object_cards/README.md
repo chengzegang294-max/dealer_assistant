@@ -27,6 +27,7 @@
   - `baostock_daily_fetch_to_raw_v1.py`
   - `build_weekly_from_daily_v1.py`
   - `run_ytc_daily_weekly_minimal_v1.py`
+  - `run_chzl_bsd_sample_stub_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
   - `probe_outputs/*`
