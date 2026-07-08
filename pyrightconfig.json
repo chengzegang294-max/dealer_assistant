@@ -3,16 +3,25 @@
     "02_runtime",
     "20_tools_workspace"
   ],
+  "pythonVersion": "3.12",
   "exclude": [
     "**/.venv",
     "**/__pycache__",
+    "**/.dc_cache",
+    "**/backtest_out",
     "00_entry",
     "01_active_objects",
     "03_docs",
     "04_active_main_docs",
     "10_source_library_archive",
-    "11_frozen_summaries_archive"
+    "11_frozen_summaries_archive",
+    "legacy_analysis"
   ],
+  "reportImplicitRelativeImport": "none",
+  "reportDeprecated": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportUnusedCallResult": "none",
   "venvPath": ".",
   "venv": ".venv"
 }

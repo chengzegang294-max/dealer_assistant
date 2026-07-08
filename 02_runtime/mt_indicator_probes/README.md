@@ -10,6 +10,7 @@
 
 - `batch_01_volty_xbreaking`
   - 用于 `Volty / XBreaking` 首批 probe 落盘与证据收口。
+  - 已含 `ingest + acceptance` 双脚本与批次级验收单。
 
 ## 产物要求
 

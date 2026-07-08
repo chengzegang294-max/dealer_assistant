@@ -1,3 +1,7 @@
 {
-  "extends": "./pyrightconfig.json"
+  "extends": "./pyrightconfig.json",
+  "reportDeprecated": "none",
+  "reportAny": "none",
+  "reportExplicitAny": "none",
+  "reportUnusedCallResult": "none"
 }
