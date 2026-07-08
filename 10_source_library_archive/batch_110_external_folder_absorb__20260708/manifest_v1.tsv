@@ -16,3 +16,4 @@ M014	02_absorb_index/macro_5d_score_field_contract_v1.tsv	tsv	contract	active	�
 M015	02_absorb_index/data_availability_audit_contract_v1.tsv	tsv	contract	active	数据可用性审计合同（M03 抽取版）
 M016	02_absorb_index/risk_architecture_field_contract_v1.tsv	tsv	contract	active	三层风控字段合同（M05 抽取版）
 M017	02_absorb_index/daily_report_field_contract_v1.tsv	tsv	contract	active	日报字段合同（M06 抽取版）
+M018	02_absorb_index/data_source_probe_targets_v1.tsv	tsv	absorb_index	active	数据源落点核查结果与下一动作

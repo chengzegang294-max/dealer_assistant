@@ -1,0 +1,6 @@
+probe_target	expected_role	current_result	next_action	note
+d:\Stock\trading_assistant\data	repo内主数据目录	not_found	search_elsewhere_or_create_later	M03 文档里提到但当前不存在
+d:\Stock\trading_analysis\data	旧仓历史数据目录	not_found	recover_path_or_replace_with_provider	旧仓路径当前不可用
+repo_existing_02_runtime	最小可跑与样本	exists	reuse_pattern_for_runtime_entry	已作为运行协议参考
+batch_110_00_raw_snapshot	external_kimi_source	exists	keep_as_source_only	不直接当运行输入
+future_paid_provider	付费数据接入	not_started	decide_after_data_audit	Wind/tushare/others 待后续裁决

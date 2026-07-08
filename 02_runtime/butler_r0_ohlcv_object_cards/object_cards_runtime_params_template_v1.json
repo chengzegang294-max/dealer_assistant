@@ -1,0 +1,8 @@
+{
+  "object_card": "VOLFAC_P0_A",
+  "input_csv": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/sample_daily_ohlcv.csv",
+  "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/output_preview.json",
+  "market": "ashare",
+  "timeframe": "1d",
+  "allow_degrade": true
+}
