@@ -1,0 +1,9 @@
+candidate_id	current_path_or_source	role	coverage	format	status	recommended_action	why	note
+DO1	d:\Stock\trading_assistant\00_assets\_raw_snapshot_batch09\ashare_clean\*_1d.csv	ashare_daily_ohlcv_small_real_subset	A股日线子集	csv	available_as_real_files	COPY_WITH_NOTE_TO_02_RUNTIME_ACCEPTANCE_SAMPLES	真实A股1d样本已存在，可先供对象卡验收使用	数量有限，先作样本不作全市场库
+DO2	d:\Stock\trading_assistant\00_assets\_raw_snapshot_batch09\ashare_watchlist\kline_1d\*_1d.csv	watchlist_daily_ohlcv	关注池A股日线	csv	available_as_real_files	COPY_WITH_NOTE_TO_02_RUNTIME_ACCEPTANCE_SAMPLES	与 watchlist 直接相连，适合 PERIOD_QUEEN/BPB/VP 小样本验证	更贴近当前关注池
+DO3	d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\ashare_preprocess.py	legacy_fetch_script	A股日线抓取脚本	py	available_as_code	REFERENCE_AND_PORT_MINIMAL_FETCHER	现成支持 akshare/baostock 抓取 1d，可作为恢复脚本参考	历史归档，不直接当主线源码
+DO4	d:\Stock\trading_assistant\10_source_library_archive\batch_110_external_folder_absorb__20260708\03_quantize\promoted_code_from_raw_snapshot\data_pipeline.py	kimi_fetch_design	Tushare/AkShare 拉数设计	py	available_as_code	REFERENCE_ONLY_AND_REWRITE	有 extractor 设计与 daily fetch 示例，但仍是 Kimi 产物	只当来源证据，不直接主用
+DO5	Tushare Pro	paid_or_free_provider	全A股日线+宏观+财报	api	not_configured	SET_AS_PRIMARY_ONCE_TOKEN_READY	免费层优先且覆盖最全，和当前合同最匹配	需 token 与积分，适合 P1 主数据源
+DO6	AkShare	free_provider	全A股日线近似	api	not_configured	SET_AS_BACKUP_PROVIDER	免 token，原型快，适合作为备源与交叉验证	接口稳定性较差
+DO7	Baostock	free_provider	A股长周期日/周/月	api	not_configured	SET_AS_LONG_HISTORY_FALLBACK	长周期日线质量较稳，可做二级备源	无实时与分钟
+DO8	d:\Stock\trading_assistant\data\raw\daily_ohlcv	target_repo_path	未来主仓数据落点	parquet	not_found	YET_TO_CREATE_AFTER_PROVIDER_DECISION	ETL 设计里的标准目标路径	当前仓库未建，不应再假定已存在

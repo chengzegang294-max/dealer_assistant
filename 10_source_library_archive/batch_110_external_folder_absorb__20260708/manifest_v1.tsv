@@ -17,3 +17,5 @@ M015	02_absorb_index/data_availability_audit_contract_v1.tsv	tsv	contract	active
 M016	02_absorb_index/risk_architecture_field_contract_v1.tsv	tsv	contract	active	三层风控字段合同（M05 抽取版）
 M017	02_absorb_index/daily_report_field_contract_v1.tsv	tsv	contract	active	日报字段合同（M06 抽取版）
 M018	02_absorb_index/data_source_probe_targets_v1.tsv	tsv	absorb_index	active	数据源落点核查结果与下一动作
+M019	02_absorb_index/daily_ohlcv_recovery_or_substitute_plan_v1.tsv	tsv	contract	active	日线 OHLCV 恢复/替代清单（含真实已存在样本落点）
+M020	02_absorb_index/daily_ohlcv_real_landing_decision_v1.md	md	contract	active	日线 OHLCV 真实落点裁决（立即可用 vs 标准目标）
