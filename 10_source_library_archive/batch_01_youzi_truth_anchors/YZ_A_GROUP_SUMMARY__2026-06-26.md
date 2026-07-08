@@ -36,6 +36,7 @@
 - `psychology_state/sys_forced_rest_rules`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L163-L167`（强制休息：单日/连续亏损/情绪评分触发停手）
 - `risk_filter/sys_external_shock_flat`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L268-L269`（外部冲击空仓观望）
 - `risk_filter/sys_systemic_risk_actions_v12`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L260-L268`（系统性风险应对：暴跌/黑天鹅/流动性危机/外部冲击→清仓减仓或空仓观望）
+- `risk_filter/sys_risk_trigger_no_trade_v12`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L270-L273`（风控触发后继续交易=禁忌；触发后先停手）
 - `risk_filter/sys_drawdown_and_loss_ladder_v12`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L242-L258`（三层风控/回撤控制/连亏处理条目化）
 - `planning_and_process/sys_monthly_opt_drawdown_pause_v12`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L104-L108`（月度回撤/连续亏损触发暂停实盘与回测验证）
 - `psychology_state/sys_forced_rest_rules_v12`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L163-L167`（强制休息规则条目化）
