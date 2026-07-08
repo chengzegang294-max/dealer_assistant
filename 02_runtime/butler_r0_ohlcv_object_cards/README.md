@@ -9,8 +9,8 @@
 
 ## 当前范围
 
-- 当前只覆盖 A 股日线 OHLCV 样本。
-- 未来再扩到周线合成、分钟级与跨市场。
+- 当前已覆盖 A 股日线 OHLCV 样本、由日线合成的周线样本，以及 `YTC / CHZL_BSD` 的最小降级或半自动运行入口。
+- 未来再扩到分钟级、更多对象卡真实外部输入，以及跨市场。
 
 ## 上游合同
 
@@ -26,6 +26,7 @@
   - `baostock_daily_probe_v1.py`
   - `baostock_daily_fetch_to_raw_v1.py`
   - `build_weekly_from_daily_v1.py`
+  - `build_chzl_structure_series_v1.py`
   - `run_ytc_daily_weekly_minimal_v1.py`
   - `run_chzl_bsd_sample_stub_v1.py`
 - `ARTIFACT`:
@@ -39,3 +40,4 @@
   - `data/raw/daily_ohlcv/catalog_v1.tsv`
   - `acceptance_samples/sample_provenance_index_v1.tsv`
   - `acceptance_samples/ytc_daily_weekly_sample_plan_v1.tsv`
+  - `acceptance_samples/chzl_bsd_structure_bundle/bundle_index_v1.tsv`
