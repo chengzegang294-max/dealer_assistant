@@ -36,6 +36,9 @@
 - `topic_cycle/m05_retreat_order_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L238-L242`（清仓补涨→清仓龙头→中军减仓→清仓中军）
 - `topic_cycle/m05_tide_clear_rule_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L41`（题材退潮信号出现=立即清仓，动作层）
 - `risk_filter/m06_position_dynamic_formula_v12`：`[模块]交易策略与优化_波段超短特色优化综合体系.md` `L241-L245`（实际仓位公式 + 单笔仓位上限）
+- `topic_cycle/m05_retreat_order_core_constraint_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L247-L248`（撤退顺序不可逆的硬约束）
+- `topic_cycle/m05_fifth_sell_tide_exit_v12`：`[模块]题材中军_筛选建仓协同撤退全体系.md` `L73`（五卖=题材退潮=立即清仓，动作层）
+- `risk_filter/m06_market_env_position_factor_v12`：`[模块]交易策略与优化_波段超短特色优化综合体系.md` `L234-L239`（市场环境仓位系数：强趋势1.2/震荡1.0/弱势0.6/系统性风险0.0）
 - `psychology_state/sys_emotion_score_threshold`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L143-L145`（总分>18 禁止交易；阈值仅作为证据）
 - `risk_filter/sys_position_upper_bound`：`[模块]交易系统_五步骤资金风控复盘心理全体系.md` `L185-L188`（单笔风险与仓位上限硬约束）
 
