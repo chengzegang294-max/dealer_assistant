@@ -7,3 +7,4 @@ M005	03_quantize/bpb_rule_candidates_v1.tsv	tsv	quantize	active	BPB（Al Brooks�
 M006	03_quantize/chzl_bsd_rule_candidates_v1.tsv	tsv	quantize	active	CHZL_BSD（缠论结构）规则候选清单：先做结构化代理与可检索锚点
 M007	02_absorb_index/raw_snapshot_promotion_map_v1.tsv	tsv	absorb_index	active	raw_snapshot 中脚本/数据/报告的提升归位映射表（不改动原快照）
 M008	04_runtime/promoted_from_raw_snapshot/README.md	md	runtime_note	active	提升归位目录的使用边界与后续验收要求
+M009	02_absorb_index/endgame_private_invest_butler_contract_v0.1.md	md	contract	draft	终局合同层草案：私人投资管家目标/原则/模块/验收/未决策
