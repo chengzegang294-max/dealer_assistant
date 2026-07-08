@@ -21,5 +21,6 @@
 - `period_queen_proxy_sample_plan_v1.tsv`：`PERIOD_QUEEN` 的单标的代理情绪样本计划。
 - `vp_sample_plan_v1.tsv`：`VP` 的最小 volume profile 样本计划。
 - `tkr7_sample_plan_v1.tsv`：`TKR7` 的最小 AO 背离样本计划。
+- `registry_v0_sample_plan_v1.tsv`：`registry_v0` 把 6 张已可跑卡串起来的最小聚合样本计划。
 - `object_cards_aux_input_sample_contract_v1.tsv`：`MFLOW / INSTB` 的最小外部输入样本合同。
 - 不改原始 CSV；来源回链、生成入口与作用见 `sample_provenance_index_v1.tsv`。

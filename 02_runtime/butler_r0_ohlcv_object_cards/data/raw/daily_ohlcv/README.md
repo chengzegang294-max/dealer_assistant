@@ -27,6 +27,10 @@
 - 首个提升样本来自 `Baostock` 成功探测：
   - `300302_SZ__1d__baostock__20240101_20240131.csv`
 - 后续新增标的优先通过 `baostock_daily_fetch_to_raw_v1.py` 正式写入，并自动更新 `catalog_v1.tsv`
+- 历史 `batch09` 的两批 A 股日线已归位到：
+  - `batch09_promoted/ashare_clean/`
+  - `batch09_promoted/watchlist_kline_1d/`
+- 历史归位与正式在线拉取共用 `catalog_v1.tsv`，但用不同 `source_type / evidence_mode` 区分。
 - 当前仍是最小正式入口，不等于完整主数据仓。
 
 ## 证据强度
@@ -34,3 +38,4 @@
 - `probe_outputs/*.json` 与 probe 原始 csv：`hard`
 - 当前目录内由 probe 提升的正式输入副本：`hard_promoted_from_probe`
 - 当前目录内由正式 fetch 直接生成的 csv 与 metadata：`hard`
+- 当前目录内由 `batch09` 归位提升的历史 csv：`historical_recovered`

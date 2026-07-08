@@ -33,6 +33,8 @@
   - `run_period_queen_proxy_minimal_v1.py`
   - `run_vp_minimal_v1.py`
   - `run_tkr7_minimal_v1.py`
+  - `run_registry_v0_minimal.py`
+  - `promote_batch09_daily_to_runtime_raw_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
   - `probe_outputs/*`
@@ -48,4 +50,5 @@
   - `acceptance_samples/period_queen_proxy_sample_plan_v1.tsv`
   - `acceptance_samples/vp_sample_plan_v1.tsv`
   - `acceptance_samples/tkr7_sample_plan_v1.tsv`
+  - `acceptance_samples/registry_v0_sample_plan_v1.tsv`
   - `acceptance_samples/chzl_bsd_structure_bundle/bundle_index_v1.tsv`

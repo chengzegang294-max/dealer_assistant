@@ -19,6 +19,9 @@
     - `00_assets/_raw_snapshot_batch09/ashare_clean`
     - `00_assets/_raw_snapshot_batch09/ashare_watchlist/kline_1d`
     - 其余先做目录台账，不直接整包搬
+  - 当前进度：
+    - 已完成 `ashare_clean` -> `02_runtime/.../data/raw/daily_ohlcv/batch09_promoted/ashare_clean`
+    - 已完成 `ashare_watchlist/kline_1d` -> `02_runtime/.../data/raw/daily_ohlcv/batch09_promoted/watchlist_kline_1d`
 
 - `20_tools_workspace/`
   - 问题：合同外顶层目录，当前混放在维护工具、历史脚本、临时材料。
@@ -65,6 +68,8 @@
 
 - `04_active_main_docs/BATCH_01_PLAN.md` -> `00_entry/BATCH_01_PLAN.md`
 - `04_active_main_docs/BATCH_01_REVIEW.md` -> `00_entry/BATCH_01_REVIEW.md`
+- `00_assets/_raw_snapshot_batch09/ashare_clean` -> `02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/batch09_promoted/ashare_clean`
+- `00_assets/_raw_snapshot_batch09/ashare_watchlist/kline_1d` -> `02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/batch09_promoted/watchlist_kline_1d`
 
 ## 本轮不直接动的内容
 

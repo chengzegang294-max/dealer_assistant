@@ -17,6 +17,7 @@
 - `period_queen_601991_sh_proxy_output.json`
 - `vp_601991_sh_1d_output.json`
 - `tkr7_300302_sz_1d_output.json`
+- `registry_v0_601991_sh_output.json`
 
 ## 生成入口
 
@@ -27,3 +28,4 @@
 - `02_runtime/butler_r0_ohlcv_object_cards/run_period_queen_proxy_minimal_v1.py`
 - `02_runtime/butler_r0_ohlcv_object_cards/run_vp_minimal_v1.py`
 - `02_runtime/butler_r0_ohlcv_object_cards/run_tkr7_minimal_v1.py`
+- `02_runtime/butler_r0_ohlcv_object_cards/run_registry_v0_minimal.py`
