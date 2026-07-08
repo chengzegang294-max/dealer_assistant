@@ -1,0 +1,26 @@
+{
+  "object_id": "BPB_P0_E",
+  "signal_payload": {
+    "object_id": "BPB_P0_E",
+    "bpb_trend_direction": "up",
+    "bpb_breakout_level": 6.7,
+    "bpb_breakout_body_pct": 0.793103,
+    "bpb_breakout_volume_ratio": 0.892429,
+    "bpb_is_valid_breakout": false,
+    "bpb_pullback_depth_ratio": 0.0,
+    "bpb_pullback_quality": "TOO_EARLY",
+    "bpb_signal_type": "WAITING",
+    "bpb_signal_strength": 0,
+    "bpb_entry_price": null,
+    "bpb_stop_loss_price": null,
+    "bpb_target_price": null
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": false,
+    "degrade_reason": ""
+  },
+  "input_rows": 1538,
+  "as_of_date": "2026-05-13",
+  "input_csv": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/watchlist_subset/601991_SH_1d.csv"
+}

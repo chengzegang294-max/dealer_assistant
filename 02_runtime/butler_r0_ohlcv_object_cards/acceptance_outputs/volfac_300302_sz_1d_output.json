@@ -1,0 +1,25 @@
+{
+  "object_id": "VOLFAC_P0_A",
+  "signal_payload": {
+    "object_id": "VOLFAC_P0_A",
+    "volfac_id2_std_3m": 0.05147041,
+    "volfac_annualized_vol": 0.817067,
+    "volfac_vol_percentile": 83.96,
+    "volfac_vol_regime": "HIGH",
+    "volfac_vol_trend": "CONTRACTING",
+    "signal_type": "FILTER",
+    "signal_strength": -1,
+    "filter_action": "REDUCE_WEIGHT",
+    "risk_action": "REDUCE_POSITION",
+    "size_scalar": 0.6,
+    "confidence": 0.9
+  },
+  "acceptance_flags": {
+    "passed_min_rows": true,
+    "degraded": false,
+    "degrade_reason": ""
+  },
+  "input_rows": 565,
+  "as_of_date": "2026-05-08",
+  "input_csv": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/clean_subset/300302_SZ_1d.csv"
+}
