@@ -62,6 +62,14 @@
   - `tutorial_stage_proof=S_BUCKET_stage_proof__01_集合竞价教程__v1.tsv`
   - `report_representatives=S_BUCKET_report_representatives_v1.tsv~v52.tsv`
   - `report_stage_proof=S_BUCKET_stage_proof__03_券商研报__representatives_v1.tsv~v52.tsv`
+- `youzi_truth_anchor_group`
+  - `entry=00_entry\S_BUCKET_02_YOUZI_TRUTH_ANCHOR_CANDIDATES__2026-06-26.md`
+  - `batch_shell=10_source_library_archive\batch_01_youzi_truth_anchors\README.md|youzi_truth_anchor_manifest_v1.tsv`
+  - `group_summaries=YZ_A_GROUP_SUMMARY__2026-06-26.md|YZ_B_GROUP_SUMMARY__2026-06-26.md`
+  - `old_frozen_evidence=YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv|YZ_B_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
+  - `execution_board=YZ_A_MIN_EXCERPT_EXECUTION_BOARD__2026-06-26.md`
+  - `alignment_checks=YZ_A_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md|YZ_B_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
+- `current_maintenance_focus=YZ-B leader_and_mainline/topic_cycle/risk_filter cross-evidence thickening with old-frozen fade-criteria-as-criteria-layer, tide-stage-switch-as-stage-layer, action-layer, group-tide, and sector-diffusion anchors + A1/G08 second-layer cross-reference for tide proxy, sector effect, and midcap quantitative proxy (A1=criteria-stage explanation and retreat feel first, G08=post-confirm sector diffusion second) + maintenance memo=A1 first reads fade feel and retreat order, G08 then supplements post-confirm spread, frame unchanged + evidence memo=read A1 feel first, then return to old-frozen evidence for layer confirmation + reading-order memo=use A1 for fade feel and retreat order first, then return to m05 evidence for layer decision, G08 only supplements post-confirm spread + leader/mainline memo=use A1 for midcap-leads and midcap-falls-first feel, then return to m05 evidence for mainline decision + risk-filter memo=return to stoploss RR and system-loop evidence first, A1/G08 never loosens risk rules + drawdown memo=drawdown_or_losing_streak_hits_ladder_then_reduce_and_stop__no_revenge_trade + environment memo=macro_sector_news_mismatch_then_downgrade_or_no_trade__no_force_entry + limit memo=single_name_single_day_and_losing_streak_limit_hits_then_stop__no_rhythm_chasing + position memo=single_trade_risk_or_position_cap_hits_then_reduce__no_mainline_heat_override + systemic_risk memo=crash_black_swan_then_cash_or_cut__no_heat_override + sellpoint memo=sell_signal_hits_then_execute__discipline_first__no_haggling + keep topic_cycle frame unchanged and only thicken explanation density + topic_cycle cardified to mainline index top`
 
 ## raw_asset_mapping_keys
 
@@ -75,7 +83,7 @@
 - `derived_staging_role=HISTORY_ONLY|只保留来源评估与历史追溯角色|不承担repo_truth`
 - `partition_status_table`
   - `01_集合竞价教程`：`tree_out=DELETE_READY / repo_raw_assets=HOLD_AS_REPO_TRUTH / note=stage_proof_49_done`
-  - `02_游资悟道交割单`：`tree_out=DELETE_READY / repo_raw_assets=HOLD_AS_REPO_TRUTH / note=341_imported`
+  - `02_游资悟道交割单`：`tree_out=DELETE_READY / repo_raw_assets=HOLD_AS_REPO_TRUTH / note=341_imported+yz_a_yz_b_anchor_maintenance`
   - `03_券商研报`：`tree_out=DELETE_READY / repo_raw_assets=HOLD_AS_REPO_TRUTH / note=representatives_408_proof+md_pdf_477_full`
   - `04_待归类`：`tree_out=DELETE_READY / repo_raw_assets=HOLD_AS_REPO_TRUTH / note=1_pdf_imported`
 - `report_subset_status_table`
@@ -199,6 +207,7 @@
   - `quota_expansion_rule=FOUR_TARGET_BUCKETS_FILLED__NO_OLD_QUOTA_EXPANSION`
  - `mainline_return_sequence=SBKT_F014->SBKT_F006->SBKT_F002`
 - `repo_verification_status=READY`
+- `source_library_stage2_minimal_return_batch_status_v1=COMPLETE|legacy_repo_migration_batch_13_anchor_return_v1=written_hard|a_f_phase2_tables=written_hard|phase3_delete_gate=explicit_approval_only`
   - `03_券商研报`：`stage_proof__representatives_v1~v52` 合计 `408` 条，`source_exists=1` 且 `stage_status=COPIED_OR_SYNCED` 均为真；对应 `raw_assets` 原件存在性校验缺口为 `0`
   - `03_券商研报`：`S_BUCKET_INDEX__2026-06-17.tsv` 中 `md/pdf` 合计 `477` 条，`raw_assets` 原件存在性校验缺口为 `0`（本轮补齐 `index_only` 缺口 `70` 条，阈值 `size_bytes<=100995113`）
   - `S_BUCKET_INDEX__2026-06-17.tsv`：四分区合计 `868` 条（`01=49` / `02=341` / `03=477` / `04=1`），对应 `raw_assets` 原件存在性校验缺口为 `0`
@@ -216,5 +225,6 @@
 4. `position_representatives_proof=对象卡与功能映射收口|不再默认重开主线proof`
 5. `position_index_only_md_pdf=NO_AUTO_PROOF|只保留repo_truth与索引复核角色`
 6. `position_05_other=FUTURE_BUCKET+EXPLICIT_APPROVAL_ONLY`
-7. `legacy_migration_batch=S_BUCKET_功能映射表_v1.tsv|S_BUCKET_function_object_master_registry_v1.tsv|S_BUCKET_proof_of_mapping_priority_queue_v1.tsv|S_BUCKET_batch2_evidence_excerpt_table_v1.tsv|S_BUCKET_functional_cards_batch1_v15_v16__draft__imported_2026-06-24.md|S_BUCKET_batch2_priority_read_v1__text_review__imported_2026-06-26.md|S_BUCKET_REPO_STATE_TABLE__2026-06-26.md|S_BUCKET_SUMMARY__2026-06-17.md|00_主线检索索引.md|01_阶段一_项目记录_过去与落地.md|02_阶段二_工作方向_想法库.md|03_阶段二_当下计划_执行清单.md|关于日活.md`
-8. `durable_sync_targets=CUT_FILE_RETIREMENT_PLAN__2026-06-26.md|03_阶段二_当下计划_执行清单.md|关于日活.md`
+7. `legacy_repo_migration_batch_13_anchor_return_v1=S_BUCKET_SUMMARY__2026-06-17.md|S_BUCKET_功能映射表_v1.tsv|S_BUCKET_function_object_master_registry_v1.tsv|S_BUCKET_proof_of_mapping_priority_queue_v1.tsv|S_BUCKET_batch2_evidence_excerpt_table_v1.tsv|S_BUCKET_functional_cards_batch1_v15_v16__draft__imported_2026-06-24.md|S_BUCKET_batch2_priority_read_v1__text_review__imported_2026-06-26.md|batch_01_youzi_truth_anchors/README.md|batch_01_youzi_truth_anchors/youzi_truth_anchor_manifest_v1.tsv|S_BUCKET_REPO_STATE_TABLE__2026-06-26.md|04_active_main_docs/batch_01_selected/00_主线检索索引.md|04_active_main_docs/batch_01_selected/01_阶段一_项目记录_过去与落地.md|04_active_main_docs/batch_01_selected/02_阶段二_工作方向_想法库.md|04_active_main_docs/batch_01_selected/03_阶段二_当下计划_执行清单.md|04_active_main_docs/batch_01_selected/关于日活.md`
+8. `legacy_repo_migration_batch_full_sync_set_v1=S_BUCKET_功能映射表_v1.tsv|S_BUCKET_function_object_master_registry_v1.tsv|S_BUCKET_proof_of_mapping_priority_queue_v1.tsv|S_BUCKET_batch2_evidence_excerpt_table_v1.tsv|S_BUCKET_functional_cards_batch1_v15_v16__draft__imported_2026-06-24.md|S_BUCKET_batch2_priority_read_v1__text_review__imported_2026-06-26.md|batch_01_youzi_truth_anchors/README.md|batch_01_youzi_truth_anchors/youzi_truth_anchor_manifest_v1.tsv|S_BUCKET_REPO_STATE_TABLE__2026-06-26.md|S_BUCKET_SUMMARY__2026-06-17.md|00_主线检索索引.md|01_阶段一_项目记录_过去与落地.md|02_阶段二_工作方向_想法库.md|03_阶段二_当下计划_执行清单.md|关于日活.md`
+9. `durable_sync_targets=batch_01_youzi_truth_anchors/README.md|batch_01_youzi_truth_anchors/youzi_truth_anchor_manifest_v1.tsv|S_BUCKET_02_YOUZI_TRUTH_ANCHOR_CANDIDATES__2026-06-26.md|S_BUCKET_REPO_STATE_TABLE__2026-06-26.md|00_主线检索索引.md|03_阶段二_当下计划_执行清单.md|关于日活.md`

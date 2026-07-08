@@ -27,8 +27,9 @@
 
 - 阶段 1：先让新仓库承接默认入口
 - 阶段 2：再让新仓库承接小体量真值锚点
-- 阶段 3：最后只把 `原件层` 留给历史原件和极少数补核链路
-- 只有以上三类残余都收完，`原件层` 才进入真正的“可退场窗口”
+- 阶段 3：最后把 `D:\Stock\cut_file` 退成历史快照与 provenance 备份，不再进入当前工作流
+- 当前默认工作流已完成阶段 3；后续只继续清理文档/脚本中的旧外部路径残留
+- `GROUP_08` 下保留旧绝对路径的 `tsv/md/ps1` 当前统一按 `ARCHIVE_ONLY__HISTORICAL_PROVENANCE_SNAPSHOT` 处理，不再作为活动执行脚本
 - 当前执行锚点：
   - `00_entry\CUT_FILE_RETIREMENT_PLAN__2026-06-26.md`
 
@@ -38,22 +39,22 @@
 - 排除范围：`.venv / venv / site-packages / __pycache__`
 - 当前自有文件粗统计：
   - `py`: `260`
-  - `csv`: `11092`
-  - `md`: `1367`
+  - `csv`: `11093`
+  - `md`: `1366`
   - `pdf`: `532`
   - `txt`: `245`
   - `ps1`: `62`
   - `mq4`: `53`
   - `ex4`: `52`
-  - `ini`: `31`
+  - `ini`: `38`
   - `log`: `25`
 - 覆盖核验快照：
-  - `old_repo_inventory_snapshot_date=2026-06-29`
-  - `old_repo_inventory_total_files=15326`
+  - `old_repo_inventory_snapshot_date=2026-07-03`
+  - `old_repo_inventory_total_files=15226`
   - `old_repo_inventory_taskboard_alignment_v1=py=match|csv=match|md=match|pdf=match|txt=match|ps1=match|mq4=match|ex4=match|ini=match|log=match`
-  - `old_repo_inventory_additional_extensions_top_v1=hst=427|png=344|tsv=150|noext=79|zst=72|mqh=70|jpg=65|bmp=47|json=18|docx=12|wav=12`
-  - `old_repo_inventory_top_level_dirs_v1=backtest_out=10862|10_来源库_SOURCE_LIBRARY=2188|12_工具运行时_TOOLING_RUNTIME=1474|docs=235|data=210|tools=47|11_冻结总结层_FROZEN_SUMMARIES=44|.trae=31`
-  - `old_repo_md_by_top_level_dir_v1=10_来源库_SOURCE_LIBRARY=902|12_工具运行时_TOOLING_RUNTIME=241|docs=120|11_冻结总结层_FROZEN_SUMMARIES=44|.trae=31|DY_R1_KD_MTF_P0=10|root=10|backtest_out=7|data=2`
+  - `old_repo_inventory_additional_extensions_top_v1=hst=431|png=344|tsv=150|zst=72|mqh=70|jpg=65|bmp=47|json=17|wav=12|noext=9`
+  - `old_repo_inventory_top_level_dirs_v1=backtest_out=10862|10_来源库_SOURCE_LIBRARY=2188|12_工具运行时_TOOLING_RUNTIME=1488|docs=235|data=210|.dc_cache=78|tools=47|11_冻结总结层_FROZEN_SUMMARIES=44|.trae=31|DY_R1_KD_MTF_P0=17`
+  - `old_repo_md_by_top_level_dir_v1=10_来源库_SOURCE_LIBRARY=901|12_工具运行时_TOOLING_RUNTIME=245|docs=120|11_冻结总结层_FROZEN_SUMMARIES=44|.trae=31|DY_R1_KD_MTF_P0=10|root=9|backtest_out=7|data=2`
 - 一级目录裁决覆盖（top-level）：
   - `old_repo_top_level_dir_policy_p1_v1=backtest_out=KEEP_OLD_FROZEN__KEEP_WHITELIST_ELSE_TEMP|10_来源库_SOURCE_LIBRARY=KEEP_OLD_FROZEN__BATCH_COPY_WITH_NOTE|12_工具运行时_TOOLING_RUNTIME=KEEP_OLD_FROZEN__FAMILY_COPY_OR_KEEP|tools=PY_BATCH_COPY_WITH_NOTE_OR_KEEP`
   - `old_repo_top_level_dir_policy_p2_v1=11_冻结总结层_FROZEN_SUMMARIES=KEEP_OLD_FROZEN__CLEAN_COPY|.trae=KEEP_OLD_FROZEN__MIRROR_SELECT_TO_21_trae_system_archive|docs=KEEP_OLD_FROZEN__SELECT_COPY|data=KEEP_OLD_FROZEN__ALLOW_EMPTY_NO_TEMP_NOISE`
@@ -470,7 +471,7 @@
 - `12_工具运行时_TOOLING_RUNTIME` 子目录盘点与裁决（top-level under runtime）：
   - `old_repo_runtime_subdirs_by_files_v1=03_MT4便携探针实例=692|mt4_probe_instance=692|98_MT历史数据_VTMarkets_Live2=213|VTMarkets-Live 2=213|Batch9_reopen_n01_vol_state_p0_v1=56|Batch9_reopen_n02_session_or_p0_v1=39|pv_corr_state_p0_v1=37|rsj_state_p0_v1=37|02_MT指标家族_源码与探针=20|kd_mtf_p0_v1=15|vantharp_risk_p0_v1=8|04_MT_export_scripts=5|TK_R6=4|TK_R7=4|TK_R8=4`
   - `old_repo_runtime_alias_dirs_v1=03_MT4便携探针实例<->mt4_probe_instance|98_MT历史数据_VTMarkets_Live2<->VTMarkets-Live 2`
-  - `old_repo_runtime_migration_policy_v1=mt4_probe_pair=KEEP_OLD_FROZEN|vtmarkets_history_pair=KEEP_OLD_FROZEN|batch9_reopen_n01_n02=MOVE_LATER_AFTER_REF_CHECK|pv_corr_rsj=MOVE_LATER_AFTER_REF_CHECK|kd_mtf_p0_v1=KEEP_OLD_FROZEN|mt_export_and_indicator_sources=KEEP_OLD_FROZEN__COPY_WITH_NOTE_ONLY_IF_ENGINEERING_MAINLINE|tk_r6_r8_tables=KEEP_OLD_FROZEN__already_mirrored_tools_only`
+  - `old_repo_runtime_migration_policy_v1=mt4_probe_pair=KEEP_OLD_FROZEN|vtmarkets_history_pair=KEEP_OLD_FROZEN|batch9_reopen_n01_n02=MOVE_LATER_AFTER_REF_CHECK|pv_corr_rsj=MOVE_LATER_AFTER_REF_CHECK|kd_mtf_p0_v1=KEEP_OLD_FROZEN|mt_export_and_indicator_sources=KEEP_OLD_FROZEN__COPY_WITH_NOTE_ONLY_IF_ENGINEERING_MAINLINE|tk_r6_r8_tables=KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
 - `10_来源库_SOURCE_LIBRARY` 子目录盘点与裁决（top-level under source library）：
   - `old_repo_source_library_subdirs_by_files_v1=01_Kimi拆书待入库=1279|00_TK外汇=264|00_交易系统书籍=151|00_外部公开资料与方法论参考=141|00_大隐体系=133|02_原子化拆解文件=92|00_周期女王=67|00_指标定义&公式=61`
   - `old_repo_source_library_subdir_ext_top_v1=01_Kimi拆书待入库=pdf532_md473_tsv140_txt106_jpg17|00_TK外汇=png226_md20_jpg15_gif2_txt1|00_交易系统书籍=png90_md50_jpg10_jpeg1|00_外部公开资料与方法论参考=md92_png27_txt9_csv5_pine5|00_大隐体系=md110_jpg23|02_原子化拆解文件=md89_tsv1_csv1_txt1|00_周期女王=md67|00_指标定义&公式=txt43_docx12_mq45_md1`
@@ -708,27 +709,24 @@
     - `tk_r4_*`
 - 当前动作：
   - `R1~R4`: `KEEP_OLD_FROZEN`
-  - `R6~R8` 手工表家族：`MOVE_LATER_AFTER_REF_CHECK`
+  - `R6~R8` 手工表家族：`KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
 - 下一步任务：
-  1. 先只推进 `R6~R8`，不再平均扫 `R1~R8`
-  2. 先补 `tk_r6_make_manual_sheet.py / tk_r6_summarize_manual_sheet.py`
-  3. 再补 `tk_r7_make_manual_sheet.py / tk_r7_summarize_manual_sheet.py`
-  4. 再补 `tk_r8_make_manual_sheet.py / tk_r8_summarize_manual_sheet.py`
-  5. 每组都要写清：生成什么、依赖什么、是否仍可在新仓库复用
-  6. 若边界清楚，则进入新仓库 `batch_04` 候选；`R1~R4` 继续冻结
-  7. 当前已完成 `R6` 首批迁入：
+  1. `R1~R4` 继续冻结，不重开
+  2. `R6~R8` 保持新仓维护，不再回退成候选备注
+  3. 后续若继续推进，只补真实手工审计样本，不重复做模板级 smoke
+  4. 当前已完成 `R6` 首批迁入：
     - `20_tools_workspace\batch_04_tk_r6_manual_sheet_tools\tk_r6_make_manual_sheet.py`
     - `20_tools_workspace\batch_04_tk_r6_manual_sheet_tools\tk_r6_summarize_manual_sheet.py`
     - 同批备注：`20_tools_workspace\batch_04_tk_r6_manual_sheet_tools\BATCH_04_TOOL_NOTES.md`
-  8. 当前已完成 `R7` 首批迁入：
+  5. 当前已完成 `R7` 首批迁入：
     - `20_tools_workspace\batch_05_tk_r7_manual_sheet_tools\tk_r7_make_manual_sheet.py`
     - `20_tools_workspace\batch_05_tk_r7_manual_sheet_tools\tk_r7_summarize_manual_sheet.py`
     - 同批备注：`20_tools_workspace\batch_05_tk_r7_manual_sheet_tools\BATCH_05_TOOL_NOTES.md`
-  9. 当前已完成 `R8` 首批迁入：
+  6. 当前已完成 `R8` 首批迁入：
     - `20_tools_workspace\batch_06_tk_r8_manual_sheet_tools\tk_r8_make_manual_sheet.py`
     - `20_tools_workspace\batch_06_tk_r8_manual_sheet_tools\tk_r8_summarize_manual_sheet.py`
     - 同批备注：`20_tools_workspace\batch_06_tk_r8_manual_sheet_tools\BATCH_06_TOOL_NOTES.md`
- 10. 当前 `PY-04` 已形成 `R6/R7/R8` 完整可对账迁入链
+  7. 当前 `PY-04` 已形成 `R6/R7/R8` 完整可对账迁入链，并已在新仓通过模板级 smoke 验收
 
 ### Batch PY-05 Batch9 reopen 运行时脚本
 
@@ -852,6 +850,20 @@
 - 不整包复制旧 `12_工具运行时_TOOLING_RUNTIME`
 - 不直接移动旧文件，除非引用检查完成
 - 不把“文件名看起来像有用”当作“已经确认作用”
+
+## 迁移有限计数
+
+- `legacy_migration_current_state_v1=OLD_REPO_FROZEN_MAINTENANCE_ONLY`
+- `legacy_migration_remaining_batches=NONE`
+- `legacy_migration_remaining_batches_count=0`
+- `legacy_migration_remaining_actions=NONE`
+- `legacy_migration_remaining_actions_count=0`
+- `legacy_migration_exit_criteria=remaining_batches_count=0_and_remaining_actions_count=0=>OLD_REPO_FROZEN_MAINTENANCE_ONLY`
+- `legacy_migration_batch_notes_v1=all_finite_batches_closed|freeze_gate_reached`
+- `old_main_docs_round2_tail_status_v1=COMPLETE|legacy_entry_files=00+01+02|result=compat_entry_plus_minimal_history_anchor`
+- `active_main_docs_body_sync_tail_status_v1=COMPLETE|mirror_files=00+01+02+03+关于日活|result=body_level_sync_closed`
+- `source_library_stage2_minimal_return_batch_status_v1=COMPLETE|s_bucket_13_anchor_return=written_hard|a_f_phase2_tables=written_hard|result=repo_first_state_fixed`
+- `tools_long_tail_and_high_risk_role_cards_status_v1=COMPLETE|py03_batch_repo_landed=6|py01_high_risk_cards=backtest_p0+mt5_exit_assistant+ashare_preprocess|note_anchor=00_entry/OLD_REPO_FILE_SWEEP_PY03_PY04_NOTES.md`
 
 ## 一句话记忆
 

@@ -18,6 +18,13 @@
   - 当前默认入口仍然偏长
   - 重复结论散在多份长文
   - 部分工具和流程已经明确有价值，但还没系统迁入新仓库
+- 当前环境口径已经统一：
+  - 工作区根目录固定为 `d:\Stock\trading_assistant`
+  - 默认解释器固定为 `d:\Stock\trading_assistant\.venv\Scripts\python.exe`
+  - 树外 `.venv` 只允许作为本机临时覆盖，不再写成仓库默认入口
+- 当前仓库分工也已更明确：
+  - `trading_analysis` = 内容真源 / 历史追溯真源
+  - `trading_assistant` = 结构承接仓 / 主文档镜像仓 / 运行时批次承接仓
 - 因而这一轮不追求照搬旧文件，而是优先做三件事：
   - 继续吃透
   - 继续迁移
@@ -26,39 +33,46 @@
 ## 当前主线任务
 
 - 继续压旧主文档 `01` 正文追溯层剩余重复背景句，优先清 `Kimi / S桶` 段还能并短的句子。
+- 继续维持 `S_BUCKET_02` 的 `YZ-A / YZ-B` 对象级真值锚点与主题簇证据增强，并把单体对象卡 / manifest / README / 顶层入口保持同步。
 - 保持 `00/02/03/关于日活` 与镜像 `batch_01_selected/00/01/02/03/关于日活` 同口径同步。
 - 保持“原件层”第二阶段当前口径：`F1/F2/A2/A5` 独立短状态块，`A3/A4/A1` 轻量子组状态。
+- `Batch9` 继续保持 `NO failed breakout` 与 Hold，不扩 `or_break_only beyond multi-session all-closes` 新分支。
+- `MT` 子线继续保持“证据先行”：
+  - `Volty` 先补 `DumpSeries=1` 的 fresh-run CSV
+  - `XBreaking` 先补 tester `.htm` report
+  - 未补齐前不升级成“字段已闭合 / 语义已完成”
 - 每轮同步回写任务板 / 进度板 / `MAINLINE`，并做 diagnostics 收口。
 
 ## 原件层当前角色
 
-- 当前结论：原件层可能仍需追溯，但不是默认入口，也不作为当前合同层依赖。
+- 当前结论：`D:\Stock\cut_file` 已退出当前合同层；repo 内 `10_source_library_archive\raw_assets` 与 `10_source_library_archive\mirror_kimi_inbox` 已接管默认入口、原件复核与继续推进。
 - 当前角色应固定为：
-  - 外部重资产原材料层
-  - PDF / EPUB / 图片等大文件读取位
-  - 历史追溯与补核位
+  - repo 内 `raw_assets`：正式原件复核层
+  - repo 内 `mirror_kimi_inbox`：稳定入口与镜像承接层
+  - 树外目录若仍保留：历史追溯与 provenance 快照
 - 当前已经基本脱离原件层的部分：
   - `GROUP_08 research pdf` 的日常使用入口已基本转到仓库内 staging
   - `NFTRADEZ` 已完成首轮入库，外部目录更多只保留来源映射与历史追溯作用
-- 当前仍明显依赖原件层的部分：
-  - `S桶` 整体文件本体
-  - `Kimi` 批次中的正文原件读取位（本仓库不记录路径）
-  - 部分删源前验收与旧原件补核链路
+- 当前仍需继续收口的部分：
+  - `S桶` 的删源裁决与对象级证据增强
+  - `GROUP_08` 的 repo 内原件侧逐文件删除勾验
+  - 若保留树外目录，只能作为 provenance 快照，不再进入当前执行面
+  - `GROUP_08` 下仍保留旧绝对路径的 `路径勾验/前后路径台账/dryrun ps1` 统一归入 `ARCHIVE_ONLY__HISTORICAL_PROVENANCE_SNAPSHOT`
 - 当前固定策略：
-  - 不把原件层当 repo 默认入口
-  - 不在 `S桶` 完成删源裁决前讨论整盘删除
-  - 继续把“小体量真值锚点”回收到 repo；大体量原材料暂不纳入（本仓库不落路径）
+  - 不把 `D:\Stock\cut_file` 当 repo 默认入口
+  - 不再把 `D:\Stock\cut_file` 写成当前执行路径
+  - 继续把删源裁决、对象锚点和原件复核统一收在 repo 内
 
 ## 原件层退场路线
 
-- 当前目标不是长期依赖原件层，而是让它逐步退到仓外历史层。
+- 当前目标不是长期依赖原件层，而是让 `D:\Stock\cut_file` 完全退出当前工作流，只保留 repo 内承接层。
 - 当前执行锚点：
   - `00_entry\CUT_FILE_RETIREMENT_PLAN__2026-06-26.md`
 - 固定顺序：
   1. 先让新仓库承接默认入口
   2. 再让新仓库承接小体量真值锚点
-  3. 最后只把原件层留给历史原件和极少数补核链路
-- 只有当这三类残余也收完，原件层才进入真正的“可退场窗口”。
+  3. 最后把树外目录降成历史快照与 provenance 备份
+- 当前默认工作流已完成这一步；后续只继续清理文档口径与历史脚本残留。
 
 ## 固定原则
 
@@ -91,14 +105,14 @@
   - 继续按作用清晰度把旧脚本分成 `COPY_WITH_NOTE / NEW_IN_NEW_REPO / MOVE_LATER_AFTER_REF_CHECK / KEEP_OLD_FROZEN`
 - 当前重点：
   - `PY-03` 已完成首批迁入
-  - 下一刀优先 `PY-04 = tk_r6~r8` 手工表家族
+  - `PY-04 = tk_r6~r8` 手工表家族已完成新仓迁入与模板级 smoke 验收
 - `PY-04` 当前顺序：
-  1. 先补 `tk_r6_make/summarize`
-  2. 再补 `tk_r7_make/summarize`
-  3. 再补 `tk_r8_make/summarize`
-  4. 每组都要写清：生成什么、依赖什么、是否仍可在新仓库复用
+  1. `tk_r6_make/summarize`：已迁入且 smoke 通过
+  2. `tk_r7_make/summarize`：已迁入且 smoke 通过
+  3. `tk_r8_make/summarize`：已迁入且 smoke 通过
+  4. 后续只补真实人工审计样本，不再重复做模板级验证
 - 当前验收：
-  - 形成 `R6/R7/R8` 三组完整可对账迁入链，不再只停在候选备注
+  - 已形成 `R6/R7/R8` 三组完整可对账迁入链，并确认新仓可独立完成“模板生成 -> 汇总输出”最小闭环
 
 ### C 线：迁移进度与任务板同步
 
@@ -109,6 +123,23 @@
   - `04_active_main_docs\README.md`
 - 当前验收：
   - 不依赖聊天记忆也能知道主线、进度和下一刀
+
+## 迁移有限计数
+
+- 当前不再允许把“旧仓迁移”写成无限主线；必须持续收敛为可数的剩余批次与剩余动作。
+- 当前口径：
+  - `legacy_migration_current_state_v1=OLD_REPO_FROZEN_MAINTENANCE_ONLY`
+  - `legacy_migration_remaining_batches=NONE`
+  - `legacy_migration_remaining_batches_count=0`
+  - `legacy_migration_remaining_actions=NONE`
+  - `legacy_migration_remaining_actions_count=0`
+  - `legacy_migration_exit_criteria=remaining_batches_count=0_and_remaining_actions_count=0=>OLD_REPO_FROZEN_MAINTENANCE_ONLY`
+- 解释：
+  - `old_main_docs_round2_tail` = 已完成；`12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/01/02/00` 已收成“兼容入口 + 顶部合同层 + 最小历史锚点”
+  - `active_main_docs_body_sync_tail` = 已完成；新仓 `04_active_main_docs\batch_01_selected` 的 `00/01/02/03/关于日活` 已完成正文级镜像同步并切回统一入口口径
+  - `source_library_stage2_minimal_return_batch` = 已完成；`S_BUCKET` 的 `13` 个锚点回迁批次与 `A/F` 第二阶段状态表都已写硬到 repo-first 入口
+  - `tools_long_tail_and_high_risk_role_cards` = 已完成；`PY-03` 长尾工具已入 `20_tools_workspace`，`backtest_p0 / mt5_exit_assistant / ashare_preprocess` 已补高风险作用卡并继续 `KEEP_OLD_FROZEN`
+  - `finite_counter_sync_and_freeze_gate` = 所有迁移入口文档统一剩余计数口径，并在归零前禁止写成“已冻结维护态”
 
 ### D 线：新仓库主文档镜像层继续承接
 
@@ -246,12 +277,12 @@
   - 已把 `01` 里 `GROUP_08` 的重复历史长段继续压成四组事实块，降低新开对话后重新解释上下文的成本
   - 已继续把 `01` 里 `GROUP_08` 之后的 `Kimi / S桶` 大段枚举压成 `独立化边界 / batch1 四包 / NFTRADEZ 双包 / backlog 与 GROUP_08 锚点` 四组事实块，进一步降低新开对话后的重建成本
   - 已把 `00/02` 的“当前合同层 / 历史追溯层”分界继续写硬：默认使用边界与追溯层压缩边界已补入旧库与镜像；其中 `02` 已明确 `S_BUCKET / NFTRADEZ` 旧长合同不再充当默认方向入口
-  - 当前缺口：第二轮剪枝还没覆盖完 `01/02/00`，但 `00` 的长导航段、`01` 的 `Batch 8 / 9A-15` 重复中间停点与最重的 `Kimi / S桶` 大段都已压回组级结构；后续主要是继续清掉剩余重复背景句，并把 `00/01/02` 的正文级镜像继续补齐
+  - 当前结论：`01/02/00` 的第二轮剪枝与 `00/01/02/03/关于日活` 的正文级镜像同步都已完成，后续只保留兼容入口维护与必要的历史追溯
 - 新仓库镜像层：
-  - 已开始同步 `batch_01_selected` 的 `00/01/02/03/关于日活` 顶层合同层
-  - `batch_01_selected/01` 已继续补到“顶层合同层 + 追溯层边界 + Batch 16-36 历史追溯压缩版 + Batch 8/9A-15 组级追溯事实 + Kimi/S桶 四组事实块”同口径
-  - `batch_01_selected/00/02` 也已继续补到“默认使用边界 + 追溯层压缩边界”同口径，`00` 已同步跟上短导航结构
-  - 当前缺口：`04_active_main_docs` 还没逐份做正文级镜像同步
+  - `batch_01_selected` 的 `00/01/02/03/关于日活` 已完成顶层合同层与正文级镜像同步
+  - `batch_01_selected/01` 已固定为“顶层合同层 + 追溯层边界 + Batch 16-36 历史追溯压缩版 + Batch 8/9A-15 组级追溯事实 + Kimi/S桶 四组事实块”同口径
+  - `batch_01_selected/00/02` 也已固定为“默认使用边界 + 追溯层压缩边界”同口径，`00` 已稳定承接短导航结构
+  - 后续只做维护态同步，不再把镜像同步写成未完成缺口
 - 同步：
   - 回写 `S_BUCKET_REPO_STATE_TABLE__2026-06-26.md` 与 `CUT_FILE_RETIREMENT_PLAN__2026-06-26.md`
   - 回写 `关于日活.md`、`OLD_MAIN_DOC_CLEANUP_TASKBOARD.md` 与 `OLD_REPO_TO_NEW_REPO_PROGRESS.md`
@@ -273,6 +304,10 @@
   - 这轮并行推进哪几条线
   - 哪些结论已经 durable sync
   - 下一刀最顺做什么
+- 旧仓迁移必须能直接读出：
+  - `remaining_batches_count`
+  - `remaining_actions_count`
+  - `exit_criteria`
 - 旧主文档越来越短，不再继续无上限堆长。
 - 新仓库迁入越来越像“有入口、有说明、有边界”的长期工作根。
 

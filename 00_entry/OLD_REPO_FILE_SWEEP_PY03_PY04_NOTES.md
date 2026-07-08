@@ -7,6 +7,12 @@
 
 ## 扫描范围
 
+### PY-01 根目录高风险脚本补卡
+
+- `backtest_p0.py`
+- `mt5_exit_assistant.py`
+- `ashare_preprocess.py`
+
 ### PY-03 通用维护与整理脚本
 
 - `tools\s_bucketize.py`
@@ -97,6 +103,69 @@
   - 已在新仓库维护的主流水线
   - 仅旧批次专用的删除/台账/自动解析脚本
 
+## PY-01 根目录高风险脚本补卡（v2）
+
+### A. `backtest_p0.py`
+
+- 当前角色：`GENERATOR`
+- 原路径：`旧仓库根目录\backtest_p0.py`
+- 主要作用：
+  - 作为 `P0 sweep / stage2 eval` 的核心回测与指标计算入口
+  - 内含大量参数、preset、信号/出场/风控逻辑与 `sv_eval_detail.csv` 等输出锚点
+- 默认输入：
+  - `1H OHLCV csv`
+  - symbol/profile/config 参数
+- 默认输出：
+  - 回测统计表、评估 csv、审计中间结果家族
+- 当前裁决：`KEEP_OLD_FROZEN`
+- 边界说明：
+  - 强绑定旧 `P0` 主线与历史输出结构
+  - 在完成引用补核、输入输出切面收缩前，不进入新仓库工具批次
+
+### B. `mt5_exit_assistant.py`
+
+- 当前角色：`GENERATOR`
+- 原路径：`旧仓库根目录\mt5_exit_assistant.py`
+- 主要作用：
+  - 连接 `MetaTrader5`
+  - 复用 `backtest_p0` 的部分指标/参数逻辑
+  - 生成 MT5 实盘/半自动出场辅助所需的信号与风控判断
+- 默认输入：
+  - MT5 实时/近实时行情
+  - 本地参数配置与结构判断指标
+- 默认输出：
+  - 出场辅助判断、信号状态、运行时决策数据
+- 当前裁决：`KEEP_OLD_FROZEN`
+- 边界说明：
+  - 既依赖 MT5 API，也依赖旧 `backtest_p0` 逻辑切面
+  - 在未拆出稳定共享库前，不直接迁入新仓库
+
+### C. `ashare_preprocess.py`
+
+- 当前角色：`GENERATOR`
+- 原路径：`旧仓库根目录\ashare_preprocess.py`
+- 主要作用：
+  - 统一 A 股日线源的列识别、日期解析、代码规范化与前/后复权预处理
+  - 支持 `akshare` 拉取与本地 csv 入库前清洗
+- 默认输入：
+  - A 股原始 csv / DataFrame
+  - `symbol / adjust_mode / date_col / tz`
+- 默认输出：
+  - 标准化 `*_1d.csv`
+  - 预处理后的 A 股日线表
+- 当前裁决：`KEEP_OLD_FROZEN`
+- 边界说明：
+  - 虽然比执行脚本更接近“数据整理工具”，但仍绑定旧根目录运维方式与依赖面
+  - 后续若要迁入，应优先做“轻量裁剪副本”而不是直接搬根目录原件
+
+### PY-01 小结
+
+- `py01_role_cards_detail_v2=backtest_p0=core_backtest_and_eval_generator__keep_old_frozen|mt5_exit_assistant=mt5_runtime_exit_helper__keep_old_frozen|ashare_preprocess=ashare_daily_preprocessor__keep_old_frozen_until_trimmed_copy`
+- 这 3 个脚本当前都完成了“作用/输入/输出/边界”补卡，但裁决仍保持：
+  - `KEEP_OLD_FROZEN`
+  - 不进入 `20_tools_workspace\batch_03_general_ingest_tools`
+  - 只作为旧仓高风险真值锚点引用
+
 ## PY-04 当前结论
 
 ### A. trade-level / stage2 审计家族
@@ -127,18 +196,18 @@
 - `tk_r6_make_manual_sheet.py`
   - 作用：生成 `R6` 手工审计表模板
   - 输出：`tkr6_manual_audit_sheet_v1.tsv`
-  - 当前处理动作：`MOVE_LATER_AFTER_REF_CHECK`
-  - 当前判断：脚本本身很轻，但依附于 `TK-R6` 旧审计流程
+  - 当前处理动作：`KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
+  - 当前判断：脚本本身很轻，且已在新仓完成模板生成 smoke，后续作为新仓手工证据工具维护
 
 - `tk_r7_make_manual_sheet.py`
   - 作用：生成 `R7` AO 背离手工审计表模板
-  - 当前处理动作：`MOVE_LATER_AFTER_REF_CHECK`
-  - 当前判断：可复用性比 `trade-level audit` 高，但仍需要补用途说明
+  - 当前处理动作：`KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
+  - 当前判断：可复用性比 `trade-level audit` 高，且已在新仓完成模板生成 smoke
 
 - `tk_r8_make_manual_sheet.py`
   - 作用：生成 `R8` B 区域手工审计表模板
-  - 当前处理动作：`MOVE_LATER_AFTER_REF_CHECK`
-  - 当前判断：同上
+  - 当前处理动作：`KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
+  - 当前判断：同上，且已在新仓完成模板生成 smoke
 
 ### C. 目录级快扫结论
 
@@ -151,8 +220,8 @@
 
 - `tk_r6_* / tk_r7_* / tk_r8_*`
   - 以“生成手工表 + 汇总手工表”为主
-  - 当前处理动作：`MOVE_LATER_AFTER_REF_CHECK`
-  - 当前判断：如果未来真的重开 `TK-R6 / R7 / R8`，这组比 `R1-R4` 更值得先迁
+  - 当前处理动作：`KEEP_IN_NEW_REPO__SMOKE_VALIDATED`
+  - 当前判断：如果未来真的重开 `TK-R6 / R7 / R8`，这组已经是新仓默认维护入口，不再停留在候选状态
 
 ### PY-04 小结
 

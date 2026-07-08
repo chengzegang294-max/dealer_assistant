@@ -12,6 +12,14 @@
 - repo 真值文件：
   - `00_entry\S_BUCKET_02_YOUZI_TRUTH_ANCHOR_CANDIDATES__2026-06-26.md`
   - `10_source_library_archive\mirror_kimi_inbox\S_BUCKET_SUMMARY__2026-06-17.md`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\README.md`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\youzi_truth_anchor_manifest_v1.tsv`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_GROUP_SUMMARY__2026-06-26.md`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_GROUP_SUMMARY__2026-06-26.md`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
+  - `10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
 - repo 回帖副本：
   - 暂无单独 imported reply
 - 外部 PDF 读取目录：
@@ -44,15 +52,29 @@
   - `M06 / M07 / M14` 已确认是空壳 `epub`
   - `M18 / M20` 当前正文与目标卡片概念不够贴合，继续低证据保留
 - `YZ-B` 与旧冻结层的“主题簇级对照”已补齐到可对账：
-  - `YZ-B` 主题簇映射：`...\\YZ_B_THEME_CLUSTER_MAPPING__2026-06-26.tsv`
-  - 旧冻结层同主题证据表：`...\\YZ_B_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
-  - 对照检查卡：`...\\YZ_B_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
+  - `YZ-B` 主题簇映射：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_THEME_CLUSTER_MAPPING__2026-06-26.tsv`
+  - 旧冻结层同主题证据表：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
+  - 对照检查卡：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
+  - 对象组短摘要：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_GROUP_SUMMARY__2026-06-26.md`
   - 当前仅结论：允许做主题簇级复用（题材周期/退潮、尾盘/偷袭板规则、纪律与止损执行、风险过滤），但不并旧 `Mxx` 卡号
+  - 证据增强：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_B_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv` 已补“连续亏损停手/强制休息/情绪评分禁交易/仓位上限/系统性风险/环境降级或不交易”，并继续加厚 `leader_and_mainline / topic_cycle / risk_filter` 交叉条目（中军协同、中军识别时机、群体性退潮代理、板块扩散效应、群体性退潮判据、群体性退潮分档/退潮阶段切换、退潮动作层、阶段撤退优先级、撤退顺序、回撤降仓、风控触发后禁交易）；本轮固定补入 `risk_filter` 两句速读：“回撤和连亏一上梯子就降仓停手”“大盘/板块/消息面不对就降级或不交易”（仍不升级为硬门控）
+  - 本轮再补两句：`限额顺口=单只/单日仓位和连亏上限一到就收，不拿节奏好硬加仓`；`仓位顺口=单笔风险和仓位上限一到就降，不拿主线热度顶仓位`。
+  - 本轮再补一句：`系统性风险顺口=暴跌/黑天鹅先空仓观望或清仓减仓，不拿主线热度硬顶（动作层只执行）`。
+  - 本轮再补一句：`超限顺口=仓位超上限就降到25%，低于阈值就放弃交易，不硬凑（动作层只执行）`。
+  - 本轮再补一句：`弱势顺口=弱势只留低仓，极端行情直接空仓，不硬做（动作层只执行）`。
+  - 本轮再补一句：`卖点顺口=卖点信号一到就执行，纪律优先，不讲价（动作层只执行）`。
+  - 第二层交叉：`YZ_B_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md` 已挂接 `A1` 冷归档中的 `情绪流龙头战法 part1/part2` 与 `G08` 的板块效应镜像，用于加厚“中军识别时机 / 退潮判据 / 阶段撤退 / 确认阶段板块效应 / 中军量化代理”的解释密度；当前分工固定为 `A1=识别时机/退潮观察代理/阶段撤退/中军候选代理`、`G08=确认阶段板块联动/补涨扩散`，其中 `A1` 主要贴边 `判据层/阶段切换层`，`G08` 主要贴边确认后的板块扩散解释；维护态速记固定为“`A1` 先帮看退潮体感与撤退顺序，`G08` 再补确认后扩散，三层卡框架不动”；证据备注当前同步固定为“先看 A1 体感，再回主证据定层”；二层读法短句固定为“先用 `A1` 读退潮体感和撤退顺序，再回 `m05` 主证据切层，`G08` 只补确认后扩散”；`leader_and_mainline` 读法短句固定为“先用 `A1` 看中军先动/中军倒则撤体感，再回 `m05` 主证据定主线”；`leader_and_mainline` 角色顺口固定为“`A1` 先分清中军/龙头/补涨是谁，再回 `m05` 定谁是主线、谁只是跟随”；`leader_and_mainline` 协同顺口固定为“`A1` 先看中军、龙头、补涨是不是同向协同，再回 `m05` 定主线有没有成形”；`leader_and_mainline` 中军时机顺口固定为“`A1` 先看是否到了确认中军的时机，再回 `m05` 决定能不能把补涨当扩散而不是主线”；`leader_and_mainline` 中军顺口固定为“`A1` 先看中军先动还是中军转弱，再回 `m05` 定主线是否还成立”；`leader_and_mainline` 无中军顺口固定为“`A1` 先看有没有中军确认，再回 `m05` 决定能不能参与龙头和补涨”；`risk_filter` 读法短句固定为“先回系统止损/R:R/闭环主证据定能不能做，`A1/G08` 不负责放宽风控”；`risk_filter` R:R 顺口固定为“R:R 不够直接过滤，不拿 `A1/G08` 替风控开口子”；`risk_filter` 闭环顺口固定为“闭环没走完就不算做完，不拿单句技巧顶系统”；`risk_filter` 禁交易顺口固定为“风控一旦触发，先停手，不讨论例外”；`risk_filter` 回撤顺口固定为“回撤和连亏一上梯子就降仓停手，不拿‘赶紧翻本’顶风控”；`risk_filter` 环境顺口固定为“大盘/板块/消息面不对就降级或不交易，不拿局部强势硬开仓”；`execution_discipline` 顺口固定为“止损一到先砍，先活下来，不给主观解释加戏（动作层只执行）”；`intraday_shape` 尾盘顺口固定为“尾盘偷袭只当风险提醒，不把偷袭板当可追主线”；`psychology_state` 情绪阈值顺口固定为“情绪分数一超线就停手，不拿主线热度硬顶”；`psychology_state` 强制休息顺口固定为“单日亏损/连亏/情绪失衡触发就强制休息”；`topic_cycle` 撤退顺口固定为“`A1` 先按撤退顺序体感看谁先退，再回 `m05` 定补涨/龙头/中军层级”；`topic_cycle` 退出优先级顺口固定为“止损优先，退潮次之，系统性风险直接按退出梯子走”；这一刀继续只加厚解释密度，不改三层卡框架
+  - 可复用短句（YZ-B，不并旧卡号；其中 `topic_cycle` 三层卡已同步前置到 `00_主线检索索引.md` 顶部速读卡）：
+    - 主线与龙头：优先看主线/龙头/中军，不在杂乱补涨里硬做。
+    - 周期与退潮：判据层先看退潮综合判定，阶段切换层再看四阶段切仓，动作层才看退潮信号/五卖清仓。
+    - 执行纪律：先做对、快纠错，风险触发后优先停手复位。
+    - 盘中形态：尾盘偷袭/临尾盘冲板只保留观察价值，不直接升级成规则。
 - `YZ-A` 与旧冻结层的“主题簇级对照”已补齐到可对账：
-  - `YZ-A` 主题簇映射：`...\\YZ_A_THEME_CLUSTER_MAPPING__2026-06-26.tsv`
-  - 旧冻结层同主题证据表：`...\\YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
-  - 对照检查卡：`...\\YZ_A_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
-  - 证据增强：`YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv` 已补“等待/强制休息/连续亏损停手/风险与仓位上限/回撤触发暂停实盘/弱势禁忌不交易/环境降级或不交易/风控触发后禁止继续交易/外部冲击空仓观望/系统性风险应对”等行号证据
+  - `YZ-A` 主题簇映射：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_THEME_CLUSTER_MAPPING__2026-06-26.tsv`
+  - 旧冻结层同主题证据表：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv`
+  - 对照检查卡：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_TO_OLD_FROZEN_THEME_ALIGNMENT_CHECK__2026-06-26.md`
+  - 对象组短摘要：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_GROUP_SUMMARY__2026-06-26.md`
+  - 证据增强：`10_source_library_archive\batch_01_youzi_truth_anchors\YZ_A_OLD_FROZEN_THEME_EVIDENCE__2026-06-26.tsv` 已补“等待/强制休息/连续亏损停手/风险与仓位上限/回撤触发暂停实盘/弱势禁忌不交易/环境降级或不交易/风控触发后禁止继续交易/外部冲击空仓观望/系统性风险应对”等行号证据
   - 当前仅结论：允许做主题簇级复用（计划与流程、执行纪律、心理预警、风险过滤、空仓等待、偏差纠正），但不并旧 `Mxx` 卡号
   - 可复用短句（YZ-A，不并旧卡号）：
     - 计划先行：无标的不交易；先定计划与撤退，再谈出手。
@@ -168,9 +190,12 @@
 
 1. `YZ-A01/A02/A03` 的显式映射检查已经完成，当前继续维持对象级锚点，不强行并入旧卡号体系。
 2. `YZ-B01 / YZ-B02 / YZ-B03 / YZ-B04` 已完成首批真实摘录卡，`YZ-B` 对象组入口短摘要、主题簇映射证据与旧冻结层同主题证据表已落盘（不升级成硬门控、不并旧卡号）。
-3. 若后续需要扩 `YZ-B`，优先做“主题簇对照与证据增强”，而不是继续加更多书。
+3. 当前维护态优先继续做 `YZ-A / YZ-B` 的主题簇对照与行号证据增强，不继续加更多书，也不升级成硬门控。
 4. 完成后同步回写：
+   - `10_source_library_archive\batch_01_youzi_truth_anchors\README.md`
+   - `10_source_library_archive\batch_01_youzi_truth_anchors\youzi_truth_anchor_manifest_v1.tsv`
+   - `S_BUCKET_02_YOUZI_TRUTH_ANCHOR_CANDIDATES__2026-06-26.md`
    - `S_BUCKET_REPO_STATE_TABLE__2026-06-26.md`
-   - `CUT_FILE_RETIREMENT_PLAN__2026-06-26.md`
+   - `00_主线检索索引.md`
    - `03_阶段二_当下计划_执行清单.md`
    - `关于日活.md`
