@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_downstream_summary v1
+# N02 GBPUSD M15 切片下游总览 v1
 
 ## 作用
 

@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_or_break_only_same_day_session_close_runtime_notes v1
+# N02 GBPUSD M15 切片 OR Break Only 当日收盘运行说明 v1
 
 ## 角色
 

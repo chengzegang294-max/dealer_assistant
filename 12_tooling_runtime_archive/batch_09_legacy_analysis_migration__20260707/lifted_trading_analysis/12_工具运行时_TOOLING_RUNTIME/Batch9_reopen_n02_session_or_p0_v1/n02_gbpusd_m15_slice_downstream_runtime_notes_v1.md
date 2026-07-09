@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_downstream_runtime_notes v1
+# N02 GBPUSD M15 切片下游运行说明 v1
 
 ## 角色
 

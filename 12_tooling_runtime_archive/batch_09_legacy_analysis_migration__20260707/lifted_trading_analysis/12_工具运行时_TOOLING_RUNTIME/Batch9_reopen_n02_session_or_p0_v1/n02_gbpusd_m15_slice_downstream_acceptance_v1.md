@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_downstream_acceptance v1
+# N02 GBPUSD M15 切片下游验收 v1
 
 ## 目的
 
