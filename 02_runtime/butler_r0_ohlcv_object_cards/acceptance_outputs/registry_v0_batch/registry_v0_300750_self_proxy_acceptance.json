@@ -1,0 +1,139 @@
+{
+  "registry_id": "registry_v0_300750_self_proxy",
+  "input_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300750_self_proxy_output.json",
+  "sample_plan": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/registry_v0_sample_plan_v1.tsv",
+  "as_of_date": "2026-05-08",
+  "summary_snapshot": {
+    "cards_run": [
+      "VOLFAC_P0_A",
+      "BPB_P0_E",
+      "VP_P0_E",
+      "TKR7_P0_E",
+      "VOLTARGET_P0_R",
+      "PERIOD_QUEEN_P0_F"
+    ],
+    "vote_snapshot_count": 6,
+    "vote_snapshot_object_ids": [
+      "VOLFAC_P0_A",
+      "BPB_P0_E",
+      "VP_P0_E",
+      "TKR7_P0_E",
+      "VOLTARGET_P0_R",
+      "PERIOD_QUEEN_P0_F"
+    ],
+    "final_signal": "SELL",
+    "trade_gate": "EXIT",
+    "permission": "REDUCED",
+    "blockers": [],
+    "hard_block": false,
+    "size_policy": "min(environment_cap, voltarget_scalar)",
+    "recommended_size_scalar": 0.218075,
+    "aggregate_final_signal": "SELL"
+  },
+  "checks": [
+    {
+      "field": "top_level_required_fields",
+      "expected": "present",
+      "actual": "present",
+      "passed": true
+    },
+    {
+      "field": "cards_run",
+      "expected": "VOLFAC_P0_A|BPB_P0_E|VP_P0_E|TKR7_P0_E|VOLTARGET_P0_R|PERIOD_QUEEN_P0_F",
+      "actual": "VOLFAC_P0_A|BPB_P0_E|VP_P0_E|TKR7_P0_E|VOLTARGET_P0_R|PERIOD_QUEEN_P0_F",
+      "passed": true
+    },
+    {
+      "field": "vote_snapshot_count",
+      "expected": "6",
+      "actual": "6",
+      "passed": true
+    },
+    {
+      "field": "vote_snapshot_objects_match_cards_run",
+      "expected": "VOLFAC_P0_A|BPB_P0_E|VP_P0_E|TKR7_P0_E|VOLTARGET_P0_R|PERIOD_QUEEN_P0_F",
+      "actual": "VOLFAC_P0_A|BPB_P0_E|VP_P0_E|TKR7_P0_E|VOLTARGET_P0_R|PERIOD_QUEEN_P0_F",
+      "passed": true
+    },
+    {
+      "field": "vote_snapshot_required_fields",
+      "expected": "present",
+      "actual": "present",
+      "passed": true
+    },
+    {
+      "field": "buy_votes",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "field": "sell_votes",
+      "expected": "2",
+      "actual": "2",
+      "passed": true
+    },
+    {
+      "field": "neutral_votes",
+      "expected": "1",
+      "actual": "1",
+      "passed": true
+    },
+    {
+      "field": "final_signal",
+      "expected": "SELL",
+      "actual": "SELL",
+      "passed": true
+    },
+    {
+      "field": "trade_gate",
+      "expected": "EXIT",
+      "actual": "EXIT",
+      "passed": true
+    },
+    {
+      "field": "blockers",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    },
+    {
+      "field": "permission",
+      "expected": "REDUCED",
+      "actual": "REDUCED",
+      "passed": true
+    },
+    {
+      "field": "hard_block",
+      "expected": "false",
+      "actual": "false",
+      "passed": true
+    },
+    {
+      "field": "size_policy",
+      "expected": "min(environment_cap, voltarget_scalar)",
+      "actual": "min(environment_cap, voltarget_scalar)",
+      "passed": true
+    },
+    {
+      "field": "recommended_size_scalar",
+      "expected": "nonzero",
+      "actual": "0.218075",
+      "passed": true
+    },
+    {
+      "field": "summary_final_signal_matches_final_card",
+      "expected": "SELL",
+      "actual": "SELL",
+      "passed": true
+    },
+    {
+      "field": "summary_blockers_match_final_card",
+      "expected": "",
+      "actual": "",
+      "passed": true
+    }
+  ],
+  "acceptance_status": "pass",
+  "failed_fields": []
+}

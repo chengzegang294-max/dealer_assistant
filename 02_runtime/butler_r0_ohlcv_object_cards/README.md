@@ -64,7 +64,7 @@
 - `registry_v0` 已从“6 张卡串跑”推进到“有显式输入/输出合同”的最小正式聚合入口。
 - `acceptance_outputs/registry_v0_601991_sh_output.json` 现已显式输出 `vote_input_snapshot / aggregate_summary / final_decision_card / size_policy_card`。
 - `run_registry_v0_acceptance_v1.py` 用样本计划校验 `cards_run / vote_input_snapshot / buy-sell-neutral votes / final_signal / trade_gate / blockers / permission / hard_block / size_policy`，把 registry 验收从“人工看 JSON”推进到“机器强校验”。
-- `run_registry_v0_batch_acceptance_v1.py` 已把 `registry_v0` 从单样本验收推进到多样本批量验收，当前 3 条 `multi_registry_ready` 样本已全部 `pass`。
+- `run_registry_v0_batch_acceptance_v1.py` 已把 `registry_v0` 从单样本验收推进到多样本批量验收，当前 4 条 `multi_registry_ready` 样本已全部 `pass`。
 - `00_assets/_raw_snapshot_batch09/ashare_watchlist` 剩余非 `kline_1d` 文件已完成三分流：
   - 结构化 watchlist 输入归 `data/raw/watchlist_inputs/`
   - 文本快照归 `10_source_library_archive/.../ashare_watchlist_text_snapshot/`

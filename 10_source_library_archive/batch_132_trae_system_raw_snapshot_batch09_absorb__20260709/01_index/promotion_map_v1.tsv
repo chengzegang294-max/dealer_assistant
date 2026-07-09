@@ -1,0 +1,2 @@
+source_repo_path	promoted_repo_path	group_name	action	evidence_mode	note
+21_trae_system_archive/_raw_snapshot_batch09	10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/trae_system_raw_snapshot_batch09	raw_snapshot	move_promote	historical_recovered	把旧 .trae 原样快照与 robocopy 日志证据迁入来源归档层，旧路径保留 pointer README

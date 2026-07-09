@@ -1,8 +1,8 @@
 {
   "sample_plan": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/registry_v0_sample_plan_v1.tsv",
   "status_filter": "multi_registry_ready",
-  "batch_count": 3,
-  "pass_count": 3,
+  "batch_count": 4,
+  "pass_count": 4,
   "fail_count": 0,
   "failed_registry_ids": [],
   "batch_rows": [
@@ -41,6 +41,17 @@
       "acceptance_status": "pass",
       "final_signal": "BUY",
       "trade_gate": "ALLOW",
+      "blockers": []
+    },
+    {
+      "registry_id": "registry_v0_300750_self_proxy",
+      "primary_symbol": "300750.SZ",
+      "market_proxy_symbol": "300750.SZ",
+      "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300750_self_proxy_output.json",
+      "acceptance_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300750_self_proxy_acceptance.json",
+      "acceptance_status": "pass",
+      "final_signal": "SELL",
+      "trade_gate": "EXIT",
       "blockers": []
     }
   ],

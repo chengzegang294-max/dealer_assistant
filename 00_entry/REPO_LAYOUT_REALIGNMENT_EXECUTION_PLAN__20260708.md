@@ -60,6 +60,8 @@
     - `README.md` 已补充冻结批次的新入口说明
     - 已完成 `batch_01_selected` 与 `batch_02_selected` 的正文实体 -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/`
     - 旧目录当前仍保留可读正文与 README 回指，本轮先不做全量 pointer-only
+    - 已完成 `_raw_snapshot_batch09` -> `10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/`
+    - 已落 `SKILLS_INDEX/SKILLS_GROUP_VIEW` 工作副本 -> `00_entry/trae_system_transition/`（旧路径保持不动）
 
 ## P2 目录与文件
 
@@ -93,6 +95,7 @@
 - `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
 - `21_trae_system_archive/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
 - `21_trae_system_archive/batch_01_selected/*`、`21_trae_system_archive/batch_02_selected/p0-exec-evidence-officer_PROMPT.md` -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/00_raw_snapshot/`
+- `21_trae_system_archive/_raw_snapshot_batch09` -> `10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/trae_system_raw_snapshot_batch09/`
 
 ## 本轮不直接动的内容
 
