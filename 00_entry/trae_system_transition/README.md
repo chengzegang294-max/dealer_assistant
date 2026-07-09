@@ -9,6 +9,8 @@
 
 - `TRAE_SYSTEM_SKILLS_INDEX__20260709.md`
 - `TRAE_SYSTEM_SKILLS_GROUP_VIEW__20260709.md`
+- `trae_system_transition_family_index_v1.tsv`
+- `promotion_map_v1.tsv`
 
 ## 口径
 
