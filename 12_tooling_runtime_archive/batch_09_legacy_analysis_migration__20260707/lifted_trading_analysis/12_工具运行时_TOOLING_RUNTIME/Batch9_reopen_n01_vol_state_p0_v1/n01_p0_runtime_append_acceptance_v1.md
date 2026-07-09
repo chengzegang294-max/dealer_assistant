@@ -1,4 +1,4 @@
-# n01_p0_runtime_append_acceptance v1
+# N01 P0 运行追加验收 v1
 
 - ARCHIVE_ONLY_RUNTIME_MIRROR: 本文件记录旧 `REOPEN_B9_N01_VOL_STATE_P0` runtime append 的历史验收结果，不作为当前默认验收入口。
 - 当前 repo-first 入口先看：
