@@ -1,4 +1,4 @@
-# N01 real_input_samples
+# N01 真实输入样本
 
 - ARCHIVE_ONLY_RUNTIME_MIRROR: 本目录只保留 `REOPEN_B9_N01_VOL_STATE_P0` 的历史真实接入样本说明，不作为当前默认接入入口。
 - 当前 repo-first 入口先看：

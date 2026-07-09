@@ -1,4 +1,4 @@
-# VTMarkets-Live 2 (ARCHIVE_ONLY)
+# VTMarkets-Live 2（仅归档）
 
 - file_type: `ARCHIVE_ONLY`
 - role: historical snapshot pointer only

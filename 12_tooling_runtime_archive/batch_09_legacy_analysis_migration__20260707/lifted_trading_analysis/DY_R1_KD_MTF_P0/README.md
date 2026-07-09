@@ -1,4 +1,4 @@
-# DY_R1_KD_MTF_P0
+# DY_R1_KD_MTF_P0 历史镜像
 
 ARCHIVE_ONLY_RUNTIME_MIRROR: 本目录是旧仓 `KD_MTF_P0` 的历史运行时镜像，不作为当前默认续跑入口。
 

@@ -1,4 +1,4 @@
-# Norman NFTRADEZ ICT Trader NYC
+# Norman NFTRADEZ ICT Trader NYC 资料包
 
 ## 当前定位
 

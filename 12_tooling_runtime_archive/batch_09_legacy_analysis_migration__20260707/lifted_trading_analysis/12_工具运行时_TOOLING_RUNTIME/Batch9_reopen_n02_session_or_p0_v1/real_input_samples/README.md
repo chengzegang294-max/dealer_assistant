@@ -1,4 +1,4 @@
-# N02 real_input_samples
+# N02 真实输入样本
 
 ## 目的
 
