@@ -1,4 +1,4 @@
-# S_BUCKET batch1 round3 function core
+# S_BUCKET batch1 round3 功能核心说明
 
 本包用于把 `SBKT_F014 / SBKT_F006 / SBKT_F002` 从“第二轮正文收缩结果”继续推进到“第三轮功能核心对象卡”。
 

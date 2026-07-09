@@ -1,4 +1,4 @@
-# n02_ib_contract_notes v1
+# N02 IB 合同说明 v1
 
 ## 目的
 

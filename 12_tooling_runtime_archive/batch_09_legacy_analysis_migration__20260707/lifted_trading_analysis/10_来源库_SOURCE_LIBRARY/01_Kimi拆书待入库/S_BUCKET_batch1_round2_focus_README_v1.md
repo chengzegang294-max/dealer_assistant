@@ -1,4 +1,4 @@
-# S_BUCKET batch1 round2 focus v1
+# S_BUCKET batch1 round2 聚焦说明 v1
 
 - scope: `SBKT_F014 / SBKT_F006 / SBKT_F002`
 - goal: 在正文证据层继续收缩，不再重复第一轮通读
