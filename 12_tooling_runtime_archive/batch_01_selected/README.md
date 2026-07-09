@@ -12,3 +12,8 @@
 
 - 首批只收一套顶层最小冻结链。
 - 体量更大的运行时目录和专题实例后续分批进入，不和本批混在一起。
+
+## 备注入口
+
+- `BATCH_01_CROSS_LINE_FROZEN_EXECUTION_CARD__20260709.md`
+- `BATCH_01_CROSS_LINE_FROZEN_ARTIFACT_INDEX__20260709.tsv`
