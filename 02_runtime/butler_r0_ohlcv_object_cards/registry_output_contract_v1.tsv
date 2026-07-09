@@ -1,4 +1,18 @@
 section	field	type	required	meaning
+top_level	registry_id	string	yes	registry 入口标识，当前为 registry_v0_minimal
+top_level	input_csv	string	yes	主标的输入日线样本路径
+top_level	market_proxy_csv	string	yes	环境代理输入样本路径
+top_level	as_of_date	date	yes	本次输出对应的样本末日期
+top_level	cards_run	list	yes	本轮实际接入并执行的对象卡列表
+vote_input_snapshot	object_id	string	yes	对象卡唯一标识，如 VOLFAC_P0_A
+vote_input_snapshot	card_role	enum	yes	聚合角色：environment/filter/voter/sizer
+vote_input_snapshot	signal_type	string	yes	对象卡当前输出的信号类型
+vote_input_snapshot	signal_direction	enum	yes	投票方向：buy/sell/neutral
+vote_input_snapshot	signal_strength	float	yes	信号强度，供加权聚合
+vote_input_snapshot	confidence	float	yes	当前信号可信度
+vote_input_snapshot	filter_action	enum	yes	过滤动作：PASS/REDUCE_WEIGHT/EXCLUDE
+vote_input_snapshot	risk_action	string	yes	风控动作或建议，如 FULL/HALT_DAY_TRADE/HOLD
+vote_input_snapshot	size_scalar	float	yes	当前卡给出的仓位缩放或上限
 aggregate_summary	buy_votes	int	yes	买方投票数量
 aggregate_summary	sell_votes	int	yes	卖方投票数量
 aggregate_summary	neutral_votes	int	yes	中性票数量
@@ -9,11 +23,22 @@ aggregate_summary	avg_size_scalar	float	yes	过滤与仓位卡综合出的平均
 aggregate_summary	permission	string	yes	环境权限
 aggregate_summary	final_signal	enum	yes	最终结论：BUY/SELL/NEUTRAL/NO_TRADE
 aggregate_summary	blockers	list	yes	触发过滤或阻塞的对象卡
+final_decision_card	final_signal	enum	yes	最终结论：BUY/SELL/NEUTRAL/NO_TRADE
 final_decision_card	trade_gate	enum	yes	执行门：ALLOW/WAIT/EXIT/BLOCKED
+final_decision_card	permission	string	yes	最终决策采用的环境权限
+final_decision_card	buy_votes	int	yes	买方投票数量
+final_decision_card	sell_votes	int	yes	卖方投票数量
+final_decision_card	neutral_votes	int	yes	中性票数量
+final_decision_card	buy_score	float	yes	买方加权总分
+final_decision_card	sell_score	float	yes	卖方加权总分
+final_decision_card	net_score	float	yes	净分数
+final_decision_card	blockers	list	yes	触发过滤或阻塞的对象卡
 final_decision_card	hard_block	bool	yes	是否存在硬阻塞
 final_decision_card	rationale	string	yes	最终结论原因摘要
 size_policy_card	environment_cap	float	yes	环境卡给出的上限
 size_policy_card	voltarget_scalar	float	yes	波动率目标卡给出的缩放
 size_policy_card	volfac_filter_scalar	float	yes	波动过滤卡给出的过滤缩放
+size_policy_card	avg_size_scalar	float	yes	过滤与仓位卡综合出的平均缩放
 size_policy_card	recommended_size_scalar	float	yes	最终建议仓位缩放
 size_policy_card	size_policy	string	yes	仓位裁决规则摘要
+card_results_debug	detail	object	optional	单卡 detail 目前作为调试展开输出，暂不冻结其内部子字段合同

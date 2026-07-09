@@ -30,6 +30,7 @@
 - 用最小 runner 把真实样本 CSV 跑通，验证字段合同不是空文档。
 - 用 `registry_v0_minimal` 把已可跑卡串起来，验证 `permission / size / vote` 的统一聚合入口。
 - 用 `registry_vote_input_contract_v1.tsv` 与 `registry_output_contract_v1.tsv` 固定聚合入口字段，避免 registry 输出继续漂移。
+- 当前 `registry_output_contract_v1.tsv` 已冻结顶层字段、`vote_input_snapshot`、`aggregate_summary`、`final_decision_card`、`size_policy_card`；`card_results.detail` 仅保留为调试展开，不作为稳定子字段合同。
 - 用 `promote_batch09_watchlist_tripartite_v1.py` 把 `ashare_watchlist` 剩余非 `kline_1d` 文件拆到 runtime 输入层、source snapshot 层和 tooling artifact 层。
 - 不替代未来正式 pipeline；只是从“样本驱动”进入“主数据源驱动”的桥接层。
 

@@ -1,0 +1,2 @@
+source_repo_path	promoted_repo_path	group_name	action	evidence_mode	note
+20_tools_workspace/session_clip/临时粘贴区__20260708.md	10_source_library_archive/batch_120_tools_workspace_absorb__20260709/00_raw_snapshot/session_clip/临时粘贴区__20260708.md	session_clip_snapshot	move_promote	historical_recovered	从合同外 tools workspace 的 session_clip 回收到来源快照层，保留原始排查现场
