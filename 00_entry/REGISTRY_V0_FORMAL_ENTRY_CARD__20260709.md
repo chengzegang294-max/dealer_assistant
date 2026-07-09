@@ -7,6 +7,8 @@
 
 ## 正式入口
 
+- 运行层索引：
+  - `02_runtime/butler_r0_ohlcv_object_cards/runtime_execution_card_v1.md`
 - 主 runner：
   - `02_runtime/butler_r0_ohlcv_object_cards/run_registry_v0_minimal.py`
 - 单样本强验收：
