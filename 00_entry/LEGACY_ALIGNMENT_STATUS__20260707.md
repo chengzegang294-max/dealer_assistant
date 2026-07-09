@@ -1,28 +1,28 @@
 # LEGACY Alignment Status (Batch09)
 
-## Scope
+## 用途
 
 - 旧库的“可删除无副作用”已达成：旧根已退场；当前可追溯快照位于 `batch_09` 的 `lifted_trading_analysis`。
 - 本文件不把旧库当作默认入口；它只回答“旧库内容与新仓库主线如何对齐、哪些已迁入、哪些仍只在快照里”。
 
-## Canonical Rules
+## 固定规则
 
 - 总迁移地图：见 [FULL_REPO_MIGRATION_MAP.md](file:///d:/Stock/trading_assistant/00_entry/FULL_REPO_MIGRATION_MAP.md)
 - 扫库裁决任务板：见 [OLD_REPO_FILE_SWEEP_TASKBOARD.md](file:///d:/Stock/trading_assistant/00_entry/OLD_REPO_FILE_SWEEP_TASKBOARD.md)
 
-## Snapshot Location
+## 快照位置
 
 - Raw snapshot root: `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis`
 - Inventory (dst, sha256, excluded env/cache): `inventory_v2_dst_excluded_sha256__20260707_pass2.tsv`
 
-## Audit Outputs
+## 审计产物
 
 - Alignment audit (full): `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_alignment_audit__20260707.tsv`
 - Alignment audit summary: `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_alignment_audit__20260707.summary.json`
 - Alignment gaps (target missing): `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_alignment_gaps__20260707.tsv`
 - Alignment gaps summary: `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_alignment_gaps__20260707.summary.json`
 
-## Current Alignment Summary (Counts)
+## 当前对齐摘要（Counts）
 
 - Total files in snapshot: 4061
 - Category distribution (audit-derived):
@@ -39,7 +39,7 @@
   - active_main_docs: 9 (target_exists=9)
   - others: 136
 
-## What Is Already Migrated (Canonical Exists)
+## 已完成对齐（Canonical Exists）
 
 - Root active docs: snapshot root docs 已由 `04_active_main_docs/batch_01_selected/` 作为主线承接（7/7）。
 - `.vscode/settings.json`: 作为仓库配置存在（1/1）。
@@ -131,7 +131,7 @@
   - `batch_97_kimi_inbox_duplicate_target_fill__20260707`（59 files / 39.6MB）
   - `batch_98_kimi_inbox_name_collision_target_fill__20260707`（22 files / 1.7MB）
 
-## What Is Not Yet Aligned (Needs Reclassification / Decision)
+## 尚未对齐（Needs Reclassification / Decision）
 
 - `10_来源库_SOURCE_LIBRARY` 的非 `01_Kimi拆书待入库` 部分（937 文件）：已归档到 `10_source_library_archive/_raw_snapshot_batch09`，但仍需要按批次去重与重分类，才能进入“可持续维护”的归档层。
 - `11_冻结总结层_FROZEN_SUMMARIES`（44 文件）：已归档到 `11_frozen_summaries_archive/_raw_snapshot_batch09`，仍需要去乱码/去重复后再按批次迁入可读归档层。
@@ -140,7 +140,7 @@
 - `docs/`（10 文件）：已归档到 `12_tooling_runtime_archive/batch_08_legacy_docs_backlog__20260706/legacy_docs_backlog`，仍需要后续“入口卡+归属说明”裁决。
 - `.trae` 非精选部分（31 文件）：已归档到 `21_trae_system_archive/_raw_snapshot_batch09/.trae`，`batch_01_selected/batch_02_selected` 仍是“精选可用子集”。
 
-## Next Closure Items
+## 下一收口项
 
 - `source_library_mirror` 已清零；后续只需保留 duplicate/collision 审单作为裁决证据，不再阻塞旧来源库对齐口径。
 - `source_library_raw_snapshot` 下一步已切成目录级推进：`non_kimi_raw_snapshot_prefix_summary__20260707.tsv` 将 937 files 压成 7 个顶层前缀；第一顺位先处理 `00_TK外汇`、`00_外部公开资料与方法论参考`、`02_原子化拆解文件` 的默认入口与最小搬迁清单。
