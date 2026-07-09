@@ -1,4 +1,4 @@
-# BATCH_06_ARTIFACT_INDEX
+# Batch 06 产物索引
 
 - batch_id: `batch_06_legacy_commit_helpers__20260706`
 - file_type: `INDEX_NOTE`

@@ -1,4 +1,4 @@
-# BATCH_06_EXECUTION_CARD
+# Batch 06 执行卡
 
 - batch_id: `batch_06_legacy_commit_helpers__20260706`
 - file_type: `INDEX_NOTE`

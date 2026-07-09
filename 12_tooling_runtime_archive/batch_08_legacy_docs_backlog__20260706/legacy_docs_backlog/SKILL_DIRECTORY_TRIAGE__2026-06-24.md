@@ -1,4 +1,4 @@
-# SKILL Directory Triage
+# Skill 目录分流裁决
 
 日期：`2026-06-24`
 
