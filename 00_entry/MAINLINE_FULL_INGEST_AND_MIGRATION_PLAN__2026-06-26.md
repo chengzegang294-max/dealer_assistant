@@ -297,6 +297,19 @@
 - 同步：
   - 已把旧库进度板与旧库任务板补上 `A3/A4/A1` 子组入口清单锚点
 
+## 2026-07-09 durable sync 补记
+
+- `registry_v0` 已从 runtime 内部聚合能力上提为仓库级正式入口：
+  - `00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`
+- 当前正式阅读链路已固定为：
+  - `00_entry formal entry -> 02_runtime runtime_execution_card_v1.md -> run_registry_v0_minimal.py`
+- `trae_system_transition` 已明确保持“working copy / 治理中间态”角色：
+  - `21_trae_system_archive` 继续承担 `decision index / group router`
+  - `00_entry\trae_system_transition\` 继续承担 repo-global working copy
+- 当前 `.trae/` 目录受 `.gitignore` 约束：
+  - 不把关键治理回指只写进本地 `.trae` 修改
+  - repo 内可追踪真值继续以 `00_entry / 21_trae_system_archive / 04_active_main_docs` 为准
+
 ## 验收标准
 
 - 新主线能同时回答四件事：

@@ -26,6 +26,8 @@
 - 若你要找“为什么这样推进、哪些边界不能碰”：看 `batch_01_selected\02_阶段二_工作方向_想法库.md`
 - 若你要找“当前动作、下一步、验收口径”：看 `batch_01_selected\03_阶段二_当下计划_执行清单.md`
 - 若你要找“最近一轮推进结论与停点”：看 `batch_01_selected\关于日活.md`
+- 若你要找“当前 runtime 聚合正式入口”：看 `..\00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`
+- 若你要找“当前 trae system 过渡工作副本边界”：看 `..\00_entry\trae_system_transition\README.md`
 
 ## 当前状态
 
@@ -41,6 +43,9 @@
   - 旧仓库主文档仍是全量进度真源
   - 新仓库这层已经完成首批锚点承接
   - 但正文级镜像同步与第二轮去冗余仍未全部完成
+- 当前补记：
+  - `registry_v0` 已具备仓库级正式入口，并已与 runtime 执行卡形成自然阅读链
+  - `trae_system_transition` 当前只作为 repo-global working copy，不替代 `.trae` first-hop，也不把关键回指沉到被 `.gitignore` 排除的本地修改里
 - 当前镜像层的作用不是“替代旧仓库所有长文”，而是逐步接管：
   - 当前主线入口
   - 当前已落地事实

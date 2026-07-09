@@ -1,3 +1,4 @@
 file_name	source_repo_path	current_role	evidence_mode	status	note
+README.md	00_entry/trae_system_transition/README.md	working_boundary_note	current_terminal_rerun	working_note	说明本目录只承担 repo-global working copy，并明确 `.trae` 受 `.gitignore` 约束不能作为仓内可追踪真值入口
 TRAE_SYSTEM_SKILLS_INDEX__20260709.md	21_trae_system_archive/SKILLS_INDEX.md	working_router_copy	historical_recovered	working_copy	保留旧 router 不动前提下，为仓库级治理与迁移过渡提供工作副本
 TRAE_SYSTEM_SKILLS_GROUP_VIEW__20260709.md	21_trae_system_archive/SKILLS_GROUP_VIEW.md	working_group_router_copy	historical_recovered	working_copy	保留旧 group router 不动前提下，为仓库级治理与迁移过渡提供工作副本
