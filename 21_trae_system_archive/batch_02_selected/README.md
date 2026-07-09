@@ -22,3 +22,8 @@
 
 - 本批先吸收本地文件系统中明确可见的 agent prompt。
 - `.trae\skills` 的本地提示文件当前未枚举到，因此没有伪造复制品进入本目录。
+
+## 备注入口
+
+- `BATCH_02_TRAE_PROMPT_SELECTED_EXECUTION_CARD__20260709.md`
+- `BATCH_02_TRAE_PROMPT_SELECTED_ARTIFACT_INDEX__20260709.tsv`

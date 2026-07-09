@@ -52,3 +52,8 @@
 
 - 这批文件先作为系统恢复归档进入新仓库。
 - 后续技能与 agent prompt 会另开批次迁入，不和本批混在一起。
+
+## 备注入口
+
+- `BATCH_01_TRAE_RECOVER_SELECTED_EXECUTION_CARD__20260709.md`
+- `BATCH_01_TRAE_RECOVER_SELECTED_ARTIFACT_INDEX__20260709.tsv`
