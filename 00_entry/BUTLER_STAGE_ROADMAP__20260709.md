@@ -17,6 +17,8 @@
   - 继续把来源资料、历史运行时和入口层整理到合同内目录
   - 继续把默认入口、批次 README、执行卡、artifact index 刷成统一口径
   - 同时把“后续新资料怎么并进来”写成固定流程
+- 当前执行 playbook：
+  - `docs\playbooks\NEW_INFO_INGEST_ALIGNMENT_PLAYBOOK__20260709.md`
 
 ## 阶段总览
 
@@ -44,6 +46,8 @@
   3. 判断它影响的是 `对象卡 / 合同 / runtime / 主文档入口` 哪一层
   4. 只把稳定结论提升到 `00_entry / 01_active_objects / 02_runtime / 04_active_main_docs`
   5. 保留原始快照与提升后入口之间的回链
+- 当前模板入口：
+  - `docs\playbooks\NEW_INFO_INGEST_ALIGNMENT_PLAYBOOK__20260709.md`
 - 退出条件：
   - 新资料进入时有固定 intake 路由。
   - 同类资料能按统一模板并入，不再每次现场临时发明流程。

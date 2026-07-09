@@ -28,6 +28,7 @@
 - 若你要找“最近一轮推进结论与停点”：看 `batch_01_selected\关于日活.md`
 - 若你要找“当前 runtime 聚合正式入口”：看 `..\00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`
 - 若你要找“项目大阶段路线图与后续收口顺序”：看 `..\00_entry\BUTLER_STAGE_ROADMAP__20260709.md`
+- 若你要找“新增电子书/视频/研报/产物如何并入并和旧资料对齐”：看 `..\docs\playbooks\NEW_INFO_INGEST_ALIGNMENT_PLAYBOOK__20260709.md`
 - `registry_v0` 固定阅读链：
   - `..\00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md -> ..\02_runtime\butler_r0_ohlcv_object_cards\runtime_execution_card_v1.md -> ..\02_runtime\butler_r0_ohlcv_object_cards\run_registry_v0_minimal.py`
 - 若你要找“当前 trae system 过渡工作副本边界”：看 `..\00_entry\trae_system_transition\README.md`
