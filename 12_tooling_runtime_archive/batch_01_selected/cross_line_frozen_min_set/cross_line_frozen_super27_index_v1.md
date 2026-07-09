@@ -1,4 +1,4 @@
-# Cross-Line Frozen super27 Index (mirror)
+# Cross-Line Frozen super27 索引（mirror）
 
 更新时间：2026-07-07
 

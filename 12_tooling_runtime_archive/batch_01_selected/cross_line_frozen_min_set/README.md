@@ -1,4 +1,4 @@
-# Cross Line Frozen Minimal Set
+# Cross Line Frozen 最小集合
 
 ## 用途
 

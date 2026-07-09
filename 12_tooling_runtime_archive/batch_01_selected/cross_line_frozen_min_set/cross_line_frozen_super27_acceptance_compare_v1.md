@@ -1,4 +1,4 @@
-# Cross-Line Frozen super27 Acceptance Compare (mirror)
+# Cross-Line Frozen super27 验收比对（mirror）
 
 更新时间：2026-07-07
 

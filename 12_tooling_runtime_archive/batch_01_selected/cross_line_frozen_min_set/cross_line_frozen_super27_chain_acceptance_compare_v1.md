@@ -1,4 +1,4 @@
-# Cross-Line Frozen super27 Chain Acceptance Compare (mirror)
+# Cross-Line Frozen super27 链路验收比对（mirror）
 
 更新时间：2026-07-07
 

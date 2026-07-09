@@ -1,4 +1,4 @@
-# Cross-Line Frozen Chain Entry (super27)
+# Cross-Line Frozen 链路入口（super27）
 
 更新时间：2026-07-07
 

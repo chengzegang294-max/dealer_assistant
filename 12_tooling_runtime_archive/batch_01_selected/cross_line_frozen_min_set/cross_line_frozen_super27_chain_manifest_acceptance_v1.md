@@ -1,4 +1,4 @@
-# Cross-Line Frozen super27 Chain Manifest Acceptance (mirror)
+# Cross-Line Frozen super27 链路清单验收（mirror）
 
 更新时间：2026-07-07
 

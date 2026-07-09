@@ -1,4 +1,4 @@
-# Cross-Line Frozen Current Manifest
+# Cross-Line Frozen 当前清单
 
 更新时间：2026-06-21
 
