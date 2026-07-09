@@ -1,4 +1,4 @@
-# Batch 05 Legacy MT4 Probe Assets Execution Card
+# 批次 05 Legacy MT4 Probe Assets 执行卡
 
 ## 生成入口
 

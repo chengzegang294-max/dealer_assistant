@@ -1,4 +1,4 @@
-# Source Library Backlog 2026-06-23 - staged commit ready plan
+# 来源库 backlog 2026-06-23 - 分批暂存提交计划
 
 ## 目标
 

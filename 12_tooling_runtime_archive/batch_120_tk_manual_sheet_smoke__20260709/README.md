@@ -1,4 +1,4 @@
-# Batch 120 TK Manual Sheet Smoke
+# 批次 120 TK Manual Sheet Smoke
 
 ## 用途
 
