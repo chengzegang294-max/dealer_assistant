@@ -1,0 +1,64 @@
+{
+  "registry_id": "registry_v0_minimal",
+  "input_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_601991_sh_output.json",
+  "sample_plan": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/registry_v0_sample_plan_v1.tsv",
+  "as_of_date": "2026-05-13",
+  "summary_snapshot": {
+    "final_signal": "NO_TRADE",
+    "trade_gate": "BLOCKED",
+    "permission": "FULL",
+    "blockers": [
+      "VOLFAC_P0_A"
+    ],
+    "hard_block": true,
+    "size_policy": "blocked_to_zero",
+    "recommended_size_scalar": 0.0,
+    "aggregate_final_signal": "NO_TRADE"
+  },
+  "checks": [
+    {
+      "field": "final_signal",
+      "expected": "NO_TRADE",
+      "actual": "NO_TRADE",
+      "passed": true
+    },
+    {
+      "field": "trade_gate",
+      "expected": "BLOCKED",
+      "actual": "BLOCKED",
+      "passed": true
+    },
+    {
+      "field": "blockers",
+      "expected": "VOLFAC_P0_A",
+      "actual": "VOLFAC_P0_A",
+      "passed": true
+    },
+    {
+      "field": "permission",
+      "expected": "FULL",
+      "actual": "FULL",
+      "passed": true
+    },
+    {
+      "field": "hard_block",
+      "expected": "true",
+      "actual": "true",
+      "passed": true
+    },
+    {
+      "field": "size_policy",
+      "expected": "blocked_to_zero",
+      "actual": "blocked_to_zero",
+      "passed": true
+    },
+    {
+      "field": "recommended_size_scalar",
+      "expected": "0.0",
+      "actual": "0.0",
+      "passed": true
+    }
+  ],
+  "acceptance_status": "pass",
+  "failed_fields": []
+}

@@ -1,0 +1,50 @@
+file_name	family	status	existing_live_batch	legacy_binding	note
+README__from_20_tools_workspace.md	metadata	archive_only	none	tools raw snapshot batch09	保留原始快照说明卡
+generate_p0_subset.py	general_tool	already_absorbed	batch_01_selected	old tools general utility	已在活跃批次吸收
+group08_batch2_series_copy.py	group08	archive_only_reopenable	none	group08 external ops support	保留为 group08 辅助脚本快照
+group08_batch3_topic_copy.py	group08	archive_only_reopenable	none	group08 external ops support	保留为 group08 辅助脚本快照
+group08_batch4_topic_anchor.py	group08	archive_only_reopenable	none	group08 external ops support	保留为 group08 辅助脚本快照
+group08_batch5_bookdir_autoresolve.py	group08	archive_only_reopenable	none	group08 external ops support	保留为 group08 辅助脚本快照
+group08_external_move_postcheck.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_external_ops_preflight.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_external_ops_stats.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_generate_delete_refs_cleanup.py	group08	archive_only_reopenable	none	group08 cleanup support	保留为 group08 收尾脚本快照
+group08_generate_external_ops_plan.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_generate_materials_catalog.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_generate_powershell_dryrun_cmds.py	group08	already_absorbed	batch_02_group08_pipeline	group08 primary pipeline	已在活跃批次吸收
+group08_refscan_final_delete_list.py	group08	archive_only_reopenable	none	group08 cleanup support	保留为 group08 收尾脚本快照
+group08_sourceraw_missing_manifest.py	group08	archive_only_reopenable	none	group08 source raw support	保留为 group08 补缺脚本快照
+group08_split_external_ops_plan.py	group08	archive_only_reopenable	none	group08 cleanup support	保留为 group08 收尾脚本快照
+group08_sync_final_delete_list.py	group08	archive_only_reopenable	none	group08 cleanup support	保留为 group08 收尾脚本快照
+ingest_ashare_txt_to_md.py	general_ingest	already_absorbed	batch_03_general_ingest_tools	old tools ingest utility	已在活跃批次吸收
+kimi_cutpack_manifest.py	general_ingest	already_absorbed	batch_03_general_ingest_tools	old tools ingest utility	已在活跃批次吸收
+relocate_path_prefix.py	general_tool	already_absorbed	batch_01_selected	old tools general utility	已在活跃批次吸收
+robocopy_tools__20260707.log	migration_evidence	evidence_only	none	robocopy migration log	仅保留为迁移证据
+s_bucketize.py	general_ingest	already_absorbed	batch_03_general_ingest_tools	old tools ingest utility	已在活跃批次吸收
+s_dedup_delete_list.py	general_cleanup	archive_only_reopenable	none	old tools dedup support	保留为去重支撑脚本快照
+s_dedup_report.py	general_cleanup	archive_only_reopenable	none	old tools dedup support	保留为去重支撑脚本快照
+slice_csv_tail_v1.py	general_tool	already_absorbed	batch_01_selected	old tools general utility	已在活跃批次吸收
+tk_manual_append_rows.py	general_tool	already_absorbed	batch_01_selected	old tools general utility	已在活跃批次吸收
+tk_r1_interactions.py	tk_r1	archive_only_frozen	none	backtest_out/stage2 interaction audit	冻结保存，不再重开
+tk_r1_stage2_audit.py	tk_r1	archive_only_frozen	none	backtest_out/stage2 interaction audit	冻结保存，不再重开
+tk_r1_stage2_conditional_shrink.py	tk_r1	archive_only_frozen	none	backtest_out/stage2 interaction audit	冻结保存，不再重开
+tk_r2_pocket_apply_audit.py	tk_r2	archive_only_frozen	none	stage2 pocket audit	冻结保存，不再重开
+tk_r2_pocket_shrink.py	tk_r2	archive_only_frozen	none	stage2 pocket audit	冻结保存，不再重开
+tk_r2_tradelevel_audit.py	tk_r2	archive_only_frozen	none	stage2 pocket audit	冻结保存，不再重开
+tk_r3_rr_minwin_audit.py	tk_r3	archive_only_frozen	none	stage2 rr/minwin audit	冻结保存，不再重开
+tk_r3_rr_minwin_recompute_cam_tp3.py	tk_r3	archive_only_frozen	none	stage2 rr/minwin audit	冻结保存，不再重开
+tk_r3_tp3_reason_smoketest.py	tk_r3	archive_only_frozen	none	stage2 rr/minwin audit	冻结保存，不再重开
+tk_r4_half_risk_paper_audit.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_risk_corr_audit.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_half_risk_role_finalize.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_half_risk_scheme_b.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_half_risk_scheme_b_runner.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_overlap_depth_audit.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_overlap_heterogeneity_audit.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r4_usd_overlap_negative_pockets.py	tk_r4	archive_only_frozen	none	stage2 half risk audit	冻结保存，不再重开
+tk_r6_make_manual_sheet.py	tk_r6	already_absorbed	batch_04_tk_r6_manual_sheet_tools	manual sheet family	已在活跃批次吸收
+tk_r6_summarize_manual_sheet.py	tk_r6	already_absorbed	batch_04_tk_r6_manual_sheet_tools	manual sheet family	已在活跃批次吸收
+tk_r7_make_manual_sheet.py	tk_r7	already_absorbed	batch_05_tk_r7_manual_sheet_tools	manual sheet family	已在活跃批次吸收
+tk_r7_summarize_manual_sheet.py	tk_r7	already_absorbed	batch_05_tk_r7_manual_sheet_tools	manual sheet family	已在活跃批次吸收
+tk_r8_make_manual_sheet.py	tk_r8	already_absorbed	batch_06_tk_r8_manual_sheet_tools	manual sheet family	已在活跃批次吸收
+tk_r8_summarize_manual_sheet.py	tk_r8	already_absorbed	batch_06_tk_r8_manual_sheet_tools	manual sheet family	已在活跃批次吸收

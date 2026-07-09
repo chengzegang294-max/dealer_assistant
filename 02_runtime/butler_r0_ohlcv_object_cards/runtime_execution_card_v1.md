@@ -9,6 +9,7 @@
   - `02_runtime/butler_r0_ohlcv_object_cards/run_voltarget_minimal_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/run_period_queen_proxy_minimal_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/run_registry_v0_minimal.py`
+  - `02_runtime/butler_r0_ohlcv_object_cards/run_registry_v0_acceptance_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/promote_batch09_watchlist_tripartite_v1.py`
 - `INDEX_NOTE`: 当前文件 + `acceptance_samples/sample_provenance_index_v1.tsv`
 
@@ -31,6 +32,7 @@
 - 用 `registry_v0_minimal` 把已可跑卡串起来，验证 `permission / size / vote` 的统一聚合入口。
 - 用 `registry_vote_input_contract_v1.tsv` 与 `registry_output_contract_v1.tsv` 固定聚合入口字段，避免 registry 输出继续漂移。
 - 当前 `registry_output_contract_v1.tsv` 已冻结顶层字段、`vote_input_snapshot`、`aggregate_summary`、`final_decision_card`、`size_policy_card`；`card_results.detail` 仅保留为调试展开，不作为稳定子字段合同。
+- 用 `run_registry_v0_acceptance_v1.py` 对照 `registry_v0_sample_plan_v1.tsv` 复核最小样本当前应落在 `NO_TRADE / BLOCKED / blocked_to_zero` 的验收结论。
 - 用 `promote_batch09_watchlist_tripartite_v1.py` 把 `ashare_watchlist` 剩余非 `kline_1d` 文件拆到 runtime 输入层、source snapshot 层和 tooling artifact 层。
 - 不替代未来正式 pipeline；只是从“样本驱动”进入“主数据源驱动”的桥接层。
 

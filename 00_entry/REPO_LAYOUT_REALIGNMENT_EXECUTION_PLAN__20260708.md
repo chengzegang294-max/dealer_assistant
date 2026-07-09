@@ -41,7 +41,8 @@
     - 已完成 `session_clip/临时粘贴区__20260708.md` -> `10_source_library_archive/batch_120_tools_workspace_absorb__20260709/00_raw_snapshot/session_clip/`
     - 已完成 `BATCH_01_PLAN/REVIEW`、`BATCH_02_PLAN/REVIEW` -> `00_entry/TOOLS_WORKSPACE_BATCH_*`
     - 已完成 `batch_04~06` 下 `smoke_validation/20260703Tsmoke` -> `12_tooling_runtime_archive/batch_120_tk_manual_sheet_smoke__20260709/artifacts/{tkr6,tkr7,tkr8}/`
-    - `20_tools_workspace/_raw_snapshot_batch09` 仍待下一轮按 archive-only 口径整体吸收
+    - 已完成 `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
+    - 原路径现仅保留 `README` 指针；家族索引与裁决台账固定在 `batch_121`
 
 - `21_trae_system_archive/`
   - 问题：合同外顶层目录，整体属于系统材料与 AI 产物归档层。
@@ -83,6 +84,7 @@
 - `20_tools_workspace/session_clip/临时粘贴区__20260708.md` -> `10_source_library_archive/batch_120_tools_workspace_absorb__20260709/00_raw_snapshot/session_clip/`
 - `20_tools_workspace/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `00_entry/TOOLS_WORKSPACE_BATCH_*`
 - `20_tools_workspace/batch_04~06/*/smoke_validation/20260703Tsmoke` -> `12_tooling_runtime_archive/batch_120_tk_manual_sheet_smoke__20260709/artifacts/{tkr6,tkr7,tkr8}/`
+- `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
 
 ## 本轮不直接动的内容
 

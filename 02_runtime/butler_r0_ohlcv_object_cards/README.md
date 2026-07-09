@@ -34,6 +34,7 @@
   - `run_vp_minimal_v1.py`
   - `run_tkr7_minimal_v1.py`
   - `run_registry_v0_minimal.py`
+  - `run_registry_v0_acceptance_v1.py`
   - `promote_batch09_daily_to_runtime_raw_v1.py`
 - `ARTIFACT`:
   - `acceptance_outputs/*.json`
@@ -61,6 +62,7 @@
 
 - `registry_v0` 已从“6 张卡串跑”推进到“有显式输入/输出合同”的最小正式聚合入口。
 - `acceptance_outputs/registry_v0_601991_sh_output.json` 现已显式输出 `vote_input_snapshot / aggregate_summary / final_decision_card / size_policy_card`。
+- `run_registry_v0_acceptance_v1.py` 用样本计划校验 `final_signal / trade_gate / blockers / permission / hard_block / size_policy`，把 registry 验收从“人工看 JSON”推进到“机器可复核”。
 - `00_assets/_raw_snapshot_batch09/ashare_watchlist` 剩余非 `kline_1d` 文件已完成三分流：
   - 结构化 watchlist 输入归 `data/raw/watchlist_inputs/`
   - 文本快照归 `10_source_library_archive/.../ashare_watchlist_text_snapshot/`
