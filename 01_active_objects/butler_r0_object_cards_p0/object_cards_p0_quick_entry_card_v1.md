@@ -45,3 +45,5 @@
 
 - `registry_v0` 的仓库级正式入口已上提到：
   - `..\..\00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`
+- 固定阅读链：
+  - `..\..\00_entry\REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md -> ..\..\02_runtime\butler_r0_ohlcv_object_cards\runtime_execution_card_v1.md -> ..\..\02_runtime\butler_r0_ohlcv_object_cards\run_registry_v0_minimal.py`
