@@ -1,4 +1,4 @@
-# rules_index（SOURCE_ANCHOR）
+# 规则索引（来源锚点）
 | anchor_id | topic | source | excerpt |
 |---|---|---|---|
 | CQW-STATE-001 | 周期女王：周期状态系统 | 10_来源库_SOURCE_LIBRARY\\00_周期女王\\99_可用规则壳\\周期状态系统规则壳.md | 周期状态系统规则壳（来源库入口锚点） |

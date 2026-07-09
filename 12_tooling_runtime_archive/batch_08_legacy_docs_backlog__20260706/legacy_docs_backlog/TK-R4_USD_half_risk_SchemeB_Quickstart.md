@@ -1,4 +1,4 @@
-# TK-R4 USD-only half-risk Scheme B（Quickstart）
+# TK-R4 USD 半风险方案 B 快速开始
 
 ## 定位
 
