@@ -20,7 +20,10 @@
 
 ## 当前状态
 
-- 当前只建层级，不批量迁入旧冻结总结材料。
+- 当前已形成多批次归档：
+  - `batch_01_selected` 承接首批最小冻结链
+  - `batch_130_trae_system_transition__20260709` 承接 `trae_system_transition` 冻结台账
+- `_raw_snapshot_batch09/` 继续作为历史快照层保留，不与当前批次入口混用。
 - 后续每一批迁入都要先完成价值判断和损坏检查。
 
 ## 批次记录模板
