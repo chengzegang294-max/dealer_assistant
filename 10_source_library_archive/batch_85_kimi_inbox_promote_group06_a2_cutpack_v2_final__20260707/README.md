@@ -1,11 +1,22 @@
 # Batch85 Kimi Inbox Promote (GROUP_06 A2 Cutpack v2 Final)
 
-## Scope
+## 用途
 
-- incoming: `GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
-- target: `10_source_library_archive/mirror_kimi_inbox/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
+- 这批材料把 `GROUP_06 A2 Cutpack v2 Final` 从 staging 路径迁入 `mirror_kimi_inbox` 的稳定目标位置。
+- 当前只承担来源层承接与归档整理作用，不作为默认阅读入口。
 
-## Outputs
+## 当前包含
 
-- promoted manifest: `promote_manifest__20260707.tsv`
-- promote report: `promote_report__20260707.json`
+- `incoming=GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
+- `target=10_source_library_archive/mirror_kimi_inbox/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
+
+## 当前裁决
+
+- 本批次按 `source_library promote batch` 口径保留。
+- 当前作用是把来源材料稳定迁入 `mirror_kimi_inbox`，不把本批 README 当作默认阅读入口。
+- 默认阅读入口继续看目标目录及其上位索引卡。
+
+## 批次产物
+
+- `promote_manifest__20260707.tsv`
+- `promote_report__20260707.json`
