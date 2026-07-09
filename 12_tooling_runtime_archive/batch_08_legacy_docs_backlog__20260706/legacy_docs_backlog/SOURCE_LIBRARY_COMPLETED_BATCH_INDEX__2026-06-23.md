@@ -1,4 +1,4 @@
-# Source Library Completed Batch Index 2026-06-23
+# 来源库已完成批次索引 2026-06-23
 
 ## 目标
 
