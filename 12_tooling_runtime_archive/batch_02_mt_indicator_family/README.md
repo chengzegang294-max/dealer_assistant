@@ -37,3 +37,8 @@
 - 这些 `ini` 仍属于工程模板层：
   - 当前默认产物回收根仍是 `02_runtime\mt_indicator_probes\batch_01_volty_xbreaking\artifacts\...`
   - tester 实跑后仍应通过 `probe_artifact_ingest_v1.py` 或手工复制回新仓库运行时批次
+
+## 备注入口
+
+- `BATCH_02_MT_INDICATOR_FAMILY_EXECUTION_CARD__20260709.md`
+- `BATCH_02_MT_INDICATOR_FAMILY_ARTIFACT_INDEX__20260709.tsv`
