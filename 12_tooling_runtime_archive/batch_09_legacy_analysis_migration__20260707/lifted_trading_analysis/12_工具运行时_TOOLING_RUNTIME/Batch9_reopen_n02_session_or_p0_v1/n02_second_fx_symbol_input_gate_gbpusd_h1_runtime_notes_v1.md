@@ -1,4 +1,4 @@
-# n02_second_fx_symbol_input_gate_gbpusd_h1_runtime_notes v1
+# N02 GBPUSD H1 第二 FX 品种输入闸口运行说明 v1
 
 ## 角色
 

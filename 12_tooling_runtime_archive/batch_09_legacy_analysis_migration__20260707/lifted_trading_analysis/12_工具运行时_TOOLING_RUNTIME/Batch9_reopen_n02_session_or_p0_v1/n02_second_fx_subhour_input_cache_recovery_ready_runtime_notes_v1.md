@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_input_cache_recovery_ready_runtime_notes v1
+# N02 第二 FX 次小时输入缓存恢复就绪运行说明 v1
 
 ## 角色
 

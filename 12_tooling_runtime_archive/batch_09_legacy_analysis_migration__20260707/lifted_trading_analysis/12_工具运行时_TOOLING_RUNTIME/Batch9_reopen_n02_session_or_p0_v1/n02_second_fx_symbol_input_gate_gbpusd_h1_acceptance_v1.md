@@ -1,4 +1,4 @@
-# n02_second_fx_symbol_input_gate_gbpusd_h1_acceptance v1
+# N02 GBPUSD H1 第二 FX 品种输入闸口验收 v1
 
 ## 目的
 
