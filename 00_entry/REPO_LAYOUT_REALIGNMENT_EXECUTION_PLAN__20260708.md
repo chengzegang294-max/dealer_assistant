@@ -60,7 +60,7 @@
     - `README.md` 已补充冻结批次的新入口说明
     - 已完成 `batch_01_selected` 与 `batch_02_selected` 的正文实体 -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/`
     - 旧目录当前仍保留可读正文与 README 回指，本轮先不做全量 pointer-only
-    - 已完成 `_raw_snapshot_batch09` -> `10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/`
+    - `_raw_snapshot_batch09` 当前仍以 `archive-only` 口径保留在历史归档链路中；若后续需要来源层吸收，再单开来源层批次承接
     - 已落 `SKILLS_INDEX/SKILLS_GROUP_VIEW` 工作副本 -> `00_entry/trae_system_transition/`（旧路径保持不动）
     - `00_entry/trae_system_transition/` 已补 `promotion_map_v1.tsv` 与 `trae_system_transition_family_index_v1.tsv`
     - `00_entry/trae_system_transition/` 已补 execution card 与 artifact index，形成可回看过渡包
@@ -97,7 +97,7 @@
 - `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
 - `21_trae_system_archive/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
 - `21_trae_system_archive/batch_01_selected/*`、`21_trae_system_archive/batch_02_selected/p0-exec-evidence-officer_PROMPT.md` -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/00_raw_snapshot/`
-- `21_trae_system_archive/_raw_snapshot_batch09` -> `10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/trae_system_raw_snapshot_batch09/`
+- `21_trae_system_archive/_raw_snapshot_batch09` 当前仍保留在历史归档链路中；后续若需要来源层吸收，再单开来源层批次承接
 
 ## 本轮不直接动的内容
 
