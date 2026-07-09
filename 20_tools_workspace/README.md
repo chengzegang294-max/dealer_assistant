@@ -46,6 +46,12 @@
   - `tk_r8_make_manual_sheet.py`
   - `tk_r8_summarize_manual_sheet.py`
 
+## 额外指针
+
+- `_raw_snapshot_batch09`
+  - 当前只保留 archive-only 回指入口
+  - 整包历史快照已吸收到 `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709`
+
 ## 不直接迁入
 
 - 一次性清理脚本
