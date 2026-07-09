@@ -1,18 +1,23 @@
-## batch_06_legacy_commit_helpers__20260706
+# Legacy Commit Helpers Batch 06
 
-- 文件类型：`ARCHIVE_ONLY`
-- 原位置：
-  - `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/docs/commit_ready_stage_batch_*.ps1`
-  - `12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/docs/commit_ready_batch_*__paths.txt`
-- 新位置：
-  - `12_tooling_runtime_archive/batch_06_legacy_commit_helpers__20260706/legacy_docs_commit_helpers/`
-- 当前作用：旧库阶段性 commit/stage helper 历史快照归档；不作为当前默认入口
-- 生成入口：`unknown_source`
-- 证据强度：`historical_recovered`
-- 内容摘要：
+## 用途
+
+- 这里放旧 `docs/` 中阶段性 `commit/stage helper` 的历史脚本快照。
+- 本批次只承担历史回收与追溯作用，不作为当前默认入口。
+
+## 当前包含
+
+- `legacy_docs_commit_helpers/`
   - `commit_ready_stage_batch_*.ps1`：`57` 份
   - `commit_ready_batch_*__paths.txt`：`57` 份
-- 使用边界：
-  - 这些脚本可能假设旧仓库布局与旧根路径，仅允许作为历史溯源快照
-  - 不作为当前默认可跑入口
 
+## 当前裁决
+
+- 整批目录按 `ARCHIVE_ONLY / historical_recovered` 口径保留。
+- 这些脚本可能假设旧仓库布局与旧根路径，仅允许作为历史溯源快照。
+- 当前 repo 默认入口继续看 `00_entry/` 与 `04_active_main_docs/`，不把本批 helper 当作默认可跑入口。
+
+## 备注入口
+
+- `BATCH_06_EXECUTION_CARD.md`
+- `BATCH_06_ARTIFACT_INDEX.md`
