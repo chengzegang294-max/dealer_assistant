@@ -1,4 +1,4 @@
-# Commit Ready Batch 7C - auction rule local evidence - 2026-06-23
+# 提交就绪批次 7C - auction rule local evidence - 2026-06-23
 
 ## 目标
 

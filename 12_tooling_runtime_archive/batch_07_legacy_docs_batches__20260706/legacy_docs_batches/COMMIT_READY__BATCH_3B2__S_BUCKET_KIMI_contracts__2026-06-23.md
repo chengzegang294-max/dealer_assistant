@@ -1,4 +1,4 @@
-# Commit Ready Batch 3B2 - S_BUCKET Kimi contracts - 2026-06-23
+# 提交就绪批次 3B2 - S_BUCKET Kimi contracts - 2026-06-23
 
 ## 目标
 

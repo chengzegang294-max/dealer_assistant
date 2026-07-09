@@ -1,4 +1,4 @@
-# Commit Ready Batch 8D - Smile_SMC trace layer - 2026-06-24
+# 提交就绪批次 8D - Smile_SMC trace layer - 2026-06-24
 
 ## 目标
 

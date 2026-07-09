@@ -1,4 +1,4 @@
-# Commit Ready Batch 17 - FROZEN_SUMMARIES active doc cleanup archive - 2026-06-24
+# 提交就绪批次 17 - FROZEN_SUMMARIES active doc cleanup archive - 2026-06-24
 
 ## 目标
 

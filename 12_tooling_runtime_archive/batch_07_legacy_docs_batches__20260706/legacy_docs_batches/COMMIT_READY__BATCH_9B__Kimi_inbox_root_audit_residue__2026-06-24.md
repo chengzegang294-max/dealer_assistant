@@ -1,4 +1,4 @@
-# Commit Ready Batch 9B - Kimi inbox root audit residue - 2026-06-24
+# 提交就绪批次 9B - Kimi inbox root audit residue - 2026-06-24
 
 ## 目标
 

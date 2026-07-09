@@ -1,4 +1,4 @@
-# Commit Ready Batch 10A - GROUP_05 cutpack stable layer - 2026-06-24
+# 提交就绪批次 10A - GROUP_05 cutpack stable layer - 2026-06-24
 
 ## 目标
 

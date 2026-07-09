@@ -1,4 +1,4 @@
-# Commit Ready Batch 4B1 - GROUP_08 text summaries - 2026-06-23
+# 提交就绪批次 4B1 - GROUP_08 text summaries - 2026-06-23
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 5C - GROUP_09 historical copies - 2026-06-23
+# 提交就绪批次 5C - GROUP_09 historical copies - 2026-06-23
 
 ## 目标
 

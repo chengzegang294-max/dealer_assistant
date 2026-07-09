@@ -1,4 +1,4 @@
-# Commit Ready Batch 6B1 - GROUP_10 stable body - 2026-06-23
+# 提交就绪批次 6B1 - GROUP_10 stable body - 2026-06-23
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 16 - FROZEN_SUMMARIES stage deliverables index - 2026-06-24
+# 提交就绪批次 16 - FROZEN_SUMMARIES stage deliverables index - 2026-06-24
 
 ## 目标
 

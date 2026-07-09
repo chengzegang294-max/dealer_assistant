@@ -1,4 +1,4 @@
-# Commit Ready Batch 4A - GROUP_08 manifest entry - 2026-06-23
+# 提交就绪批次 4A - GROUP_08 manifest entry - 2026-06-23
 
 ## 目标
 

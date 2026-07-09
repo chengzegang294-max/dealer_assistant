@@ -1,4 +1,4 @@
-# Commit Ready Batch 7B - Spring UT object entry upgrade - 2026-06-23
+# 提交就绪批次 7B - Spring UT object entry upgrade - 2026-06-23
 
 ## 目标
 

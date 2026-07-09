@@ -1,4 +1,4 @@
-# Commit Ready Batch 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - 2026-06-24
+# 提交就绪批次 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - 2026-06-24
 
 ## 目标
 

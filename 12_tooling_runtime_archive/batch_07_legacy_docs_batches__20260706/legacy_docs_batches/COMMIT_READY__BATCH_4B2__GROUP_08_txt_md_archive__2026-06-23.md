@@ -1,4 +1,4 @@
-# Commit Ready Batch 4B2 - GROUP_08 txt md archive - 2026-06-23
+# 提交就绪批次 4B2 - GROUP_08 txt md archive - 2026-06-23
 
 ## 目标
 

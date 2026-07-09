@@ -1,4 +1,4 @@
-# Commit Ready Batch 31 - SOURCE_LIBRARY Batch9 N02 session/orb retirement layer - 2026-06-24
+# 提交就绪批次 31 - SOURCE_LIBRARY Batch9 N02 session/orb retirement layer - 2026-06-24
 
 ## 目标
 

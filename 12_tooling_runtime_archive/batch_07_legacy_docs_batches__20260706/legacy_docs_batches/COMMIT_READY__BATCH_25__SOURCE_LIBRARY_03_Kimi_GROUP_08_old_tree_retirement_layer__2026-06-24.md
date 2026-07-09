@@ -1,4 +1,4 @@
-# Commit Ready Batch 25 - SOURCE_LIBRARY 03_Kimi GROUP_08 old-tree retirement layer - 2026-06-24
+# 提交就绪批次 25 - SOURCE_LIBRARY 03_Kimi GROUP_08 old-tree retirement layer - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 1 - docs only - 2026-06-23
+# 提交就绪批次 1 - docs only - 2026-06-23
 
 ## 目标
 

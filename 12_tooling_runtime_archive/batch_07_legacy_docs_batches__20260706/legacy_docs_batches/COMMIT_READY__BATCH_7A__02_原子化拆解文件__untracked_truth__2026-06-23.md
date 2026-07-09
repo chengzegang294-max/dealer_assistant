@@ -1,4 +1,4 @@
-# Commit Ready Batch 7A - 02_原子化拆解文件 untracked truth - 2026-06-23
+# 提交就绪批次 7A - 02_原子化拆解文件 untracked truth - 2026-06-23
 
 ## 目标
 

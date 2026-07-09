@@ -1,4 +1,4 @@
-# Commit Ready Batch 30 - SOURCE_LIBRARY Batch9 Ashare todo README retirement layer - 2026-06-24
+# 提交就绪批次 30 - SOURCE_LIBRARY Batch9 Ashare todo README retirement layer - 2026-06-24
 
 ## 目标
 

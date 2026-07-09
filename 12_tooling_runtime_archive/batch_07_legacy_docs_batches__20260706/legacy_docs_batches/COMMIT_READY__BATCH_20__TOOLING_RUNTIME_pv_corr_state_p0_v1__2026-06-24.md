@@ -1,4 +1,4 @@
-# Commit Ready Batch 20 - TOOLING_RUNTIME pv_corr_state_p0_v1 - 2026-06-24
+# 提交就绪批次 20 - TOOLING_RUNTIME pv_corr_state_p0_v1 - 2026-06-24
 
 ## 目标
 

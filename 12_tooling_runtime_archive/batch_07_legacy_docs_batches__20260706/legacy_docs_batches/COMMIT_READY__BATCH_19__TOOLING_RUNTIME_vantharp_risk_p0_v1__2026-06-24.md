@@ -1,4 +1,4 @@
-# Commit Ready Batch 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - 2026-06-24
+# 提交就绪批次 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - 2026-06-24
 
 ## 目标
 

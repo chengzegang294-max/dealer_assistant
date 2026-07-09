@@ -1,4 +1,4 @@
-# Commit Ready Batch 2 - NFTRADEZ truth layer only - 2026-06-23
+# 提交就绪批次 2 - NFTRADEZ truth layer only - 2026-06-23
 
 ## 目标
 

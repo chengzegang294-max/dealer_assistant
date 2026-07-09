@@ -1,4 +1,4 @@
-# Commit Ready Batch 8C - Batch9 full tree - 2026-06-24
+# 提交就绪批次 8C - Batch9 full tree - 2026-06-24
 
 ## 目标
 

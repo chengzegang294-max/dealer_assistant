@@ -1,4 +1,4 @@
-# Commit Ready Batch 6C - GROUP_10 auxiliary traces - 2026-06-23
+# 提交就绪批次 6C - GROUP_10 auxiliary traces - 2026-06-23
 
 ## 目标
 

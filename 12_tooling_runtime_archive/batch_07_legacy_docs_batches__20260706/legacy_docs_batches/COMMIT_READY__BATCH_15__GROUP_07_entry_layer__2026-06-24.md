@@ -1,4 +1,4 @@
-# Commit Ready Batch 15 - GROUP_07 entry layer - 2026-06-24
+# 提交就绪批次 15 - GROUP_07 entry layer - 2026-06-24
 
 ## 目标
 

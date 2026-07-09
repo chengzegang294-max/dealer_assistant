@@ -1,4 +1,4 @@
-# Commit Ready Batch 9A - Kimi inbox root contract routing - 2026-06-24
+# 提交就绪批次 9A - Kimi inbox root contract routing - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 5B1 - GROUP_09 stable final trees - 2026-06-23
+# 提交就绪批次 5B1 - GROUP_09 stable final trees - 2026-06-23
 
 ## 目标
 

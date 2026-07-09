@@ -1,4 +1,4 @@
-# Commit Ready Batch 28 - SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer - 2026-06-24
+# 提交就绪批次 28 - SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer - 2026-06-24
 
 ## 目标
 

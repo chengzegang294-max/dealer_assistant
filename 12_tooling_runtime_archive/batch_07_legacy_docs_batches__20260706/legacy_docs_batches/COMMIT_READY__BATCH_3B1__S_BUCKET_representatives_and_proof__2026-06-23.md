@@ -1,4 +1,4 @@
-# Commit Ready Batch 3B1 - S_BUCKET representatives + stage proof - 2026-06-23
+# 提交就绪批次 3B1 - S_BUCKET representatives + stage proof - 2026-06-23
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 23 - TOOLING_RUNTIME mt4_probe_instance config text recovered batch1 - 2026-06-24
+# 提交就绪批次 23 - TOOLING_RUNTIME mt4_probe_instance config text recovered batch1 - 2026-06-24
 
 ## 目标
 

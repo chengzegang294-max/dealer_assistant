@@ -1,4 +1,4 @@
-# Commit Ready Batch 3A - S_BUCKET core truth anchors - 2026-06-23
+# 提交就绪批次 3A - S_BUCKET core truth anchors - 2026-06-23
 
 ## 目标
 

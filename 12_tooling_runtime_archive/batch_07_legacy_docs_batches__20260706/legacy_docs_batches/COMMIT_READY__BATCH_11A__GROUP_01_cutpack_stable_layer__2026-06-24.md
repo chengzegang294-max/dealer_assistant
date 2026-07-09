@@ -1,4 +1,4 @@
-# Commit Ready Batch 11A - GROUP_01 cutpack stable layer - 2026-06-24
+# 提交就绪批次 11A - GROUP_01 cutpack stable layer - 2026-06-24
 
 ## 目标
 

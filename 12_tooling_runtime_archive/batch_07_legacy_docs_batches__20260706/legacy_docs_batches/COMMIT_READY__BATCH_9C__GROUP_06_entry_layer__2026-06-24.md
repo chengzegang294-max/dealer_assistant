@@ -1,4 +1,4 @@
-# Commit Ready Batch 9C - GROUP_06 entry layer - 2026-06-24
+# 提交就绪批次 9C - GROUP_06 entry layer - 2026-06-24
 
 ## 目标
 

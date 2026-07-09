@@ -1,4 +1,4 @@
-# Commit Ready Batch 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - 2026-06-24
+# 提交就绪批次 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - 2026-06-24
 
 ## 目标
 

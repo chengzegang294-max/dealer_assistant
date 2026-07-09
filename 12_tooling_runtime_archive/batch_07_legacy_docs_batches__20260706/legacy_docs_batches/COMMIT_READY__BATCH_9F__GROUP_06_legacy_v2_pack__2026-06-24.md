@@ -1,4 +1,4 @@
-# Commit Ready Batch 9F - GROUP_06 legacy v2 pack - 2026-06-24
+# 提交就绪批次 9F - GROUP_06 legacy v2 pack - 2026-06-24
 
 ## 目标
 

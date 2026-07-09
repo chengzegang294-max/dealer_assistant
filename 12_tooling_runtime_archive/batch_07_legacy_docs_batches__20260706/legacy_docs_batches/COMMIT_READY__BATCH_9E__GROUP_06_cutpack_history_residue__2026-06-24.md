@@ -1,4 +1,4 @@
-# Commit Ready Batch 9E - GROUP_06 cutpack history residue - 2026-06-24
+# 提交就绪批次 9E - GROUP_06 cutpack history residue - 2026-06-24
 
 ## 目标
 

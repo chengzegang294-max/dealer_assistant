@@ -1,4 +1,4 @@
-# Commit Ready Batch 14 - GROUP_04 entry layer - 2026-06-24
+# 提交就绪批次 14 - GROUP_04 entry layer - 2026-06-24
 
 ## 目标
 

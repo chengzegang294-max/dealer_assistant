@@ -1,4 +1,4 @@
-# Commit Ready Batch 33 - SOURCE_LIBRARY Batch9 N01 volatility regimes retirement layer - 2026-06-24
+# 提交就绪批次 33 - SOURCE_LIBRARY Batch9 N01 volatility regimes retirement layer - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 8A - NFTRADEZ export text layer - 2026-06-24
+# 提交就绪批次 8A - NFTRADEZ export text layer - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Commit Ready Batch 36 - TOOLING_RUNTIME MT4 portable probe config text recovered batch1 layer - 2026-06-24
+# 提交就绪批次 36 - TOOLING_RUNTIME MT4 portable probe config text recovered batch1 layer - 2026-06-24
 
 ## 目标
 

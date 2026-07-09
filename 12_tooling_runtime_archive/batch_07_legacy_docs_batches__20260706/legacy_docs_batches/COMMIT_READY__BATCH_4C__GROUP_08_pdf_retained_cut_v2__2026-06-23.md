@@ -1,4 +1,4 @@
-# Commit Ready Batch 4C - GROUP_08 pdf retained cut v2 - 2026-06-23
+# 提交就绪批次 4C - GROUP_08 pdf retained cut v2 - 2026-06-23
 
 ## 目标
 

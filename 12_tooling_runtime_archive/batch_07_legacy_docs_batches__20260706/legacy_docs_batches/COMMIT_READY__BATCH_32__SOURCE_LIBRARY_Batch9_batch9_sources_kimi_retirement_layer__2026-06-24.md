@@ -1,4 +1,4 @@
-# Commit Ready Batch 32 - SOURCE_LIBRARY Batch9 batch9_sources_kimi retirement layer - 2026-06-24
+# 提交就绪批次 32 - SOURCE_LIBRARY Batch9 batch9_sources_kimi retirement layer - 2026-06-24
 
 ## 目标
 

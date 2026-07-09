@@ -1,4 +1,4 @@
-# Commit Ready Batch 8B - NFTRADEZ KIMI contract residue - 2026-06-24
+# 提交就绪批次 8B - NFTRADEZ KIMI contract residue - 2026-06-24
 
 ## 目标
 
