@@ -1,4 +1,4 @@
-# n02_other_symbol_validation_xauusd_m1_tail_runtime_notes v1
+# N02 XAUUSD M1 尾部样本其他品种验证运行说明 v1
 
 ## 角色
 

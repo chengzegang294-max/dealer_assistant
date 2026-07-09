@@ -1,4 +1,4 @@
-# n02_other_symbol_other_timeframe_validation_xauusd_m5_summary v1
+# N02 XAUUSD M5 其他品种跨周期验证总览 v1
 
 ## 作用
 

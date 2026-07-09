@@ -1,4 +1,4 @@
-# n02_other_symbol_validation_xauusd_m1_tail_summary v1
+# N02 XAUUSD M1 尾部样本其他品种验证总览 v1
 
 ## 作用
 
