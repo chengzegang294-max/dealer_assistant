@@ -11,6 +11,7 @@
   - 可复现运行时产物归 `02_runtime/`
   - 大体量工具运行时归档归 `12_tooling_runtime_archive/`
   - 临时中间文件只允许落在本批次目录内且可迁走可删
+- 若脚本沉淀出可长期复用的合同/索引/入口说明，必须提升归位到 `00_entry/02_runtime/12_tooling_runtime_archive` 对应层。
 
 ## 当前文件
 
