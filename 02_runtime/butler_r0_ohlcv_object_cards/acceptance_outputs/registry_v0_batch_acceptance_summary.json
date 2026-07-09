@@ -1,11 +1,27 @@
 {
   "sample_plan": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/registry_v0_sample_plan_v1.tsv",
-  "status_filter": "multi_registry_ready",
-  "batch_count": 5,
-  "pass_count": 5,
+  "status_filter": [
+    "minimal_registry_ready",
+    "multi_registry_ready"
+  ],
+  "batch_count": 6,
+  "pass_count": 6,
   "fail_count": 0,
   "failed_registry_ids": [],
   "batch_rows": [
+    {
+      "registry_id": "registry_v0_minimal",
+      "primary_symbol": "601991.SH",
+      "market_proxy_symbol": "601991.SH",
+      "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_minimal_output.json",
+      "acceptance_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_minimal_acceptance.json",
+      "acceptance_status": "pass",
+      "final_signal": "NO_TRADE",
+      "trade_gate": "BLOCKED",
+      "blockers": [
+        "VOLFAC_P0_A"
+      ]
+    },
     {
       "registry_id": "registry_v0_300302_self_proxy",
       "primary_symbol": "300302.SZ",

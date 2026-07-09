@@ -63,6 +63,7 @@
     - 已完成 `_raw_snapshot_batch09` -> `10_source_library_archive/batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/`
     - 已落 `SKILLS_INDEX/SKILLS_GROUP_VIEW` 工作副本 -> `00_entry/trae_system_transition/`（旧路径保持不动）
     - `00_entry/trae_system_transition/` 已补 `promotion_map_v1.tsv` 与 `trae_system_transition_family_index_v1.tsv`
+    - `00_entry/trae_system_transition/` 已补 execution card 与 artifact index，形成可回看过渡包
 
 ## P2 目录与文件
 

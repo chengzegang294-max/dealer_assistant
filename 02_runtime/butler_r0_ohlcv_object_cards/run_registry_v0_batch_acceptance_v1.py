@@ -22,11 +22,40 @@ def runtime_relative_to_repo(path_value: str) -> str:
     return str(Path("02_runtime/butler_r0_ohlcv_object_cards") / path_value).replace("\\", "/")
 
 
+def parse_status_filter(value: str) -> set[str]:
+    return {item.strip() for item in value.split(",") if item.strip()}
+
+
+def write_summary_tsv(path: Path, rows: list[dict[str, object]]) -> None:
+    fieldnames = [
+        "registry_id",
+        "primary_symbol",
+        "market_proxy_symbol",
+        "acceptance_status",
+        "final_signal",
+        "trade_gate",
+        "blockers",
+        "output_json",
+        "acceptance_json",
+    ]
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter="\t")
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(
+                {
+                    **row,
+                    "blockers": "|".join(str(item) for item in row["blockers"]) if isinstance(row["blockers"], list) else row["blockers"],
+                }
+            )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run registry_v0 minimal + acceptance across multiple sample-plan rows.")
     parser.add_argument("--sample-plan", required=True)
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--summary-json", required=True)
+    parser.add_argument("--summary-tsv")
     parser.add_argument("--status-filter", default="multi_registry_ready")
     args = parser.parse_args()
 
@@ -37,11 +66,15 @@ def main() -> int:
     summary_path = Path(args.summary_json)
     output_dir.mkdir(parents=True, exist_ok=True)
     summary_path.parent.mkdir(parents=True, exist_ok=True)
+    summary_tsv_path = Path(args.summary_tsv) if args.summary_tsv else None
+    if summary_tsv_path is not None:
+        summary_tsv_path.parent.mkdir(parents=True, exist_ok=True)
 
     registry_runner = runtime_dir / "run_registry_v0_minimal.py"
     acceptance_runner = runtime_dir / "run_registry_v0_acceptance_v1.py"
 
-    rows = [row for row in read_rows(sample_plan) if row.get("status") == args.status_filter]
+    status_filter = parse_status_filter(args.status_filter)
+    rows = [row for row in read_rows(sample_plan) if row.get("status") in status_filter]
     batch_rows: list[dict[str, object]] = []
     for row in rows:
         registry_id = row["registry_id"]
@@ -91,7 +124,7 @@ def main() -> int:
     failed = [row["registry_id"] for row in batch_rows if row["acceptance_status"] != "pass"]
     summary = {
         "sample_plan": str(sample_plan).replace("\\", "/"),
-        "status_filter": args.status_filter,
+        "status_filter": sorted(status_filter),
         "batch_count": len(batch_rows),
         "pass_count": sum(1 for row in batch_rows if row["acceptance_status"] == "pass"),
         "fail_count": len(failed),
@@ -100,6 +133,8 @@ def main() -> int:
         "batch_status": "pass" if not failed else "fail",
     }
     summary_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    if summary_tsv_path is not None:
+        write_summary_tsv(summary_tsv_path, batch_rows)
     return 0 if not failed else 1
 
 
