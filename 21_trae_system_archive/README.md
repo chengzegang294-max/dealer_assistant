@@ -32,8 +32,7 @@
   - `10_source_library_archive\batch_131_trae_system_selected_absorb__20260709\`
 - 首两批迁移台账已冻结到：
   - `11_frozen_summaries_archive\batch_130_trae_system_transition__20260709\`
-- `_raw_snapshot_batch09` 已按 archive-only 口径吸收到：
-  - `10_source_library_archive\batch_132_trae_system_raw_snapshot_batch09_absorb__20260709\`
+- `_raw_snapshot_batch09` 当前仍以 `archive-only` 口径保留在历史归档链路中；若后续需要来源层吸收，再单开来源层批次承接
 - `SKILLS_INDEX.md / SKILLS_GROUP_VIEW.md` 的工作副本已落到：
   - `00_entry\trae_system_transition\`
   - 且已补 `promotion_map_v1.tsv` 与 `trae_system_transition_family_index_v1.tsv`

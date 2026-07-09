@@ -21,8 +21,10 @@
 ## 当前状态
 
 - 当前仍不批量迁入旧来源库内容。
-- 已开始第一批“小体量真值锚点壳”：
-  - `batch_01_youzi_truth_anchors`
+- 当前已形成多批次归档：
+  - `batch_01_youzi_truth_anchors` 作为首批真值锚点
+  - `batch_09 / batch_80+ / batch_99+ / batch_120 / batch_131` 等继续承接边界包、吸收批次与系统材料
+- `batch_01_youzi_truth_anchors` 仍是首批锚点，不再是唯一批次。
 - 后续每一批迁入都要先完成四分流，再进入本层。
 
 ## 批次记录模板
