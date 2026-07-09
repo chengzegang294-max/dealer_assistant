@@ -1,12 +1,12 @@
 # Source Library Backlog 2026-06-23 - 误删候选
 
-## Scope
+## 范围
 
 - Repository root: `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis`
 - Audit target: `10_来源库_SOURCE_LIBRARY`
 - This sheet only keeps deletion items that still look like `可能误删 / possible loss`.
 
-## Current Verdict
+## 当前裁决
 
 - After the path audit in this round, there is currently `no directory-level confirmed misdelete cluster` inside the `334` deletions.
 - The three clusters that previously looked suspicious are now reclassified:
@@ -16,7 +16,7 @@
 - Current bucket size:
   - active directory clusters: `0`
 
-## Residual Hold Items
+## 剩余保留项
 
 - `10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\GROUP_08_A股量化_数据研究`
   - `GROUP_08_external_ops_stats_v1.md` records `delete_candidate_rows = 8`
@@ -30,7 +30,7 @@
   - status is `M`, not `D`
   - it still needs manual review, but it does not belong to the deletion bucket
 
-## Reclassification Rule
+## 重分类规则
 
 - Only keep an item here if both conditions hold:
   - the old path was deleted
@@ -38,7 +38,7 @@
 - If the current counterpart exists, move it to `来源层真实迁移`.
 - If the item is a new truth-layer file or a modified tracked file, move it to `新增真值文件` or a separate manual-review note.
 
-## Current Action
+## 当前动作
 
 - Keep this sheet intentionally small.
 - Do not invent a misdelete bucket just to fill all three categories.

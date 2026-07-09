@@ -1,12 +1,12 @@
 # Source Library Backlog 2026-06-23 - 新增真值文件
 
-## Scope
+## 范围
 
 - Repository root: `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis`
 - Audit target: `10_来源库_SOURCE_LIBRARY`
 - This sheet handles the incoming truth-layer files that currently show as `??`, plus the single tracked modification that still needs review.
 
-## Current Snapshot
+## 当前快照
 
 - Untracked truth files under `10_来源库_SOURCE_LIBRARY`: `177`
 - Modified tracked files under `10_来源库_SOURCE_LIBRARY`: `1`
@@ -15,7 +15,7 @@
   - `02_原子化拆解文件`: `?? = 18`, `M = 1`
   - `00_外部公开资料与方法论参考`: `?? = 1`
 
-## Bucket 1
+## 分桶 1
 
 - root: `10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库`
 - count: `158`
@@ -35,7 +35,7 @@
   - `GROUP_10_A5_财报_估值_组合管理\`
 - current verdict: `新增真值主力`
 
-## Bucket 2
+## 分桶 2
 
 - root: `10_来源库_SOURCE_LIBRARY\02_原子化拆解文件`
 - count: `18` new files + `1` modified tracked file
@@ -54,7 +54,7 @@
   - the `18` untracked files are real incoming truth additions
   - the `1` modified tracked file stays in manual review until its diff is checked
 
-## Bucket 3
+## 分桶 3
 
 - root: `10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考`
 - count: `1`
@@ -64,7 +64,7 @@
   - this is the repo truth import of the pasted `Agent A` reply
   - it is not runtime noise and should stay in the source-library truth layer
 
-## Current Action
+## 当前动作
 
 - Treat these `177` files as `incoming truth`, not cleanup noise.
 - Review the single modified tracked file separately before staging.

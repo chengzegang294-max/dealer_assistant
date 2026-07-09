@@ -1,12 +1,12 @@
 # Source Library Completed Batch Index 2026-06-23
 
-## Goal
+## 目标
 
 - Provide one high-level truth index for the source-library intake work already completed on `2026-06-23`.
 - Stop treating `GROUP_08 / GROUP_09 / GROUP_10` as open exploration trees after they have already been cut into stable commit-ready packs.
 - Give the main docs a single anchor for "what is done" before selecting the next source-library directory.
 
-## Current Completed Range
+## 当前已完成范围
 
 - This index covers the completed staged/committed source-library work from `Batch 1` through `Batch 15`, plus the later `Batch 24-28` retirement cuts under `03_Kimi拆书待入库`.
 - These batches already moved beyond planning and now belong to the completed ledger layer.
@@ -15,7 +15,7 @@
   - choose the next directory batch
   - keep the four main docs synced
 
-## Batch Summary
+## 批次摘要
 
 ### Batch 1 - docs only
 
@@ -153,7 +153,7 @@
   - the `Smile_SMC` trace tree is now committed as the final method-reference trace lane under `Batch 8`
   - `Batch 8 = 00_外部公开资料与方法论参考` is now fully closed
 
-## Cross-Batch Pattern Now Fixed
+## 已修正的跨批次模式
 
 - `GROUP_08 / GROUP_09 / GROUP_10` have now been absorbed under the same general pattern:
   - entry layer first
@@ -376,13 +376,13 @@
 - stable verdict:
   - `Smile_SMC交易系统2_0` old-tree deletions are now closed
 
-## What Is Not Open Anymore
+## 已不再开放项
 
 - Do not reopen the already committed `01_Kimi拆书待入库/GROUP_08 / GROUP_09 / GROUP_10` truth trees as if they were still unsorted large trees.
 - Do not collapse the completed range back into a single generic statement like "Kimi trees were partly absorbed".
 - Do not mix derived local staging copies back into source-library truth scope.
 
-## Next Ledger Move
+## 下一台账动作
 
 - Use `docs/SOURCE_LIBRARY_NEXT_BATCH_SELECTION__2026-06-23.md` as the selection anchor for the next source-library directory.
 - Treat `03_Kimi拆书待入库` as closed retirement lane after `Batch 28`.

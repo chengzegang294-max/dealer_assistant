@@ -1,12 +1,12 @@
 # Source Library Next Batch Selection 2026-06-23
 
-## Goal
+## 目标
 
 - Select the next source-library directory from the current remaining backlog.
 - Make the choice from the total-ledger layer instead of drifting back into already completed `GROUP_08 / GROUP_09 / GROUP_10`.
 - Keep the selection auditable against the latest repository snapshot.
 
-## Current Snapshot
+## 当前快照
 
 - latest repository-wide visible status:
   - `M = 0`
@@ -20,14 +20,14 @@
   - `01_Kimi拆书待入库` committed and closed as truth lane
   - `03_Kimi拆书待入库` retirement lane closed (`Batch 24-28`)
 
-## Selection Rule
+## 选择规则
 
 - Prefer the smallest directory that can form a clean, reviewable next batch.
 - Prefer a directory whose edge is mostly text truth rather than mixed exports plus migration residue.
 - Avoid reopening a directory whose current visible status is mostly legacy migration evidence rather than new incoming truth.
 - Keep the lone modified tracked file under separate manual review even if the surrounding directory becomes the next batch.
 
-## Candidate Review
+## 候选复核
 
 ### Candidate A - `03_Kimi拆书待入库`
 
@@ -100,7 +100,7 @@
   - `Priority 3`
   - now part of completed ledger rather than candidate list
 
-## Recommended Decision
+## 建议裁决
 
 - Treat `Batch 7 = 02_原子化拆解文件` as closed and completed.
 - Treat `Batch 8 = 10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考` as closed and completed.
@@ -135,7 +135,7 @@
 - Treat `Batch 14 = GROUP_04 entry layer` as completed and committed.
 - Treat `Batch 15 = GROUP_07 entry layer` as completed and committed.
 
-## Why This Is The Smoothest Move
+## 为何这是最顺的一步
 
 - `Batch 8` is now fully closed, so there is no value in staying inside the method-reference lane.
 - the already committed `01_Kimi拆书待入库/GROUP_08 / GROUP_09 / GROUP_10` truth trees are complete enough under the fixed entry/body/archive pattern.
@@ -143,7 +143,7 @@
 - The smoothest next move is therefore to shift from the now-closed `01_Kimi拆书待入库` truth lane to the remaining migration-retirement lane under `03_Kimi拆书待入库`.
 - The smoothest next move is therefore to shift away from the now-closed `03_Kimi拆书待入库` lane to the remaining deletion-heavy source-library backlog under `01_外部公开指标资料_Batch9`.
 
-## Next Action Contract
+## 下一动作合同
 
 - Next batch target:
   - `10_来源库_SOURCE_LIBRARY`
@@ -184,7 +184,7 @@
   - already committed `Batch 8C`
   - already committed `Batch 8D`
 
-## Sync Targets
+## 同步目标
 
 - completed-range anchor:
   - `docs/SOURCE_LIBRARY_COMPLETED_BATCH_INDEX__2026-06-23.md`

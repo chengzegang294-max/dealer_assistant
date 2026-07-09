@@ -1,6 +1,6 @@
 # Source Library Backlog 2026-06-23 - staged commit ready plan
 
-## Goal
+## 目标
 
 - Stop treating `10_来源库_SOURCE_LIBRARY` as one giant cleanup blob.
 - Convert remaining backlog into small, reviewable stage batches.
@@ -9,7 +9,7 @@
   - completed batches already committed
   - next candidate batch still to be opened
 
-## Ledger Anchors
+## 台账锚点
 
 - completed batch index:
   - `docs/SOURCE_LIBRARY_COMPLETED_BATCH_INDEX__2026-06-23.md`
@@ -22,7 +22,7 @@
 - incoming truth ledger:
   - `docs/SOURCE_LIBRARY_BACKLOG__新增真值文件__2026-06-23.md`
 
-## Completed Range
+## 已完成范围
 
 ### Batch 1 - docs only
 
@@ -84,7 +84,7 @@
   - `Batch 6B1` = stable body
   - `Batch 6C` = auxiliary traces
 
-## Next Open Batch
+## 下一开放批次
 
 ### Batch 7 - `02_原子化拆解文件`
 
@@ -112,7 +112,7 @@
   - no remaining `??` or `M` under `02_原子化拆解文件`
   - `A股竞价规则` cards now use repo-local source anchors
 
-## Next Open Batch
+## 下一开放批次
 
 ### Batch 8 - `00_外部公开资料与方法论参考`
 
@@ -135,7 +135,7 @@
 - next cut:
   - none inside `Batch 8`
 
-## Deferred Candidates
+## 延后候选
 
 ### Closed intake lane - `01_Kimi拆书待入库`
 
@@ -226,7 +226,7 @@
 - next cut:
   - pause Batch9 lane: no remaining deletions to retire
 
-## Do Not Mix
+## 禁止混装
 
 - Do not mix `11_冻结总结层_FROZEN_SUMMARIES` into these batches.
 - Do not mix `.trae/skills` or `docs/playbooks` into source-library commits.
@@ -234,7 +234,7 @@
 - Do not treat old-root deletions as cleanup noise.
 - Do not reopen `GROUP_08 / GROUP_09 / GROUP_10` as the next main batch after they are already in the completed ledger.
 
-## Current Operator Move
+## 当前操作动作
 
 - Treat `Batch 1-6` as completed ledger, not open work.
 - Treat `Batch 7 = 02_原子化拆解文件` as completed.

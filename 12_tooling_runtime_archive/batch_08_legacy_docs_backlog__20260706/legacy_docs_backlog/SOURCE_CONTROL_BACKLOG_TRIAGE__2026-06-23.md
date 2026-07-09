@@ -1,6 +1,6 @@
 # Source Control Backlog Triage 2026-06-23
 
-## Scope
+## 范围
 
 - Repository root: `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis`
 - Triage goal:
@@ -8,7 +8,7 @@
   - keep audited source-library and frozen-summary assets out of accidental cleanup
   - give the next cleanup round a fixed three-way contract
 
-## Current Snapshot
+## 当前快照
 
 - `10_来源库_SOURCE_LIBRARY`
   - total visible backlog: `341`
@@ -67,7 +67,7 @@
   - `docs/playbooks/`
   - `image.png`
 
-## Three-Way Split
+## 三分流裁决
 
 ### 1) 可安全忽略
 
@@ -113,7 +113,7 @@
 - `.gitignore`
   - tracked policy file; keep under explicit review
 
-## Current Rule
+## 当前规则
 
 - First reduce `可安全忽略` noise.
 - Do not delete `10_来源库_SOURCE_LIBRARY` backlog in bulk.
@@ -122,7 +122,7 @@
   - do `可安全清理候选` first
   - then manually inspect `必须人工确认`
 
-## Next Step
+## 下一步
 
 - For `10_来源库_SOURCE_LIBRARY`, use the three dedicated sheets as the fixed contract:
   - `来源层真实迁移`

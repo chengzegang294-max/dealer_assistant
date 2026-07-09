@@ -1,12 +1,12 @@
 # Source Library Backlog 2026-06-23 - 来源层真实迁移
 
-## Scope
+## 范围
 
 - Repository root: `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis`
 - Audit target: `10_来源库_SOURCE_LIBRARY`
 - This sheet only handles items that are currently classified as `真实迁移 / relayout`, not real loss.
 
-## Current Verdict
+## 当前裁决
 
 - Current deletion total under `10_来源库_SOURCE_LIBRARY`: `334`
 - After the path audit in this round, the `334` deletions are fully explainable by `3` migration clusters.
@@ -18,7 +18,7 @@
   - `334 = 237 + 66 + 31`
   - there is no remaining directory-level deletion cluster outside these migrations
 
-## Cluster 1
+## 聚类 1
 
 - old root: `10_来源库_SOURCE_LIBRARY\03_Kimi拆书待入库`
 - current root: `10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库`
@@ -45,7 +45,7 @@
   - `GROUP_08_external_ops_stats_v1.md` records `MOVE / BOOKDIR = 52`, while the remaining `DELETE_CANDIDATE / S03 = 8` is a later cleanup window inside the new tree
 - current verdict: `真实迁移主力`
 
-## Cluster 2
+## 聚类 2
 
 - old root: `10_来源库_SOURCE_LIBRARY\01_外部公开指标资料_Batch9`
 - current tracked root: `10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\01_外部公开指标资料_Batch9`
@@ -64,7 +64,7 @@
   - these `66` deletions are old-root cleanup after the directory was absorbed into the `00_外部公开资料与方法论参考` truth lane
   - they should not be treated as accidental loss
 
-## Cluster 3
+## 聚类 3
 
 - old root: `10_来源库_SOURCE_LIBRARY\02_外部视频与方法论参考\Smile_SMC交易系统2_0`
 - current tracked root: `10_来源库_SOURCE_LIBRARY\00_外部公开资料与方法论参考\02_外部视频与方法论参考\Smile_SMC交易系统2_0`
@@ -81,7 +81,7 @@
   - these `31` deletions are old-root cleanup after the material was归位 into the `00_外部公开资料与方法论参考` tree
   - they should not be treated as accidental loss
 
-## Action Contract
+## 动作合同
 
 - Do not bulk-restore these `334` deletions.
 - Review them as `path migration evidence`, not as `missing truth`.
