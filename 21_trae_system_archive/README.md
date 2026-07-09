@@ -38,6 +38,9 @@
   - `00_entry\trae_system_transition\`
   - 且已补 `promotion_map_v1.tsv` 与 `trae_system_transition_family_index_v1.tsv`
   - 且已补 `TRAE_SYSTEM_TRANSITION_EXECUTION_CARD__20260709.md` 与 `TRAE_SYSTEM_TRANSITION_ARTIFACT_INDEX__20260709.tsv`
+- 当前 repo-first 日常入口继续看：
+  - `04_active_main_docs\README.md`
+  - 当前业务正式入口与执行清单以 `04_active_main_docs` 为先，不把本目录当作日常动作入口
 - 当前仓内仍无 `.trae\commands` 实体目录：
   - 不单列 command router
   - 不伪造命令副本或命令索引壳
@@ -60,3 +63,6 @@
   - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\README__ARCHIVE_ONLY.md`
 - 固定三跳顺序：
   - `active router -> decision index -> group router -> legacy archive`
+- repo-first 阅读边界：
+  - 日常推进与当前停点：`04_active_main_docs\README.md`
+  - governance/transition working copy：`00_entry\trae_system_transition\README.md`
