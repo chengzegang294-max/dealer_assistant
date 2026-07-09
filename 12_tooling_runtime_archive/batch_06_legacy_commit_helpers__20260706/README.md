@@ -1,4 +1,4 @@
-# Legacy Commit Helpers Batch 06
+# Legacy Commit Helpers 批次 06
 
 ## 用途
 

@@ -1,4 +1,4 @@
-# Tooling Runtime Archive Batch 02 Acceptance Check
+# Tooling Runtime 归档批次 02 验收检查
 
 ## 目的
 

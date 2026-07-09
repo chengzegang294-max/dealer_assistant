@@ -1,4 +1,4 @@
-# MT Indicator Family Batch 02
+# MT Indicator Family 批次 02
 
 ## 用途
 
