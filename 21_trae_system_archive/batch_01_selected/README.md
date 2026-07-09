@@ -3,6 +3,9 @@
 ## 用途
 
 - 这里放 `.trae` 首批迁入的新恢复锚点。
+- 当前这批正文实体已同步吸收到：
+  - `10_source_library_archive\batch_131_trae_system_selected_absorb__20260709\00_raw_snapshot\recover_selected\`
+- 本目录当前仍保留可读正文，便于旧引用继续工作；后续若要进一步收缩，再单开 pointer-only 批次。
 
 ## 当前文件
 

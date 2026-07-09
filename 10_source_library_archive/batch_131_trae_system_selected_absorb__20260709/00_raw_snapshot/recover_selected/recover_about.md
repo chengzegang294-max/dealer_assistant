@@ -1,0 +1,1 @@
+﻿  - stop_dist_atr锛欳ONFIG_BUCKET锛堟鎹熷€嶇巼閰嶇疆妗ｏ紱鍏佽鍦ㄥ搧绉?鐜涓嬪仛瀵圭収锛屼絾涓嶅仛鍏ㄥ眬榛樿鎺ㄨ崘锛?  - stop_k锛欴EPRECATE锛堢粺涓€鐢?stop_dist_atr 鍛藉悕锛?  - risk_per_trade锛欴IAG_ONLY锛堝璁?鏍稿鐢紱涓嶄綔涓洪棬鎺?璇勫垎锛?- 涓嬩竴姝ユ渶灏忚瘉鎹姩浣滐紙鍙湁褰撹璁ㄨ鈥滄帹鑽愭。浣?鐢滅偣鍖衡€濇墠鍋氾級锛?  - NEED_EVIDENCE锛歵rade_mae_atr / max_drawdown_per_trade锛堝尯鍒嗏€?.0 鍙槸鎵涙洿涔呮洿鐥涜嫤鈥?vs 鈥?.0 鍑忓皯鍣煶姝㈡崯涓旈闄╁彲鎺р€濓級

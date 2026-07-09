@@ -1,0 +1,48 @@
+{
+  "sample_plan": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/registry_v0_sample_plan_v1.tsv",
+  "status_filter": "multi_registry_ready",
+  "batch_count": 3,
+  "pass_count": 3,
+  "fail_count": 0,
+  "failed_registry_ids": [],
+  "batch_rows": [
+    {
+      "registry_id": "registry_v0_300302_self_proxy",
+      "primary_symbol": "300302.SZ",
+      "market_proxy_symbol": "300302.SZ",
+      "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300302_self_proxy_output.json",
+      "acceptance_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300302_self_proxy_acceptance.json",
+      "acceptance_status": "pass",
+      "final_signal": "BUY",
+      "trade_gate": "ALLOW",
+      "blockers": [
+        "VOLFAC_P0_A"
+      ]
+    },
+    {
+      "registry_id": "registry_v0_300302_601991_proxy",
+      "primary_symbol": "300302.SZ",
+      "market_proxy_symbol": "601991.SH",
+      "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300302_601991_proxy_output.json",
+      "acceptance_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_300302_601991_proxy_acceptance.json",
+      "acceptance_status": "pass",
+      "final_signal": "BUY",
+      "trade_gate": "ALLOW",
+      "blockers": [
+        "VOLFAC_P0_A"
+      ]
+    },
+    {
+      "registry_id": "registry_v0_301666_601991_proxy",
+      "primary_symbol": "301666.SZ",
+      "market_proxy_symbol": "601991.SH",
+      "output_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_301666_601991_proxy_output.json",
+      "acceptance_json": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_outputs/registry_v0_batch/registry_v0_301666_601991_proxy_acceptance.json",
+      "acceptance_status": "pass",
+      "final_signal": "BUY",
+      "trade_gate": "ALLOW",
+      "blockers": []
+    }
+  ],
+  "batch_status": "pass"
+}

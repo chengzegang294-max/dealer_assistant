@@ -272,15 +272,7 @@ def build_size_policy_card(card_results: list[dict[str, object]], summary: dict[
     }
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description="Registry v0: aggregate minimal runnable object cards.")
-    parser.add_argument("--input-csv", required=True)
-    parser.add_argument("--output-json", required=True)
-    parser.add_argument("--market-proxy-csv", help="Optional proxy csv for PERIOD_QUEEN. Defaults to input-csv.")
-    args = parser.parse_args()
-
-    input_path = Path(args.input_csv)
-    proxy_path = Path(args.market_proxy_csv) if args.market_proxy_csv else input_path
+def build_registry_output(input_path: Path, proxy_path: Path, registry_id: str) -> dict[str, object]:
     rows = load_ohlcv_rows(input_path)
     proxy_rows = load_ohlcv_rows(proxy_path)
 
@@ -300,8 +292,8 @@ def main() -> int:
         normalize_period_queen(period_queen),
     ]
     summary = aggregate(normalized)
-    payload = {
-        "registry_id": "registry_v0_minimal",
+    return {
+        "registry_id": registry_id,
         "input_csv": str(input_path).replace("\\", "/"),
         "market_proxy_csv": str(proxy_path).replace("\\", "/"),
         "as_of_date": rows[-1]["date"],
@@ -312,6 +304,19 @@ def main() -> int:
         "size_policy_card": build_size_policy_card(normalized, summary),
         "card_results": normalized,
     }
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Registry v0: aggregate minimal runnable object cards.")
+    parser.add_argument("--input-csv", required=True)
+    parser.add_argument("--output-json", required=True)
+    parser.add_argument("--market-proxy-csv", help="Optional proxy csv for PERIOD_QUEEN. Defaults to input-csv.")
+    parser.add_argument("--registry-id", default="registry_v0_minimal")
+    args = parser.parse_args()
+
+    input_path = Path(args.input_csv)
+    proxy_path = Path(args.market_proxy_csv) if args.market_proxy_csv else input_path
+    payload = build_registry_output(input_path, proxy_path, args.registry_id)
 
     output = Path(args.output_json)
     output.parent.mkdir(parents=True, exist_ok=True)

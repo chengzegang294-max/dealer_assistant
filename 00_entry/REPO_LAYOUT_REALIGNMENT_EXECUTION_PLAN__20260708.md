@@ -58,6 +58,8 @@
     - 已完成 `BATCH_01_PLAN/REVIEW`、`BATCH_02_PLAN/REVIEW` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
     - 原路径现仅保留短回指文件，避免旧引用立刻断裂
     - `README.md` 已补充冻结批次的新入口说明
+    - 已完成 `batch_01_selected` 与 `batch_02_selected` 的正文实体 -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/`
+    - 旧目录当前仍保留可读正文与 README 回指，本轮先不做全量 pointer-only
 
 ## P2 目录与文件
 
@@ -90,6 +92,7 @@
 - `20_tools_workspace/batch_04~06/*/smoke_validation/20260703Tsmoke` -> `12_tooling_runtime_archive/batch_120_tk_manual_sheet_smoke__20260709/artifacts/{tkr6,tkr7,tkr8}/`
 - `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
 - `21_trae_system_archive/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
+- `21_trae_system_archive/batch_01_selected/*`、`21_trae_system_archive/batch_02_selected/p0-exec-evidence-officer_PROMPT.md` -> `10_source_library_archive/batch_131_trae_system_selected_absorb__20260709/00_raw_snapshot/`
 
 ## 本轮不直接动的内容
 

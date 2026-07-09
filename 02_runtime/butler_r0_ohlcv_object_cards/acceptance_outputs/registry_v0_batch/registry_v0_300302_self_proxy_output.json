@@ -1,0 +1,316 @@
+{
+  "registry_id": "registry_v0_300302_self_proxy",
+  "input_csv": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/clean_subset/300302_SZ_1d.csv",
+  "market_proxy_csv": "02_runtime/butler_r0_ohlcv_object_cards/acceptance_samples/clean_subset/300302_SZ_1d.csv",
+  "as_of_date": "2026-05-08",
+  "cards_run": [
+    "VOLFAC_P0_A",
+    "BPB_P0_E",
+    "VP_P0_E",
+    "TKR7_P0_E",
+    "VOLTARGET_P0_R",
+    "PERIOD_QUEEN_P0_F"
+  ],
+  "vote_input_snapshot": [
+    {
+      "object_id": "VOLFAC_P0_A",
+      "card_role": "filter",
+      "signal_type": "FILTER",
+      "signal_direction": "sell",
+      "signal_strength": 1.0,
+      "confidence": 0.9,
+      "filter_action": "REDUCE_WEIGHT",
+      "risk_action": "REDUCE_POSITION",
+      "size_scalar": 0.6
+    },
+    {
+      "object_id": "BPB_P0_E",
+      "card_role": "voter",
+      "signal_type": "BPB",
+      "signal_direction": "buy",
+      "signal_strength": 10.0,
+      "confidence": 0.72,
+      "filter_action": "PASS",
+      "risk_action": "NONE",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "VP_P0_E",
+      "card_role": "voter",
+      "signal_type": "VA_BREAKOUT",
+      "signal_direction": "buy",
+      "signal_strength": 9.0,
+      "confidence": 0.68,
+      "filter_action": "PASS",
+      "risk_action": "NONE",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "TKR7_P0_E",
+      "card_role": "voter",
+      "signal_type": "NONE",
+      "signal_direction": "neutral",
+      "signal_strength": 0.0,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "risk_action": "STANDBY",
+      "size_scalar": 1.0
+    },
+    {
+      "object_id": "VOLTARGET_P0_R",
+      "card_role": "sizer",
+      "signal_type": "VOL_ADJUST",
+      "signal_direction": "neutral",
+      "signal_strength": 0.2,
+      "confidence": 0.7,
+      "filter_action": "PASS",
+      "risk_action": "extreme_vol",
+      "size_scalar": 0.12
+    },
+    {
+      "object_id": "PERIOD_QUEEN_P0_F",
+      "card_role": "environment",
+      "signal_type": "ATTACK_CONFIRMED",
+      "signal_direction": "neutral",
+      "signal_strength": 0.75,
+      "confidence": 0.75,
+      "filter_action": "PASS",
+      "risk_action": "FULL",
+      "size_scalar": 0.7
+    }
+  ],
+  "aggregate_summary": {
+    "buy_votes": 2,
+    "sell_votes": 0,
+    "neutral_votes": 1,
+    "buy_score": 13.32,
+    "sell_score": 0.0,
+    "net_score": 13.32,
+    "avg_size_scalar": 0.473333,
+    "permission": "FULL",
+    "final_signal": "BUY",
+    "blockers": [
+      "VOLFAC_P0_A"
+    ]
+  },
+  "final_decision_card": {
+    "final_signal": "BUY",
+    "trade_gate": "ALLOW",
+    "permission": "FULL",
+    "buy_votes": 2,
+    "sell_votes": 0,
+    "neutral_votes": 1,
+    "buy_score": 13.32,
+    "sell_score": 0.0,
+    "net_score": 13.32,
+    "blockers": [
+      "VOLFAC_P0_A"
+    ],
+    "hard_block": false,
+    "rationale": "buy_score_dominates_and_no_hard_block"
+  },
+  "size_policy_card": {
+    "environment_cap": 0.7,
+    "voltarget_scalar": 0.12,
+    "volfac_filter_scalar": 0.6,
+    "avg_size_scalar": 0.473333,
+    "recommended_size_scalar": 0.12,
+    "size_policy": "min(environment_cap, voltarget_scalar)"
+  },
+  "card_results": [
+    {
+      "object_id": "VOLFAC_P0_A",
+      "card_role": "filter",
+      "signal_type": "FILTER",
+      "signal_direction": "sell",
+      "signal_strength": 1.0,
+      "confidence": 0.9,
+      "filter_action": "REDUCE_WEIGHT",
+      "risk_action": "REDUCE_POSITION",
+      "size_scalar": 0.6,
+      "detail": {
+        "object_id": "VOLFAC_P0_A",
+        "volfac_id2_std_3m": 0.05147041,
+        "volfac_annualized_vol": 0.817067,
+        "volfac_vol_percentile": 83.96,
+        "volfac_vol_regime": "HIGH",
+        "volfac_vol_trend": "CONTRACTING",
+        "signal_type": "FILTER",
+        "signal_strength": -1,
+        "filter_action": "REDUCE_WEIGHT",
+        "risk_action": "REDUCE_POSITION",
+        "size_scalar": 0.6,
+        "confidence": 0.9
+      }
+    },
+    {
+      "object_id": "BPB_P0_E",
+      "card_role": "voter",
+      "signal_type": "BPB",
+      "signal_direction": "buy",
+      "signal_strength": 10.0,
+      "confidence": 0.72,
+      "filter_action": "PASS",
+      "risk_action": "NONE",
+      "size_scalar": 1.0,
+      "detail": {
+        "object_id": "BPB_P0_E",
+        "bpb_trend_direction": "up",
+        "bpb_breakout_level": 34.2,
+        "bpb_breakout_body_pct": 0.847458,
+        "bpb_breakout_volume_ratio": 1.681103,
+        "bpb_is_valid_breakout": true,
+        "bpb_pullback_depth_ratio": 0.0,
+        "bpb_pullback_quality": "TOO_EARLY",
+        "bpb_signal_type": "BPB",
+        "bpb_signal_strength": 10,
+        "bpb_entry_price": 35.5,
+        "bpb_stop_loss_price": 25.93,
+        "bpb_target_price": 54.64
+      }
+    },
+    {
+      "object_id": "VP_P0_E",
+      "card_role": "voter",
+      "signal_type": "VA_BREAKOUT",
+      "signal_direction": "buy",
+      "signal_strength": 9.0,
+      "confidence": 0.68,
+      "filter_action": "PASS",
+      "risk_action": "NONE",
+      "size_scalar": 1.0,
+      "detail": {
+        "object_id": "VP_P0_E",
+        "vp_poc": 20.7162,
+        "vp_vah": 25.4312,
+        "vp_val": 19.1446,
+        "vp_hvn_levels": [
+          19.1446,
+          19.9304,
+          20.7162,
+          23.0738,
+          23.8596
+        ],
+        "vp_lvn_levels": [
+          28.5746,
+          29.3604,
+          30.9321,
+          31.7179,
+          33.2896,
+          34.0754,
+          35.6471
+        ],
+        "vp_current_rel_position": "above",
+        "vp_trend_shape": "descending",
+        "vp_signal_type": "VA_BREAKOUT",
+        "vp_signal_strength": 9,
+        "vp_suggested_stop": 25.4312,
+        "vp_suggested_target": 45.5688
+      }
+    },
+    {
+      "object_id": "TKR7_P0_E",
+      "card_role": "voter",
+      "signal_type": "NONE",
+      "signal_direction": "neutral",
+      "signal_strength": 0.0,
+      "confidence": 0.5,
+      "filter_action": "PASS",
+      "risk_action": "STANDBY",
+      "size_scalar": 1.0,
+      "detail": {
+        "object_id": "TKR7_P0_E",
+        "ao_value": 6.463794,
+        "ao_direction": "positive",
+        "ao_divergence_type": "NONE",
+        "ao_divergence_strength": 0.0,
+        "ao_divergence_confidence": 0.0,
+        "ao_divergence_age": 0,
+        "ao_signal_type": "NONE",
+        "ao_signal_strength": 0,
+        "ao_recommendation": "STANDBY"
+      }
+    },
+    {
+      "object_id": "VOLTARGET_P0_R",
+      "card_role": "sizer",
+      "signal_type": "VOL_ADJUST",
+      "signal_direction": "neutral",
+      "signal_strength": 0.2,
+      "confidence": 0.7,
+      "filter_action": "PASS",
+      "risk_action": "extreme_vol",
+      "size_scalar": 0.12,
+      "detail": {
+        "object_id": "VOLTARGET_P0_R",
+        "vt_target_vol": 0.1,
+        "vt_atr14": 2.057857,
+        "vt_current_price": 35.5,
+        "vt_log_return_std_20": 0.04301335,
+        "vt_current_vol": 0.682816,
+        "vt_vol_ratio": 6.828158,
+        "vt_position_scalar": 0.2,
+        "vt_scalar_ema": 0.2,
+        "vt_adjusted_position": 0.12,
+        "vt_vol_regime": "extreme_vol"
+      }
+    },
+    {
+      "object_id": "PERIOD_QUEEN_P0_F",
+      "card_role": "environment",
+      "signal_type": "ATTACK_CONFIRMED",
+      "signal_direction": "neutral",
+      "signal_strength": 0.75,
+      "confidence": 0.75,
+      "filter_action": "PASS",
+      "risk_action": "FULL",
+      "size_scalar": 0.7,
+      "detail": {
+        "object_id": "PERIOD_QUEEN_P0_F",
+        "pq_state": "ATTACK_CONFIRMED",
+        "pq_state_prev": "",
+        "pq_state_duration": 1,
+        "pq_state_confidence": 0.75,
+        "pq_transition_trigger": "ret20=0.7884|ret5=0.3922|new_high=False",
+        "pq_leading_stock": "300302.SZ",
+        "pq_leading_stock_sustained": true,
+        "pq_leading_stock_new_high": false,
+        "pq_space_board_sustained": true,
+        "pq_space_board_count": 2,
+        "pq_attack_formation_count": 5,
+        "pq_attack_formation_valid": false,
+        "pq_tolerance_exist": true,
+        "pq_tolerance_score": 0.592157,
+        "pq_tide_force_exist": false,
+        "pq_tide_force_score": 0.0,
+        "pq_ten_day_rank": [
+          "300302.SZ"
+        ],
+        "pq_ten_day_rank_change": 0,
+        "pq_cutting_condition_met": false,
+        "pq_gestation_new_faces": 0,
+        "pq_gestation_new_faces_sustained": false,
+        "pq_trading_permission": "FULL",
+        "pq_position_max_size": 0.7,
+        "pq_strategy_bundle": "attack_confirmed",
+        "pq_allowed_objects": [
+          "CHZL_BSD",
+          "BPB",
+          "VP",
+          "TKR7",
+          "VOLFAC",
+          "VOLTARGET"
+        ],
+        "pq_forbidden_objects": [
+          "YTC",
+          "MFLOW",
+          "INSTB",
+          "KELLY",
+          "PERIOD_QUEEN",
+          "ATRATIO"
+        ],
+        "pq_entry_min_votes_adjusted": 3
+      }
+    }
+  ]
+}
