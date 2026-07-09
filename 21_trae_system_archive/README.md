@@ -28,6 +28,8 @@
   - `batch_02_selected\p0-exec-evidence-officer_PROMPT.md`
 - 当前 recover 镜像入口继续看：
   - `batch_01_selected\`
+- 首两批迁移台账已冻结到：
+  - `11_frozen_summaries_archive\batch_130_trae_system_transition__20260709\`
 - 当前仓内仍无 `.trae\commands` 实体目录：
   - 不单列 command router
   - 不伪造命令副本或命令索引壳

@@ -54,6 +54,10 @@
     - `SKILLS_INDEX.md`
     - `SKILLS_GROUP_VIEW.md`
     - `recover_*`
+  - 当前进度：
+    - 已完成 `BATCH_01_PLAN/REVIEW`、`BATCH_02_PLAN/REVIEW` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
+    - 原路径现仅保留短回指文件，避免旧引用立刻断裂
+    - `README.md` 已补充冻结批次的新入口说明
 
 ## P2 目录与文件
 
@@ -85,6 +89,7 @@
 - `20_tools_workspace/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `00_entry/TOOLS_WORKSPACE_BATCH_*`
 - `20_tools_workspace/batch_04~06/*/smoke_validation/20260703Tsmoke` -> `12_tooling_runtime_archive/batch_120_tk_manual_sheet_smoke__20260709/artifacts/{tkr6,tkr7,tkr8}/`
 - `20_tools_workspace/_raw_snapshot_batch09` -> `12_tooling_runtime_archive/batch_121_tools_raw_snapshot_batch09_absorb__20260709/00_raw_snapshot/tools_raw_snapshot_batch09/`
+- `21_trae_system_archive/BATCH_01_PLAN.md`、`BATCH_01_REVIEW.md`、`BATCH_02_PLAN.md`、`BATCH_02_REVIEW.md` -> `11_frozen_summaries_archive/batch_130_trae_system_transition__20260709/`
 
 ## 本轮不直接动的内容
 
