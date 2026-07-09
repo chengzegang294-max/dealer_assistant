@@ -19,7 +19,7 @@
   - 是否只裁掉账号态/环境态字段
   - 是否新增了未知字段
 
-## Volty Template
+## Volty 模板
 
 - 旧文件：
   - `mt4probe_volty_portable.ini`
@@ -50,7 +50,7 @@
 - 新增字段：
   - `none`
 
-## Smoke Template
+## Smoke 模板
 
 - 旧文件：
   - `smoke_moving_average_portable.ini`
