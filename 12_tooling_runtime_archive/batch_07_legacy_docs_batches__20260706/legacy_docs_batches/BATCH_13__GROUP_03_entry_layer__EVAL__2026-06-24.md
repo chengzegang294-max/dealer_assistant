@@ -38,7 +38,7 @@
 - `Batch 13` should contain only the three root master files
 - do not mix any other unopened `GROUP_*` tree into this cut
 
-## Batch 13 后预期结果
+## 批次 13 后预期结果
 
 - `GROUP_03` will no longer be part of open `01_Kimi拆书待入库` residue
 - the remaining unopened groups will narrow to:

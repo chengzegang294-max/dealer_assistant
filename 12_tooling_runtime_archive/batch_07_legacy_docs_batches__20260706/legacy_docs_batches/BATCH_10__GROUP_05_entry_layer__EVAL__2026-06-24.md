@@ -45,7 +45,7 @@
 - do not mix `01_F1_cutpack_v2_final`
 - do not reopen already committed `Batch 9A` through `Batch 9F`
 
-## Batch 10 后预期结果
+## 批次 10 后预期结果
 
 - `GROUP_05` will no longer be a fully unopened group directory
 - `GROUP_05` will then be ready for a later split such as:

@@ -38,7 +38,7 @@
 - `Batch 14` should contain only the three root master files
 - do not mix any other unopened `GROUP_*` tree into this cut
 
-## Batch 14 后预期结果
+## 批次 14 后预期结果
 
 - `GROUP_04` will no longer be part of open `01_Kimi拆书待入库` residue
 - the remaining unopened groups will narrow to:

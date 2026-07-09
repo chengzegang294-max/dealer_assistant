@@ -53,7 +53,7 @@
 - do not reopen already committed `Batch 11` root master files
 - do not mix any other unopened `GROUP_*` tree into this cut
 
-## Batch 11A 后预期结果
+## 批次 11A 后预期结果
 
 - `GROUP_01` will be fully absorbed into repo across entry and stable layers
 - the remaining `01_Kimi拆书待入库` open residue will narrow to `GROUP_02 / GROUP_03 / GROUP_04 / GROUP_07`

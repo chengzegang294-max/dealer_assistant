@@ -39,7 +39,7 @@
 - do not mix `01_F2_cutpack_v2_final` into this first cut
 - do not reopen already completed `GROUP_05` or `GROUP_06` lanes
 
-## Batch 11 后预期结果
+## 批次 11 后预期结果
 
 - `GROUP_01` becomes an opened, staged lane instead of a full unopened directory
 - the next clean cut becomes:

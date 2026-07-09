@@ -53,7 +53,7 @@
 - do not reopen already committed `Batch 10` entry files
 - do not mix any other unopened `GROUP_*` tree into this cut
 
-## Batch 10A 后预期结果
+## 批次 10A 后预期结果
 
 - `GROUP_05` will be fully absorbed into repo across entry and stable layers
 - the remaining `01_Kimi?????` open residue will narrow to `GROUP_01 / GROUP_02 / GROUP_03 / GROUP_04 / GROUP_07`

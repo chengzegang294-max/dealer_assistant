@@ -35,6 +35,6 @@
 - `Batch 15` should contain only this single index file plus the batch docs/scripts
 - do not mix any other non-source-library backlog into this cut
 
-## Batch 15 后预期结果
+## 批次 15 后预期结果
 
 - `01_Kimi拆书待入库` will be fully closed across `GROUP_01 / 02 / 03 / 04 / 05 / 06 / 07`

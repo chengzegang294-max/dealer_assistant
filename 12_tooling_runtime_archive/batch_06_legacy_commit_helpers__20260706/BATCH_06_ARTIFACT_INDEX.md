@@ -4,11 +4,11 @@
 - file_type: `INDEX_NOTE`
 - evidence_mode: `historical_recovered`
 
-## GENERATOR
+## 生成器
 
 - `12_tooling_runtime_archive/batch_06_legacy_commit_helpers__20260706/legacy_docs_commit_helpers/commit_ready_stage_batch_*.ps1`
 - `12_tooling_runtime_archive/batch_06_legacy_commit_helpers__20260706/legacy_docs_commit_helpers/commit_ready_batch_*__paths.txt`
 
-## ARTIFACT
+## 产物
 
 - none
