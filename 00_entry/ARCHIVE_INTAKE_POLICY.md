@@ -16,6 +16,8 @@
 - 不因为“以后可能有用”先搬进来。
 - 不把乱码、损坏备份、重复副本迁入新目录。
 - 每次只迁一个小批次，并留下清楚的批次说明。
+- 新增资讯与新回收材料统一先走：
+  - `docs\playbooks\NEW_INFO_INGEST_ALIGNMENT_PLAYBOOK__20260709.md`
 
 ## 来源库归档准入
 
@@ -24,6 +26,10 @@
   - 不是已经被活跃对象目录吸收的重复副本
   - 能说明原始来源和当前用途
   - 没有编码损坏或明显结构缺陷
+- 若属于新增电子书、视频、文章、研报、网页摘录或历史回收材料：
+  - 先落 `10_source_library_archive/<batch>/00_raw_snapshot`
+  - 再补 `README + manifest + provenance`
+  - 再判断是否提升到 `00_entry / 01_active_objects / 02_runtime / 04_active_main_docs`
 
 ## 冻结总结归档准入
 
