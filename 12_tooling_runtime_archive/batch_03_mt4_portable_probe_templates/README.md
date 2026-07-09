@@ -36,3 +36,8 @@
 
 - 这里不包含真实账号态、服务器态和窗口态配置。
 - 若后续需要 `MT5 portable` 模板，应单开新批次，不混入本批。
+
+## 备注入口
+
+- `BATCH_03_MT4_PORTABLE_PROBE_TEMPLATES_EXECUTION_CARD__20260709.md`
+- `BATCH_03_MT4_PORTABLE_PROBE_TEMPLATES_ARTIFACT_INDEX__20260709.tsv`
