@@ -1,4 +1,4 @@
-# n02_wider_history_validation_eurusd_m5_from_m1_runtime_notes v1
+# N02 EURUSD M5 从 M1 聚合的宽历史验证运行说明 v1
 
 ## 角色
 

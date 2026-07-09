@@ -1,4 +1,4 @@
-# n02_wider_history_validation_eurusd_m5_from_m1_acceptance v1
+# N02 EURUSD M5 从 M1 聚合的宽历史验证验收 v1
 
 ## 目的
 

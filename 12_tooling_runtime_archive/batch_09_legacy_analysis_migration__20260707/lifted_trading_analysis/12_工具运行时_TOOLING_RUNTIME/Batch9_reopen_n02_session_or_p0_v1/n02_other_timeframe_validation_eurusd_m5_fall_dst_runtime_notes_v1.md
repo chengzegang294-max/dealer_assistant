@@ -1,4 +1,4 @@
-# n02_other_timeframe_validation_eurusd_m5_fall_dst_runtime_notes v1
+# N02 EURUSD M5 秋季 DST 跨周期验证运行说明 v1
 
 ## 角色
 

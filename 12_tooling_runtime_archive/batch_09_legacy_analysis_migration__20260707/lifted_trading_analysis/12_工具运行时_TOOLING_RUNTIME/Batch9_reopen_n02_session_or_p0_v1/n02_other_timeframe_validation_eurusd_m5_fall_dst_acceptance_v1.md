@@ -1,4 +1,4 @@
-# n02_other_timeframe_validation_eurusd_m5_fall_dst_acceptance v1
+# N02 EURUSD M5 秋季 DST 跨周期验证验收 v1
 
 ## 目的
 
