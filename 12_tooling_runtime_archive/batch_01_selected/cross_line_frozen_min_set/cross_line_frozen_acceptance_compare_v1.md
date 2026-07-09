@@ -1,4 +1,4 @@
-# cross_line_frozen_acceptance_compare_v1
+# Cross-Line Frozen 验收对照 v1
 
 - ARCHIVE_ONLY: 本文件保留旧 `cross_line_frozen` 的历史 compare 壳，不作为默认入口。
 - 当前入口先看：`cross_line_frozen_current_manifest_v1.md`

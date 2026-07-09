@@ -1,4 +1,4 @@
-# cross_line_frozen_acceptance_chain_index_v1
+# Cross-Line Frozen 验收链索引 v1
 
 - ARCHIVE_ONLY: 本文件保留旧 `cross_line_frozen` 的历史总链索引壳，不作为默认入口。
 - 当前入口先看：`cross_line_frozen_current_manifest_v1.md`
