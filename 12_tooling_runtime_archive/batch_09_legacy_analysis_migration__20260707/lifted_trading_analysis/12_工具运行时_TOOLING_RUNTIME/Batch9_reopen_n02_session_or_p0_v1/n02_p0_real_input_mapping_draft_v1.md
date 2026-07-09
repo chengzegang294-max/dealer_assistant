@@ -1,4 +1,4 @@
-# n02_p0_real_input_mapping_draft v1
+# N02 P0 真实输入映射草案 v1
 
 ## 目的
 

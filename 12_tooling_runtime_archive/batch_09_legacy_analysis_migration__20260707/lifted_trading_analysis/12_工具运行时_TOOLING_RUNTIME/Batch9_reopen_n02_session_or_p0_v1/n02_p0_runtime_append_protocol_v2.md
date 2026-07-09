@@ -1,4 +1,4 @@
-# n02_p0_runtime_append_protocol v2
+# N02 P0 运行追加协议 v2
 
 ## 目的
 
@@ -16,4 +16,3 @@
 2. 确认 `first_break_mode` 枚举只在：
    - `close / wick / none / ambiguous`
 3. 继续遵守 v1 的 session binding 与 DST 推导要求
-
