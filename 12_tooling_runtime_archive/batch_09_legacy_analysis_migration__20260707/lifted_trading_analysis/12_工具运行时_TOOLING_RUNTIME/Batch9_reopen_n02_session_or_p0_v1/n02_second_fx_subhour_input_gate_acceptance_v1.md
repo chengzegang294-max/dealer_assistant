@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_input_gate_acceptance v1
+# N02 第二 FX 次小时输入闸口验收 v1
 
 ## 目的
 

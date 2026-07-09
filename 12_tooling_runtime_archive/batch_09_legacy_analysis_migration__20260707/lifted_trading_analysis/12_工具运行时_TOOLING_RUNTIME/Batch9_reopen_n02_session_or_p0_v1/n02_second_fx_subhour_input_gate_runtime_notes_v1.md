@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_input_gate_runtime_notes v1
+# N02 第二 FX 次小时输入闸口运行说明 v1
 
 ## 角色
 

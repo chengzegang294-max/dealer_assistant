@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_input_acquisition_summary v1
+# N02 第二 FX 次小时输入采集总览 v1
 
 ## Role
 
