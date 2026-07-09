@@ -1,12 +1,12 @@
 # Commit Ready Batch 4B1 - GROUP_08 text summaries - 2026-06-23
 
-## Goal
+## 目标
 
 - commit the first text-only subtree pack inside `GROUP_08`
 - keep this batch limited to the small md summary/cut directories
 - do not include `00_external_import_staging/`, `05_txt源码_md归档/`, or `06_pdf_retained_cut_v2/`
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `01_62份研究PDF/` (`5` md files)
 - `02_pdf入门书/` (`2` md files)
@@ -14,17 +14,17 @@
 - `04_epub目录粗切/` (`1` md file)
 - expected source file count: `9`
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add GROUP_08 text summary pack (01-04 subtrees)`
 
-## Explicit Exclusions
+## 显式排除项
 
 - `00_external_import_staging/`
 - `05_txt源码_md归档/`
 - `06_pdf_retained_cut_v2/`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_4B1__GROUP_08_text_summaries__2026-06-23.ps1`

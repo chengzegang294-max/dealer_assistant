@@ -1,12 +1,12 @@
 # Commit Ready Batch 11A - GROUP_01 cutpack stable layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the full stable cutpack directory under `GROUP_01`
 - keep this pack limited to the retained `F2` truth files only
 - leave already committed `Batch 11` root entry files untouched
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/README_放这里.md`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/manifest_v2.tsv`
@@ -24,13 +24,13 @@
 - `docs/commit_ready_batch_11A__group_01_cutpack_stable_layer__paths.txt`
 - `docs/commit_ready_stage_batch_11A__group_01_cutpack_stable_layer__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - final retained `F2` README
 - manifest for the final retained directory
 - `9` final cutpack markdown files
 
-## Excluded In This Pack
+## 本包排除项
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/01_F2_cutpack_v2_final/compliance_report_r1.json`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT/GROUP_01_microstructure_master_part_01.md`
@@ -39,11 +39,11 @@
 - all other unopened `GROUP_02 / GROUP_03 / GROUP_04 / GROUP_07` directories
 - any completed `Batch 9A` through `Batch 11` files outside this pack
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 11A GROUP_01 cutpack stable layer`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_11A__group_01_cutpack_stable_layer__2026-06-24.ps1`

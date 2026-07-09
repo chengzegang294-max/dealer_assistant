@@ -1,16 +1,16 @@
-﻿# Batch 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - EVAL - 2026-06-24
+# Batch 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the `kd_mtf_p0_v1` runtime snapshot as auditable runtime-prep evidence
 - keep the batch limited to the whole snapshot directory plus batch docs/scripts
 
-## Scope
+## 范围
 
 - target root:
   - `12_工具运行时_TOOLING_RUNTIME/kd_mtf_p0_v1`
 
-## Read Result
+## 阅读结果
 
 - the directory does not expose a standalone `min_contract` file like `pv_corr` / `rsj`
 - the directory already contains the runtime-prep audit chain:
@@ -21,7 +21,7 @@
   - real input mapping draft and runtime gaps notes
 - the current notes explicitly say the pack is not an execution-layer integration and not a finished live-chain proof
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - the whole `kd_mtf_p0_v1` runtime snapshot directory
@@ -32,7 +32,7 @@
 - source-only for this cut:
   - ignored local cache files such as `__pycache__`
 
-## Decision
+## 裁决
 
 - `Batch 22` should contain the full `kd_mtf_p0_v1` directory plus the batch docs/scripts
 - do not split out only one markdown contract surrogate, because the current audit meaning lives across the whole directory

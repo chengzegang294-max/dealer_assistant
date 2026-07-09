@@ -1,12 +1,12 @@
 # Batch 9D - GROUP_06 cutpack stable layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - absorb the stable cutpack layer under `GROUP_06`
 - keep the final stable entry set separate from older body/history copies
 - leave the archive/history residue for a later isolated commit
 
-## Scope
+## 范围
 
 - target root:
   - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
@@ -15,7 +15,7 @@
   - `manifest_v2.tsv`
   - `5` stable cutpack markdown files
 
-## Target Files
+## 目标文件
 
 - `README_放这里.md`
 - `manifest_v2.tsv`
@@ -25,14 +25,14 @@
 - `CUTPACK__A2__Dalton__MindOverMarkets__v2_r1.md`
 - `CUTPACK__A2__Harris__TradingAndExchanges__v2_r1.md`
 
-## Read Result
+## 阅读结果
 
 - `README_放这里.md` explicitly says this directory is the only stable entry set for later use
 - `manifest_v2.tsv` records only the stable entry files and their current repo roles
 - the stable set contains `2` CN files and `3` English files, each already marked as current usable versions
 - the same directory also keeps `5` history copies, but the README already classifies them as retained history rather than stable entry
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - stable entry contract for `A2` cutpack under `GROUP_06`
@@ -45,14 +45,14 @@
   - `01_A2_cutpack_v2`
   - legacy files inside `01_A2_cutpack_v2_final` that are explicitly marked as history-only
 
-## Decision
+## 裁决
 
 - `Batch 9D` should contain only the stable entry contract and the `5` stable cutpack files
 - do not mix the `5` history copies listed in `README_放这里.md`
 - do not mix the older `01_A2_cutpack_v2` directory
 - do not reopen already committed `Batch 9C`
 
-## Expected Result After 9D
+## 9D 后预期结果
 
 - `GROUP_06` will have both its entry layer and stable cutpack layer committed
 - the remaining `GROUP_06` residue will become a much cleaner archive/history-only lane

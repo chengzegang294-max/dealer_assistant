@@ -1,11 +1,11 @@
 # Batch 16 - FROZEN_SUMMARIES stage deliverables index - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the stable stage-deliverables index layer under `11_冻结总结层_FROZEN_SUMMARIES`
 - keep the batch limited to the minimal index files only
 
-## Scope
+## 范围
 
 - target root:
   - `11_冻结总结层_FROZEN_SUMMARIES/02_阶段成果索引_STAGE_DELIVERABLES`
@@ -13,14 +13,14 @@
   - `00_阶段成果总索引.md`
   - `01_根目录入口与归类_20260621.md`
 
-## Read Result
+## 阅读结果
 
 - the directory is an index-only stable layer:
   - it links to already-committed truth in source-library, runtime manifests, and docs
   - it does not duplicate large bodies of text
 - these two files serve as durable entry points for later retrieval and keep the root directory clean
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - the two index files under `02_阶段成果索引_STAGE_DELIVERABLES`
@@ -31,7 +31,7 @@
 - source-only for this cut:
   - none
 
-## Decision
+## 裁决
 
 - `Batch 16` should contain only these two index files plus the batch docs/scripts
 - do not mix the large `03_Kimi拆书待入库` deletion cluster into this batch

@@ -1,12 +1,12 @@
 # Batch 8D - Smile_SMC trace layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - absorb the last open residue under `Batch 8 = 00_外部公开资料与方法论参考`
 - keep the full `Smile_SMC` trace layer together as one auditable method-reference tree
 - close `Batch 8` after committing this directory
 
-## Scope
+## 范围
 
 - target directory:
   - `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0`
@@ -17,7 +17,7 @@
 - total size:
   - about `31.3 MB`
 
-## Read Result
+## 阅读结果
 
 - `Smile_SMC交易系统2_0_吸收与总纲_v1.md` already defines this lane as:
   - method-reference
@@ -29,7 +29,7 @@
   - archived screenshot evidence
 - no default dependency on `D:\Stock\cut_file` remains inside this tree
 
-## Decision
+## 裁决
 
 - use the whole `Smile_SMC交易系统2_0` directory as `Batch 8D`
 - keep:
@@ -42,7 +42,7 @@
   - splitting out screenshots would destroy the trace-layer audit chain
   - splitting out raw materials would weaken the proof path of the summary files
 
-## No-Mix Rule
+## 禁止混装规则
 
 - stage the full `Smile_SMC交易系统2_0` directory
 - stage the `Batch 8D` doc pack
@@ -50,7 +50,7 @@
 - do not reopen `Batch9`
 - do not mix `01_Kimi拆书待入库`
 
-## Result After 8D
+## 8D 后结果
 
 - `Batch 8` should be fully closed
 - `00_外部公开资料与方法论参考` should drop from the open backlog

@@ -1,17 +1,17 @@
 # Commit Ready Batch 28 - SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the final deletion-only cleanup cut to close the remaining retirement residue under `03_Kimi拆书待入库`
 
-## Exact Paths To Stage
+## 精确暂存路径
 
 - path list file:
   - `docs/commit_ready_batch_28__source_library_03_kimi_small_fragments_old_tree_retirement_layer__paths.txt`
 - stage script:
   - `docs/commit_ready_stage_batch_28__source_library_03_kimi_small_fragments_old_tree_retirement_layer__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - deletion-only retirement paths across:
   - `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库/GROUP_01_微观结构_交易所_HFT`
@@ -26,11 +26,11 @@
   - `docs/commit_ready_batch_28__source_library_03_kimi_small_fragments_old_tree_retirement_layer__paths.txt`
   - `docs/commit_ready_stage_batch_28__source_library_03_kimi_small_fragments_old_tree_retirement_layer__2026-06-24.ps1`
 
-## Excluded In This Pack
+## 本包排除项
 
 - any runtime snapshot or tooling items outside the batch docs/scripts
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 28 SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer`
 

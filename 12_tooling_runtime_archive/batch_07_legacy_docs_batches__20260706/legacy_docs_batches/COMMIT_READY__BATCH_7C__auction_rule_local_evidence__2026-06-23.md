@@ -1,12 +1,12 @@
 # Commit Ready Batch 7C - auction rule local evidence - 2026-06-23
 
-## Goal
+## 目标
 
 - remove project-external evidence dependency from the `A股竞价规则` cards
 - move the minimal text evidence anchors into the repository
 - rewrite the card source paths to repo-local anchors
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R01_9点15到9点20可撤单与假单诱导_v1.md`
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R02_9点20到9点25不可撤单与挂单更真实_v1.md`
@@ -31,11 +31,11 @@
 - `docs/commit_ready_batch_7C__auction_rule_local_evidence__paths.txt`
 - `docs/commit_ready_stage_batch_7C__auction_rule_local_evidence__2026-06-23.ps1`
 
-## Result Boundary
+## 结果边界
 
 - after this batch, the `A股竞价规则` cards no longer depend on default project-external file paths for their primary source anchors
 - original external paths are retained only as mapping history in `manifest_v1.tsv`
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: localize auction rule evidence anchors into repo`

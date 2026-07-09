@@ -1,11 +1,11 @@
 # Commit Ready Batch 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the `vantharp_risk_p0_v1` runtime snapshot pack
 - preserve the DIAG_ONLY contract + proof-of-mapping evidence as auditable artifacts
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `12_工具运行时_TOOLING_RUNTIME/vantharp_risk_p0_v1/vantharp_risk_p0_min_contract_v1.md`
 - `12_工具运行时_TOOLING_RUNTIME/vantharp_risk_p0_v1/vantharp_risk_p0_proof_of_mapping_v1.md`
@@ -20,21 +20,21 @@
 - `docs/commit_ready_batch_19__tooling_runtime_vantharp_risk_p0_v1__paths.txt`
 - `docs/commit_ready_stage_batch_19__tooling_runtime_vantharp_risk_p0_v1__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - contract + proof-of-mapping notes
 - sample inputs/outputs for audit
 
-## Excluded In This Pack
+## 本包排除项
 
 - any other runtime snapshots outside this folder
 - the large `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库/**` deletion cluster
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 19 TOOLING_RUNTIME vantharp_risk_p0_v1`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_19__tooling_runtime_vantharp_risk_p0_v1__2026-06-24.ps1`

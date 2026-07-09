@@ -1,11 +1,11 @@
 # Batch 29 - SOURCE_LIBRARY Batch9 root contracts/lists retirement layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the cleanest first cut from the `01_外部公开指标资料_Batch9` deletion cluster
 - keep this batch limited to the Batch9 root-level contracts/lists only plus the batch docs/scripts
 
-## Scope
+## 范围
 
 - target old root:
   - `10_来源库_SOURCE_LIBRARY/01_外部公开指标资料_Batch9`
@@ -20,7 +20,7 @@
   - `N03_市场结构_突破质量_条件收集`
   - `batch9_sources_kimi/**`
 
-## Read Result
+## 阅读结果
 
 - current deletion status under Batch9 is `66` paths total, with `27` root-level files and the rest inside grouped subfolders
 - the cleanest first cut is the `27` root-level contracts/lists because:
@@ -28,7 +28,7 @@
   - it does not require mixing the deeper N01/N02/N03 research materials
   - it keeps the later folder-level retirements clean and auditable
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - `27` root-level retirement deletions under `01_外部公开指标资料_Batch9`
@@ -39,7 +39,7 @@
 - source-only for this cut:
   - runtime snapshot items, tooling files, and unrelated directories
 
-## Decision
+## 裁决
 
 - `Batch 29` should contain only the Batch9 root-level retirement deletions plus the batch docs/scripts
 - do not mix any subfolder retirements in this cut

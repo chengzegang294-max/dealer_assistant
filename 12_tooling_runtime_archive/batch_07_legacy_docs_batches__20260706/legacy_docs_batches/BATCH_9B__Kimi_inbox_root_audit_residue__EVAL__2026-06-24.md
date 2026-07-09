@@ -1,19 +1,19 @@
 # Batch 9B - Kimi inbox root audit residue - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - absorb the remaining root-level audit residue under `01_Kimi拆书待入库`
 - keep audit evidence separate from the actual `GROUP_01 ~ GROUP_07` body trees
 - leave the inbox lane ready for group-by-group staged cuts after this batch
 
-## Scope
+## 范围
 
 - target root:
   - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库`
 - current open root audit residue:
   - `5` files
 
-## Target Files
+## 目标文件
 
 - `PANEL__S文件夹_整理方向__EVIDENCE_PACK__2026-06-17.md`
 - `PANEL__S文件夹_分桶与额度控制__OUTBOUND__2026-06-17.md`
@@ -21,7 +21,7 @@
 - `S_DUP_DELETE_LIST__same_hash__2026-06-17.tsv`
 - `S_BUCKET_stage_proof__01_集合竞价教程__v1.tsv`
 
-## Read Result
+## 阅读结果
 
 - the two `PANEL__*` files are not transient chat noise
   - they document the directory-level evidence pack
@@ -30,7 +30,7 @@
 - `S_DUP_DELETE_LIST__same_hash__2026-06-17.tsv` is the exact duplicate-delete evidence ledger
 - `S_BUCKET_stage_proof__01_集合竞价教程__v1.tsv` is the proof that the first copied tutorial set reached repo-local staging
 
-## Four-Way Verdict
+## 四分流裁决
 
 - 已吸收:
   - root-level audit evidence for duplicate handling
@@ -46,13 +46,13 @@
   - `GROUP_07`
   - unopened body trees until their own staged cuts
 
-## Decision
+## 裁决
 
 - `Batch 9B` should contain all `5` remaining root audit files
 - do not mix any `GROUP_01 ~ GROUP_07` directory
 - do not reopen already committed `Batch 9A`
 
-## Expected Result After 9B
+## 9B 后预期结果
 
 - `01_Kimi拆书待入库` open residue should narrow to:
   - `GROUP_01_微观结构_交易所_HFT`

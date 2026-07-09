@@ -1,12 +1,12 @@
 # Batch 8C - Batch9 full tree - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - absorb the remaining `Batch9` residue as one clean source-library batch under `Batch 8`
 - keep `Batch9` separate from `Smile_SMC`
 - preserve `Batch9` internal four-way split instead of re-splitting the tree into smaller commit fragments
 
-## Scope
+## 范围
 
 - target directory:
   - `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9`
@@ -15,7 +15,7 @@
 - current directory count:
   - `9` subdirectories
 
-## Read Result
+## 阅读结果
 
 - `Batch9_批次收口与四分流_v1.md` already defines:
   - `已吸收`
@@ -28,7 +28,7 @@
   - `batch9_sources_kimi` is a secondary structured-note layer, not fake raw truth
 - no default dependency on `D:\Stock\cut_file` remains inside this tree
 
-## Decision
+## 裁决
 
 - use the whole `Batch9` directory as `Batch 8C`
 - do not carve out `A股指标整理区_待整理_N04_N05_N06`
@@ -38,7 +38,7 @@
   - these items are already explicitly downgraded inside the tree itself
   - keeping the full tree preserves auditability and avoids creating an artificial half-tree commit
 
-## No-Mix Rule
+## 禁止混装规则
 
 - stage the full `Batch9` directory
 - stage the `Batch 8C` doc pack
@@ -46,7 +46,7 @@
 - do not reopen `NFTRADEZ`
 - do not touch completed `Batch 7`, `Batch 8A`, or `Batch 8B`
 
-## Next Result After 8C
+## 8C 后下一结果
 
 - `Batch 8` remaining residue should narrow to:
   - `Smile_SMC ??1`

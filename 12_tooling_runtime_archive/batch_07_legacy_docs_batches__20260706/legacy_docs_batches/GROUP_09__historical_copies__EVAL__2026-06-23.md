@@ -1,6 +1,6 @@
 # GROUP_09 Historical Copies EVAL 2026-06-23
 
-## Scope
+## 范围
 
 - target set:
   - root `CUTPACK__A4__*.md`
@@ -9,7 +9,7 @@
 - goal:
   - decide whether these should be dropped, left uncommitted, or committed as history/archive layer
 
-## Evidence Summary
+## 证据摘要
 
 - root README already marks them as non-stable:
   - root A4 loose files are `重复副本，不再作为稳定入口`
@@ -20,7 +20,7 @@
   - `01_A1_cutpack_v2/` files do not byte-match the files in `01_A1_cutpack_v2_final/`
   - `02_A3C1_cutpack_v2/` files do not byte-match the files in `02_A3C1_cutpack_v2_final/`
 
-## Role Decision
+## 角色裁决
 
 - root `CUTPACK__A4__*.md`
   - role: `HISTORICAL_DUPLICATE_COPY`
@@ -32,7 +32,7 @@
   - role: `HISTORICAL_PRE_FINAL_A3C1`
   - decision: keep as source-layer history, not stable entry
 
-## Four-Way Split
+## 四分流裁决
 
 - 已吸收
   - none
@@ -43,7 +43,7 @@
 - 仅来源库保留
   - all three historical copy clusters listed above
 
-## Commit Decision
+## 提交裁决
 
 - decision:
   - `COMMIT_AS_HISTORY_LAYER`
@@ -52,7 +52,7 @@
   - they preserve cutpack evolution and audit trail
   - they are explicitly demoted from stable entry already, so committing them does not blur current truth if the boundary is documented
 
-## Boundary
+## 边界
 
 - commit now:
   - the three historical copy clusters above

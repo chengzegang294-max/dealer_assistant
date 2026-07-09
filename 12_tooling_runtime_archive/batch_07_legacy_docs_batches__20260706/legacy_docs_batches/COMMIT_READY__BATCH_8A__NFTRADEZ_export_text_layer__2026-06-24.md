@@ -1,12 +1,12 @@
-﻿# Commit Ready Batch 8A - NFTRADEZ export text layer - 2026-06-24
+# Commit Ready Batch 8A - NFTRADEZ export text layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the cleanest first cut inside Batch 8 = 00_外部公开资料与方法论参考
 - keep this pack limited to NFTRADEZ export text truth plus the minimum repo-local anchors
 - exclude Batch9, Smile_SMC, and NFTRADEZ KIMI contract residue from this commit
 
-## Exact Files To Stage
+## 精确暂存文件
 
 ### Export Text Files (26)
 
@@ -47,7 +47,7 @@
 - docs/commit_ready_batch_8A__nftradez_export_text_layer__paths.txt
 - docs/commit_ready_stage_batch_8A__nftradez_export_text_layer__2026-06-24.ps1
 
-## Excluded In This Pack
+## 本包排除项
 
 - 10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v1.txt
 - 10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_direct_message_v2__agentA.txt
@@ -60,11 +60,11 @@
 - 10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/
 - 10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Smile_SMC交易系统2_0/
 
-## Suggested Commit Message
+## 建议提交信息
 
 - docs: add Batch 8A NFTRADEZ export text layer
 
-## Stage Command
+## 暂存命令
 
 - use:
   - docs/commit_ready_stage_batch_8A__nftradez_export_text_layer__2026-06-24.ps1

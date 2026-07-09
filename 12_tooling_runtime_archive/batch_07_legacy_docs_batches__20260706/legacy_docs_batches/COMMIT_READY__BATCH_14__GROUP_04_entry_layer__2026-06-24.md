@@ -1,11 +1,11 @@
 # Commit Ready Batch 14 - GROUP_04 entry layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the clean root entry layer under `GROUP_04`
 - keep this cut limited to the three root master files only
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_04_统计套利_研究方法_ML/GROUP_04_stat_arb_research_master_part_01.md`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_04_统计套利_研究方法_ML/GROUP_04_stat_arb_research_master_part_02.md`
@@ -15,22 +15,22 @@
 - `docs/commit_ready_batch_14__group_04_entry_layer__paths.txt`
 - `docs/commit_ready_stage_batch_14__group_04_entry_layer__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - research SOP root file
 - research workflow continuation root file
 - stat-arb research prototypes root file
 
-## Excluded In This Pack
+## 本包排除项
 
 - unopened `GROUP_07` directory
 - any completed `Batch 9A` through `Batch 13` files outside this pack
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 14 GROUP_04 entry layer`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_14__group_04_entry_layer__2026-06-24.ps1`

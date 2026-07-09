@@ -1,12 +1,12 @@
 # Commit Ready Batch 2 - NFTRADEZ truth layer only - 2026-06-23
 
-## Goal
+## 目标
 
 - Stage only the `NFTRADEZ` truth-layer files that reflect the completed dual-agent intake.
 - Keep this batch independent from source-library migration batches.
 - Preserve the `method_reference` boundary while landing the imported template layer.
 
-## Exact Files To Stage
+## 精确暂存文件
 
 1. `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/README.md`
 2. `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_batch_README_v1.md`
@@ -15,7 +15,7 @@
 5. `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_concept_glossary_shrink_v1__imported.md`
 6. `10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/Norman_NFTRADEZ_ICT_Trader_NYC/NFTRADEZ_KIMI_premarket_template_v1__imported.md`
 
-## Companion Truth Files Kept As Context
+## 保留作上下文的真值文件
 
 - `NFTRADEZ_KIMI_concept_glossary_manifest_v1.tsv`
 - `NFTRADEZ_KIMI_concept_glossary_prompt_v1.txt`
@@ -24,30 +24,30 @@
 - `NFTRADEZ_KIMI_concept_glossary_direct_message_v2__agentA.txt`
 - `NFTRADEZ_KIMI_premarket_template_direct_message_v2__agentB.txt`
 
-## Explicit Exclusions
+## 显式排除项
 
 - all `*_导出.md` source captures
 - any other source-library directories
 - any source-library migration batches under `01_Kimi拆书待入库`
 - `临时粘贴区_外部AI与终端输出.md`
 
-## Why This Batch Exists
+## 为何存在该批次
 
 - It closes the first full `NFTRADEZ` dual-agent intake.
 - It lands both imported replies as repo truth.
 - It keeps `NFTRADEZ` separate from the much larger source-library migration backlog.
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: import NFTRADEZ premarket template and close dual-agent intake`
 
-## Stage Command
+## 暂存命令
 
 - Use:
   - `docs/commit_ready_stage_batch_2__NFTRADEZ_truth_layer__2026-06-23.ps1`
   - `docs/commit_ready_batch_2__NFTRADEZ_truth_layer__paths.txt`
 
-## Verification
+## 验证
 
 - Run the script once with `-DryRun`.
 - Confirm that only the `6` files above are targeted.

@@ -1,11 +1,11 @@
-﻿# Commit Ready Batch 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - 2026-06-24
+# Commit Ready Batch 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the old-root retirement evidence for the clean root-level slice of `03_Kimi拆书待入库`
 - preserve this first deletion cut as an auditable migration batch
 
-## Exact Paths To Stage
+## 精确暂存路径
 
 - `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库/CUT_CONTRACT__Kimi_保留型切割_v2.md`
 - `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库/CUT_CONTRACT__Kimi_全文保留优先_v1.md`
@@ -25,15 +25,15 @@
 - `docs/commit_ready_batch_24__source_library_03_kimi_old_root_retirement_layer__paths.txt`
 - `docs/commit_ready_stage_batch_24__source_library_03_kimi_old_root_retirement_layer__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - `13` root-level old-root retirement deletions from `03_Kimi拆书待入库`
 
-## Excluded In This Pack
+## 本包排除项
 
 - any grouped subtree deletion such as `GROUP_08` and `GROUP_09`
 - any runtime snapshot or tool file
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 24 SOURCE_LIBRARY 03_Kimi old root retirement layer`

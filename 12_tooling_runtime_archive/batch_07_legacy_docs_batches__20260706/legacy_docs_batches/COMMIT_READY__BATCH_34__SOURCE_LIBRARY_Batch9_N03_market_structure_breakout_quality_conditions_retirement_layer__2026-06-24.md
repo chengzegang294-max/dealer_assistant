@@ -1,17 +1,17 @@
 # Commit Ready Batch 34 - SOURCE_LIBRARY Batch9 N03 market structure breakout quality conditions retirement layer - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the deletion-only retirement cut under `01_外部公开指标资料_Batch9/N03_市场结构_突破质量_条件收集`
 
-## Exact Paths To Stage
+## 精确暂存路径
 
 - path list file:
   - `docs/commit_ready_batch_34__source_library_batch9_n03_market_structure_breakout_quality_conditions_retirement_layer__paths.txt`
 - stage script:
   - `docs/commit_ready_stage_batch_34__source_library_batch9_n03_market_structure_breakout_quality_conditions_retirement_layer__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - deletion-only retirement paths under:
   - `10_来源库_SOURCE_LIBRARY/01_外部公开指标资料_Batch9/N03_市场结构_突破质量_条件收集`
@@ -21,11 +21,11 @@
   - `docs/commit_ready_batch_34__source_library_batch9_n03_market_structure_breakout_quality_conditions_retirement_layer__paths.txt`
   - `docs/commit_ready_stage_batch_34__source_library_batch9_n03_market_structure_breakout_quality_conditions_retirement_layer__2026-06-24.ps1`
 
-## Excluded In This Pack
+## 本包排除项
 
 - any deletion paths outside:
   - `10_来源库_SOURCE_LIBRARY/01_外部公开指标资料_Batch9/N03_市场结构_突破质量_条件收集`
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 34 SOURCE_LIBRARY Batch9 N03 market structure breakout quality conditions retirement layer`

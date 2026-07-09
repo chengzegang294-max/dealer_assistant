@@ -1,11 +1,11 @@
 # Batch 18 - FROZEN_SUMMARIES batch1 recovered utf8 - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the `batch1 recovered utf8` backup pack as a frozen audit reference
 - keep it strictly inside the frozen summaries layer
 
-## Scope
+## 范围
 
 - target root:
   - `11_冻结总结层_FROZEN_SUMMARIES/99_活跃主文档损坏前备份_20260611_planb_pre_rebuild/00_batch1_recovered_utf8`
@@ -21,7 +21,7 @@
   - `关于日活_best_effort_gb18030.md`
   - `关于日活_current_truth_anchor.md`
 
-## Read Result
+## 阅读结果
 
 - this pack is explicitly a backup + comparison aid:
   - best-effort reverse decode for damaged mojibake text
@@ -29,7 +29,7 @@
   - notes to explain irrecoverable loss cases
 - it should not replace the current active main docs; it stays as frozen evidence
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - the full `00_batch1_recovered_utf8` pack
@@ -40,7 +40,7 @@
 - source-only for this cut:
   - none
 
-## Decision
+## 裁决
 
 - `Batch 18` should contain the whole recovered pack plus the batch docs/scripts
 - do not mix runtime snapshots or the large `03_Kimi拆书待入库` deletion cluster into this batch

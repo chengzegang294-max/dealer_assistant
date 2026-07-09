@@ -1,12 +1,12 @@
 # Commit Ready Batch 7A - 02_原子化拆解文件 untracked truth - 2026-06-23
 
-## Goal
+## 目标
 
 - stage the `18` untracked truth files under `02_原子化拆解文件`
 - keep the batch limited to new files only
 - exclude the lone modified tracked file from this pack
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R01_9点15到9点20可撤单与假单诱导_v1.md`
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/A股竞价规则_R02_9点20到9点25不可撤单与挂单更真实_v1.md`
@@ -27,18 +27,18 @@
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/趋势系统交易_四轴状态模板_后续对象定义入口_v1.md`
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/风险管理_VanTharp_R乘数_期望与头寸规模_后续对象定义入口_v1.md`
 
-## Excluded In This Pack
+## 本包排除项
 
 - `10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/核心技术_威科夫_弹簧Spring与上抛UT量化判定.md`
 - reason:
   - tracked modified file
   - held for separate manual review
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 7A atomic rule untracked truth pack`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_7A__atomic_untracked_truth__2026-06-23.ps1`

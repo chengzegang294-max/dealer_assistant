@@ -1,18 +1,18 @@
 # Batch 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the cleanest first cut from the `03_Kimi拆书待入库 -> 01_Kimi拆书待入库` migration lane
 - keep this batch limited to the old-root retirement files plus the batch docs/scripts
 
-## Scope
+## 范围
 
 - target old root:
   - `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库`
 - exact retirement slice in this cut:
   - root-level old-lane contracts, readme, panel exports, and duplicate ledgers only
 
-## Read Result
+## 阅读结果
 
 - `docs/SOURCE_LIBRARY_BACKLOG__来源层真实迁移__2026-06-23.md` classifies the whole `03_Kimi拆书待入库` deletion cluster as `真实迁移 / relayout`
 - the cluster size is `237` old-path deletions and is explicitly paired with the new truth root `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库`
@@ -24,7 +24,7 @@
   - root duplicate ledgers
 - this cut avoids mixing the much larger `GROUP_08 / GROUP_09` old-tree retirements into the first deletion batch
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - the `13` root-level retirement deletions under `03_Kimi拆书待入库`
@@ -35,7 +35,7 @@
 - source-only for this cut:
   - unrelated modified files and non-source-library runtime items
 
-## Decision
+## 裁决
 
 - `Batch 24` should contain only the root-level old-lane retirement deletions plus the batch docs/scripts
 - do not mix `GROUP_08 / GROUP_09` subtree deletions into this first cut

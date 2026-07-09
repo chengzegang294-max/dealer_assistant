@@ -1,12 +1,12 @@
 # Commit Ready Batch 4A - GROUP_08 manifest entry - 2026-06-23
 
-## Goal
+## 目标
 
 - commit the top-level non-binary entry layer of `GROUP_08`
 - keep this batch text-first and auditable
 - do not include `00_external_import_staging/` or any deeper subtree contents
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - all top-level files directly under:
   - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/`
@@ -17,7 +17,7 @@
   - `.tsv`
   - `.ps1`
 
-## Explicit Exclusions
+## 显式排除项
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/00_external_import_staging/`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/01_62份研究PDF/`
@@ -27,11 +27,11 @@
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/05_txt源码_md归档/`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_08_A股量化_数据研究/06_pdf_retained_cut_v2/`
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add GROUP_08 manifest-entry pack (top-level ledgers/runbooks)`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_4A__GROUP_08_manifest_entry__2026-06-23.ps1`

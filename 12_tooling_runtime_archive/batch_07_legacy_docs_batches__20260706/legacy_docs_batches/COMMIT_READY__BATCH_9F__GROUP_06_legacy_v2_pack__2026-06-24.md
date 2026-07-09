@@ -1,12 +1,12 @@
 # Commit Ready Batch 9F - GROUP_06 legacy v2 pack - 2026-06-24
 
-## Goal
+## 目标
 
 - stage the full `01_A2_cutpack_v2` legacy pack under `GROUP_06`
 - keep this pack limited to the earlier usable `v2` directory only
 - leave all already committed `v2_final` files untouched
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2/README_放这里.md`
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2/BATCH_SUMMARY__A2__v2.md`
@@ -21,14 +21,14 @@
 - `docs/commit_ready_batch_9F__group_06_legacy_v2_pack__paths.txt`
 - `docs/commit_ready_stage_batch_9F__group_06_legacy_v2_pack__2026-06-24.ps1`
 
-## Included In This Pack
+## 本包纳入项
 
 - legacy README for `A2` cutpack v2
 - batch summary with coverage and A-share alignment notes
 - manifest for the legacy pack
 - `5` legacy cutpack markdown files
 
-## Excluded In This Pack
+## 本包排除项
 
 - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_06_Auction_MarketProfile_价格行为/01_A2_cutpack_v2_final`
 - already committed `Batch 9C` root entry files
@@ -36,11 +36,11 @@
 - already committed `Batch 9E` history residue files
 - all other unopened `GROUP_*` trees
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add Batch 9F GROUP_06 legacy v2 pack`
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_9F__group_06_legacy_v2_pack__2026-06-24.ps1`

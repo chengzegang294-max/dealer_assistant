@@ -1,12 +1,12 @@
 # Batch 9A - Kimi inbox root contract routing - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - open `Batch 9 = 01_Kimi拆书待入库` with the cleanest possible first cut
 - commit only the durable root-layer contract and routing files
 - keep large group trees and audit residue out of the first knife
 
-## Scope
+## 范围
 
 - target root:
   - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库`
@@ -15,7 +15,7 @@
 - first-cut target:
   - `7` root-level `md` files
 
-## Read Result
+## 阅读结果
 
 - `README_放这里.md` defines the root directory contract for the whole inbox lane
 - `Kimi拆书待入库_批次检查_v1.md` already gives directory-level batch verdicts and group priorities
@@ -25,7 +25,7 @@
 - `GROUP_06_to_N02_对象候选清单_v1.md`
   together form the cross-group routing layer from inbox notes into later source-library reopen candidates
 
-## Split Decision
+## 拆分裁决
 
 - `Batch 9A = root contract + routing layer`
   - `README_放这里.md`
@@ -41,7 +41,7 @@
   - `S_BUCKET_stage_proof__01_集合竞价教程__v1.tsv`
   - all `GROUP_01 ~ GROUP_07` directories
 
-## Four-Way Verdict
+## 四分流裁决
 
 - 已吸收:
   - root-layer inbox contract
@@ -58,14 +58,14 @@
   - `GROUP_07`
   - current audit traces until staged separately
 
-## Why This Is The Cleanest First Knife
+## 为何这是最干净的第一刀
 
 - all files are pure text
 - all files sit at the root of the inbox lane
 - all files define durable structure rather than transient execution evidence
 - no group tree body is mixed into the first commit
 
-## Expected Result After 9A
+## 9A 后预期结果
 
 - `01_Kimi拆书待入库` residue narrows from mixed root + group trees into:
   - root audit residue

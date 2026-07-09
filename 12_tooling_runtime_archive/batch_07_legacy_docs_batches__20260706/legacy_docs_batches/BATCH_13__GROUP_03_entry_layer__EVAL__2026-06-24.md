@@ -1,12 +1,12 @@
 # Batch 13 - GROUP_03 entry layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - absorb the clean root entry layer under `GROUP_03`
 - keep this cut limited to the `3` root master files only
 - continue the validated `entry layer first` split used on `GROUP_06 / GROUP_05 / GROUP_01 / GROUP_02`
 
-## Scope
+## 范围
 
 - target root:
   - `10_来源库_SOURCE_LIBRARY/01_Kimi拆书待入库/GROUP_03_组合管理_风险模型_交易成本`
@@ -15,14 +15,14 @@
   - `GROUP_03_portfolio_risk_master_part_02.md`
   - `GROUP_03_portfolio_risk_master_part_03.md`
 
-## Read Result
+## 阅读结果
 
 - `part_01` is the portfolio construction pipeline, spanning alpha, risk model, constraints, cost, optimization, and monitoring
 - `part_02` is the friction layer: turnover, transaction cost, impact/capacity, and feasibility constraints
 - `part_03` is the research/backtest bias checklist with detection and mitigation guidance
 - no separate `*_cutpack_v2_final` directory is present under `GROUP_03` at this time, so the root entry layer is also the full group payload for this batch
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - `GROUP_03` root master files (parts `01/02/03`)
@@ -33,12 +33,12 @@
 - source-only for this cut:
   - none inside `GROUP_03` root entry layer
 
-## Decision
+## 裁决
 
 - `Batch 13` should contain only the three root master files
 - do not mix any other unopened `GROUP_*` tree into this cut
 
-## Expected Result After Batch 13
+## Batch 13 后预期结果
 
 - `GROUP_03` will no longer be part of open `01_Kimi拆书待入库` residue
 - the remaining unopened groups will narrow to:

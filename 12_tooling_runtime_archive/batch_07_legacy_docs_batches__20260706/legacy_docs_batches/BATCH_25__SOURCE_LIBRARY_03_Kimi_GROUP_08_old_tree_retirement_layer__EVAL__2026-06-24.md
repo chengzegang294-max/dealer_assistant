@@ -1,11 +1,11 @@
 # Batch 25 - SOURCE_LIBRARY 03_Kimi GROUP_08 old-tree retirement layer - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the next clean deletion-only cut from the `03_Kimi拆书待入库 -> 01_Kimi拆书待入库` migration lane
 - keep this batch limited to the `GROUP_08_A股量化_数据研究` old-tree retirement slice plus the batch docs/scripts
 
-## Scope
+## 范围
 
 - target old root:
   - `10_来源库_SOURCE_LIBRARY/03_Kimi拆书待入库`
@@ -15,7 +15,7 @@
   - deletion-only paths under the target subtree
   - plus the batch docs/scripts under `docs/`
 
-## Read Result
+## 阅读结果
 
 - the `03_Kimi拆书待入库` deletion cluster is classified as `真实迁移 / relayout` in:
   - `docs/SOURCE_LIBRARY_BACKLOG__来源层真实迁移__2026-06-23.md`
@@ -24,7 +24,7 @@
   - `GROUP_08_A股量化_数据研究 = 178` deletions
 - therefore this batch should isolate `GROUP_08` as its own standalone retirement cut
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - `03_Kimi拆书待入库/GROUP_08_A股量化_数据研究` old-tree retirement deletions (`178`)
@@ -35,7 +35,7 @@
 - source-only for this cut:
   - runtime snapshot items, tooling files, and unrelated directories
 
-## Decision
+## 裁决
 
 - `Batch 25` should contain only the `GROUP_08` old-tree retirement deletions plus the batch docs/scripts
 - do not mix `GROUP_09` or `GROUP_06` deletion slices into this cut

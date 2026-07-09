@@ -1,11 +1,11 @@
 # Commit Ready Batch 5C - GROUP_09 historical copies - 2026-06-23
 
-## Goal
+## 目标
 
 - commit the historical-copy layer of `GROUP_09` as archive/history evidence
 - preserve lineage without confusing it with stable entry
 
-## Exact Files To Stage
+## 精确暂存文件
 
 - root historical loose files:
   - `CUTPACK__A4__*.md`
@@ -15,11 +15,11 @@
 - expected source file count:
   - `19`
 
-## Suggested Commit Message
+## 建议提交信息
 
 - `docs: add GROUP_09 historical cutpack copies as archive layer`
 
-## Boundary
+## 边界
 
 - this batch is history-only
 - these files are not current stable entry
@@ -28,7 +28,7 @@
   - root `manifest_v2.tsv`
   - four `*_final` trees
 
-## Stage Command
+## 暂存命令
 
 - use:
   - `docs/commit_ready_stage_batch_5C__GROUP_09_historical_copies__2026-06-23.ps1`

@@ -1,11 +1,11 @@
 # Batch 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - EVAL - 2026-06-24
 
-## Goal
+## 目标
 
 - land the `vantharp_risk_p0_v1` runtime snapshot as auditable DIAG_ONLY evidence
 - keep it strictly inside `12_工具运行时_TOOLING_RUNTIME`
 
-## Scope
+## 范围
 
 - target root:
   - `12_工具运行时_TOOLING_RUNTIME/vantharp_risk_p0_v1`
@@ -19,7 +19,7 @@
   - `real_input_samples/vantharp_risk_p0_proof_output_v1.csv`
   - `real_input_samples/vantharp_risk_p0_proof_output_v2.csv`
 
-## Read Result
+## 阅读结果
 
 - `vantharp_risk_p0_min_contract_v1.md` explicitly marks the role as `DIAG_ONLY`
 - the snapshot provides:
@@ -27,7 +27,7 @@
   - proof-of-mapping notes
   - sample inputs and outputs for audit
 
-## Four-Way Verdict
+## 四分流裁决
 
 - absorbed now:
   - the full `vantharp_risk_p0_v1` runtime snapshot pack
@@ -38,7 +38,7 @@
 - source-only for this cut:
   - none
 
-## Decision
+## 裁决
 
 - `Batch 19` should contain only this runtime snapshot pack plus the batch docs/scripts
 - do not mix the large `03_Kimi拆书待入库` deletion cluster into this batch
