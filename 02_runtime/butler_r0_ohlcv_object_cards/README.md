@@ -17,6 +17,8 @@
 - `01_active_objects/butler_r0_object_cards_p0/*_field_contract_v1.tsv`
 - `01_active_objects/butler_r0_object_cards_p0/object_cards_p0_acceptance_matrix_v1.tsv`
 - `00_entry/REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`（仓库级 registry 聚合入口）
+- `registry_v0` 固定阅读链：
+  - `00_entry/REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md -> runtime_execution_card_v1.md -> run_registry_v0_minimal.py`
 
 ## 当前生成入口与产物
 

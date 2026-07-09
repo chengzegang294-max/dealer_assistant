@@ -4,6 +4,14 @@
 
 - 这里放 `group08` 外部材料整理主流水线脚本。
 
+## 边界
+
+- 本目录只放流水线脚本本体与批次说明，不承载仓库级真值入口。
+- 若脚本产出文件：
+  - 需要长期保留的运行产物归 `12_tooling_runtime_archive/`（并带批次 README / execution card / artifact index）
+  - 可复现运行时产物归 `02_runtime/`
+  - 临时中间文件只允许落在本批次目录内且可迁走可删
+
 ## 当前文件
 
 - `group08_generate_external_ops_plan.py`
