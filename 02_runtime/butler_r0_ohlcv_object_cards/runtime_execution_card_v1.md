@@ -2,6 +2,8 @@
 
 ## 生成入口
 
+- 仓库级正式入口：
+  - `00_entry/REGISTRY_V0_FORMAL_ENTRY_CARD__20260709.md`
 - `GENERATOR`:
   - `02_runtime/butler_r0_ohlcv_object_cards/run_object_card_minimal_v1.py`
   - `02_runtime/butler_r0_ohlcv_object_cards/run_vp_minimal_v1.py`

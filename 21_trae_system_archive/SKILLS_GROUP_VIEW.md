@@ -1,5 +1,11 @@
 # Skills Group View
 
+## 当前工作副本
+
+- 当前 repo-global 工作副本见：
+  - `00_entry\trae_system_transition\TRAE_SYSTEM_SKILLS_GROUP_VIEW__20260709.md`
+- 本文件继续承担 `group router` 角色，不改 `.trae` first-hop。
+
 ## 角色
 
 - 本文件是 `21_trae_system_archive\SKILLS_INDEX.md` 的主题分组视图。

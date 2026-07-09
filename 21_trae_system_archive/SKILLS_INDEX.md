@@ -1,4 +1,10 @@
-﻿# Skills Index
+# Skills Index
+
+## 当前工作副本
+
+- 当前 repo-global 工作副本见：
+  - `00_entry\trae_system_transition\TRAE_SYSTEM_SKILLS_INDEX__20260709.md`
+- 本文件继续承担 `decision index` 角色，不改 `.trae` first-hop。
 
 ## 角色
 
@@ -219,4 +225,3 @@
   - `d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\INDEX.md`
 - 旧仓 sweep 裁决来源：
   - `d:\Stock\trading_assistant\00_entry\OLD_REPO_FILE_SWEEP_TASKBOARD.md`
-
