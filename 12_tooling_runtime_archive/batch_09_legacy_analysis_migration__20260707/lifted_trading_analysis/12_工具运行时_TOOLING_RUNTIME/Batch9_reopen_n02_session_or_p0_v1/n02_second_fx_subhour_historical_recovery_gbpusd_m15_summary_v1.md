@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_historical_recovery_gbpusd_m15_summary v1
+# N02 GBPUSD M15 第二 FX 次小时历史恢复总览 v1
 
 ## 作用
 

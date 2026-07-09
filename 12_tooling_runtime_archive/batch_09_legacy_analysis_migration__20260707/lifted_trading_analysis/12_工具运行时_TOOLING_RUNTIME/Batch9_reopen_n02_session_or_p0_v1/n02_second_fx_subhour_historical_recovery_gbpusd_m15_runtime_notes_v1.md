@@ -1,4 +1,4 @@
-# n02_second_fx_subhour_historical_recovery_gbpusd_m15_runtime_notes v1
+# N02 GBPUSD M15 第二 FX 次小时历史恢复运行说明 v1
 
 ## 角色
 
