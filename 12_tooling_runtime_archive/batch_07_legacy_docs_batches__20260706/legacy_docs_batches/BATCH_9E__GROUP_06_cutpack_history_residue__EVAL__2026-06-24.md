@@ -1,4 +1,4 @@
-# Batch 9E - GROUP_06 cutpack history residue - EVAL - 2026-06-24
+# 批次 9E - GROUP_06 cutpack history residue - 评估 - 2026-06-24
 
 ## 目标
 

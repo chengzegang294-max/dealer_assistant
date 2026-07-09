@@ -1,4 +1,4 @@
-# Batch 30 - SOURCE_LIBRARY Batch9 Ashare todo README retirement layer - EVAL - 2026-06-24
+# 批次 30 - SOURCE_LIBRARY Batch9 Ashare todo README retirement layer - 评估 - 2026-06-24
 
 ## 目标
 

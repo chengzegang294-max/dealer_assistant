@@ -1,4 +1,4 @@
-# Batch 35 - SOURCE_LIBRARY method reference Smile SMC trading system 2.0 retirement residue layer - EVAL - 2026-06-24
+# 批次 35 - SOURCE_LIBRARY method reference Smile SMC trading system 2.0 retirement residue layer - 评估 - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# Batch 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - EVAL - 2026-06-24
+# 批次 22 - TOOLING_RUNTIME kd_mtf_p0_v1 - 评估 - 2026-06-24
 
 ## 目标
 

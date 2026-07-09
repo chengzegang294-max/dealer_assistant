@@ -1,4 +1,4 @@
-# Batch 18 - FROZEN_SUMMARIES batch1 recovered utf8 - EVAL - 2026-06-24
+# 批次 18 - FROZEN_SUMMARIES batch1 recovered utf8 - 评估 - 2026-06-24
 
 ## 目标
 

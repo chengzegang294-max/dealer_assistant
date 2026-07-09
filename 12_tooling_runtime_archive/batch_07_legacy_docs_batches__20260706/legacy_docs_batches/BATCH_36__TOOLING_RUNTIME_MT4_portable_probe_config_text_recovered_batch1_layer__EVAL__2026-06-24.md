@@ -1,4 +1,4 @@
-# Batch 36 - TOOLING_RUNTIME MT4 portable probe config text recovered batch1 layer - EVAL - 2026-06-24
+# 批次 36 - TOOLING_RUNTIME MT4 portable probe config text recovered batch1 layer - 评估 - 2026-06-24
 
 ## 目标
 

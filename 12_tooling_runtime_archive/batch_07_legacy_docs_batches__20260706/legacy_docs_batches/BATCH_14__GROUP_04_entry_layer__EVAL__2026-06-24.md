@@ -1,4 +1,4 @@
-# Batch 14 - GROUP_04 entry layer - EVAL - 2026-06-24
+# 批次 14 - GROUP_04 entry layer - 评估 - 2026-06-24
 
 ## 目标
 

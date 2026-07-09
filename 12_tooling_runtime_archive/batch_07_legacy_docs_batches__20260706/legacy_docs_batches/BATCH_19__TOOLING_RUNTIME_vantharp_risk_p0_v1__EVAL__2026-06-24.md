@@ -1,4 +1,4 @@
-# Batch 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - EVAL - 2026-06-24
+# 批次 19 - TOOLING_RUNTIME vantharp_risk_p0_v1 - 评估 - 2026-06-24
 
 ## 目标
 

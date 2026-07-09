@@ -1,4 +1,4 @@
-# Batch 9F - GROUP_06 legacy v2 pack - EVAL - 2026-06-24
+# 批次 9F - GROUP_06 legacy v2 pack - 评估 - 2026-06-24
 
 ## 目标
 

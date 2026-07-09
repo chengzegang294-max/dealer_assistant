@@ -1,4 +1,4 @@
-# Batch 17 - FROZEN_SUMMARIES active doc cleanup archive - EVAL - 2026-06-24
+# 批次 17 - FROZEN_SUMMARIES active doc cleanup archive - 评估 - 2026-06-24
 
 ## 目标
 

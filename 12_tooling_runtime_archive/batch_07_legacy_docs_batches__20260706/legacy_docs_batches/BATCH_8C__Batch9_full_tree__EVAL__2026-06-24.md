@@ -1,4 +1,4 @@
-# Batch 8C - Batch9 full tree - EVAL - 2026-06-24
+# 批次 8C - Batch9 full tree - 评估 - 2026-06-24
 
 ## 目标
 

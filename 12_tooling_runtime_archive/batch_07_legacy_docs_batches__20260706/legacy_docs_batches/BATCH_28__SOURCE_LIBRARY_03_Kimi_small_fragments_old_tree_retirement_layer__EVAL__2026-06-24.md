@@ -1,4 +1,4 @@
-# Batch 28 - SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer - EVAL - 2026-06-24
+# 批次 28 - SOURCE_LIBRARY 03_Kimi small fragments old-tree retirement layer - 评估 - 2026-06-24
 
 ## 目标
 

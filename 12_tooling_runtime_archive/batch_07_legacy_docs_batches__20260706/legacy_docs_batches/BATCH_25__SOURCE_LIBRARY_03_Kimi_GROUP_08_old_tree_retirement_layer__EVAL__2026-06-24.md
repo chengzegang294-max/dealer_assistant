@@ -1,4 +1,4 @@
-# Batch 25 - SOURCE_LIBRARY 03_Kimi GROUP_08 old-tree retirement layer - EVAL - 2026-06-24
+# 批次 25 - SOURCE_LIBRARY 03_Kimi GROUP_08 old-tree retirement layer - 评估 - 2026-06-24
 
 ## 目标
 

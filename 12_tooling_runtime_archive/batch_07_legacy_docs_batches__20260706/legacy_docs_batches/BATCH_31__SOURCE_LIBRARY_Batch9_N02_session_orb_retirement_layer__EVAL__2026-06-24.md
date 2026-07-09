@@ -1,4 +1,4 @@
-# Batch 31 - SOURCE_LIBRARY Batch9 N02 session/orb retirement layer - EVAL - 2026-06-24
+# 批次 31 - SOURCE_LIBRARY Batch9 N02 session/orb retirement layer - 评估 - 2026-06-24
 
 ## 目标
 

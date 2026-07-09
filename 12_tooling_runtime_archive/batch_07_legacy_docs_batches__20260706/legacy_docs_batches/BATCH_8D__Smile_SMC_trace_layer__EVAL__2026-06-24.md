@@ -1,4 +1,4 @@
-# Batch 8D - Smile_SMC trace layer - EVAL - 2026-06-24
+# 批次 8D - Smile_SMC trace layer - 评估 - 2026-06-24
 
 ## 目标
 

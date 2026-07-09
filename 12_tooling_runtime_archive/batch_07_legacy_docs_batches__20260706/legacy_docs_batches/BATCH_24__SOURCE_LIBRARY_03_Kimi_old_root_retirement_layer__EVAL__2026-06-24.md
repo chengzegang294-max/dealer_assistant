@@ -1,4 +1,4 @@
-# Batch 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - EVAL - 2026-06-24
+# 批次 24 - SOURCE_LIBRARY 03_Kimi old root retirement layer - 评估 - 2026-06-24
 
 ## 目标
 

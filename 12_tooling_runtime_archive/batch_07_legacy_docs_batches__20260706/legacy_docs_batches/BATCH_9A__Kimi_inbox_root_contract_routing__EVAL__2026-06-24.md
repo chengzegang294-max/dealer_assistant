@@ -1,4 +1,4 @@
-# Batch 9A - Kimi inbox root contract routing - EVAL - 2026-06-24
+# 批次 9A - Kimi inbox root contract routing - 评估 - 2026-06-24
 
 ## 目标
 

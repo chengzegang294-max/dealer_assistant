@@ -1,4 +1,4 @@
-# Batch 23 - TOOLING_RUNTIME mt4_probe_instance config text recovered batch1 - EVAL - 2026-06-24
+# 批次 23 - TOOLING_RUNTIME mt4_probe_instance config text recovered batch1 - 评估 - 2026-06-24
 
 ## 目标
 

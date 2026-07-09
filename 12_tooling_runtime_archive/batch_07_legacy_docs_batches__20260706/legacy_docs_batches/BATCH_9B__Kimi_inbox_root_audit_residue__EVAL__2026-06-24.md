@@ -1,4 +1,4 @@
-# Batch 9B - Kimi inbox root audit residue - EVAL - 2026-06-24
+# 批次 9B - Kimi inbox root audit residue - 评估 - 2026-06-24
 
 ## 目标
 

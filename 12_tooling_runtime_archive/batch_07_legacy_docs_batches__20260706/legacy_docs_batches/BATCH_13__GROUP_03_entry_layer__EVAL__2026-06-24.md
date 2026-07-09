@@ -1,4 +1,4 @@
-# Batch 13 - GROUP_03 entry layer - EVAL - 2026-06-24
+# 批次 13 - GROUP_03 entry layer - 评估 - 2026-06-24
 
 ## 目标
 

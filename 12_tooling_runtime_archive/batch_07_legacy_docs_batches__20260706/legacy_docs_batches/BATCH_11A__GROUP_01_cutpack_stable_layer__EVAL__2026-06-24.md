@@ -1,4 +1,4 @@
-# Batch 11A - GROUP_01 cutpack stable layer - EVAL - 2026-06-24
+# 批次 11A - GROUP_01 cutpack stable layer - 评估 - 2026-06-24
 
 ## 目标
 

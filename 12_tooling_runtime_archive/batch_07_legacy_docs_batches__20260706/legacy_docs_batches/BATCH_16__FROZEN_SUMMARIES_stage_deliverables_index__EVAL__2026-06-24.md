@@ -1,4 +1,4 @@
-# Batch 16 - FROZEN_SUMMARIES stage deliverables index - EVAL - 2026-06-24
+# 批次 16 - FROZEN_SUMMARIES stage deliverables index - 评估 - 2026-06-24
 
 ## 目标
 

@@ -1,4 +1,4 @@
-# GROUP_08 06_pdf_retained_cut_v2 EVAL 2026-06-23
+# GROUP_08 06_pdf_retained_cut_v2 评估 2026-06-23
 
 ## 范围
 
