@@ -1,6 +1,6 @@
 # Directory Role Contract v1
 
-更新时间：2026-07-08
+更新时间：2026-07-09
 
 ## 目标
 
@@ -19,6 +19,9 @@
 | `10_source_library_archive/` | 来源库归档 | 外部资料/AI产物/旧库材料的批次化入档 | 直接可跑主线组件 |
 | `11_frozen_summaries_archive/` | 冻结总结层 | 阶段性冻结结论与可检索锚点 | 临时草稿、未收口的猜想 |
 | `12_tooling_runtime_archive/` | 工具运行时归档 | 大体量运行产物/历史运行时备份 | 主线入口文档 |
+| `20_tools_workspace/` | 工具工作台 | 临时中转/一次性工具/批次工作台（可迁走可删） | 仓库级真值入口、长期归档包 |
+| `21_trae_system_archive/` | Trae 系统归档 | 旧 `.trae` 迁移裁决索引/恢复稿/系统提示归档 | 日常入口五件套、业务 runtime 入口 |
+| `.trae/` | Trae 本地工具层 | 当前可直接调用的 skill（最小集） | 仓库可追踪真值入口（受 `.gitignore` 约束） |
 | `docs/playbooks/` | 流程模板库 | 可复用 playbook 模板（迁移/删除门控/盘点等） | 日常入口五件套 |
 
 ## 重名与兼容规则
