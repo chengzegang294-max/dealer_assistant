@@ -1,4 +1,4 @@
-# n02_ib_or_cross_outcome_split_acceptance v1
+# N02 IB OR 过交叉结果分桶验收 v1
 
 ## 目的
 

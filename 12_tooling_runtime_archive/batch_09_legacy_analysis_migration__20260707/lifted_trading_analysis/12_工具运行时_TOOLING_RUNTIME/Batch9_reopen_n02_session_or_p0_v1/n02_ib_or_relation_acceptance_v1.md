@@ -1,4 +1,4 @@
-# n02_ib_or_relation_acceptance v1
+# N02 IB 与 OR 关系层验收 v1
 
 ## 目的
 

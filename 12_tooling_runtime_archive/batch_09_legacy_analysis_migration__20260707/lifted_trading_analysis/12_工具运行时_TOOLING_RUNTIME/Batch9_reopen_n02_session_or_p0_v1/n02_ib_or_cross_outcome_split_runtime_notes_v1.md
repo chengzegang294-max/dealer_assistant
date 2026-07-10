@@ -1,4 +1,4 @@
-# n02_ib_or_cross_outcome_split_runtime_notes v1
+# N02 IB OR 过交叉结果分桶运行说明 v1
 
 ## 角色
 

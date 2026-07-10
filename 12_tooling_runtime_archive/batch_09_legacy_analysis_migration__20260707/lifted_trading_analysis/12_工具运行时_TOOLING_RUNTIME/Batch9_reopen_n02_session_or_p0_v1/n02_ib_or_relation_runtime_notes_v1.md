@@ -1,4 +1,4 @@
-# n02_ib_or_relation_runtime_notes v1
+# N02 IB 与 OR 关系层运行说明 v1
 
 ## 角色
 
