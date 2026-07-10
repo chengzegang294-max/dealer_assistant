@@ -1,4 +1,4 @@
-# TK-R6 IB retest / rejection 最小标签定义 v1
+# TK-R6 IB 回踩 / 拒绝 最小标签定义 v1
 
 ## 作用
 
