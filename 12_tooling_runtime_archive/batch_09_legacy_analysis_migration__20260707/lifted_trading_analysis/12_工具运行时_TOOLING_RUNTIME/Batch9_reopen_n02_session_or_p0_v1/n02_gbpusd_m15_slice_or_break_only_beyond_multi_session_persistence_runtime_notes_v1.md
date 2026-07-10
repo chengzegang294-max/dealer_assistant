@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_or_break_only_beyond_multi_session_persistence_runtime_notes v1
+# N02 GBPUSD M15 切片仅 OR 突破超出后多会话延续运行说明 v1
 
 ## 角色
 

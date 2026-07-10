@@ -1,4 +1,4 @@
-# n02_p0_runtime_session_calendar_dst_checklist v1
+# N02 P0 运行时段日历 DST 检查清单 v1
 
 ARCHIVE_ONLY: 本文件属于旧库运行时快照；若复制执行命令，路径必须以仓库根目录为基准改写为 `.\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\...`，禁止依赖 `d:\Stock\trading_analysis`
 

@@ -1,4 +1,4 @@
-# n02_gbpusd_m15_slice_or_break_only_beyond_multi_session_persistence_acceptance v1
+# N02 GBPUSD M15 切片仅 OR 突破超出后多会话延续验收 v1
 
 ## 目的
 

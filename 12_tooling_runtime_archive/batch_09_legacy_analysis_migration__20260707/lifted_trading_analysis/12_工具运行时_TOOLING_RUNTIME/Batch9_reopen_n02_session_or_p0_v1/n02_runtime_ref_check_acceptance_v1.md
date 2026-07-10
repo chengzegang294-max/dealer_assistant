@@ -1,4 +1,4 @@
-# n02_runtime_ref_check acceptance v1
+# N02 运行引用核对验收 v1
 
 ## 最小验收
 
