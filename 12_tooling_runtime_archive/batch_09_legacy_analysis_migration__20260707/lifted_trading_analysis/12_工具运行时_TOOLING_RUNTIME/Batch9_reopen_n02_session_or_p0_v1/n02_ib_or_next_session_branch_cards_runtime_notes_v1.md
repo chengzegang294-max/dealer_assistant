@@ -1,4 +1,4 @@
-# n02_ib_or_next_session_branch_cards_runtime_notes v1
+# N02 IB OR 下一会话分支卡运行说明 v1
 
 ## 角色
 

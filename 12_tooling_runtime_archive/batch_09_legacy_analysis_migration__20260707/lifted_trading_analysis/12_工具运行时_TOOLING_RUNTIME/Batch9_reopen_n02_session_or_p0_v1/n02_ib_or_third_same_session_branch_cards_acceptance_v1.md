@@ -1,4 +1,4 @@
-# n02_ib_or_third_same_session_branch_cards_acceptance v1
+# N02 IB OR 第三同会话分支卡验收 v1
 
 ## 目的
 

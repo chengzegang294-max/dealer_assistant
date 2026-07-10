@@ -1,4 +1,4 @@
-# n02_ib_or_break_bar_evidence_acceptance v1
+# N02 IB OR 突破K线证据验收 v1
 
 ## 目的
 
