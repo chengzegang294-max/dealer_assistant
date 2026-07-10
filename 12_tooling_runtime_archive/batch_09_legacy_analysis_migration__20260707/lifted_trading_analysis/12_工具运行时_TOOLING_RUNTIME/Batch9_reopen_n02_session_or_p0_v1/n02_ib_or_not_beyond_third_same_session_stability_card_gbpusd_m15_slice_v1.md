@@ -1,4 +1,4 @@
-# n02_ib_or_not_beyond_third_same_session_stability_card v1
+# N02 IB OR 未超出第三同会话稳定性说明卡 GBPUSD M15 切片 v1
 
 ## 作用
 

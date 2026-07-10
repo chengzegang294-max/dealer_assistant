@@ -1,4 +1,4 @@
-# n02_ib_or_beyond_third_same_session_persistence_card v1
+# N02 IB OR 超出后第三同会话延续说明卡 v1
 
 ## 作用
 

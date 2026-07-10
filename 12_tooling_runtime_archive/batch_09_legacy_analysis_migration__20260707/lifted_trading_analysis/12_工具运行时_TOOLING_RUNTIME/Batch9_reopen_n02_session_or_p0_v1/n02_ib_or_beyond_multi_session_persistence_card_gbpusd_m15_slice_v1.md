@@ -1,4 +1,4 @@
-# n02_ib_or_beyond_multi_session_persistence_card v1
+# N02 IB OR 超出后多会话延续说明卡 GBPUSD M15 切片 v1
 
 ## 作用
 

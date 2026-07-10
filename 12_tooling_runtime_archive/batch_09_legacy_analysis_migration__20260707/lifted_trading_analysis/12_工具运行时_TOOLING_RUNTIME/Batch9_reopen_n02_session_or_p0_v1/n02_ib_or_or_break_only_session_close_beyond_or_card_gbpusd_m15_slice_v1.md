@@ -1,4 +1,4 @@
-# n02_ib_or_or_break_only_session_close_beyond_or_card v1
+# N02 IB OR 仅 OR 突破且收盘超出 OR 说明卡 GBPUSD M15 切片 v1
 
 ## 作用
 

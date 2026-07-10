@@ -1,4 +1,4 @@
-# n02_ib_or_not_beyond_stability_card v1
+# N02 IB OR 未超出稳定性说明卡 v1
 
 ## 作用
 
