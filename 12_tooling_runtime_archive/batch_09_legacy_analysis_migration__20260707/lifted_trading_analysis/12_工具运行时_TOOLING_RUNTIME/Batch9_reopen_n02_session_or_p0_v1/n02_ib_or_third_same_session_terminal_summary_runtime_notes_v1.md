@@ -1,4 +1,4 @@
-# n02_ib_or_third_same_session_terminal_summary_runtime_notes v1
+# N02 IB OR 第三同会话终端总览运行说明 v1
 
 ## 角色
 

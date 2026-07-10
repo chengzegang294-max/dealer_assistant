@@ -1,4 +1,4 @@
-# n02_ib_or_return_inside_ib_same_day_card v1
+# N02 IB OR 回到区间内当日说明卡 GBPUSD M15 切片 v1
 
 ## 作用
 

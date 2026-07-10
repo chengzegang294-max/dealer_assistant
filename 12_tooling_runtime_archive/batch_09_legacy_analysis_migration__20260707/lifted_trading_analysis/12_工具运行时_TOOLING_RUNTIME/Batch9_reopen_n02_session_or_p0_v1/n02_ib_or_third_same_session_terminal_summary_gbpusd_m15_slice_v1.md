@@ -1,4 +1,4 @@
-# n02_ib_or_third_same_session_terminal_summary v1
+# N02 IB OR 第三同会话终端总览 GBPUSD M15 切片 v1
 
 ## 作用
 

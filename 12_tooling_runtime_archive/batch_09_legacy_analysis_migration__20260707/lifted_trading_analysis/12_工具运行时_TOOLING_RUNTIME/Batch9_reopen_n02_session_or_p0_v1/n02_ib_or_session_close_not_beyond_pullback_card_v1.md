@@ -1,4 +1,4 @@
-# n02_ib_or_session_close_not_beyond_pullback_card v1
+# N02 IB OR 收盘未超出回拉说明卡 v1
 
 ## 作用
 
