@@ -1,4 +1,4 @@
-# 【BibiGPT】AI 一键总结：[外汇交易课程第九集-如何让Xbreaking在小周期正常运作](https://bibigpt.co/video/BV1jV4y1m7WM)
+# 外汇交易课程第九集 如何让 Xbreaking 在小周期正常运作导出摘要
 
 ![](https://i0.hdslb.com/bfs/archive/5d98bc5a83c15875fccb7e3b9d157bfddca72c61.jpg)
 

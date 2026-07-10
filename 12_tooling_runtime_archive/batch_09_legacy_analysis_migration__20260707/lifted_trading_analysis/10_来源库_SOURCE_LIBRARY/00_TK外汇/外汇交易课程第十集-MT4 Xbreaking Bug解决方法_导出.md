@@ -1,4 +1,4 @@
-# 【BibiGPT】AI 一键总结：[外汇交易课程第十集-MT4 Xbreaking Bug解决方法](https://bibigpt.co/video/BV1WCbPzrENr)
+# 外汇交易课程第十集 MT4 Xbreaking Bug 解决方法导出摘要
 
 ![](https://i2.hdslb.com/bfs/archive/9aed41f53d52f24ec10f794eab5e935f93913026.jpg)
 

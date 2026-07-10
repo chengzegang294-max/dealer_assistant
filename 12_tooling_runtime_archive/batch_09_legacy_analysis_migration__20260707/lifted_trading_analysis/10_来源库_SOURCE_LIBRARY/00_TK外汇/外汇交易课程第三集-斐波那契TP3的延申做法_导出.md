@@ -1,4 +1,4 @@
-# 【BibiGPT】AI 一键总结：[外汇交易课程第三集-斐波那契TP3的延申做法](https://bibigpt.co/video/BV1Na411w7Yy)
+# 外汇交易课程第三集 斐波那契 TP3 延申做法导出摘要
 
 ![](https://i1.hdslb.com/bfs/archive/3bd7223dab9a2ab41921f15c84f7a988ad0ddb52.jpg)
 

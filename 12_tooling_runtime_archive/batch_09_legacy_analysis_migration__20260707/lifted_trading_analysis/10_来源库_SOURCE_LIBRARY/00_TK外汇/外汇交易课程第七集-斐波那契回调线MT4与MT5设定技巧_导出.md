@@ -1,4 +1,4 @@
-# 【BibiGPT】AI 一键总结：[外汇交易课程第七集-斐波那契回调线MT4与MT5设定技巧](https://bibigpt.co/video/BV1Sv4y1Z7cE)
+# 外汇交易课程第七集 斐波那契回调线 MT4 与 MT5 设定技巧导出摘要
 
 ![](https://i0.hdslb.com/bfs/archive/12800403bc7e0d9100c8f45d3d4066fcb08c7b94.jpg)
 
