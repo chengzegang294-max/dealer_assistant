@@ -1,4 +1,4 @@
-# rsj_state_p0_min_contract_v1
+# RSJ State P0 最小合同 v1
 
 - ARCHIVE_ONLY_MIN_CONTRACT: 本文件只保留旧 `RSJ State P0` 的历史最小合同，不作为当前默认接线入口。
 - 当前 repo-first 入口先看：

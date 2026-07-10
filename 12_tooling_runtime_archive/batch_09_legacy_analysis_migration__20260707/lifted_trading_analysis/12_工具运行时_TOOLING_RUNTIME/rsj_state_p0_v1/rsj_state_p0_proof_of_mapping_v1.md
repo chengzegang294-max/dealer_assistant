@@ -1,4 +1,4 @@
-# rsj_state_p0_proof_of_mapping_v1
+# RSJ State P0 映射证明 v1
 
 - ARCHIVE_ONLY_PROOF_MAPPING: 本文件只保留旧 `RSJ State P0` 的历史映射样本说明，不作为默认入口。
 - repo-first 历史入口参考：
