@@ -1,4 +1,4 @@
-# n02_ib_or_next_session_continuation_stability_acceptance v1
+# N02 IB OR 下一会话延续稳定性验收 v1
 
 ## 目的
 

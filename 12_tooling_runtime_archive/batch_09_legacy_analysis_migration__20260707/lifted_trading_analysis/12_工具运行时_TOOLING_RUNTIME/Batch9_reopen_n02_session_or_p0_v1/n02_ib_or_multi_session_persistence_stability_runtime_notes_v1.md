@@ -1,4 +1,4 @@
-# n02_ib_or_multi_session_persistence_stability_runtime_notes v1
+# N02 IB OR 多会话延续稳定性运行说明 v1
 
 ## 角色
 
