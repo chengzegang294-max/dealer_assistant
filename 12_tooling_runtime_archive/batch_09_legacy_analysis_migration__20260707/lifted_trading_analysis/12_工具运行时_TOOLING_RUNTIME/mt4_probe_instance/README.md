@@ -1,4 +1,4 @@
-## mt4_probe_instance（legacy_analysis）
+# mt4_probe_instance 历史兼容入口
 
 - 文件类型：`ARCHIVE_ONLY`
 - 说明：本目录仅保留为旧库兼容入口壳；真实归档已迁到：

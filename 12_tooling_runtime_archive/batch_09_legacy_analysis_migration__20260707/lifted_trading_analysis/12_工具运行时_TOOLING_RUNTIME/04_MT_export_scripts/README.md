@@ -1,4 +1,4 @@
-# MT4/MT5 一键导出 bars CSV（写入 Common\\Files）
+# MT4/MT5 Bars CSV 一键导出说明
 
 ## 你遇到的卡点
 
