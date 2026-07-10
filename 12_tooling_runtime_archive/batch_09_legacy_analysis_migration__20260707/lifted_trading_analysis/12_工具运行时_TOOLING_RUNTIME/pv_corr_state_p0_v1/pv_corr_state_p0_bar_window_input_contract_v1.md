@@ -1,4 +1,4 @@
-# pv_corr_state_p0_bar_window_input_contract_v1
+# PV Corr State P0 窗口输入合同 v1
 
 - ARCHIVE_ONLY_INPUT_CONTRACT: 本文件只保留旧 `PV Corr State P0` 的未来输入契约草图，不作为默认接线入口。
 - repo-first 历史入口参考：

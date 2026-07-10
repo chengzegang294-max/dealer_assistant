@@ -1,4 +1,4 @@
-# rsj_state_p0_raw_window_input_contract_v1
+# RSJ State P0 原始窗口输入合同 v1
 
 - ARCHIVE_ONLY_INPUT_CONTRACT: 本文件只保留旧 `RSJ State P0` 的未来输入契约草图，不作为默认接线入口。
 - repo-first 历史入口参考：

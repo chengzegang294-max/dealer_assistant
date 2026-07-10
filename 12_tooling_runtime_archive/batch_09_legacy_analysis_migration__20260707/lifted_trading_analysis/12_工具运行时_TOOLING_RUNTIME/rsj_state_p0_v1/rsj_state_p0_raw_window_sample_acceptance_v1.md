@@ -1,4 +1,4 @@
-﻿# rsj_state_p0_raw_window_sample_acceptance_v1
+# RSJ State P0 原始窗口样本验收 v1
 
 - ARCHIVE_ONLY: 该目录为旧库运行时快照；任何执行必须人工确认并设置 `ALLOW_ARCHIVE_ONLY_RUN=1`
 

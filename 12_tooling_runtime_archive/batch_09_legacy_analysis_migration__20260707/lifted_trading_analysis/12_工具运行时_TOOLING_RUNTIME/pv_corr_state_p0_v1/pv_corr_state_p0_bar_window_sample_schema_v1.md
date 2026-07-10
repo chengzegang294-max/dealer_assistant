@@ -1,4 +1,4 @@
-# pv_corr_state_p0_bar_window_sample_schema_v1
+# PV Corr State P0 窗口样本结构 v1
 
 - ARCHIVE_ONLY_SAMPLE_SCHEMA: 本文件只保留旧 `PV Corr State P0` 的历史样例结构说明，不作为当前默认接线入口。
 - 当前 repo-first 入口先看：

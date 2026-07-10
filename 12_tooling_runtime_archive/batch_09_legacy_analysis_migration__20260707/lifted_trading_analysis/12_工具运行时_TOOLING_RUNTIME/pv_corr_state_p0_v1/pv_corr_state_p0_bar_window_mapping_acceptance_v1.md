@@ -1,4 +1,4 @@
-# pv_corr_state_p0_bar_window_mapping_acceptance_v1
+# PV Corr State P0 窗口映射验收 v1
 
 - ARCHIVE_ONLY: 该目录为旧库运行时快照；任何执行必须人工确认并设置 `ALLOW_ARCHIVE_ONLY_RUN=1`
 - 当前 repo-first 入口先看：
