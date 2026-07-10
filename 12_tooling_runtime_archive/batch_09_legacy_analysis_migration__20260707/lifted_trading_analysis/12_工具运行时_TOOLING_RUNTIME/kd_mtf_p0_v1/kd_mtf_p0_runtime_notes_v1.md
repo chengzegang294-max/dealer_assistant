@@ -1,4 +1,4 @@
-# kd_mtf_p0_runtime_notes_v1
+# KD MTF P0 运行说明 v1
 
 - ARCHIVE_ONLY_RUNTIME_MIRROR: 本文件记录旧 `kd_mtf_p0_v1` 运行时快照，不作为当前主线状态入口。
 - 当前 repo-first 入口先看：

@@ -1,4 +1,4 @@
-# kd_mtf_p0_runtime_append_acceptance_v1
+# KD MTF P0 运行追加验收 v1
 
 - ARCHIVE_ONLY: 该目录为旧库运行时快照；任何执行必须人工确认并设置 `ALLOW_ARCHIVE_ONLY_RUN=1`
 
