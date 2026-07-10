@@ -1,4 +1,4 @@
-## history（12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/03_MT4便携探针实例）
+# 03_MT4便携探针实例 历史归档入口
 
 - 文件类型：`ARCHIVE_ONLY`
 - 说明：本目录仅保留为旧库兼容入口壳；真实归档已迁到：
