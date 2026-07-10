@@ -1,4 +1,4 @@
-# docs 批次文档迁移说明
+# 批次文档迁移说明
 
 - 文件类型：`ARCHIVE_ONLY`
 - 说明：`12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/docs` 下的阶段性评估与 commit-ready 批次文档已迁入归档位：

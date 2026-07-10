@@ -1,4 +1,4 @@
-# docs 提交辅助脚本迁移说明
+# 提交辅助脚本迁移说明
 
 - 文件类型：`ARCHIVE_ONLY`
 - 说明：`12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/docs` 下的 `commit_ready_stage_batch_*.ps1` 与 `commit_ready_batch_*__paths.txt` 已迁入归档位：
