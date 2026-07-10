@@ -1,4 +1,4 @@
-# KD MTF P0 `b` 阻塞说明 v1
+# KD MTF P0 B 位阻塞说明 v1
 
 ## 目的
 
