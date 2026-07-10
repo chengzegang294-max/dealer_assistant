@@ -1,4 +1,4 @@
-﻿# Skills Index
+# Skills Index
 
 ## 角色
 
@@ -8,8 +8,10 @@
 ## 迁移裁决规则
 
 - 本文件不是当前调用入口，而是旧 skill 的迁移裁决索引。
-- 当前新仓可直接调用的 `.trae` skill 只有：
+- 当前新仓可直接调用的 `.trae` skill 有：
   - `artifact-provenance-note-guard-cn`
+  - `workspace-file-placement-guard-cn`
+  - `multi-ai-decision-first-hop-cn`
 - 旧 skill 若尚未镜像到新仓，不在 `.trae` 目录制造伪副本。
 - 需要追溯旧 skill 正文时：
   - 先看 `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\INDEX.md`
@@ -18,10 +20,12 @@
 ## 当前状态总览
 
 - `old_repo_trae_skills_inventory_count=22`
-- `new_repo_has_copy=1`
+- `new_repo_has_copy=3`
 - `mirror_later=21`
-- 当前唯一已在新仓 `.trae` 落盘的 skill：
+- 当前已在新仓 `.trae` 落盘的 skill：
   - `artifact-provenance-note-guard-cn`
+  - `workspace-file-placement-guard-cn`
+  - `multi-ai-decision-first-hop-cn`
 
 ## 逐技能回指规则
 
@@ -52,6 +56,12 @@
 ## 全量清单与裁决
 
 - `artifact-provenance-note-guard-cn`
+  - decision: `NEW_IN_NEW_REPO`
+  - status: `NEW_REPO_HAS_COPY`
+- `workspace-file-placement-guard-cn`
+  - decision: `NEW_IN_NEW_REPO`
+  - status: `NEW_REPO_HAS_COPY`
+- `multi-ai-decision-first-hop-cn`
   - decision: `NEW_IN_NEW_REPO`
   - status: `NEW_REPO_HAS_COPY`
 - `ashare-ops-guard`
@@ -122,6 +132,14 @@
 
 - `artifact-provenance-note-guard-cn`
   - `legacy_path=12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\artifact-provenance-note-guard-cn\SKILL.md`
+  - `current_router=.trae\skills\INDEX.md`
+  - `reopen_condition=已在新仓active，无需重开mirror`
+- `workspace-file-placement-guard-cn`
+  - `legacy_path=none`
+  - `current_router=.trae\skills\INDEX.md`
+  - `reopen_condition=已在新仓active，无需重开mirror`
+- `multi-ai-decision-first-hop-cn`
+  - `legacy_path=none`
   - `current_router=.trae\skills\INDEX.md`
   - `reopen_condition=已在新仓active，无需重开mirror`
 - `ashare-ops-guard`
@@ -219,4 +237,3 @@
   - `d:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\.trae\skills\INDEX.md`
 - 旧仓 sweep 裁决来源：
   - `d:\Stock\trading_assistant\00_entry\OLD_REPO_FILE_SWEEP_TASKBOARD.md`
-

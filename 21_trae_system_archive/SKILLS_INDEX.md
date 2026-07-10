@@ -25,11 +25,12 @@
 ## 当前状态总览
 
 - `old_repo_trae_skills_inventory_count=22`
-- `new_repo_active_skill_count=2`
+- `new_repo_active_skill_count=3`
 - `old_repo_skills_mirror_later_count=21`
 - 当前已在新仓 `.trae` 落盘的 skill：
   - `artifact-provenance-note-guard-cn`
   - `workspace-file-placement-guard-cn`
+  - `multi-ai-decision-first-hop-cn`
 
 ## 逐技能回指规则
 
@@ -63,6 +64,9 @@
   - decision: `NEW_IN_NEW_REPO`
   - status: `NEW_REPO_HAS_COPY`
 - `workspace-file-placement-guard-cn`
+  - decision: `NEW_IN_NEW_REPO`
+  - status: `NEW_REPO_HAS_COPY`
+- `multi-ai-decision-first-hop-cn`
   - decision: `NEW_IN_NEW_REPO`
   - status: `NEW_REPO_HAS_COPY`
 - `ashare-ops-guard`
@@ -136,6 +140,10 @@
   - `current_router=.trae\skills\INDEX.md`
   - `reopen_condition=已在新仓active，无需重开mirror`
 - `workspace-file-placement-guard-cn`
+  - `legacy_path=none`
+  - `current_router=.trae\skills\INDEX.md`
+  - `reopen_condition=已在新仓active，无需重开mirror`
+- `multi-ai-decision-first-hop-cn`
   - `legacy_path=none`
   - `current_router=.trae\skills\INDEX.md`
   - `reopen_condition=已在新仓active，无需重开mirror`
