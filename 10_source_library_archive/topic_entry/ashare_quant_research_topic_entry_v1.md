@@ -10,6 +10,10 @@
 
 - `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_短索引入口_v1.md`
 
+## 对象快入口
+
+- `object_entry/ashare_research_summary_object_entry_v1.md`
+
 ## 最顺阅读顺序
 
 - 第一步：

@@ -10,6 +10,10 @@
 
 - `../batch_131_trae_system_selected_absorb__20260709/README.md`
 
+## 对象快入口
+
+- `object_entry/trae_system_selected_object_entry_v1.md`
+
 ## 最顺阅读顺序
 
 - 第一步：

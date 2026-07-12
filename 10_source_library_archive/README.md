@@ -12,6 +12,8 @@
 - 主题入口层：
   - `topic_entry/README.md`
   - `topic_entry/topic_entry_index_v1.tsv`
+  - `topic_entry/object_entry/README.md`
+  - `topic_entry/object_entry/object_entry_index_v1.tsv`
 
 ## 三级导航
 
@@ -67,6 +69,9 @@
 - 想按主题而不是按批次找资料：
   - 先看 `topic_entry/README.md`
   - 再看 `topic_entry/topic_entry_index_v1.tsv`
+- 想按高频对象一跳进入：
+  - 先看 `topic_entry/object_entry/README.md`
+  - 再看 `topic_entry/object_entry/object_entry_index_v1.tsv`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -103,6 +108,17 @@
   - `topic_entry/trae_system_absorb_topic_entry_v1.md`
 - `外部吸收与回收提升`
   - `topic_entry/external_absorb_recovery_topic_entry_v1.md`
+
+## 对象入口
+
+- `A股研究摘要对象`
+  - `topic_entry/object_entry/ashare_research_summary_object_entry_v1.md`
+- `A股数据源裁决对象`
+  - `topic_entry/object_entry/ashare_data_source_decision_object_entry_v1.md`
+- `系统吸收对象`
+  - `topic_entry/object_entry/trae_system_selected_object_entry_v1.md`
+- `外部吸收提升对象`
+  - `topic_entry/object_entry/external_absorb_recovery_object_entry_v1.md`
 
 ## 批次记录模板
 

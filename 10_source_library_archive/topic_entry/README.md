@@ -16,14 +16,28 @@
 ## 默认入口
 
 - `topic_entry_index_v1.tsv`
+- `object_entry/README.md`
+- `object_entry/object_entry_index_v1.tsv`
 - `ashare_quant_research_topic_entry_v1.md`
 - `ashare_data_source_decision_topic_entry_v1.md`
 - `trae_system_absorb_topic_entry_v1.md`
 - `external_absorb_recovery_topic_entry_v1.md`
 
+## 对象入口层
+
+- `A股研究摘要对象`
+  - `object_entry/ashare_research_summary_object_entry_v1.md`
+- `A股数据源裁决对象`
+  - `object_entry/ashare_data_source_decision_object_entry_v1.md`
+- `系统吸收对象`
+  - `object_entry/trae_system_selected_object_entry_v1.md`
+- `外部吸收提升对象`
+  - `object_entry/external_absorb_recovery_object_entry_v1.md`
+
 ## 使用边界
 
 - 想按主题找资料，先来这里。
+- 想按常用对象一跳进入，再下钻批次或正文，进入 `object_entry/`
 - 想看具体批次的完整清单、manifest、provenance，再下钻到对应批次 README 或 family entry map。
 - 想找原件真值，不从这里进，直接去 `../raw_assets/README.md`。
 

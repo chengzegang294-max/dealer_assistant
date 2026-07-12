@@ -10,6 +10,10 @@
 
 - `../batch_140_tushare_tdx_data_source_absorb__20260712/README.md`
 
+## 对象快入口
+
+- `object_entry/ashare_data_source_decision_object_entry_v1.md`
+
 ## 最顺阅读顺序
 
 - 第一步：
