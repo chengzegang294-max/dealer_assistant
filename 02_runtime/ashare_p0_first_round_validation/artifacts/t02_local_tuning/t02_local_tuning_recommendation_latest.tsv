@@ -1,0 +1,6 @@
+group_label	group_type	symbol_count	baseline_density	best_scenario_label	best_scenario_density	density_delta_vs_baseline	excess_delta_vs_global	recommendation	reason
+all_sample	reference	20	0.4108	looser_ratio_2_5pct_2d	0.4392	0.0284	0.0	keep_baseline	baseline remains default
+finance_reference	reference	3	0.4944	looser_ratio_2_5pct_2d	0.5333	0.0389	0.0105	keep_baseline	baseline remains default
+growth_tech	focus	8	0.3563	looser_ratio_2_5pct_2d	0.3854	0.0292	0.0008	keep_baseline	local lift is not sufficiently better than the all-sample uplift
+low_flow_vol	focus	7	0.3405	looser_ratio_2_5pct_2d	0.3857	0.0452	0.0168	watchlist	group lift is somewhat better than all-sample uplift, but not decisive yet
+growth_tech_low_flow_vol	focus	3	0.2833	looser_ratio_2_5pct_2d	0.3333	0.05	0.0216	watchlist	group lift is somewhat better than all-sample uplift, but not decisive yet

@@ -91,6 +91,14 @@
     - 最强宏观层：`金融=49.4%`
     - 最弱宏观层：`成长科技=35.6%`
     - 波动层：`high=45.0%`、`mid=44.7%`、`low=34.1%`
+- `t02_local_tuning/`
+  - `t02_local_tuning_summary_latest.json`
+  - `t02_local_tuning_scenario_comparison_latest.tsv`
+  - `t02_local_tuning_recommendation_latest.tsv`
+  - 当前口径：
+    - latest 局部阈值试算
+    - `3% + 连续1日` 被判定为全局过松
+    - 当前仅保留 `low_flow_vol` 与 `growth_tech_low_flow_vol` 的 `2.5% + 连续2日` watchlist 候选
 
 ## 当前回链
 

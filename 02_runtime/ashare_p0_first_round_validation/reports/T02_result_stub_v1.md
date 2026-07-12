@@ -31,6 +31,11 @@
   - 当前扩样与拉窗结论：阈值在 `5 -> 10 -> 20` 标的扩样和跨月拉窗后仍保持稳定可消费
   - 当前分层结论：`金融=49.4%`、`地产链=48.3%`、`消费防御=47.9%` 明显高于 `成长科技=35.6%`
   - 当前资金比率波动分层：`high=45.0%`、`mid=44.7%`、`low=34.1%`，说明低波动资金组最不容易被当前阈值穿透
+  - 当前局部微调试算结论：`3% + 连续1日` 会把全样本触发密度从 `41.1%` 一起冲到 `83.0%`，判定为全局过松，不作为局部分支候选
+  - 当前更稳妥的局部候选只剩 `2.5% + 连续2日`：
+    - `growth_tech`：`35.6% -> 38.5%`，但相对全样本超额改善几乎没有，当前不建议单独开分支
+    - `low_flow_vol`：`34.1% -> 38.6%`，相对全样本有一定超额改善，进入 watchlist
+    - `growth_tech_low_flow_vol`：`28.3% -> 33.3%`，同样进入 watchlist
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -54,10 +59,10 @@
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
   - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
 - 下一步动作：
-  - 继续保持 `sample20` 不变，尝试只对 `成长科技 / 低资金波动组` 做局部阈值微调试算
+  - 继续保持 `sample20` 不变，若要进一步下钻，优先复核 `low_flow_vol` 与 `growth_tech_low_flow_vol` 的误报率，而不是直接改全局阈值
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 复核 `3% + 连续2日` 是否需要按行业或资金波动层分支微调
+  - 复核 `2.5% + 连续2日` 在 watchlist 弱层里是否带来可接受的误报，而不是只看密度提升
 
 ## 回链
 
@@ -107,3 +112,7 @@
   - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
   - `artifacts/t02_layer_stability/t02_macro_bucket_stability_latest.tsv`
   - `artifacts/t02_layer_stability/t02_flow_volatility_bucket_stability_latest.tsv`
+- 局部微调试算：
+  - `artifacts/t02_local_tuning/t02_local_tuning_summary_latest.json`
+  - `artifacts/t02_local_tuning/t02_local_tuning_scenario_comparison_latest.tsv`
+  - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`

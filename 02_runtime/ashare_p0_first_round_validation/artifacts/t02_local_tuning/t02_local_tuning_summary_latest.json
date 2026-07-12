@@ -1,0 +1,33 @@
+{
+  "producer": "analyze_t02_local_tuning_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 局部阈值微调试算",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",
+  "layer_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning",
+  "scenario_labels": [
+    "baseline_3pct_2d",
+    "looser_ratio_2_5pct_2d",
+    "looser_days_3pct_1d",
+    "tighter_ratio_3_5pct_2d"
+  ],
+  "rows_scanned": 1200,
+  "symbols_covered": 20,
+  "groups_tested": [
+    "all_sample",
+    "finance_reference",
+    "growth_tech",
+    "low_flow_vol",
+    "growth_tech_low_flow_vol"
+  ],
+  "focus_groups": [
+    "growth_tech",
+    "low_flow_vol",
+    "growth_tech_low_flow_vol"
+  ],
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning/t02_local_tuning_summary_latest.json",
+    "scenario_comparison_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning/t02_local_tuning_scenario_comparison_latest.tsv",
+    "recommendation_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv"
+  }
+}

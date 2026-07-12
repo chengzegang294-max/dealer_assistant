@@ -25,6 +25,7 @@
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_layer_stability_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_v1.py`
 
 ## 当前范围
 
@@ -155,6 +156,21 @@
     - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
     - `artifacts/t02_layer_stability/t02_macro_bucket_stability_latest.tsv`
     - `artifacts/t02_layer_stability/t02_flow_volatility_bucket_stability_latest.tsv`
+- `T02` 已完成局部阈值微调试算：
+  - 试算场景：
+    - `3.0% + 连续2日` 基线
+    - `2.5% + 连续2日`
+    - `3.0% + 连续1日`
+    - `3.5% + 连续2日`
+  - 关键裁决：
+    - `3.0% + 连续1日` 虽然能显著抬高弱层密度，但会把全样本从 `41.1%` 一起推高到 `83.0%`，当前判定为全局过松，不进入局部分支候选
+    - `2.5% + 连续2日` 对 `low_flow_vol` 从 `34.1%` 抬到 `38.6%`，对 `growth_tech_low_flow_vol` 从 `28.3%` 抬到 `33.3%`
+    - `growth_tech` 整体从 `35.6%` 仅抬到 `38.5%`，相对全样本的超额改善只有 `0.08pct` 量级，当前不足以单独开分支
+  - 当前结论：全局默认仍保留 `3% + 连续2日`；局部 watchlist 只保留 `low_flow_vol` 和 `growth_tech_low_flow_vol` 两组的 `2.5% + 连续2日` 备选口径
+  - 试算产物：
+    - `artifacts/t02_local_tuning/t02_local_tuning_summary_latest.json`
+    - `artifacts/t02_local_tuning/t02_local_tuning_scenario_comparison_latest.tsv`
+    - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`
 
 ## 当前最小命令入口
 
