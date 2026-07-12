@@ -91,9 +91,9 @@
     - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 - `T02` 已完成真实宽表拼接入口 smoke-run：
-  - 构建结果：`1` 行候选宽表
-  - join 命中：`moneyflow=0`、`northbound=0`、`regime=0`、`industry=1`
-  - 当前结论：拼接链已通，`industry` 真源已接入，但 `moneyflow / northbound / regime` 仍缺真实源
+  - 构建结果：`18` 行候选宽表
+  - join 命中：`moneyflow=18(base)`、`northbound=17`、`regime=0`、`industry=18`
+  - 当前结论：`moneyflow / northbound / industry` 已接入首份真实窄样本宽表，当前只差 `regime`
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
@@ -106,10 +106,10 @@
     - `northbound` metadata：`data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
     - `industry` metadata：`data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
   - 二轮实跑结果：
-    - `moneyflow`：`failure_reason = tushare_api_error`
-    - `northbound`：`failure_reason = tushare_api_error`
+    - `moneyflow`：`status = success`，`rows = 18`
+    - `northbound`：`status = success`，`rows = 17`
     - `industry`：`status = success`，`rows = 5530`
-  - 当前结论：本机 token 已就绪，当前明确阻塞已从 `token_missing` 收缩为 `moneyflow / moneyflow_hsgt` 接口权限不足
+  - 当前结论：本机 token 与积分权限均已就绪，三条 Tushare 抓取入口已跑通
 - `T02` 已补本机环境预检入口：
   - 预检脚本：`check_t02_tushare_env_v1.py`
   - 当前作用：先判断 token 与 `tushare`/`pandas` 依赖是否就绪，再决定是否继续跑三条 fetcher
@@ -119,6 +119,11 @@
     - `pandas.available = true`
     - `tushare.available = true`
   - 当前结论：token 与依赖都已补齐，fetcher 已进入真实权限验证阶段
+- `T02` 已完成首轮真实扫描：
+  - 输入范围：`000001.SZ`，`2026-05-06 -> 2026-05-29`
+  - 扫描结果：`18` 行真实输入、`12` 条触发、`1` 个触发标的
+  - 触发特征：以连续主力资金流出为主，最长连续触发 `12` 个交易日
+  - 当前结论：`T02` 已脱离模板级验证，进入首轮真实窄样本证据阶段；但当前仍不足以外推出全市场阈值结论
 
 ## 当前最小命令入口
 
