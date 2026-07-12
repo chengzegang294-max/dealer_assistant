@@ -13,21 +13,21 @@
   - 输入审计通过：`contract_ready = true`
   - 归一化通过：`missing_columns = []`
   - 模板级 smoke-run：`1` 行输入、`0` 条触发
-  - 真实源抓取实跑：`moneyflow_batch=180` 行、`northbound=17` 行、`regime=18` 行、`industry=5530` 行
-  - 当前真实宽表：`180` 行候选宽表，`northbound=170` 命中，`regime=180` 命中，`industry=180` 命中
-  - 当前真实扫描：`180` 行输入、`84` 条触发、`10` 个触发标的
+  - 真实源抓取实跑：`moneyflow_batch(sample20)=360` 行、`northbound=17` 行、`regime=18` 行、`industry=5530` 行
+  - 当前真实宽表：`360` 行候选宽表，`northbound=340` 命中，`regime=360` 命中，`industry=360` 命中
+  - 当前真实扫描：`360` 行输入、`160` 条触发、`20` 个触发标的
 - 验证范围：
   - 当前覆盖模板级链路贯通验证
-  - 当前覆盖第二批更宽样本的真实源抓取、真实宽表拼接和第三轮真实扫描
+  - 当前覆盖第三批更宽样本的真实源抓取、真实宽表拼接和真实扫描
 - 输入口径：
   - `主力资金连续2日 + 占成交额 > 3%` 的最小执行链已可跑
 - 核心结果：
-  - 已拿到首份 `10` 标的真实 `moneyflow / northbound / regime / industry` 输入链
-  - 当前阈值口径 `绝对占成交额 > 3% 且连续2日` 在 `10/10` 标的样本上都出现了可解释触发
-  - 当前触发分布：`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`600030.SH=8`、`600276.SH=8`、`601899.SH=8`、`600050.SH=7`、`600519.SH=7`、`300750.SZ=5`
-  - 当前阶段分布：`G01_普涨=23`、`G02_普跌=17`、`G03_震荡=44`
-  - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180`，触发密度约从 `45.6%` 变到 `46.7%`
-  - 当前扩样结论：阈值没有在 `5 -> 10` 标的扩样时明显失真
+  - 已拿到首份 `20` 标的真实 `moneyflow / northbound / regime / industry` 输入链
+  - 当前阈值口径 `绝对占成交额 > 3% 且连续2日` 在 `20/20` 标的样本上都出现了可解释触发
+  - 当前触发分布：`600309.SH=13`、`600760.SH=13`、`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`601012.SH=9`
+  - 当前阶段分布：`G01_普涨=54`、`G02_普跌=32`、`G03_震荡=74`
+  - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180` 再到 `20` 标的 `160/360`，触发密度约从 `45.6%`、`46.7%` 变到 `44.4%`
+  - 当前扩样结论：阈值在 `5 -> 10 -> 20` 标的扩样时仅小幅回落，仍保持稳定可消费
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -39,20 +39,20 @@
     - `industry`
   - `moneyflow` metadata 已固定比例口径：
     - `main_fund_net_inflow_ratio = net_mf_amount / (daily.amount / 10.0)`
-  - 当前批量样本覆盖：`银行 / 券商 / 地产 / 消费 / 新能源 / 保险 / 家电 / 医药 / 有色 / 通信`
-  - 当前 `northbound` 采用 `trade_date` 级 join，`180` 行里命中 `170` 行
-  - 当前 `regime` 采用 `trade_date` 级代理表，`180` 行里命中 `180` 行
+  - 当前批量样本覆盖：`银行 / 券商 / 地产 / 消费 / 新能源 / 保险 / 家电 / 医药 / 有色 / 通信 / 半导体 / 军工 / 公用事业 / 汽车 / 化工 / 煤炭 / 面板电子 / 光伏 / 计算机 / 钢铁`
+  - 当前 `northbound` 采用 `trade_date` 级 join，`360` 行里命中 `340` 行
+  - 当前 `regime` 采用 `trade_date` 级代理表，`360` 行里命中 `360` 行
   - 当前 `symbol x regime` 交叉分布已落盘，可直接看哪个标的只在单一阶段触发
-  - 当前最长连续触发为 `12` 个交易日，仍来自 `000001.SZ` 且方向为 `outflow`
+  - 当前最高触发频次已扩展为双峰：`600309.SH=13`、`600760.SH=13`
 - 结论判断：
   - 当前建议：`保留`
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
-  - 当前限制：样本仍只覆盖 `10` 个标的、`18` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
+  - 当前限制：样本仍只覆盖 `20` 个标的、`18` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
 - 下一步动作：
-  - 继续扩到更多标的，优先补宽行业和大中小盘混合样本
+  - 继续扩到更长时间窗，优先做跨月或跨季度稳定性复核
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 在更大样本上复核 `3% + 连续2日` 是否过宽或过严
+  - 在更长窗口上复核 `3% + 连续2日` 是否过宽或过严
 
 ## 回链
 
@@ -73,11 +73,11 @@
 - Tushare 环境预检：
   - `artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json`
 - moneyflow 抓取 metadata：
-  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample10__20260501_20260531__metadata.json`
+  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531__metadata.json`
 - moneyflow 真实 CSV：
-  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample10__20260501_20260531.csv`
+  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531.csv`
 - 多标的样本清单：
-  - `data/t02_multi_symbol_sample_v2.csv`
+  - `data/t02_multi_symbol_sample_v3.csv`
 - northbound 抓取 metadata：
   - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
 - northbound 真实 CSV：
