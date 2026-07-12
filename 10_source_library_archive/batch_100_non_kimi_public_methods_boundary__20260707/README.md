@@ -5,6 +5,19 @@
 - 这批材料用于固化 `00_外部公开资料与方法论参考` 的目录边界、提升线和最小长期维护束。
 - 当前只做 boundary 收口与提升线说明，不做整目录平移。
 
+## 入口
+
+- `INDEX_NOTE`:
+  - 当前文件
+  - `01_index/entry_map_v1.tsv`
+- raw snapshot 侧：
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/README.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/INDEX_phase1_v1.md`
+- 稳定 bundle：
+  - `batch_107_non_kimi_public_batch9_bundle__20260707/README.md`
+  - `batch_108_non_kimi_nftradez_method_bundle__20260707/README.md`
+  - `batch_109_non_kimi_smile_smc_method_bundle__20260707/README.md`
+
 ## 当前包含
 
 - `source=10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考`
@@ -34,6 +47,12 @@
   - `batch_107_non_kimi_public_batch9_bundle__20260707`
   - `batch_108_non_kimi_nftradez_method_bundle__20260707`
   - `batch_109_non_kimi_smile_smc_method_bundle__20260707`
+
+## 默认阅读顺序
+
+- 先看本批 README，确认它只是边界批，不是默认正文入口。
+- 若要回看原始边界与搬迁判断，进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要直接消费当前已稳定的方法资料，转去 `batch_107 / 108 / 109`。
 
 ## 下一步
 

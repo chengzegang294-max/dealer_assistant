@@ -5,6 +5,21 @@
 - 这批材料用于固化 `02_原子化拆解文件` 的证据锚点、规则卡、对象入口三层边界。
 - 当前只做 boundary 收口与对象束提升说明，不做整目录平移。
 
+## 入口
+
+- `INDEX_NOTE`:
+  - 当前文件
+  - `01_index/entry_map_v1.tsv`
+- raw snapshot 侧：
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/README.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/INDEX_phase1_v1.md`
+- 已提升对象包：
+  - `batch_102_non_kimi_atomic_kd_mtf_bundle__20260707/README.md`
+  - `batch_103_non_kimi_atomic_rsj_state_bundle__20260707/README.md`
+  - `batch_104_non_kimi_atomic_pv_corr_bundle__20260707/README.md`
+  - `batch_105_non_kimi_atomic_four_axis_state_bundle__20260707/README.md`
+  - `batch_106_non_kimi_atomic_vantharp_r_bundle__20260707/README.md`
+
 ## 当前包含
 
 - `source=10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件`
@@ -35,6 +50,12 @@
   - `batch_104_non_kimi_atomic_pv_corr_bundle__20260707`
   - `batch_105_non_kimi_atomic_four_axis_state_bundle__20260707`
   - `batch_106_non_kimi_atomic_vantharp_r_bundle__20260707`
+
+## 默认阅读顺序
+
+- 先看本批 README，确认它承担的是边界判断，不是默认对象正文入口。
+- 若要回看证据锚点与最小搬迁判断，进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要直接消费已稳定对象包，转去 `batch_102 ~ batch_106`。
 
 ## 下一步
 
