@@ -12,6 +12,8 @@
 - 主题入口层：
   - `topic_entry/README.md`
   - `topic_entry/topic_entry_index_v1.tsv`
+  - `topic_entry/TOPIC_OBJECT_OVERVIEW_v1.md`
+  - `topic_entry/topic_object_matrix_v1.tsv`
   - `topic_entry/object_entry/README.md`
   - `topic_entry/object_entry/object_entry_index_v1.tsv`
 
@@ -69,6 +71,9 @@
 - 想按主题而不是按批次找资料：
   - 先看 `topic_entry/README.md`
   - 再看 `topic_entry/topic_entry_index_v1.tsv`
+- 想横向比对主题、对象、primary target 和推荐阅读顺序：
+  - 先看 `topic_entry/TOPIC_OBJECT_OVERVIEW_v1.md`
+  - 再看 `topic_entry/topic_object_matrix_v1.tsv`
 - 想按高频对象一跳进入：
   - 先看 `topic_entry/object_entry/README.md`
   - 再看 `topic_entry/object_entry/object_entry_index_v1.tsv`

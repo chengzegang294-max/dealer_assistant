@@ -16,6 +16,8 @@
 ## 默认入口
 
 - `object_entry_index_v1.tsv`
+- `../TOPIC_OBJECT_OVERVIEW_v1.md`
+- `../topic_object_matrix_v1.tsv`
 - `ashare_research_summary_object_entry_v1.md`
 - `ashare_data_source_decision_object_entry_v1.md`
 - `trae_system_selected_object_entry_v1.md`
@@ -24,6 +26,8 @@
 ## 使用边界
 
 - 想找最常用对象，先来这里。
+- 想先横向看对象属于哪个主题、推荐阅读顺序和边界，再回上层总表：
+  - `../topic_object_matrix_v1.tsv`
 - 想回看完整主题说明，退回上层 `../README.md`。
 - 想回看批次级清单、manifest、provenance，再下钻到对应批次。
 
