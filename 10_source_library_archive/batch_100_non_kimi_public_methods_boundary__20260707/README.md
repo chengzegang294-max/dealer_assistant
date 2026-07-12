@@ -10,9 +10,12 @@
 - `INDEX_NOTE`:
   - 当前文件
   - `01_index/entry_map_v1.tsv`
+  - `public_methods_boundary_manifest__20260713.tsv`
 - raw snapshot 侧：
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/INDEX_phase1_v1.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/README.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/README.md`
 - 稳定 bundle：
   - `batch_107_non_kimi_public_batch9_bundle__20260707/README.md`
   - `batch_108_non_kimi_nftradez_method_bundle__20260707/README.md`
@@ -43,6 +46,15 @@
   - `README.md`
   - `INDEX_phase1_v1.md`
   - `minimal_relocation_candidates_v1.tsv`
+- raw snapshot 二级入口已补：
+  - `01_外部公开指标资料_Batch9/README.md`
+  - `01_外部公开指标资料_Batch9/INDEX_phase1_v1.md`
+  - `01_外部公开指标资料_Batch9/minimal_relocation_candidates_v1.tsv`
+  - `02_外部视频与方法论参考/README.md`
+  - `02_外部视频与方法论参考/INDEX_phase1_v1.md`
+  - `02_外部视频与方法论参考/minimal_relocation_candidates_v1.tsv`
+- 批次侧已补：
+  - `public_methods_boundary_manifest__20260713.tsv`
 - 已推进：
   - `batch_107_non_kimi_public_batch9_bundle__20260707`
   - `batch_108_non_kimi_nftradez_method_bundle__20260707`
@@ -51,7 +63,10 @@
 ## 默认阅读顺序
 
 - 先看本批 README，确认它只是边界批，不是默认正文入口。
-- 若要回看原始边界与搬迁判断，进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要回看原始边界与搬迁判断，先进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要按二级主题进入：
+  - 指标资料线进入 `01_外部公开指标资料_Batch9/README.md`
+  - 视频方法论线进入 `02_外部视频与方法论参考/README.md`
 - 若要直接消费当前已稳定的方法资料，转去 `batch_107 / 108 / 109`。
 
 ## 下一步
