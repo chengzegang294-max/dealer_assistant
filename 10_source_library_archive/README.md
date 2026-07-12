@@ -9,6 +9,9 @@
 
 - 根层总导航：
   - `archive_batch_index_v1.tsv`
+- 主题入口层：
+  - `topic_entry/README.md`
+  - `topic_entry/topic_entry_index_v1.tsv`
 
 ## 三级导航
 
@@ -16,6 +19,7 @@
   - `batch_01_youzi_truth_anchors/README.md`
   - `batch_09_legacy_source_library_alignment__20260707/README.md`
   - `archive_batch_index_v1.tsv`
+  - `topic_entry/README.md`
 - 可选看：
   - `batch_100_non_kimi_public_methods_boundary__20260707/README.md`
   - `batch_101_non_kimi_atomic_rules_boundary__20260707/README.md`
@@ -60,6 +64,9 @@
 
 - 想先看来源层全局结构：
   - 先看 `archive_batch_index_v1.tsv`
+- 想按主题而不是按批次找资料：
+  - 先看 `topic_entry/README.md`
+  - 再看 `topic_entry/topic_entry_index_v1.tsv`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -85,6 +92,17 @@
 - `staging_area / raw_truth_side`
   - `mirror_kimi_inbox` 是待入库与中转侧
   - `raw_assets` 是原件真值侧
+
+## 主题入口
+
+- `A股量化研究`
+  - `topic_entry/ashare_quant_research_topic_entry_v1.md`
+- `A股数据源决策`
+  - `topic_entry/ashare_data_source_decision_topic_entry_v1.md`
+- `系统吸收与正文回收`
+  - `topic_entry/trae_system_absorb_topic_entry_v1.md`
+- `外部吸收与回收提升`
+  - `topic_entry/external_absorb_recovery_topic_entry_v1.md`
 
 ## 批次记录模板
 
