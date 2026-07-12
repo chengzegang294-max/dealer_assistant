@@ -1,0 +1,3 @@
+window_label	start_date	end_date	symbol_count	rows_scanned	trigger_rows	trigger_symbols	trigger_density	regime_g01	regime_g02	regime_g03	key_takeaway
+sample20_may	20260501	20260531	20	360	160	20	0.4444	54	32	74	单月样本下触发密度约44.4%，作为扩样后的首份宽样本基线
+sample20_q2	20260401	20260630	20	1200	493	20	0.4108	134	54	305	时间窗拉长到一整个季度后触发密度小幅回落到41.1%，但未出现断崖式塌陷

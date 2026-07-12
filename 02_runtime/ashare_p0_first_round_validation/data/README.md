@@ -46,6 +46,6 @@
   - `northbound` 真源
   - `regime` 真源
   - `industry` 真源
-- 当前 latest 真实宽表已切换为 `20` 标的样本：
-  - `moneyflow_batch__sample20__20260501_20260531.csv`
+- 当前 latest 真实宽表已切换为 `20` 标的跨月样本：
+  - `moneyflow_batch__sample20_q2__20260401_20260630.csv`
 - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv` 继续保留为模板级底表，不再充当 latest 真实资金源。

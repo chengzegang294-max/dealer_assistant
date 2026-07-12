@@ -186,9 +186,9 @@
 - `T02` 当前拼接级结论：
   - 底表拼接链已贯通
   - 当前 latest 真实宽表基于 `moneyflow_batch` 作为 base 构建
-  - 当前 `northbound` join 命中 `340/360`
-  - 当前 `regime` join 命中 `360/360`
-  - 当前 `industry` join 命中 `360/360`
+  - 当前 `northbound` join 命中 `1140/1200`
+  - 当前 `regime` join 命中 `1200/1200`
+  - 当前 `industry` join 命中 `1200/1200`
   - 当前仍缺正式 `OHLCV` 宽底表
 - `T02` 当前抓取级结论：
   - 已补 `moneyflow / northbound / regime / industry` 四条真实源抓取入口
@@ -198,14 +198,18 @@
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531__metadata.json`
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample10__20260501_20260531__metadata.json`
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531__metadata.json`
+    - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20_q2__20260401_20260630__metadata.json`
     - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+    - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260401_20260630__metadata.json`
     - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531__metadata.json`
+    - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260401_20260630__metadata.json`
     - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
   - 当前实跑结果：
     - `moneyflow`：`status = success`，并已生成真实 CSV
     - `moneyflow_batch`：`status = success`，`symbols = 5`，并已生成真实 CSV
     - `moneyflow_batch(sample10)`：`status = success`，`symbols = 10`，并已生成真实 CSV
     - `moneyflow_batch(sample20)`：`status = success`，`symbols = 20`，并已生成真实 CSV
+    - `moneyflow_batch(sample20_q2)`：`status = success`，`symbols = 20`，并已生成真实 CSV
     - `northbound`：`status = success`，并已生成真实 CSV
     - `regime`：`status = success`，并已生成真实 CSV
     - `industry`：`status = success`，并已生成真实 CSV
@@ -219,9 +223,9 @@
     - `token_source = C:\Users\91883\.tushare\token`
 - `T02` 当前已补首份真实扫描结果：
   - 扫描摘要：`artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
-  - 当前结果：`360` 行真实输入、`160` 条触发、`20` 个触发标的
-  - 当前阶段分布：`G01_普涨=54`、`G02_普跌=32`、`G03_震荡=74`
-  - 当前限制：仍是首批 20 标的样本，不足以直接外推出全市场门槛
+  - 当前结果：`1200` 行真实输入、`493` 条触发、`20` 个触发标的
+  - 当前阶段分布：`G01_普涨=134`、`G02_普跌=54`、`G03_震荡=305`
+  - 当前限制：仍是固定 20 标的样本，不足以直接外推出全市场门槛
 - 还未补统一批次汇总脚本
 
 ## 当前回链

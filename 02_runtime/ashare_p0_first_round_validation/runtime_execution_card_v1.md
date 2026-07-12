@@ -93,9 +93,9 @@
     - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 - `T02` 已完成真实宽表拼接入口 smoke-run：
-  - 构建结果：`360` 行候选宽表
-  - join 命中：`moneyflow=360(base)`、`northbound=340`、`regime=360`、`industry=360`
-  - 当前结论：`moneyflow / northbound / regime / industry` 已全部接入第三轮更宽样本真实宽表；当前仍缺正式 `OHLCV` 宽底表
+  - 构建结果：`1200` 行候选宽表
+  - join 命中：`moneyflow=1200(base)`、`northbound=1140`、`regime=1200`、`industry=1200`
+  - 当前结论：`moneyflow / northbound / regime / industry` 已全部接入第三轮更宽样本的跨月真实宽表；当前仍缺正式 `OHLCV` 宽底表
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
@@ -114,8 +114,9 @@
     - `moneyflow_batch`：`status = success`，`rows = 90`，`symbols = 5`
     - `moneyflow_batch(sample10)`：`status = success`，`rows = 180`，`symbols = 10`
     - `moneyflow_batch(sample20)`：`status = success`，`rows = 360`，`symbols = 20`
-    - `northbound`：`status = success`，`rows = 17`
-    - `regime`：`status = success`，`rows = 18`，`G01=7 / G02=3 / G03=8`
+    - `moneyflow_batch(sample20_q2)`：`status = success`，`rows = 1200`，`symbols = 20`
+    - `northbound`：`status = success`，`rows = 57`
+    - `regime`：`status = success`，`rows = 60`，`G01=16 / G02=7 / G03=37`
     - `industry`：`status = success`，`rows = 5530`
   - 当前结论：本机 token 与积分权限均已就绪，当前已跑通单标的、多标的与阶段代理三类 Tushare 抓取入口
 - `T02` 已补本机环境预检入口：
@@ -128,13 +129,14 @@
     - `tushare.available = true`
   - 当前结论：token 与依赖都已补齐，fetcher 已进入真实权限验证阶段
 - `T02` 已完成首轮真实扫描：
-  - 输入范围：`20` 个标的，`2026-05-06 -> 2026-05-29`
-  - 扫描结果：`360` 行真实输入、`160` 条触发、`20` 个触发标的
-  - 触发分布：`600309.SH=13`、`600760.SH=13`、`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`601012.SH=9`、`600019.SH=8`、`600030.SH=8`、`600276.SH=8`、`601899.SH=8`
-  - 阶段分布：`G01_普涨=54`、`G02_普跌=32`、`G03_震荡=74`
-  - 当前结论：`T02` 已在更宽行业与风格样本和 `G01 / G02 / G03` 三类阶段都形成可消费触发；从 `5 -> 10 -> 20` 标的扩样后，触发密度维持在约 `44% ~ 47%`，当前口径没有被扩样本直接否掉
+  - 输入范围：`20` 个标的，`2026-04-01 -> 2026-06-30`
+  - 扫描结果：`1200` 行真实输入、`493` 条触发、`20` 个触发标的
+  - 触发分布：`000001.SZ=41`、`000651.SZ=34`、`600760.SH=34`、`601318.SH=30`、`000002.SZ=29`、`600900.SH=28`、`600519.SH=27`、`600276.SH=26`
+  - 阶段分布：`G01_普涨=134`、`G02_普跌=54`、`G03_震荡=305`
+  - 当前结论：`T02` 已在更宽行业与风格样本和 `G01 / G02 / G03` 三类阶段都形成可消费触发；从 `5 -> 10 -> 20` 标的扩样，到固定 `20` 标的再拉长到跨月窗口后，触发密度从约 `45.6%`、`46.7%`、`44.4%` 进一步回落到 `41.1%`，但仍保持稳定可消费
   - 对比产物：
     - `artifacts/t02_fund_flow_scan/t02_sample_expansion_comparison_latest.tsv`
+    - `artifacts/t02_fund_flow_scan/t02_time_window_stability_latest.tsv`
 
 ## 当前最小命令入口
 

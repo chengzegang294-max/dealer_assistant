@@ -13,21 +13,22 @@
   - 输入审计通过：`contract_ready = true`
   - 归一化通过：`missing_columns = []`
   - 模板级 smoke-run：`1` 行输入、`0` 条触发
-  - 真实源抓取实跑：`moneyflow_batch(sample20)=360` 行、`northbound=17` 行、`regime=18` 行、`industry=5530` 行
-  - 当前真实宽表：`360` 行候选宽表，`northbound=340` 命中，`regime=360` 命中，`industry=360` 命中
-  - 当前真实扫描：`360` 行输入、`160` 条触发、`20` 个触发标的
+  - 真实源抓取实跑：`moneyflow_batch(sample20_q2)=1200` 行、`northbound=57` 行、`regime=60` 行、`industry=5530` 行
+  - 当前真实宽表：`1200` 行候选宽表，`northbound=1140` 命中，`regime=1200` 命中，`industry=1200` 命中
+  - 当前真实扫描：`1200` 行输入、`493` 条触发、`20` 个触发标的
 - 验证范围：
   - 当前覆盖模板级链路贯通验证
   - 当前覆盖第三批更宽样本的真实源抓取、真实宽表拼接和真实扫描
 - 输入口径：
   - `主力资金连续2日 + 占成交额 > 3%` 的最小执行链已可跑
 - 核心结果：
-  - 已拿到首份 `20` 标的真实 `moneyflow / northbound / regime / industry` 输入链
+  - 已拿到固定 `20` 标的、跨月时间窗的真实 `moneyflow / northbound / regime / industry` 输入链
   - 当前阈值口径 `绝对占成交额 > 3% 且连续2日` 在 `20/20` 标的样本上都出现了可解释触发
-  - 当前触发分布：`600309.SH=13`、`600760.SH=13`、`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`601012.SH=9`
-  - 当前阶段分布：`G01_普涨=54`、`G02_普跌=32`、`G03_震荡=74`
-  - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180` 再到 `20` 标的 `160/360`，触发密度约从 `45.6%`、`46.7%` 变到 `44.4%`
-  - 当前扩样结论：阈值在 `5 -> 10 -> 20` 标的扩样时仅小幅回落，仍保持稳定可消费
+  - 当前触发分布：`000001.SZ=41`、`000651.SZ=34`、`600760.SH=34`、`601318.SH=30`、`000002.SZ=29`、`600900.SH=28`、`600519.SH=27`
+  - 当前阶段分布：`G01_普涨=134`、`G02_普跌=54`、`G03_震荡=305`
+  - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180` 再到 `20` 标的单月 `160/360`，触发密度约从 `45.6%`、`46.7%` 变到 `44.4%`
+  - 把时间窗继续拉长到 `2026-04-01 -> 2026-06-30` 后，触发密度进一步回落到 `41.1%`，但没有出现断崖式塌陷
+  - 当前扩样与拉窗结论：阈值在 `5 -> 10 -> 20` 标的扩样和跨月拉窗后仍保持稳定可消费
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -40,19 +41,19 @@
   - `moneyflow` metadata 已固定比例口径：
     - `main_fund_net_inflow_ratio = net_mf_amount / (daily.amount / 10.0)`
   - 当前批量样本覆盖：`银行 / 券商 / 地产 / 消费 / 新能源 / 保险 / 家电 / 医药 / 有色 / 通信 / 半导体 / 军工 / 公用事业 / 汽车 / 化工 / 煤炭 / 面板电子 / 光伏 / 计算机 / 钢铁`
-  - 当前 `northbound` 采用 `trade_date` 级 join，`360` 行里命中 `340` 行
-  - 当前 `regime` 采用 `trade_date` 级代理表，`360` 行里命中 `360` 行
+  - 当前 `northbound` 采用 `trade_date` 级 join，`1200` 行里命中 `1140` 行
+  - 当前 `regime` 采用 `trade_date` 级代理表，`1200` 行里命中 `1200` 行
   - 当前 `symbol x regime` 交叉分布已落盘，可直接看哪个标的只在单一阶段触发
-  - 当前最高触发频次已扩展为双峰：`600309.SH=13`、`600760.SH=13`
+  - 当前最高触发频次回到金融与防御风格前列：`000001.SZ=41`、`000651.SZ=34`、`600760.SH=34`
 - 结论判断：
   - 当前建议：`保留`
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
-  - 当前限制：样本仍只覆盖 `20` 个标的、`18` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
+  - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
 - 下一步动作：
-  - 继续扩到更长时间窗，优先做跨月或跨季度稳定性复核
+  - 继续保持 `sample20` 不变，下钻到标的分层和行业分层，观察谁在长窗下最稳定
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 在更长窗口上复核 `3% + 连续2日` 是否过宽或过严
+  - 复核 `3% + 连续2日` 是否需要按行业或波动层分支微调
 
 ## 回链
 
@@ -73,19 +74,19 @@
 - Tushare 环境预检：
   - `artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json`
 - moneyflow 抓取 metadata：
-  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531__metadata.json`
+  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20_q2__20260401_20260630__metadata.json`
 - moneyflow 真实 CSV：
-  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531.csv`
+  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample20_q2__20260401_20260630.csv`
 - 多标的样本清单：
   - `data/t02_multi_symbol_sample_v3.csv`
 - northbound 抓取 metadata：
-  - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+  - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260401_20260630__metadata.json`
 - northbound 真实 CSV：
-  - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531.csv`
+  - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260401_20260630.csv`
 - regime 抓取 metadata：
-  - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531__metadata.json`
+  - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260401_20260630__metadata.json`
 - regime 真实 CSV：
-  - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531.csv`
+  - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260401_20260630.csv`
 - industry 抓取 metadata：
   - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
 - industry 真实 CSV：
@@ -94,3 +95,5 @@
   - `artifacts/t02_fund_flow_scan/t02_symbol_regime_trigger_counts_latest.tsv`
 - 扩样稳定性对比：
   - `artifacts/t02_fund_flow_scan/t02_sample_expansion_comparison_latest.tsv`
+- 时间窗稳定性对比：
+  - `artifacts/t02_fund_flow_scan/t02_time_window_stability_latest.tsv`
