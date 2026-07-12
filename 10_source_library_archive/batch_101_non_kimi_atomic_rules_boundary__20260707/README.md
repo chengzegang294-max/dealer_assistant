@@ -13,6 +13,8 @@
 - raw snapshot 侧：
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/INDEX_phase1_v1.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/RULE_FAMILY_INDEX_v1.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/PROMOTED_OBJECT_STATUS_v1.tsv`
 - 已提升对象包：
   - `batch_102_non_kimi_atomic_kd_mtf_bundle__20260707/README.md`
   - `batch_103_non_kimi_atomic_rsj_state_bundle__20260707/README.md`
@@ -44,6 +46,9 @@
   - 默认主入口 `README.md`
   - 默认索引入口 `INDEX_phase1_v1.md`
   - 最小搬迁清单 `minimal_relocation_candidates_v1.tsv`
+- 已补第二层整理入口：
+  - `RULE_FAMILY_INDEX_v1.md`
+  - `PROMOTED_OBJECT_STATUS_v1.tsv`
 - 已落：
   - `batch_102_non_kimi_atomic_kd_mtf_bundle__20260707`
   - `batch_103_non_kimi_atomic_rsj_state_bundle__20260707`
@@ -55,6 +60,8 @@
 
 - 先看本批 README，确认它承担的是边界判断，不是默认对象正文入口。
 - 若要回看证据锚点与最小搬迁判断，进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要按规则家族看残余资料，进入 `RULE_FAMILY_INDEX_v1.md`。
+- 若要判断哪些对象已提升、哪些仍停留在 raw snapshot，进入 `PROMOTED_OBJECT_STATUS_v1.tsv`。
 - 若要直接消费已稳定对象包，转去 `batch_102 ~ batch_106`。
 
 ## 下一步
