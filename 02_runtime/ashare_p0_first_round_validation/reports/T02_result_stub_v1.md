@@ -40,6 +40,10 @@
     - `low_flow_vol` 新增 `19` 条触发，`78.9%` 落在 `G03_震荡`，北向同向支持率仅 `15.8%`
     - `growth_tech_low_flow_vol` 新增 `9` 条触发，`77.8%` 落在 `G03_震荡`，北向同向支持率为 `0%`
     - 这说明 watchlist 的提升更多像“补到边缘弱信号”，而不是拿到了强确认信号
+  - 当前确认条件过滤试算：
+    - `排除 G03_震荡` 是最顺的第一道过滤：`low_flow_vol` 保留 `66/162`，`growth_tech_low_flow_vol` 保留 `24/60`
+    - 这刀能把两组的 `G03` 占比都直接压到 `0%`，同时仍保留约 `40%` 候选
+    - 单独要求 `北向同向` 虽更干净，但只保留 `13.6%` 与 `16.7%` 候选，当前更像二级确认而不是主过滤
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -66,7 +70,7 @@
   - 继续保持 `sample20` 不变，若要进一步下钻，优先为 watchlist 叠加确认条件，而不是直接下调主阈值
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 优先尝试的确认条件应偏向“过滤震荡期弱信号”，例如叠加北向同向、或排除 `G03_震荡`
+  - 当前最优先确认条件是 `排除 G03_震荡`；`北向同向` 暂定为第二层加严过滤
 
 ## 回链
 
@@ -124,3 +128,7 @@
   - `artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json`
   - `artifacts/t02_local_tuning_review/t02_local_tuning_group_review_latest.tsv`
   - `artifacts/t02_local_tuning_review/t02_local_tuning_added_trigger_detail_latest.tsv`
+- 确认条件过滤试算：
+  - `artifacts/t02_confirmation_filter/t02_confirmation_filter_summary_latest.json`
+  - `artifacts/t02_confirmation_filter/t02_confirmation_filter_scenario_comparison_latest.tsv`
+  - `artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv`

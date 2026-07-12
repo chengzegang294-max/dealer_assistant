@@ -27,6 +27,7 @@
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_layer_stability_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_review_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/analyze_t02_confirmation_filter_v1.py`
 
 ## 当前范围
 
@@ -184,6 +185,23 @@
     - `artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json`
     - `artifacts/t02_local_tuning_review/t02_local_tuning_group_review_latest.tsv`
     - `artifacts/t02_local_tuning_review/t02_local_tuning_added_trigger_detail_latest.tsv`
+- `T02` 已完成 watchlist 确认条件过滤试算：
+  - 试算对象：
+    - `low_flow_vol`
+    - `growth_tech_low_flow_vol`
+  - 试算过滤器：
+    - `排除 G03_震荡`
+    - `要求北向同向`
+    - `排除 G03_震荡 + 要求北向同向`
+  - 关键结果：
+    - `low_flow_vol` 在 `2.5% + 连续2日` 下共有 `162` 条候选；`排除 G03_震荡` 后保留 `66` 条，保留率 `40.7%`，并将 `G03` 占比从 `59.3%` 压到 `0%`
+    - `growth_tech_low_flow_vol` 在 `2.5% + 连续2日` 下共有 `60` 条候选；`排除 G03_震荡` 后保留 `24` 条，保留率 `40.0%`，并将 `G03` 占比从 `60.0%` 压到 `0%`
+    - 单独要求 `北向同向` 虽能把同向率提升到 `100%`，但分别只剩 `13.6%` 与 `16.7%` 候选，当前过于激进
+  - 当前结论：若后续要给 watchlist 弱候选加确认条件，首选 `排除 G03_震荡`；`北向同向` 更适合作为二级加严过滤，而不是第一道主过滤
+  - 过滤产物：
+    - `artifacts/t02_confirmation_filter/t02_confirmation_filter_summary_latest.json`
+    - `artifacts/t02_confirmation_filter/t02_confirmation_filter_scenario_comparison_latest.tsv`
+    - `artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv`
 
 ## 当前最小命令入口
 

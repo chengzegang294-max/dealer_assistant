@@ -1,0 +1,9 @@
+group_label	scenario_label	symbol_count	baseline_candidate_rows	kept_rows	kept_row_share	kept_symbols	g03_share	northbound_alignment_share	g03_share_improvement	northbound_alignment_improvement
+low_flow_vol	candidate_no_filter	7	162	162	1.0	7	0.5926	0.1358	0.0	0.0
+low_flow_vol	candidate_exclude_g03	7	162	66	0.4074	7	0.0	0.1667	0.5926	0.0309
+low_flow_vol	candidate_require_northbound_align	7	162	22	0.1358	7	0.5	1.0	0.0926	0.8642
+low_flow_vol	candidate_exclude_g03_and_northbound_align	7	162	11	0.0679	7	0.0	1.0	0.5926	0.8642
+growth_tech_low_flow_vol	candidate_no_filter	3	60	60	1.0	3	0.6	0.1667	0.0	0.0
+growth_tech_low_flow_vol	candidate_exclude_g03	3	60	24	0.4	3	0.0	0.2917	0.6	0.125
+growth_tech_low_flow_vol	candidate_require_northbound_align	3	60	10	0.1667	3	0.3	1.0	0.3	0.8333
+growth_tech_low_flow_vol	candidate_exclude_g03_and_northbound_align	3	60	7	0.1167	3	0.0	1.0	0.6	0.8333

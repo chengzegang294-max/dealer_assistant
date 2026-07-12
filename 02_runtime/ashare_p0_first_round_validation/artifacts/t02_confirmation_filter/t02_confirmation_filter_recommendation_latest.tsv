@@ -1,0 +1,3 @@
+group_label	baseline_candidate_rows	best_filter_scenario	kept_rows	kept_row_share	g03_share_after_filter	g03_share_improvement	northbound_alignment_share_after_filter	northbound_alignment_improvement	recommendation	reason
+low_flow_vol	162	candidate_exclude_g03	66	0.4074	0.0	0.5926	0.1667	0.0309	watch_filtered_branch	filter improves noise profile enough for follow-up monitoring, but not for default activation
+growth_tech_low_flow_vol	60	candidate_exclude_g03	24	0.4	0.0	0.6	0.2917	0.125	watch_filtered_branch	filter improves noise profile enough for follow-up monitoring, but not for default activation

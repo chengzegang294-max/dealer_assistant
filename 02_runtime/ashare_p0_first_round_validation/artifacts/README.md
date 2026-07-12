@@ -107,6 +107,14 @@
     - latest watchlist 噪声风险复核
     - 新增触发主要集中在 `G03_震荡`
     - `low_flow_vol` 与 `growth_tech_low_flow_vol` 当前仍只保留弱候选地位
+- `t02_confirmation_filter/`
+  - `t02_confirmation_filter_summary_latest.json`
+  - `t02_confirmation_filter_scenario_comparison_latest.tsv`
+  - `t02_confirmation_filter_recommendation_latest.tsv`
+  - 当前口径：
+    - latest watchlist 确认条件过滤试算
+    - 首选第一道过滤：`排除 G03_震荡`
+    - `北向同向` 当前更适合作为第二层加严条件
 
 ## 当前回链
 
