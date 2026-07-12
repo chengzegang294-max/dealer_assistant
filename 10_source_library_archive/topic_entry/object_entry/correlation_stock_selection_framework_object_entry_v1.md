@@ -8,25 +8,22 @@
 
 ## first-hop 入口
 
-- `../../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
+- `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_correlation_stock_selection_p0_min_contract_v1.md`
 
 ## 默认阅读顺序
 
 - 先看：
+  - `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_correlation_stock_selection_p0_min_contract_v1.md`
+  - `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/fields/group08_correlation_stock_selection_field_dictionary_v1.tsv`
+- 再看：
   - `S-028` 全市场相关性选股方法改进
   - `S-029` 房地产行业实证
   - `S-031` 公用事业行业实证与权重讨论
-- 再看：
-  - `S-C01` 相关性选股全市场框架
-- 若后续要对象化，优先抽：
-  - 因子基础库
-  - 显著性筛选规则
-  - 样本窗口长度
-  - 组合分层输出
+  - `S-C04` 相关性选股全市场框架
 
 ## 当前边界
 
-- 当前对象入口服务于方法框架复用与候选整理。
+- 当前对象入口服务于相关性选股合同冻结入口。
 - 当前不代表已接入主线默认多因子选股流程。
 
 ## 回链

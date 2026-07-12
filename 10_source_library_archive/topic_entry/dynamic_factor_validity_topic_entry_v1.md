@@ -8,7 +8,7 @@
 
 ## first-hop 入口
 
-- `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
+- `../batch_144_group08_corr_dynamic_contract_absorb__20260713/02_absorb_index/group08_corr_dynamic_contract_decision_v1.md`
 
 ## 对象快入口
 
@@ -17,17 +17,19 @@
 ## 最顺阅读顺序
 
 - 第一步：
-  - 先看 `A股_量化选股_研究PDF_总摘要_v1_part2.md`
+  - 先看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/02_absorb_index/group08_corr_dynamic_contract_decision_v1.md`
 - 第二步：
-  - 优先看 `S-039 / S-040 / S-041`
+  - 再看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_dynamic_factor_validity_p0_min_contract_v1.md`
+  - 再看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/fields/group08_dynamic_factor_validity_field_dictionary_v1.tsv`
 - 第三步：
+  - 若要回看 `S-039 / S-040 / S-041`，再回 `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
   - 若要直接进入当前最顺对象，转到 `object_entry/dynamic_factor_validity_object_entry_v1.md`
 
 ## 当前边界
 
 - 当前主题入口主要服务：
-  - 因子有效性时变跟踪研究的 first-hop
-  - 线性相关之外的补充评估框架整理
+  - 动态因子有效性的合同层 first-hop
+  - 因子评估与动态筛选升级层的冻结入口
 - 当前不承担：
   - 主线默认因子评估器
   - runtime 已接线的实时因子选择模块

@@ -8,23 +8,21 @@
 
 ## first-hop 入口
 
-- `../../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
+- `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_dynamic_factor_validity_p0_min_contract_v1.md`
 
 ## 默认阅读顺序
 
 - 先看：
+  - `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_dynamic_factor_validity_p0_min_contract_v1.md`
+  - `../../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/fields/group08_dynamic_factor_validity_field_dictionary_v1.tsv`
+- 再看：
   - `S-039` Kalman Filter 因子选择
   - `S-040` 因子有效与失效
   - `S-041` 净换手率新因子
-- 若后续要对象化，优先抽：
-  - Spearman 相关序列
-  - 因子有效性强弱指数
-  - 尾部相关系数
-  - 净换手率定义
 
 ## 当前边界
 
-- 当前对象入口服务于因子研究摘要与后续对象化候选。
+- 当前对象入口服务于动态因子有效性合同冻结入口。
 - 当前不代表已落成正式因子评估器。
 
 ## 回链

@@ -8,7 +8,7 @@
 
 ## first-hop 入口
 
-- `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
+- `../batch_144_group08_corr_dynamic_contract_absorb__20260713/02_absorb_index/group08_corr_dynamic_contract_decision_v1.md`
 
 ## 对象快入口
 
@@ -17,17 +17,19 @@
 ## 最顺阅读顺序
 
 - 第一步：
-  - 先看 `A股_量化选股_研究PDF_总摘要_v1_part2.md`
+  - 先看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/02_absorb_index/group08_corr_dynamic_contract_decision_v1.md`
 - 第二步：
-  - 优先看 `S-028 / S-029 / S-031` 及 `S-C01`
+  - 再看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/contracts/group08_correlation_stock_selection_p0_min_contract_v1.md`
+  - 再看 `../batch_144_group08_corr_dynamic_contract_absorb__20260713/bundle/fields/group08_correlation_stock_selection_field_dictionary_v1.tsv`
 - 第三步：
+  - 若要回看 `S-028 / S-029 / S-031 / S-C04`，再回 `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part2.md`
   - 若要直接进入当前最顺对象，转到 `object_entry/correlation_stock_selection_framework_object_entry_v1.md`
 
 ## 当前边界
 
 - 当前主题入口主要服务：
-  - 相关性选股的全市场框架与行业迁移摘要
-  - 因子库扩展、窗口设计、权重讨论的 first-hop
+  - 相关性选股的合同层 first-hop
+  - 因子库扩展、窗口设计、权重讨论的冻结入口
 - 当前不承担：
   - 正式运行的多因子选股引擎入口
   - 当前主线执行默认因子池

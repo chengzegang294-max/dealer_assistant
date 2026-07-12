@@ -1,0 +1,17 @@
+field_name	field_role	type	required	source_family	minimal_definition
+trade_id	core_id	string	yes	all	样本内唯一 id
+signal_date	core_time	string	yes	all	信号日期
+factor_name	core_label	string	yes	all	因子名称
+dynamic_eval_family	core_label	string	yes	all	动态评估家族标签
+spearman_corr_value	core_metric	number	no	kalman_tracking	截面 Spearman 相关系数
+kalman_state_value	core_metric	number	no	kalman_tracking	Kalman 状态值
+p_value	ext_metric	number	no	kalman_tracking	p 值对比基准
+factor_strength_index	core_metric	number	no	strength_index	因子有效性强弱指数
+net_turnover_ratio	ext_metric	number	no	net_turnover_candidate	净换手率定义值
+market_scope	core_label	string	no	all	市场范围标签
+dynamic_factor_state	output_state	string	yes	all	动态因子状态
+factor_selection_bias	output_bias	string	yes	all	因子取舍偏向
+recommended_action	output_action	string	yes	all	建议动作
+confidence_note	output_note	string	yes	all	置信说明
+dynamic_model_state	output_state	string	yes	all	模型状态
+proof_basis	output_note	string	yes	all	依据简述

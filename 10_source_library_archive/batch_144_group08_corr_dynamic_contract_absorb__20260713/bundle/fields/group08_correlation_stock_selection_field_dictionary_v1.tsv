@@ -1,0 +1,21 @@
+field_name	field_role	type	required	source_family	minimal_definition
+trade_id	core_id	string	yes	all	样本内唯一 id
+rebalance_date	core_time	string	yes	all	调仓日期
+symbol	core_label	string	yes	all	标的
+industry_name	core_label	string	no	all	行业分类
+factor_family	core_label	string	yes	all	因子家族标签
+factor_name	core_label	string	yes	all	因子名称
+factor_value	core_metric	number	yes	all	因子值
+factor_significance_level	core_metric	number	no	all	显著性水平
+correlation_value	core_metric	number	no	all	历史相关性
+rolling_window_months	core_param	number	yes	all	滚动窗口月数
+scoring_method	core_param	string	no	all	评分方法
+top_bucket_ratio	core_param	number	no	all	组合分层比例
+selected_factors	output_list	string	yes	all	当期有效因子列表
+stock_score	output_metric	number	yes	all	个股综合得分
+stock_rank	output_metric	number	yes	all	排名
+portfolio_bucket	output_bucket	string	yes	all	组合分层输出
+expected_bias	output_bias	string	yes	all	选股偏向
+confidence_note	output_note	string	yes	all	置信说明
+selection_model_state	output_state	string	yes	all	模型状态
+proof_basis	output_note	string	yes	all	依据简述
