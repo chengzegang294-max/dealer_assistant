@@ -1,9 +1,9 @@
 {
   "producer": "check_t02_tushare_env_v1.py",
   "scope": "A股 P0 首轮离线验证 T02 Tushare 抓取环境预检",
-  "status": "failed",
-  "token_source": "missing",
-  "token_present": false,
+  "status": "ready",
+  "token_source": "C:\\Users\\91883\\.tushare\\token",
+  "token_present": true,
   "dependency_status": {
     "pandas": {
       "available": true,
@@ -20,9 +20,5 @@
     "fetch_t02_northbound_tushare_v1.py",
     "fetch_t02_industry_map_tushare_v1.py"
   ],
-  "failure_reason": "tushare_token_missing",
-  "blockers": [
-    "tushare_token_missing"
-  ],
-  "next_action": "set TUSHARE_TOKEN or create ~/.tushare/token, then rerun preflight"
+  "next_action": "run the T02 Tushare fetchers"
 }

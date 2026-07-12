@@ -2,26 +2,25 @@
   "producer": "build_t02_real_input_v1.py",
   "scope": "A股 P0 首轮离线验证 T02 真实宽表拼接",
   "status": "success",
-  "base_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv",
+  "base_csv": "02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv",
   "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build",
   "row_count": 1,
   "join_sources": {
     "moneyflow": "",
     "northbound": "",
     "regime": "",
-    "industry": ""
+    "industry": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L.csv"
   },
   "join_hit_counts": {
     "moneyflow": 0,
     "northbound": 0,
     "regime": 0,
-    "industry": 0
+    "industry": 1
   },
   "missing_join_sources": [
     "moneyflow",
     "northbound",
-    "regime",
-    "industry"
+    "regime"
   ],
   "output_files": {
     "candidate_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",

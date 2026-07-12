@@ -162,24 +162,27 @@
   - 仍缺真实资金宽表，模板级结果不用于阈值判断
 - `T02` 当前拼接级结论：
   - 底表拼接链已贯通
-  - 当前四类 join 源都未接入
-  - 下一步只差真实源表落点与真实 join
+  - 当前 `industry` 真源已接入，join 命中 `1`
+  - 当前仍缺 `moneyflow / northbound / regime`
+  - 下一步只差必需资金源和剩余增强源
 - `T02` 当前抓取级结论：
   - 已补 `moneyflow / northbound / industry` 三条真实源抓取入口
-  - 当前已补首轮 failure metadata：
+  - 当前已补二轮实跑 metadata：
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
     - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
     - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
-  - 当前统一失败原因：
-    - `failure_reason = tushare_token_missing`
-    - `token_source = missing`
+  - 当前实跑结果：
+    - `moneyflow`：`failure_reason = tushare_api_error`，无 `moneyflow` 权限
+    - `northbound`：`failure_reason = tushare_api_error`，无 `moneyflow_hsgt` 权限
+    - `industry`：`status = success`，并已生成真实 CSV
 - `T02` 当前预检级结论：
   - 已补 `artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json`
   - 当前作用是把 token/依赖阻塞前置成单独检查入口
-  - 首轮结果：
-    - `token_present = false`
+  - 当前结果：
+    - `token_present = true`
     - `pandas.available = true`
     - `tushare.available = true`
+    - `token_source = C:\Users\91883\.tushare\token`
 - `T02` 还缺首份真实资金字段输入 CSV
 - 还未补统一批次汇总脚本
 

@@ -1,2 +1,2 @@
 trade_date,symbol,symbol_name,main_fund_net_inflow,main_fund_net_inflow_ratio,northbound_net_inflow,northbound_holding_change,market_regime_label,open,high,low,close,prev_close,volume,amount,industry_code,industry_name,data_source,asof_date,notes
-2026-05-08,000001.SZ,示例标的,0,0,0,0,unknown,0,0,0,0,0,0,0,INDUSTRY_SAMPLE,示例行业,template_only,2026-05-08,replace_with_real_data
+2026-05-08,000001.SZ,示例标的,0,0,0,0,unknown,0,0,0,0,0,0,0,INDUSTRY_SAMPLE,银行,template_only,2026-05-08,replace_with_real_data | industry_code_unavailable_in_stock_basic

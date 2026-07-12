@@ -92,8 +92,8 @@
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 - `T02` 已完成真实宽表拼接入口 smoke-run：
   - 构建结果：`1` 行候选宽表
-  - join 命中：`moneyflow=0`、`northbound=0`、`regime=0`、`industry=0`
-  - 当前结论：拼接链已通，但四类真实源表仍未接入
+  - join 命中：`moneyflow=0`、`northbound=0`、`regime=0`、`industry=1`
+  - 当前结论：拼接链已通，`industry` 真源已接入，但 `moneyflow / northbound / regime` 仍缺真实源
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
@@ -105,18 +105,20 @@
     - `moneyflow` metadata：`data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
     - `northbound` metadata：`data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
     - `industry` metadata：`data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
-  - 首轮失败原因：
-    - `failure_reason = tushare_token_missing`
-    - `token_source = missing`
-  - 当前结论：真实源落点与抓取入口已具备，当前明确阻塞是本机 `TUSHARE_TOKEN` 缺失
+  - 二轮实跑结果：
+    - `moneyflow`：`failure_reason = tushare_api_error`
+    - `northbound`：`failure_reason = tushare_api_error`
+    - `industry`：`status = success`，`rows = 5530`
+  - 当前结论：本机 token 已就绪，当前明确阻塞已从 `token_missing` 收缩为 `moneyflow / moneyflow_hsgt` 接口权限不足
 - `T02` 已补本机环境预检入口：
   - 预检脚本：`check_t02_tushare_env_v1.py`
   - 当前作用：先判断 token 与 `tushare`/`pandas` 依赖是否就绪，再决定是否继续跑三条 fetcher
-  - 首轮预检结果：
-    - `token_present = false`
+  - 当前预检结果：
+    - `token_present = true`
+    - `token_source = C:\Users\91883\.tushare\token`
     - `pandas.available = true`
     - `tushare.available = true`
-  - 当前结论：`tushare` 依赖已补齐，真实源抓取当前只剩本机 `TUSHARE_TOKEN` 缺失
+  - 当前结论：token 与依赖都已补齐，fetcher 已进入真实权限验证阶段
 
 ## 当前最小命令入口
 
