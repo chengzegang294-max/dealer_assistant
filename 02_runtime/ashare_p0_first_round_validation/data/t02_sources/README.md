@@ -30,10 +30,12 @@
 
 - 当前已完成三条 fetcher 的首轮实跑：
   - `moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
+  - `moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531__metadata.json`
   - `northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
   - `industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
-- 当前三条 metadata 的统一结论：
-  - `status = failed`
-  - `token_source = missing`
-  - `failure_reason = tushare_token_missing`
-- 当前这里已经有硬证据说明“抓取入口存在且已尝试”，但还没有真实 CSV。
+- 当前真实源结论：
+  - `moneyflow` 单标的真源已生成
+  - `moneyflow_batch` 多标的真源已生成
+  - `northbound` trade_date 级真源已生成
+  - `industry` 行业映射真源已生成
+- 当前这里已经有硬证据说明“抓取入口存在且已跑通”，不再只是 metadata failure 落点。

@@ -19,6 +19,7 @@
   - `02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/check_t02_tushare_env_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_batch_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
@@ -91,14 +92,15 @@
     - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 - `T02` 已完成真实宽表拼接入口 smoke-run：
-  - 构建结果：`18` 行候选宽表
-  - join 命中：`moneyflow=18(base)`、`northbound=17`、`regime=0`、`industry=18`
-  - 当前结论：`moneyflow / northbound / industry` 已接入首份真实窄样本宽表，当前只差 `regime`
+  - 构建结果：`90` 行候选宽表
+  - join 命中：`moneyflow=90(base)`、`northbound=85`、`regime=0`、`industry=90`
+  - 当前结论：`moneyflow / northbound / industry` 已接入首份多标的真实宽表，当前只差 `regime`
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
 - `T02` 已补真实源抓取入口：
   - `moneyflow`：复用 `TUSHARE_TOKEN` 合同，拉 `moneyflow + daily`
+  - `moneyflow_batch`：按样本清单批量拉 `moneyflow + daily` 并合并成单份 base CSV
   - `northbound`：复用 `TUSHARE_TOKEN` 合同，拉 `moneyflow_hsgt`
   - `industry`：复用 `TUSHARE_TOKEN` 合同，拉 `stock_basic`
   - 已实际尝试首轮抓取：
@@ -107,9 +109,10 @@
     - `industry` metadata：`data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
   - 二轮实跑结果：
     - `moneyflow`：`status = success`，`rows = 18`
+    - `moneyflow_batch`：`status = success`，`rows = 90`，`symbols = 5`
     - `northbound`：`status = success`，`rows = 17`
     - `industry`：`status = success`，`rows = 5530`
-  - 当前结论：本机 token 与积分权限均已就绪，三条 Tushare 抓取入口已跑通
+  - 当前结论：本机 token 与积分权限均已就绪，当前已跑通单标的与多标的 Tushare 抓取入口
 - `T02` 已补本机环境预检入口：
   - 预检脚本：`check_t02_tushare_env_v1.py`
   - 当前作用：先判断 token 与 `tushare`/`pandas` 依赖是否就绪，再决定是否继续跑三条 fetcher
@@ -120,10 +123,10 @@
     - `tushare.available = true`
   - 当前结论：token 与依赖都已补齐，fetcher 已进入真实权限验证阶段
 - `T02` 已完成首轮真实扫描：
-  - 输入范围：`000001.SZ`，`2026-05-06 -> 2026-05-29`
-  - 扫描结果：`18` 行真实输入、`12` 条触发、`1` 个触发标的
-  - 触发特征：以连续主力资金流出为主，最长连续触发 `12` 个交易日
-  - 当前结论：`T02` 已脱离模板级验证，进入首轮真实窄样本证据阶段；但当前仍不足以外推出全市场阈值结论
+  - 输入范围：`5` 个标的，`2026-05-06 -> 2026-05-29`
+  - 扫描结果：`90` 行真实输入、`41` 条触发、`5` 个触发标的
+  - 触发分布：`000001.SZ=12`、`000002.SZ=9`、`600030.SH=8`、`600519.SH=7`、`300750.SZ=5`
+  - 当前结论：`T02` 已脱离单标的窄样本，进入首轮多标的真实证据阶段；当前更像“偏严格但有效的风险触发口径”，仍需补 `regime` 后继续扩样本
 
 ## 当前最小命令入口
 
@@ -143,6 +146,8 @@
   - `python 02_runtime/ashare_p0_first_round_validation/check_t02_tushare_env_v1.py`
 - `T02 moneyflow 拉取`
   - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py --symbol 000001.SZ --start-date 20260501 --end-date 20260531`
+- `T02 moneyflow 批量拉取`
+  - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_batch_tushare_v1.py --start-date 20260501 --end-date 20260531`
 - `T02 northbound 拉取`
   - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py --start-date 20260501 --end-date 20260531`
 - `T02 industry 拉取`

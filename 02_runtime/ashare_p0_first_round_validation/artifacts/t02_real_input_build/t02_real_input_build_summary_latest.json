@@ -2,9 +2,9 @@
   "producer": "build_t02_real_input_v1.py",
   "scope": "A股 P0 首轮离线验证 T02 真实宽表拼接",
   "status": "success",
-  "base_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531.csv",
+  "base_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531.csv",
   "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build",
-  "row_count": 18,
+  "row_count": 90,
   "join_sources": {
     "moneyflow": "",
     "northbound": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531.csv",
@@ -13,9 +13,9 @@
   },
   "join_hit_counts": {
     "moneyflow": 0,
-    "northbound": 17,
+    "northbound": 85,
     "regime": 0,
-    "industry": 18
+    "industry": 90
   },
   "missing_join_sources": [
     "moneyflow",

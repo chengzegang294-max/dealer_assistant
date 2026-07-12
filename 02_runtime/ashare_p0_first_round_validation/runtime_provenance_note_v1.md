@@ -78,6 +78,17 @@
     - `data/t02_sources/moneyflow_tushare/`
   - 证据强度：
     - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
+- `fetch_t02_moneyflow_batch_tushare_v1.py`
+  - 当前作用：
+    - 读取多标的样本清单，批量拉取 `moneyflow + daily` 并合并成单份 base CSV
+  - 默认输入：
+    - `data/t02_multi_symbol_sample_v1.csv`
+    - `--start-date`
+    - `--end-date`
+  - 默认产物：
+    - `data/t02_sources/moneyflow_tushare/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
 - `fetch_t02_northbound_tushare_v1.py`
   - 当前作用：
     - 复用 `TUSHARE_TOKEN` 合同，拉取 `moneyflow_hsgt` 北向资金时间序列
@@ -162,18 +173,21 @@
   - 仍缺真实资金宽表，模板级结果不用于阈值判断
 - `T02` 当前拼接级结论：
   - 底表拼接链已贯通
-  - 当前首份真实宽表基于 `moneyflow` 作为 base 构建
-  - 当前 `northbound` join 命中 `17/18`
-  - 当前 `industry` join 命中 `18/18`
+  - 当前 latest 真实宽表基于 `moneyflow_batch` 作为 base 构建
+  - 当前 `northbound` join 命中 `85/90`
+  - 当前 `industry` join 命中 `90/90`
   - 当前仍缺 `regime`
 - `T02` 当前抓取级结论：
   - 已补 `moneyflow / northbound / industry` 三条真实源抓取入口
-  - 当前已补三轮实跑 metadata：
+  - 当前已补单标的与多标的两类 moneyflow 入口
+  - 当前已补多轮实跑 metadata：
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
+    - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531__metadata.json`
     - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
     - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
   - 当前实跑结果：
     - `moneyflow`：`status = success`，并已生成真实 CSV
+    - `moneyflow_batch`：`status = success`，`symbols = 5`，并已生成真实 CSV
     - `northbound`：`status = success`，并已生成真实 CSV
     - `industry`：`status = success`，并已生成真实 CSV
 - `T02` 当前预检级结论：
@@ -187,8 +201,8 @@
 - `T02` 还缺首份真实资金字段输入 CSV
 - `T02` 当前已补首份真实扫描结果：
   - 扫描摘要：`artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
-  - 当前结果：`18` 行真实输入、`12` 条触发、`1` 个触发标的
-  - 当前限制：仍是单标的窄样本，不足以直接外推出全市场门槛
+  - 当前结果：`90` 行真实输入、`41` 条触发、`5` 个触发标的
+  - 当前限制：仍是首批 5 标的样本，不足以直接外推出全市场门槛
 - 还未补统一批次汇总脚本
 
 ## 当前回链

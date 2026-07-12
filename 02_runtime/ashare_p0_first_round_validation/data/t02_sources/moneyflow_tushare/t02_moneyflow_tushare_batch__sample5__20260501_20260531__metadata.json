@@ -1,0 +1,72 @@
+{
+  "producer": "fetch_t02_moneyflow_batch_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 多标的主力资金真实源表",
+  "status": "success",
+  "start_date": "20260501",
+  "end_date": "20260531",
+  "symbol_list_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_multi_symbol_sample_v1.csv",
+  "batch_label": "sample5",
+  "token_source": "C:\\Users\\91883\\.tushare\\token",
+  "output_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531.csv",
+  "ratio_formula": "main_fund_net_inflow_ratio = net_mf_amount / (daily.amount / 10.0)",
+  "ratio_unit_note": "moneyflow.net_mf_amount uses 万元; daily.amount uses 千元; ratio saved as decimal 0~1",
+  "rows": 90,
+  "symbols_requested": 5,
+  "symbols_succeeded": 5,
+  "symbols_failed": 0,
+  "per_symbol_results": [
+    {
+      "symbol": "000001.SZ",
+      "symbol_name": "平安银行",
+      "status": "success",
+      "rows": 18,
+      "first_trade_date": "20260506",
+      "last_trade_date": "20260529"
+    },
+    {
+      "symbol": "600030.SH",
+      "symbol_name": "中信证券",
+      "status": "success",
+      "rows": 18,
+      "first_trade_date": "20260506",
+      "last_trade_date": "20260529"
+    },
+    {
+      "symbol": "000002.SZ",
+      "symbol_name": "万科A",
+      "status": "success",
+      "rows": 18,
+      "first_trade_date": "20260506",
+      "last_trade_date": "20260529"
+    },
+    {
+      "symbol": "600519.SH",
+      "symbol_name": "贵州茅台",
+      "status": "success",
+      "rows": 18,
+      "first_trade_date": "20260506",
+      "last_trade_date": "20260529"
+    },
+    {
+      "symbol": "300750.SZ",
+      "symbol_name": "宁德时代",
+      "status": "success",
+      "rows": 18,
+      "first_trade_date": "20260506",
+      "last_trade_date": "20260529"
+    }
+  ],
+  "failures": [],
+  "first_trade_date": "20260506",
+  "last_trade_date": "20260529",
+  "columns": [
+    "trade_date",
+    "symbol",
+    "symbol_name",
+    "main_fund_net_inflow",
+    "main_fund_net_inflow_ratio",
+    "data_source",
+    "asof_date",
+    "notes"
+  ]
+}
