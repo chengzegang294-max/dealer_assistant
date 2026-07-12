@@ -1,0 +1,35 @@
+{
+  "producer": "prepare_t02_fund_flow_input_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 输入归一化",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_fund_flow_input_contract_v1.csv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare",
+  "row_count": 1,
+  "selected_columns": {
+    "trade_date": "trade_date",
+    "symbol": "symbol",
+    "symbol_name": "symbol_name",
+    "main_fund_net_inflow": "main_fund_net_inflow",
+    "main_fund_net_inflow_ratio": "main_fund_net_inflow_ratio",
+    "northbound_net_inflow": "northbound_net_inflow",
+    "northbound_holding_change": "northbound_holding_change",
+    "market_regime_label": "market_regime_label",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close",
+    "prev_close": "prev_close",
+    "volume": "volume",
+    "amount": "amount",
+    "industry_code": "industry_code",
+    "industry_name": "industry_name",
+    "data_source": "data_source",
+    "asof_date": "asof_date",
+    "notes": "notes"
+  },
+  "missing_columns": [],
+  "output_files": {
+    "normalized_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv",
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_input_prepare_summary_latest.json"
+  }
+}

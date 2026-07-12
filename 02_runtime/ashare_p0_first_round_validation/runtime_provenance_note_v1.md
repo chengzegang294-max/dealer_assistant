@@ -30,6 +30,24 @@
     - `artifacts/t01_industry_distribution/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `audit_t02_fund_flow_input_v1.py`
+  - 当前作用：
+    - 审计候选资金宽表是否满足 `T02` 字段合同
+  - 默认输入：
+    - `data/t02_fund_flow_input_contract_v1.csv`
+  - 默认产物：
+    - `artifacts/t02_input_audit/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
+- `prepare_t02_fund_flow_input_v1.py`
+  - 当前作用：
+    - 把候选资金宽表归一化为 `T02` 统一列名
+  - 默认输入：
+    - `data/t02_fund_flow_input_contract_v1.csv`
+  - 默认产物：
+    - `artifacts/t02_input_prepare/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 - `run_t02_fund_flow_scan_v1.py`
   - 当前作用：
     - 扫描资金字段 CSV，输出 `T02` 连续主力资金触发摘要
@@ -81,7 +99,16 @@
   - 当前结论：仅适合做临时行业分布观察，不足以作为正式行业统计真值
 - `T02` 当前已补统一输入合同模板：
   - `data/t02_fund_flow_input_contract_v1.csv`
-- `T02` 还缺首份资金字段输入 CSV
+- `T02` 当前已完成模板级 smoke-run 链：
+  - 审计：`artifacts/t02_input_audit/t02_input_audit_summary_latest.json`
+  - 归一化：`artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
+  - 扫描：`artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
+- `T02` 当前模板级结论：
+  - 字段合同已满足
+  - 归一化链已贯通
+  - runner 已能消费标准化输入
+  - 仍缺真实资金宽表，模板级结果不用于阈值判断
+- `T02` 还缺首份真实资金字段输入 CSV
 - 还未补统一批次汇总脚本
 
 ## 当前回链

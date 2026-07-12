@@ -14,6 +14,8 @@
 - `GENERATOR`:
   - `02_runtime/ashare_p0_first_round_validation/run_t01_volume_price_scan_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t01_industry_distribution_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/audit_t02_fund_flow_input_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
 
 ## 当前范围
@@ -74,6 +76,15 @@
   - 产物：
     - `artifacts/t01_industry_distribution/t01_industry_distribution_summary_latest.json`
     - `artifacts/t01_industry_distribution/t01_industry_trigger_counts_latest.tsv`
+- `T02` 已完成模板级链路 smoke-run：
+  - 输入审计：`contract_ready = true`
+  - 输入归一化：`missing_columns = []`
+  - 扫描结果：`1` 行输入、`0` 条触发
+  - 当前结论：执行链已通，但还缺真实资金宽表
+  - 产物：
+    - `artifacts/t02_input_audit/t02_input_audit_summary_latest.json`
+    - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
+    - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 
 ## 当前最小命令入口
 
@@ -83,6 +94,10 @@
   - `python 02_runtime/ashare_p0_first_round_validation/run_t01_industry_distribution_v1.py`
 - `T02`
   - `python 02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py --input-csv <fund_flow_csv>`
+- `T02 输入审计`
+  - `python 02_runtime/ashare_p0_first_round_validation/audit_t02_fund_flow_input_v1.py`
+- `T02 输入归一化`
+  - `python 02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
 
 ## 当前产物边界
 

@@ -1,0 +1,22 @@
+{
+  "producer": "run_t02_fund_flow_scan_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02",
+  "status": "success",
+  "input_csv": "02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan",
+  "main_flow_ratio_threshold": 0.03,
+  "min_consecutive_days": 2,
+  "rows_scanned": 1,
+  "trigger_rows": 0,
+  "trigger_symbols": 0,
+  "optional_columns": {
+    "northbound_net_inflow": "northbound_net_inflow",
+    "market_regime_label": "market_regime_label"
+  },
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json",
+    "trigger_detail_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_trigger_detail_latest.tsv",
+    "symbol_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_symbol_trigger_counts_latest.tsv",
+    "regime_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_regime_trigger_counts_latest.tsv"
+  }
+}

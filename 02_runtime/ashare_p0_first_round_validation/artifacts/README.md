@@ -49,6 +49,27 @@
     - 行业映射来源：`factors_ladder_20260508.csv`
     - 匹配标的：`17/44`
     - 触发权重覆盖：`181/520`
+- `t02_input_audit/`
+  - `t02_input_audit_summary_latest.json`
+  - `t02_missing_columns_latest.tsv`
+  - 当前口径：
+    - 模板输入行数：`1`
+    - `contract_ready = true`
+- `t02_input_prepare/`
+  - `t02_input_prepare_summary_latest.json`
+  - `t02_fund_flow_input_normalized_latest.csv`
+  - 当前口径：
+    - `missing_columns = []`
+    - 标准化列名链已贯通
+- `t02_fund_flow_scan/`
+  - `t02_fund_flow_scan_summary_latest.json`
+  - `t02_trigger_detail_latest.tsv`
+  - `t02_symbol_trigger_counts_latest.tsv`
+  - `t02_regime_trigger_counts_latest.tsv`
+  - 当前口径：
+    - 模板级 smoke-run
+    - 输入行数：`1`
+    - 触发数：`0`
 
 ## 当前回链
 
