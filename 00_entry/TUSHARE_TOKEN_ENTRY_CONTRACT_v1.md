@@ -28,6 +28,16 @@
 2. `TUSHARE_TOKEN` 可读取，或 `~/.tushare/token` 存在
 3. `pro.daily()` 最小探测通过
 
+## 当前仓内预检入口
+
+- `02_runtime/ashare_p0_first_round_validation/check_t02_tushare_env_v1.py`
+- 当前作用：
+  - 在真正调用 `fetch_t02_*_tushare_v1.py` 之前，先检查：
+    - `TUSHARE_TOKEN`
+    - `~/.tushare/token`
+    - `pandas`
+    - `tushare`
+
 ## 最小探测
 
 ```powershell

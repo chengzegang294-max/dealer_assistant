@@ -115,8 +115,8 @@
   - 首轮预检结果：
     - `token_present = false`
     - `pandas.available = true`
-    - `tushare.available = false`
-  - 当前结论：真实源抓取至少存在两层环境阻塞，先补 token，再安装 `tushare`
+    - `tushare.available = true`
+  - 当前结论：`tushare` 依赖已补齐，真实源抓取当前只剩本机 `TUSHARE_TOKEN` 缺失
 
 ## 当前最小命令入口
 

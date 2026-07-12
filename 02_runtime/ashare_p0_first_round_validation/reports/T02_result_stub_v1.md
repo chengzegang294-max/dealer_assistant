@@ -24,7 +24,7 @@
   - 真实资金宽表尚未接入
   - 当前模板级结果不用于阈值判断
   - `moneyflow / northbound / industry` 首轮抓取均失败于本机 `TUSHARE_TOKEN` 缺失
-  - preflight 进一步确认：`pandas` 已可用，但 `tushare` 仍未安装
+  - preflight 进一步确认：`pandas` 与 `tushare` 已可用，当前只剩 token 阻塞
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
   - 当前宽表拼接脚本已可消费：
@@ -43,7 +43,6 @@
 - 下一步动作：
   - 先跑 `check_t02_tushare_env_v1.py`
   - 设置 `TUSHARE_TOKEN` 或补 `~/.tushare/token`
-  - 安装 `tushare`
   - 重新跑三条 Tushare fetcher，先拿到首份 `moneyflow` 真实 CSV
   - 回填 `data/t02_real_input_sources_manifest_v1.tsv`
   - 再用 `build_t02_real_input_v1.py` 生成首份候选真实宽表

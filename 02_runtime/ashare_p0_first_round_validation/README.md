@@ -30,7 +30,7 @@
 - 首轮 preflight 结果：
   - `token_present = false`
   - `pandas.available = true`
-  - `tushare.available = false`
+  - `tushare.available = true`
 
 ## 当前文件
 

@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 import argparse
-import importlib
 import json
 import os
+import subprocess
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -33,9 +34,21 @@ def write_json(path: Path, payload: dict[str, Any]) -> None:
 
 def probe_import(module_name: str) -> dict[str, Any]:
     try:
-        importlib.import_module(module_name)
-        return {"available": True, "detail": ""}
-    except Exception as exc:  # pragma: no cover
+        completed = subprocess.run(
+            [sys.executable, "-c", f"import {module_name}"],
+            capture_output=True,
+            text=True,
+            timeout=15,
+            check=False,
+        )
+        if completed.returncode == 0:
+            return {"available": True, "detail": ""}
+        detail = (completed.stderr or completed.stdout).strip()
+        return {"available": False, "detail": detail or f"exit_code={completed.returncode}"}
+    except subprocess.TimeoutExpired:  # pragma: no cover
+        return {"available": False, "detail": "import_probe_timeout"}
+    except BaseException as exc:  # pragma: no cover
+        # Keep preflight stable even if a local import probe hits environment-specific issues.
         return {"available": False, "detail": str(exc)}
 
 
@@ -96,7 +109,12 @@ def main() -> int:
         payload["blockers"] = blockers
         if missing_modules:
             payload["missing_modules"] = missing_modules
-        payload["next_action"] = "set TUSHARE_TOKEN, install missing packages, then rerun preflight"
+        if missing_modules and not token:
+            payload["next_action"] = "set TUSHARE_TOKEN, install missing packages, then rerun preflight"
+        elif missing_modules:
+            payload["next_action"] = "install missing packages, then rerun preflight"
+        else:
+            payload["next_action"] = "set TUSHARE_TOKEN or create ~/.tushare/token, then rerun preflight"
         write_json(output_path, payload)
         return 2 if not token else 3
 

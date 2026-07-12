@@ -10,8 +10,8 @@
       "detail": ""
     },
     "tushare": {
-      "available": false,
-      "detail": "No module named 'tushare'"
+      "available": true,
+      "detail": ""
     }
   },
   "output_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json",
@@ -22,11 +22,7 @@
   ],
   "failure_reason": "tushare_token_missing",
   "blockers": [
-    "tushare_token_missing",
-    "dependency_import_failed"
+    "tushare_token_missing"
   ],
-  "missing_modules": [
-    "tushare"
-  ],
-  "next_action": "set TUSHARE_TOKEN, install missing packages, then rerun preflight"
+  "next_action": "set TUSHARE_TOKEN or create ~/.tushare/token, then rerun preflight"
 }

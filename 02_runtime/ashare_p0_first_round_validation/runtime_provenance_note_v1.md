@@ -179,7 +179,7 @@
   - 首轮结果：
     - `token_present = false`
     - `pandas.available = true`
-    - `tushare.available = false`
+    - `tushare.available = true`
 - `T02` 还缺首份真实资金字段输入 CSV
 - 还未补统一批次汇总脚本
 
