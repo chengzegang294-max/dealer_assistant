@@ -1,0 +1,13 @@
+{
+  "producer": "fetch_t02_moneyflow_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 主力资金真实源表",
+  "status": "failed",
+  "symbol": "000001.SZ",
+  "start_date": "20260501",
+  "end_date": "20260531",
+  "token_source": "missing",
+  "output_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531.csv",
+  "ratio_formula": "main_fund_net_inflow_ratio = net_mf_amount / (daily.amount / 10.0)",
+  "ratio_unit_note": "moneyflow.net_mf_amount uses 万元; daily.amount uses 千元; ratio saved as decimal 0~1",
+  "failure_reason": "tushare_token_missing"
+}

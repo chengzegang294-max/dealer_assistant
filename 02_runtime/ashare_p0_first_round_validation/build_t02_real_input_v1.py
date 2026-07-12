@@ -110,9 +110,37 @@ def build_key(row: dict[str, str], fields: list[str]) -> str:
     return "|".join(str(row.get(field, "")).strip() for field in fields)
 
 
-def load_join_map(path: Path, key_fields: list[str]) -> dict[str, dict[str, str]]:
+def load_join_map(
+    path: Path,
+    key_fields: list[str],
+    *,
+    allow_trade_date_fallback: bool = False,
+) -> dict[str, dict[str, str]]:
     _, rows = read_csv(path)
-    return {build_key(row, key_fields): row for row in rows}
+    join_map: dict[str, dict[str, str]] = {}
+    for row in rows:
+        join_map[build_key(row, key_fields)] = row
+        if allow_trade_date_fallback and row.get("trade_date"):
+            join_map[build_key(row, ["trade_date"])] = row
+    return join_map
+
+
+def resolve_join_row(
+    join_name: str,
+    join_map: dict[str, dict[str, str]],
+    row: dict[str, str],
+) -> dict[str, str] | None:
+    primary_key_fields = ["symbol"] if join_name == "industry" else ["trade_date", "symbol"]
+    primary_key = build_key(row, primary_key_fields)
+    if primary_key in join_map:
+        return join_map[primary_key]
+
+    # Allow trade_date-level northbound/regime sources so they do not need to be
+    # expanded to per-symbol rows before entering the build chain.
+    if join_name in {"northbound", "regime"}:
+        fallback_key = build_key(row, ["trade_date"])
+        return join_map.get(fallback_key)
+    return None
 
 
 def append_note(existing_note: str, fragment: str) -> str:
@@ -155,18 +183,19 @@ def main() -> int:
     for name, path in join_sources.items():
         if path and path.exists():
             key_fields = ["symbol"] if name == "industry" else ["trade_date", "symbol"]
-            join_maps[name] = load_join_map(path, key_fields)
+            join_maps[name] = load_join_map(
+                path,
+                key_fields,
+                allow_trade_date_fallback=name in {"northbound", "regime"},
+            )
         else:
             join_maps[name] = {}
 
     built_rows: list[dict[str, str]] = []
     for row in base_rows:
         built_row = {column: str(row.get(column, "")).strip() for column in FINAL_COLUMNS}
-        base_note = built_row.get("notes", "")
         for join_name, columns in JOINABLE_DATASETS.items():
-            key_fields = ["symbol"] if join_name == "industry" else ["trade_date", "symbol"]
-            key = build_key(row, key_fields)
-            join_row = join_maps[join_name].get(key)
+            join_row = resolve_join_row(join_name, join_maps[join_name], row)
             if join_row:
                 join_hit_counts[join_name] += 1
                 for column in columns:

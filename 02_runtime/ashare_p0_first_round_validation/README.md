@@ -19,6 +19,19 @@
   - 真实统计结果
   - 自动化 pipeline
 
+## 当前状态
+
+- `T01` 已有 fresh-run 结果和行业分布补充统计。
+- `T02` 已贯通模板级 scan、真实宽表拼接 smoke-run 和真实源抓取入口。
+- `T02` 真实源抓取已尝试一轮：
+  - `moneyflow / northbound / industry` 三条 fetcher 均已落 failure metadata
+  - 当前统一阻塞：`failure_reason = tushare_token_missing`
+- 当前新增 `check_t02_tushare_env_v1.py`，用于先判定 token 与依赖，再决定是否继续 fetcher。
+- 首轮 preflight 结果：
+  - `token_present = false`
+  - `pandas.available = true`
+  - `tushare.available = false`
+
 ## 当前文件
 
 - `runtime_execution_card_v1.md`
@@ -29,11 +42,16 @@
 - `audit_t02_fund_flow_input_v1.py`
 - `prepare_t02_fund_flow_input_v1.py`
 - `build_t02_real_input_v1.py`
+- `check_t02_tushare_env_v1.py`
+- `fetch_t02_moneyflow_tushare_v1.py`
+- `fetch_t02_northbound_tushare_v1.py`
+- `fetch_t02_industry_map_tushare_v1.py`
 - `run_t02_fund_flow_scan_v1.py`
 - `data/README.md`
 - `data/t02_fund_flow_input_contract_v1.csv`
 - `data/t02_real_input_sources_manifest_v1.tsv`
 - `data/t02_real_input_assembly_note_v1.md`
+- `data/t02_sources/README.md`
 - `reports/README.md`
 - `reports/T01_result_stub_v1.md`
 - `reports/T02_result_stub_v1.md`
@@ -58,6 +76,9 @@
   - `audit_t02_fund_flow_input_v1.py`
   - `prepare_t02_fund_flow_input_v1.py`
   - `build_t02_real_input_v1.py`
+  - `fetch_t02_moneyflow_tushare_v1.py`
+  - `fetch_t02_northbound_tushare_v1.py`
+  - `fetch_t02_industry_map_tushare_v1.py`
   - `run_t02_fund_flow_scan_v1.py`
   - 后续新增的汇总脚本、验收脚本
 - `ARTIFACT`，后续按验证批次决定是否跟踪：

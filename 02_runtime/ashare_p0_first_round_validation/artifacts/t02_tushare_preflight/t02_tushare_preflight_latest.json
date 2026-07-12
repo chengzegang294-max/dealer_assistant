@@ -1,0 +1,32 @@
+{
+  "producer": "check_t02_tushare_env_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 Tushare 抓取环境预检",
+  "status": "failed",
+  "token_source": "missing",
+  "token_present": false,
+  "dependency_status": {
+    "pandas": {
+      "available": true,
+      "detail": ""
+    },
+    "tushare": {
+      "available": false,
+      "detail": "No module named 'tushare'"
+    }
+  },
+  "output_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json",
+  "recommended_fetchers": [
+    "fetch_t02_moneyflow_tushare_v1.py",
+    "fetch_t02_northbound_tushare_v1.py",
+    "fetch_t02_industry_map_tushare_v1.py"
+  ],
+  "failure_reason": "tushare_token_missing",
+  "blockers": [
+    "tushare_token_missing",
+    "dependency_import_failed"
+  ],
+  "missing_modules": [
+    "tushare"
+  ],
+  "next_action": "set TUSHARE_TOKEN, install missing packages, then rerun preflight"
+}

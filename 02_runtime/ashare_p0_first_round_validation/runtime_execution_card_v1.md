@@ -17,6 +17,10 @@
   - `02_runtime/ashare_p0_first_round_validation/audit_t02_fund_flow_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/check_t02_tushare_env_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
 
 ## 当前范围
@@ -93,6 +97,26 @@
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
+- `T02` 已补真实源抓取入口：
+  - `moneyflow`：复用 `TUSHARE_TOKEN` 合同，拉 `moneyflow + daily`
+  - `northbound`：复用 `TUSHARE_TOKEN` 合同，拉 `moneyflow_hsgt`
+  - `industry`：复用 `TUSHARE_TOKEN` 合同，拉 `stock_basic`
+  - 已实际尝试首轮抓取：
+    - `moneyflow` metadata：`data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
+    - `northbound` metadata：`data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+    - `industry` metadata：`data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
+  - 首轮失败原因：
+    - `failure_reason = tushare_token_missing`
+    - `token_source = missing`
+  - 当前结论：真实源落点与抓取入口已具备，当前明确阻塞是本机 `TUSHARE_TOKEN` 缺失
+- `T02` 已补本机环境预检入口：
+  - 预检脚本：`check_t02_tushare_env_v1.py`
+  - 当前作用：先判断 token 与 `tushare`/`pandas` 依赖是否就绪，再决定是否继续跑三条 fetcher
+  - 首轮预检结果：
+    - `token_present = false`
+    - `pandas.available = true`
+    - `tushare.available = false`
+  - 当前结论：真实源抓取至少存在两层环境阻塞，先补 token，再安装 `tushare`
 
 ## 当前最小命令入口
 
@@ -108,6 +132,14 @@
   - `python 02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
 - `T02 真实宽表拼接`
   - `python 02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py --base-csv <base_csv> --moneyflow-csv <moneyflow_csv> --northbound-csv <northbound_csv> --regime-csv <regime_csv> --industry-csv <industry_csv>`
+- `T02 Tushare 环境预检`
+  - `python 02_runtime/ashare_p0_first_round_validation/check_t02_tushare_env_v1.py`
+- `T02 moneyflow 拉取`
+  - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py --symbol 000001.SZ --start-date 20260501 --end-date 20260531`
+- `T02 northbound 拉取`
+  - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py --start-date 20260501 --end-date 20260531`
+- `T02 industry 拉取`
+  - `python 02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
 
 ## 当前产物边界
 

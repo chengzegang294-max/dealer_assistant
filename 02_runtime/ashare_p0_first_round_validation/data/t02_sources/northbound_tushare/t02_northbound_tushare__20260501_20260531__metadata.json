@@ -1,0 +1,11 @@
+{
+  "producer": "fetch_t02_northbound_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 北向真实源表",
+  "status": "failed",
+  "start_date": "20260501",
+  "end_date": "20260531",
+  "token_source": "missing",
+  "output_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531.csv",
+  "join_level": "trade_date",
+  "failure_reason": "tushare_token_missing"
+}

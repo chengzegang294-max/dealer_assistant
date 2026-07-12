@@ -1,0 +1,9 @@
+{
+  "producer": "fetch_t02_industry_map_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 行业映射真实源表",
+  "status": "failed",
+  "list_status": "L",
+  "token_source": "missing",
+  "output_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L.csv",
+  "failure_reason": "tushare_token_missing"
+}

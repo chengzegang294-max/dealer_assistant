@@ -53,10 +53,11 @@
 - `moneyflow`
   - 默认按 `trade_date + symbol` 左连接
 - `northbound`
-  - 默认按 `trade_date + symbol` 左连接
+  - 支持按 `trade_date + symbol` 左连接
+  - 也支持按 `trade_date` 左连接
 - `regime`
-  - 优先按 `trade_date + symbol` 左连接
-  - 若只有 `trade_date` 级别，先扩成可消费结构，再进入拼接脚本
+  - 支持按 `trade_date + symbol` 左连接
+  - 也支持按 `trade_date` 左连接
 - `industry`
   - 默认按 `symbol` 左连接
 
@@ -78,10 +79,26 @@
 
 - 拼接脚本：
   - `02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py`
+- 真实源抓取脚本：
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
 - 源表 manifest：
   - `02_runtime/ashare_p0_first_round_validation/data/t02_real_input_sources_manifest_v1.tsv`
 - 当前模板输入：
   - `02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
+
+## 当前阻塞
+
+- `moneyflow / northbound / industry` 三条 Tushare fetcher 已各自完成首轮实跑，但当前都只生成了 failure metadata。
+- 当前统一阻塞：
+  - `token_source = missing`
+  - `failure_reason = tushare_token_missing`
+- 当前 metadata 入口：
+  - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
+  - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+  - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
+- 因此当前拼接说明继续有效，但还不能把 `moneyflow / northbound / industry` 视为已接入真实表。
 
 ## 当前回链
 

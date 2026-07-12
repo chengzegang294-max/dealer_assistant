@@ -58,6 +58,45 @@
     - `artifacts/t02_real_input_build/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `check_t02_tushare_env_v1.py`
+  - 当前作用：
+    - 先检查本机 `TUSHARE_TOKEN`、`pandas` 和 `tushare` 依赖是否就绪，避免 fetcher 直接撞环境错误
+  - 默认输入：
+    - 本机环境变量和 `~/.tushare/token`
+  - 默认产物：
+    - `artifacts/t02_tushare_preflight/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
+- `fetch_t02_moneyflow_tushare_v1.py`
+  - 当前作用：
+    - 复用 `TUSHARE_TOKEN` 合同，拉取 `moneyflow + daily` 并直接计算 `main_fund_net_inflow_ratio`
+  - 默认输入：
+    - `--symbol`
+    - `--start-date`
+    - `--end-date`
+  - 默认产物：
+    - `data/t02_sources/moneyflow_tushare/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
+- `fetch_t02_northbound_tushare_v1.py`
+  - 当前作用：
+    - 复用 `TUSHARE_TOKEN` 合同，拉取 `moneyflow_hsgt` 北向资金时间序列
+  - 默认输入：
+    - `--start-date`
+    - `--end-date`
+  - 默认产物：
+    - `data/t02_sources/northbound_tushare/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
+- `fetch_t02_industry_map_tushare_v1.py`
+  - 当前作用：
+    - 复用 `TUSHARE_TOKEN` 合同，拉取 `stock_basic` 生成行业映射表
+  - 默认输入：
+    - `--list-status`
+  - 默认产物：
+    - `data/t02_sources/industry_tushare/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
 - `run_t02_fund_flow_scan_v1.py`
   - 当前作用：
     - 扫描资金字段 CSV，输出 `T02` 连续主力资金触发摘要
@@ -125,6 +164,22 @@
   - 底表拼接链已贯通
   - 当前四类 join 源都未接入
   - 下一步只差真实源表落点与真实 join
+- `T02` 当前抓取级结论：
+  - 已补 `moneyflow / northbound / industry` 三条真实源抓取入口
+  - 当前已补首轮 failure metadata：
+    - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
+    - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+    - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
+  - 当前统一失败原因：
+    - `failure_reason = tushare_token_missing`
+    - `token_source = missing`
+- `T02` 当前预检级结论：
+  - 已补 `artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json`
+  - 当前作用是把 token/依赖阻塞前置成单独检查入口
+  - 首轮结果：
+    - `token_present = false`
+    - `pandas.available = true`
+    - `tushare.available = false`
 - `T02` 还缺首份真实资金字段输入 CSV
 - 还未补统一批次汇总脚本
 
