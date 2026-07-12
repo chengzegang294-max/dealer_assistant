@@ -9,7 +9,11 @@
   - `00_entry/A股_P0_离线验证结论门槛__20260712.md`
 - `INDEX_NOTE`:
   - `02_runtime/ashare_p0_first_round_validation/README.md`
+  - `02_runtime/ashare_p0_first_round_validation/artifact_index_v1.tsv`
   - `02_runtime/ashare_p0_first_round_validation/reports/README.md`
+- `GENERATOR`:
+  - `02_runtime/ashare_p0_first_round_validation/run_t01_volume_price_scan_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
 
 ## 当前范围
 
@@ -53,6 +57,22 @@
 - `reports/T04_result_stub_v1.md`
 - `reports/T05_result_stub_v1.md`
 - `reports/first_round_summary_stub_v1.md`
+
+## 当前已验证入口
+
+- `T01` 已完成一轮 smoke-run：
+  - 时间窗：`2025-05-08 -> 2026-05-08`
+  - 摘要：`520` 条触发、`204` 个触发日、峰值日 `19`
+  - 产物：
+    - `artifacts/t01_volume_price_scan/t01_volume_price_scan_summary_latest.json`
+    - `artifacts/t01_volume_price_scan/t01_trigger_detail_latest.tsv`
+
+## 当前最小命令入口
+
+- `T01`
+  - `python 02_runtime/ashare_p0_first_round_validation/run_t01_volume_price_scan_v1.py`
+- `T02`
+  - `python 02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py --input-csv <fund_flow_csv>`
 
 ## 当前产物边界
 

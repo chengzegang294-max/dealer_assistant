@@ -1,0 +1,26 @@
+{
+  "producer": "run_t01_volume_price_scan_v1.py",
+  "scope": "A股 P0 首轮离线验证 T01",
+  "status": "success",
+  "input_dir": "D:/Stock/trading_assistant/02_runtime/butler_r0_ohlcv_object_cards/data/raw/daily_ohlcv/batch09_promoted/ashare_clean",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan",
+  "volume_ratio_threshold": 1.8,
+  "pct_change_threshold": 4.5,
+  "start_date": "2025-05-08",
+  "end_date": "2026-05-08",
+  "files_scanned": 46,
+  "files_failed": [],
+  "rows_scanned": 26027,
+  "trigger_rows": 520,
+  "trigger_days": 204,
+  "trigger_symbols": 44,
+  "daily_avg_trigger_count": 2.54902,
+  "daily_peak_trigger_count": 19,
+  "daily_median_like_trigger_count": 2,
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan/t01_volume_price_scan_summary_latest.json",
+    "trigger_detail_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan/t01_trigger_detail_latest.tsv",
+    "daily_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan/t01_daily_trigger_counts_latest.tsv",
+    "symbol_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan/t01_symbol_trigger_counts_latest.tsv"
+  }
+}

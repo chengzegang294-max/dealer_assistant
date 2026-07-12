@@ -22,6 +22,10 @@
 ## 当前文件
 
 - `runtime_execution_card_v1.md`
+- `artifact_index_v1.tsv`
+- `runtime_provenance_note_v1.md`
+- `run_t01_volume_price_scan_v1.py`
+- `run_t02_fund_flow_scan_v1.py`
 - `reports/README.md`
 - `reports/T01_result_stub_v1.md`
 - `reports/T02_result_stub_v1.md`
@@ -36,10 +40,14 @@
 - `INDEX_NOTE`，应跟踪：
   - `README.md`
   - `runtime_execution_card_v1.md`
+  - `artifact_index_v1.tsv`
+  - `runtime_provenance_note_v1.md`
   - `reports/*.md`
   - `artifacts/README.md`
 - `GENERATOR`，后续应跟踪：
-  - 本目录下实际新增的首轮扫描脚本、汇总脚本、验收脚本
+  - `run_t01_volume_price_scan_v1.py`
+  - `run_t02_fund_flow_scan_v1.py`
+  - 后续新增的汇总脚本、验收脚本
 - `ARTIFACT`，后续按验证批次决定是否跟踪：
   - `artifacts/**`
 - `IGNORE_LOCAL_TEMP`，应忽略：

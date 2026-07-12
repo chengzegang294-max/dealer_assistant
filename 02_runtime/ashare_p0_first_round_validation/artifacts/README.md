@@ -30,6 +30,17 @@
   - `status`
   - `evidence_mode`
 
+## 当前已存在产物
+
+- `t01_volume_price_scan/`
+  - `t01_volume_price_scan_summary_latest.json`
+  - `t01_trigger_detail_latest.tsv`
+  - `t01_daily_trigger_counts_latest.tsv`
+  - `t01_symbol_trigger_counts_latest.tsv`
+  - 当前口径：
+    - 时间窗：`2025-05-08 -> 2026-05-08`
+    - 结果摘要：`520` 条触发、`204` 个触发日、峰值日 `19`
+
 ## 当前回链
 
 - runtime 执行卡：
