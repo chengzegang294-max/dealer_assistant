@@ -8,7 +8,7 @@
 
 ## first-hop 入口
 
-- `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化资产配置_研究PDF_总摘要_v1.md`
+- `../batch_143_group08_rotation_style_contract_absorb__20260713/02_absorb_index/group08_rotation_style_contract_decision_v1.md`
 
 ## 对象快入口
 
@@ -17,17 +17,19 @@
 ## 最顺阅读顺序
 
 - 第一步：
-  - 先看 `A股_量化资产配置_研究PDF_总摘要_v1.md`
+  - 先看 `../batch_143_group08_rotation_style_contract_absorb__20260713/02_absorb_index/group08_rotation_style_contract_decision_v1.md`
 - 第二步：
-  - 再看 `A-C01 ~ A-C04` 候选，优先判断行业轮动与风格轮动的可重开价值
+  - 再看 `../batch_143_group08_rotation_style_contract_absorb__20260713/bundle/contracts/group08_rotation_style_p0_min_contract_v1.md`
+  - 再看 `../batch_143_group08_rotation_style_contract_absorb__20260713/bundle/fields/group08_rotation_style_field_dictionary_v1.tsv`
 - 第三步：
+  - 若要回看研究摘要与 `A-C01 ~ A-C04`，再回 `../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化资产配置_研究PDF_总摘要_v1.md`
   - 若要直接进入当前最顺对象，转到 `object_entry/industry_rotation_signal_object_entry_v1.md`
 
 ## 当前边界
 
 - 当前主题入口主要服务：
-  - 行业轮动与风格轮动研究摘要
-  - 资产配置侧的候选聚合与 first-hop 导航
+  - 行业轮动与风格轮动合同层 first-hop
+  - 资产配置侧候选的冻结入口与 first-hop 导航
 - 当前不承担：
   - 正式资产配置模块执行入口
   - 组合层默认资金分配裁决

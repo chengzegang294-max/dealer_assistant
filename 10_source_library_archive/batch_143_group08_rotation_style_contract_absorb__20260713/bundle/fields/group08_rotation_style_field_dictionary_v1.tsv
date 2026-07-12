@@ -1,0 +1,23 @@
+field_name	field_role	type	required	source_family	minimal_definition
+trade_id	core_id	string	yes	all	样本内唯一 id
+signal_date	core_time	string	yes	all	信号日期
+rotation_signal_family	core_label	string	yes	all	轮动信号家族标签
+market_scope	core_label	string	yes	all	市场范围标签
+ranking_window_weeks	core_param	number	no	residual_momentum	观察期周数
+holding_horizon_weeks	core_param	number	no	residual_momentum	持有期周数
+gap_window_weeks	core_param	number	no	residual_momentum	间隔期周数
+residual_momentum_score	core_metric	number	no	residual_momentum	残差动量排序分数
+turnover_delta	ext_metric	number	no	residual_momentum	间隔期换手率相对变化
+up_down_ratio_value	core_metric	number	no	up_down_ratio	涨跌比指标值
+upper_threshold	core_param	number	no	up_down_ratio	上阈值
+lower_threshold	core_param	number	no	up_down_ratio	下阈值
+sector_effect_label	core_label	string	no	sector_effect_cross_alpha	行业动量与个股强弱交叉标签
+hedge_required	ext_flag	string	no	sector_effect_cross_alpha	是否需要对冲
+fund_holding_relative_exposure	core_metric	number	no	fund_holding_style_rotation	相对持仓或其平滑值
+rotation_signal_state	output_state	string	yes	all	轮动状态
+rotation_bias	output_bias	string	yes	all	轮动偏向
+portfolio_side	output_portfolio	string	yes	all	组合侧标签
+long_short_bucket	output_bucket	string	yes	all	分桶或组合输出标签
+confidence_note	output_note	string	yes	all	置信说明
+rotation_model_state	output_state	string	yes	all	模型状态
+proof_basis	output_note	string	yes	all	依据简述

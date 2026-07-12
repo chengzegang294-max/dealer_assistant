@@ -8,23 +8,22 @@
 
 ## first-hop 入口
 
-- `../../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化资产配置_研究PDF_总摘要_v1.md`
+- `../../batch_143_group08_rotation_style_contract_absorb__20260713/bundle/contracts/group08_rotation_style_p0_min_contract_v1.md`
 
 ## 默认阅读顺序
 
 - 先看：
+  - `../../batch_143_group08_rotation_style_contract_absorb__20260713/bundle/contracts/group08_rotation_style_p0_min_contract_v1.md`
+  - `../../batch_143_group08_rotation_style_contract_absorb__20260713/bundle/fields/group08_rotation_style_field_dictionary_v1.tsv`
+- 再回看：
   - `A-C01` 残差动量多空行业配置模型
   - `A-C02` 涨跌比行业择时与轮动体系
   - `A-C03` 板块效应动量-反转交叉 Alpha
   - `A-C04` 公募基金持仓测算风格轮动
-- 若后续要对象化，优先抽：
-  - 行业排序输出
-  - 多空组合标签
-  - 风格轮动信号与阈值
 
 ## 当前边界
 
-- 当前对象入口服务于资产配置研究摘要与候选整理。
+- 当前对象入口服务于行业轮动与风格轮动合同冻结入口。
 - 当前不代表已形成正式配置引擎或仓位默认模块。
 
 ## 回链
