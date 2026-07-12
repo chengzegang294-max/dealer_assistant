@@ -39,6 +39,7 @@
   - `batch_120_tools_workspace_absorb__20260709/README.md`
   - `batch_131_trae_system_selected_absorb__20260709/README.md`
   - `batch_140_tushare_tdx_data_source_absorb__20260712/README.md`
+  - `batch_141_trend_rotation_positioning_absorb__20260712/README.md`
 - `archive_only / staging / raw_truth_side`：
   - `batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/README.md`
   - `mirror_kimi_inbox/README_放这里.md`
@@ -66,7 +67,7 @@
   - `batch_09 / batch_100 / batch_101` 继续承担历史对齐与边界批职责
   - `batch_102 ~ batch_106` 已形成原子方法对象束，承接 `KD / RSJ / 高频价量相关性 / 四轴状态 / VanTharp R`
   - `batch_107 / batch_108 / batch_109` 已形成公开资料与方法参考稳定 bundle
-  - `batch_110 / batch_120 / batch_131 / batch_132 / batch_140` 继续承接外部吸收批、工具工作区回收批、系统材料与数据源吸收批
+  - `batch_110 / batch_120 / batch_131 / batch_132 / batch_140 / batch_141` 继续承接外部吸收批、工具工作区回收批、系统材料、数据源吸收批与仓位桥接吸收批
 - `batch_01_youzi_truth_anchors` 仍是首批锚点，不再是唯一批次。
 - 后续每一批迁入都要先完成四分流，再进入本层。
 
@@ -95,6 +96,9 @@
   - `多因子相关性选股` 先看 `topic_entry/multi_factor_correlation_stock_selection_topic_entry_v1.md`
   - `动态因子有效性` 先看 `topic_entry/dynamic_factor_validity_topic_entry_v1.md`
   - `市场择时信号` 先看 `topic_entry/market_timing_signal_topic_entry_v1.md`
+- 想直接找 `趋势仓位 / 轮动仓位` 这组桥接资料：
+  - 先看 `topic_entry/trend_rotation_positioning_topic_entry_v1.md`
+  - 再按对象进入 `topic_entry/object_entry/`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -114,7 +118,7 @@
 - `stable_bundle`
   - 已从边界批中提升出来、可以直接作为方法参考入口的稳定包；原子方法对象束优先看 `batch_102 ~ batch_106`，公开方法参考优先看 `batch_107 / batch_108 / batch_109`
 - `absorb_batch`
-  - 新近吸收的外部材料、系统材料与工作区回收批；优先看 `batch_110 / batch_120 / batch_131 / batch_140`
+  - 新近吸收的外部材料、系统材料、工作区回收批与仓位桥接批；优先看 `batch_110 / batch_120 / batch_131 / batch_140 / batch_141`
 - `archive_only_absorb`
   - 只保留追溯价值，不作为 first-hop 默认入口；当前看 `batch_132`
 - `staging_area / raw_truth_side`
@@ -145,6 +149,8 @@
   - `topic_entry/dynamic_factor_validity_topic_entry_v1.md`
 - `市场择时信号`
   - `topic_entry/market_timing_signal_topic_entry_v1.md`
+- `趋势仓位与轮动仓位`
+  - `topic_entry/trend_rotation_positioning_topic_entry_v1.md`
 
 ## 对象入口
 
@@ -184,6 +190,10 @@
   - `topic_entry/object_entry/dynamic_factor_validity_object_entry_v1.md`
 - `市场择时信号对象`
   - `topic_entry/object_entry/market_timing_signal_object_entry_v1.md`
+- `趋势仓位对象`
+  - `topic_entry/object_entry/trend_position_object_entry_v1.md`
+- `轮动仓位对象`
+  - `topic_entry/object_entry/rotation_position_object_entry_v1.md`
 
 ## 批次记录模板
 

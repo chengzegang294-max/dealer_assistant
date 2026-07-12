@@ -26,6 +26,8 @@
 - `相关性选股框架对象`
 - `动态因子有效性对象`
 - `市场择时信号对象`
+- `趋势仓位对象`
+- `轮动仓位对象`
 
 ## 默认入口
 
@@ -50,6 +52,8 @@
 - `correlation_stock_selection_framework_object_entry_v1.md`
 - `dynamic_factor_validity_object_entry_v1.md`
 - `market_timing_signal_object_entry_v1.md`
+- `trend_position_object_entry_v1.md`
+- `rotation_position_object_entry_v1.md`
 
 ## 使用边界
 

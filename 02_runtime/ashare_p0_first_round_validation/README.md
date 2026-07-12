@@ -22,15 +22,14 @@
 ## 当前状态
 
 - `T01` 已有 fresh-run 结果和行业分布补充统计。
-- `T02` 已贯通模板级 scan、真实宽表拼接 smoke-run 和真实源抓取入口。
-- `T02` 真实源抓取已尝试一轮：
-  - `moneyflow / northbound / industry` 三条 fetcher 均已落 failure metadata
-  - 当前统一阻塞：`failure_reason = tushare_token_missing`
-- 当前新增 `check_t02_tushare_env_v1.py`，用于先判定 token 与依赖，再决定是否继续 fetcher。
-- 首轮 preflight 结果：
-  - `token_present = false`
-  - `pandas.available = true`
-  - `tushare.available = true`
+- `T02` 已贯通真实源抓取、真实宽表拼接、扩样验证和长窗稳定性复核。
+- `T02` 当前已形成项目裁决：
+  - 全局保留 `3% + 连续2日`
+  - `2.5% + 连续2日 + 排除 G03_震荡` 只保留为 `watchlist_only`
+- `T03 / T04 / T05` 当前仍在待推进状态。
+- 当前已新增桥接参考：
+  - `00_entry/A股_P0_趋势仓位与轮动仓位桥接卡__20260712.md`
+  - 只作为解释层与风险预算层参考，不直接改写默认 runtime 门控
 
 ## 当前文件
 
@@ -92,8 +91,9 @@
 
 1. 先看 `00_entry/A股_P0_功能合同__20260711.md`
 2. 再看 `00_entry/A股_P0_离线验证执行卡__20260712.md`
-3. 再看 `runtime_execution_card_v1.md`
-4. 最后把结果落到 `reports/` 和 `artifacts/`
+3. 若涉及趋势仓位或轮动仓位，再看 `00_entry/A股_P0_趋势仓位与轮动仓位桥接卡__20260712.md`
+4. 再看 `runtime_execution_card_v1.md`
+5. 最后把结果落到 `reports/` 和 `artifacts/`
 
 ## 当前回链
 
@@ -103,5 +103,7 @@
   - `00_entry/A股_P0_验证任务单__20260711.md`
 - 离线验证执行卡：
   - `00_entry/A股_P0_离线验证执行卡__20260712.md`
+- 趋势仓位与轮动仓位桥接卡：
+  - `00_entry/A股_P0_趋势仓位与轮动仓位桥接卡__20260712.md`
 - 离线验证产出落点说明：
   - `00_entry/A股_P0_离线验证产出落点说明__20260712.md`

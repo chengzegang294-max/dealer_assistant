@@ -19,6 +19,7 @@
 - `多因子相关性选股`
 - `动态因子有效性`
 - `市场择时信号`
+- `趋势仓位与轮动仓位`
 
 ## 默认入口
 
@@ -38,6 +39,7 @@
 - `multi_factor_correlation_stock_selection_topic_entry_v1.md`
 - `dynamic_factor_validity_topic_entry_v1.md`
 - `market_timing_signal_topic_entry_v1.md`
+- `trend_rotation_positioning_topic_entry_v1.md`
 
 ## 对象入口层
 
@@ -77,6 +79,10 @@
   - `object_entry/dynamic_factor_validity_object_entry_v1.md`
 - `市场择时信号对象`
   - `object_entry/market_timing_signal_object_entry_v1.md`
+- `趋势仓位对象`
+  - `object_entry/trend_position_object_entry_v1.md`
+- `轮动仓位对象`
+  - `object_entry/rotation_position_object_entry_v1.md`
 
 ## 跨主题总检索
 
