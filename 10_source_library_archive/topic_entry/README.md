@@ -13,6 +13,7 @@
 - `系统吸收与正文回收`
 - `外部吸收与回收提升`
 - `原子方法对象孵化`
+- `财报估值与组合管理`
 
 ## 默认入口
 
@@ -26,6 +27,7 @@
 - `trae_system_absorb_topic_entry_v1.md`
 - `external_absorb_recovery_topic_entry_v1.md`
 - `atomic_method_incubation_topic_entry_v1.md`
+- `finance_valuation_portfolio_topic_entry_v1.md`
 
 ## 对象入口层
 
@@ -47,6 +49,14 @@
   - `object_entry/four_axis_state_object_entry_v1.md`
 - `VanTharp R对象`
   - `object_entry/vantharp_r_object_entry_v1.md`
+- `量化权益组合管理对象`
+  - `object_entry/quant_equity_portfolio_object_entry_v1.md`
+- `主动组合管理对象`
+  - `object_entry/active_portfolio_management_object_entry_v1.md`
+- `上市公司财报估值对象`
+  - `object_entry/listed_company_valuation_object_entry_v1.md`
+- `郭永清财报估值对象`
+  - `object_entry/guo_yongqing_financial_statement_object_entry_v1.md`
 
 ## 跨主题总检索
 

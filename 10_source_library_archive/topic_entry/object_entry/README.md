@@ -17,6 +17,10 @@
 - `高频价量相关性对象`
 - `四轴状态模板对象`
 - `VanTharp R对象`
+- `量化权益组合管理对象`
+- `主动组合管理对象`
+- `上市公司财报估值对象`
+- `郭永清财报估值对象`
 
 ## 默认入口
 
@@ -32,6 +36,10 @@
 - `pv_corr_object_entry_v1.md`
 - `four_axis_state_object_entry_v1.md`
 - `vantharp_r_object_entry_v1.md`
+- `quant_equity_portfolio_object_entry_v1.md`
+- `active_portfolio_management_object_entry_v1.md`
+- `listed_company_valuation_object_entry_v1.md`
+- `guo_yongqing_financial_statement_object_entry_v1.md`
 
 ## 使用边界
 

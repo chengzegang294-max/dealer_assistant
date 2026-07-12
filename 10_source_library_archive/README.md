@@ -86,6 +86,9 @@
 - 想直接找 `KD / RSJ / 高频价量相关性 / 四轴状态 / VanTharp R` 这组原子方法对象：
   - 先看 `topic_entry/atomic_method_incubation_topic_entry_v1.md`
   - 再按对象进入 `topic_entry/object_entry/`
+- 想直接找 `财报 / 估值 / 组合管理` 这组稳定切分对象：
+  - 先看 `topic_entry/finance_valuation_portfolio_topic_entry_v1.md`
+  - 再按对象进入 `topic_entry/object_entry/`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -124,6 +127,8 @@
   - `topic_entry/external_absorb_recovery_topic_entry_v1.md`
 - `原子方法对象孵化`
   - `topic_entry/atomic_method_incubation_topic_entry_v1.md`
+- `财报估值与组合管理`
+  - `topic_entry/finance_valuation_portfolio_topic_entry_v1.md`
 
 ## 对象入口
 
@@ -145,6 +150,14 @@
   - `topic_entry/object_entry/four_axis_state_object_entry_v1.md`
 - `VanTharp R对象`
   - `topic_entry/object_entry/vantharp_r_object_entry_v1.md`
+- `量化权益组合管理对象`
+  - `topic_entry/object_entry/quant_equity_portfolio_object_entry_v1.md`
+- `主动组合管理对象`
+  - `topic_entry/object_entry/active_portfolio_management_object_entry_v1.md`
+- `上市公司财报估值对象`
+  - `topic_entry/object_entry/listed_company_valuation_object_entry_v1.md`
+- `郭永清财报估值对象`
+  - `topic_entry/object_entry/guo_yongqing_financial_statement_object_entry_v1.md`
 
 ## 批次记录模板
 
