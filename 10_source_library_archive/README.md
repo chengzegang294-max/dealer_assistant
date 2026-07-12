@@ -9,18 +9,27 @@
 
 - 根层总导航：
   - `archive_batch_index_v1.tsv`
-- 真值锚点首批入口：
+
+## 三级导航
+
+- 必看：
   - `batch_01_youzi_truth_anchors/README.md`
-- 历史对齐总边界：
   - `batch_09_legacy_source_library_alignment__20260707/README.md`
-- 当前吸收批次代表：
+  - `archive_batch_index_v1.tsv`
+- 可选看：
+  - `batch_100_non_kimi_public_methods_boundary__20260707/README.md`
+  - `batch_101_non_kimi_atomic_rules_boundary__20260707/README.md`
+  - `batch_107_non_kimi_public_batch9_bundle__20260707/README.md`
+  - `batch_108_non_kimi_nftradez_method_bundle__20260707/README.md`
+  - `batch_109_non_kimi_smile_smc_method_bundle__20260707/README.md`
   - `batch_110_external_folder_absorb__20260708/README.md`
   - `batch_120_tools_workspace_absorb__20260709/README.md`
   - `batch_131_trae_system_selected_absorb__20260709/README.md`
-  - `batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/README.md`
   - `batch_140_tushare_tdx_data_source_absorb__20260712/README.md`
-- 中转与原件侧：
+- `archive_only / staging / raw_truth_side`：
+  - `batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/README.md`
   - `mirror_kimi_inbox/README_放这里.md`
+  - `mirror_kimi_inbox/GROUP_08_A股量化_数据研究/GROUP_08_短索引入口_v1.md`
   - `raw_assets/README.md`
 
 ## 允许进入
@@ -46,6 +55,20 @@
   - `batch_110 / batch_120 / batch_131 / batch_132 / batch_140` 继续承接外部吸收批、工具工作区回收批、系统材料与数据源吸收批
 - `batch_01_youzi_truth_anchors` 仍是首批锚点，不再是唯一批次。
 - 后续每一批迁入都要先完成四分流，再进入本层。
+
+## 你该怎么进
+
+- 想先看来源层全局结构：
+  - 先看 `archive_batch_index_v1.tsv`
+- 想找稳定真值锚点与历史对齐边界：
+  - 先看 `batch_01` 与 `batch_09`
+- 想看较新的吸收批：
+  - 先看对应批次 README，再看批次内的 `family_entry_map_v1.tsv`
+- 想看待入库资料而不是正式来源层：
+  - 先去 `mirror_kimi_inbox/README_放这里.md`
+  - 若当前就是 A 股量化资料，直接进 `GROUP_08_短索引入口_v1.md`
+- 想找原件真值：
+  - 直接去 `raw_assets/README.md`
 
 ## 批次分组
 

@@ -30,7 +30,17 @@
 
 ## 当前入口
 
+- `01_index/family_entry_map_v1.tsv`
 - `manifest_v1.tsv`
 - `provenance.md`
 - `02_absorb_index/tushare_tdx_tutorial_core_digest_v1.md`
 - `02_absorb_index/ashare_p0_data_source_decision_v1.md`
+
+## 默认阅读顺序
+
+- 先看当前 README，确认这批是外部教程吸收批，不是默认真值合同。
+- 再看 `01_index/family_entry_map_v1.tsv`，决定是：
+  - 看教程核心摘要
+  - 看项目数据源裁决
+  - 还是回到原始导出稿快照
+- 若目标是当前项目怎么选数据源，优先看 `ashare_p0_data_source_decision_v1.md`。

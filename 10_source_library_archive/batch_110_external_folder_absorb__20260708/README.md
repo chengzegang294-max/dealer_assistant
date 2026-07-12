@@ -26,6 +26,16 @@
 
 ## 当前入口
 
+- `01_index/family_entry_map_v1.tsv`
 - `01_kimi_outputs/TRADING_BLOGGER_REFERENCE_v1.0.md`
 - `manifest_v1.tsv`
 - `provenance.md`
+
+## 默认阅读顺序
+
+- 先看当前 README，确认它是 absorb 批，不是 raw snapshot 默认阅读入口。
+- 再看 `01_index/family_entry_map_v1.tsv`，判断当前要去：
+  - `02_absorb_index/` 做吸收索引与映射
+  - `03_quantize/` 看对象化/代码提升
+  - `04_runtime/` 看回收的运行时证据
+- 最后才在 `00_raw_snapshot/` 回看原样快照。
