@@ -12,6 +12,7 @@
 - `A股数据源决策`
 - `系统吸收与正文回收`
 - `外部吸收与回收提升`
+- `原子方法对象孵化`
 
 ## 默认入口
 
@@ -24,6 +25,7 @@
 - `ashare_data_source_decision_topic_entry_v1.md`
 - `trae_system_absorb_topic_entry_v1.md`
 - `external_absorb_recovery_topic_entry_v1.md`
+- `atomic_method_incubation_topic_entry_v1.md`
 
 ## 对象入口层
 
@@ -35,6 +37,16 @@
   - `object_entry/trae_system_selected_object_entry_v1.md`
 - `外部吸收提升对象`
   - `object_entry/external_absorb_recovery_object_entry_v1.md`
+- `多周期KD对象`
+  - `object_entry/kd_mtf_object_entry_v1.md`
+- `RSJ状态对象`
+  - `object_entry/rsj_state_object_entry_v1.md`
+- `高频价量相关性对象`
+  - `object_entry/pv_corr_object_entry_v1.md`
+- `四轴状态模板对象`
+  - `object_entry/four_axis_state_object_entry_v1.md`
+- `VanTharp R对象`
+  - `object_entry/vantharp_r_object_entry_v1.md`
 
 ## 跨主题总检索
 

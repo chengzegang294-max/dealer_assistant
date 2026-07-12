@@ -12,6 +12,11 @@
 - `A股数据源裁决对象`
 - `系统吸收对象`
 - `外部吸收提升对象`
+- `多周期KD对象`
+- `RSJ状态对象`
+- `高频价量相关性对象`
+- `四轴状态模板对象`
+- `VanTharp R对象`
 
 ## 默认入口
 
@@ -22,6 +27,11 @@
 - `ashare_data_source_decision_object_entry_v1.md`
 - `trae_system_selected_object_entry_v1.md`
 - `external_absorb_recovery_object_entry_v1.md`
+- `kd_mtf_object_entry_v1.md`
+- `rsj_state_object_entry_v1.md`
+- `pv_corr_object_entry_v1.md`
+- `four_axis_state_object_entry_v1.md`
+- `vantharp_r_object_entry_v1.md`
 
 ## 使用边界
 

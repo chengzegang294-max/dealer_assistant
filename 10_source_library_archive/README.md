@@ -27,6 +27,11 @@
 - 可选看：
   - `batch_100_non_kimi_public_methods_boundary__20260707/README.md`
   - `batch_101_non_kimi_atomic_rules_boundary__20260707/README.md`
+  - `batch_102_non_kimi_atomic_kd_mtf_bundle__20260707/README.md`
+  - `batch_103_non_kimi_atomic_rsj_state_bundle__20260707/README.md`
+  - `batch_104_non_kimi_atomic_pv_corr_bundle__20260707/README.md`
+  - `batch_105_non_kimi_atomic_four_axis_state_bundle__20260707/README.md`
+  - `batch_106_non_kimi_atomic_vantharp_r_bundle__20260707/README.md`
   - `batch_107_non_kimi_public_batch9_bundle__20260707/README.md`
   - `batch_108_non_kimi_nftradez_method_bundle__20260707/README.md`
   - `batch_109_non_kimi_smile_smc_method_bundle__20260707/README.md`
@@ -59,6 +64,7 @@
 - 当前已形成多批次归档：
   - `batch_01_youzi_truth_anchors` 作为首批真值锚点
   - `batch_09 / batch_100 / batch_101` 继续承担历史对齐与边界批职责
+  - `batch_102 ~ batch_106` 已形成原子方法对象束，承接 `KD / RSJ / 高频价量相关性 / 四轴状态 / VanTharp R`
   - `batch_107 / batch_108 / batch_109` 已形成公开资料与方法参考稳定 bundle
   - `batch_110 / batch_120 / batch_131 / batch_132 / batch_140` 继续承接外部吸收批、工具工作区回收批、系统材料与数据源吸收批
 - `batch_01_youzi_truth_anchors` 仍是首批锚点，不再是唯一批次。
@@ -77,6 +83,9 @@
 - 想按高频对象一跳进入：
   - 先看 `topic_entry/object_entry/README.md`
   - 再看 `topic_entry/object_entry/object_entry_index_v1.tsv`
+- 想直接找 `KD / RSJ / 高频价量相关性 / 四轴状态 / VanTharp R` 这组原子方法对象：
+  - 先看 `topic_entry/atomic_method_incubation_topic_entry_v1.md`
+  - 再按对象进入 `topic_entry/object_entry/`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -94,7 +103,7 @@
 - `alignment_boundary`
   - 历史来源库对齐、边界判断、最小搬迁判断；优先看 `batch_09 / batch_100 / batch_101`
 - `stable_bundle`
-  - 已从边界批中提升出来、可以直接作为方法参考入口的稳定包；优先看 `batch_107 / batch_108 / batch_109`
+  - 已从边界批中提升出来、可以直接作为方法参考入口的稳定包；原子方法对象束优先看 `batch_102 ~ batch_106`，公开方法参考优先看 `batch_107 / batch_108 / batch_109`
 - `absorb_batch`
   - 新近吸收的外部材料、系统材料与工作区回收批；优先看 `batch_110 / batch_120 / batch_131 / batch_140`
 - `archive_only_absorb`
@@ -113,6 +122,8 @@
   - `topic_entry/trae_system_absorb_topic_entry_v1.md`
 - `外部吸收与回收提升`
   - `topic_entry/external_absorb_recovery_topic_entry_v1.md`
+- `原子方法对象孵化`
+  - `topic_entry/atomic_method_incubation_topic_entry_v1.md`
 
 ## 对象入口
 
@@ -124,6 +135,16 @@
   - `topic_entry/object_entry/trae_system_selected_object_entry_v1.md`
 - `外部吸收提升对象`
   - `topic_entry/object_entry/external_absorb_recovery_object_entry_v1.md`
+- `多周期KD对象`
+  - `topic_entry/object_entry/kd_mtf_object_entry_v1.md`
+- `RSJ状态对象`
+  - `topic_entry/object_entry/rsj_state_object_entry_v1.md`
+- `高频价量相关性对象`
+  - `topic_entry/object_entry/pv_corr_object_entry_v1.md`
+- `四轴状态模板对象`
+  - `topic_entry/object_entry/four_axis_state_object_entry_v1.md`
+- `VanTharp R对象`
+  - `topic_entry/object_entry/vantharp_r_object_entry_v1.md`
 
 ## 批次记录模板
 
