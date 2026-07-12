@@ -1,0 +1,28 @@
+# AShare P0 First Round Summary Stub v1
+
+## 用途
+
+- 汇总 `T01 ~ T05` 的首轮离线验证结果。
+- 当前先作为汇总页占位，后续按真实结果原位增强。
+
+## 当前预留结构
+
+- 本轮完成项：
+  - 待填写
+- 保留项：
+  - 待填写
+- 微调项：
+  - 待填写
+- 降级项：
+  - 待填写
+- 暂缓项：
+  - 待填写
+- 是否建议回写主合同：
+  - `yes / no / partial`
+
+## 回链
+
+- runtime 执行卡：
+  - `02_runtime/ashare_p0_first_round_validation/runtime_execution_card_v1.md`
+- 离线验证结论门槛：
+  - `00_entry/A股_P0_离线验证结论门槛__20260712.md`
