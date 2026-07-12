@@ -40,6 +40,15 @@
   - 当前口径：
     - 时间窗：`2025-05-08 -> 2026-05-08`
     - 结果摘要：`520` 条触发、`204` 个触发日、峰值日 `19`
+- `t01_industry_distribution/`
+  - `t01_industry_distribution_summary_latest.json`
+  - `t01_industry_trigger_counts_latest.tsv`
+  - `t01_symbol_industry_join_latest.tsv`
+  - `t01_unmatched_symbols_latest.tsv`
+  - 当前口径：
+    - 行业映射来源：`factors_ladder_20260508.csv`
+    - 匹配标的：`17/44`
+    - 触发权重覆盖：`181/520`
 
 ## 当前回链
 

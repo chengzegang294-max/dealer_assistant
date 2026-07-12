@@ -7,6 +7,8 @@
 
 ## 当前预留结构
 
+- 输入模板：
+  - `data/t02_fund_flow_input_contract_v1.csv`
 - 验证范围：
   - 待填写
 - 输入口径：

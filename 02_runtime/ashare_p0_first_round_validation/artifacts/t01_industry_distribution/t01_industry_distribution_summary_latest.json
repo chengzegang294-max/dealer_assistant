@@ -1,0 +1,48 @@
+{
+  "producer": "run_t01_industry_distribution_v1.py",
+  "scope": "A股 P0 首轮离线验证 T01 行业分布",
+  "status": "success",
+  "trigger_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_volume_price_scan/t01_symbol_trigger_counts_latest.tsv",
+  "mapping_csv": "D:/Stock/trading_assistant/02_runtime/butler_r0_ohlcv_object_cards/data/raw/watchlist_inputs/batch09_promoted/structured_inputs/factors_ladder_20260508.csv",
+  "watchlist_csv": "D:/Stock/trading_assistant/02_runtime/butler_r0_ohlcv_object_cards/data/raw/watchlist_inputs/batch09_promoted/structured_inputs/watchlist_screen_20260508.csv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_industry_distribution",
+  "matched_symbols": 17,
+  "unmatched_symbols": 27,
+  "match_ratio": 0.386364,
+  "matched_trigger_weight": 181,
+  "total_trigger_weight": 520,
+  "matched_trigger_weight_ratio": 0.348077,
+  "top_industries": [
+    {
+      "industry": "UNKNOWN",
+      "trigger_count": 339,
+      "trigger_weight_share": 0.651923
+    },
+    {
+      "industry": "元器件",
+      "trigger_count": 30,
+      "trigger_weight_share": 0.057692
+    },
+    {
+      "industry": "电气设备",
+      "trigger_count": 30,
+      "trigger_weight_share": 0.057692
+    },
+    {
+      "industry": "软件服务",
+      "trigger_count": 22,
+      "trigger_weight_share": 0.042308
+    },
+    {
+      "industry": "通信设备",
+      "trigger_count": 21,
+      "trigger_weight_share": 0.040385
+    }
+  ],
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_industry_distribution/t01_industry_distribution_summary_latest.json",
+    "industry_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_industry_distribution/t01_industry_trigger_counts_latest.tsv",
+    "symbol_join_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_industry_distribution/t01_symbol_industry_join_latest.tsv",
+    "unmatched_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t01_industry_distribution/t01_unmatched_symbols_latest.tsv"
+  }
+}

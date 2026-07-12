@@ -13,6 +13,7 @@
   - `02_runtime/ashare_p0_first_round_validation/reports/README.md`
 - `GENERATOR`:
   - `02_runtime/ashare_p0_first_round_validation/run_t01_volume_price_scan_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/run_t01_industry_distribution_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
 
 ## 当前范围
@@ -66,11 +67,20 @@
   - 产物：
     - `artifacts/t01_volume_price_scan/t01_volume_price_scan_summary_latest.json`
     - `artifacts/t01_volume_price_scan/t01_trigger_detail_latest.tsv`
+- `T01` 已完成一轮行业分布补充统计：
+  - 匹配标的：`17/44`
+  - 触发权重覆盖：`181/520`
+  - 当前结论：现有行业映射只适合做临时分布观察
+  - 产物：
+    - `artifacts/t01_industry_distribution/t01_industry_distribution_summary_latest.json`
+    - `artifacts/t01_industry_distribution/t01_industry_trigger_counts_latest.tsv`
 
 ## 当前最小命令入口
 
 - `T01`
   - `python 02_runtime/ashare_p0_first_round_validation/run_t01_volume_price_scan_v1.py`
+- `T01 行业分布`
+  - `python 02_runtime/ashare_p0_first_round_validation/run_t01_industry_distribution_v1.py`
 - `T02`
   - `python 02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py --input-csv <fund_flow_csv>`
 

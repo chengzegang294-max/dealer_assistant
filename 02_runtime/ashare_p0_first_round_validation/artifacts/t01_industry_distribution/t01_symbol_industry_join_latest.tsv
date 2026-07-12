@@ -1,0 +1,45 @@
+symbol	code	name	board	industry	trigger_count	mapping_status
+300209.SZ				UNKNOWN	18	unmatched
+603278.SH	603278	大业股份	SH_MAIN	钢加工	18	matched
+603399.SH				UNKNOWN	17	unmatched
+300632.SZ				UNKNOWN	16	unmatched
+301217.SZ				UNKNOWN	16	unmatched
+301319.SZ				UNKNOWN	16	unmatched
+301511.SZ				UNKNOWN	16	unmatched
+000720.SZ	000720	新能泰山	SZ_MAIN	电气设备	15	matched
+002081.SZ				UNKNOWN	15	unmatched
+300302.SZ				UNKNOWN	15	unmatched
+603618.SH	603618	杭电股份	SH_MAIN	电气设备	15	matched
+688655.SH				UNKNOWN	15	unmatched
+300283.SZ				UNKNOWN	14	unmatched
+300745.SZ				UNKNOWN	14	unmatched
+300769.SZ				UNKNOWN	14	unmatched
+600936.SH	600936	北投科技	SH_MAIN	软件服务	14	matched
+688400.SH				UNKNOWN	14	unmatched
+000066.SZ				UNKNOWN	13	unmatched
+002491.SZ	002491	通鼎互联	SZ_MAIN	通信设备	13	matched
+605006.SH	605006	山东玻纤	SH_MAIN	玻璃	13	matched
+002317.SZ	002317	众生药业	SZ_MAIN	中成药	12	matched
+688256.SH				UNKNOWN	12	unmatched
+002031.SZ	002031	巨轮智能	SZ_MAIN	汽车配件	11	matched
+002552.SZ	002552	宝鼎科技	SZ_MAIN	元器件	11	matched
+300571.SZ				UNKNOWN	11	unmatched
+603045.SH	603045	福达合金	SH_MAIN	小金属	11	matched
+603937.SH				UNKNOWN	11	unmatched
+688069.SH				UNKNOWN	11	unmatched
+688531.SH				UNKNOWN	11	unmatched
+002903.SZ				UNKNOWN	10	unmatched
+603629.SH				UNKNOWN	10	unmatched
+688449.SH				UNKNOWN	10	unmatched
+688371.SH				UNKNOWN	9	unmatched
+688515.SH				UNKNOWN	9	unmatched
+002929.SZ	002929	润建股份	SZ_MAIN	通信设备	8	matched
+300488.SZ				UNKNOWN	8	unmatched
+300750.SZ				UNKNOWN	8	unmatched
+603636.SH	603636	南威软件	SH_MAIN	软件服务	8	matched
+600130.SH	600130	波导股份	SH_MAIN	元器件	7	matched
+601991.SH	601991	大唐发电	SH_MAIN	火力发电	7	matched
+002655.SZ	002655	共达电声	SZ_MAIN	元器件	6	matched
+002930.SZ	002930	宏川智慧	SZ_MAIN	仓储物流	6	matched
+300161.SZ				UNKNOWN	6	unmatched
+603738.SH	603738	泰晶科技	SH_MAIN	元器件	6	matched

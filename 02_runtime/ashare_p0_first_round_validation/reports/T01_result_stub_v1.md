@@ -25,12 +25,22 @@
     - `603278.SH`
     - `603399.SH`
   - 仍需后续结合持仓相关性与行业分布做二次复核
+- 行业分布补充观察：
+  - 当前临时行业映射仅匹配 `17/44` 个触发标的
+  - 触发权重覆盖仅 `181/520`
+  - 已匹配部分的头部行业包括：
+    - `元器件`
+    - `电气设备`
+    - `软件服务`
+    - `通信设备`
+  - `UNKNOWN` 权重达到 `339/520`，说明当前行业映射不足以支撑正式行业统计结论
 - 结论判断：
   - 当前先记为 `微调候选`
 - 下一步动作：
   - 补行业分布与持仓相关占比
   - 复核峰值日 `19` 是否过吵
   - 决定是否需要调阈值或加过滤
+  - 后续补独立 `symbol -> industry` 主表，降低 `UNKNOWN` 占比
 
 ## 当前产物
 
@@ -38,6 +48,10 @@
 - `artifacts/t01_volume_price_scan/t01_trigger_detail_latest.tsv`
 - `artifacts/t01_volume_price_scan/t01_daily_trigger_counts_latest.tsv`
 - `artifacts/t01_volume_price_scan/t01_symbol_trigger_counts_latest.tsv`
+- `artifacts/t01_industry_distribution/t01_industry_distribution_summary_latest.json`
+- `artifacts/t01_industry_distribution/t01_industry_trigger_counts_latest.tsv`
+- `artifacts/t01_industry_distribution/t01_symbol_industry_join_latest.tsv`
+- `artifacts/t01_industry_distribution/t01_unmatched_symbols_latest.tsv`
 
 ## 回链
 
