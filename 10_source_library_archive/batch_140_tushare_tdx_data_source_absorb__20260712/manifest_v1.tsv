@@ -1,0 +1,7 @@
+item_id	rel_path	kind	source_role	status	note
+M001	00_raw_snapshot/量化入门指南（演示代码已上传至Github）（Tushare使用教程）_导出.md	md	raw_snapshot	archived	用户临时教程原始快照；强调 Tushare 工程化用法
+M002	00_raw_snapshot/量化开发降本神器：用通达信替代 Tushare 的完整方案_导出.md	md	raw_snapshot	archived	用户临时教程原始快照；强调通达信低成本替代
+M003	provenance.md	md	contract	active	外部来源、约束与吸收方式说明
+M004	README.md	md	index_note	active	本批次入口与收口裁决
+M005	02_absorb_index/tushare_tdx_tutorial_core_digest_v1.md	md	absorb_index	active	两篇教程的核心观点、可采纳点与不应直接照搬点
+M006	02_absorb_index/ashare_p0_data_source_decision_v1.md	md	contract	active	针对当前 A 股 P0 的充值与使用裁决
