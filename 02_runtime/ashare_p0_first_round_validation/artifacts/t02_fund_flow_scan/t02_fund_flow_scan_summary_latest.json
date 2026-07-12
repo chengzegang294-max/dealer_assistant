@@ -17,6 +17,7 @@
     "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json",
     "trigger_detail_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_trigger_detail_latest.tsv",
     "symbol_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_symbol_trigger_counts_latest.tsv",
-    "regime_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_regime_trigger_counts_latest.tsv"
+    "regime_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_regime_trigger_counts_latest.tsv",
+    "symbol_regime_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_symbol_regime_trigger_counts_latest.tsv"
   }
 }

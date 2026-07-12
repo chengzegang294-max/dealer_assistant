@@ -1,0 +1,37 @@
+{
+  "producer": "fetch_t02_regime_proxy_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 市场阶段代理表",
+  "status": "success",
+  "index_code": "000300.SH",
+  "start_date": "20260501",
+  "end_date": "20260531",
+  "token_source": "C:\\Users\\91883\\.tushare\\token",
+  "output_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531.csv",
+  "lookback_days": 5,
+  "rolling_return_threshold_pct": 2.0,
+  "min_direction_days": 3,
+  "regime_definition": {
+    "G01_普涨": "rolling_pct_sum >= threshold and up_days >= min_direction_days",
+    "G02_普跌": "rolling_pct_sum <= -threshold and down_days >= min_direction_days",
+    "G03_震荡": "otherwise"
+  },
+  "rows": 18,
+  "columns": [
+    "trade_date",
+    "market_regime_label",
+    "regime_proxy_index_code",
+    "rolling_pct_sum",
+    "rolling_up_days",
+    "rolling_down_days",
+    "data_source",
+    "asof_date",
+    "notes"
+  ],
+  "first_trade_date": "20260506",
+  "last_trade_date": "20260529",
+  "regime_counts": {
+    "G01_普涨": 7,
+    "G02_普跌": 3,
+    "G03_震荡": 8
+  }
+}

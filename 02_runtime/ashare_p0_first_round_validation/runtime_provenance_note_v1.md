@@ -99,6 +99,17 @@
     - `data/t02_sources/northbound_tushare/`
   - 证据强度：
     - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
+- `fetch_t02_regime_proxy_tushare_v1.py`
+  - 当前作用：
+    - 复用 `TUSHARE_TOKEN` 合同，拉取 `index_daily` 并派生 `G01 / G02 / G03` 市场阶段代理表
+  - 默认输入：
+    - `--start-date`
+    - `--end-date`
+    - `--index-code`
+  - 默认产物：
+    - `data/t02_sources/regime/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
 - `fetch_t02_industry_map_tushare_v1.py`
   - 当前作用：
     - 复用 `TUSHARE_TOKEN` 合同，拉取 `stock_basic` 生成行业映射表
@@ -175,20 +186,23 @@
   - 底表拼接链已贯通
   - 当前 latest 真实宽表基于 `moneyflow_batch` 作为 base 构建
   - 当前 `northbound` join 命中 `85/90`
+  - 当前 `regime` join 命中 `90/90`
   - 当前 `industry` join 命中 `90/90`
-  - 当前仍缺 `regime`
+  - 当前仍缺正式 `OHLCV` 宽底表
 - `T02` 当前抓取级结论：
-  - 已补 `moneyflow / northbound / industry` 三条真实源抓取入口
+  - 已补 `moneyflow / northbound / regime / industry` 四条真实源抓取入口
   - 当前已补单标的与多标的两类 moneyflow 入口
   - 当前已补多轮实跑 metadata：
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare__000001_SZ__20260501_20260531__metadata.json`
     - `data/t02_sources/moneyflow_tushare/t02_moneyflow_tushare_batch__sample5__20260501_20260531__metadata.json`
     - `data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
+    - `data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531__metadata.json`
     - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L__metadata.json`
   - 当前实跑结果：
     - `moneyflow`：`status = success`，并已生成真实 CSV
     - `moneyflow_batch`：`status = success`，`symbols = 5`，并已生成真实 CSV
     - `northbound`：`status = success`，并已生成真实 CSV
+    - `regime`：`status = success`，并已生成真实 CSV
     - `industry`：`status = success`，并已生成真实 CSV
 - `T02` 当前预检级结论：
   - 已补 `artifacts/t02_tushare_preflight/t02_tushare_preflight_latest.json`
@@ -202,6 +216,7 @@
 - `T02` 当前已补首份真实扫描结果：
   - 扫描摘要：`artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
   - 当前结果：`90` 行真实输入、`41` 条触发、`5` 个触发标的
+  - 当前阶段分布：`G01_普涨=12`、`G02_普跌=8`、`G03_震荡=21`
   - 当前限制：仍是首批 5 标的样本，不足以直接外推出全市场门槛
 - 还未补统一批次汇总脚本
 

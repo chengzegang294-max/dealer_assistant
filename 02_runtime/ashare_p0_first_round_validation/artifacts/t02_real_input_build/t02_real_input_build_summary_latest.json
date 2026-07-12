@@ -8,18 +8,17 @@
   "join_sources": {
     "moneyflow": "",
     "northbound": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/northbound_tushare/t02_northbound_tushare__20260501_20260531.csv",
-    "regime": "",
+    "regime": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531.csv",
     "industry": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L.csv"
   },
   "join_hit_counts": {
     "moneyflow": 0,
     "northbound": 85,
-    "regime": 0,
+    "regime": 90,
     "industry": 90
   },
   "missing_join_sources": [
-    "moneyflow",
-    "regime"
+    "moneyflow"
   ],
   "output_files": {
     "candidate_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",

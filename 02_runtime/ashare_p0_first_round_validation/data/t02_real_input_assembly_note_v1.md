@@ -82,6 +82,7 @@
 - 真实源抓取脚本：
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_moneyflow_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_northbound_tushare_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/fetch_t02_regime_proxy_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
 - 源表 manifest：
   - `02_runtime/ashare_p0_first_round_validation/data/t02_real_input_sources_manifest_v1.tsv`
@@ -92,17 +93,18 @@
 
 ## 当前状态
 
-- `moneyflow / northbound / industry` 三条 Tushare 抓取链当前都已跑通。
+- `moneyflow / northbound / regime / industry` 四条 Tushare 抓取链当前都已跑通。
 - 当前 latest 真实拼接采用：
   - `moneyflow_batch__sample5__20260501_20260531.csv`
   - `northbound_tushare__20260501_20260531.csv`
+  - `t02_regime_proxy_tushare__000300_SH__20260501_20260531.csv`
   - `t02_industry_map_tushare__list_status_L.csv`
 - 当前 latest 结果：
   - 宽表 `90` 行
   - `northbound` 命中 `85/90`
+  - `regime` 命中 `90/90`
   - `industry` 命中 `90/90`
 - 当前仍缺：
-  - `regime`
   - 正式 `OHLCV` 宽底表
 
 ## 当前回链

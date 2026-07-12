@@ -79,6 +79,7 @@ def main() -> int:
     detail_path = output_dir / "t02_trigger_detail_latest.tsv"
     symbol_path = output_dir / "t02_symbol_trigger_counts_latest.tsv"
     regime_path = output_dir / "t02_regime_trigger_counts_latest.tsv"
+    symbol_regime_path = output_dir / "t02_symbol_regime_trigger_counts_latest.tsv"
 
     metadata: dict[str, Any] = {
         "producer": "run_t02_fund_flow_scan_v1.py",
@@ -143,6 +144,7 @@ def main() -> int:
     )
     regime_counter: Counter[str] = Counter()
     symbol_counter: Counter[str] = Counter()
+    symbol_regime_counter: Counter[tuple[str, str]] = Counter()
 
     for row in rows:
         trade_date = str(row[date_col])  # type: ignore[index]
@@ -188,6 +190,7 @@ def main() -> int:
             )
             symbol_counter[symbol] += 1
             regime_counter[regime_value] += 1
+            symbol_regime_counter[(symbol, regime_value)] += 1
 
     symbol_rows = [
         {"symbol": symbol, "trigger_count": count}
@@ -198,6 +201,16 @@ def main() -> int:
     regime_rows = [
         {"market_regime_label": label, "trigger_count": count}
         for label, count in sorted(regime_counter.items())
+    ]
+    symbol_regime_rows = [
+        {
+            "symbol": symbol,
+            "market_regime_label": regime_label,
+            "trigger_count": count,
+        }
+        for (symbol, regime_label), count in sorted(
+            symbol_regime_counter.items(), key=lambda item: (-item[1], item[0][0], item[0][1])
+        )
     ]
 
     write_tsv(
@@ -216,6 +229,11 @@ def main() -> int:
     )
     write_tsv(symbol_path, symbol_rows, ["symbol", "trigger_count"])
     write_tsv(regime_path, regime_rows, ["market_regime_label", "trigger_count"])
+    write_tsv(
+        symbol_regime_path,
+        symbol_regime_rows,
+        ["symbol", "market_regime_label", "trigger_count"],
+    )
 
     metadata["status"] = "success"
     metadata["rows_scanned"] = len(rows)
@@ -230,6 +248,7 @@ def main() -> int:
         "trigger_detail_tsv": str(detail_path).replace("\\", "/"),
         "symbol_counts_tsv": str(symbol_path).replace("\\", "/"),
         "regime_counts_tsv": str(regime_path).replace("\\", "/"),
+        "symbol_regime_counts_tsv": str(symbol_regime_path).replace("\\", "/"),
     }
     write_json(metadata_path, metadata)
     return 0
