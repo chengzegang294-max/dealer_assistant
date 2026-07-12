@@ -10,11 +10,15 @@
 ## 当前文件
 
 - `t02_fund_flow_input_contract_v1.csv`
+- `t02_real_input_sources_manifest_v1.tsv`
+- `t02_real_input_assembly_note_v1.md`
 
 ## 使用边界
 
 - 当前允许放：
   - 可复用输入模板
+  - 真实源表 manifest
+  - 字段来源与拼接说明
   - 手工整理后的首轮验证宽表
 - 当前不建议放：
   - 一次性下载缓存

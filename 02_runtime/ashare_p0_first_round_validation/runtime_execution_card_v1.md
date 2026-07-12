@@ -16,6 +16,7 @@
   - `02_runtime/ashare_p0_first_round_validation/run_t01_industry_distribution_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/audit_t02_fund_flow_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
 
 ## 当前范围
@@ -85,6 +86,13 @@
     - `artifacts/t02_input_audit/t02_input_audit_summary_latest.json`
     - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
+- `T02` 已完成真实宽表拼接入口 smoke-run：
+  - 构建结果：`1` 行候选宽表
+  - join 命中：`moneyflow=0`、`northbound=0`、`regime=0`、`industry=0`
+  - 当前结论：拼接链已通，但四类真实源表仍未接入
+  - 产物：
+    - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
+    - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
 
 ## 当前最小命令入口
 
@@ -98,6 +106,8 @@
   - `python 02_runtime/ashare_p0_first_round_validation/audit_t02_fund_flow_input_v1.py`
 - `T02 输入归一化`
   - `python 02_runtime/ashare_p0_first_round_validation/prepare_t02_fund_flow_input_v1.py`
+- `T02 真实宽表拼接`
+  - `python 02_runtime/ashare_p0_first_round_validation/build_t02_real_input_v1.py --base-csv <base_csv> --moneyflow-csv <moneyflow_csv> --northbound-csv <northbound_csv> --regime-csv <regime_csv> --industry-csv <industry_csv>`
 
 ## 当前产物边界
 

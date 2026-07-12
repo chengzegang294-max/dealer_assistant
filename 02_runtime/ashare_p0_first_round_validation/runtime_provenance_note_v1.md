@@ -48,6 +48,16 @@
     - `artifacts/t02_input_prepare/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `build_t02_real_input_v1.py`
+  - 当前作用：
+    - 把底表与 moneyflow、northbound、regime、industry 源表拼成候选真实宽表
+  - 默认输入：
+    - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
+    - 真实源表到位后再传入 `--moneyflow-csv`、`--northbound-csv`、`--regime-csv`、`--industry-csv`
+  - 默认产物：
+    - `artifacts/t02_real_input_build/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 - `run_t02_fund_flow_scan_v1.py`
   - 当前作用：
     - 扫描资金字段 CSV，输出 `T02` 连续主力资金触发摘要
@@ -103,11 +113,18 @@
   - 审计：`artifacts/t02_input_audit/t02_input_audit_summary_latest.json`
   - 归一化：`artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
   - 扫描：`artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
+- `T02` 当前已完成宽表拼接 smoke-run：
+  - 构建摘要：`artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
+  - 候选宽表：`artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
 - `T02` 当前模板级结论：
   - 字段合同已满足
   - 归一化链已贯通
   - runner 已能消费标准化输入
   - 仍缺真实资金宽表，模板级结果不用于阈值判断
+- `T02` 当前拼接级结论：
+  - 底表拼接链已贯通
+  - 当前四类 join 源都未接入
+  - 下一步只差真实源表落点与真实 join
 - `T02` 还缺首份真实资金字段输入 CSV
 - 还未补统一批次汇总脚本
 

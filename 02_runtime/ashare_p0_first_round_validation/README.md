@@ -28,9 +28,12 @@
 - `run_t01_industry_distribution_v1.py`
 - `audit_t02_fund_flow_input_v1.py`
 - `prepare_t02_fund_flow_input_v1.py`
+- `build_t02_real_input_v1.py`
 - `run_t02_fund_flow_scan_v1.py`
 - `data/README.md`
 - `data/t02_fund_flow_input_contract_v1.csv`
+- `data/t02_real_input_sources_manifest_v1.tsv`
+- `data/t02_real_input_assembly_note_v1.md`
 - `reports/README.md`
 - `reports/T01_result_stub_v1.md`
 - `reports/T02_result_stub_v1.md`
@@ -54,6 +57,7 @@
   - `run_t01_industry_distribution_v1.py`
   - `audit_t02_fund_flow_input_v1.py`
   - `prepare_t02_fund_flow_input_v1.py`
+  - `build_t02_real_input_v1.py`
   - `run_t02_fund_flow_scan_v1.py`
   - 后续新增的汇总脚本、验收脚本
 - `ARTIFACT`，后续按验证批次决定是否跟踪：

@@ -61,6 +61,13 @@
   - 当前口径：
     - `missing_columns = []`
     - 标准化列名链已贯通
+- `t02_real_input_build/`
+  - `t02_real_input_build_summary_latest.json`
+  - `t02_real_input_candidate_latest.csv`
+  - 当前口径：
+    - 宽表拼接 smoke-run
+    - 输入行数：`1`
+    - 当前缺失 join 源：`moneyflow / northbound / regime / industry`
 - `t02_fund_flow_scan/`
   - `t02_fund_flow_scan_summary_latest.json`
   - `t02_trigger_detail_latest.tsv`

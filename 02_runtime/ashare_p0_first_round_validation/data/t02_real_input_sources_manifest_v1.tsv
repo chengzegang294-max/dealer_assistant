@@ -1,0 +1,6 @@
+dataset_name	source_role	required_level	join_key	recommended_path	current_path	status	notes
+base_ohlcv	必须底表	required	trade_date|symbol	02_runtime/.../daily_ohlcv/*.csv	02_runtime/ashare_p0_first_round_validation/artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv	template_only	当前先用模板级标准化宽表做拼接 smoke-run
+moneyflow	主触发资金表	required	trade_date|symbol	<to_fill_real_moneyflow_csv>		need_real_source	至少提供 main_fund_net_inflow 和 main_fund_net_inflow_ratio
+northbound	增强资金表	optional	trade_date|symbol	<to_fill_real_northbound_csv>		need_real_source	可提供 northbound_net_inflow 和 northbound_holding_change
+regime	市场阶段表	optional	trade_date|symbol 或 trade_date	<to_fill_real_regime_csv>		need_real_source	若只有 trade_date 维度，需先扩成可 join 结构
+industry	行业映射表	optional	symbol	<to_fill_real_industry_csv>		need_real_source	推荐独立 symbol -> industry_code/industry_name 主表
