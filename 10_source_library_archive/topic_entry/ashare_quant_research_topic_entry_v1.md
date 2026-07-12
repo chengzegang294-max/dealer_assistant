@@ -14,6 +14,14 @@
 
 - `object_entry/ashare_research_summary_object_entry_v1.md`
 
+## 子主题快入口
+
+- `event_driven_stock_selection_topic_entry_v1.md`
+- `industry_rotation_style_topic_entry_v1.md`
+- `multi_factor_correlation_stock_selection_topic_entry_v1.md`
+- `dynamic_factor_validity_topic_entry_v1.md`
+- `market_timing_signal_topic_entry_v1.md`
+
 ## 最顺阅读顺序
 
 - 第一步：
@@ -23,6 +31,8 @@
   - 若想看 txt 全文保留侧，进入 `05_txt源码_md归档/README_放这里.md`
   - 若想做删源与覆盖对账，进入 `GROUP_08_coverage_对账_v1.md`、`GROUP_08_逐源coverage总表_v1.md`
 - 第三步：
+  - 若想按研究主线直接进入，再转到上面的子主题快入口
+- 第四步：
   - 若确认某条材料应提升到正式来源层，再回到 `10_source_library_archive/README.md` 与相应批次入口判断去向
 
 ## 当前边界

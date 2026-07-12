@@ -89,6 +89,12 @@
 - 想直接找 `财报 / 估值 / 组合管理` 这组稳定切分对象：
   - 先看 `topic_entry/finance_valuation_portfolio_topic_entry_v1.md`
   - 再按对象进入 `topic_entry/object_entry/`
+- 想直接找 `GROUP_08` 里的研究子簇：
+  - `事件驱动` 先看 `topic_entry/event_driven_stock_selection_topic_entry_v1.md`
+  - `行业轮动 / 风格轮动` 先看 `topic_entry/industry_rotation_style_topic_entry_v1.md`
+  - `多因子相关性选股` 先看 `topic_entry/multi_factor_correlation_stock_selection_topic_entry_v1.md`
+  - `动态因子有效性` 先看 `topic_entry/dynamic_factor_validity_topic_entry_v1.md`
+  - `市场择时信号` 先看 `topic_entry/market_timing_signal_topic_entry_v1.md`
 - 想找稳定真值锚点与历史对齐边界：
   - 先看 `batch_01` 与 `batch_09`
 - 想看较新的吸收批：
@@ -129,6 +135,16 @@
   - `topic_entry/atomic_method_incubation_topic_entry_v1.md`
 - `财报估值与组合管理`
   - `topic_entry/finance_valuation_portfolio_topic_entry_v1.md`
+- `事件驱动选股`
+  - `topic_entry/event_driven_stock_selection_topic_entry_v1.md`
+- `行业轮动与风格轮动`
+  - `topic_entry/industry_rotation_style_topic_entry_v1.md`
+- `多因子相关性选股`
+  - `topic_entry/multi_factor_correlation_stock_selection_topic_entry_v1.md`
+- `动态因子有效性`
+  - `topic_entry/dynamic_factor_validity_topic_entry_v1.md`
+- `市场择时信号`
+  - `topic_entry/market_timing_signal_topic_entry_v1.md`
 
 ## 对象入口
 
@@ -158,6 +174,16 @@
   - `topic_entry/object_entry/listed_company_valuation_object_entry_v1.md`
 - `郭永清财报估值对象`
   - `topic_entry/object_entry/guo_yongqing_financial_statement_object_entry_v1.md`
+- `业绩与公告事件驱动对象`
+  - `topic_entry/object_entry/earnings_announcement_event_object_entry_v1.md`
+- `行业轮动与风格轮动对象`
+  - `topic_entry/object_entry/industry_rotation_signal_object_entry_v1.md`
+- `相关性选股框架对象`
+  - `topic_entry/object_entry/correlation_stock_selection_framework_object_entry_v1.md`
+- `动态因子有效性对象`
+  - `topic_entry/object_entry/dynamic_factor_validity_object_entry_v1.md`
+- `市场择时信号对象`
+  - `topic_entry/object_entry/market_timing_signal_object_entry_v1.md`
 
 ## 批次记录模板
 

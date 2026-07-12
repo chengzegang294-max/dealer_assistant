@@ -14,6 +14,11 @@
 - `外部吸收与回收提升`
 - `原子方法对象孵化`
 - `财报估值与组合管理`
+- `事件驱动选股`
+- `行业轮动与风格轮动`
+- `多因子相关性选股`
+- `动态因子有效性`
+- `市场择时信号`
 
 ## 默认入口
 
@@ -28,6 +33,11 @@
 - `external_absorb_recovery_topic_entry_v1.md`
 - `atomic_method_incubation_topic_entry_v1.md`
 - `finance_valuation_portfolio_topic_entry_v1.md`
+- `event_driven_stock_selection_topic_entry_v1.md`
+- `industry_rotation_style_topic_entry_v1.md`
+- `multi_factor_correlation_stock_selection_topic_entry_v1.md`
+- `dynamic_factor_validity_topic_entry_v1.md`
+- `market_timing_signal_topic_entry_v1.md`
 
 ## 对象入口层
 
@@ -57,6 +67,16 @@
   - `object_entry/listed_company_valuation_object_entry_v1.md`
 - `郭永清财报估值对象`
   - `object_entry/guo_yongqing_financial_statement_object_entry_v1.md`
+- `业绩与公告事件驱动对象`
+  - `object_entry/earnings_announcement_event_object_entry_v1.md`
+- `行业轮动与风格轮动对象`
+  - `object_entry/industry_rotation_signal_object_entry_v1.md`
+- `相关性选股框架对象`
+  - `object_entry/correlation_stock_selection_framework_object_entry_v1.md`
+- `动态因子有效性对象`
+  - `object_entry/dynamic_factor_validity_object_entry_v1.md`
+- `市场择时信号对象`
+  - `object_entry/market_timing_signal_object_entry_v1.md`
 
 ## 跨主题总检索
 

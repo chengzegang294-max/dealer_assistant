@@ -21,6 +21,11 @@
 - `主动组合管理对象`
 - `上市公司财报估值对象`
 - `郭永清财报估值对象`
+- `业绩与公告事件驱动对象`
+- `行业轮动与风格轮动对象`
+- `相关性选股框架对象`
+- `动态因子有效性对象`
+- `市场择时信号对象`
 
 ## 默认入口
 
@@ -40,6 +45,11 @@
 - `active_portfolio_management_object_entry_v1.md`
 - `listed_company_valuation_object_entry_v1.md`
 - `guo_yongqing_financial_statement_object_entry_v1.md`
+- `earnings_announcement_event_object_entry_v1.md`
+- `industry_rotation_signal_object_entry_v1.md`
+- `correlation_stock_selection_framework_object_entry_v1.md`
+- `dynamic_factor_validity_object_entry_v1.md`
+- `market_timing_signal_object_entry_v1.md`
 
 ## 使用边界
 
