@@ -8,11 +8,15 @@
 
 ## first-hop 入口
 
-- `../../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化择时_研究PDF_总摘要_v1.md`
+- `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/contracts/group08_market_timing_p0_min_contract_v1.md`
 
 ## 默认阅读顺序
 
-- 先看：
+- 先看合同：
+  - `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/contracts/group08_market_timing_p0_min_contract_v1.md`
+- 再看字段字典：
+  - `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/fields/group08_market_timing_field_dictionary_v1.tsv`
+- 再回看摘要候选：
   - `T-C01` 市场一致性 R² 择时模型
   - `T-C02` 产业资本增减持贝叶斯融合择时
 - 若后续要对象化，优先抽：
@@ -23,8 +27,8 @@
 
 ## 当前边界
 
-- 当前对象入口服务于择时研究摘要与候选整理。
-- 当前不代表已成为主线默认择时 gate。
+- 当前对象入口已提升为“合同 first-hop + 研究回链”。
+- 当前仍不代表已成为主线默认择时 gate。
 
 ## 回链
 

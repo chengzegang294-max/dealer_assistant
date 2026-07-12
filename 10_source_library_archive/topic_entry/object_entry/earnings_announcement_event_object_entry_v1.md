@@ -8,16 +8,20 @@
 
 ## first-hop 入口
 
-- `../../mirror_kimi_inbox/GROUP_08_A股量化_数据研究/01_62份研究PDF/A股_量化选股_研究PDF_总摘要_v1_part1.md`
+- `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/contracts/group08_event_driven_p0_min_contract_v1.md`
 
 ## 默认阅读顺序
 
-- 先看：
+- 先看合同：
+  - `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/contracts/group08_event_driven_p0_min_contract_v1.md`
+- 再看字段字典：
+  - `../../batch_142_group08_event_timing_contract_absorb__20260712/bundle/fields/group08_event_driven_field_dictionary_v1.tsv`
+- 再回看摘要候选：
   - `S-017` 业绩快报与预减反弹
   - `S-018` 指数样本股调整
   - `S-020` 大股东增减持
   - `S-021` 股权激励实施收益
-- 再回看：
+- 最后回看：
   - `S-016` 业绩预告事件超额收益框架
 - 若后续要对象化，优先抽：
   - 事件时间窗口
@@ -26,8 +30,8 @@
 
 ## 当前边界
 
-- 当前对象入口服务于研究摘要和对象候选整理。
-- 当前不代表这些事件已经接入正式 runtime 执行链。
+- 当前对象入口已提升为“合同 first-hop + 研究回链”。
+- 当前仍不代表这些事件已经接入正式 runtime 执行链。
 
 ## 回链
 

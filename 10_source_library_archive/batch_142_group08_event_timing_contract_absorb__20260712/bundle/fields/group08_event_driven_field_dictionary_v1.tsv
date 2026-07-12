@@ -1,0 +1,17 @@
+field_name	field_role	type	required	source_event	minimal_definition
+trade_id	id	string	yes	all	样本内唯一标识
+symbol	entity	string	yes	all	事件对应标的
+event_type	core_label	string	yes	all	事件类型标签
+announcement_date	core_time	string	yes	all	公告日期
+confirmation_date	core_time	string	yes	all	可交易确认日期
+market_regime_label	context_label	string	no	all	市场环境标签
+pre_event_excess_return_5d	context_metric	number	no	earnings_preview	公告前5日超额收益
+shareholder_type	filter_label	string	no	shareholder_increase	股东类别标签
+position_change_ratio	filter_metric	number	no	shareholder_increase	增持变动比例
+original_holding_ratio	filter_metric	number	no	shareholder_increase	增持前原始持股占比
+event_bias	output_label	string	yes	all	事件驱动偏向
+hold_horizon_days	output_param	number	yes	all	建议持有日数
+entry_timing_rule	output_rule	string	yes	all	建议入场时间规则
+event_filter_tag	output_label	string	yes	all	事件过滤标签
+event_model_state	output_state	string	yes	all	事件模型状态
+proof_basis	output_note	string	yes	all	本行映射依据

@@ -21,8 +21,24 @@
 - 当前作用是把目录角色与默认入口固定清楚，不把本批 README 当作默认阅读入口。
 - 默认阅读与后续处理继续以对象入口、索引卡和最小搬迁清单为准。
 
+## 默认入口
+
+- `01_index/entry_map_v1.tsv`
+- `tkfx_boundary_manifest__20260712.tsv`
+- `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/README.md`
+- `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/INDEX_phase1_v1.md`
+- `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/minimal_relocation_candidates_v1.tsv`
+
 ## 下一步
 
-- 补默认主入口
-- 补默认索引入口
-- 列明显混层文件最小搬迁清单
+- 当前这一轮已完成：
+  - 补默认主入口
+  - 补默认索引入口
+  - 列明显混层文件最小搬迁清单
+- 后续若继续推进，只做：
+  - boundary 级导航增强
+  - 低风险入口卡收口
+- 当前不做：
+  - 大体量整包迁移
+  - 文件改名
+  - 原始课程导出稿深改

@@ -1,0 +1,7 @@
+entry_type	entry_path	current_role	default_entry	notes
+INDEX_NOTE	10_source_library_archive/batch_99_non_kimi_tkfx_boundary__20260707/README.md	batch_boundary_entry	yes	先看本批 README，确认这是 TK 外汇 boundary 收口批
+INDEX_NOTE	10_source_library_archive/batch_99_non_kimi_tkfx_boundary__20260707/tkfx_boundary_manifest__20260712.tsv	batch_manifest	no	看目录角色分层、最小搬迁清单与当前入口绑定
+INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/README.md	raw_snapshot_entry	no	原件层与过程层的默认主入口
+INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/INDEX_phase1_v1.md	raw_snapshot_index	no	看 TK 外汇目录下的 first-hop 阅读顺序
+INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/minimal_relocation_candidates_v1.tsv	minimal_relocation_list	no	看最小搬迁候选与暂不处理文件
+INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/TK_Batch1_新增对象入口索引_v1.md	object_index	no	看 TK-R6 / TK-R7 / TK-R8 这组三个对象入口
