@@ -93,9 +93,9 @@
     - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv`
     - `artifacts/t02_fund_flow_scan/t02_fund_flow_scan_summary_latest.json`
 - `T02` 已完成真实宽表拼接入口 smoke-run：
-  - 构建结果：`90` 行候选宽表
-  - join 命中：`moneyflow=90(base)`、`northbound=85`、`regime=90`、`industry=90`
-  - 当前结论：`moneyflow / northbound / regime / industry` 已全部接入首份多标的真实宽表；当前仍缺正式 `OHLCV` 宽底表
+  - 构建结果：`180` 行候选宽表
+  - join 命中：`moneyflow=180(base)`、`northbound=170`、`regime=180`、`industry=180`
+  - 当前结论：`moneyflow / northbound / regime / industry` 已全部接入第二轮更宽样本真实宽表；当前仍缺正式 `OHLCV` 宽底表
   - 产物：
     - `artifacts/t02_real_input_build/t02_real_input_build_summary_latest.json`
     - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
@@ -112,6 +112,7 @@
   - 二轮实跑结果：
     - `moneyflow`：`status = success`，`rows = 18`
     - `moneyflow_batch`：`status = success`，`rows = 90`，`symbols = 5`
+    - `moneyflow_batch(sample10)`：`status = success`，`rows = 180`，`symbols = 10`
     - `northbound`：`status = success`，`rows = 17`
     - `regime`：`status = success`，`rows = 18`，`G01=7 / G02=3 / G03=8`
     - `industry`：`status = success`，`rows = 5530`
@@ -126,11 +127,11 @@
     - `tushare.available = true`
   - 当前结论：token 与依赖都已补齐，fetcher 已进入真实权限验证阶段
 - `T02` 已完成首轮真实扫描：
-  - 输入范围：`5` 个标的，`2026-05-06 -> 2026-05-29`
-  - 扫描结果：`90` 行真实输入、`41` 条触发、`5` 个触发标的
-  - 触发分布：`000001.SZ=12`、`000002.SZ=9`、`600030.SH=8`、`600519.SH=7`、`300750.SZ=5`
-  - 阶段分布：`G01_普涨=12`、`G02_普跌=8`、`G03_震荡=21`
-  - 当前结论：`T02` 已在 `G01 / G02 / G03` 三类阶段都形成可消费触发；当前更像“偏严格但有效的风险触发口径”，下一步应继续扩样本而不是回退模板级
+  - 输入范围：`10` 个标的，`2026-05-06 -> 2026-05-29`
+  - 扫描结果：`180` 行真实输入、`84` 条触发、`10` 个触发标的
+  - 触发分布：`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`600030.SH=8`、`600276.SH=8`、`601899.SH=8`、`600050.SH=7`、`600519.SH=7`、`300750.SZ=5`
+  - 阶段分布：`G01_普涨=23`、`G02_普跌=17`、`G03_震荡=44`
+  - 当前结论：`T02` 已在更宽样本和 `G01 / G02 / G03` 三类阶段都形成可消费触发；从 `5` 标的扩到 `10` 标的后，触发密度仍稳定在约 `46%`，当前口径没有被扩样本直接否掉
 
 ## 当前最小命令入口
 

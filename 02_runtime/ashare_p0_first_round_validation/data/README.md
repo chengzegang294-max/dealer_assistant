@@ -11,6 +11,7 @@
 
 - `t02_fund_flow_input_contract_v1.csv`
 - `t02_multi_symbol_sample_v1.csv`
+- `t02_multi_symbol_sample_v2.csv`
 - `t02_real_input_sources_manifest_v1.tsv`
 - `t02_real_input_assembly_note_v1.md`
 - `t02_sources/README.md`
@@ -42,7 +43,8 @@
   - 单标的 `moneyflow` 真源
   - 多标的 `moneyflow_batch` 真源
   - `northbound` 真源
+  - `regime` 真源
   - `industry` 真源
-- 当前 latest 真实宽表已切换为 `5` 标的样本：
-  - `moneyflow_batch__sample5__20260501_20260531.csv`
+- 当前 latest 真实宽表已切换为 `10` 标的样本：
+  - `moneyflow_batch__sample10__20260501_20260531.csv`
 - `artifacts/t02_input_prepare/t02_fund_flow_input_normalized_latest.csv` 继续保留为模板级底表，不再充当 latest 真实资金源。

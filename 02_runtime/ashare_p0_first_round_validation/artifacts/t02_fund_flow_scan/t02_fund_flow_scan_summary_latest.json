@@ -6,9 +6,9 @@
   "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan",
   "main_flow_ratio_threshold": 0.03,
   "min_consecutive_days": 2,
-  "rows_scanned": 90,
-  "trigger_rows": 41,
-  "trigger_symbols": 5,
+  "rows_scanned": 180,
+  "trigger_rows": 84,
+  "trigger_symbols": 10,
   "optional_columns": {
     "northbound_net_inflow": "northbound_net_inflow",
     "market_regime_label": "market_regime_label"
