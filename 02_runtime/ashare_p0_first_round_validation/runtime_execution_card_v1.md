@@ -26,6 +26,7 @@
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_layer_stability_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_review_v1.py`
 
 ## 当前范围
 
@@ -171,6 +172,18 @@
     - `artifacts/t02_local_tuning/t02_local_tuning_summary_latest.json`
     - `artifacts/t02_local_tuning/t02_local_tuning_scenario_comparison_latest.tsv`
     - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`
+- `T02` 已完成 watchlist 噪声风险复核：
+  - 复核对象：
+    - `low_flow_vol`
+    - `growth_tech_low_flow_vol`
+  - 复核结果：
+    - `low_flow_vol` 新增触发 `19` 条，其中 `42.1%` 落在边缘带 `2.5%~3.0%`，`78.9%` 发生在 `G03_震荡`，北向同向支持率仅 `15.8%`
+    - `growth_tech_low_flow_vol` 新增触发 `9` 条，其中 `55.6%` 落在边缘带 `2.5%~3.0%`，`77.8%` 发生在 `G03_震荡`，北向同向支持率为 `0%`
+  - 当前结论：`watchlist` 可以继续保留，但只应视为弱候选，不升级为正式局部分支；如果后续真要启用 `2.5% + 连续2日`，应先补更强佐证条件，而不是直接裸放宽
+  - 复核产物：
+    - `artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json`
+    - `artifacts/t02_local_tuning_review/t02_local_tuning_group_review_latest.tsv`
+    - `artifacts/t02_local_tuning_review/t02_local_tuning_added_trigger_detail_latest.tsv`
 
 ## 当前最小命令入口
 

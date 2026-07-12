@@ -36,6 +36,10 @@
     - `growth_tech`：`35.6% -> 38.5%`，但相对全样本超额改善几乎没有，当前不建议单独开分支
     - `low_flow_vol`：`34.1% -> 38.6%`，相对全样本有一定超额改善，进入 watchlist
     - `growth_tech_low_flow_vol`：`28.3% -> 33.3%`，同样进入 watchlist
+  - 当前 watchlist 误报风险复核：
+    - `low_flow_vol` 新增 `19` 条触发，`78.9%` 落在 `G03_震荡`，北向同向支持率仅 `15.8%`
+    - `growth_tech_low_flow_vol` 新增 `9` 条触发，`77.8%` 落在 `G03_震荡`，北向同向支持率为 `0%`
+    - 这说明 watchlist 的提升更多像“补到边缘弱信号”，而不是拿到了强确认信号
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -59,10 +63,10 @@
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
   - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
 - 下一步动作：
-  - 继续保持 `sample20` 不变，若要进一步下钻，优先复核 `low_flow_vol` 与 `growth_tech_low_flow_vol` 的误报率，而不是直接改全局阈值
+  - 继续保持 `sample20` 不变，若要进一步下钻，优先为 watchlist 叠加确认条件，而不是直接下调主阈值
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 复核 `2.5% + 连续2日` 在 watchlist 弱层里是否带来可接受的误报，而不是只看密度提升
+  - 优先尝试的确认条件应偏向“过滤震荡期弱信号”，例如叠加北向同向、或排除 `G03_震荡`
 
 ## 回链
 
@@ -116,3 +120,7 @@
   - `artifacts/t02_local_tuning/t02_local_tuning_summary_latest.json`
   - `artifacts/t02_local_tuning/t02_local_tuning_scenario_comparison_latest.tsv`
   - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`
+- 局部微调风险复核：
+  - `artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json`
+  - `artifacts/t02_local_tuning_review/t02_local_tuning_group_review_latest.tsv`
+  - `artifacts/t02_local_tuning_review/t02_local_tuning_added_trigger_detail_latest.tsv`

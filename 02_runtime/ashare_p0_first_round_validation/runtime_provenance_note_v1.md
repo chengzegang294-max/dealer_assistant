@@ -151,6 +151,17 @@
     - `artifacts/t02_local_tuning/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `analyze_t02_local_tuning_review_v1.py`
+  - 当前作用：
+    - 对 watchlist 组在 `2.5% + 连续2日` 下新增出来的触发执行噪声风险复核
+  - 默认输入：
+    - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
+    - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
+    - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`
+  - 默认产物：
+    - `artifacts/t02_local_tuning_review/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 
 ### INDEX_NOTE
 
@@ -268,6 +279,12 @@
     - `3% + 连续1日` 被判定为全局过松，因为全样本触发密度从 `41.1%` 直接升到 `83.0%`
     - `2.5% + 连续2日` 仅在 `low_flow_vol` 与 `growth_tech_low_flow_vol` 上保留为 watchlist 候选
     - `growth_tech` 整体当前不足以单独开分支
+- `T02` 当前已补 latest watchlist 风险复核：
+  - 风险复核摘要：`artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json`
+  - 当前裁决：
+    - `low_flow_vol` 与 `growth_tech_low_flow_vol` 虽继续保留 watchlist，但新增触发主要集中在 `G03_震荡`
+    - 北向同向支持分别只有 `15.8%` 与 `0%`
+    - 当前仍不足以把 `2.5% + 连续2日` 升级成正式局部分支
 - 还未补统一批次汇总脚本
 
 ## 当前回链

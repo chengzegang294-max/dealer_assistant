@@ -1,0 +1,20 @@
+{
+  "producer": "analyze_t02_local_tuning_review_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 局部阈值微调噪声风险复核",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",
+  "layer_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv",
+  "tuning_recommendation_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv",
+  "baseline_threshold": 0.03,
+  "candidate_threshold": 0.025,
+  "min_consecutive_days": 2,
+  "watchlist_groups_reviewed": [
+    "low_flow_vol",
+    "growth_tech_low_flow_vol"
+  ],
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning_review/t02_local_tuning_review_summary_latest.json",
+    "group_review_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning_review/t02_local_tuning_group_review_latest.tsv",
+    "added_trigger_detail_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning_review/t02_local_tuning_added_trigger_detail_latest.tsv"
+  }
+}

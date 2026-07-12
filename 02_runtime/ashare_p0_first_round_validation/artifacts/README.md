@@ -99,6 +99,14 @@
     - latest 局部阈值试算
     - `3% + 连续1日` 被判定为全局过松
     - 当前仅保留 `low_flow_vol` 与 `growth_tech_low_flow_vol` 的 `2.5% + 连续2日` watchlist 候选
+- `t02_local_tuning_review/`
+  - `t02_local_tuning_review_summary_latest.json`
+  - `t02_local_tuning_group_review_latest.tsv`
+  - `t02_local_tuning_added_trigger_detail_latest.tsv`
+  - 当前口径：
+    - latest watchlist 噪声风险复核
+    - 新增触发主要集中在 `G03_震荡`
+    - `low_flow_vol` 与 `growth_tech_low_flow_vol` 当前仍只保留弱候选地位
 
 ## 当前回链
 
