@@ -27,6 +27,7 @@
   - 当前触发分布：`000001.SZ=12`、`601318.SH=11`、`000002.SZ=9`、`000651.SZ=9`、`600030.SH=8`、`600276.SH=8`、`601899.SH=8`、`600050.SH=7`、`600519.SH=7`、`300750.SZ=5`
   - 当前阶段分布：`G01_普涨=23`、`G02_普跌=17`、`G03_震荡=44`
   - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180`，触发密度约从 `45.6%` 变到 `46.7%`
+  - 当前扩样结论：阈值没有在 `5 -> 10` 标的扩样时明显失真
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -91,3 +92,5 @@
   - `data/t02_sources/industry_tushare/t02_industry_map_tushare__list_status_L.csv`
 - symbol x regime 统计：
   - `artifacts/t02_fund_flow_scan/t02_symbol_regime_trigger_counts_latest.tsv`
+- 扩样稳定性对比：
+  - `artifacts/t02_fund_flow_scan/t02_sample_expansion_comparison_latest.tsv`

@@ -1,0 +1,3 @@
+sample_label	symbol_count	rows_scanned	trigger_rows	trigger_symbols	trigger_density	regime_g01	regime_g02	regime_g03	key_takeaway
+sample5	5	90	41	5	0.4556	12	8	21	首批真实样本已证明阈值可用
+sample10	10	180	84	10	0.4667	23	17	44	扩样到10标的后触发密度保持稳定且三类阶段均有信号
