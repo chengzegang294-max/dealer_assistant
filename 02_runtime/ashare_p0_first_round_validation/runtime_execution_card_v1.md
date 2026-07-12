@@ -28,6 +28,7 @@
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_local_tuning_review_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/analyze_t02_confirmation_filter_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/analyze_t02_candidate_branch_v1.py`
 
 ## 当前范围
 
@@ -202,6 +203,20 @@
     - `artifacts/t02_confirmation_filter/t02_confirmation_filter_summary_latest.json`
     - `artifacts/t02_confirmation_filter/t02_confirmation_filter_scenario_comparison_latest.tsv`
     - `artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv`
+- `T02` 已完成弱候选分支裁决：
+  - 裁决对象：
+    - `2.5% + 连续2日 + 排除 G03_震荡`
+  - 并排结果：
+    - `low_flow_vol`：baseline `0.3405`，filtered candidate `0.1571`
+    - `growth_tech_low_flow_vol`：baseline `0.2833`，filtered candidate `0.1333`
+  - 当前结论：该候选虽然是弱层最优过滤型候选，但覆盖率相对 baseline 下掉过多，当前仍不足以从 `watchlist` 升级到 `微调`
+  - 当前口径：
+    - 全局默认仍使用 `3% + 连续2日`
+    - 弱层只保留 `2.5% + 连续2日 + 排除 G03_震荡` 作为观察型候选
+  - 裁决产物：
+    - `artifacts/t02_candidate_branch/t02_candidate_branch_summary_latest.json`
+    - `artifacts/t02_candidate_branch/t02_candidate_branch_decision_latest.tsv`
+    - `reports/T02_candidate_branch_decision_v1.md`
 
 ## 当前最小命令入口
 

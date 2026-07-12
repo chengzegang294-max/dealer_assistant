@@ -44,6 +44,11 @@
     - `排除 G03_震荡` 是最顺的第一道过滤：`low_flow_vol` 保留 `66/162`，`growth_tech_low_flow_vol` 保留 `24/60`
     - 这刀能把两组的 `G03` 占比都直接压到 `0%`，同时仍保留约 `40%` 候选
     - 单独要求 `北向同向` 虽更干净，但只保留 `13.6%` 与 `16.7%` 候选，当前更像二级确认而不是主过滤
+  - 当前候选分支裁决：
+    - `2.5% + 连续2日 + 排除 G03_震荡` 是弱层最优候选，但还不能升级成正式 `微调`
+    - `low_flow_vol`：baseline `0.3405` 对比 filtered candidate `0.1571`
+    - `growth_tech_low_flow_vol`：baseline `0.2833` 对比 filtered candidate `0.1333`
+    - 当前更合理定位是“观察型候选分支”，不是“默认接管 baseline 的微调分支”
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -65,12 +70,12 @@
 - 结论判断：
   - 当前建议：`保留`
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
-  - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
+  - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine；弱层候选分支虽然存在，但覆盖率还不够支撑升级为正式微调
 - 下一步动作：
-  - 继续保持 `sample20` 不变，若要进一步下钻，优先为 watchlist 叠加确认条件，而不是直接下调主阈值
+  - 继续保持 `sample20` 不变，若要进一步下钻，优先为观察型候选补更轻的二级确认，而不是再松主阈值
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 当前最优先确认条件是 `排除 G03_震荡`；`北向同向` 暂定为第二层加严过滤
+  - 当前最优先结构是：baseline 保持不动；观察型候选使用 `2.5% + 连续2日 + 排除 G03_震荡`；`北向同向` 暂定为第二层加严过滤
 
 ## 回链
 
@@ -132,3 +137,7 @@
   - `artifacts/t02_confirmation_filter/t02_confirmation_filter_summary_latest.json`
   - `artifacts/t02_confirmation_filter/t02_confirmation_filter_scenario_comparison_latest.tsv`
   - `artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv`
+- 候选分支裁决：
+  - `artifacts/t02_candidate_branch/t02_candidate_branch_summary_latest.json`
+  - `artifacts/t02_candidate_branch/t02_candidate_branch_decision_latest.tsv`
+  - `reports/T02_candidate_branch_decision_v1.md`

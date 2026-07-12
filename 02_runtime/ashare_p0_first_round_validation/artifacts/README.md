@@ -115,6 +115,13 @@
     - latest watchlist 确认条件过滤试算
     - 首选第一道过滤：`排除 G03_震荡`
     - `北向同向` 当前更适合作为第二层加严条件
+- `t02_candidate_branch/`
+  - `t02_candidate_branch_summary_latest.json`
+  - `t02_candidate_branch_decision_latest.tsv`
+  - 当前口径：
+    - latest 观察型候选分支裁决
+    - `2.5% + 连续2日 + 排除 G03_震荡` 当前仍不升级为 `微调`
+    - 当前无可直接接管 baseline 的局部分支
 
 ## 当前回链
 

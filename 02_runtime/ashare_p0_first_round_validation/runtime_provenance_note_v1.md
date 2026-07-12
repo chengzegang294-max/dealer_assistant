@@ -173,6 +173,18 @@
     - `artifacts/t02_confirmation_filter/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `analyze_t02_candidate_branch_v1.py`
+  - 当前作用：
+    - 对观察型候选分支 `2.5% + 连续2日 + 排除 G03_震荡` 执行 baseline 并排裁决
+  - 默认输入：
+    - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
+    - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
+    - `artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv`
+    - `artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv`
+  - 默认产物：
+    - `artifacts/t02_candidate_branch/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 
 ### INDEX_NOTE
 
@@ -302,6 +314,13 @@
     - `排除 G03_震荡` 是 watchlist 组最优先的第一道过滤
     - `low_flow_vol` 可保留 `66/162`，`growth_tech_low_flow_vol` 可保留 `24/60`
     - `北向同向` 虽更严格，但保留率只剩 `13.6%` 与 `16.7%`，当前更适合第二层加严
+- `T02` 当前已补 latest 候选分支裁决：
+  - 裁决摘要：`artifacts/t02_candidate_branch/t02_candidate_branch_summary_latest.json`
+  - 当前裁决：
+    - 观察型候选 `2.5% + 连续2日 + 排除 G03_震荡` 仍不升级为 `微调`
+    - `low_flow_vol`：baseline `0.3405` 对比 filtered candidate `0.1571`
+    - `growth_tech_low_flow_vol`：baseline `0.2833` 对比 filtered candidate `0.1333`
+    - 当前无 `micro_adjust_candidate_groups`
 - 还未补统一批次汇总脚本
 
 ## 当前回链

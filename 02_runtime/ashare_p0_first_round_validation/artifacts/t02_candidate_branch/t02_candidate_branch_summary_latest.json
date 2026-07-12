@@ -1,0 +1,21 @@
+{
+  "producer": "analyze_t02_candidate_branch_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 watchlist 候选分支裁决",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",
+  "layer_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv",
+  "tuning_recommendation_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_local_tuning/t02_local_tuning_recommendation_latest.tsv",
+  "confirmation_filter_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_confirmation_filter/t02_confirmation_filter_recommendation_latest.tsv",
+  "baseline_threshold": 0.03,
+  "candidate_threshold": 0.025,
+  "min_consecutive_days": 2,
+  "watchlist_groups_reviewed": [
+    "low_flow_vol",
+    "growth_tech_low_flow_vol"
+  ],
+  "micro_adjust_candidate_groups": [],
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_candidate_branch/t02_candidate_branch_summary_latest.json",
+    "decision_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_candidate_branch/t02_candidate_branch_decision_latest.tsv"
+  }
+}

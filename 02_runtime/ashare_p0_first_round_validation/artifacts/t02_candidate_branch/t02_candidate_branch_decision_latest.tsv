@@ -1,0 +1,3 @@
+group_label	symbol_count	rows_scanned	baseline_density	candidate_no_filter_density	best_filter_scenario	candidate_filtered_density	density_delta_vs_baseline	retention_vs_looser_candidate	northbound_alignment_share	decision	decision_reason
+low_flow_vol	7	420	0.3405	0.3857	candidate_exclude_g03	0.1571	-0.1833	0.4074	0.1667	keep_watchlist	candidate branch loses too much coverage relative to baseline
+growth_tech_low_flow_vol	3	180	0.2833	0.3333	candidate_exclude_g03	0.1333	-0.15	0.4	0.2917	keep_watchlist	candidate branch loses too much coverage relative to baseline
