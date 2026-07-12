@@ -7,6 +7,7 @@
 - repo 级执行合同：
   - `00_entry/A股_P0_离线验证执行卡__20260712.md`
   - `00_entry/A股_P0_离线验证结论门槛__20260712.md`
+  - `00_entry/A股_P0_GROUP_08研究合同桥接与验证映射卡__20260713.md`
 - `INDEX_NOTE`:
   - `02_runtime/ashare_p0_first_round_validation/README.md`
   - `02_runtime/ashare_p0_first_round_validation/artifact_index_v1.tsv`
@@ -44,6 +45,7 @@
   - 行业映射字段
   - 资金字段
   - 业绩事件字段
+  - 研究合同桥接说明
 - 当前输出：
   - 单项结果页
   - 首轮汇总结论页
@@ -52,6 +54,7 @@
 ## 当前作用
 
 - 把 `00_entry` 的字段、样本、输出模板和门槛文档接到实际 runtime 工作线。
+- 把 `GROUP_08` 新冻结合同限制在“执行前桥接层”，避免直接误接到默认 runtime 门控。
 - 固定首轮结果页应该落在哪里，避免“脚本先跑了，结果不知道放哪”。
 - 当前只提供最小执行骨架，不假装脚本已经齐全。
 
