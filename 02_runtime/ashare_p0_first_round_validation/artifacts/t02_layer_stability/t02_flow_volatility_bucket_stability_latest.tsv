@@ -1,0 +1,4 @@
+flow_volatility_bucket	symbol_count	rows_scanned	trigger_rows	trigger_density	avg_symbol_density	top_symbol
+high	7	420	189	0.45	0.45	000001.SZ
+mid	6	360	161	0.4472	0.4472	000651.SZ
+low	7	420	143	0.3405	0.3405	600519.SH

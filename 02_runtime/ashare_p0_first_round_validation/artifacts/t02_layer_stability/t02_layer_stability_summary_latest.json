@@ -1,0 +1,24 @@
+{
+  "producer": "analyze_t02_layer_stability_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 分层稳定性",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",
+  "sample_list_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/data/t02_multi_symbol_sample_v3.csv",
+  "trigger_symbol_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_symbol_trigger_counts_latest.tsv",
+  "trigger_symbol_regime_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_fund_flow_scan/t02_symbol_regime_trigger_counts_latest.tsv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability",
+  "flow_volatility_definition": "stddev(main_fund_net_inflow_ratio) over latest window",
+  "rows_scanned": 1200,
+  "symbols_covered": 20,
+  "trigger_rows": 493,
+  "low_stddev_cut": 0.108568,
+  "high_stddev_cut": 0.137863,
+  "strongest_macro_bucket": "金融",
+  "strongest_flow_volatility_bucket": "high",
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_layer_stability_summary_latest.json",
+    "symbol_layer_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv",
+    "macro_bucket_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_macro_bucket_stability_latest.tsv",
+    "flow_volatility_bucket_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_layer_stability/t02_flow_volatility_bucket_stability_latest.tsv"
+  }
+}

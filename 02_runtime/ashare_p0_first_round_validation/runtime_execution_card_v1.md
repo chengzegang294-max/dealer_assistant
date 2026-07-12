@@ -24,6 +24,7 @@
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_regime_proxy_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/fetch_t02_industry_map_tushare_v1.py`
   - `02_runtime/ashare_p0_first_round_validation/run_t02_fund_flow_scan_v1.py`
+  - `02_runtime/ashare_p0_first_round_validation/analyze_t02_layer_stability_v1.py`
 
 ## 当前范围
 
@@ -137,6 +138,23 @@
   - 对比产物：
     - `artifacts/t02_fund_flow_scan/t02_sample_expansion_comparison_latest.tsv`
     - `artifacts/t02_fund_flow_scan/t02_time_window_stability_latest.tsv`
+- `T02` 已完成分层稳定性分析：
+  - 行业大类分层：
+    - `金融=49.4%`
+    - `地产链=48.3%`
+    - `消费防御=47.9%`
+    - `资源周期=37.1%`
+    - `成长科技=35.6%`
+  - 资金比率波动分层：
+    - `high=45.0%`
+    - `mid=44.7%`
+    - `low=34.1%`
+  - 当前结论：全局阈值仍可保留，但穿透力明显更偏向 `金融 / 地产链 / 消费防御`；`成长科技` 与 `低资金比率波动` 组更像后续微调候选，而不是当前就要推翻全局口径
+  - 分层产物：
+    - `artifacts/t02_layer_stability/t02_layer_stability_summary_latest.json`
+    - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
+    - `artifacts/t02_layer_stability/t02_macro_bucket_stability_latest.tsv`
+    - `artifacts/t02_layer_stability/t02_flow_volatility_bucket_stability_latest.tsv`
 
 ## 当前最小命令入口
 

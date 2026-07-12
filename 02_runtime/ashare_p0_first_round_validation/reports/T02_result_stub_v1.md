@@ -29,6 +29,8 @@
   - 从 `5` 标的 `41/90` 到 `10` 标的 `84/180` 再到 `20` 标的单月 `160/360`，触发密度约从 `45.6%`、`46.7%` 变到 `44.4%`
   - 把时间窗继续拉长到 `2026-04-01 -> 2026-06-30` 后，触发密度进一步回落到 `41.1%`，但没有出现断崖式塌陷
   - 当前扩样与拉窗结论：阈值在 `5 -> 10 -> 20` 标的扩样和跨月拉窗后仍保持稳定可消费
+  - 当前分层结论：`金融=49.4%`、`地产链=48.3%`、`消费防御=47.9%` 明显高于 `成长科技=35.6%`
+  - 当前资金比率波动分层：`high=45.0%`、`mid=44.7%`、`low=34.1%`，说明低波动资金组最不容易被当前阈值穿透
   - preflight 已确认：`token_present = true`，`pandas` 与 `tushare` 已可用
 - 抽样观察：
   - 当前模板包含完整标准列名，可作为真实输入的最小对齐合同
@@ -45,15 +47,17 @@
   - 当前 `regime` 采用 `trade_date` 级代理表，`1200` 行里命中 `1200` 行
   - 当前 `symbol x regime` 交叉分布已落盘，可直接看哪个标的只在单一阶段触发
   - 当前最高触发频次回到金融与防御风格前列：`000001.SZ=41`、`000651.SZ=34`、`600760.SH=34`
+  - 当前价格列仍为空，分层分析暂不假装使用价格波动，而改用 `main_fund_net_inflow_ratio` 标准差做轻量资金波动代理
+  - 当前最强宏观层为 `金融`，最弱宏观层为 `成长科技`
 - 结论判断：
   - 当前建议：`保留`
   - 保留原因：阈值链路已在更宽行业真实样本上形成一致可解释触发，并且在 `G01 / G02 / G03` 三类阶段都有可消费信号
   - 当前限制：样本仍只覆盖 `20` 个标的、`60` 个交易日；当前 `regime` 仍是宽基指数代理，不是完整 breadth engine
 - 下一步动作：
-  - 继续保持 `sample20` 不变，下钻到标的分层和行业分层，观察谁在长窗下最稳定
+  - 继续保持 `sample20` 不变，尝试只对 `成长科技 / 低资金波动组` 做局部阈值微调试算
   - 复用 `fetch_t02_moneyflow_batch_tushare_v1.py` 批量生成更多 `moneyflow` 真实 CSV
   - 若继续增强 `regime`，可再补上涨/下跌家数或更细宽基代理
-  - 复核 `3% + 连续2日` 是否需要按行业或波动层分支微调
+  - 复核 `3% + 连续2日` 是否需要按行业或资金波动层分支微调
 
 ## 回链
 
@@ -97,3 +101,9 @@
   - `artifacts/t02_fund_flow_scan/t02_sample_expansion_comparison_latest.tsv`
 - 时间窗稳定性对比：
   - `artifacts/t02_fund_flow_scan/t02_time_window_stability_latest.tsv`
+- 分层稳定性摘要：
+  - `artifacts/t02_layer_stability/t02_layer_stability_summary_latest.json`
+- 分层稳定性明细：
+  - `artifacts/t02_layer_stability/t02_symbol_layer_stability_latest.tsv`
+  - `artifacts/t02_layer_stability/t02_macro_bucket_stability_latest.tsv`
+  - `artifacts/t02_layer_stability/t02_flow_volatility_bucket_stability_latest.tsv`

@@ -129,6 +129,18 @@
     - `artifacts/t02_fund_flow_scan/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `analyze_t02_layer_stability_v1.py`
+  - 当前作用：
+    - 基于 latest `T02` 宽表与 latest 触发统计，输出宏观层和资金比率波动层的稳定性摘要
+  - 默认输入：
+    - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
+    - `artifacts/t02_fund_flow_scan/t02_symbol_trigger_counts_latest.tsv`
+    - `artifacts/t02_fund_flow_scan/t02_symbol_regime_trigger_counts_latest.tsv`
+    - `data/t02_multi_symbol_sample_v3.csv`
+  - 默认产物：
+    - `artifacts/t02_layer_stability/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 
 ### INDEX_NOTE
 
@@ -226,6 +238,20 @@
   - 当前结果：`1200` 行真实输入、`493` 条触发、`20` 个触发标的
   - 当前阶段分布：`G01_普涨=134`、`G02_普跌=54`、`G03_震荡=305`
   - 当前限制：仍是固定 20 标的样本，不足以直接外推出全市场门槛
+- `T02` 当前已补 latest 分层稳定性结果：
+  - 分层摘要：`artifacts/t02_layer_stability/t02_layer_stability_summary_latest.json`
+  - 宏观层结果：
+    - `金融=49.4%`
+    - `地产链=48.3%`
+    - `消费防御=47.9%`
+    - `资源周期=37.1%`
+    - `成长科技=35.6%`
+  - 资金比率波动层结果：
+    - `high=45.0%`
+    - `mid=44.7%`
+    - `low=34.1%`
+  - 当前口径：
+    - 由于 latest 宽表价格列仍为空，分层不使用价格波动，改用 `main_fund_net_inflow_ratio` 标准差作为轻量波动代理
 - 还未补统一批次汇总脚本
 
 ## 当前回链

@@ -1,0 +1,6 @@
+macro_bucket	symbol_count	rows_scanned	trigger_rows	trigger_density	avg_symbol_density	avg_abs_main_flow_ratio	avg_flow_ratio_stddev	top_symbol
+金融	3	180	89	0.4944	0.4944	0.1315	0.1325	000001.SZ
+地产链	1	60	29	0.4833	0.4833	0.1585	0.1705	000002.SZ
+消费防御	4	240	115	0.4792	0.4792	0.1165	0.1213	000651.SZ
+资源周期	4	240	89	0.3708	0.3708	0.0989	0.1078	600019.SH
+成长科技	8	480	171	0.3563	0.3563	0.1144	0.1313	600760.SH

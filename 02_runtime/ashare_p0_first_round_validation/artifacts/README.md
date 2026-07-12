@@ -65,18 +65,32 @@
   - `t02_real_input_build_summary_latest.json`
   - `t02_real_input_candidate_latest.csv`
   - 当前口径：
-    - 宽表拼接 smoke-run
-    - 输入行数：`1`
-    - 当前缺失 join 源：`moneyflow / northbound / regime / industry`
+    - latest 跨月真实宽表
+    - 输入行数：`1200`
+    - join 命中：`northbound=1140/1200`、`regime=1200/1200`、`industry=1200/1200`
 - `t02_fund_flow_scan/`
   - `t02_fund_flow_scan_summary_latest.json`
   - `t02_trigger_detail_latest.tsv`
   - `t02_symbol_trigger_counts_latest.tsv`
   - `t02_regime_trigger_counts_latest.tsv`
+  - `t02_symbol_regime_trigger_counts_latest.tsv`
+  - `t02_sample_expansion_comparison_latest.tsv`
+  - `t02_time_window_stability_latest.tsv`
   - 当前口径：
-    - 模板级 smoke-run
-    - 输入行数：`1`
-    - 触发数：`0`
+    - latest 跨月真实扫描
+    - 输入行数：`1200`
+    - 触发数：`493`
+    - 触发标的：`20`
+- `t02_layer_stability/`
+  - `t02_layer_stability_summary_latest.json`
+  - `t02_symbol_layer_stability_latest.tsv`
+  - `t02_macro_bucket_stability_latest.tsv`
+  - `t02_flow_volatility_bucket_stability_latest.tsv`
+  - 当前口径：
+    - latest 分层稳定性分析
+    - 最强宏观层：`金融=49.4%`
+    - 最弱宏观层：`成长科技=35.6%`
+    - 波动层：`high=45.0%`、`mid=44.7%`、`low=34.1%`
 
 ## 当前回链
 
