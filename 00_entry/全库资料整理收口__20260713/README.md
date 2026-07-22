@@ -1,0 +1,636 @@
+# 全库资料整理收口
+
+更新时间：2026-07-23
+
+## 作用
+
+- 本目录集中放置当前“纯资料整理阶段”的 repo-global 台账、拆包规则、参考系统状态和临时资料评估卡。
+- 这样做是为了避免 `00_entry/` 根层继续散放同类整理文档。
+- 当前目录只收：
+  - 全库资料整理总台账
+  - 最后一轮资料收集拆包路径清单
+  - 参考交易系统补齐状态表
+  - 参考交易系统补采优先级与拆包深度说明
+  - 临时资料纳入评估卡
+  - 收口前裁决包
+  - 当前治理补页
+
+## 默认阅读顺序
+
+- 1. `全库资料整理总台账__20260713.md`
+- 2. `最后一轮资料收集拆包路径清单__20260713.md`
+- 3. `参考交易系统统一总索引入口__20260713.md`
+- 4. `参考交易系统补齐状态表__20260713.md`
+- 5. `参考交易系统补采优先级表__20260713.md`
+- 6. `参考交易系统拆包深度枚举说明页__20260713.md`
+- 7. `资料类型吸收分流细规则__20260713.md`
+- 8. `A5_未完线总审计与收尾顺序页__20260723.md`
+- 当前新增治理补页：
+  - `A5_经验型视频补充触发与排除页__20260723.md`
+  - `A5_视频资料提取与多AI交叉校对流程页__20260723.md`
+  - `A5_仓库重要文件入口与跨机迁移说明页__20260723.md`
+- 9. `待补采参考交易系统候选清单__20260713.md`
+- 10. `首批补采对象批次级执行清单__20260713.md`
+- 11. `收口前裁决包__首批补采剩余缺口总表__20260714.md`
+- 11. `收口前裁决包__方案B进入前门槛清单__20260714.md`
+- 12. `收口前裁决包__MFLOW_vs_INSTB_多AI讨论前情提要与裁决框架__20260714.md`
+- 13. `收口前裁决包__MFLOW_provider与样本可得性审计页__20260714.md`
+- 14. `收口前裁决包__MFLOW_字段映射审计页__20260714.md`
+- 15. `收口前裁决包__MFLOW_divergence_score_派生审计页__20260714.md`
+- 16. `收口前裁决包__INSTB_provider与样本可得性审计页__20260714.md`
+- 17. `收口前裁决包__INSTB_quarterly_holdings_provider与样本可得性细化表__20260714.md`
+- 18. `收口前裁决包__MFLOW_vs_INSTB_多家AI正式发包稿__20260714.md`
+- 19. `收口前裁决包__MFLOW_vs_INSTB_多家AI回收记录模板__20260714.md`
+- 20. `收口前裁决包__MFLOW_vs_INSTB_主负责人裁决记录页__20260714.md`
+- 21. `收口前裁决包__MFLOW_sellord_open_intent_NEED_EVIDENCE与替代源判断页__20260714.md`
+- 22. `收口前裁决包__方案B进入判断草案__20260714.md`
+- 23. `收口前裁决包__方案B进入正式判断页__20260714.md`
+- 24. `收口前裁决包__方案B正式切入多AI裁决记录__20260715.md`
+- 25. `收口前裁决包__方案B_B0过渡切入执行令__20260715.md`
+- 26. `收口前裁决包__方案B_B0首批输入对象与冻结边界清单__20260715.md`
+- 27. `收口前裁决包__方案B_B0最小合同映射试装__20260715.md`
+- 28. `收口前裁决包__方案B_B0_batch147标准化与可复现说明__20260715.md`
+- 29. `收口前裁决包__方案B_B0误映射边界说明__20260715.md`
+- 30. `收口前裁决包__方案B正式生效页__20260715.md`
+- 31. `收口前裁决包__方案B首批对象最小合同层准备清单__20260715.md`
+- 32. `方案A_全库资料资产盘点与需求矩阵__20260715.md`
+- 33. `方案A_资料资产清单_v1.tsv`
+- 34. `方案A_需求矩阵_v1.tsv`
+- 35. `方案A_多AI正式发包稿__20260715.md`
+- 36. `方案A_AI补充建议回收表_v1.tsv`
+- 37. `方案A_多AI回收汇总与投票包__20260715.md`
+- 38. `方案A_可转入定向补阈值说明__20260715.md`
+- 39. `方案A_第二轮多AI发包稿__投票与单点缺口__20260715.md`
+- 40. `方案A_第二轮多AI回收记录与主负责人裁决__20260715.md`
+- 41. `方案A_补采优先级表__20260715.md`
+- 42. `方案A_停止规则__20260715.md`
+- 43. `A_REQ_002_最小因子字段表__20260715.tsv`
+- 44. `A_REQ_002_对象卡验收例__20260715.md`
+- 45. `A_REQ_002_资料到字段映射说明__20260715.md`
+- 46. `A_REQ_003_风险模型候选清单__20260715.md`
+- 47. `A_REQ_003_字段映射表__20260715.tsv`
+- 48. `A_REQ_003_最小验收口径__20260715.md`
+- 49. `A_REQ_001_数据可得性与成本裁决补页__20260715.md`
+- 50. `A_REQ_001_权限边界与降级说明__20260715.md`
+- 51. `A5_合同层桥接总表__20260715.md`
+- 52. `A5_合同层下沉执行清单__20260715.md`
+- 53. `A5_统一字段分组表__20260715.tsv`
+- 54. `A5_统一验收断言表__20260715.tsv`
+- 55. `A5_统一降级矩阵__20260715.tsv`
+- 56. `A5_统一对象接口草案__20260715.md`
+- 57. `A5_最小对象卡草案__20260715.md`
+- 58. `A5_对象卡正式化检查清单__20260715.md`
+- 59. `A5_字段真实来源状态表__20260715.tsv`
+- 60. `A5_runtime对接边界页__20260715.md`
+- 61. `A5_最小样本实例卡__20260716.md`
+- 62. `A5_正式对象卡模板__20260716.md`
+- 63. `A5_实现前冻结门槛页__20260716.md`
+- 64. `A5_实现阻塞项拆解表__20260716.tsv`
+- 65. `A5_G5G6_多AI讨论前情提要与裁决框架__20260716.md`
+- 66. `A5_G5G6_多家AI正式发包稿__20260716.md`
+- 67. `A5_G5G6_多家AI回收记录模板__20260716.md`
+- 68. `A5_G5G6_多家AI回收记录与主负责人裁决__20260716.md`
+- 69. `A5_alpha_score_正式代理合同页__20260716.md`
+- 70. `A5_covariance_model_id_实现前口径判断页__20260716.md`
+- 71. `A5_target_weight_最小生成链判断页__20260716.md`
+- 72. `A5_portfolio_tracking_error_风险输出链判断页__20260716.md`
+- 73. `A5_adjusted_position_weight_回溯闭合判断页__20260716.md`
+- 74. `A5_G5主链闭合状态页__20260716.md`
+- 75. `A5_G5_输出闭合判断页__20260716.md`
+- 76. `A5_target_weight_输出闭合判断页__20260716.md`
+- 77. `A5_portfolio_tracking_error_输出闭合判断页__20260716.md`
+- 78. `A5_adjusted_position_weight_输出闭合判断页__20260716.md`
+- 79. `A5_G5_输出通过条件_多AI前情提要与裁决框架__20260716.md`
+- 80. `A5_G5_输出通过条件_多家AI正式发包稿__20260716.md`
+- 81. `A5_G5_输出通过条件_多家AI回收记录模板__20260716.md`
+- 82. `A5_G5_输出通过条件_多家AI回收记录与主负责人裁决__20260716.md`
+- 83. `A5_target_weight_最小通过条件页__20260716.md`
+- 84. `A5_target_weight_通过后仍需证据清单页__20260716.md`
+- 85. `A5_portfolio_tracking_error_最小通过条件页__20260716.md`
+- 86. `A5_adjusted_position_weight_最小通过条件页__20260716.md`
+- 87. `A5_G5_输出升格证据总表__20260716.tsv`
+- 88. `A5_G5_输出升格顺序裁决页__20260716.md`
+- 89. `A5_target_weight_升格证据补齐页__20260716.md`
+- 90. `A5_target_weight_升格裁决_多AI前情提要与裁决框架__20260716.md`
+- 91. `A5_target_weight_升格裁决_多家AI正式发包稿__20260716.md`
+- 92. `A5_target_weight_升格裁决_多家AI回收记录模板__20260716.md`
+- 93. `A5_target_weight_升格裁决_多家AI回收记录与主负责人裁决__20260716.md`
+- 94. `A5_target_weight_升格裁决_第二轮更窄追问稿__20260716.md`
+- 95. `A5_target_weight_最小缺口补齐页__20260716.md`
+- 96. `A5_target_weight_validation_run_执行说明页__20260716.md`
+- 97. `A5_指标效用组合与回测启动边界页__20260716.md`
+- 98. `A5_指标职责分层与场景映射页__20260716.md`
+- 99. `A5_最小信号组合卡__候选骨架__20260716.md`
+- 100. `A5_交易逻辑与策略形态_多AI讨论预留页__20260716.md`
+- 101. `A5_target_weight_actual_generation_execution页__20260716.md`
+- 102. `A5_target_weight_重开升格裁决_多AI前情提要与裁决框架__20260716.md`
+- 103. `A5_target_weight_重开升格裁决_多家AI正式发包稿__20260716.md`
+- 104. `A5_target_weight_重开升格裁决_多家AI回收记录模板__20260716.md`
+- 105. `A5_target_weight_重开升格裁决_多家AI回收记录与主负责人裁决__20260716.md`
+- 106. `A5_target_weight_升格裁决__actual_generation后_多AI前情提要与裁决框架__20260716.md`
+- 107. `A5_target_weight_升格裁决__actual_generation后_多家AI正式发包稿__20260716.md`
+- 108. `A5_target_weight_升格裁决__actual_generation后_多家AI回收记录模板__20260716.md`
+- 109. `A5_target_weight_升格裁决__actual_generation后_多家AI回收记录与主负责人裁决__20260716.md`
+- 110. `A5_target_weight_升格裁决__actual_generation后_第二轮更窄追问稿__20260716.md`
+- 111. `A5_target_weight_升格裁决__actual_generation后_第二轮回收记录与主负责人裁决__20260716.md`
+- 112. `A5_degraded_risk_handling_充分性与稳健边界页__20260716.md`
+- 113. `A5_degraded_risk_handling_边界验证清单页__20260716.md`
+- 114. `A5_degraded_risk_handling_主负责人书面验收页__20260716.md`
+- 115. `A5_target_weight_升级判断重开准备页__20260716.md`
+- 116. `A5_target_weight_升级判断重开_多AI前情提要与裁决框架__20260716.md`
+- 117. `A5_target_weight_升级判断重开_多家AI正式发包稿__20260716.md`
+- 118. `A5_target_weight_升级判断重开_多家AI回收记录模板__20260716.md`
+- 119. `A5_target_weight_升级判断重开_多家AI回收记录与主负责人裁决__20260716.md`
+- 120. `A5_target_weight_verified_with_degraded_risk后续升级判断准备页__20260717.md`
+- 121. `A5_target_weight_verified_with_degraded_risk后续升级判断_多AI前情提要与裁决框架__20260717.md`
+- 122. `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI正式发包稿__20260717.md`
+- 123. `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI回收记录模板__20260717.md`
+- 124. `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI回收记录与主负责人裁决__20260717.md`
+- 125. `A5_portfolio_tracking_error_升级判断准备页__20260716.md`
+- 126. `A5_portfolio_tracking_error_benchmark风险输出最小正式口径页__20260716.md`
+- 127. `A5_portfolio_tracking_error_covariance最小输入层页__20260716.md`
+- 128. `A5_portfolio_tracking_error_降级风险口径可审计样例页__20260716.md`
+- 129. `A5_portfolio_tracking_error_升级判断_多AI前情提要与裁决框架__20260716.md`
+- 130. `A5_portfolio_tracking_error_升级判断_多家AI正式发包稿__20260716.md`
+- 131. `A5_portfolio_tracking_error_升级判断_多家AI回收记录模板__20260716.md`
+- 132. `A5_portfolio_tracking_error_升级判断_多家AI回收记录与主负责人裁决__20260716.md`
+- 133. `A5_portfolio_tracking_error_frozen后续升级判断_首轮混合回包与主负责人裁决__20260717.md`
+- 134. `A5_portfolio_tracking_error_frozen后续升级判断准备页__20260717.md`
+- 135. `A5_portfolio_tracking_error_frozen后续升级判断_多AI前情提要与裁决框架__20260717.md`
+- 136. `A5_portfolio_tracking_error_frozen后续升级判断_多家AI正式发包稿__20260717.md`
+- 137. `A5_portfolio_tracking_error_frozen后续升级判断_多家AI回收记录模板__20260717.md`
+- 138. `A5_portfolio_tracking_error_frozen后续升级判断_第二轮回包与主负责人裁决__20260718.md`
+- 139. `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本正式发包稿__20260718.md`
+- 140. `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本回收记录模板__20260718.md`
+- 141. `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本回包与主负责人裁决__20260718.md`
+- 142. `A5_covariance_model_id_downstream_still_locked后续判断准备页__20260718.md`
+- 143. `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本正式发包稿__20260718.md`
+- 144. `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本回收记录模板__20260718.md`
+- 145. `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本回包与主负责人裁决__20260718.md`
+- 146. `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因准备页__20260718.md`
+- 147. `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_超窄纯文本正式发包稿__20260718.md`
+- 148. `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_超窄纯文本回收记录模板__20260718.md`
+- 149. `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_回包与主负责人裁决__20260718.md`
+- 150. `A5_target_weight解除not_output_passed正式边界准备页__20260718.md`
+- 151. `A5_target_weight解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+- 152. `A5_target_weight解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+- 153. `A5_target_weight解除not_output_passed正式边界_回包与主负责人裁决__20260718.md`
+- 154. `A5_portfolio_tracking_error解除not_output_passed正式边界准备页__20260718.md`
+- 155. `A5_portfolio_tracking_error解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+- 156. `A5_portfolio_tracking_error解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+- 157. `A5_portfolio_tracking_error解除not_output_passed正式边界_回包与主负责人裁决__20260718.md`
+- 158. `A5_adjusted_position_weight解除not_output_passed正式边界准备页__20260718.md`
+- 159. `A5_adjusted_position_weight解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+- 160. `A5_adjusted_position_weight解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+- 161. `A5_adjusted_position_weight_升级判断准备页__20260716.md`
+- 162. `A5_adjusted_position_weight_final_size_scalar降级样例页__20260716.md`
+- 163. `A5_adjusted_position_weight_最终融合failure样例页__20260716.md`
+- 164. `A5_adjusted_position_weight_升级判断_多AI前情提要与裁决框架__20260716.md`
+- 165. `A5_adjusted_position_weight_升级判断_多家AI正式发包稿__20260716.md`
+- 166. `A5_adjusted_position_weight_升级判断_多家AI回收记录模板__20260716.md`
+- 167. `A5_adjusted_position_weight_升级判断_多家AI回收记录与主负责人裁决__20260716.md`
+- 168. `A5_covariance_model_id_总瓶颈判断准备页__20260716.md`
+- 169. `A5_covariance_model_id_总瓶颈判断_多AI前情提要与裁决框架__20260716.md`
+- 170. `A5_portfolio_tracking_error_actual_generation_execution页__20260718.md`
+- 171. `A5_adjusted_position_weight_actual_generation_execution页__20260718.md`
+- 172. `A5_G5_min_chain_execution页__20260718.md`
+- 170. `A5_covariance_model_id_总瓶颈判断_多家AI正式发包稿__20260716.md`
+- 171. `A5_covariance_model_id_总瓶颈判断_多家AI回收记录模板__20260716.md`
+- 172. `A5_covariance_model_id_总瓶颈判断_多家AI回收记录与主负责人裁决__20260716.md`
+- 173. `A5_covariance_model_id_候选模型家族冻结页__20260716.md`
+- 174. `A5_covariance_model_id_本体实跑最小准备页__20260716.md`
+- 175. `A5_covariance_model_id_本体实跑输入装配页__20260716.md`
+- 176. `A5_covariance_model_id_first_fresh_run入口准备页__20260716.md`
+- 177. `A5_covariance_model_id_first_fresh_run前检查页__20260716.md`
+- 178. `A5_covariance_model_id_first_fresh_run外部输入包清单页__20260716.md`
+- 179. `A5_covariance_model_id_first_fresh_run执行页__20260716.md`
+- 180. `A5_covariance_model_id_最小稳定性检查准备页__20260716.md`
+- 181. `A5_covariance_model_id_最小稳定性检查执行页__20260716.md`
+- 182. `A5_covariance_model_id_唯一模型收敛准备页__20260716.md`
+- 183. `A5_covariance_model_id_唯一模型收敛主负责人裁决页__20260716.md`
+- 184. `A5_covariance_model_id_唯一模型定稿准备页__20260716.md`
+- 185. `A5_covariance_model_id_唯一模型最小合同页__20260716.md`
+- 186. `A5_covariance_model_id_唯一模型定稿主负责人裁决页__20260716.md`
+- 187. `A5_covariance_model_id_ready判断准备页__20260716.md`
+- 188. `A5_covariance_model_id_ready判断_多AI前情提要与裁决框架__20260716.md`
+- 189. `A5_covariance_model_id_ready判断_多家AI正式发包稿__20260716.md`
+- 190. `A5_covariance_model_id_ready判断_多家AI回收记录模板__20260716.md`
+- 191. `A5_covariance_model_id_ready判断_多家AI回收记录与主负责人裁决__20260716.md`
+- 192. `A5_covariance_model_id_最小集成验证准备页__20260716.md`
+- 193. `A5_covariance_model_id_最小集成验证执行页__20260717.md`
+- 194. `A5_Cursor_Trae_FV_gate协同分区与交接页__20260718.md`
+- 195. `A5_execution_validation到financial_validity_gate阶段切换页__20260718.md`
+- 196. `A5_Cursor精读路径与FV_gate框架讨论包__20260718.md`
+- 197. `A5_financial_validity_gate最小入口与通过标准_多AI前情提要与讨论包__20260718.md`
+- 198. `A5_financial_validity_gate最小入口与通过标准页__20260719.md`
+- 199. `A5_FV_gate_v0_最小信号组合卡__20260719.md`
+- 200. `A5_FV_gate_v0_最小评价卡__20260719.md`
+- 201. `A5_FV_gate_v0_当前最佳最小口径冻结页__20260719.md`
+- 202. `A5_FV_gate_v0_current_best后续推进讨论包__20260719.md`
+- 203. `A5_FV_gate_v0_current_best后续推进主负责人裁决页__20260719.md`
+- 204. `A5_Cursor主导_FV_gate下一阶段规划讨论包__20260719.md`
+- 205. `A5_FV_gate_v1_sample_boundary阶段页__20260719.md`
+- 206. `A5_Cursor主导_FV_gate_new_evidence_type子阶段讨论包__20260719.md`
+- 207. `A5_Cursor仓库熟悉度验收与new_evidence_type统筹页__20260719.md`
+- 208. `A5_FV_gate_new_evidence_type_cost_sensitivity_v0阶段页__20260719.md`
+- 209. `A5_Cursor主导_FV_gate_second_new_evidence_type讨论包__20260719.md`
+- 210. `A5_FV_gate_new_evidence_type_holding_rule_v0阶段页__20260719.md`
+- 211. `A5_FV_gate_window_consistency_v0阶段页__20260719.md`
+- 212. `A5_FV_gate_window_consistency_v0后续方向_多AI前情提要与裁决框架__20260719.md`
+- 213. `A5_FV_gate_window_consistency_v0后续方向_多家AI正式发包稿__20260719.md`
+- 214. `A5_FV_gate_window_consistency_v0后续方向_多家AI回收记录模板__20260719.md`
+- 215. `A5_FV_gate_window_consistency_v0后续方向_多家AI回收记录与主负责人裁决__20260719.md`
+- 216. `A5_FV_gate_v2_third_window准备页__20260719.md`
+- 217. `A5_FV_gate_v2_third_window阶段页__20260719.md`
+- 218. `A5_Cursor主导_FV_gate_post_third_window_next_hand讨论包__20260719.md`
+- 219. `A5_FV_gate_active_underperformance_v0解释层页__20260719.md`
+- 220. `A5_项目终局口径页__20260719.md`
+- 221. `A5_项目终局到当前阶段桥接页__20260719.md`
+- 222. `A5_A股P0首版相对基准硬门禁_多AI前情提要与裁决框架__20260719.md`
+- 223. `A5_A股P0首版相对基准硬门禁_多家AI正式发包稿__20260719.md`
+- 224. `A5_A股P0首版相对基准硬门禁_多家AI回收记录模板__20260719.md`
+- 225. `A5_A股P0首版相对基准硬门禁_多家AI回收记录与主负责人裁决__20260719.md`
+- 226. `A5_A股P0原型阶段金融披露与条件式门禁页__20260719.md`
+- 227. `A5_A股P0原型合同细化页__20260719.md`
+- 228. `A5_A股P0首页入口页__20260719.md`
+- 229. `A5_A股P0首页四卡细化页__20260719.md`
+- 230. `A5_A股P0标的分析页与问答下钻页__20260719.md`
+- 231. `A5_Cursor同步包_A股P0原型最新进展与下一手问题__20260719.md`
+- 232. `A5_A股P0首页主工作区组件合同__20260719.md`
+- 233. `A5_A股P0首页主工作区状态与点击流页__20260719.md`
+- 234. `A5_A股P0标的分析页点击流与区块状态页__20260719.md`
+- 235. `A5_A股P0首页主工作区异常态与降级口径页__20260719.md`
+- 236. `A5_A股P0问答下钻模板与回答边界页__20260719.md`
+- 237. `A5_A股P0首页记录组件与提交回显细化页__20260719.md`
+- 238. `A5_A股P0标的页返回流与补充记录联动页__20260719.md`
+- 239. `A5_A股P0多AI协同与裁决分工页__20260719.md`
+- 240. `A5_Cursor发起多AI_A股P0下一手优先细化对象讨论包__20260719.md`
+- 241. `A5_A股P0下一手优先细化对象_Trae最终裁决页__20260719.md`
+- 242. `A5_A股P0首页事件卡模板与事件摘要字段层__20260719.md`
+- 243. `A5_Cursor在本项目中的最佳利用角度页__20260719.md`
+- 244. `A5_Cursor编码向任务包_A股P0当前链路审校与实现前拆解__20260719.md`
+- 245. `A5_Trae连续推进口令页__20260719.md`
+- 246. `A5_Cursor编码向任务包_B_vs_C实现阻塞对照__20260719.md`
+- 247. `A5_A股P0_B_vs_C_Trae最终裁决页__20260719.md`
+- 248. `A5_A股P0标的页最近记录区与补充记录编辑层__20260719.md`
+- 249. `A5_A股P0问答下钻推荐问题组与答案展示样式层__20260719.md`
+- 250. `A5_A股P0当前实现前阻塞清单页__20260719.md`
+- 251. `A5_A股P0最小组件树与接口合同页__20260719.md`
+- 252. `A5_A股P0共享字段合同表页__20260719.md`
+- 253. `A5_A股P0页面间状态归属与最小实现顺序页__20260719.md`
+- 254. `A5_Cursor编码向任务包_A股P0组件树与字段状态审校__20260719.md`
+- 255. `A5_Cursor编码向审校_A股P0组件树字段状态与实现顺序__20260719.md`
+- 256. `A5_A股P0实现前冲突修复与跨页交接补丁页__20260719.md`
+- 257. `A5_A股P0_Batch1实现切片清单页__20260719.md`
+- 258. `A5_A股P0首页工作台Batch1实现映射页__20260719.md`
+- 259. `A5_A股P0_Batch1最小验收走查页__20260719.md`
+
+## 文档分工
+
+- `全库资料整理总台账__20260713.md`
+  - 回答“我们有什么、缺什么、什么不完整、下一刀切哪”
+- `最后一轮资料收集拆包路径清单__20260713.md`
+  - 回答“新资料从哪里进、谁来拆、拆到什么程度算达标”
+- `参考交易系统补齐状态表__20260713.md`
+  - 回答“参考系统现在做到哪、还缺什么、要不要继续补”
+- `参考交易系统统一总索引入口__20260713.md`
+  - 回答“当前参考系统应该先从哪里看、按什么成熟度读”
+- `参考交易系统补采优先级表__20260713.md`
+  - 回答“最后一轮补采先补谁、补到多深”
+- `参考交易系统拆包深度枚举说明页__20260713.md`
+  - 回答“不同参考系统当前应停在哪一层”
+- `资料类型吸收分流细规则__20260713.md`
+  - 回答“不同资料类型到底该只吸收摘要、必留 raw，还是直接开 batch”
+- `待补采参考交易系统候选清单__20260713.md`
+  - 回答“之前提过但尚未正式补齐的候选系统还有哪些”
+- `首批补采对象批次级执行清单__20260713.md`
+  - 回答“首批补采对象具体该怎么落盘和达标”
+- `收口前裁决包__首批补采剩余缺口总表__20260714.md`
+  - 回答“首批补采四个对象现在究竟还剩哪些硬缺口和尾口”
+- `收口前裁决包__方案B进入前门槛清单__20260714.md`
+  - 回答“当前能不能正式进入方案B，还差最后哪一个门槛”
+- `收口前裁决包__MFLOW_vs_INSTB_多AI讨论前情提要与裁决框架__20260714.md`
+  - 回答“第二批观察里 MFLOW 与 INSTB 该如何进入标准多AI讨论并由谁裁决”
+- `收口前裁决包__MFLOW_provider与样本可得性审计页__20260714.md`
+  - 回答“MFLOW 当前到底有没有可接受的 provider 路线和最小样本闭环，值不值得先审”
+- `收口前裁决包__MFLOW_字段映射审计页__20260714.md`
+  - 回答“现有 T02 真实样本链到底能映射 MFLOW 哪些字段，哪些仍是 proxy 或缺口”
+- `收口前裁决包__MFLOW_divergence_score_派生审计页__20260714.md`
+  - 回答“mflow_divergence_score 是否能以真实源+最小规则派生为可复现 proxy 字段”
+- `收口前裁决包__INSTB_provider与样本可得性审计页__20260714.md`
+  - 回答“INSTB 当前到底有没有足够的 provider 与样本基础进入第二批观察裁决，以及它为何仍落后于 MFLOW”
+- `收口前裁决包__INSTB_quarterly_holdings_provider与样本可得性细化表__20260714.md`
+  - 回答“INSTB 若只保留季度机构持仓主路线，最小真实样本该长什么样、provider friction 在哪、下一步 probe 应怎么收”
+- `收口前裁决包__MFLOW_vs_INSTB_多家AI正式发包稿__20260714.md`
+  - 回答“现在若要正式发起多家AI讨论，应该把什么文本直接发给外部模型”
+- `收口前裁决包__MFLOW_vs_INSTB_多家AI回收记录模板__20260714.md`
+  - 回答“外部模型回包后，应该用什么结构统一记录、对比分歧与 NEED_EVIDENCE”
+- `收口前裁决包__MFLOW_vs_INSTB_主负责人裁决记录页__20260714.md`
+  - 回答“多家AI回收完成后，主负责人应如何正式拍板并留下可追溯裁决记录”
+- `收口前裁决包__MFLOW_sellord_open_intent_NEED_EVIDENCE与替代源判断页__20260714.md`
+  - 回答“MFLOW 当前最关键的两个缺口字段到底有没有低成本真实替代源，还是必须保留为 NEED_EVIDENCE”
+- `收口前裁决包__方案B进入判断草案__20260714.md`
+  - 回答“以当前证据强度，是否建议正式切入方案B，以及还要不要继续大范围补资料或扩新系统”
+- `收口前裁决包__方案B进入正式判断页__20260714.md`
+  - 作为草案之后的正式收口页，给出“当前可以准备切入方案B、但仍继续定点补硬且暂不扩新系统”的最终判断
+- `收口前裁决包__方案B正式切入多AI裁决记录__20260715.md`
+  - 记录“现在是否正式切入方案B”这轮多AI讨论的架构/执行/风险三路回收与主负责人裁决
+- `收口前裁决包__方案B_B0过渡切入执行令__20260715.md`
+  - 把“可以准备切入”进一步推进成“立即启动 B0过渡切入”的正式执行口径
+- `收口前裁决包__方案B_B0首批输入对象与冻结边界清单__20260715.md`
+  - 固定 `B0` 首批输入对象、观察位、并行尾口与冻结边界，避免切入后口径漂移
+- `收口前裁决包__方案B_B0最小合同映射试装__20260715.md`
+  - 用 `N01 / N02 / YTC / MFLOW` 各选一个最关键字段，正式落 `B0` 的桥接说明 1
+- `收口前裁决包__方案B_B0_batch147标准化与可复现说明__20260715.md`
+  - 把 `batch_147` 的已闭合 `5m/60m` 真实样本推进到“可复核”口径，正式落 `B0` 的桥接说明 2
+- `收口前裁决包__方案B_B0误映射边界说明__20260715.md`
+  - 把 `N01 / N02 / CHZL_BSD` 当前不能提前冒充已齐的部分显式写死，正式落 `B0` 的桥接说明 3
+- `收口前裁决包__方案B正式生效页__20260715.md`
+  - 在 `B0` 三张桥接说明全部落盘后，把口径从 `B0过渡切入` 正式推进为 `方案B正式生效`
+- `收口前裁决包__方案B首批对象最小合同层准备清单__20260715.md`
+  - 在 `方案B正式生效` 后，把 `N01 / N02 / YTC / CHZL_BSD / MFLOW` 推进到“合同层准备可开工”的最小可执行清单
+- `方案A_全库资料资产盘点与需求矩阵__20260715.md`
+  - 以“再做一次方案A”的口径，盘点我们现有资料资产并给出需求矩阵与用途裁决
+- `方案A_资料资产清单_v1.tsv`
+  - 把“资料簇→市场→领域→成熟度→能干嘛→缺口→建议用途”固化成可筛选表
+- `方案A_需求矩阵_v1.tsv`
+  - 把“针对哪个市场、想要什么功能、输入输出与优先级”固化成可评审需求表
+- `方案A_多AI正式发包稿__20260715.md`
+  - 给 GPT/DeepSeek/Kimi/GLM/Qwen 的统一发包文本，要求各自给出补采与方案对比
+- `方案A_AI补充建议回收表_v1.tsv`
+  - 统一回收每个AI的补采建议、方案看法、风险与 NEED_EVIDENCE
+- `方案A_多AI回收汇总与投票包__20260715.md`
+  - 把多AI回收收口成 4 个可投票方案，并明确投票后下一步落盘物
+- `方案A_可转入定向补阈值说明__20260715.md`
+  - 解释“不是资料全齐才转定向补，而是达到阈值就转”的正式口径
+- `方案A_第二轮多AI发包稿__投票与单点缺口__20260715.md`
+  - 第二轮多AI讨论专用发包稿，只讨论工作模式投票与单点缺口，不再做大范围发散补采
+- `方案A_第二轮多AI回收记录与主负责人裁决__20260715.md`
+  - 吸收临时粘贴区回包，并把第二轮多AI结果归一化为正式票面与主负责人裁决
+- `方案A_补采优先级表__20260715.md`
+  - 把 `A_REQ_002 / A_REQ_003 / A_REQ_001` 固定成当前正式补采顺序，并写清每个缺口补什么、产出什么
+- `方案A_停止规则__20260715.md`
+  - 把“什么时候可以开缺口、什么时候必须停、怎么防止重回资料泥潭”写成执行约束
+- `A_REQ_002_最小因子字段表__20260715.tsv`
+  - 作为 `A_REQ_002` 第一刀，正式冻结 value / quality / growth / cashflow 四个因子族的最小字段集合
+- `A_REQ_002_对象卡验收例__20260715.md`
+  - 给 `A_REQ_002` 落最小样本合同、关键断言与降级规则
+- `A_REQ_002_资料到字段映射说明__20260715.md`
+  - 把 `GROUP_10_A5` 现有教材入口正式映射到 `A_REQ_002` 字段族，说明哪些是 direct、哪些是可派生
+- `A_REQ_003_风险模型候选清单__20260715.md`
+  - 作为 `A_REQ_003` 第一刀，正式比较组合层当前可用的风险模型候选，并固定主模型与降级模型
+- `A_REQ_003_字段映射表__20260715.tsv`
+  - 把 `alpha / covariance / transaction_cost / benchmark / risk_overlay` 压成组合层最小字段合同
+- `A_REQ_003_最小验收口径__20260715.md`
+  - 给 `A_REQ_003` 落最小样本合同、关键断言与风险缩放/降级规则
+- `A_REQ_001_数据可得性与成本裁决补页__20260715.md`
+  - 把 A股日线 / 分钟 / Level-2 的当前可得性、成本与 formal raw 边界正式收成一页
+- `A_REQ_001_权限边界与降级说明__20260715.md`
+  - 把 `default = daily_only / minute = sample_only_with_provenance / level2 = future_only` 固定成正式口径
+- `A5_合同层桥接总表__20260715.md`
+  - 把 `A_REQ_002 + A_REQ_003` 已落字段、验收与降级规则统一桥接到 `GROUP_10_A5` 合同层准备口径
+- `A5_合同层下沉执行清单__20260715.md`
+  - 把 `A5` 后续继续下沉的顺序固定为：字段分组 -> 统一断言 -> 降级矩阵 -> 统一对象接口
+- `A5_统一字段分组表__20260715.tsv`
+  - 把 `A_REQ_002 + A_REQ_003` 的字段正式归并成 `meta / input_raw / factor / optimizer / constraint / risk_overlay / final_output` 等统一分组
+- `A5_统一验收断言表__20260715.tsv`
+  - 把两条线共同需要满足的 traceability / coverage / bounds / degrade_behavior 断言冻结成一张总表
+- `A5_统一降级矩阵__20260715.tsv`
+  - 把 `A_REQ_002 / A_REQ_003 / A_REQ_001` 当前最关键的 fallback、允许输出、禁止输出和中止条件统一成一张矩阵
+- `A5_统一对象接口草案__20260715.md`
+  - 在不进入 runtime 新开发的前提下，先把 `A5` 当前可用的合同层输出收成一个统一接口
+- `A5_最小对象卡草案__20260715.md`
+  - 把统一接口进一步改写成接近真实对象卡的结构，正式冻结最小输入、输出、断言、降级与中止
+- `A5_对象卡正式化检查清单__20260715.md`
+  - 说明 `A5` 距离正式对象卡还差哪些检查项，并把下一手锁到“字段真实来源状态表”
+- `A5_字段真实来源状态表__20260715.tsv`
+  - 把 `A5` 草案里的字段逐个标成 `direct / proxy / rules_engine_derivable / future_only`，并给出 formalization 判断
+- `A5_runtime对接边界页__20260715.md`
+  - 把 `A5` 当前哪些字段只停在合同层、哪些能 formalize、哪些绝不能误写成 runtime 已支持正式写死
+- `A5_最小样本实例卡__20260716.md`
+  - 用一张最小真样例把 `A5` 解释层、规则派生层、proxy 层和 future_only 边界同时摆到对象卡阅读口径里
+- `A5_正式对象卡模板__20260716.md`
+  - 把 `A5` 当前草案、来源状态、样本与边界压成后续可复用的正式对象卡填写骨架
+- `A5_实现前冻结门槛页__20260716.md`
+  - 把 `A5` 何时才允许从合同层迈到实现前准备层的硬门槛正式写死
+- `A5_实现阻塞项拆解表__20260716.tsv`
+  - 把当前仍卡住 `A5` 进入实现前层的字段、阻塞原因、解锁条件与禁止误写一次压成执行表
+- `A5_G5G6_多AI讨论前情提要与裁决框架__20260716.md`
+  - 把 `A5` 当前真正的硬边界讨论压成多AI可讨论的前情提要、边界与候选方案框架
+- `A5_G5G6_多家AI正式发包稿__20260716.md`
+  - 把 `G5 / G6` 讨论压成可直接发送给外部模型的标准发包文本
+- `A5_G5G6_多家AI回收记录模板__20260716.md`
+  - 统一吸收外部模型回包，供主负责人后续对照裁决
+- `A5_G5G6_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收本轮外部模型回包并把有效票、无效票、主模式和当前最小下一步正式裁决下来
+- `A5_alpha_score_正式代理合同页__20260716.md`
+  - 把 `alpha_score` 从松散 proxy 描述推进为正式代理合同，作为 `G5` 的第一手清障动作
+- `A5_covariance_model_id_实现前口径判断页__20260716.md`
+  - 把 `covariance_model_id` 从纯 future_only 黑盒推进成实现前口径判断入口，但仍不写成已闭合
+- `A5_target_weight_最小生成链判断页__20260716.md`
+  - 把 `target_weight` 从纯 future_only 阻塞项推进成最小生成链已定义、但输出仍未闭合的判断层
+- `A5_portfolio_tracking_error_风险输出链判断页__20260716.md`
+  - 把 `portfolio_tracking_error` 从纯 future_only 阻塞项推进成 benchmark 风险输出链已定义、但仍未到正式输出层
+- `A5_adjusted_position_weight_回溯闭合判断页__20260716.md`
+  - 把 `adjusted_position_weight` 从纯阻塞项推进成最终融合回溯链已定义、但最终输出仍未闭合的判断层
+- `A5_G5主链闭合状态页__20260716.md`
+  - 把 `G5` 五段主链状态集中收成一页，明确当前已端到端可读但仍未进入实现层
+- `A5_G5_输出闭合判断页__20260716.md`
+  - 把 `G5` 从“主链已定义”继续推进到“为什么仍未输出闭合”的正式判断层，并固定当前第一优先对象是 `target_weight`
+- `A5_target_weight_输出闭合判断页__20260716.md`
+  - 把 `target_weight` 从“最小生成链已定义”推进到“输出闭合判断层”，明确当前仍未通过正式输出闭合
+- `A5_portfolio_tracking_error_输出闭合判断页__20260716.md`
+  - 把 `portfolio_tracking_error` 从“风险输出链已定义”推进到“输出闭合判断层”，明确当前仍未通过正式风险输出闭合
+- `A5_adjusted_position_weight_输出闭合判断页__20260716.md`
+  - 把 `adjusted_position_weight` 从“回溯闭合判断层”推进到“输出闭合判断层”，明确当前仍未通过最终输出闭合
+- `A5_G5_输出通过条件_多AI前情提要与裁决框架__20260716.md`
+  - 把 `G5` 当前新的硬边界压成单点多AI讨论前情提要、边界与候选方案框架
+- `A5_G5_输出通过条件_多家AI正式发包稿__20260716.md`
+  - 把“输出通过条件”讨论压成可直接发送给外部模型的标准发包文本
+- `A5_G5_输出通过条件_多家AI回收记录模板__20260716.md`
+  - 统一吸收外部模型对三个输出段通过条件的回包，供主负责人后续裁决
+- `A5_G5_输出通过条件_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收本轮输出通过条件回包并把有效票、推荐模式、NEED_EVIDENCE 与主负责人裁决正式写死
+- `A5_target_weight_最小通过条件页__20260716.md`
+  - 把 `target_weight` 从“输出闭合判断层”继续推进到“最小通过条件已冻结”，但仍不写成正式通过
+- `A5_target_weight_通过后仍需证据清单页__20260716.md`
+  - 把 `target_weight` 若要从“通过条件已冻结”升格为 `output_passed` 还缺哪些新增证据正式写死
+- `A5_portfolio_tracking_error_最小通过条件页__20260716.md`
+  - 把 `portfolio_tracking_error` 从“输出闭合判断层”继续推进到“最小通过条件可判断层”，但仍不写成正式通过
+- `A5_adjusted_position_weight_最小通过条件页__20260716.md`
+  - 把 `adjusted_position_weight` 从“输出闭合判断层”继续推进到“最小通过条件可判断层”，但仍不写成正式通过
+- `A5_G5_输出升格证据总表__20260716.tsv`
+  - 把三段输出各自“差哪几条证据才能从 not_output_passed 升格”的口径集中压成一张总表
+- `A5_G5_输出升格顺序裁决页__20260716.md`
+  - 把三段输出谁先冲 `output_passed` 的顺序正式裁决下来，并写清当前先做什么、暂缓什么
+- `A5_target_weight_升格证据补齐页__20260716.md`
+  - 作为第一手执行物，把 `target_weight` 的约束集合正式形式、可审计权重样例与失败样例压成一页
+- `A5_target_weight_升格裁决_多AI前情提要与裁决框架__20260716.md`
+  - 把 `target_weight` 当前首轮补齐证据是否足以支持新一轮升格裁决，压成单点多AI讨论边界
+- `A5_target_weight_升格裁决_多家AI正式发包稿__20260716.md`
+  - 把 `target_weight` 升格裁决问题压成可直接发送给外部模型的标准发包文本
+- `A5_target_weight_升格裁决_多家AI回收记录模板__20260716.md`
+  - 统一吸收外部模型对 `target_weight` 升格裁决的回包，供主负责人后续拍板
+- `A5_target_weight_升格裁决_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收本轮 `target_weight` 升格裁决回包，并正式写死“方向一致但票面不足”的主负责人裁决
+- `A5_target_weight_升格裁决_第二轮更窄追问稿__20260716.md`
+  - 把问题进一步收窄成 `yes / no / conditional` 三选一，避免外部模型继续回答上一轮旧题
+- `A5_target_weight_最小缺口补齐页__20260716.md`
+  - 把第二轮窄裁决后的唯一最小剩余缺口正式冻结为 `explicit validation run`，并把下一手从“继续追问”切到“补执行证据”
+- `A5_target_weight_validation_run_执行说明页__20260716.md`
+  - 用通俗口径解释 `explicit validation run` 到底是什么，并把成功/失败两类记录怎么拿到写成执行说明
+- `A5_指标效用组合与回测启动边界页__20260716.md`
+  - 把“指标的值钱点应该放在哪、怎样按职责组合、回测应在什么切点启动”正式收成一页
+- `A5_指标职责分层与场景映射页__20260716.md`
+  - 把“同一指标在不同状态下如何承担不同职责、应该用什么触发写法”正式收成可落地页
+- `A5_最小信号组合卡__候选骨架__20260716.md`
+  - 把第一轮最小信号组合先收成两个起点候选，并明确后续多AI讨论不得拘泥于 A/B 二选一
+- `A5_交易逻辑与策略形态_多AI讨论预留页__20260716.md`
+  - 把“怎么赚钱、怎么交易、做什么类型、同一指标如何跨场景使用”正式冻结为后续多AI讨论主题，并写死 `4-6` 类候选扩展要求
+- `A5_target_weight_actual_generation_execution页__20260716.md`
+  - 把 `target_weight` 的 actual generation execution success/failure 结果正式收成 repo-global 判断页
+- `A5_target_weight_重开升格裁决_多AI前情提要与裁决框架__20260716.md`
+  - 把“actual generation execution 完成后是否足以重开升格裁决”收成单点多AI讨论边界
+- `A5_target_weight_重开升格裁决_多家AI正式发包稿__20260716.md`
+  - 把重开升格裁决问题压成可直接发送给外部模型的标准发包文本
+- `A5_target_weight_重开升格裁决_多家AI回收记录模板__20260716.md`
+  - 统一吸收外部模型对重开升格裁决的回包，供主负责人后续拍板
+- `A5_target_weight_重开升格裁决_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收重开升格裁决回包并正式拍板为 `yes，足以重开升格裁决`
+- `A5_target_weight_升格裁决__actual_generation后_多AI前情提要与裁决框架__20260716.md`
+  - 把“重开资格已获批后，是否足以进入更进一步升级判断”收成下一轮单点多AI边界
+- `A5_target_weight_升格裁决__actual_generation后_多家AI正式发包稿__20260716.md`
+  - 把 actual_generation 后的升级判断问题压成可直接发送给外部模型的标准发包文本
+- `A5_target_weight_升格裁决__actual_generation后_多家AI回收记录模板__20260716.md`
+  - 统一吸收下一轮 actual_generation 后升级判断的回包，供主负责人继续拍板
+- `A5_target_weight_升格裁决__actual_generation后_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收 actual_generation后 升级判断首轮回包，并正式写死“旧题残留严重，票面不足”
+- `A5_target_weight_升格裁决__actual_generation后_第二轮更窄追问稿__20260716.md`
+  - 把 actual_generation后 升级判断进一步收窄，强制模型只回答新题，不再回到“重开资格”旧题
+- `A5_target_weight_升格裁决__actual_generation后_第二轮回收记录与主负责人裁决__20260716.md`
+  - 吸收第二轮更窄回包并正式裁定 actual_generation后 升级判断结果为 `conditional`
+- `A5_degraded_risk_handling_充分性与稳健边界页__20260716.md`
+  - 把当前唯一附加条件正式冻结为可执行边界页，避免继续在同层多AI原地打转
+- `A5_degraded_risk_handling_边界验证清单页__20260716.md`
+  - 把唯一附加条件进一步压成“必过项 / 越界即停项 / 主负责人最小验收口径”的书面清单
+- `A5_degraded_risk_handling_主负责人书面验收页__20260716.md`
+  - 按边界验证清单逐条完成主负责人书面验收，并判断唯一附加条件是否已补到可判断层
+- `A5_target_weight_升级判断重开准备页__20260716.md`
+  - 把当前状态从“附加条件已补到可判断层”继续推进到“升级判断可直接重开”
+- `A5_target_weight_升级判断重开_多AI前情提要与裁决框架__20260716.md`
+  - 把升级判断重开问题压成多AI可直接讨论的前情提要与边界框架
+- `A5_target_weight_升级判断重开_多家AI正式发包稿__20260716.md`
+  - 把升级判断重开问题压成可直接发送给外部模型的标准发包文本
+- `A5_target_weight_升级判断重开_多家AI回收记录模板__20260716.md`
+  - 统一吸收升级判断重开回包，供主负责人后续拍板
+- `A5_target_weight_升级判断重开_多家AI回收记录与主负责人裁决__20260716.md`
+  - 吸收升级判断重开回包并正式裁决当前最稳状态名为 `verified_with_degraded_risk__not_output_passed`
+- `A5_target_weight_verified_with_degraded_risk后续升级判断准备页__20260717.md`
+  - 在 covariance 最小集成验证执行通过后，把主线正式切回 `target_weight` 的后续升级判断准备
+- `A5_target_weight_verified_with_degraded_risk后续升级判断_多AI前情提要与裁决框架__20260717.md`
+  - 固定新题边界：只讨论 `verified_with_degraded_risk__not_output_passed` 之后是否还能继续推进一档
+- `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI正式发包稿__20260717.md`
+  - 提供 `Open WebUI` 可直接粘贴的纯文本发包稿，明确旧题已裁定、禁止串题
+- `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI回收记录模板__20260717.md`
+  - 固定新一轮回包吸收结构，等待外部多AI回包后做主负责人最终裁决
+- `A5_target_weight_verified_with_degraded_risk后续升级判断_多家AI回收记录与主负责人裁决__20260717.md`
+  - 正式吸收多AI回包并把 `target_weight` 推进到 `verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed`
+- `A5_portfolio_tracking_error_升级判断准备页__20260716.md`
+  - 在 `target_weight` 推进一档后，把 `portfolio_tracking_error` 正式切到下一轮判断准备层
+- `A5_portfolio_tracking_error_frozen后续升级判断_首轮混合回包与主负责人裁决__20260717.md`
+  - 正式吸收混合回包并裁定“票面不足，状态不变”，继续维持 `pass_conditions_frozen__not_output_passed`
+- `A5_portfolio_tracking_error_frozen后续升级判断准备页__20260717.md`
+  - 把 `portfolio_tracking_error` 的下一轮问题收缩到 frozen 之后是否还能继续前推一档
+- `A5_portfolio_tracking_error_frozen后续升级判断_多AI前情提要与裁决框架__20260717.md`
+  - 固定更窄新题边界，明确禁止回到旧题、禁止切到 `target_weight` 或 `adjusted_position_weight`
+- `A5_portfolio_tracking_error_frozen后续升级判断_多家AI正式发包稿__20260717.md`
+  - 提供 `Open WebUI` 可直接粘贴的纯文本发包稿，并压成 `yes / no / conditional` 三选一
+- `A5_portfolio_tracking_error_frozen后续升级判断_多家AI回收记录模板__20260717.md`
+  - 已吸收第二轮真实回包，并正式确认当前轮为零有效票
+- `A5_portfolio_tracking_error_frozen后续升级判断_第二轮回包与主负责人裁决__20260718.md`
+  - 正式吸收第二轮回包并裁定“零有效票，状态不变”，继续维持 `pass_conditions_frozen__not_output_passed`
+- `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本正式发包稿__20260718.md`
+  - 把发包进一步压成“刚好 5 行”的纯文本合同，直接防掉旧框架泛答和多余展开
+- `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本回收记录模板__20260718.md`
+  - 已吸收超窄纯文本回包，并把有效票面归一化为 `no / conditional` 对比
+- `A5_portfolio_tracking_error_frozen后续升级判断_超窄纯文本回包与主负责人裁决__20260718.md`
+  - 正式吸收超窄纯文本回包并裁定当前题为 `no`，继续维持 `pass_conditions_frozen__not_output_passed`
+- `A5_covariance_model_id_downstream_still_locked后续判断准备页__20260718.md`
+  - 在 `portfolio_tracking_error frozen` 后续升级判断裁为 `no` 后，把唯一剩余缺口重新收缩回 `covariance_model_id`
+- `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本正式发包稿__20260718.md`
+  - 提供下一轮 `covariance_model_id` 超窄纯文本发包稿，只讨论 `downstream_still_locked` 是否还能继续正式收缩
+- `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本回收记录模板__20260718.md`
+  - 已吸收超窄纯文本回包，并把有效票面归一化为 `conditional` 主模式
+- `A5_covariance_model_id_downstream_still_locked后续判断_超窄纯文本回包与主负责人裁决__20260718.md`
+  - 正式吸收超窄纯文本回包并裁定当前题为 `conditional`，同时冻结唯一附加条件
+- `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因准备页__20260718.md`
+  - 把主线继续压缩到“唯一剩余锁定原因到底是哪一条”的单点裁决
+- `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_超窄纯文本正式发包稿__20260718.md`
+  - 提供下一轮唯一原因裁决的纯文本发包稿，只允许 `A / B / C` 三选一
+- `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_超窄纯文本回收记录模板__20260718.md`
+  - 已吸收唯一原因裁决回包，并把票面归一化为 `B` 的全票收敛
+- `A5_covariance_model_id_downstream_still_locked唯一剩余锁定原因_回包与主负责人裁决__20260718.md`
+  - 正式吸收唯一原因裁决回包并冻结为“下游单段仍未形成可解除 not_output_passed 的正式边界”
+- `A5_target_weight解除not_output_passed正式边界准备页__20260718.md`
+  - 把已冻结的 covariance 下游锁定原因正式桥接到第一个下游单段 `target_weight`
+- `A5_target_weight解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+  - 提供下一轮 `target_weight` 单条解除边界裁决的纯文本发包稿，只讨论“显式验证运行记录 + 失败路径一致性”
+- `A5_target_weight解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+  - 已吸收 `target_weight` 单条解除边界裁决回包，并把票面归一化为 `yes` 主模式
+- `A5_target_weight解除not_output_passed正式边界_回包与主负责人裁决__20260718.md`
+  - 正式吸收 `target_weight` 解除边界裁决回包并冻结为“显式验证运行记录 + 失败路径一致性”
+- `A5_portfolio_tracking_error解除not_output_passed正式边界准备页__20260718.md`
+  - 把已冻结的 `target_weight` 解除边界正式桥接到第二输出段 `portfolio_tracking_error`
+- `A5_portfolio_tracking_error解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+  - 提供下一轮 `portfolio_tracking_error` 单条解除边界裁决的纯文本发包稿，只讨论 success / failure 两类样例边界
+- `A5_portfolio_tracking_error解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+  - 已吸收 `portfolio_tracking_error` 单条解除边界裁决回包，并把票面归一化为 `yes` 主模式
+- `A5_portfolio_tracking_error解除not_output_passed正式边界_回包与主负责人裁决__20260718.md`
+  - 正式吸收 `portfolio_tracking_error` 解除边界裁决回包并冻结为“success 样例显式风险输出 + failure 样例 abort_reason 回链一致性”
+- `A5_adjusted_position_weight解除not_output_passed正式边界准备页__20260718.md`
+  - 把已冻结的 `portfolio_tracking_error` 解除边界正式桥接到第三输出段 `adjusted_position_weight`
+- `A5_adjusted_position_weight解除not_output_passed正式边界_超窄纯文本正式发包稿__20260718.md`
+  - 提供下一轮 `adjusted_position_weight` 单条解除边界裁决的纯文本发包稿，只讨论 success / failure 两类最终融合样例边界
+- `A5_adjusted_position_weight解除not_output_passed正式边界_超窄纯文本回收记录模板__20260718.md`
+  - 为下一轮 `adjusted_position_weight` 单条解除边界裁决回包预留统一吸收结构
+- `A5_portfolio_tracking_error_benchmark风险输出最小正式口径页__20260716.md`
+  - 先冻结 `portfolio_tracking_error` 的 benchmark 风险输出最小正式口径，作为后续补 covariance 输入层与样例的统一入口
+- `A5_covariance_model_id_first_fresh_run前检查页__20260716.md`
+  - 把 `covariance_model_id` 的 `first fresh-run` 入口前检查固定为可执行清单与 latest 报告，并把 preflight 层正式吸收到执行前边界
+- `A5_covariance_model_id_first_fresh_run外部输入包清单页__20260716.md`
+  - 记录先前“需要外部回包”的判断为何成立、以及为何已被仓内 Tushare 资产解除
+- `A5_covariance_model_id_first_fresh_run执行页__20260716.md`
+  - 正式吸收 first fresh-run 的 benchmark/raw returns/active returns/协方差矩阵执行证据，并把状态推进到 `first_fresh_run_completed__not_ready`
+- `A5_covariance_model_id_最小稳定性检查准备页__20260716.md`
+  - 把 next step 正式压到相邻窗口最小稳定性检查，避免因单次成功过早宣称 ready
+- `A5_covariance_model_id_最小稳定性检查执行页__20260716.md`
+  - 正式吸收相邻 `60d` 窗口 second fresh-run 与 stability compare 结果，并把状态推进到 `minimum_stability_checked__not_ready`
+- `A5_covariance_model_id_唯一模型收敛准备页__20260716.md`
+  - 在最小稳定性检查通过后，把 next step 正式收缩到“是否继续保留其它候选家族”的唯一模型收敛判断准备
+- `A5_covariance_model_id_唯一模型收敛主负责人裁决页__20260716.md`
+  - 正式冻结 `benchmark_relative_sample_covariance` 为唯一活动实现候选，并把其它家族降为 fallback / observation
+- `A5_covariance_model_id_唯一模型定稿准备页__20260716.md`
+  - 在唯一活动实现候选已冻结后，把下一手正式切到“唯一模型定稿所需边界与 fallback 合同”
+- `A5_covariance_model_id_唯一模型最小合同页__20260716.md`
+  - 把唯一模型命名、参数边界、稳定性护栏与 fallback / observation 触发条件正式冻结到文档层
+- `A5_covariance_model_id_唯一模型定稿主负责人裁决页__20260716.md`
+  - 正式把状态从 `sole_implementation_candidate_frozen__not_ready` 推进到 `unique_model_frozen__not_ready`
+- `A5_covariance_model_id_ready判断准备页__20260716.md`
+  - 在唯一模型已冻结后，把下一手正式切到 `risk_model_ready` 判断准备
+- `A5_covariance_model_id_ready判断_多AI前情提要与裁决框架__20260716.md`
+  - 把 ready 级判断边界、约束、允许讨论范围与输出合同固定为多AI正式讨论入口
+- `A5_covariance_model_id_ready判断_多家AI正式发包稿__20260716.md`
+  - 提供可直接外发的 ready 判断发包文本
+- `A5_covariance_model_id_ready判断_多家AI回收记录模板__20260716.md`
+  - 固定多模型回包吸收结构，当前停点收缩到等待外部回包
+- `A5_covariance_model_id_ready判断_多家AI回收记录与主负责人裁决__20260716.md`
+  - 正式吸收 ready 判断多AI回包，并把状态推进到 `ready_judgement_conditional__downstream_still_locked`
+- `A5_covariance_model_id_最小集成验证准备页__20260716.md`
+  - 把当前最小剩余缺口压成“下游消费边界一致性校验”，并锁定下一手为最小集成验证
+- `A5_covariance_model_id_最小集成验证执行页__20260717.md`
+  - 正式验收三段下游对 `ready_judgement_conditional__downstream_still_locked` 的消费边界，并将下一手切回 `target_weight` 剩余缺口
+
+## 当前边界
+
+- 当前阶段只做资料整理收口。
+- 当前不把本目录任何文档当成功能合同、运行时入口或默认执行逻辑。
