@@ -9,7 +9,15 @@ export default function Stock() {
     explanationViewModel,
     recentRecordViewModel,
     qaEntryViewModel,
+    canSupplementRecord,
+    isSupplementEditorOpen,
+    supplementDraft,
+    supplementError,
+    latestSupplementEcho,
+    setSupplementDraft,
     handleSelectEvent,
+    handleOpenSupplementEditor,
+    handleSubmitSupplement,
     handleBackHome,
   } = useStockPage();
 
@@ -138,6 +146,7 @@ export default function Stock() {
                     <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
                       <p className="text-xs uppercase tracking-[0.25em] text-slate-500">最近动作</p>
                       <p className="mt-2">{recentRecordViewModel.action}</p>
+                      <p className="mt-3 text-xs text-slate-400">{recentRecordViewModel.statusLabel}</p>
                     </div>
                     <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
                       <p className="text-xs uppercase tracking-[0.25em] text-slate-500">理由标签 / 周期</p>
@@ -149,6 +158,61 @@ export default function Stock() {
                       <p className="text-xs uppercase tracking-[0.25em] text-slate-500">备注</p>
                       <p className="mt-2">{recentRecordViewModel.note}</p>
                       <p className="mt-3 text-xs text-slate-400">{recentRecordViewModel.submittedAt}</p>
+                    </div>
+                    <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-4 md:col-span-2">
+                      <div className="flex items-center justify-between gap-3">
+                        <div>
+                          <p className="text-xs uppercase tracking-[0.25em] text-cyan-300/70">补充记录入口区</p>
+                          <p className="mt-2 text-sm text-slate-300">
+                            当前事件已锁定时，可直接补充备注，不改原动作、理由标签和周期。
+                          </p>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={handleOpenSupplementEditor}
+                          disabled={!canSupplementRecord}
+                          className={`rounded-xl px-4 py-2 text-sm transition ${
+                            canSupplementRecord
+                              ? "border border-cyan-400/40 bg-cyan-400/10 text-cyan-100 hover:bg-cyan-400/20"
+                              : "cursor-not-allowed border border-white/10 text-slate-500"
+                          }`}
+                        >
+                          补充这次记录
+                        </button>
+                      </div>
+
+                      {isSupplementEditorOpen ? (
+                        <div className="mt-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                          <p className="text-xs uppercase tracking-[0.25em] text-slate-500">当前上下文</p>
+                          <p className="mt-2 text-sm text-slate-200">
+                            {headerViewModel.stockName} / {explanationViewModel?.title ?? "当前事件"}
+                          </p>
+                          <textarea
+                            value={supplementDraft}
+                            onChange={(event) => setSupplementDraft(event.target.value)}
+                            placeholder="补充这次记录的原因、变化或下一步观察点"
+                            className="mt-4 min-h-28 w-full rounded-2xl border border-white/10 bg-slate-950/80 px-4 py-3 text-sm text-slate-100 outline-none"
+                          />
+                          {supplementError ? <p className="mt-3 text-sm text-rose-300">{supplementError}</p> : null}
+                          <div className="mt-4 flex justify-end">
+                            <button
+                              type="button"
+                              onClick={handleSubmitSupplement}
+                              className="rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100 transition hover:bg-cyan-400/20"
+                            >
+                              提交补充备注
+                            </button>
+                          </div>
+                        </div>
+                      ) : null}
+
+                      {latestSupplementEcho ? (
+                        <div className="mt-4 rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-4">
+                          <p className="text-xs uppercase tracking-[0.25em] text-emerald-200/80">最近一次补充回显区</p>
+                          <p className="mt-2 text-sm text-emerald-50">{latestSupplementEcho.note}</p>
+                          <p className="mt-3 text-xs text-emerald-100/70">{latestSupplementEcho.submittedAt}</p>
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 ) : (

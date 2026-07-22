@@ -68,7 +68,7 @@
 - `src/features/stock/adapters/stockPageViewModel.ts`
   - 标的页最小壳 view model 装配
 - `src/features/stock/hooks/useStockPage.ts`
-  - 标的页最小状态与相关事件/解释/记录切换
+  - 标的页最小状态与相关事件/解释/记录切换，以及补充记录入口壳
 - `src/features/home/contracts/homeSectionProps.ts`
   - 首页 section-level props 共享 contract，统一页面 hook 与 section 组件的入参出口
 - `src/features/home/components/EventStreamPanel.tsx`
@@ -172,9 +172,11 @@ npm run test
 - 当前 `Batch1` 这一段先正式停在：
   - `首页薄壳 + workspace 不变量 + section props + adapter 分层 + 模型/WorkspaceHook/PageHook 三层最小自动化护栏 + 异步数据源桩`
 - 当前 `Batch2` 已推进到：
-  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录`
+  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳`
 - 当前标的页 Batch2 最小壳页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2最小壳页__20260722.md`
+- 当前 Batch2 补充记录入口壳页见：
+  - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2补充记录入口壳页__20260722.md`
 - 当前 Batch2 桌面端最小走查记录见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2标的页桌面端最小走查记录__20260722.md`
 - 当前 Batch2 停点冻结页见：
@@ -198,13 +200,14 @@ npm run test
   - `homeApi.ts` 成为唯一替换点
 - 当前测试已扩成：
   - `workspaceModel.test.ts` + `useHomeWorkspace.test.tsx` + `useHomePage.test.tsx` + `useStockPage.test.tsx`
-  - 共 `4` 个测试文件、`19` 个测试用例，均已通过
+  - 共 `4` 个测试文件、`22` 个测试用例，均已通过
 - 当前明确暂缓：
   - `latestSubmitEcho` 重试链路全覆盖
   - `EventStreamPanel` contract 统一化
   - 新一轮 adapter / section 美化
 - 后续若字段需要继续收紧，优先回指 `batch149_six_card_event_field_bundle_v1.md`，不要重开新合同页。
 - 当前首页有效标的动作已进入真实标的页最小壳；问答下钻当前保留禁用输入占位与禁用按钮，不在本轮实现问答页本体。
+- 当前最近记录区已不再只是只读展示；当事件命中已有记录时，可原地进入“补充这次记录”最小入口壳，提交后本地回显最近一次补充备注。
 - 当前桌面端首轮走查已通过，见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch1桌面端首轮走查记录__20260720.md`
 - 当前桌面端第二轮走查也已通过，见：

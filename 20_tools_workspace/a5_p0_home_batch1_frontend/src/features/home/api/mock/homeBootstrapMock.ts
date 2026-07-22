@@ -139,7 +139,7 @@ export const homeBootstrapMockEvents: EventItem[] = [
 export const homeBootstrapMockDecisionRecords: DecisionRecord[] = [
   {
     id: "record-seed-001",
-    eventId: "market-index-context-20260719",
+    eventId: "market-index-context-20260720",
     title: "指数环境强弱发生变化",
     action: "继续观察",
     reasonTag: "环境顺风",

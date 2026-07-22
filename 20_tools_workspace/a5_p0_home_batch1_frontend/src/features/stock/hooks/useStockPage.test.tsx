@@ -98,4 +98,77 @@ describe("useStockPage", () => {
 
     stockPage.cleanup();
   });
+
+  it("命中已有记录的事件时允许进入补充记录入口", async () => {
+    const stockPage = renderStockPageHook();
+    await flushBootstrap();
+
+    act(() => {
+      stockPage.result.handleSelectEvent("market-index-context-20260720");
+    });
+
+    expect(stockPage.result.canSupplementRecord).toBe(true);
+    expect(stockPage.result.recentRecordViewModel?.action).toBe("继续观察");
+
+    act(() => {
+      stockPage.result.handleOpenSupplementEditor();
+    });
+
+    expect(stockPage.result.isSupplementEditorOpen).toBe(true);
+
+    stockPage.cleanup();
+  });
+
+  it("空备注提交时保留草稿并给出失败提示", async () => {
+    const stockPage = renderStockPageHook();
+    await flushBootstrap();
+
+    act(() => {
+      stockPage.result.handleSelectEvent("market-index-context-20260720");
+    });
+    act(() => {
+      stockPage.result.handleOpenSupplementEditor();
+    });
+    act(() => {
+      stockPage.result.setSupplementDraft("   ");
+    });
+    act(() => {
+      stockPage.result.handleSubmitSupplement();
+    });
+
+    expect(stockPage.result.isSupplementEditorOpen).toBe(true);
+    expect(stockPage.result.supplementError).toBe("请先填写补充备注，再提交。");
+    expect(stockPage.result.latestSupplementEcho).toBeNull();
+
+    stockPage.cleanup();
+  });
+
+  it("补充记录成功后会生成最近一次补充回显", async () => {
+    vi.spyOn(Date.prototype, "toLocaleString").mockReturnValue("2026/07/22 01:08:00");
+
+    const stockPage = renderStockPageHook();
+    await flushBootstrap();
+
+    act(() => {
+      stockPage.result.handleSelectEvent("market-index-context-20260720");
+    });
+    act(() => {
+      stockPage.result.handleOpenSupplementEditor();
+    });
+    act(() => {
+      stockPage.result.setSupplementDraft("补充：指数环境转强后，先继续观察量能延续。");
+    });
+    act(() => {
+      stockPage.result.handleSubmitSupplement();
+    });
+
+    expect(stockPage.result.isSupplementEditorOpen).toBe(false);
+    expect(stockPage.result.supplementError).toBeNull();
+    expect(stockPage.result.latestSupplementEcho).toEqual({
+      note: "补充：指数环境转强后，先继续观察量能延续。",
+      submittedAt: "2026/07/22 01:08:00",
+    });
+
+    stockPage.cleanup();
+  });
 });

@@ -32,6 +32,12 @@ export interface StockRecentRecordViewModel {
   horizon: string;
   note: string;
   submittedAt: string;
+  statusLabel: string;
+}
+
+export interface StockSupplementEchoViewModel {
+  note: string;
+  submittedAt: string;
 }
 
 export interface StockQaEntryViewModel {
@@ -97,6 +103,7 @@ export function buildStockPageViewModels(args: BuildStockPageViewModelsArgs): St
           horizon: latestRecord.horizon,
           note: latestRecord.note,
           submittedAt: latestRecord.submittedAt,
+          statusLabel: "已记录",
         }
       : null,
     qaEntryViewModel: {

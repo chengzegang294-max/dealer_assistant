@@ -3,6 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { fetchHomeBootstrap } from "@/features/home/api/homeApi";
 import type { DecisionRecord, EventItem } from "@/features/home/types";
+import type { StockSupplementEchoViewModel } from "@/features/stock/adapters/stockPageViewModel";
 import { buildStockPageViewModels } from "@/features/stock/adapters/stockPageViewModel";
 
 function buildRelatedEvents(eventList: EventItem[], stockCode: string) {
@@ -36,6 +37,10 @@ export function useStockPage() {
   const [eventList, setEventList] = useState<EventItem[]>([]);
   const [recentDecisionRecords, setRecentDecisionRecords] = useState<DecisionRecord[]>([]);
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
+  const [isSupplementEditorOpen, setIsSupplementEditorOpen] = useState(false);
+  const [supplementDraft, setSupplementDraft] = useState("");
+  const [supplementError, setSupplementError] = useState<string | null>(null);
+  const [latestSupplementEcho, setLatestSupplementEcho] = useState<StockSupplementEchoViewModel | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -78,13 +83,58 @@ export function useStockPage() {
     [stockCode, stockName, relatedEvents, selectedEvent, latestRecord],
   );
 
+  const canSupplementRecord = Boolean(latestRecord && selectedEvent);
+
+  function handleSelectRelatedEvent(eventId: string) {
+    setSelectedEventId(eventId);
+    setIsSupplementEditorOpen(false);
+    setSupplementDraft("");
+    setSupplementError(null);
+  }
+
+  function handleOpenSupplementEditor() {
+    if (!canSupplementRecord) {
+      return;
+    }
+    setIsSupplementEditorOpen(true);
+    setSupplementError(null);
+  }
+
+  function handleSubmitSupplement() {
+    const nextDraft = supplementDraft.trim();
+    if (!canSupplementRecord) {
+      return;
+    }
+    if (!nextDraft) {
+      setSupplementError("请先填写补充备注，再提交。");
+      return;
+    }
+
+    const submittedAt = new Date().toLocaleString("zh-CN", { hour12: false });
+    setLatestSupplementEcho({
+      note: nextDraft,
+      submittedAt,
+    });
+    setSupplementDraft("");
+    setSupplementError(null);
+    setIsSupplementEditorOpen(false);
+  }
+
   return {
     stockCode,
     stockName,
     selectedEventId: selectedEvent?.summary.eventId ?? null,
     hasLoaded: eventList.length > 0,
     ...viewModels,
-    handleSelectEvent: setSelectedEventId,
+    canSupplementRecord,
+    isSupplementEditorOpen,
+    supplementDraft,
+    supplementError,
+    latestSupplementEcho,
+    setSupplementDraft,
+    handleSelectEvent: handleSelectRelatedEvent,
+    handleOpenSupplementEditor,
+    handleSubmitSupplement,
     handleBackHome: () => navigate("/"),
   };
 }
