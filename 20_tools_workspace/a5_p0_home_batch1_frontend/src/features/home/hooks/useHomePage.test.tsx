@@ -2,7 +2,7 @@
 
 import { act } from "react";
 import { createRoot } from "react-dom/client";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Route, Routes, useLocation } from "react-router-dom";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/features/home/api/homeApi", async () => {
@@ -20,11 +20,20 @@ import { useHomePage } from "@/features/home/hooks/useHomePage";
 type HomePageHookResult = ReturnType<typeof useHomePage>;
 
 let latestHomePage: HomePageHookResult | null = null;
+let latestPathname = "";
+let latestSearch = "";
 
 globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
 function HomePageProbe() {
   latestHomePage = useHomePage();
+  return null;
+}
+
+function LocationProbe() {
+  const location = useLocation();
+  latestPathname = location.pathname;
+  latestSearch = location.search;
   return null;
 }
 
@@ -36,7 +45,10 @@ function renderHomePageHook(initialPath = "/") {
   act(() => {
     root.render(
       <MemoryRouter initialEntries={[initialPath]}>
-        <HomePageProbe />
+        <Routes>
+          <Route path="/" element={<HomePageProbe />} />
+          <Route path="/stock/:stockCode" element={<LocationProbe />} />
+        </Routes>
       </MemoryRouter>,
     );
   });
@@ -54,6 +66,8 @@ function renderHomePageHook(initialPath = "/") {
       });
       container.remove();
       latestHomePage = null;
+      latestPathname = "";
+      latestSearch = "";
     },
   };
 }
@@ -66,6 +80,8 @@ async function flushBootstrap() {
 
 afterEach(() => {
   latestHomePage = null;
+  latestPathname = "";
+  latestSearch = "";
   vi.restoreAllMocks();
 });
 
@@ -132,6 +148,24 @@ describe("useHomePage", () => {
     expect(homePage.result.mainWorkspacePanelProps.content.explanationCardViewModel?.blocks[0]?.content).toBe(
       "指数涨幅转强且分时承接改善，说明当前事件所处的大盘环境从中性向顺风切换。",
     );
+
+    homePage.cleanup();
+  });
+
+  it("从首页打开标的页时会把当前事件 eventId 带入 query", async () => {
+    const homePage = renderHomePageHook();
+    await flushBootstrap();
+
+    act(() => {
+      homePage.result.eventStreamPanelProps.onSelectEvent("market-index-context-20260720");
+    });
+
+    act(() => {
+      homePage.result.handleOpenStockPage("300750");
+    });
+
+    expect(latestPathname).toBe("/stock/300750");
+    expect(latestSearch).toBe("?eventId=market-index-context-20260720");
 
     homePage.cleanup();
   });
