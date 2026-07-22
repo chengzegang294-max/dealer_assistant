@@ -35,6 +35,11 @@ export function StockSearchBar(props: StockSearchBarProps) {
         </div>
       </div>
       {content.searchActionEcho ? <p className="mt-3 text-sm text-cyan-200">{content.searchActionEcho}</p> : null}
+      {content.queryRecoveryNotice ? (
+        <p className="mt-3 rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-3 text-sm text-amber-100">
+          {content.queryRecoveryNotice}
+        </p>
+      ) : null}
     </section>
   );
 }

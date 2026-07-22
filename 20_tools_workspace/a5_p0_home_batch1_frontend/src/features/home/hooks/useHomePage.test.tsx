@@ -169,4 +169,30 @@ describe("useHomePage", () => {
 
     homePage.cleanup();
   });
+
+  it("带空 eventId 进入首页时会在搜索区给出降级提示", async () => {
+    const homePage = renderHomePageHook("/?eventId=");
+    await flushBootstrap();
+
+    expect(homePage.result.selectedEventId).toBeNull();
+    expect(homePage.result.stockSearchBarProps.content.queryRecoveryNotice).toBe(
+      "检测到空 eventId，当前已按首页默认空态降级展示。",
+    );
+    expect(homePage.result.mainWorkspacePanelProps.content.selectedEventSummaryViewModel).toBeNull();
+
+    homePage.cleanup();
+  });
+
+  it("带无效 eventId 进入首页时会保留空态并显示提示", async () => {
+    const homePage = renderHomePageHook("/?eventId=unknown-event-id");
+    await flushBootstrap();
+
+    expect(homePage.result.selectedEventId).toBeNull();
+    expect(homePage.result.stockSearchBarProps.content.queryRecoveryNotice).toBe(
+      "未找到 eventId=unknown-event-id 对应的首页事件，当前已回到默认空态。",
+    );
+    expect(homePage.result.mainWorkspacePanelProps.content.explanationCardViewModel).toBeNull();
+
+    homePage.cleanup();
+  });
 });

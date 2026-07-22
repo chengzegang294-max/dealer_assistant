@@ -29,6 +29,7 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
   const [latestSubmitEcho, setLatestSubmitEcho] = useState<SubmitEcho | null>(null);
   const [searchDraft, setSearchDraft] = useState("");
   const [searchActionEcho, setSearchActionEcho] = useState<string | null>(null);
+  const [queryRecoveryNotice, setQueryRecoveryNotice] = useState<string | null>(null);
   const [formError, setFormError] = useState<string | null>(null);
   const [recentDecisionRecords, setRecentDecisionRecords] = useState<DecisionRecord[]>([]);
 
@@ -49,12 +50,37 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
   }, []);
 
   useEffect(() => {
-    if (!requestedEventId || eventList.length === 0 || selectedEventId === requestedEventId) {
+    if (requestedEventId === null || eventList.length === 0) {
       return;
     }
 
-    const matchedEvent = eventList.find((event) => event.summary.eventId === requestedEventId);
+    const normalizedRequestedEventId = requestedEventId.trim();
+
+    if (!normalizedRequestedEventId) {
+      setSelectedEventId(null);
+      setHomeWorkspaceState("empty");
+      setHomeRecordDraft(buildDraft(null));
+      setLatestSubmitEcho(null);
+      setFormError(null);
+      setQueryRecoveryNotice("检测到空 eventId，当前已按首页默认空态降级展示。");
+      return;
+    }
+
+    if (selectedEventId === normalizedRequestedEventId) {
+      if (queryRecoveryNotice) {
+        setQueryRecoveryNotice(null);
+      }
+      return;
+    }
+
+    const matchedEvent = eventList.find((event) => event.summary.eventId === normalizedRequestedEventId);
     if (!matchedEvent) {
+      setSelectedEventId(null);
+      setHomeWorkspaceState("empty");
+      setHomeRecordDraft(buildDraft(null));
+      setLatestSubmitEcho(null);
+      setFormError(null);
+      setQueryRecoveryNotice(`未找到 eventId=${normalizedRequestedEventId} 对应的首页事件，当前已回到默认空态。`);
       return;
     }
 
@@ -64,7 +90,8 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
     setHomeRecordDraft(result.nextDraft);
     setLatestSubmitEcho(result.nextSubmitEcho);
     setFormError(result.nextFormError);
-  }, [eventList, requestedEventId, selectedEventId]);
+    setQueryRecoveryNotice(null);
+  }, [eventList, queryRecoveryNotice, requestedEventId, selectedEventId]);
 
   const selectedEvent = useMemo(
     () => eventList.find((event) => event.summary.eventId === selectedEventId) ?? null,
@@ -84,6 +111,7 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
     setHomeRecordDraft(result.nextDraft);
     setLatestSubmitEcho(result.nextSubmitEcho);
     setFormError(result.nextFormError);
+    setQueryRecoveryNotice(null);
   }
 
   function handleChangeDecisionDraft<K extends keyof DecisionDraft>(key: K, value: DecisionDraft[K]) {
@@ -124,6 +152,7 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
   function handleOpenStockPage(stockCode: string) {
     const result = buildSearchActionEcho(stockCode);
     setSearchActionEcho(result.message);
+    setQueryRecoveryNotice(null);
   }
 
   return {
@@ -135,6 +164,7 @@ export function useHomeWorkspace(requestedEventId: string | null = null) {
     latestSubmitEcho,
     searchDraft,
     searchActionEcho,
+    queryRecoveryNotice,
     formError,
     recentDecisionRecords,
     queuedEvents,

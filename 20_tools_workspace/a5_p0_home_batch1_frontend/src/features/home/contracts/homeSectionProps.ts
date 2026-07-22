@@ -24,6 +24,7 @@ export interface StockSearchBarProps {
   content: {
     searchDraft: string;
     searchActionEcho: string | null;
+    queryRecoveryNotice: string | null;
   };
   actions: {
     onSearchDraftChange: (value: string) => void;

@@ -200,4 +200,28 @@ describe("useHomeWorkspace", () => {
 
     workspace.cleanup();
   });
+
+  it("带空 eventId 进入首页时会降级为空态并给出提示", async () => {
+    const workspace = renderWorkspaceHook("   ");
+    await flushBootstrap();
+
+    expect(workspace.result.selectedEventId).toBeNull();
+    expect(workspace.result.homeWorkspaceState).toBe("empty");
+    expect(workspace.result.queryRecoveryNotice).toBe("检测到空 eventId，当前已按首页默认空态降级展示。");
+
+    workspace.cleanup();
+  });
+
+  it("带不存在的 eventId 进入首页时会降级为空态并给出提示", async () => {
+    const workspace = renderWorkspaceHook("unknown-event-id");
+    await flushBootstrap();
+
+    expect(workspace.result.selectedEventId).toBeNull();
+    expect(workspace.result.homeWorkspaceState).toBe("empty");
+    expect(workspace.result.queryRecoveryNotice).toBe(
+      "未找到 eventId=unknown-event-id 对应的首页事件，当前已回到默认空态。",
+    );
+
+    workspace.cleanup();
+  });
 });

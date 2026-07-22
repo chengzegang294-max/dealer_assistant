@@ -10,6 +10,7 @@
   - `Batch2` 问答结果样式层
   - `Batch2` 首页返回链保留最近事件上下文
   - `Batch2` 首页 query 直达与刷新恢复
+  - `Batch2` 首页无效/空 eventId 显式降级
 - 当前首页闭环包括：
   - `今日事件流`
   - `解释卡`
@@ -76,7 +77,7 @@
 - `src/features/stock/hooks/useStockQaPage.ts`
   - 问答下钻占位页状态，负责三组推荐问题、五段式结果 view model 与返回标的页回链
 - `src/features/home/hooks/useHomeWorkspace.ts`
-  - 首页工作区状态，当前支持按 `eventId` 恢复最近事件上下文
+  - 首页工作区状态，当前支持按 `eventId` 恢复最近事件上下文，并在空/无效 `eventId` 时显式降级
 - `src/features/home/hooks/useHomePage.ts`
   - 首页编排层，当前支持把当前事件通过 query 带入标的页并在返回时恢复
 - `src/features/home/contracts/homeSectionProps.ts`
@@ -184,7 +185,7 @@ npm run test
 - 当前 `Batch1` 这一段先正式停在：
   - `首页薄壳 + workspace 不变量 + section props + adapter 分层 + 模型/WorkspaceHook/PageHook 三层最小自动化护栏 + 异步数据源桩`
 - 当前 `Batch2` 已推进到：
-  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳 + 问答下钻占位页 + 问答结果样式层 + 首页返回链保留最近事件上下文`
+  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳 + 问答下钻占位页 + 问答结果样式层 + 首页返回链保留最近事件上下文 + 首页query直达与刷新恢复 + 首页无效/空eventId显式降级`
 - 当前标的页 Batch2 最小壳页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2最小壳页__20260722.md`
 - 当前 Batch2 补充记录入口壳页见：
@@ -209,6 +210,10 @@ npm run test
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2首页query直达与刷新恢复页__20260723.md`
 - 当前 Batch2 首页 query 直达与刷新恢复走查记录见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2首页query直达与刷新恢复走查记录__20260723.md`
+- 当前 Batch2 首页无效 eventId 降级页见：
+  - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2首页无效eventId降级页__20260723.md`
+- 当前 Batch2 首页无效 eventId 降级走查记录见：
+  - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2首页无效eventId降级走查记录__20260723.md`
 - 当前可交付基线冻结页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0首页工作台Batch1可交付基线冻结页__20260722.md`
 - 当前提交路径最小护栏页见：
@@ -228,13 +233,13 @@ npm run test
   - `homeApi.ts` 成为唯一替换点
 - 当前测试已扩成：
   - `workspaceModel.test.ts` + `useHomeWorkspace.test.tsx` + `useHomePage.test.tsx` + `useStockPage.test.tsx` + `useStockQaPage.test.tsx`
-  - 共 `5` 个测试文件、`25` 个测试用例，均已通过
+  - 共 `5` 个测试文件、`33` 个测试用例，均已通过
 - 当前明确暂缓：
   - `latestSubmitEcho` 重试链路全覆盖
   - `EventStreamPanel` contract 统一化
   - 新一轮 adapter / section 美化
 - 后续若字段需要继续收紧，优先回指 `batch149_six_card_event_field_bundle_v1.md`，不要重开新合同页。
-- 当前首页有效标的动作已进入真实标的页最小壳；问答下钻已推进到真实占位页，当前只开放三组推荐问题、五段式结果与下一步动作条，不开放自由输入；从标的页返回首页时，当前会保留最近事件上下文；直接打开带 `eventId` 的首页并刷新时，当前也会恢复同一事件工作区。
+- 当前首页有效标的动作已进入真实标的页最小壳；问答下钻已推进到真实占位页，当前只开放三组推荐问题、五段式结果与下一步动作条，不开放自由输入；从标的页返回首页时，当前会保留最近事件上下文；直接打开带 `eventId` 的首页并刷新时，当前也会恢复同一事件工作区；若 `eventId` 为空或无效，当前会显式回落到首页默认空态并给出提示。
 - 当前最近记录区已不再只是只读展示；当事件命中已有记录时，可原地进入“补充这次记录”最小入口壳，提交后本地回显最近一次补充备注。
 - 当前桌面端首轮走查已通过，见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch1桌面端首轮走查记录__20260720.md`

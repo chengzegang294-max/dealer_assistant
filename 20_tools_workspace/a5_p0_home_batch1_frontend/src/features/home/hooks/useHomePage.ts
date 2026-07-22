@@ -61,6 +61,7 @@ export function useHomePage() {
     content: {
       searchDraft: workspace.searchDraft,
       searchActionEcho: workspace.searchActionEcho,
+      queryRecoveryNotice: workspace.queryRecoveryNotice,
     },
     actions: {
       onSearchDraftChange: workspace.setSearchDraft,
