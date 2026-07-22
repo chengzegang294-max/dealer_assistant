@@ -79,7 +79,9 @@ describe("useStockQaPage", () => {
     expect(qaPage.result.stockName).toBe("宁德时代");
     expect(qaPage.result.selectedEventTitle).toBe("指数环境强弱发生变化");
     expect(qaPage.result.selectedQuestion).toBe("这次事件为什么触发");
-    expect(qaPage.result.answerBlocks).toHaveLength(5);
+    expect(qaPage.result.questionGroups).toHaveLength(3);
+    expect(qaPage.result.answerViewModel?.groupTitle).toBe("解释补充组");
+    expect(qaPage.result.answerViewModel?.sourceFieldLabels).toEqual(["触发逻辑", "当前事件标题"]);
 
     qaPage.cleanup();
   });
@@ -93,8 +95,10 @@ describe("useStockQaPage", () => {
     });
 
     expect(qaPage.result.selectedQuestion).toBe("上次为什么这样记录");
-    expect(qaPage.result.answerBlocks[0]?.content).toContain("上次为什么这样记录");
-    expect(qaPage.result.answerBlocks[2]?.content).toContain("继续观察");
+    expect(qaPage.result.answerViewModel?.question).toBe("上次为什么这样记录");
+    expect(qaPage.result.answerViewModel?.groupTitle).toBe("记录复盘组");
+    expect(qaPage.result.answerViewModel?.coreAnswer).toContain("继续观察");
+    expect(qaPage.result.answerViewModel?.nextActions).toContain("补充这次记录");
 
     qaPage.cleanup();
   });
@@ -103,23 +107,27 @@ describe("useStockQaPage", () => {
     const qaPage = renderStockQaHook();
     await flushBootstrap();
 
-    const defaultExplanation = qaPage.result.answerBlocks[2]?.content;
+    const defaultExplanation = qaPage.result.answerViewModel?.coreAnswer;
 
     act(() => {
       qaPage.result.setSelectedQuestion("历史类比对应了哪段过去情况");
     });
 
-    const historyExplanation = qaPage.result.answerBlocks[2]?.content;
+    const historyExplanation = qaPage.result.answerViewModel?.coreAnswer;
+    const historyFields = qaPage.result.answerViewModel?.sourceFieldLabels;
 
     act(() => {
       qaPage.result.setSelectedQuestion("下一次复查点要看什么");
     });
 
-    const reviewExplanation = qaPage.result.answerBlocks[2]?.content;
+    const reviewExplanation = qaPage.result.answerViewModel?.coreAnswer;
+    const reviewActions = qaPage.result.answerViewModel?.nextActions;
 
     expect(defaultExplanation).toBe("指数涨幅转强且分时承接改善，说明当前事件所处的大盘环境从中性向顺风切换。");
     expect(historyExplanation).toBe("更接近风险偏好修复日，而不是单边风险释放日。");
+    expect(historyFields).toEqual(["历史类比", "当前事件标题"]);
     expect(reviewExplanation).toBe("复查指数方向、成交延续与事件热度是否同向。");
+    expect(reviewActions).toContain("把复查点和原记录一起看");
 
     qaPage.cleanup();
   });
