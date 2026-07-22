@@ -1,6 +1,6 @@
 # A5 Cursor 同步包 A股 P0 Batch1 已开工与当前实现进度
 
-更新时间：2026-07-22
+更新时间：2026-07-23
 
 ## 一、这页用途
 
@@ -134,6 +134,29 @@
     - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2最小壳页__20260722.md`
   - 当前 `Batch2` 补充记录入口壳页已落盘：
     - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2补充记录入口壳页__20260722.md`
+  - 当前 `Batch2` 又继续把问答入口推进成真实可进入的占位页：
+    - 新增 `src/features/stock/hooks/useStockQaPage.ts`
+    - 新增 `src/features/stock/hooks/useStockQaPage.test.tsx`
+    - 新增 `src/pages/StockQa.tsx`
+    - 新增路由 `/stock/:stockCode/qa`
+    - 标的页进入问答页时会保留 `eventId`
+    - 问答页返回标的页时会保留 `stockCode + selectedEventId`
+  - 当前问答下钻占位页已具备：
+    - 上下文条（标的 / 当前事件 / `still_need_evidence`）
+    - 推荐问题区
+    - 五段式占位回答
+    - 返回标的页入口
+    - 按问题类型切换字段重点的回答分发
+  - 当前 `Stock.tsx` 的问答入口文案也已对齐当前能力：
+    - 不再展示禁用输入框
+    - 改为“先看推荐问题”的能力说明
+    - CTA 已改成 `查看推荐问答`
+  - 当前 `useStockQaPage.test.tsx` 已锁住：
+    - 按 query 中的事件进入问答上下文
+    - 切换推荐问题时占位回答更新
+    - 不同问题命中不同字段重点
+  - 当前问答下钻占位页桌面端走查已通过：
+    - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2问答下钻占位页走查记录__20260723.md`
   - 当前 `Batch2` 已完成桌面端最小走查并冻结停点：
     - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2标的页桌面端最小走查记录__20260722.md`
     - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2停点冻结页__20260722.md`
@@ -217,10 +240,10 @@
   - 已继续补齐 `useHomePage` 最小 page-hook 护栏
   - 当前先把 `Batch1` 正式停在模型/WorkspaceHook/PageHook 三层稳定点 + 异步数据源桩
 - 当前继续把前台主线推进到：
-  - `Batch2 标的页最小壳（已完成桌面端走查并冻结）`
+  - `Batch2 标的页最小壳 + 问答下钻占位页（已完成桌面端走查并冻结）`
 - 当前前台主线停在：
   - `Batch1 首页薄壳 + workspace 不变量 + section props + adapter 分层 + 模型/WorkspaceHook/PageHook 三层最小自动化护栏 + 异步数据源桩`
-  - `Batch2 标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 问答入口占位 + 最近记录补充入口壳`
+  - `Batch2 标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳 + 问答下钻占位页 + 标的页/问答页返回链`
 - 当前明确暂缓：
   - `latestSubmitEcho` 重试链路全覆盖
   - `EventStreamPanel` contract 统一化

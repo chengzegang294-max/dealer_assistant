@@ -18,6 +18,7 @@ export default function Stock() {
     handleSelectEvent,
     handleOpenSupplementEditor,
     handleSubmitSupplement,
+    handleOpenQaPage,
     handleBackHome,
   } = useStockPage();
 
@@ -227,19 +228,14 @@ export default function Stock() {
                   <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/70">问答下钻入口区</p>
                   <h2 className="mt-2 text-xl font-semibold text-white">还能问什么</h2>
                   <p className="mt-1 text-sm text-slate-400">
-                    当前只保留下钻入口位，不在本轮实现问答页本体。
+                    当前已开放推荐问题下钻，占位页只回答和当前事件直接绑定的问题，不开放自由输入。
                   </p>
                 </div>
                 <div className="mb-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
-                  <label className="mb-2 block text-xs uppercase tracking-[0.25em] text-slate-500">
-                    问答输入占位
-                  </label>
-                  <input
-                    type="text"
-                    disabled
-                    placeholder="输入你想追问的问题（后续批次开启）"
-                    className="w-full cursor-not-allowed rounded-xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-slate-500 outline-none"
-                  />
+                  <p className="text-xs uppercase tracking-[0.25em] text-slate-500">当前开放能力</p>
+                  <p className="mt-2 text-sm text-slate-300">
+                    先用推荐问题查看占位回答；自由输入问答留到后续批次，不在这轮打开。
+                  </p>
                 </div>
                 <div className="grid gap-3 md:grid-cols-2">
                   {qaEntryViewModel.questions.map((question) => (
@@ -254,10 +250,15 @@ export default function Stock() {
                   </p>
                   <button
                     type="button"
-                    disabled
-                    className="cursor-not-allowed rounded-xl border border-white/10 px-4 py-2 text-sm text-slate-400"
+                    onClick={handleOpenQaPage}
+                    disabled={!explanationViewModel}
+                    className={`rounded-xl px-4 py-2 text-sm transition ${
+                      explanationViewModel
+                        ? "border border-cyan-400/40 bg-cyan-400/10 text-cyan-100 hover:bg-cyan-400/20"
+                        : "cursor-not-allowed border border-white/10 text-slate-400"
+                    }`}
                   >
-                    问答下钻（后续批次）
+                    查看推荐问答
                   </button>
                 </div>
               </section>
