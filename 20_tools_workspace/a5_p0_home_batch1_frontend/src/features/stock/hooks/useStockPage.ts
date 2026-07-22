@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 import { fetchHomeBootstrap } from "@/features/home/api/homeApi";
 import type { DecisionRecord, EventItem } from "@/features/home/types";
@@ -33,6 +33,8 @@ function pickLatestRecord(recentDecisionRecords: DecisionRecord[], selectedEvent
 export function useStockPage() {
   const navigate = useNavigate();
   const { stockCode = "" } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const requestedEventId = searchParams.get("eventId");
 
   const [eventList, setEventList] = useState<EventItem[]>([]);
   const [recentDecisionRecords, setRecentDecisionRecords] = useState<DecisionRecord[]>([]);
@@ -50,15 +52,19 @@ export function useStockPage() {
         return;
       }
       const nextRelatedEvents = buildRelatedEvents(payload.events, stockCode);
+      const nextSelectedEventId =
+        nextRelatedEvents.find((event) => event.summary.eventId === requestedEventId)?.summary.eventId ??
+        nextRelatedEvents[0]?.summary.eventId ??
+        null;
       setEventList(payload.events);
       setRecentDecisionRecords(payload.decisionRecords);
-      setSelectedEventId(nextRelatedEvents[0]?.summary.eventId ?? null);
+      setSelectedEventId(nextSelectedEventId);
     });
 
     return () => {
       cancelled = true;
     };
-  }, [stockCode]);
+  }, [requestedEventId, stockCode]);
 
   const relatedEvents = useMemo(() => buildRelatedEvents(eventList, stockCode), [eventList, stockCode]);
   const selectedEvent = useMemo(
@@ -87,6 +93,7 @@ export function useStockPage() {
 
   function handleSelectRelatedEvent(eventId: string) {
     setSelectedEventId(eventId);
+    setSearchParams(eventId ? { eventId } : {}, { replace: true });
     setIsSupplementEditorOpen(false);
     setSupplementDraft("");
     setSupplementError(null);
@@ -120,6 +127,14 @@ export function useStockPage() {
     setIsSupplementEditorOpen(false);
   }
 
+  function handleOpenQaPage() {
+    const nextSelectedEventId = selectedEvent?.summary.eventId;
+    if (!nextSelectedEventId) {
+      return;
+    }
+    navigate(`/stock/${stockCode}/qa?eventId=${encodeURIComponent(nextSelectedEventId)}`);
+  }
+
   return {
     stockCode,
     stockName,
@@ -135,6 +150,10 @@ export function useStockPage() {
     handleSelectEvent: handleSelectRelatedEvent,
     handleOpenSupplementEditor,
     handleSubmitSupplement,
-    handleBackHome: () => navigate("/"),
+    handleOpenQaPage,
+    handleBackHome: () =>
+      navigate(
+        selectedEvent?.summary.eventId ? `/?eventId=${encodeURIComponent(selectedEvent.summary.eventId)}` : "/",
+      ),
   };
 }

@@ -28,14 +28,14 @@ function HomePageProbe() {
   return null;
 }
 
-function renderHomePageHook() {
+function renderHomePageHook(initialPath = "/") {
   const container = document.createElement("div");
   document.body.appendChild(container);
   const root = createRoot(container);
 
   act(() => {
     root.render(
-      <MemoryRouter>
+      <MemoryRouter initialEntries={[initialPath]}>
         <HomePageProbe />
       </MemoryRouter>,
     );
@@ -117,6 +117,22 @@ describe("useHomePage", () => {
     expect(scrollSpy).toHaveBeenCalledTimes(1);
 
     target.remove();
+    homePage.cleanup();
+  });
+
+  it("带 eventId 进入首页时会恢复当前事件工作区", async () => {
+    const homePage = renderHomePageHook("/?eventId=market-index-context-20260720");
+    await flushBootstrap();
+
+    expect(homePage.result.selectedEventId).toBe("market-index-context-20260720");
+    expect(homePage.result.mainWorkspacePanelProps.content.selectedEventSummaryViewModel?.title).toBe(
+      "指数环境强弱发生变化",
+    );
+    expect(homePage.result.mainWorkspacePanelProps.content.explanationCardViewModel?.eyebrow).toBe("ExplanationCard");
+    expect(homePage.result.mainWorkspacePanelProps.content.explanationCardViewModel?.blocks[0]?.content).toBe(
+      "指数涨幅转强且分时承接改善，说明当前事件所处的大盘环境从中性向顺风切换。",
+    );
+
     homePage.cleanup();
   });
 });

@@ -2,7 +2,7 @@
 
 import { act } from "react";
 import { createRoot } from "react-dom/client";
-import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { MemoryRouter, Route, Routes, useLocation } from "react-router-dom";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("@/features/home/api/homeApi", async () => {
@@ -20,11 +20,20 @@ import { useStockPage } from "@/features/stock/hooks/useStockPage";
 type StockPageHookResult = ReturnType<typeof useStockPage>;
 
 let latestStockPage: StockPageHookResult | null = null;
+let latestPathname = "";
+let latestSearch = "";
 
 globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
 function StockPageProbe() {
   latestStockPage = useStockPage();
+  return null;
+}
+
+function LocationProbe() {
+  const location = useLocation();
+  latestPathname = location.pathname;
+  latestSearch = location.search;
   return null;
 }
 
@@ -38,6 +47,7 @@ function renderStockPageHook(initialPath = "/stock/300750") {
       <MemoryRouter initialEntries={[initialPath]}>
         <Routes>
           <Route path="/stock/:stockCode" element={<StockPageProbe />} />
+          <Route path="/" element={<LocationProbe />} />
         </Routes>
       </MemoryRouter>,
     );
@@ -56,6 +66,8 @@ function renderStockPageHook(initialPath = "/stock/300750") {
       });
       container.remove();
       latestStockPage = null;
+      latestPathname = "";
+      latestSearch = "";
     },
   };
 }
@@ -68,6 +80,8 @@ async function flushBootstrap() {
 
 afterEach(() => {
   latestStockPage = null;
+  latestPathname = "";
+  latestSearch = "";
   vi.restoreAllMocks();
 });
 
@@ -168,6 +182,24 @@ describe("useStockPage", () => {
       note: "补充：指数环境转强后，先继续观察量能延续。",
       submittedAt: "2026/07/22 01:08:00",
     });
+
+    stockPage.cleanup();
+  });
+
+  it("返回首页时会把当前事件上下文带回首页 query", async () => {
+    const stockPage = renderStockPageHook();
+    await flushBootstrap();
+
+    act(() => {
+      stockPage.result.handleSelectEvent("market-index-context-20260720");
+    });
+
+    act(() => {
+      stockPage.result.handleBackHome();
+    });
+
+    expect(latestPathname).toBe("/");
+    expect(latestSearch).toBe("?eventId=market-index-context-20260720");
 
     stockPage.cleanup();
   });

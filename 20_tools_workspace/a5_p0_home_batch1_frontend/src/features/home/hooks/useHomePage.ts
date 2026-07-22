@@ -3,7 +3,7 @@ import {
   holdingRiskHint,
   marketSummary,
 } from "@/features/home/fixtures/sixCardEvents";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { createHomePageViewModels } from "@/features/home/adapters/homePageViewModels";
 import type {
   EventStreamPanelProps,
@@ -15,7 +15,9 @@ import { useHomeWorkspace } from "@/features/home/hooks/useHomeWorkspace";
 
 export function useHomePage() {
   const navigate = useNavigate();
-  const workspace = useHomeWorkspace();
+  const [searchParams] = useSearchParams();
+  const requestedEventId = searchParams.get("eventId");
+  const workspace = useHomeWorkspace(requestedEventId);
 
   function handleOpenStockPage(stockCode: string) {
     workspace.handleOpenStockPage(stockCode);
@@ -23,7 +25,12 @@ export function useHomePage() {
     if (!normalizedCode) {
       return;
     }
-    navigate(`/stock/${normalizedCode}`);
+    const nextSelectedEventId = workspace.selectedEventId;
+    navigate(
+      nextSelectedEventId
+        ? `/stock/${normalizedCode}?eventId=${encodeURIComponent(nextSelectedEventId)}`
+        : `/stock/${normalizedCode}`,
+    );
   }
 
   function handleOpenFinanceDisclosure() {

@@ -21,7 +21,7 @@ function formatNow() {
   return new Date().toLocaleString("zh-CN", { hour12: false });
 }
 
-export function useHomeWorkspace() {
+export function useHomeWorkspace(requestedEventId: string | null = null) {
   const [eventList, setEventList] = useState<EventItem[]>([]);
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
   const [homeWorkspaceState, setHomeWorkspaceState] = useState<HomeWorkspaceState>("empty");
@@ -47,6 +47,24 @@ export function useHomeWorkspace() {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (!requestedEventId || eventList.length === 0 || selectedEventId === requestedEventId) {
+      return;
+    }
+
+    const matchedEvent = eventList.find((event) => event.summary.eventId === requestedEventId);
+    if (!matchedEvent) {
+      return;
+    }
+
+    const result = applySelectEvent(matchedEvent.summary.eventId);
+    setSelectedEventId(result.nextSelectedEventId);
+    setHomeWorkspaceState(result.nextWorkspaceState);
+    setHomeRecordDraft(result.nextDraft);
+    setLatestSubmitEcho(result.nextSubmitEcho);
+    setFormError(result.nextFormError);
+  }, [eventList, requestedEventId, selectedEventId]);
 
   const selectedEvent = useMemo(
     () => eventList.find((event) => event.summary.eventId === selectedEventId) ?? null,

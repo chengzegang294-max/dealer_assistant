@@ -23,11 +23,14 @@ let latestWorkspace: WorkspaceHookResult | null = null;
 globalThis.IS_REACT_ACT_ENVIRONMENT = true;
 
 function WorkspaceProbe() {
-  latestWorkspace = useHomeWorkspace();
+  latestWorkspace = useHomeWorkspace(currentRequestedEventId);
   return null;
 }
 
-function renderWorkspaceHook() {
+let currentRequestedEventId: string | null = null;
+
+function renderWorkspaceHook(requestedEventId: string | null = null) {
+  currentRequestedEventId = requestedEventId;
   const container = document.createElement("div");
   document.body.appendChild(container);
   const root = createRoot(container);
@@ -75,6 +78,7 @@ function fillRequiredDraft(workspace: ReturnType<typeof renderWorkspaceHook>) {
 
 afterEach(() => {
   latestWorkspace = null;
+  currentRequestedEventId = null;
   vi.restoreAllMocks();
 });
 
@@ -175,6 +179,24 @@ describe("useHomeWorkspace", () => {
       horizon: "",
       note: "",
     });
+
+    workspace.cleanup();
+  });
+
+  it("带 eventId 回到首页时会自动恢复对应事件上下文", async () => {
+    const workspace = renderWorkspaceHook("market-index-context-20260720");
+    await flushBootstrap();
+
+    expect(workspace.result.selectedEventId).toBe("market-index-context-20260720");
+    expect(workspace.result.homeWorkspaceState).toBe("selected");
+    expect(workspace.result.homeRecordDraft).toEqual({
+      eventId: "market-index-context-20260720",
+      action: "",
+      reasonTag: "",
+      horizon: "",
+      note: "",
+    });
+    expect(workspace.result.latestSubmitEcho).toBeNull();
 
     workspace.cleanup();
   });
