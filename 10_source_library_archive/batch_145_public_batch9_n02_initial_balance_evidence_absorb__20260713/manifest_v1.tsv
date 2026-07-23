@@ -1,0 +1,13 @@
+item_id	rel_path	kind	source_role	status	note
+M001	README.md	md	contract	active	本批次入口说明
+M002	provenance.md	md	contract	active	来源与证据模式说明
+M003	N02_EVIDENCE_GAP_STATUS_v1.tsv	tsv	absorb_index	active	N02 证据缺口清单与下一动作
+M004	BATCH_145_EXECUTION_CARD.md	md	index_note	active	批次执行卡
+M005	BATCH_145_ARTIFACT_INDEX_v1.md	md	index_note	active	批次产物索引与缺口登记
+M006	00_raw_snapshot/README.md	md	index_note	active	raw snapshot 入口说明
+M007	00_raw_snapshot/Initial_Balance_Breakout__historical_recovered_excerpt.md	md	artifact	historical_recovered	历史回收的 Initial Balance 页面摘录
+M008	00_raw_snapshot/FirstHourBreakout__manual_web_capture__20260713.md	md	artifact	active	FirstHourBreakout 手动网页正文
+M009	00_raw_snapshot/ib_formula_or_chart_example.md	md	artifact	active	IB 最小公式与失败模式结构化摘录页
+M010	00_raw_snapshot/Initial_Balance__manual_web_capture__20260714.md	md	artifact	active	Initial Balance 同主题定义页与失败突破网页正文
+M011	00_raw_snapshot/N02_acceptance_extension_statistics_quote_bundle__20260714.md	md	artifact	active	N02 acceptance/range extension/statistics 强证据引文包
+M012	00_raw_snapshot/N02_chart_and_teaching_figure_bundle__20260714.md	md	artifact	active	N02 教材级图例与 caption 证据包

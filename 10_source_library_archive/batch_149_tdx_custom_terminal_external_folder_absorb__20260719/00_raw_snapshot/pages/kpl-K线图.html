@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>KPL-K线图</title>
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			p {margin:0px;}
+			#box{
+				display:inline-block;
+				margin:0px 5px 0px 80px;
+				border-box:50%;
+				width:10px;
+				height:10px;
+			}
+			.fixedBox{
+				border: 1px solid #555555;				
+				
+			}
+			.fixedBox::-webkit-scrollbar {
+				width: 10px;     
+				height: 10px;				
+			}								
+		</style>		
+		<script type="text/javascript" src="js/json2html.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="DatePicker/WdatePicker.js"> </script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+	</head>
+	<body>
+		<div id="towrite" class="fixedBox" style="display:none;">
+			<div id="title" style="margin-top:2px;height:20px;"></div>
+			<div id="chart" style="position:relative; float:left;margin-top:-5px;"></div>
+			<!-- <div id="towrite1" class="fixedBox" style="position:relative; float:left;margin-top:-18px;"></div> -->
+		</div>
+				
+		<script>
+			var yy = 1;  //部分显示（小图）；		
+			window.onload = function() {
+				changeStyle();	
+				getSource(100);						
+			}		
+
+			$(function() {
+				setInterval(function() {									
+					getSource(days);																				
+				},
+				500);
+			})
+			
+			function time_range(beginTime, endTime) {
+				var strb = beginTime.split(":");
+				if (strb.length != 2) {
+					return false;
+				}
+
+				var stre = endTime.split(":");
+				if (stre.length != 2) {
+					return false;
+				}
+
+				var b = new Date();
+				var e = new Date();
+				var n = new Date();
+
+				b.setHours(strb[0]);
+				b.setMinutes(strb[1]);
+				e.setHours(stre[0]);
+				e.setMinutes(stre[1]);
+
+				if (n.getTime() - b.getTime() > 0 && n.getTime() - e.getTime() < 0) {
+					v = 1;					
+					console.log(true)　　　　　　
+					return true;				
+				} else {
+					console.log(false)
+				    return false;     
+				}
+			}　　　
+   　　　
+			function changeStyle() {
+				var div = document.getElementById("towrite");	
+				div.style.display= "block";
+				div.style.border= "0px solid #696969";
+				div.style.top= "0px"; 	
+				div.style.left= "0px"; 				
+				div.style.width= "100%";	
+				div.style.height= "98%";		
+				div.style.fontSize="12px";	
+				
+				var div1 = document.getElementById("chart");	
+				div1.style.border= "0px solid #696969";				
+				div1.style.marginTop= "-15px";
+				div1.style.left= "0px"; 
+				div1.style.width= "95%";
+				div1.style.height= "85%";					
+			}
+			
+			Date.prototype.Format = function (fmt) {
+				var o = {
+				"M+": this.getMonth() + 1, //月份
+				"d+": this.getDate(), //日
+				"h+": this.getHours(), //小时
+				"m+": this.getMinutes(), //分
+				"s+": this.getSeconds(), //秒
+				"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+				"S": this.getMilliseconds() //毫秒
+				};
+				if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+				for (var k in o)
+				if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				return fmt;
+			};
+			
+			function keepTwoDecimal(num) {  
+               var result = parseFloat(num);  
+               if (isNaN(result)) {                     
+                   return false;  
+               }  
+               result = Math.round(num * 100) / 100;  
+               return result;  
+			}	
+			
+			function NumberTransform(num) { 
+				var result = num;
+				if(Math.abs(num) > 100000000){
+					result = num / 100000000;
+					result = result.toFixed(0) + "亿";
+				}else if(Math.abs(num) > 10000){
+					result = num/10000;
+					result = result.toFixed(0) + "万";
+				}				   
+				return result;  
+			};	
+			
+			var days = 500;  //K线数量
+			var z = 0;  //刷新
+			var v = 0;	//刷新		
+			var gpdm = "";
+			var gpmc = "";			
+			function getSource(p) {					
+				var u = decodeURI(window.location.href);								
+				if(u.indexOf("##") > -1){
+					var gp = u.split('##');				
+					dm = gp[1];
+					gpmc = gp[2];
+					if(gp[3] != undefined){
+						yy = gp[3];						
+					}
+					if(gp[4] != undefined){
+						days = gp[4];						
+					}
+				}else{
+					dm = "600000";
+					gpmc = "浦发银行";					
+				}
+				if(dm != gpdm || v == 1 || p != days){					
+					v = 0;
+					if(yy == 1){
+						days = p;
+					}
+										
+					gpdm = dm;					
+					
+					var div = document.getElementById('title');
+					if(yy == 1){
+						var a1 = '<a href="javascript:getSource(100);"  id="100"  style="padding-left:20px;font-size:12px;color:#fff;">100天</a>';
+						var a2 = '<a href="javascript:getSource(200);"  id="200" style="padding-left:20px;font-size:12px;color:#fff;">200天</a>';
+						var a3 = '<a href="javascript:getSource(300);"  id="300" style="padding-left:20px;font-size:12px;color:#fff;">300天</a>';
+						var a4 = '<a href="javascript:getSource(400);"  id="400" style="padding-left:20px;font-size:12px;color:#fff;">400天</a>';
+						var a5 = '<a href="javascript:getSource(500);"  id="500" style="padding-left:100px;font-size:12px;color:#fff;">500天</a>';
+						div.innerHTML = '<font size="2">' + gpdm + "&nbsp;&nbsp;&nbsp;" + gpmc + a5 + a4 + a3 + a2 + a1 + "</font>";
+						aObj = document.getElementById(p);				
+						aObj.style.color = "#FFA07A";
+					}else{
+						div.innerHTML = '<font size="1">' + gpdm + "&nbsp;&nbsp;&nbsp;" + gpmc + "</font>";
+					}
+					
+					
+					var res = [];
+					var url1 = "";
+					if(dm.substr(0,1) == "8"){
+						url1 = "https://apphis.longhuvip.com/w1/api/index.php?st=" + days + "&a=GetPlateKLineDay&c=ZhiShuKLine&Index=0&apiv=w31&Type=d&StockID=" + gpdm;						
+					}else{
+						url1 = "https://apphis.longhuvip.com/w1/api/index.php?st=" + days + "&a=GetKLineDay_W14&c=StockLineData&Index=0&apiv=w31&Type=d&StockID=" + gpdm;						
+					}					
+						$.ajax({
+							type: "get",
+							url: url1,
+							dataType: "json",
+							async : false,
+							cache:false,
+							timeout:3000,					
+							success: function(data) {
+								//alert(data)						
+								//document.write(JSON.stringify(data));
+								var x = data.x;
+								var y = data.y;
+								var bal = data.bal;
+								
+								for (var i = 0; i < x.length; i++){
+									res.push([x[i],Number(y[i][0]),Number(y[i][1]),Number(y[i][2]),Number(y[i][3]),Number(bal[i])]);
+								}							
+							}
+						});
+						//document.write(JSON.stringify(res));
+						
+						//当日
+						if(dm.substr(0,1) == "8"){							
+							var url2 = "https://apphq.longhuvip.com/w1/api/index.php?a=GetKLineToday&apiv=w31&Type=d&c=ZhiShuKLine&StockID=" + gpdm;						
+							$.ajax({
+								type: "get",
+								url: url2,
+								dataType: "json",
+								async : false,
+								cache:false,
+								timeout:3000,					
+								success: function(data) {
+									//alert(data)						
+									//document.write(JSON.stringify(data));
+									var x = data.x;
+									var y = data.y;
+									var bal = data.bal;
+									var drq = x[0];
+									var a = res.findIndex((v) => {  //(findIndex)判断数组有无指定对象   
+										return v[0] === drq;
+									});
+									if(a == -1){							
+										res.push([x[0],Number(y[0][0]),Number(y[0][1]),Number(y[0][2]),Number(y[0][3]),Number(bal[0])]);						
+									}
+								}
+							});
+						}else{
+							var url2 = "https://apphq.longhuvip.com/w1/api/index.php?a=GetStockPanKou&apiv=w31&c=StockL2Data&StockID=" + gpdm;						
+							$.ajax({
+								type: "get",
+								url: url2,
+								dataType: "json",
+								async : false,
+								cache:false,
+								timeout:3000,					
+								success: function(data) {
+									//alert(JSON.stringify(data))						
+									//document.write(JSON.stringify(data));									
+									var drq = data.day;																		
+									var a = res.findIndex((v) => {  //(findIndex)判断数组有无指定对象   
+										return v[0] === JSON.stringify(drq);
+									});									
+									var aa = data.real;
+									if(a == -1 && aa.open_px != 0){
+										res.push([drq,Number(aa.open_px),Number(aa.last_px),Number(aa.high_px),Number(aa.low_px),Number(aa.total_amount)]);
+									}
+								}
+							});
+						}
+					//document.write(JSON.stringify(res));
+					GetChart(res);
+				}else{
+					z++;
+					if(z == 60){
+						z = 0;
+						time_range("9:00","15:15")  //刷新数据
+					}
+				}	
+			}
+			
+			function splitData(rawData) {
+			  let categoryData = [];
+			  let values = [];
+			  let volumes = [];
+			  for (let i = 0; i < rawData.length; i++) {
+				categoryData.push(rawData[i].splice(0, 1)[0]);
+				values.push(rawData[i]);
+				volumes.push([i, rawData[i][4], rawData[i][0] > rawData[i][1] ? 1 : -1]);
+			  }
+			  return {
+				categoryData: categoryData,
+				values: values,
+				volumes: volumes
+			  };
+			}
+			
+			<!-- function calculateMA(dayCount, data) {				 -->
+				<!-- var result = []; -->
+				<!-- for (var i = 0, len = data.values.length; i < len; i++) { -->
+					<!-- if (i < dayCount) { -->
+						<!-- result.push('-'); -->
+						<!-- continue; -->
+					<!-- } -->
+					<!-- var sum = 0; -->
+					<!-- for (var j = 0; j < dayCount; j++) { -->
+						<!-- sum += data.values[i - j][1]; -->
+					<!-- } -->
+					<!-- result.push(+(sum / dayCount).toFixed(2)); -->
+				<!-- } -->
+				<!-- return result; -->
+			<!-- } -->
+			
+			function calculateMA(dayCount, data) {
+				var result = [];
+				for (var i = 0, len = data.length; i < len; i++) {
+					if (i < dayCount) {
+						result.push('-');
+						continue;
+					}
+					var sum = 0;
+					for (var j = 0; j < dayCount; j++) {
+						sum += data[i - j][1];
+					}
+					result.push(+(sum / dayCount).toFixed(2));
+				}
+				return result;
+			}
+			
+		</script>
+		<script>			
+			function GetChart(arr) {
+				var data = splitData(arr);
+				var myChart = echarts.init(document.getElementById('chart'));
+				const upColor = '#ec0000';//00da3c
+				const downColor = '#00FFFF';//ec0000
+				var right = "8%";
+				var show = true;
+				var fsize = "14";
+				if(yy == 0){
+					right = "18%";
+					show = false;
+					fsize = "12";
+				}
+				var top2 = 70;
+				var top21 = top2 - 3;
+				var option = {	
+					animation: false, //取消动画效果
+					title: [
+						{
+							left: 'left',
+							//text: '股票K线图'
+						},
+						{
+							show: show,
+							top: top21 + "%",
+							left: 'left',
+							text: '成交量',
+							textStyle: {
+								color: "#fff", // 文字的颜色。
+								fontSize: fsize,
+							}
+						}
+					],
+					
+					tooltip: {   //提示框
+						show: show,
+						trigger: 'axis',
+						formatter(params) {  //添加文字	
+							//alert(JSON.stringify(params))
+							//document.write(JSON.stringify(params[0]));							
+							var str = params[0].name + '<br>';
+							params.forEach(item => {
+								var name = item.seriesName;
+								var c1 = '<span style="display:inline-block;margin-right:5px;border-radius:50%;width:5px;height:5px;left:5px;background-color:' + item.color + '"></span>';
+								var c2 = '<span style="display:inline-block;margin-right:5px;border-radius:50%;width:10px;height:10px;left:5px;background-color:' + item.color + '"></span>';									
+								if(name == "日K"){
+									str += c1 + '开盘:' + item.data[1] + '<br>' + c1 + '收盘:' + item.data[2] + '<br>' + c1 + '最高:' + item.data[3] + '<br>' + c1 + '最低:' + item.data[4] + '<br>';
+								}else if(name.indexOf("MA") > -1 && name.indexOf("V_") == -1){
+									str += c2 + item.seriesName + " : " + item.data + '<br>';
+								}else if(name.indexOf("成交量") > -1){
+									str += c2 + item.seriesName + " : " + item.data[1] + "<br>";
+								}
+							});
+							return str;
+						}
+					},
+					axisPointer: {   //上下区域连接
+						link: [
+							{
+								xAxisIndex: 'all'
+							}
+						],
+							label: {
+							backgroundColor: '#777'
+						}
+					},
+					legend: [    // 图例
+						{
+							show : show,
+							left: 'left',
+							data: ['MA5', 'MA10', 'MA20', 'MA60'],
+							icon: "rect", //circle，rect, line，roundRect，triangle，diamond，pin，arrow，none
+							align: "auto", // 图例标记和文本的对齐
+							itemGap: 20, // 图例每项之间的间隔。
+							itemWidth: 15,     // 图例标记的图形宽度
+							itemHeight: 3,      // 图例标记的图形高度// 使用字符串模板，模板变量为图例名称 {name}							
+							textStyle: {
+								color: "#fff", // 文字的颜色。								
+							}
+						}						
+					],
+					visualMap: {
+						show: false,
+						seriesIndex: 5,
+						dimension: 2,
+						pieces: [
+							{
+								value: 1,
+								color: downColor
+							},
+							{
+								value: -1,
+								color: upColor
+							}
+						]
+					},
+					grid: [
+						{
+							top: '0%',
+							left: '2%',
+							right: right,
+							height: '70%'
+						},
+						{
+							top: top2 + "%",
+							left: '2%',
+							right: right,							
+							height: '20%'
+						}
+					],				
+					xAxis: [
+						{
+							type: 'category',
+							data: data.categoryData,							
+							boundaryGap: false,
+							axisLine: { onZero: true },
+							axisTick: { show: true },
+							splitLine: { show: false },
+							axisLabel: { show: false },
+							min: 'dataMin',
+							max: 'dataMax',
+							axisPointer: {
+								z: 100
+							}
+						},
+						{
+							type: 'category',
+							gridIndex: 1,                    //对应坐标轴所在grid的索引
+							data: data.categoryData,
+							boundaryGap: false,
+							axisLine: { onZero: true },
+							axisTick: { show: true },
+							axisLine:{  //x轴坐标线设置
+								lineStyle:{
+									color:"#808080",  //x轴坐标线颜色
+									width: 1   // 坐标轴线宽
+								}
+							},						
+							axisLabel:{	 //x轴标签设置
+								show : show,							
+								showMaxLabel:true, //显示最大 tick(最后一天)
+								interval: 'auto',
+								padding: [0, 0, 0, 30],
+								textStyle:{  //x轴文字
+									color:"#FFF"
+								}
+							},
+							min: 'dataMin',
+							max: 'dataMax'
+						}
+					],					
+					yAxis: [
+						{
+							position:'right',//坐标轴位置，移至右边
+							offset: 10,     //Y 轴相对于默认位置的偏移
+							scale: true,   //刻度 自适应        
+							splitArea: {     //分割区域颜色
+								show: false  
+							},
+							splitLine:{ //y轴网格线									
+								show:true,
+								lineStyle: { 									
+									color: '#808080', 
+									width: 1,    
+									type: 'dotted', //（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								} 
+							},
+							axisLine: { //y轴坐标线设置
+								show: true,							
+								lineStyle: { 									
+									color: '#D3D3D3', //y轴颜色
+									//width: 2,    // 坐标轴线宽
+									type: 'dotted',     // 坐标轴线线的类型（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								}, 
+							},						
+						},
+						{
+							position:'right',//坐标轴位置，移至右边
+							offset: 10,
+							scale: true,
+							gridIndex: 1,             //对应坐标轴所在grid的索引
+							splitNumber: 2,
+							splitLine:{ //y轴网格线									
+								show:true,
+								lineStyle: { 									
+									color: '#808080', 
+									width: 1,    
+									type: 'dotted', //（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								} 
+							},
+							axisLine: { //y轴坐标线设置
+								show: true,							
+								lineStyle: { 									
+									color: '#D3D3D3', //y轴颜色
+									//width: 2,    // 坐标轴线宽
+									type: 'dotted',     // 坐标轴线线的类型（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								}, 
+							},
+							axisLabel: {  //y轴标签设置
+								show: true,  //是否显示
+								//padding: [0,-60,15,0],  // 四个数字分别为上右下左与原位置距离
+								//color: '#fff',								
+								//margin: -50,	//文字移动									
+								textStyle: {
+									//align: 'left', //左对齐，文字右移									
+								},								
+								formatter: function (value){
+									if(value != 0){							  
+										return NumberTransform(value)
+									}else{
+										return 0
+									}
+								}
+							}
+						}
+					],
+					<!-- dataZoom: [   //区间 -->
+					<!-- { -->
+					  <!-- type: 'inside', -->
+					  <!-- xAxisIndex: [0, 1], -->
+					  <!-- start: 0, -->
+					  <!-- end: 100 -->
+					<!-- }, -->
+					<!-- { -->
+					  <!-- show: true, -->
+					  <!-- xAxisIndex: [0, 1], -->
+					  <!-- type: 'slider', -->
+					  <!-- top: '85%', -->
+					  <!-- start: 0, -->
+					  <!-- end: 100 -->
+					<!-- } -->
+				  <!-- ], -->
+					series: [						
+						{
+						  name: '日K',
+						  type: 'candlestick',
+						  //barWidth: 8, // 柱图宽度
+						  data: data.values,
+						  itemStyle: {
+							color: upColor,
+							color0: downColor,
+							borderColor: undefined,
+							borderColor0: undefined
+						  },						  
+						  <!-- markPoint: {  ////标注点 -->
+							<!-- label: { -->
+							  <!-- formatter: function (param) { -->
+								<!-- return param != null ? Math.round(param.value) + '' : ''; -->
+							  <!-- } -->
+							<!-- }, -->
+							<!-- data: [ -->
+							  <!-- { -->
+								<!-- name: 'highest value', -->
+								<!-- type: 'max', -->
+								<!-- valueDim: 'highest', -->
+								<!-- itemStyle: { -->
+								  <!-- color: 'red' -->
+								<!-- } -->
+							  <!-- }, -->
+							  <!-- { -->
+								<!-- name: 'lowest value', -->
+								<!-- type: 'min', -->
+								<!-- valueDim: 'lowest', -->
+							  <!-- }, -->
+							  <!-- { -->
+								<!-- name: 'average value on close', -->
+								<!-- type: 'average', -->
+								<!-- valueDim: 'close', -->
+								<!-- itemStyle: { -->
+								  <!-- color: 'purple' -->
+								<!-- } -->
+							  <!-- } -->
+							<!-- ], -->
+							<!-- tooltip: { -->
+							  <!-- formatter: function (param) { -->
+								<!-- return param.name + '<br>' + (param.data.coord || ''); -->
+							  <!-- } -->
+							<!-- } -->
+						  <!-- }, -->
+						  <!-- markLine: {  //标注线 -->
+							<!-- symbol: ['none', 'none'], -->
+							<!-- data: [ -->
+							  <!-- [ -->
+								<!-- { -->
+								  <!-- name: 'from lowest to highest', -->
+								  <!-- type: 'min', -->
+								  <!-- valueDim: 'lowest', -->
+								  <!-- symbol: 'circle', -->
+								  <!-- symbolSize: 10, -->
+								  <!-- label: { -->
+									<!-- show: false -->
+								  <!-- }, -->
+								  <!-- emphasis: { -->
+									<!-- label: { -->
+									  <!-- show: false -->
+									<!-- } -->
+								  <!-- }, -->
+								  <!-- itemStyle: { -->
+									<!-- color: 'red' -->
+								  <!-- } -->
+								<!-- }, -->
+								<!-- { -->
+								  <!-- type: 'max', -->
+								  <!-- valueDim: 'highest', -->
+								  <!-- symbol: 'circle', -->
+								  <!-- symbolSize: 10, -->
+								  <!-- label: { -->
+									<!-- show: false -->
+								  <!-- }, -->
+								  <!-- emphasis: { -->
+									<!-- label: { -->
+									  <!-- show: false -->
+									<!-- } -->
+								  <!-- }, -->
+								<!-- } -->
+							  <!-- ], -->
+							  <!-- { -->
+								<!-- name: 'min line on close', -->
+								<!-- type: 'min', -->
+								<!-- valueDim: 'close' -->
+							  <!-- }, -->
+							  <!-- { -->
+								<!-- name: 'max line on close', -->
+								<!-- type: 'max', -->
+								<!-- valueDim: 'close' -->
+							  <!-- } -->
+							<!-- ] -->
+						  <!-- } -->
+						},
+						{
+							name: 'MA5',
+							type: 'line',
+							data: calculateMA(5, data.values),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#DCDCDC",
+								}
+							}
+						},
+						{
+							name: 'MA10',
+							type: 'line',
+							data: calculateMA(10, data.values),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FFFF00",
+								}
+							}
+						},
+						{
+							name: 'MA20',
+							type: 'line',
+							data: calculateMA(20, data.values),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FF00FF",
+								}
+							}
+						},
+						{
+							name: 'MA60',
+							type: 'line',
+							data: calculateMA(60, data.values),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#32CD32",
+								}
+							}
+						},
+						{
+						  name: '成交量',
+						  type: 'bar',
+						  //barWidth: 8, // 柱图宽度
+						  xAxisIndex: 1,
+						  yAxisIndex: 1,
+						  data: data.volumes
+						},
+						{
+							name: 'V_MA5',
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1,
+							data: calculateMA(5, data.volumes),
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#DCDCDC",
+								}
+							}
+						},
+						{
+							name: 'V_MA10',
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1,
+							data: calculateMA(10, data.volumes),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FFFF00",
+								}
+							}
+						},
+						{
+							name: 'V_MA20',
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1,
+							data: calculateMA(20, data.volumes),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FF00FF",
+								}
+							}
+						},
+						{
+							name: 'V_MA60',
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1,
+							data: calculateMA(60, data.volumes),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#32CD32",
+								}
+							}
+						}
+					]
+				}					
+				myChart.setOption(option);
+				$(window).resize(myChart.resize);   //解决Echarts 隐藏再显示后宽度高度变小的问题
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+item_id	rel_path	kind	source_role	status	note
+M001	README.md	md	contract	active	本批次入口说明
+M002	provenance.md	md	contract	active	来源与证据模式说明
+M003	CHZL_BSD_SAMPLE_REQUIREMENT_v1.tsv	tsv	absorb_index	active	CHZL_BSD 样本补采需求清单与落点口径
+M004	BATCH_148_EXECUTION_CARD.md	md	index_note	active	批次执行卡
+M005	BATCH_148_ARTIFACT_INDEX_v1.md	md	index_note	active	批次产物索引与缺口登记
+M006	00_raw_snapshot/README.md	md	index_note	active	raw snapshot 入口说明
+M007	00_raw_snapshot/CHZL_BSD_existing_second_sample_anchor__historical_recovered.md	md	artifact	historical_recovered	CHZL_BSD 第二只样本现有锚点说明
+M008	00_raw_snapshot/601991_SH_second_sample_input_binding_note__20260713.md	md	index_note	active	第二只样本 daily/weekly/auto series/seed/stub 输出绑定说明
+M009	00_raw_snapshot/601991_SH_second_sample_seed_scaffold__20260713.md	md	index_note	active	第二只样本 seed 镜像脚手架说明
+M010	00_raw_snapshot/601991_SH_structure_seed_v1.tsv	tsv	artifact	active	第二只样本最小人工 seed 行
+M011	00_raw_snapshot/601991_SH_second_sample_stub_validation_note__20260714.md	md	index_note	active	第二只样本 semi_auto stub 校验记录

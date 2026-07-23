@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>图文F10---分析家</title>
+    <meta name="description" content="书溧收集">
+    <link rel="stylesheet" type="text/css" href="f11/css/main.css">
+    <script src="f11/lib/jquery.min.js" type="text/javascript"></script>
+    <script src="f11/lib/connect/req.js" type="text/javascript"></script>
+<style type="text/css">
+	a{
+		color:#212121
+	}
+	</style>
+  
+    <script src="f11/js/f10_main_static.js" type="text/javascript"></script>
+	<script src="f11/js/f10_main_input.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="leftbox">
+    <div class="gginfo">        
+        <div id="name" style="padding-left:20px;color:#F5F5F5";></div> 
+    </div>
+    <div id="container" class="container">
+        <a  class="selfunc" id="gg_zxts" href="javascript:void(0)" onclick='update("gg_zxts")'>最新提示</a>
+        <a  id="gg_jyds" href="javascript:void(0)"  onclick='update("gg_jyds")'>资金动向</a>
+        <a  id="gg_gsgk" href="javascript:void(0)" onclick='update("gg_gsgk")'>公司资料</a>
+        <div class="sepe"></div>
+        <a  id="gg_gbjg" href="javascript:void(0)" onclick='update("gg_gbjg")'>股本结构</a>
+        <a  id="gg_gdyj" href="javascript:void(0)" onclick='update("gg_gdyj")'>股东研究</a>
+
+        <a  id="gg_fhrz" href="javascript:void(0)" onclick='update("gg_fhrz")'>分红融资</a>
+        <div class="sepe"></div>
+        <a  id="gg_cwfx" href="javascript:void(0)" onclick='update("gg_cwfx")'>财务分析</a>
+        <a  id="gg_jyfx" href="javascript:void(0)" onclick='update("gg_jyfx")'>经营分析</a>
+        <a  id="gg_zbyz" href="javascript:void(0)" onclick='update("gg_zbyz")'>资本运作</a>
+        <div class="sepe"></div>
+        <a  id="gg_ybpj" href="javascript:void(0)" onclick='update("gg_ybpj")'>研报评级</a>
+        <a  id="gg_rdtc" href="javascript:void(0)" onclick='update("gg_rdtc")'>热点题材</a>
+        <a  id="gg_gszx" href="javascript:void(0)" onclick='update("gg_gszx")'>公司资讯</a>        
+	<div class="sepe"></div>
+	<a  id="gg_zlcc" href="javascript:void(0)" onclick='update("gg_zlcc")'>主力持仓</a>
+        <a  id="gg_hyfx" href="javascript:void(0)" onclick='update("gg_hyfx")'>行业分析</a>
+        <a  id="gg_sdfx" href="javascript:void(0)" onclick='update("gg_sdfx")'>深度分析</a>
+	<div class="sepe"></div>
+	<div class="sepe"></div>
+	<a  href="http://www.treeid/dlghttp://f9.icfqs.com:7615/site/tdxf9/agf9/page_index.html?stock=xxxxxx&color=0">深度f9</a>
+	<a  href="http://www.treeid/dlghttp://vis.10jqka.com.cn/free/jgpj/index/stockCode/xxxxxx" target='slzz'>机构评级</a>
+	<a  href="http://www.treeid/dlghttp://page.tdx.com.cn:7615/site/kggx/tk_ygzl_lhb.html?info=xxxxxx&amp;pageId=dpyd&amp;color=0&amp;bkcolor=000000" target='slzz'>龙虎榜单</a>
+	<a  href="http://www.treeid/dlghttp://page1.tdx.com.cn:7615/site/pcwebcall_static/bxb/bxb.html?code=xxxxxx&amp;color=0" target='slzz'>通达扫雷</a>
+	<div class="sepe"></div>
+    </div>
+</div>
+<div class="contentbox"><div style="display:none" class="loading" id="loading">正在加载中...</div>
+      <iframe
+        id="tdxf10"
+        curiframebox="0"
+        frameborder="0"
+        width="100%"
+        height="100%"
+        style=""
+      ></iframe>
+	<script>
+			window.onload = function() {
+				getSource();
+			}
+						
+			$(function() {
+				setInterval(function() {					
+					getSource();																	
+				},
+				500);
+			})
+			
+			var dm = "";
+			var gpdm = "";
+			var ids = "gg_zxts";
+			function getSource() {
+				var u = decodeURI(window.location.href);					
+				if(u.indexOf("##") > -1){
+					var gp = u.split('##');				
+					dm = gp[1];
+					mc = gp[2];										
+				}else{
+					dm = "600000";
+					mc = "浦发银行";
+				}
+				if(dm != gpdm){					
+					gpdm = dm;
+					if(dm.substr(0,1)=="6"){
+						dms = "SH" + dm;
+						dmt = "1." + dm;
+						zdjc = "SH"+dm  ;
+						zsl= "SH" ;
+
+					}else{
+						dms = "SZ" + dm;
+						dmt = "0." + dm;
+						zdjc= "SZ"+dm ;
+						zsl= "SZ" ;	
+					}
+					
+					var bt = "";					
+					var url="http://static.tdx.com.cn:7615/site/tdxf10/" + ids + "/" + gpdm + ".html?version=000001&vertype=1&style=black&gp=" + gpdm;
+					$('#name').text(dm + " " + mc);
+					var iframe = document.getElementById('tdxf10');
+					iframe.src = url;								
+				}
+			}
+			
+			function update(id) {
+				ids = id;
+				var url = "http://static.tdx.com.cn:7615/site/tdxf10/" + id + "/" + gpdm + ".html?version=000001&vertype=1&style=black&gp=" + gpdm;
+				var iframe = document.getElementById('tdxf10');
+				iframe.src = url;
+				
+				var tlist = document.getElementById("container").getElementsByTagName("a");					
+				for(var i = 0; i < tlist.length; i++){														
+					tlist[i].style.color = "#DCDCDC"; 					
+				}	
+				var aObj = document.getElementById(id);
+				aObj.style.color = "#FFA500";
+			}
+			
+		</script>	  
+</body>
+</html>

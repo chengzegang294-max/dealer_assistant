@@ -1,0 +1,77 @@
+item_id	rel_path	kind	source_role	status	note
+M001	README.md	md	batch_entry	active	批次入口与收口裁决
+M002	provenance.md	md	contract	active	外部来源、导入方式与证据口径说明
+M003	BATCH_149_EXECUTION_CARD.md	md	execution_card	active	批次执行步骤与当前边界
+M004	BATCH_149_ARTIFACT_INDEX_v1.md	md	artifact_index	active	原路径到新路径的追溯索引
+M005	01_index/family_entry_map_v1.tsv	tsv	batch_index	active	当前批次 first-hop 导航
+M006	02_absorb_index/tdx_custom_terminal_layered_absorb_index_v1.md	md	absorb_index	active	配置壳、页面层、公式索引层、插件层的分层结论
+M007	02_absorb_index/tdx_custom_terminal_rebuild_fit_notes_v1.md	md	contract	active	与我方体系的拟合与复刻边界说明
+M008	00_raw_snapshot/config/embui.cfg	cfg	config_entry	active	UI壳、菜单、页面路由与本地挂载总入口
+M009	00_raw_snapshot/config/Connect.cfg	cfg	config_entry	active	主机配置、网页入口与服务控制中心
+M010	00_raw_snapshot/config/T0002_user.ini	ini	user_config	active	用户态配置样本
+M011	00_raw_snapshot/config/T0002_user_def.ini	ini	user_config	active	用户自定义配置样本
+M012	00_raw_snapshot/config/tdxf11_cfg.xml	xml	config_entry	active	F10/F11 服务配置入口
+M013	00_raw_snapshot/config/serverconfig.js	js	config_entry	active	jspages1 前端服务配置入口
+M014	00_raw_snapshot/pages/Page.html	html	page_entry	active	个股聚合页与占位符替换入口
+M015	00_raw_snapshot/pages/index.html	html	page_entry	active	本地页面总入口之一
+M016	00_raw_snapshot/pages/通达信F11.html	html	page_entry	active	F11 页面入口样本
+M017	00_raw_snapshot/pages/kpl-K线图.txt	txt	page_pointer	active	本地 K 线页指针
+M018	00_raw_snapshot/pages/kpl-K线图.html	html	page_carrier	active	Longhuvip K 线图网页载体
+M019	00_raw_snapshot/pages/东财K线+资金图.txt	txt	page_pointer	active	东财资金图页指针
+M020	00_raw_snapshot/pages/东财K线+资金图.html	html	page_carrier	active	Eastmoney 资金图网页载体
+M021	00_raw_snapshot/formula/funcs_std.ini	ini	formula_index	active	标准功能/公式索引入口
+M022	00_raw_snapshot/formula/funcs_jy.ini	ini	formula_index	active	交易面板功能索引入口
+M023	00_raw_snapshot/formula/flatjy.lua	lua	logic_script	active	交易面板逻辑脚本样本
+M024	00_raw_snapshot/plugin/OtherPlu.cfg	cfg	plugin_registry	active	第三方插件注册入口
+M025	00_raw_snapshot/plugin/duilibstyle.xml	xml	plugin_style	active	插件 UI 样式入口
+M026	00_raw_snapshot/formula/flatjy/netbuy.lua	lua	logic_script	active	交易面板网络买卖逻辑脚本补件
+M027	00_raw_snapshot/formula/flatjy/jy_xgsg_dzh.lua	lua	logic_script	active	交易股东代码映射脚本补件
+M028	00_raw_snapshot/f11/tdxf11_cfg.xml	xml	f11_config	active	F10/F11 原位配置入口样本
+M029	00_raw_snapshot/f11/js/f10_main.js	js	f11_runtime	active	F10/F11 主页面脚本入口
+M030	00_raw_snapshot/f11/js/f10_main_input.js	js	f11_runtime	active	F10/F11 股票输入与键盘匹配脚本
+M031	00_raw_snapshot/plugin/JiuCaisd/Config/rvaConfig.json	json	plugin_patch_config	active	九菜插件地址特征与 treeid hook 配置
+M032	00_raw_snapshot/plugin/JiuCaisd/Config/patchList.json	json	plugin_patch_plan	active	九菜插件补丁计划与写入时机合同
+M033	00_raw_snapshot/plugin/JiuCaisd/Config/hotkey.json	json	plugin_hotkey_contract	active	九菜插件自定义快捷键合同
+M034	00_raw_snapshot/plugin/JiuCaisd/Config/Menu/TradeSingleMenu.json	json	plugin_menu_contract	active	九菜插件单窗交易菜单配置
+M035	00_raw_snapshot/pages/市场情绪.html	html	page_carrier	active	市场情绪可视页样本
+M036	00_raw_snapshot/pages/热点提醒.html	html	page_carrier	active	热点与提醒聚合页样本
+M037	00_raw_snapshot/pages/龙头股.html	html	page_carrier	active	龙头股概念展示页样本
+M038	00_raw_snapshot/pages/龙头股1.json	json	page_data	active	龙头股概念数据样本
+M039	02_absorb_index/tdx_custom_terminal_formula_export_sample_index_v1.md	md	formula_sample_index	active	终端公式编辑器导出样本索引与五类覆盖判断
+M040	00_raw_snapshot/formula_export_samples/林森操作系统__主图叠加__其他系.png	png	formula_editor_screenshot	active	林森操作系统公式编辑器截图样本
+M041	00_raw_snapshot/formula_export_samples/林森操作系统__主图叠加__其他系.txt	txt	formula_source_export	active	林森操作系统公式正文导出样本
+M042	00_raw_snapshot/formula_export_samples/波段操盘__主图叠加__其他系.png	png	formula_editor_screenshot	active	波段操盘公式编辑器截图样本
+M043	00_raw_snapshot/formula_export_samples/波段操盘__主图叠加__其他系.txt	txt	formula_source_export	active	波段操盘公式正文导出样本
+M044	00_raw_snapshot/formula_export_samples/裸K__主图叠加__其他系.png	png	formula_editor_screenshot	active	裸K公式编辑器截图样本
+M045	00_raw_snapshot/formula_export_samples/裸K__主图叠加__其他系.txt	txt	formula_source_export	active	裸K公式正文导出样本
+M046	00_raw_snapshot/formula_export_samples/点石成金__主图叠加__其他系.png	png	formula_editor_screenshot	active	点石成金公式编辑器截图样本
+M047	00_raw_snapshot/formula_export_samples/点石成金__主图叠加__其他系.txt	txt	formula_source_export	active	点石成金公式正文导出样本
+M048	00_raw_snapshot/formula_export_samples/差价操作__副图__特色型.png	png	formula_editor_screenshot	active	差价操作公式编辑器截图样本
+M049	00_raw_snapshot/formula_export_samples/差价操作__副图__特色型.txt	txt	formula_source_export	active	差价操作公式正文导出样本
+M050	00_raw_snapshot/formula_export_samples/短线宝__副图__特色型.png	png	formula_editor_screenshot	active	短线宝公式编辑器截图样本
+M051	00_raw_snapshot/formula_export_samples/短线宝__副图__特色型.txt	txt	formula_source_export	active	短线宝公式正文导出样本
+M052	00_raw_snapshot/formula_export_samples/短线多空对比__副图__特色型.png	png	formula_editor_screenshot	active	短线多空对比公式编辑器截图样本
+M053	00_raw_snapshot/formula_export_samples/短线多空对比__副图__特色型.txt	txt	formula_source_export	active	短线多空对比公式正文导出样本
+M054	00_raw_snapshot/formula_export_samples/顶底__副图__特色型.png	png	formula_editor_screenshot	active	顶底公式编辑器截图样本
+M055	00_raw_snapshot/formula_export_samples/顶底__副图__特色型.txt	txt	formula_source_export	active	顶底公式正文导出样本
+M056	00_raw_snapshot/formula_export_samples/启动点__副图__特色型.png	png	formula_editor_screenshot	active	启动点公式编辑器截图样本
+M057	00_raw_snapshot/formula_export_samples/启动点__副图__特色型.txt	txt	formula_source_export	active	启动点公式正文导出样本
+M058	00_raw_snapshot/formula_export_samples/短中操盘系统__主图叠加__其他系.txt	txt	formula_source_export	active	短中操盘系统公式正文导出样本
+M059	00_raw_snapshot/formula_export_samples/HYDB行业对比__主图叠加__系统公式.txt	txt	formula_source_export	active	HYDB行业对比公式正文导出样本
+M060	00_raw_snapshot/formula_export_samples/ZSDB指数对比__主图叠加__系统公式.txt	txt	formula_source_export	active	ZSDB指数对比公式正文导出样本
+M061	00_raw_snapshot/formula_export_samples/SG-PF强势股评分__副图__系统公式.txt	txt	formula_source_export	active	SG-PF强势股评分公式正文导出样本
+M062	00_raw_snapshot/formula_export_samples/打板资金__副图__系统公式.txt	txt	formula_source_export	active	打板资金公式正文导出样本
+M063	00_raw_snapshot/formula_export_samples/沪深涨跌停__副图__系统公式.txt	txt	formula_source_export	active	沪深涨跌停公式正文导出样本
+M064	00_raw_snapshot/formula_export_samples/上榜资金__副图__系统公式.txt	txt	formula_source_export	active	上榜资金公式正文导出样本
+M065	00_raw_snapshot/formula_export_samples/大宗交易__副图__系统公式.txt	txt	formula_source_export	active	大宗交易公式正文导出样本
+M066	02_absorb_index/tdx_custom_terminal_formula_to_investment_cockpit_mapping_v1.md	md	formula_product_mapping	active	终端公式样本到我方提醒解释记录回看闭环的首轮映射页
+M067	03_quantize/README.md	md	quantize_entry	active	对象卡与字段桥入口
+M068	03_quantize/batch149_formula_semantics_to_batch1_field_bridge_v1.md	md	field_bridge	active	公式输出语义到 Batch1 EventSummary/ExplanationPayload 的极短字段桥
+M069	03_quantize/batch149_object_card_沪深涨跌停__20260720.md	md	object_card	active	沪深涨跌停对象卡
+M070	03_quantize/batch149_object_card_打板资金__20260720.md	md	object_card	active	打板资金对象卡
+M071	03_quantize/batch149_object_card_上榜资金__20260720.md	md	object_card	active	上榜资金对象卡
+M072	03_quantize/batch149_object_card_HYDB行业对比__20260720.md	md	object_card	active	HYDB行业对比对象卡
+M073	03_quantize/batch149_object_card_ZSDB指数对比__20260720.md	md	object_card	active	ZSDB指数对比对象卡
+M074	03_quantize/batch149_object_card_启动点__20260720.md	md	object_card	active	启动点对象卡
+M075	03_quantize/batch149_six_card_event_field_bundle_v1.md	md	field_bundle	active	六张核心对象卡压缩后的 Batch1 事件字段总表
+M076	03_quantize/batch149_page_to_six_card_crossmap_v1.md	md	page_field_crossmap	active	页面层到六张核心对象卡再到 Batch1 事件字段总表的细映射总表

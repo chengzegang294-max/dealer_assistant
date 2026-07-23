@@ -1,0 +1,2 @@
+用于自定义版面，格式如下：
+file:///C:/TDXdate/company/%E4%B8%9C%E8%B4%A2K%E7%BA%BF+%E8%B5%84%E9%87%91%E5%9B%BE.html##xxxxxx####STOCKNAME##

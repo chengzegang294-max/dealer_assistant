@@ -1,0 +1,15 @@
+item_id	rel_path	kind	source_role	status	note
+M001	README.md	md	contract	active	本批次入口说明
+M002	provenance.md	md	contract	active	来源与证据模式说明
+M003	N01_EVIDENCE_GAP_STATUS_v1.tsv	tsv	absorb_index	active	N01 证据缺口清单与下一动作
+M004	BATCH_146_EXECUTION_CARD.md	md	index_note	active	批次执行卡
+M005	BATCH_146_ARTIFACT_INDEX_v1.md	md	index_note	active	批次产物索引与缺口登记
+M006	00_raw_snapshot/README.md	md	index_note	active	raw snapshot 入口说明
+M007	00_raw_snapshot/Volatility_Regimes__GainzAlgo__historical_recovered_excerpt.md	md	artifact	historical_recovered	历史回收的 GainzAlgo 页面摘录
+M008	00_raw_snapshot/AG_Pro_ATR_Compression_Map__historical_recovered_excerpt.md	md	artifact	historical_recovered	历史回收的 AG Pro 页面摘录
+M009	00_raw_snapshot/Volatility_Regimes__GainzAlgo__manual_web_capture__20260713.md	md	artifact	active	GainzAlgo 手动网页正文
+M010	00_raw_snapshot/AG_Pro_ATR_Compression_Map__manual_web_capture__20260713.md	md	artifact	active	AG Pro 手动网页正文
+M011	00_raw_snapshot/n01_formula_snippets.md	md	artifact	active	N01 最小公式与状态切换结构化摘录页
+M012	00_raw_snapshot/N01_source_code_and_parameter_defaults_bundle__20260714.md	md	artifact	active	N01 源码首屏与参数默认值正式证据包
+M013	00_raw_snapshot/N01_parameter_dictionary_v1.tsv	tsv	artifact	active	N01 参数字典表：变量名/界面名/默认值/范围/证据等级
+M014	00_raw_snapshot/N01_source_logic_excerpt_bundle__20260714.md	md	artifact	active	N01 源码逻辑摘录包：阈值/状态判断/风险/TP/告警/proof

@@ -1,0 +1,72 @@
+{
+    //说明
+    "wndAttributes": {},
+    "menuElements": [
+        {
+            "name": "flashBuy",
+            "link": "id:5091",
+            "move": false,
+            "text": "买"
+        },
+        {
+            "name": "flashSelling",
+            "link": "id:5111",
+            "move": false,
+            "text": "卖"
+        },
+        {
+            "name": "checkPosition",
+            "link": "autojy/Stock.zjgf|Credit.zjgf",
+            "move": false,
+            "text": "持仓"
+        },
+        {
+            "name": "checkEntruts",
+            "link": "autojy/Stock.drwtcx|Credit.drwtcx",
+            "move": false,
+            "text": "委查"
+        },
+        {
+            "name": "cancelBuy",
+            "link": "ID_5351",
+            "move": false,
+            "text": "撤买"
+        },
+        {
+            "name": "cancelAll",
+            "link": "ID_5350",
+            "move": false,
+            "text": "全撤"
+        },
+        {
+            "name": "limitBuy",
+            "link": "id:5101",
+            "move": false,
+            "text": "核买",
+            "bkcolor": "FF9d2933"
+        },
+        {
+            "name": "limitSelling",
+            "link": "id:5132",
+            "move": false,
+            "text": "核卖",
+            "bkcolor": "ff0eb83a"
+        },
+        {
+            "name": "tradeRestore",
+            "link": "id:33002",
+            "move": false,
+            "bkimage": "res='Menu/images/restore_x16.png' dest='7,6,23,22'",
+            "width": "30",
+            "tooltip": "显示交易界面"
+        },
+        {
+            "name": "dragger",
+            "link": "",
+            "move": true,
+            "bkimage": "res='Menu/images/move_x16.png' dest='7,6,23,22'",
+            "width": "30",
+            "tooltip": "拖动窗口"
+        }
+    ]
+}

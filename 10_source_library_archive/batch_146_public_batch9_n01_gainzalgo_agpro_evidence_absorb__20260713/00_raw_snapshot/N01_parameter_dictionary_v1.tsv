@@ -1,0 +1,82 @@
+script_family	group_name	variable_name	ui_label	default_value	range_or_options	evidence_level	note
+GainzAlgo	ATR Settings	atrLengthInput	ATR Length	14	1..100	source_code_visible	DEFAULT_ATR_LENGTH=14
+GainzAlgo	ATR Bands Settings	showBandsInput	Show ATR Bands	true	bool	source_code_visible	default enabled
+GainzAlgo	ATR Bands Settings	band1MultInput	Band 1 Multiplier	1.0	0.1..10.0	step=0.1	source_code_visible	closest band
+GainzAlgo	ATR Bands Settings	band2MultInput	Band 2 Multiplier	2.0	0.1..10.0	step=0.1	source_code_visible	middle band
+GainzAlgo	ATR Bands Settings	band3MultInput	Band 3 Multiplier	3.0	0.1..10.0	step=0.1	source_code_visible	outer band
+GainzAlgo	Volatility Signals	showVolSignalsInput	Show Volatility Signals	true	bool	source_code_visible	default enabled
+GainzAlgo	Volatility Signals	volThresholdInput	Volatility Threshold	1.5	0.5..5.0	step=0.1	source_code_visible	ATR 50% above average
+GainzAlgo	Trend Detection	showTrendSignalsInput	Show Trend Signals	true	bool	source_code_visible	default enabled
+GainzAlgo	Trend Detection	trendSmoothingInput	Trend Smoothing	21	unknown	source_capture_default_only	page-visible default summary
+GainzAlgo	Regime Detection	enableRegimeDetection	Enable Regime Detection	true	bool	source_code_visible	default enabled
+GainzAlgo	Regime Calculation	regimeBaselineLengthInput	ATR Baseline Length	50	20..200	source_code_visible	recommended 50-100
+GainzAlgo	Regime Calculation	regimeBaselineTypeInput	Baseline Type	SMA	SMA|EMA	source_code_visible	balanced default
+GainzAlgo	Regime Thresholds	compressionThresholdInput	Compression Threshold	0.70	0.3..0.9	step=0.05	source_code_visible	ATR 30% below baseline
+GainzAlgo	Regime Thresholds	expansionThresholdInput	Expansion Threshold	1.15	1.0..1.5	step=0.05	source_code_visible	ATR 15% above baseline
+GainzAlgo	Regime Thresholds	highVolThresholdInput	High Volatility Threshold	1.40	1.2..2.0	step=0.05	source_code_visible	ATR 40% above baseline
+GainzAlgo	Regime Thresholds	exhaustionLookbackInput	Exhaustion Lookback	5	3..20	source_code_visible	declining ATR confirmation
+GainzAlgo	Regime Visuals	showRegimeBackgroundInput	Show Regime Background	true	bool	source_code_visible	default enabled
+GainzAlgo	Regime Visuals	showRegimeLabelInput	Show Regime Label	true	unknown	source_capture_default_only	page-visible default summary
+GainzAlgo	Regime Visuals	regimeLabelPositionInput	Label Position	Top Right	Top Left|Top Right|Bottom Left|Bottom Right	source_code_visible	label placement
+GainzAlgo	Dynamic Stop Loss	enableDynamicSL	Enable Dynamic Stop Loss	true	bool	source_code_visible	default enabled
+GainzAlgo	Dynamic Stop Loss	slMultiplierInput	Stop Loss ATR Multiplier	2.0	0.5..5.0	step=0.1	source_code_visible	stop distance
+GainzAlgo	Dynamic Stop Loss	showSLLinesInput	Show SL Lines	true	bool	source_code_visible	default enabled
+GainzAlgo	Take Profit Levels	enableMultipleTP	Enable Multiple TP Levels	true	bool	source_code_visible	default enabled
+GainzAlgo	Take Profit Levels	tp1MultiplierInput	TP1 Multiplier	1.5	0.5..5.0	step=0.1	source_code_visible	first scale-out
+GainzAlgo	Take Profit Levels	tp2MultiplierInput	TP2 Multiplier	2.5	1.0..10.0	step=0.5	source_code_visible	second scale-out
+GainzAlgo	Take Profit Levels	tp3MultiplierInput	TP3 Multiplier	4.0	2.0..15.0	step=0.5	source_code_visible	final target
+GainzAlgo	Take Profit Levels	showTPLabelsInput	Show TP Labels	true	bool	source_code_visible	default enabled
+GainzAlgo	Support & Resistance	enableSRLevels	Enable S/R Levels	true	bool	source_code_visible	default enabled
+GainzAlgo	Support & Resistance	srLookbackInput	S/R Lookback Period	20	10..100	source_code_visible	short-term default
+GainzAlgo	Support & Resistance	srStrengthInput	S/R Strength (ATR)	1.5	0.5..3.0	step=0.1	source_code_visible	level significance
+GainzAlgo	Risk Management	enableRiskCalc	Enable Risk Calculator	true	bool	source_code_visible	default enabled
+GainzAlgo	Risk Management	accountSizeInput	Account Size	10000	min=100	source_code_visible	account sizing default
+GainzAlgo	Risk Management	riskPercentInput	Risk Per Trade (%)	1.0	0.1..10.0	step=0.1	source_code_visible	conservative default
+GainzAlgo	Risk Management	showPositionSizeInput	Show Position Size	true	bool	source_code_visible	default enabled
+GainzAlgo	ATR Percentile	enableATRPercentile	Enable ATR Percentile	true	bool	source_code_visible	default enabled
+GainzAlgo	ATR Percentile	percentileLookback	Percentile Lookback	100	50..500	source_code_visible	historical comparison window
+GainzAlgo	ATR Percentile	showPercentileLabel	Show Percentile Label	true	bool	source_code_visible	default enabled
+GainzAlgo	Volatility Contraction	enableVolContraction	Enable Contraction Pattern	true	bool	source_code_visible	default enabled
+GainzAlgo	Volatility Contraction	contractionBars	Contraction Bars	7	3..20	source_code_visible	one-week consolidation
+GainzAlgo	Volatility Contraction	contractionThreshold	Contraction Threshold	0.5	0.3..0.8	step=0.05	source_code_visible	ATR below 50% average
+GainzAlgo	Volatility Contraction	showContractionAlert	Show Contraction Alerts	true	bool	source_code_visible	default enabled
+AG Pro	Core Engine	atrLen	ATR Length	14	min=1	source_code_visible	core engine default
+AG Pro	Core Engine	baselineLen	Baseline Length	50	10..300	source_code_visible	core engine default
+AG Pro	Core Engine	rangeWindow	Range Window	20	5..200	source_code_visible	core engine default
+AG Pro	Core Engine	noiseWindow	Noise Window	10	3..80	source_code_visible	core engine default
+AG Pro	Core Engine	containmentWindow	Containment Window	24	5..200	source_code_visible	core engine default
+AG Pro	Core Engine	compressionThreshold	Compression Threshold	62.0	1.0..100.0	step=1.0	source_code_visible	ready threshold
+AG Pro	Core Engine	matureThreshold	Mature Threshold	80.0	1.0..100.0	step=1.0	source_code_visible	mature threshold
+AG Pro	Core Engine	strictMode	Strict Mode	false	bool	source_code_visible	selective gate disabled by default
+AG Pro	Scoring	atrWeight	ATR Weight	30.0	0.0..100.0	step=1.0	source_code_visible	scoring weight
+AG Pro	Scoring	rangeWeight	Range Weight	30.0	0.0..100.0	step=1.0	source_code_visible	scoring weight
+AG Pro	Scoring	noiseWeight	Noise Weight	20.0	0.0..100.0	step=1.0	source_code_visible	scoring weight
+AG Pro	Scoring	containmentWeight	Containment Weight	20.0	0.0..100.0	step=1.0	source_code_visible	scoring weight
+AG Pro	Compression Pocket	showPocket	Show Compression Pocket	true	bool	source_code_visible	default enabled
+AG Pro	Compression Pocket	showPocketText	Show Pocket Badge	true	bool	source_code_visible	default enabled
+AG Pro	Compression Pocket	showPocketMidline	Show Pocket Midline	true	bool	source_code_visible	default enabled
+AG Pro	Compression Pocket	showPocketQuarters	Show Quarter Guides	true	bool	source_code_visible	default enabled
+AG Pro	Compression Pocket	projectPocketBars	Pocket Projection Bars	18	3..120	source_code_visible	projection length
+AG Pro	Compression Pocket	archivePockets	Show Archived Pockets	true	bool	source_code_visible	default enabled
+AG Pro	Compression Pocket	archiveCount	Archived Pocket Count	3	0..8	source_code_visible	default archive count
+AG Pro	Compression Pocket	archiveProjection	Archived Pocket Projection	45	0..240	source_code_visible	projection length
+AG Pro	Compression Pocket	minimumPocketBars	Minimum Pocket Bars	5	2..100	source_code_visible	minimum structure
+AG Pro	Visuals	showRibbon	Show Compression Ribbon	true	bool	source_code_visible	default enabled
+AG Pro	Visuals	showRightTags	Show Right-Side Tags	true	bool	source_code_visible	default enabled
+AG Pro	Visuals	showEventLabels	Show Event Labels	true	bool	source_code_visible	default enabled
+AG Pro	Visuals	eventDensity	Event Label Density	Normal	Low|Normal|High	source_code_visible	publication view default
+AG Pro	Visuals	labelSizeInput	Label Text Size	Normal	Tiny|Small|Normal|Large	source_code_visible	recommended publication default
+AG Pro	Visuals	rightTagOffset	Right Tag Offset	4	1..30	source_code_visible	right margin offset
+AG Pro	Visuals	showBarColors	Color Bars By State	false	bool	source_code_visible	disabled by default
+AG Pro	Panel	showPanel	Show Panel	true	bool	source_code_visible	enabled by default
+AG Pro	Panel	panelPositionInput	Panel Location	Top Right	Top Left|Top Center|Top Right|Middle Left|Middle Center|Middle Right|Bottom Left|Bottom Center|Bottom Right	source_code_visible	panel placement
+AG Pro	Panel	panelTheme	Panel Theme	Dark	Dark|Light	source_code_visible	public release default
+AG Pro	Panel	panelSizeInput	Panel Text Size	Normal	Tiny|Small|Normal|Large	source_code_visible	recommended publication default
+AG Pro	Alerts	alertCompressionReady	Alert: Compression Ready	true	bool	source_code_visible	attention marker
+AG Pro	Alerts	alertMature	Alert: Mature Compression	true	bool	source_code_visible	attention marker
+AG Pro	Alerts	alertRelease	Alert: Pocket Release	true	bool	source_code_visible	attention marker
+AG Pro	Proof	showProof	Show Proof Layer	true	bool	source_code_visible	historical rates, not predictions
+AG Pro	Proof	proofStopAtr	Proof Risk Unit (ATR)	1.20	0.30..5.00	step=0.10	source_code_visible	risk unit distance
+AG Pro	Proof	proofHorizonBars	Proof Horizon Bars	30	4..300	source_code_visible	tracking window
+AG Pro	Proof	reactBars	Reaction Window Bars	3	1..40	source_code_visible	early reaction window
+AG Pro	Proof	reactProgressPct	Reaction Progress %	40.0	5.0..90.0	step=1.0	source_code_visible	progress threshold

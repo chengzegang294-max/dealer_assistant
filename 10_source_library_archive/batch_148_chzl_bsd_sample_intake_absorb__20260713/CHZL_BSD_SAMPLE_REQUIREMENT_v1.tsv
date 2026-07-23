@@ -1,0 +1,3 @@
+sample_id	timeframe	symbol_or_universe	data_kind	provider	current_state	recommended_repo_path	next_action	notes
+CHZL_S001	daily	A股候选样本	ohlcv	historical_runtime_sample	active	10_source_library_archive/batch_148_chzl_bsd_sample_intake_absorb__20260713/00_raw_snapshot/	继续保留第二个样本输入绑定说明	已补 `601991` 的 daily/weekly/auto series 正式绑定说明
+CHZL_S002	daily	A股候选样本	seed_note	manual_seed	active	10_source_library_archive/batch_148_chzl_bsd_sample_intake_absorb__20260713/00_raw_snapshot/	继续补是否降低人工 seed 依赖的判断说明	已补 `601991_SH_structure_seed_v1.tsv` 的 `1-3` 行真实弱证据 seed 与含义，并新增更强校验记录页

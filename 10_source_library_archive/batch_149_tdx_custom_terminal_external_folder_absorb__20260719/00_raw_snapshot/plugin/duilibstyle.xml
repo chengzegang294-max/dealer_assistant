@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <Font shared="true" id="0" name="宋体" size="13" default="true"/>
+  <Font shared="true" id="1" name="宋体" size="12" bold="false"/>
+  <Font shared="true" id="2" name="宋体" size="16" bold="false"/>
+  <Font shared="true" id="3" name="宋体" size="14" bold="false"/>
+  <Font shared="true" id="4" name="宋体" size="15" bold="false"/>
+  <Font shared="true" id="5" name="宋体" size="11" bold="false"/>
+  <Font shared="true" id="6" name="宋体" size="12" bold="true"/>
+  <Font shared="true" id="30" name="微软雅黑" size="12" bold="true"/>
+  
+	<Default name="VScrollBar" shared="true" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='common/vscrollbar.png' source='0,60,8,100' corner='0,4,0,4'&quot; thumbhotimage=&quot;file='common/vscrollbar.png' source='8,60,16,100' corner='0,4,0,4'&quot; thumbpushedimage=&quot;file='common/vscrollbar.png' source='16,60,24,100' corner='0,4,0,4'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='common/vscrollbar.png' source='0,0,8,60' corner='0,4,0,4'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+	<Default name="HScrollBar" shared="true" value="height=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='common/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; thumbhotimage=&quot;file='common/hscrollbar.png' source='0,8,32,16' corner='4,0,4,0'&quot; thumbpushedimage=&quot;file='common/hscrollbar.png' source='0,16,32,24' corner='4,0,4,0'&quot; railnormalimage=&quot;&quot; railhotimage=&quot;&quot; railpushedimage=&quot;&quot; raildisabledimage=&quot;&quot; bknormalimage=&quot;file='common/hscrollbar.png' source='0,0,32,8' corner='4,0,4,0'&quot; bkhotimage=&quot;&quot; bkpushedimage=&quot;&quot; bkdisabledimage=&quot;&quot; "/>
+  <!-- Menu样式 -->
+	<Default name="Menu" shared="true" value="itemfont=&quot;30&quot; inset=&quot;2,2,2,2&quot; itemtextpadding=&quot;30,0,0,0&quot; bkimage=&quot;file='menu/menu_bk.png' corner='4,4,4,4' source='0,0,50,30'&quot; itemhottextcolor=&quot;0xFFFF0000&quot; itemselectedbkcolor=&quot;0xFFC7C6C6&quot;" />
+	<!-- ExplandIcon样式 -->
+	<Default name="ExplandIcon" shared="true" value="menu/menu_expand.png" />
+	
+  <Style name="treenode_folder_style" value="name=&quot;treefolder&quot; padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='common/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='common/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='common/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='common/treeview_a.png' source='16,0,32,16' &quot;"/>
+	<Style name="treenode_checkbox_style" value="name=&quot;treecheck&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='common/unchecked.png' &quot; selectedimage=&quot;file='common/checked.png'&quot;" />
+	<Style name="treeview_style_check" value="folderattr=&quot;treenode_folder_style&quot; checkboxattr=&quot;treenode_checkbox_style&quot;"/>
+	<Style name="treeview_style" value="folderattr=&quot;treenode_folder_style&quot; checkboxattr=&quot;treenode_checkbox_style&quot; font=&quot;6&quot;"/>
+	<Style name="treeview_style_uf" value="checkboxattr=&quot;treenode_checkbox_style&quot; FolderbtnHide=&quot;true&quot; "/>  	
+	<Style name="edit_style" value="width=&quot;200&quot; height=&quot;26&quot; textpadding=&quot;6,6,6,6&quot; bkcolor=&quot;&quot; nativebkcolor=&quot;&quot; bkimage=&quot;res='common/edit_bk.png' corner='6,6,6,6'&quot;" />
+	<Style name="list_style" value="itemendellipsis=&quot;false&quot; headerbkimage=&quot;res='common/list_header_bg.png'&quot; itemalign=&quot;left&quot; padding=&quot;1,0,0,0&quot; itemtextpadding=&quot;2,0,0,0&quot; itemlinecolor=&quot;#FFAEC1D3&quot; itemshowrowline=&quot;true&quot; itemshowcolumnline=&quot;true&quot;" />
+	<Style name="btn_style" value="drag=&quot;false&quot; height=&quot;30&quot; textpadding=&quot;6,0,6,0&quot; normalimage=&quot;res='common/button_normal.png' corner='4,4,4,4'&quot; hotimage=&quot;res='common/button_hover.png' corner='4,4,4,4'&quot; pushedimage=&quot;res='common/button_pushed.png' corner='4,4,4,4'&quot; focusedimage1=&quot;res='common/button_pushed.png' corner='4,4,4,4'&quot; selectedimage=&quot;res='common/button_pushed.png' corner='4,4,4,4'&quot;"  />
+	<Style name="btn_style2" value="drag=&quot;false&quot; height=&quot;30&quot; textpadding=&quot;6,0,6,0&quot; normalimage=&quot;res='common/button_normal2.png' corner='4,4,4,4'&quot; hotimage=&quot;res='common/button_hover2.png' corner='4,4,4,4'&quot; pushedimage=&quot;res='common/button_pushed.png' corner='4,4,4,4'&quot; focusedimage1=&quot;res='common/button_pushed2.png' corner='4,4,4,4'&quot; selectedimage=&quot;res='common/button_pushed2.png' corner='4,4,4,4'&quot;"  />
+	<Style name="colortab_style" value="textcolor=&quot;#FF333333&quot; hottextcolor=&quot;#FFCC3333&quot; selectedtextcolor=&quot;#FFCC3333&quot; bkcolor=&quot;#FFDFDFDF&quot; hotbkcolor=&quot;#FFFFFFFF&quot; pushedbkcolor=&quot;#FFFFFFFF&quot; selectedbkcolor=&quot;#FFFFFFFF&quot; group=&quot;tab_header&quot;"  />
+	<Style name="pngtab_style" value="normalimage=&quot;file='common/main_wnd_tab_item.png' source='0,0,43,32' corner='20,0,20,0'&quot; hotimage=&quot;file='common/main_wnd_tab_item.png' source='43,0,86,32' corner='20,0,20,0'&quot; pushedimage=&quot;file='common/main_wnd_tab_item.png' source='86,0,129,32' corner='20,0,20,0'&quot; selectedimage=&quot;file='common/main_wnd_tab_item.png' source='86,0,129,32' corner='20,0,20,0'&quot; group=&quot;tab_header1&quot;"/>
+	<Style name="radio_style" shared="true" value="align=&quot;left&quot; valign=&quot;vcenter&quot; height=&quot;17&quot; textpadding=&quot;20,0,6,0&quot; stateimage=&quot;res='common/radio_normal.png' dest='0,0,17,17'&quot; statecount=&quot;2&quot; selectedstateimage=&quot;res='common/radio_selected.png' dest='0,0,17,17'&quot; selectedstatecount=&quot;2&quot;" />
+	<Style name="listhead_style" value="hotimage=&quot;res='common/list_header_hot.png'&quot; align=&quot;left&quot; pushedimage=&quot; res='common/list_header_pushed.png'&quot; sepimage=&quot;res='common/list_header_sep.png'&quot; sepwidth=&quot;1&quot; dragable=&quot;false&quot;"/>
+	<Style name="listhead_cb_style" value="checkboxnormalimage=&quot;file='common/unchecked.png'&quot; checkboxselectedimage=&quot;file='common/checked.png'&quot; hotimage=&quot;res='common/list_header_hot.png'&quot; align=&quot;left&quot; pushedimage=&quot; res='common/list_header_pushed.png'&quot; sepimage=&quot;res='common/list_header_sep.png'&quot; sepwidth=&quot;1&quot;"/>
+  <Style name="listlabel_style" value="height=&quot;23&quot;"/>
+  <Style name="combo_style" value="height=&quot;24&quot; textcolor=&quot;#FFFFFFFF&quot; itemvalign=&quot;vcenter&quot; textpadding=&quot;4,1,28,1&quot; normalimage=&quot;res='common/combo.png' source='0,0,161,28' corner='2,2,28,2'&quot; hotimage=&quot;res='common/combo.png' source='0,28,161,56' corner='2,2,28,2'&quot; pushedimage=&quot;res='common/combo.png' source='0,56,161,84' corner='2,2,28,2'&quot;" />
+  <Style name="combo_style1" value="height=&quot;24&quot; font=&quot;0&quot; itemfont=&quot;0&quot; textcolor=&quot;#00000000&quot; itemvalign=&quot;vcenter&quot; textpadding=&quot;4,1,28,1&quot; normalimage=&quot;res='common/combo1.png' source='0,0,99,21' corner='2,2,28,2'&quot; hotimage=&quot;res='common/combo1.png' source='0,22,99,43' corner='2,2,28,2'&quot; pushedimage=&quot;res='common/combo1.png' source='0,44,161,65' corner='2,2,28,2'&quot;" />	
+	<Style name="cb_style" value="align=&quot;left&quot; valign=&quot;vcenter&quot; height=&quot;16&quot; textpadding=&quot;20,0,6,0&quot; normalimage=&quot;res='common/cb_normal.png' dest='0,0,16.16'&quot; hotimage=&quot;res='common/cb_hot.png' dest='0,0,16.16'&quot; pushedimage=&quot;res='common/cb_pushed.png' dest='0,0,16.16'&quot; selectedimage=&quot;res='common/cb_selected.png' dest='0,0,16,16'&quot;" />
+	<Style name="hsss_label" value="width=&quot;70&quot;"/>
+	<Style name="border_color" value="bordersize=&quot;1&quot; bordercolor=&quot;#FFAEC1D3&quot;"/>
+	<Style name="border_color1" value="bordersize=&quot;0,1,0,0&quot; bordercolor=&quot;#FFAEC1D3&quot;"/>
+	<Style name="border_color2" value="bordersize=&quot;0,0,1,1&quot; bordercolor=&quot;#FFAEC1D3&quot;"/>
+	<Style name="border_zbtree" value="bordersize=&quot;1&quot; bordercolor=&quot;#FFD8D8D8&quot;"/>
+	<Style name="title_icon" value="bkimage=&quot;common/tdx.png&quot; width=&quot;16&quot; height=&quot;16&quot;"/>
+	<Style name="title_label" value="textcolor=&quot;#ffffffff&quot; font=&quot;3&quot; padding=&quot;3,0,0,0&quot;"/>
+  <Style name="title_color" value="bkcolor=&quot;#ff4e5158&quot; bkcolor2=&quot;#ff4e5158&quot;"/>
+  <Style name="hq_title" value="height=&quot;25&quot; childvalign=&quot;vcenter&quot; padding=&quot;1,1,1,0&quot; "/>
+  <Style name="hq_title1" value="height=&quot;25&quot; childvalign=&quot;vcenter&quot; bordersize=&quot;1,0,0,0&quot; bordercolor=&quot;FFAEC1D3&quot;"/>
+  <Style name="search_style" value="bkimage=&quot;file='common/findedit.png' corner='4,4,4,4'&quot;"/>
+  <Style name="searchedit_style" value="tipvaluecolor=&quot;#A8A8A8&quot; inset=&quot;2,1,2,1&quot; padding=&quot;2,1,0,1&quot; text=&quot;&quot;"/>
+  <Style name="searchbtn_style" value="text=&quot;{i common/search_btnh.png}{/i}&quot;"/>
+  <Style name="listex_item_style" value="checkboxwidth=&quot;16&quot; checkboxheight=&quot;16&quot; checkboxnormalimage=&quot;file='common/unchecked.png'&quot; checkboxselectedimage=&quot;file='common/checked.png'&quot;"/>
+	<Style name="Edit_tip" value="tipvalue=&quot;请输入代码或简称,如:000001&quot; tipvaluecolor=&quot;#FFA8A8A8&quot; padding=&quot;2,1,0,1&quot;"/>
+	<Style name="btn_close" value="tooltip=&quot;关闭&quot; float=&quot;true&quot; pos=&quot;22,5,44,24&quot; width=&quot;28&quot; normalimage=&quot; file='common\btn_close_normal.png' &quot; hotimage=&quot; file='common\btn_close_down.png' &quot; pushedimage=&quot; file='common\btn_close_highlight.png' &quot;"/>
+	<Style name="btn_min" value="tooltip=&quot;最小化&quot; visible=&quot;false&quot; float=&quot;true&quot; pos=&quot;0,5,22,24&quot;  width=&quot;23&quot; normalimage=&quot; file='common\btn_mini_normal.png' &quot; hotimage=&quot; file='common\btn_mini_down.png' &quot; pushedimage=&quot; file='common\btn_mini_highlight.png' &quot;"/>
+	<Style name="btn_sel" value="style=&quot;btn_style&quot; width=&quot;28&quot; height=&quot;25&quot; foreimage=&quot;dest='3,3,26,21' res='common/biaoge.png'&quot;" />
+</Window>

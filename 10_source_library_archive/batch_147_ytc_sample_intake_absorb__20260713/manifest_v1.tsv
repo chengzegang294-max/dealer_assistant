@@ -1,0 +1,12 @@
+item_id	rel_path	kind	source_role	status	note
+M001	README.md	md	contract	active	本批次入口说明
+M002	provenance.md	md	contract	active	来源与证据模式说明
+M003	YTC_SAMPLE_REQUIREMENT_v1.tsv	tsv	absorb_index	active	YTC 样本补采需求清单与落点口径
+M004	BATCH_147_EXECUTION_CARD.md	md	index_note	active	批次执行卡
+M005	BATCH_147_ARTIFACT_INDEX_v1.md	md	index_note	active	批次产物索引与缺口登记
+M006	00_raw_snapshot/README.md	md	index_note	active	raw snapshot 入口说明
+M007	00_raw_snapshot/YTC_existing_daily_weekly_runtime_anchor__historical_recovered.md	md	artifact	historical_recovered	YTC 现有 daily+weekly 运行锚点说明
+M008	00_raw_snapshot/601991_SH_5m.csv	csv	artifact	active	外部分钟数据仓吸收的 YTC 5m 窗口样本
+M009	00_raw_snapshot/601991_SH_60m.csv	csv	artifact	active	由 YTC 5m 样本按 session bucket 聚合得到的 60m 样本
+M010	00_raw_snapshot/601991_SH_5m_provenance_note__20260714.md	md	index_note	active	YTC 5m 样本来源追溯说明
+M011	00_raw_snapshot/601991_SH_60m_provenance_note__20260714.md	md	index_note	active	YTC 60m 样本来源追溯说明

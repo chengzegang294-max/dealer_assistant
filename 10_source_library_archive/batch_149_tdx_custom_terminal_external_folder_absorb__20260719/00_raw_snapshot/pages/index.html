@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+		<title></title>
+	</head>
+	<body>
+		<div id="autore" onclick="gotopage();">
+                                                <a href="直播.html" target="mapIframe">直播</a>
+                                                <a href="股市直播.html" target="mapIframe">解读</a>
+                                                <a href="选股宝直播.html" target="mapIframe">股宝</a> 
+                                                <a href="涨停竞价.html" target="mapIframe">竞价</a>
+                                                <a href="板块轮动A.html" target="mapIframe">精选</a>
+                                                <a href="昨日关注.html" target="mapIframe">关注</a>                                                                                             
+                                                <a href="热点解读Ⅱ(定).html" target="mapIframe">热解</a>
+                                                <a href="涨停池.html" target="mapIframe">涨池</a>                                                         			
+                                                <a href="阶段强势股fx1.html" target="mapIframe">强势</a>      
+                                                <a href="东财机构买卖(表).html" target="mapIframe">机构</a>  
+                                                <a href="风向标(表).html" target="mapIframe">风标</a>                                                
+                                                <a href="看盘.html" target="mapIframe">看盘</a>                                                                                                                                        
+                                                <a href="概念板块(定).html" target="mapIframe">概念</a>
+                                                <a href="次新股(研究)fx.html" target="mapIframe">次新</a>                                                  			                                                                                                                                                  
+                                                <a href="韭菜热搜.html" target="mapIframe">热搜</a>                                                  
+			<a href="http://hot.icfqs.com:7615/site/tdx-pc-pcwebcall/page-qxzb.html?color=0&bkcolor=000000" target="mapIframe">情绪</a>                                                 
+                                                <a href="https://share.gw.com.cn/diagnosis/" target="mapIframe">大盘</a>                                                                                                                                                                                                                                                   
+                                                <a href="http://hot.icfqs.com:7615/site/kggx/tk_mrfp.html?color=0&bkcolor=000000" target="mapIframe">盘面</a>  
+                                                <a href="http://pro.gw.com.cn/newfpsq/index.html" target="mapIframe">神器</a>                                              
+                                                <a href="http://vis-free.10jqka.com.cn/billboard/indexV3.html#/index" target="mapIframe">龙虎</a>   
+                                                <a href="http://hot.icfqs.com:7615/site/tdx-pc-find/page_lhbphb.html?color=##tdxbk##&bkcolor=##tdxbkcolor##" target="mapIframe">排行</a> 
+			<a href="http://hot.icfqs.com:7615/site/tdx-pc-find/page_yzfp.html" target="mapIframe">游资</a>
+                                                <a href="游资动向3-G.html" target="mapIframe">动向</a>
+                                                <a href="https://data.10jqka.com.cn/datacenterph/limitup/limtupInfo.html#/limtupStrength" target="mapIframe">打板</a>  
+                                                <a href="https://www.aigupiao.com/pcv/quote/list/type/hot" target="mapIframe">热门</a>                                                                                                
+			<a href="https://eq.10jqka.com.cn/webpage/ths-hot-list/index.html?showStatusBar=true#/" target="mapIframe">热榜</a> 
+                                                <a href="http://ddx.gubit.cn/index.php" target="mapIframe">热点</a>                                                  		 			                                                                                                                                                                                                                                                                                                                                               			                                                                                                                                               
+                                                <a href="https://xuangubao.cn/dingpan" target="mapIframe">行情</a>                                                
+                                                <a href="同花顺板块掘金.html" target="mapIframe">掘金</a>                                                                                                                                                                                                                                                 			                                                                                                                                                                                                                                                  
+                                                <a href="http://ddx.gubit.cn/index.php" target="mapIframe">查股</a>                                                                                                                                                                                                                                     			                                                                                                                                               
+                                                <a href="http://pcengine.gw.com.cn/wlds/index.html&wd=&eqid=d7aa3d7b00045f76000000036440f65e" target="mapIframe">前瞻</a>
+                                                <a href="http://plugin-ft.10jqka.com.cn/plugingwapi/bff/plugin_news_bff/imgdata/index#/dataImage" target="mapIframe">图据</a>                                                                    
+                                                <a href="http://www.tetegu.com/longhuitou/" target="mapIframe">龙回</a>                                                                                                                               	                                                                                                           
+                                                <a href="分时.html" target="mapIframe">分时</a>
+                                                <a href="K线.html"target="mapIframe">K线</a> 
+                                                <a href="http://www.treeid/dlglocalurl##homepath##company/Page.html##xxxxxx####SC##">个股</a>   			
+			<!-- <a href="javascript:replaceDoc();" style="color:#fff">刷新</a> -->
+			<!-- <a href="javascript:window.top.frames['mapIframe'].history.back();" style="float:right">前进</a> -->
+		</div>
+		<button type="button" id="btn" onclick="javascript:changeFrameHeight()">刷新</button>
+		<link href="css/text.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<iframe width="100%" height="200" id="mapIframe" name="mapIframe" src=""></iframe>
+		<script>
+			window.onload = function() {			                
+			                var iframe = document.getElementById('mapIframe');
+			                iframe.src = '直播2.html';
+			        }
+			
+			        <!-- function replaceDoc() { -->
+			                <!-- window.location.replace("http://www.treeid/dlglocalurl##homepath##company/Page.html##xxxxxx####SC##") -->
+			        <!-- } -->
+					
+			        function changeFrameHeight() {
+			                var ifm = document.getElementById("mapIframe");
+			                ifm.height = document.documentElement.clientHeight - ifm.offsetTop - 20;
+			        }
+					
+			        document.getElementById('btn').style.display = 'none';
+			
+			        function setRem() {
+			                var width = document.getElementById('autore').offsetWidth;
+			                var htmlFont = document.getElementById('autore');
+			                if (width > 700) {
+			                        htmlFont.style.fontSize = "16px";
+			                }
+			                if (width > 500 && width < 700) {
+			                        htmlFont.style.fontSize = "14px";
+			                }
+			                if (width < 500) {
+			                        htmlFont.style.fontSize = "12px";
+			                }
+			        }
+			        setRem();
+			
+			        window.onresize = function() {
+			                changeFrameHeight();
+			                setRem();
+			        }
+			        $(function() {
+			                changeFrameHeight();
+			        });
+		</script>
+	</body>
+</html>

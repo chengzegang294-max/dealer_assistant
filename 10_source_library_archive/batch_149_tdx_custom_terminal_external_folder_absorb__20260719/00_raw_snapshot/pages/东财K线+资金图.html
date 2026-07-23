@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>东财日线资金</title>
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			p {margin:0px;}
+			#box{
+				display:inline-block;
+				margin:0px 5px 0px 80px;
+				border-box:50%;
+				width:10px;
+				height:10px;
+			}
+			.fixedBox{
+				border: 1px solid #555555;				
+				
+			}
+			.fixedBox::-webkit-scrollbar {
+				width: 10px;     
+				height: 10px;				
+			}								
+		</style>		
+		<script type="text/javascript" src="js/json2html.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="DatePicker/WdatePicker.js"> </script>
+		<script type="text/javascript" src="js/echarts.js"></script>
+	</head>
+	<body>
+		<div id="towrite" class="fixedBox" style="display:none;">
+			<div id="title" style="height:20px;"></div>
+			<div id="chart" style="position:relative; float:left;margin-top:-5px;"></div>
+			<!-- <div id="towrite1" class="fixedBox" style="position:relative; float:left;margin-top:-18px;"></div> -->
+		</div>
+				
+		<script>
+			
+			window.onload = function() {
+				changeStyle();	
+				getSource();
+						
+			}		
+
+			$(function() {
+				setInterval(function() {									
+					getSource();																				
+				},
+				500);
+			})
+			
+			function time_range(beginTime, endTime) {
+				var strb = beginTime.split(":");
+				if (strb.length != 2) {
+					return false;
+				}
+
+				var stre = endTime.split(":");
+				if (stre.length != 2) {
+					return false;
+				}
+
+				var b = new Date();
+				var e = new Date();
+				var n = new Date();
+
+				b.setHours(strb[0]);
+				b.setMinutes(strb[1]);
+				e.setHours(stre[0]);
+				e.setMinutes(stre[1]);
+
+				if (n.getTime() - b.getTime() > 0 && n.getTime() - e.getTime() < 0) {
+					v = 1;					
+					console.log(true)　　　　　　
+					return true;				
+				} else {
+					console.log(false)
+				    return false;     
+				}
+			}　　　
+   　　　
+			function changeStyle() {
+				var div = document.getElementById("towrite");	
+				div.style.display= "block";
+				div.style.left= "0px"; 				
+				div.style.width= "100%";	
+				div.style.height= "98%";		
+				div.style.fontSize="12px";	
+				
+				var div1 = document.getElementById("chart");	
+				div1.style.border= "1px solid #696969";				
+				div1.style.left= "0px"; 
+				div1.style.width= "98%";
+				div1.style.height= "92%";	
+				
+				<!-- var div2 = document.getElementById("towrite1");					 -->
+				<!-- div2.style.border= "1px solid #696969";				 -->
+				<!-- div2.style.left= "0px"; 				 -->
+				<!-- div2.style.width= "90%";	 -->
+				<!-- div2.style.height= "30%";						 -->
+			}
+			
+			Date.prototype.Format = function (fmt) {
+				var o = {
+				"M+": this.getMonth() + 1, //月份
+				"d+": this.getDate(), //日
+				"h+": this.getHours(), //小时
+				"m+": this.getMinutes(), //分
+				"s+": this.getSeconds(), //秒
+				"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+				"S": this.getMilliseconds() //毫秒
+				};
+				if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+				for (var k in o)
+				if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				return fmt;
+			};
+			
+			function keepTwoDecimal(num) {  
+               var result = parseFloat(num);  
+               if (isNaN(result)) {                     
+                   return false;  
+               }  
+               result = Math.round(num * 100) / 100;  
+               return result;  
+			}	
+			
+			function NumberTransform(num) { 
+				var result = num;
+				if(Math.abs(num) > 100000000){
+					result = num / 100000000;
+					result = result.toFixed(0) + "亿";
+				}else if(Math.abs(num) > 10000){
+					result = num/10000;
+					result = result.toFixed(0) + "万";
+				}				   
+				return result;  
+			};	
+			
+			var z = 0;  //刷新
+			var v = 0;	//刷新		
+			var gpdm = "";
+			var gpmc = "";				
+			function getSource() {			
+				var u = decodeURI(window.location.href);								
+				if(u.indexOf("##") > -1){
+					var gp = u.split('##');				
+					dm = gp[1];
+					gpmc = gp[2];															
+				}else{
+					dm = "600000";
+					gpmc = "浦发银行";					
+				}
+								
+				if(dm != gpdm || v == 1){				
+					v = 0;					
+					gpdm = dm;					
+					var dms = "";
+					var dmt = "";
+					if(dm.substr(0,1)=="6"){
+						dms = "SH" + dm;
+						dmt = "1." + dm;
+					}else{
+						dms = "SZ" + dm;
+						dmt = "0." + dm;
+					}
+					
+					if(dm == "999999"){
+						dmt = "1.000001";
+					}else if(dm.substr(0,3)=="399"){
+						dmt = "0." + dm;
+					}
+					
+					var div = document.getElementById('title');						
+					//div.innerHTML = '<font size="3" style="color:#00FFFF;">实时资金流向</font>';							
+					var zjwz = '<a href="https://data.eastmoney.com/zjlx/' + gpdm + '.html" target="_blank" style="position:absolute; left:300px;font-size:12px;">网址</a>';					
+					div.innerHTML = '<font size="2">' + gpdm + "&nbsp;&nbsp;&nbsp;" + gpmc + zjwz + "</font>";
+					var res = [];
+					
+					//分时
+					var url1 = "https://push2.eastmoney.com/api/qt/stock/fflow/kline/get?cb=jQuery1123016706401424591832_1668777335401&lmt=0&klt=1&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65&ut=b2884a393a59ad64002292a3e90d46a5&secid=" + dmt; 
+					var res1 = [];
+					var rq = "";					
+					$.ajax({
+						type: "get",
+						url: url1,
+						dataType: "text",
+						async : false,
+						cache:false,
+						timeout:3000,					
+						success: function(data) {
+							//alert(data)						
+							//document.write(data);							
+							var ss = data.replace(/ /g,",")
+							ss = ss.match(/,"klines":(\S*)}}\);/)[1];							
+							var arr =  JSON.parse(ss);								
+							if(arr.length > 0){
+								rq = arr[0].split(',')[0];
+							}							
+						}
+					});
+					
+					//历史
+					var url2 = "https://push2his.eastmoney.com/api/qt/stock/fflow/daykline/get?cb=jQuery112309685262356049713_1661657886677&lmt=0&klt=101&fields1=f1,f2,f3,f7&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61,f62,f63,f64,f65&secid=" + dmt;
+					var res2 = [];
+					var rq2 = "";
+					$.ajax({
+						type: "get",
+						url: url2,
+						dataType: "text",
+						async : false,
+						cache:false,
+						timeout:3000,					
+						success: function(data) {
+							//alert(JSON.stringify(data))						
+							//document.write(data);														
+							var ss = data.replace(/ /g,",")
+							ss = ss.match(/,"klines":(\S*)}}\);/)[1];							
+							var arr = JSON.parse(ss);
+							
+							if(arr.length > 0){
+								rq2 = arr[arr.length-1].split(',')[0];
+							}							
+							for (var i = 0; i < arr.length; i++){
+								var aa = arr[i].split(',');
+								var rc = {"rq":aa[0],"zljlr":Number(aa[1]),"cddjlr":Number(aa[5]),"ddjlr":Number(aa[4]),"zdjlr":Number(aa[3]),"xdjlr":Number(aa[2])};
+								res2.push(rc);
+							}	
+						}
+					});
+					
+					//当日
+					var url3 = "http://push2.eastmoney.com/api/qt/ulist.np/get?cb=jQuery1123022062381139471432_1633842668576&fltt=2&secids=" + dmt +"&fields=f62,f184,f66,f69,f72,f75,f78,f81,f84,f87,f164";																
+					var res3 = [];
+					$.ajax({
+						type: "get",
+						url: url3,
+						dataType: "text",
+						async : false,
+						cache:false,
+						timeout:3000,					
+						success: function(data) {
+							//alert(JSON.stringify(data))						
+							//document.write(data);														
+							var ss = data.match(/,"diff":(\S*)}}\);/)[1];							
+							res3 = JSON.parse(ss);							
+						}
+					});
+					
+					var zljlr = res3[0]["f62"];
+					var zljb = res3[0]["f184"];					
+					var cddjlr = res3[0]["f66"];
+					var cddjb = res3[0]["f69"];					
+					var ddjlr = res3[0]["f72"];
+					var ddjb = res3[0]["f75"];					
+					var zdjlr = res3[0]["f78"];
+					var zdjb = res3[0]["f81"];					
+					var xdjlr = res3[0]["f84"];
+					var xdjb = res3[0]["f87"];
+					
+					if(rq == "" || rq == rq2){
+						res = res2;
+					}else{
+						res2.push({"rq":rq,"zljlr":zljlr,"cddjlr":cddjlr,"ddjlr":ddjlr,"zdjlr":zdjlr,"xdjlr":xdjlr});
+						res = res2;
+					}
+					//document.write(JSON.stringify(res))	
+					var arr = [];
+					var a = 0;
+					var b = 0;
+					var c = 0;
+					var d = 0;
+					var e = 0;
+					for(var i = 0; i < res.length; i++){
+						var zljlr = res[i].zljlr;
+						var cddjlr = res[i].cddjlr;
+						var ddjlr = res[i].ddjlr;
+						var zdjlr = res[i].zdjlr;
+						var xdjlr = res[i].xdjlr;						
+						a += Number(zljlr);	
+						b += Number(cddjlr);
+						c += Number(ddjlr);
+						d += Number(zdjlr);
+						e += Number(xdjlr);
+						$.extend(res[i], {"zljlrs":a,"cddjlrs":b,"ddjlrs":c,"zdjlrs":d,"xdjlrs":e}); //对象合并						
+					}
+					//document.write(JSON.stringify(res));
+					//GetChart(res);
+					//alert(res.length)
+					var url4 ="http://push2his.eastmoney.com/api/qt/stock/kline/get?cb=jQuery35108006687394350787_1679879608671&secid=" + dmt + "&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61&klt=101&fqt=1&end=20500101&lmt=" + res.length;						
+					//var res4 = [];
+					$.ajax({
+						type: "get",
+						url: url4,
+						dataType: "text",
+						async : false,
+						cache:false,
+						timeout:3000,					
+						success: function(data) {
+							//alert(data)						
+							//document.write(data);							
+							var ss = data.replace(/ /g,",")
+							ss = ss.match(/,"klines":(\S*)}}\);/)[1];				
+							var arr = JSON.parse(ss);
+							for (var i = 0; i < arr.length; i++){
+								var aa = arr[i].split(',');
+								//var rc = [aa[0],Number(aa[1]),Number(aa[2]),Number(aa[3]),Number(aa[4]),Number(aa[5])];								
+								//res4.push(rc);
+								$.extend(res[i], {"open":Number(aa[1]),"close":Number(aa[2]),"high":Number(aa[3]),"low":Number(aa[4]),"vol":Number(aa[5])}); //对象合并
+							}							
+						}
+					});
+					//document.write(JSON.stringify(res));
+					GetChart(res);
+				}else{
+					z++;
+					if(z == 60){
+						z = 0;
+						time_range("9:00","15:15")  //刷新数据
+					}
+				}	
+			}
+			
+			function change() {
+				var div = document.getElementById('towrite1');
+				var items = div.getElementsByTagName("font"); 
+				for ( var i = 0; i < items.length; i++){
+					var obj = items[i];
+					var num = parseFloat (obj.firstChild.nodeValue);
+					//obj.style.color = num > 0 ? "Orange" : "Lime";					
+					obj.style.color = num > 0 ? "Orange" : (num < 0 ? "Lime" : "#E5E5E5");					
+				}							
+			};
+			
+			function getParamValues(name, arr) {
+				var ret = []
+				for (var i = 0, len = arr.length; i < len; i++) {
+					ret.push(arr[i][name])
+				}
+				return ret
+			}
+			
+			function splitData(arr) {
+				var values = [];
+				for (var i = 0; i < arr.length; i++) {
+					values.push([arr[i]["open"],arr[i]["close"],arr[i]["high"],arr[i]["low"]]);
+				}
+				return values				
+			}
+
+			function calculateMA(dayCount, data) {
+				var result = [];
+				for (var i = 0, len = data.length; i < len; i++) {
+					if (i < dayCount) {
+						result.push('-');
+						continue;
+					}
+					var sum = 0;
+					for (var j = 0; j < dayCount; j++) {
+						sum += data[i - j][1];
+					}
+					result.push(+(sum / dayCount).toFixed(2));
+				}
+				return result;
+			}
+		</script>
+		<script>
+			function GetChart(arr) {
+				var myChart = echarts.init(document.getElementById('chart'));
+				const upColor = '#ec0000';//00da3c
+				const downColor = '#00da3c';//ec0000
+				var top2 = 53;
+				var top21 = top2 - 3;
+				var option = {
+					animation: false, //取消动画效果
+					title: [
+						{
+							left: 'left',
+							//text: '股票K线图'
+						},
+						{
+							top: top21 + "%",
+							left: 'left',
+							text: '主力资金',
+							textStyle: {
+								color: "#fff", // 文字的颜色。
+								fontSize:'14',
+							}
+						}
+					],
+					
+					tooltip: {   //提示框
+						trigger: 'axis',
+						formatter(params) {  //添加文字	
+							//alert(JSON.stringify(params))
+							//document.write(JSON.stringify(params[0]));							
+							var str = params[0].name + '<br>';
+							params.forEach(item => {
+								var name = item.seriesName;
+								var c1 = '<span style="display:inline-block;margin-right:5px;border-radius:50%;width:5px;height:5px;left:5px;background-color:' + item.color + '"></span>';
+								var c2 = '<span style="display:inline-block;margin-right:5px;border-radius:50%;width:10px;height:10px;left:5px;background-color:' + item.color + '"></span>';									
+								if(name == "日K"){
+									str += c1 + '开盘:' + item.data[1] + '<br>' + c1 + '收盘:' + item.data[2] + '<br>' + c1 + '最高:' + item.data[3] + '<br>' + c1 + '最低:' + item.data[4] + '<br>';
+								}else if(name.indexOf("MA") > -1){
+									str += c2 + item.seriesName + " : " + item.data + '<br>';
+								}else if(name.indexOf("净流入") > -1){
+									str += c2 + item.seriesName + " : " + NumberTransform(item.data) + "<br>";
+								}
+							});
+							return str;
+						}
+					},
+					<!-- axisPointer: {   //上下区域连接 -->
+						<!-- link: [ -->
+							<!-- { -->
+								<!-- xAxisIndex: 'all' -->
+							<!-- } -->
+						<!-- ], -->
+							<!-- label: { -->
+							<!-- backgroundColor: '#777' -->
+						<!-- } -->
+					<!-- }, -->
+					legend: [    // 图例
+						{
+							left: 'left',
+							data: ['MA5', 'MA10', 'MA20', 'MA60'],
+							icon: "rect", //circle，rect, line，roundRect，triangle，diamond，pin，arrow，none
+							align: "auto", // 图例标记和文本的对齐
+							itemGap: 20, // 图例每项之间的间隔。
+							itemWidth: 15,     // 图例标记的图形宽度
+							itemHeight: 3,      // 图例标记的图形高度// 使用字符串模板，模板变量为图例名称 {name}							
+							textStyle: {
+								color: "#fff", // 文字的颜色。								
+							}
+						},
+						{ 						
+							icon: "rect",  //控制形状  类型包括 circle 圆形，triangle 三角形，diamond 四边形，arrow 变异三角形，none 无
+							top:  top21 + "%", // bottom:"20%" // 组件离容器的距离
+							right: "8%", //left:"10%"  // // 组件离容器的距离         
+							padding: 5, // 图例内边距	
+							align: "auto", // 图例标记和文本的对齐
+							itemGap: 30, // 图例每项之间的间隔。
+							itemWidth: 15,     // 图例标记的图形宽度
+							itemHeight: 3,      // 图例标记的图形高度// 使用字符串模板，模板变量为图例名称 {name}	
+							data:['累计主力净流入','累计超大单净流入'],
+							textStyle: {
+								color: "#fff", // 文字的颜色。								
+							}
+						}
+					],
+					grid: [
+						{
+							top: '0%',
+							left: '2%',
+							right: '8%',
+							height: '50%'
+						},
+						{
+							top: top2 + "%",
+							left: '2%',
+							right: '8%',							
+							height: '25%'
+						}
+					],				
+					xAxis: [
+						{
+							type: 'category',
+							data: getParamValues('rq', arr),
+							boundaryGap: false,
+							axisLine: { onZero: true },
+							axisTick: { show: true },
+							splitLine: { show: false },
+							axisLabel: { show: false },
+							min: 'dataMin',
+							max: 'dataMax',
+							axisPointer: {
+								z: 100
+							}
+						},
+						{
+							type: 'category',
+							gridIndex: 1,                    //对应坐标轴所在grid的索引
+							data: getParamValues('rq', arr),
+							boundaryGap: false,
+							axisLine: { onZero: true },
+							axisTick: { show: true },
+							axisLine:{  //x轴坐标线设置
+								lineStyle:{
+									color:"#808080",  //x轴坐标线颜色
+									width: 1   // 坐标轴线宽
+								}
+							},						
+							axisLabel:{	 //x轴标签设置	
+								showMaxLabel:true, //显示最大 tick(最后一天)
+								interval: 20,
+								padding: [0, 0, 0, 30],
+								textStyle:{  //x轴文字
+									color:"#FFF"
+								}
+							},
+							min: 'dataMin',
+							max: 'dataMax'
+						}
+					],					
+					yAxis: [
+						{
+							position:'right',//坐标轴位置，移至右边
+							offset: 10,     //Y 轴相对于默认位置的偏移
+							scale: true,   //刻度 自适应        
+							splitArea: {     //分割区域颜色
+								show: false  
+							},
+							splitLine:{ //y轴网格线									
+								show:true,
+								lineStyle: { 									
+									color: '#808080', 
+									width: 1,    
+									type: 'dotted', //（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								} 
+							},
+							axisLine: { //y轴坐标线设置
+								show: true,							
+								lineStyle: { 									
+									color: '#D3D3D3', //y轴颜色
+									//width: 2,    // 坐标轴线宽
+									type: 'dotted',     // 坐标轴线线的类型（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								}, 
+							},						
+						},
+						{
+							position:'right',//坐标轴位置，移至右边
+							offset: 10,
+							scale: true,
+							gridIndex: 1,             //对应坐标轴所在grid的索引
+							splitNumber: 2,
+							splitLine:{ //y轴网格线									
+								show:true,
+								lineStyle: { 									
+									color: '#808080', 
+									width: 1,    
+									type: 'dotted', //（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								} 
+							},
+							axisLine: { //y轴坐标线设置
+								show: true,							
+								lineStyle: { 									
+									color: '#D3D3D3', //y轴颜色
+									//width: 2,    // 坐标轴线宽
+									type: 'dotted',     // 坐标轴线线的类型（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+								}, 
+							},
+							axisLabel: {  //y轴标签设置
+								show: true,  //是否显示
+								//padding: [0,-60,15,0],  // 四个数字分别为上右下左与原位置距离
+								//color: '#fff',								
+								//margin: -50,	//文字移动									
+								textStyle: {
+									//align: 'left', //左对齐，文字右移									
+								},								
+								formatter: function (value){
+									if(value != 0){							  
+										return NumberTransform(value)
+									}else{
+										return 0
+									}
+								}
+							}
+						}
+					],
+					dataZoom: [   //区间
+					{
+					  type: 'inside',
+					  xAxisIndex: [0, 1],
+					  start: 0,
+					  end: 100
+					},
+					{
+					  show: true,
+					  xAxisIndex: [0, 1],
+					  type: 'slider',
+					  top: '85%',
+					  start: 0,
+					  end: 100
+					}
+				  ],
+					series: [
+						{
+						  name: '日K',
+						  type: 'candlestick',
+						  data: splitData(arr),
+						  itemStyle: {
+							color: upColor,
+							color0: downColor,
+							borderColor: undefined,
+							borderColor0: undefined
+						  },						  
+						},
+						{
+							name: 'MA5',
+							type: 'line',
+							data: calculateMA(5, splitData(arr)),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#DCDCDC",
+								},
+							},
+						},
+						{
+							name: 'MA10',
+							type: 'line',
+							data: calculateMA(10, splitData(arr)),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FFFF00",
+								},
+							},
+						},
+						{
+							name: 'MA20',
+							type: 'line',
+							data: calculateMA(20, splitData(arr)),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#FF00FF",
+								},
+							},
+						},
+						{
+							name: 'MA60',
+							type: 'line',
+							data: calculateMA(60, splitData(arr)),
+							//smooth: true,
+							symbolSize: 0,
+							itemStyle: {
+								normal: {
+									lineStyle: {
+										width: 1,
+									},
+									color: "#32CD32",
+								},
+							},
+						},
+						{							
+							name: '主力净流入',
+							data: getParamValues('zljlr', arr),							
+							type: 'bar',	
+							xAxisIndex: 1,             //对应X轴的索引；单个图表实例中存在多个 x 轴的时候有用
+							yAxisIndex: 1,             //对应X轴的索引;
+							symbol: 'circle',//拐点样式‘circle’, ‘rect’, ‘roundRect’, ‘triangle’, ‘diamond’, ‘pin’, ‘arrow’ 
+							symbolSize: 0,//拐点大小							
+							itemStyle: {
+							  normal: {								
+								color: function (params){
+									if(params.value > 0){ //根据真实数值正负显示不同柱形颜色
+										return '#DC143C'
+									}else{
+										return '#228B22'
+									}
+								},
+								//borderColor: '#fff',//边框颜色
+								//borderWidth: 1,//边框大小
+							  }							  
+							}
+						},
+						<!-- { -->
+							<!-- name: '超大单净流入', -->
+							<!-- data: getParamValues('cddjlr', arr), -->
+							<!-- type: 'line',								 -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 0, -->
+								<!-- }, -->
+								<!-- color: "#CD5C5C", -->
+							  <!-- }, -->
+							<!-- }, -->
+						<!-- }, -->
+						<!-- { -->
+							<!-- name: '大单净流入', -->
+							<!-- data: getParamValues('ddjlr', arr), -->
+							<!-- type: 'line',								 -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 0, -->
+								<!-- }, -->
+								<!-- color: "#FF0000", -->
+							  <!-- }, -->
+							<!-- }, -->
+						<!-- }, -->
+						<!-- { -->
+							<!-- name: '中单净流入', -->
+							<!-- data: getParamValues('zdjlr', arr), -->
+							<!-- type: 'line',								 -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 0, -->
+								<!-- }, -->
+								<!-- color: "#FFA500", -->
+							  <!-- }, -->
+							<!-- }, -->
+						<!-- }, -->
+						<!-- { -->
+							<!-- name: '小单净流入', -->
+							<!-- data: getParamValues('xdjlr', arr), -->
+							<!-- type: 'line',								 -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 0, -->
+								<!-- }, -->
+								<!-- color: "#00BFFF", -->
+							  <!-- },							   -->
+							<!-- }, -->
+						<!-- }, -->
+						{							
+							name: '累计主力净流入',
+							data: getParamValues('zljlrs', arr),							
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1, 
+							symbol: 'circle',//拐点样式‘circle’, ‘rect’, ‘roundRect’, ‘triangle’, ‘diamond’, ‘pin’, ‘arrow’ 
+							symbolSize: 0,//拐点大小							
+							itemStyle: {
+							  normal: {
+								lineStyle: {
+								  width: 1,//折线宽度
+								},
+								color: '#FFFF00',						
+							  },							 
+							},
+						},						
+						{
+							name: '累计超大单净流入',
+							data: getParamValues('cddjlrs', arr),
+							type: 'line',
+							xAxisIndex: 1,
+							yAxisIndex: 1, 
+							symbolSize: 0,
+							itemStyle: {
+							  normal: {
+								lineStyle: {
+								  width: 1,
+								},
+								color: "#FFA07A",
+							  },
+							},
+						},
+						<!-- { -->
+							<!-- name: '累计大单净流入', -->
+							<!-- data: getParamValues('ddjlrs', arr), -->
+							<!-- type: 'line', -->
+							<!-- xAxisIndex: 1, -->
+							<!-- yAxisIndex: 1,  -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 1, -->
+								<!-- }, -->
+								<!-- color: "#FF0000", -->
+							  <!-- },							   -->
+							<!-- }, -->
+						<!-- }, -->
+						<!-- { -->
+							<!-- name: '累计中单净流入', -->
+							<!-- data: getParamValues('zdjlrs', arr), -->
+							<!-- type: 'line', -->
+							<!-- xAxisIndex: 1, -->
+							<!-- yAxisIndex: 1,  -->
+							<!-- symbolSize: 0, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 1, -->
+								<!-- }, -->
+								<!-- color: "#FFA500", -->
+							  <!-- },							   -->
+							<!-- }, -->
+						<!-- }, -->
+						<!-- { -->
+							<!-- name: '累计小单净流入', -->
+							<!-- data: getParamValues('xdjlrs', arr), -->
+							<!-- type: 'line', -->
+							<!-- xAxisIndex: 1, -->
+							<!-- yAxisIndex: 1,  -->
+							<!-- symbolSize: 1, -->
+							<!-- itemStyle: { -->
+							  <!-- normal: { -->
+								<!-- lineStyle: { -->
+								  <!-- width: 1, -->
+								<!-- }, -->
+								<!-- color: "#00BFFF", -->
+							  <!-- }, -->
+							<!-- }, -->
+						<!-- } -->
+					]
+				}					
+				myChart.setOption(option);
+				$(window).resize(myChart.resize);   //解决Echarts 隐藏再显示后宽度高度变小的问题
+			}
+		</script>
+	</body>
+</html>
