@@ -6,11 +6,11 @@
 - 当前已实现：
   - `Batch1` 首页工作台最小闭环
   - `Batch2` 标的页最小壳
-  - `Batch2` 问答下钻占位页
-  - `Batch2` 问答结果样式层
+  - `Batch2` 问答结果页
   - `Batch2` 首页返回链保留最近事件上下文
   - `Batch2` 首页 query 直达与刷新恢复
   - `Batch2` 首页无效/空 eventId 显式降级
+  - `Batch2` 前台最小闭环冻结
 - 当前首页闭环包括：
   - `今日事件流`
   - `解释卡`
@@ -75,7 +75,7 @@
 - `src/features/stock/hooks/useStockPage.ts`
   - 标的页最小状态与相关事件/解释/记录切换，以及补充记录入口壳
 - `src/features/stock/hooks/useStockQaPage.ts`
-  - 问答下钻占位页状态，负责三组推荐问题、五段式结果 view model 与返回标的页回链
+  - 问答结果页状态，负责三组推荐问题、五段式结果 view model 与返回标的页回链
 - `src/features/home/hooks/useHomeWorkspace.ts`
   - 首页工作区状态，当前支持按 `eventId` 恢复最近事件上下文，并在空/无效 `eventId` 时显式降级
 - `src/features/home/hooks/useHomePage.ts`
@@ -115,7 +115,7 @@
 - `src/pages/Stock.tsx`
   - `Batch2` 标的页最小壳，承接首页真实跳转
 - `src/pages/StockQa.tsx`
-  - `Batch2` 问答下钻占位页，承接推荐问题与五段式占位回答展示
+  - `Batch2` 问答结果页，承接推荐问题与五段式回答展示
 
 ## 当前不做
 
@@ -185,7 +185,7 @@ npm run test
 - 当前 `Batch1` 这一段先正式停在：
   - `首页薄壳 + workspace 不变量 + section props + adapter 分层 + 模型/WorkspaceHook/PageHook 三层最小自动化护栏 + 异步数据源桩`
 - 当前 `Batch2` 已推进到：
-  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳 + 问答下钻占位页 + 问答结果样式层 + 首页返回链保留最近事件上下文 + 首页query直达与刷新恢复 + 首页无效/空eventId显式降级`
+  - `标的页五段最小壳 + 首页真实跳转 + 同页切事件更新解释/记录 + 最近记录补充入口壳 + 问答结果页 + 首页返回链保留最近事件上下文 + 首页query直达与刷新恢复 + 首页无效/空eventId显式降级`
 - 当前标的页 Batch2 最小壳页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2最小壳页__20260722.md`
 - 当前 Batch2 补充记录入口壳页见：
@@ -194,9 +194,9 @@ npm run test
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2标的页桌面端最小走查记录__20260722.md`
 - 当前 Batch2 停点冻结页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2停点冻结页__20260722.md`
-- 当前 Batch2 问答下钻占位页见：
+- 当前 Batch2 问答结果页起点页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2问答下钻占位页__20260722.md`
-- 当前 Batch2 问答下钻走查记录见：
+- 当前 Batch2 问答结果页首轮走查记录见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0_Batch2问答下钻占位页走查记录__20260723.md`
 - 当前 Batch2 问答结果样式层页见：
   - `00_entry/全库资料整理收口__20260713/A5_A股P0标的页Batch2问答结果样式层页__20260723.md`
