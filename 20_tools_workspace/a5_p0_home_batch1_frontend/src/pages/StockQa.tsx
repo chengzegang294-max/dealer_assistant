@@ -22,14 +22,14 @@ export default function StockQa() {
         <header className="rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-2xl shadow-slate-950/30">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
             <div className="space-y-3">
-              <p className="text-xs uppercase tracking-[0.35em] text-cyan-300/80">Batch2 QA Placeholder</p>
+              <p className="text-xs uppercase tracking-[0.35em] text-cyan-300/80">Batch2 QA Results</p>
               <div>
                 <h1 className="text-3xl font-semibold text-white">
                   {stockName}
                   <span className="ml-3 text-lg text-slate-400">{stockCode}</span>
                 </h1>
                 <p className="mt-2 text-sm text-slate-300">
-                  当前是问答下钻占位页，只做有上下文的解释增强，不做自由聊天或价格预测。
+                  当前是问答结果页，只做有上下文的解释增强，不做自由聊天或价格预测。
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 text-xs text-slate-200">

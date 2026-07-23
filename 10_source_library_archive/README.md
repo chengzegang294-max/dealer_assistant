@@ -44,6 +44,11 @@
   - `batch_142_group08_event_timing_contract_absorb__20260712/README.md`
   - `batch_143_group08_rotation_style_contract_absorb__20260713/README.md`
   - `batch_144_group08_corr_dynamic_contract_absorb__20260713/README.md`
+  - `batch_145_public_batch9_n02_initial_balance_evidence_absorb__20260713/README.md`
+  - `batch_146_public_batch9_n01_gainzalgo_agpro_evidence_absorb__20260713/README.md`
+  - `batch_147_ytc_sample_intake_absorb__20260713/README.md`
+  - `batch_148_chzl_bsd_sample_intake_absorb__20260713/README.md`
+- `batch_149_tdx_custom_terminal_external_folder_absorb__20260719/README.md`
 - `archive_only / staging / raw_truth_side`：
   - `batch_132_trae_system_raw_snapshot_batch09_absorb__20260709/README.md`
   - `mirror_kimi_inbox/README_放这里.md`
@@ -72,8 +77,24 @@
   - `batch_102 ~ batch_106` 已形成原子方法对象束，承接 `KD / RSJ / 高频价量相关性 / 四轴状态 / VanTharp R`
   - `batch_107 / batch_108 / batch_109` 已形成公开资料与方法参考稳定 bundle
   - `batch_110 / batch_120 / batch_131 / batch_132 / batch_140 / batch_141 / batch_142 / batch_143 / batch_144` 继续承接外部吸收批、工具工作区回收批、系统材料、数据源吸收批、仓位桥接吸收批与研究合同吸收批
+- `batch_145 ~ batch_148` 已从“working”收口为冻结补强/样本包，只保留可选回读入口，不再作为默认当前刀
+- `batch_149` 已转后台维护态；若未来重开 `方案A`，顺序固定为 `F11 联动解释 -> company 高价值页面补样 -> 极窄截图补洞`
 - `batch_01_youzi_truth_anchors` 仍是首批锚点，不再是唯一批次。
 - 后续每一批迁入都要先完成四分流，再进入本层。
+- 新补的 `batch_145 ~ batch_148` 当前都已具备：
+  - `README`
+  - `manifest`
+  - `provenance`
+  - `BATCH_*_EXECUTION_CARD`
+  - `BATCH_*_ARTIFACT_INDEX`
+- 新补的 `batch_149` 当前已具备：
+  - `README`
+  - `manifest`
+  - `provenance`
+  - `BATCH_149_EXECUTION_CARD`
+  - `BATCH_149_ARTIFACT_INDEX_v1`
+  - `family_entry_map_v1.tsv`
+  - 分层吸收索引与重做拟合说明
 
 ## 你该怎么进
 
@@ -127,7 +148,7 @@
 - `stable_bundle`
   - 已从边界批中提升出来、可以直接作为方法参考入口的稳定包；原子方法对象束优先看 `batch_102 ~ batch_106`，公开方法参考优先看 `batch_107 / batch_108 / batch_109`
 - `absorb_batch`
-  - 新近吸收的外部材料、系统材料、工作区回收批、仓位桥接批与研究合同吸收批；优先看 `batch_110 / batch_120 / batch_131 / batch_140 / batch_141 / batch_142 / batch_143 / batch_144`
+  - 新近吸收的外部材料、系统材料、工作区回收批、仓位桥接批与研究合同吸收批；优先看 `batch_110 / batch_120 / batch_131 / batch_140 / batch_141 / batch_142 / batch_143 / batch_144 / batch_149`
 - `archive_only_absorb`
   - 只保留追溯价值，不作为 first-hop 默认入口；当前看 `batch_132`
 - `staging_area / raw_truth_side`

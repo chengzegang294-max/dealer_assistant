@@ -228,13 +228,13 @@ export default function Stock() {
                   <p className="text-xs uppercase tracking-[0.3em] text-cyan-300/70">问答下钻入口区</p>
                   <h2 className="mt-2 text-xl font-semibold text-white">还能问什么</h2>
                   <p className="mt-1 text-sm text-slate-400">
-                    当前已开放推荐问题下钻，占位页只回答和当前事件直接绑定的问题，不开放自由输入。
+                    当前已开放推荐问题下钻，结果页只回答和当前事件直接绑定的问题，不开放自由输入。
                   </p>
                 </div>
                 <div className="mb-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4">
                   <p className="text-xs uppercase tracking-[0.25em] text-slate-500">当前开放能力</p>
                   <p className="mt-2 text-sm text-slate-300">
-                    先用推荐问题查看占位回答；自由输入问答留到后续批次，不在这轮打开。
+                    先用推荐问题查看结果回答；自由输入问答留到后续批次，不在这轮打开。
                   </p>
                 </div>
                 <div className="grid gap-3 md:grid-cols-2">

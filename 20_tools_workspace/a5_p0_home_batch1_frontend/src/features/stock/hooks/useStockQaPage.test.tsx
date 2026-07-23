@@ -86,7 +86,7 @@ describe("useStockQaPage", () => {
     qaPage.cleanup();
   });
 
-  it("切换推荐问题时会更新占位回答", async () => {
+  it("切换推荐问题时会更新结果回答", async () => {
     const qaPage = renderStockQaHook();
     await flushBootstrap();
 
