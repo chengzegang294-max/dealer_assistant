@@ -27,6 +27,8 @@
 - `tkfx_boundary_manifest__20260712.tsv`
 - `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/README.md`
 - `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/INDEX_phase1_v1.md`
+- `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/SECOND_HOP_TRACK_INDEX_v1.md`
+- `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/PROMOTED_OBJECT_STATUS_v1.tsv`
 - `../_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/minimal_relocation_candidates_v1.tsv`
 
 ## 下一步
@@ -35,6 +37,8 @@
   - 补默认主入口
   - 补默认索引入口
   - 列明显混层文件最小搬迁清单
+  - 补 second-hop 轨道索引
+  - 补对象提升状态表
 - 后续若继续推进，只做：
   - boundary 级导航增强
   - 低风险入口卡收口

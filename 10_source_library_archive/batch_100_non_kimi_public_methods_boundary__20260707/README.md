@@ -14,6 +14,8 @@
 - raw snapshot 侧：
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/INDEX_phase1_v1.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/SECOND_HOP_TRACK_INDEX_v1.md`
+  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/PROMOTED_BUNDLE_STATUS_v1.tsv`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/01_外部公开指标资料_Batch9/README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/02_外部视频与方法论参考/README.md`
 - 稳定 bundle：
@@ -45,6 +47,8 @@
 - raw snapshot 目录已补：
   - `README.md`
   - `INDEX_phase1_v1.md`
+  - `SECOND_HOP_TRACK_INDEX_v1.md`
+  - `PROMOTED_BUNDLE_STATUS_v1.tsv`
   - `minimal_relocation_candidates_v1.tsv`
 - raw snapshot 二级入口已补：
   - `01_外部公开指标资料_Batch9/README.md`
@@ -64,6 +68,9 @@
 
 - 先看本批 README，确认它只是边界批，不是默认正文入口。
 - 若要回看原始边界与搬迁判断，先进入 raw snapshot 侧 `README.md / INDEX_phase1_v1.md / minimal_relocation_candidates_v1.tsv`。
+- 若要直接看 second-hop 分流与提升状态，先进入 raw snapshot 侧：
+  - `SECOND_HOP_TRACK_INDEX_v1.md`
+  - `PROMOTED_BUNDLE_STATUS_v1.tsv`
 - 若要按二级主题进入：
   - 指标资料线进入 `01_外部公开指标资料_Batch9/README.md`
   - 视频方法论线进入 `02_外部视频与方法论参考/README.md`
@@ -73,4 +80,5 @@
 
 - 继续识别可稳定提升的 `method_reference` 子包
 - 继续识别 `Batch9` 以外可进入长期维护层的“方法论总纲 / 解释层 / 规则库”材料
+- 继续把 second-hop 剩余残余区压成明确状态表
 - 保持 raw snapshot 原位不动，只复制最小长期维护束，不做整目录平移

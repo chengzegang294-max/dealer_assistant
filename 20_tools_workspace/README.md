@@ -28,6 +28,8 @@
 
 ## 当前批次
 
+- `a5_p0_home_batch1_frontend`
+  - A股 P0 首页工作台 Batch1 最小前端实现工作台
 - `batch_01_selected`
   - 4 个轻量通用工具
 - `batch_02_group08_pipeline`
