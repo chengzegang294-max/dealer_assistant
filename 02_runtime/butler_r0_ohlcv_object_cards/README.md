@@ -1,6 +1,6 @@
 # Butler R0 OHLCV Object Cards Runtime
 
-更新时间：2026-07-09
+更新时间：2026-07-14
 
 ## 用途
 
@@ -68,6 +68,7 @@
 - `acceptance_outputs/registry_v0_601991_sh_output.json` 现已显式输出 `vote_input_snapshot / aggregate_summary / final_decision_card / size_policy_card`。
 - `run_registry_v0_acceptance_v1.py` 用样本计划校验 `cards_run / vote_input_snapshot / buy-sell-neutral votes / final_signal / trade_gate / blockers / permission / hard_block / size_policy`，把 registry 验收从“人工看 JSON”推进到“机器强校验”。
 - `run_registry_v0_batch_acceptance_v1.py` 已把 `registry_v0` 从单样本验收推进到批量验收，当前 `minimal_registry_ready + multi_registry_ready` 共 6 条样本已全部 `pass`，并同时输出 JSON 摘要与 TSV 摘要，覆盖 `NO_TRADE/BLOCKED`、`BUY/ALLOW`、`SELL/EXIT` 三类结果。
+- `CHZL_BSD` 当前已把第二只样本 `601991.SH` 的 `auto_series + annotation_seed` 绑定进 runtime bundle，并产出对应半自动 stub 输出。
 - `00_assets/_raw_snapshot_batch09/ashare_watchlist` 剩余非 `kline_1d` 文件已完成三分流：
   - 结构化 watchlist 输入归 `data/raw/watchlist_inputs/`
   - 文本快照归 `10_source_library_archive/.../ashare_watchlist_text_snapshot/`

@@ -1,0 +1,42 @@
+{
+  "object_id": "CHZL_BSD_P0_E",
+  "input_rows": {
+    "daily": 1538,
+    "weekly": 326,
+    "structure_series_rows": 179,
+    "annotation_rows": 3,
+    "merged_rows": 179
+  },
+  "as_of_date": "2026-04-23",
+  "evidence_mode": "semi_auto_structure_with_seed_override",
+  "anchor_source_mode": "auto_series",
+  "signal_payload": {
+    "object_id": "CHZL_BSD_P0_E",
+    "chzl_fractal_type": "top",
+    "chzl_bi_direction": "up",
+    "chzl_zs_state": "active",
+    "chzl_zs_zg": 4.22,
+    "chzl_zs_zd": 4.0,
+    "chzl_divergence_flag": true,
+    "chzl_bsd_type": "1B",
+    "chzl_trigger_price": 4.21,
+    "chzl_stop_loss_price": 4.09,
+    "chzl_sl_logic": "FRACTAL_BREAK",
+    "chzl_is_trailing": false,
+    "chzl_signal_strength": 7,
+    "chzl_signal_confidence": 0.68,
+    "chzl_filter_action": "APPROVE",
+    "chzl_risk_action": "HALF_SIZE",
+    "chzl_size_scalar": 0.5,
+    "chzl_limit_fractal_type": "normal",
+    "chzl_suspend_merge_logic": false,
+    "chzl_abort_reason": ""
+  },
+  "acceptance_flags": {
+    "passed_annotation_binding": true,
+    "passed_auto_structure_binding": true,
+    "degraded": true,
+    "degrade_reason": "semi_auto_structure_series_with_manual_seed_override"
+  },
+  "note": "auto_structure_series_v1"
+}

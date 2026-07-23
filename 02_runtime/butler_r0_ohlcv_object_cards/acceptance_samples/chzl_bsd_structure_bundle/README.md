@@ -19,6 +19,8 @@
   - 统一结构标注字段模板
 - `300302_SZ_structure_seed_v1.tsv`
   - 基于真实日线窗口做的最小人工 seed 标注，只作为 stub 验证输入，不冒充完整真值
+- `601991_SH_structure_seed_v1.tsv`
+  - 第二只样本的最小人工 seed 标注；由 `batch_148` 吸收到 runtime bundle，只用于半自动 stub 覆盖验证
 
 ## 当前口径
 
@@ -28,6 +30,9 @@
 - `annotation_template` 目前只有模板，没有伪造结构标签。
 - `annotation_seed` 若存在，只代表最小人工 seed，用于覆盖同日期自动行，验证字段合同、索引回链和 stub 输出格式。
 - 若 `chanlun_strokes_zs / chanlun_divergence` 仍缺失，则 `CHZL_BSD` 仍不得冒充为完整自动结构引擎；当前只能算 `semi_auto_structure`。
+- 当前第二只样本 `601991.SH` 已完成：
+  - `daily + weekly + auto_series + annotation_seed`
+  的最小 bundle 绑定。
 
 ## 后续动作
 

@@ -1,0 +1,4 @@
+symbol	timeframe	bar_date	fractal_type	bi_direction	zs_state	zs_zg	zs_zd	divergence_flag	bsd_type	stop_logic	note
+601991.SH	1d	2024-03-20	bottom	down	inactive			true	2B	PREV_SWING	人工 seed：参考第二只样本 auto series，把回撤后仍保留 2B 语义的底分型先记为弱证据候选；仅用于 stub 覆盖验证
+601991.SH	1d	2024-03-27	top	up	active	2.7604	2.6832	true	1B	FRACTAL_BREAK	人工 seed：作为反抽连接点，保留 1B 语义与中枢区间字段；只服务第二只样本字段合同验证
+601991.SH	1d	2024-03-28	bottom	down	active	2.7604	2.7122	true	2B	PREV_SWING	人工 seed：回踩未明显破前一 swing，先作为第二只样本 2B 候选；仅作最小 seed，不冒充完整结构真值
