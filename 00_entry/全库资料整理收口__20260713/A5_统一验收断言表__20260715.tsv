@@ -1,0 +1,19 @@
+req_id	object_id	assertion_group	assertion_id	assertion_desc	scope	severity	on_fail	action	note
+A_REQ_002	A_REQ_002_P0_A	traceability	A5_A002_T01	quality_roe_avg 必须能回溯到净利润与平均股东权益	factor	high	mark_failed	禁止写成通过	关键质量因子回溯
+A_REQ_002	A_REQ_002_P0_A	traceability	A5_A002_T02	growth_revenue_yoy 必须能回溯到当前期与上期营收	factor	high	mark_failed	禁止写成通过	关键成长因子回溯
+A_REQ_002	A_REQ_002_P0_A	traceability	A5_A002_T03	cashflow_ocf_to_net_profit 必须能回溯到经营现金流净额与净利润	factor	high	mark_failed	禁止写成通过	关键现金流因子回溯
+A_REQ_002	A_REQ_002_P0_A	coverage	A5_A002_C01	输出必须覆盖 value/quality/growth/cashflow 四因子族	output	high	mark_failed	禁止宣布字段齐备	最小覆盖要求
+A_REQ_002	A_REQ_002_P0_A	degrade_behavior	A5_A002_D01	eps_ttm<=0 时 value_pe_ttm 必须为 NA	output	medium	mark_degraded	禁止伪造正值	PE 降级
+A_REQ_002	A_REQ_002_P0_A	degrade_behavior	A5_A002_D02	缺平均股东权益时允许用期末权益替代但必须带 degraded	flag	medium	mark_degraded	禁止默默替代	ROE 降级
+A_REQ_002	A_REQ_002_P0_A	degrade_behavior	A5_A002_D03	缺 prior_revenue 或 prior_net_profit 时对应增长率必须为 NA	output	medium	mark_degraded	禁止伪造无限增长	增长率降级
+A_REQ_002	A_REQ_002_P0_A	degrade_behavior	A5_A002_D04	缺 industry_name 时禁止写行业对比解释	explanation	medium	block_explanation	仅保留绝对解释	行业降级
+A_REQ_002	A_REQ_002_P0_A	bounds	A5_A002_B01	valuation_factor_confidence 必须位于 0 到 1	confidence	low	mark_failed	重新计算	置信度边界
+A_REQ_003	A_REQ_003_P0_R	bounds	A5_A003_B01	target_weight 必须满足权重上下界	output	high	mark_failed	禁止输出最终权重	组合边界
+A_REQ_003	A_REQ_003_P0_R	traceability	A5_A003_T01	final_size_scalar 必须等于 min(kelly,vt,pq,1.0)	final	high	mark_failed	禁止写成通过	核心融合公式
+A_REQ_003	A_REQ_003_P0_R	traceability	A5_A003_T02	adjusted_position_weight 必须能回溯到 target_weight * final_size_scalar	final	high	mark_failed	禁止写成通过	最终权重回溯
+A_REQ_003	A_REQ_003_P0_R	coverage	A5_A003_C01	benchmark 模式下必须输出 portfolio_tracking_error	output	medium	mark_failed	改标 nonbenchmark_mode	TE 输出要求
+A_REQ_003	A_REQ_003_P0_R	degrade_behavior	A5_A003_D01	缺 covariance_model_id 时必须降级到 equal/value_weight + risk_overlay	mode	medium	mark_degraded	禁止伪优化	协方差降级
+A_REQ_003	A_REQ_003_P0_R	degrade_behavior	A5_A003_D02	缺 transaction_cost_bps 时允许用默认值但必须标记 degraded	input	low	mark_degraded	补默认值说明	成本降级
+A_REQ_003	A_REQ_003_P0_R	degrade_behavior	A5_A003_D03	缺 benchmark_id 时必须切到 nonbenchmark_mode	mode	medium	mark_degraded	禁止伪造 tracking_error	基准降级
+A_REQ_003	A_REQ_003_P0_R	degrade_behavior	A5_A003_D04	缺 alpha_score 时必须中止，不允许伪造优化结果	input	high	abort_run	写入 abort_reason	alpha 缺失中止
+A_REQ_003	A_REQ_003_P0_R	bounds	A5_A003_B02	final_size_scalar <= 0.05 时必须中止	final	high	abort_run	写入 abort_reason	风险过低直接中止

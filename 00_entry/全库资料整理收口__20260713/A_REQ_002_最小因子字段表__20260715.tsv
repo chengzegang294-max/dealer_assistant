@@ -1,0 +1,14 @@
+field_name	type	required	factor_family	desc	formula_or_definition	input_source	evidence_anchor	acceptance_check	degrade_rule
+object_id	string	yes	meta	固定对象标识	固定为 A_REQ_002_P0_A	fixed_literal	方案A执行口径	eq_A_REQ_002_P0_A	no_degrade
+factor_date	date	yes	meta	因子生效日期	价格快照日与最新已披露财报日的联合有效日期	price_snapshot_plus_latest_report	需求矩阵 A_REQ_002	valid_date	use_report_date_if_price_date_missing
+industry_name	string	yes	meta	行业分类	采用当前统一行业分类口径	industry_classification_input	需求矩阵 A_REQ_002	non_empty	use_unknown_industry
+value_pe_ttm	float	no	value	市盈率(PE)	price_per_share / eps_ttm	price_snapshot_plus_eps_ttm	郭永清 第13章 相对估值法	value_gt_0_or_na	set_na_if_eps_ttm_le_0
+value_pb_lf	float	no	value	市净率(PB)	market_cap / net_asset_or_price_per_share / book_value_per_share	price_snapshot_plus_net_asset	郭永清 第13章 市净率	value_gt_0_or_na	set_na_if_book_value_le_0
+value_ps_ttm	float	no	value	市销率(PS)	market_cap / revenue_ttm	price_snapshot_plus_revenue_ttm	郭永清 第13章 市销率	value_gt_0_or_na	set_na_if_revenue_ttm_le_0
+quality_roe_avg	float	yes	quality	净资产收益率(ROE)	net_profit / average_shareholders_equity	balance_sheet_plus_income_statement	上市公司财报估值 part_2 7.2	allow_negative_and_reasonable_range	use_end_equity_and_mark_degraded_if_avg_missing
+quality_debt_to_asset	float	yes	quality	资产负债率	total_liabilities / total_assets	balance_sheet	上市公司财报估值 财务状况分析	0_le_value_le_1_5	set_na_if_total_assets_le_0
+growth_revenue_yoy	float	yes	growth	营业收入增长率	(current_revenue - prior_revenue) / prior_revenue	income_statement_two_periods	上市公司财报估值 part_2 8.1	allow_negative_and_reasonable_range	set_na_if_prior_revenue_eq_0
+growth_net_profit_yoy	float	yes	growth	净利润增长率	(current_net_profit - prior_net_profit) / prior_net_profit	income_statement_two_periods	上市公司财报估值 part_2 8.1	allow_negative_and_reasonable_range	set_na_if_prior_net_profit_eq_0
+cashflow_operating_cf_net	float	yes	cashflow	经营活动现金流量净额	net_cash_from_operating_activities	cashflow_statement	上市公司财报估值 part_1 3.1 / 郭永清 第11章	not_null	use_zero_only_if_report_explicit_zero
+cashflow_ocf_to_net_profit	float	no	cashflow	经营现金流/净利润	operating_cashflow_net / net_profit	operating_cf_plus_net_profit	净利润含金量需结合现金流表的章节逻辑	allow_negative_and_reasonable_range	set_na_if_net_profit_eq_0
+valuation_factor_confidence	float	yes	meta	因子置信度	基于字段完整性与是否触发降级规则打分_0_to_1	field_completeness	对象卡验收口径	0_le_value_le_1	decrease_if_any_core_field_degraded

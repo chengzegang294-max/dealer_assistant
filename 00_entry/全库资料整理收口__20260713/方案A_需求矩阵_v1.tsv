@@ -1,0 +1,11 @@
+req_id	target_market	domain	user_goal	feature	inputs_needed	outputs	priority	current_coverage	related_assets	gaps
+A_REQ_001	A股	数据	可复现行情数据底座	daily_ohlcv_catalog	日线OHLCV、复权、交易日历	统一catalog+provenance+降级说明	high	partial	A_ASSET_011|A_ASSET_012	已落 A_REQ_001 数据可得性与成本裁决补页 + 权限边界与降级说明；下一步仅在需要时补 minute formalize 或 provider friction 细证据
+A_REQ_002	A股	基本面	财报与估值可解释	valuation_factor_framework	三大报表、估值指标、行业分类	估值/质量/成长/现金流等可解释因子族	high	partial	A_ASSET_004	已落 A_REQ_002 最小因子字段表 + 对象卡验收例 + 资料到字段映射说明；下一步继续把字段族压到对象卡/合同层正式口径
+A_REQ_003	A股	组合	组合构建与风险预算	portfolio_construction	预期收益/风险模型/约束/再平衡规则	组合权重、风险贡献、调仓建议	high	partial	A_ASSET_004	已落 A_REQ_003 风险模型候选清单 + 字段映射表 + 最小验收口径；下一步继续把主模型与降级模型压到正式对象卡/合同层
+A_REQ_004	A股	技术面	指标库与状态机	atomic_indicator_library	KD/RSJ/价量相关/状态模板	统一指标输出与状态枚举	medium	high	A_ASSET_005	与不同周期/不同市场的粒度映射需补
+A_REQ_005	A股	择时/事件	研究信号族可解释化	event_and_timing_signals	事件数据、公告、价格量、行业因子	信号触发、解释、失败模式与降级	medium	high	A_ASSET_002|A_ASSET_003	从研究合同到运行时验收仍缺桥接
+A_REQ_006	外汇	技术面	规则壳与证据壳借鉴	fx_rule_shells	外汇行情、时间窗、形态/结构定义	规则壳、降级映射、反例集	low	partial	A_ASSET_006	数据源与样本合同不完整
+A_REQ_007	期货(指数/商品)	技术面/微观结构	Market Profile / IB 体系借鉴	initial_balance_profile	分钟K、成交量/成交分布、会话定义	IB字段、突破验收、range extension 口径	medium	partial	A_ASSET_009	更原始教材图版/源码实现层证据缺口
+A_REQ_008	多市场	学习/借鉴	外部系统补采池	curated_learning_backlog	书/课程/视频/博主系统清单	按需求映射的补采优先级表	high	partial	A_ASSET_010|A_ASSET_009	需要多AI补充与主负责人筛选停止规则
+A_REQ_009	多市场	执行	执行算法与交易制度参考	execution_algo_policy	VWAP/TWAP/POV/冰山等介绍	执行策略概念、适用条件、风险	low	partial	A_ASSET_009	从概念到可实现字段合同未建立
+A_REQ_010	多市场	治理	需求到资料到验收闭环	requirement_to_asset_traceability	需求矩阵、资料资产清单、对象卡验收矩阵	可追溯矩阵与更新口径	high	partial	A_ASSET_001|A_ASSET_012	需要把本轮方案A产物回链进总台账与入口说明

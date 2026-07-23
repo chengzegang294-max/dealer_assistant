@@ -1,0 +1,14 @@
+req_id	object_id	missing_input_or_condition	fallback_action	allowed_output	forbidden_output	needs_degraded_flag	abort_condition	note
+A_REQ_002	A_REQ_002_P0_A	eps_ttm <= 0	set value_pe_ttm = NA	其它 value/quality/growth/cashflow 字段照常计算	伪造正 PE	no	no	PE 特殊降级
+A_REQ_002	A_REQ_002_P0_A	average_shareholders_equity missing	use_end_equity_proxy	quality_roe_avg 允许输出	静默替代	yes	no	必须标记 degraded
+A_REQ_002	A_REQ_002_P0_A	prior_revenue == 0	set growth_revenue_yoy = NA	其它字段照常计算	伪造无限增长	no	no	成长率分母缺失
+A_REQ_002	A_REQ_002_P0_A	prior_net_profit == 0	set growth_net_profit_yoy = NA	其它字段照常计算	伪造无限增长	no	no	成长率分母缺失
+A_REQ_002	A_REQ_002_P0_A	net_profit_current == 0	set cashflow_ocf_to_net_profit = NA	cashflow_operating_cf_net 允许输出	把分母为零写成 0 或通过	no	no	现金流比率降级
+A_REQ_002	A_REQ_002_P0_A	industry_name missing	disable_industry_relative_interpretation	绝对字段与绝对解释	行业对比解释	yes	no	行业解释降级
+A_REQ_003	A_REQ_003_P0_R	covariance_model_id missing	fallback_to_equal_or_value_weight_plus_risk_overlay	target_weight/final_size_scalar/adjusted_position_weight	伪装成完整优化器输出	yes	no	协方差降级
+A_REQ_003	A_REQ_003_P0_R	transaction_cost_bps missing	use_default_bps	target_weight 与 final outputs	无说明的精细成本优化	yes	no	成本参数降级
+A_REQ_003	A_REQ_003_P0_R	benchmark_id missing	switch_to_nonbenchmark_mode	target_weight/final_size_scalar/adjusted_position_weight	portfolio_tracking_error	no	no	基准模式降级
+A_REQ_003	A_REQ_003_P0_R	alpha_score missing	abort	仅允许 abort_reason	任何优化权重输出	no	yes	核心收益输入缺失必须中止
+A_REQ_003	A_REQ_003_P0_R	final_size_scalar <= 0.05	abort	仅允许 abort_reason	adjusted_position_weight	no	yes	风险标量过低必须中止
+A_REQ_001	A_REQ_001_DATA	minute formal raw missing	fallback_to_daily_only_with_sample_note	daily catalog + provenance minute sample	默认批量分钟输入	yes	no	A股行情底座降级
+A_REQ_001	A_REQ_001_DATA	level2 permission missing	mark_future_only	daily/minute 边界说明	任何 level2 默认合同	no	no	盘口层保持 future_only
