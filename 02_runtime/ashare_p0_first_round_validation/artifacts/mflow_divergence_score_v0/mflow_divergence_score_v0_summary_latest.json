@@ -1,0 +1,33 @@
+{
+  "producer": "analyze_mflow_divergence_score_v0_from_t02_real_input_v1.py",
+  "scope": "MFLOW divergence_score v0 派生审计（基于 T02 real_input candidate）",
+  "status": "success",
+  "input_csv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv",
+  "output_dir": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/mflow_divergence_score_v0",
+  "rule": {
+    "price_ret": "(close-open)/open",
+    "flow_ratio": "main_fund_net_inflow_ratio",
+    "divergence_flag": "price_ret>0 & flow_ratio<0 OR price_ret<0 & flow_ratio>0",
+    "score_v0": "min(1.0, abs(price_ret)*10 + abs(flow_ratio)*5) if divergence_flag else 0"
+  },
+  "rows_joined": 1200,
+  "divergence_rows": 218,
+  "divergence_rate": 0.18166666666666667,
+  "divergence_breakdown": {
+    "price_up_flow_down": 175,
+    "price_down_flow_up": 43
+  },
+  "score_distribution": {
+    "score_mean_all": 0.06327262722161232,
+    "score_mean_divergence_only": 0.3482896911281414,
+    "score_p50_divergence_only": 0.2845446910248267,
+    "score_p90_divergence_only": 0.6761976658613402,
+    "score_p95_divergence_only": 0.8503902557241989
+  },
+  "corr_price_ret_vs_inflow_ratio": 0.6299266981011952,
+  "output_files": {
+    "summary_json": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/mflow_divergence_score_v0/mflow_divergence_score_v0_summary_latest.json",
+    "detail_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/mflow_divergence_score_v0/mflow_divergence_score_v0_detail_latest.tsv",
+    "symbol_counts_tsv": "D:/Stock/trading_assistant/02_runtime/ashare_p0_first_round_validation/artifacts/mflow_divergence_score_v0/mflow_divergence_score_v0_symbol_counts_latest.tsv"
+  }
+}

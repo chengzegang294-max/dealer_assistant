@@ -1,6 +1,6 @@
 # AShare P0 First Round Validation Runtime
 
-更新时间：2026-07-12
+更新时间：2026-07-14
 
 ## 用途
 
@@ -23,6 +23,7 @@
 
 - `T01` 已有 fresh-run 结果和行业分布补充统计。
 - `T02` 已贯通真实源抓取、真实宽表拼接、扩样验证和长窗稳定性复核。
+- `T02` 当前已补入 `daily OHLCV` 真源，并新增 `mflow_divergence_score_v0` 的最小派生审计链。
 - `T02` 当前已形成项目裁决：
   - 全局保留 `3% + 连续2日`
   - `2.5% + 连续2日 + 排除 G03_震荡` 只保留为 `watchlist_only`
@@ -42,8 +43,10 @@
 - `audit_t02_fund_flow_input_v1.py`
 - `prepare_t02_fund_flow_input_v1.py`
 - `build_t02_real_input_v1.py`
+- `analyze_mflow_divergence_score_v0_from_t02_real_input_v1.py`
 - `check_t02_tushare_env_v1.py`
 - `fetch_t02_moneyflow_tushare_v1.py`
+- `fetch_t02_daily_batch_tushare_v1.py`
 - `fetch_t02_northbound_tushare_v1.py`
 - `fetch_t02_industry_map_tushare_v1.py`
 - `run_t02_fund_flow_scan_v1.py`

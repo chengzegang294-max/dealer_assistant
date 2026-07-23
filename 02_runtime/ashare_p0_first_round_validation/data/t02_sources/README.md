@@ -1,12 +1,13 @@
 # T02 Real Source Landing Notes
 
-更新时间：2026-07-12
+更新时间：2026-07-14
 
 ## 用途
 
 - 这里放 `T02` 首份真实源表的落点，不再把真实资金表混进模板目录。
 - 当前优先承接：
   - `moneyflow_tushare/`
+  - `daily_tushare/`
   - `northbound_tushare/`
   - `regime/`
   - `industry_tushare/`
@@ -35,6 +36,7 @@
   - `moneyflow_tushare/t02_moneyflow_tushare_batch__sample10__20260501_20260531__metadata.json`
   - `moneyflow_tushare/t02_moneyflow_tushare_batch__sample20__20260501_20260531__metadata.json`
   - `moneyflow_tushare/t02_moneyflow_tushare_batch__sample20_q2__20260401_20260630__metadata.json`
+  - `daily_tushare/t02_daily_tushare_batch__sample20_q2__20260401_20260630__metadata.json`
   - `northbound_tushare/t02_northbound_tushare__20260501_20260531__metadata.json`
   - `northbound_tushare/t02_northbound_tushare__20260401_20260630__metadata.json`
   - `regime/t02_regime_proxy_tushare__000300_SH__20260501_20260531__metadata.json`
@@ -46,6 +48,7 @@
   - `moneyflow_batch(sample10)` 更宽样本真源已生成
   - `moneyflow_batch(sample20)` 第三批更宽样本真源已生成
   - `moneyflow_batch(sample20_q2)` 跨月真源已生成
+  - `daily(sample20_q2)` 跨月日线 OHLCV 真源已生成
   - `northbound` trade_date 级真源已生成
   - `regime` trade_date 级代理表已生成
   - `industry` 行业映射真源已生成

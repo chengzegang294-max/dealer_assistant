@@ -193,7 +193,12 @@ def main() -> int:
 
     built_rows: list[dict[str, str]] = []
     for row in base_rows:
-        built_row = {column: str(row.get(column, "")).strip() for column in FINAL_COLUMNS}
+        built_row: dict[str, str] = {}
+        for column in FINAL_COLUMNS:
+            value = row.get(column, "")
+            if not str(value).strip() and column == "prev_close":
+                value = row.get("pre_close", "")
+            built_row[column] = str(value).strip()
         for join_name, columns in JOINABLE_DATASETS.items():
             join_row = resolve_join_row(join_name, join_maps[join_name], row)
             if join_row:

@@ -1,6 +1,6 @@
 # AShare P0 First Round Validation Provenance Note v1
 
-更新时间：2026-07-12
+更新时间：2026-07-14
 
 ## 用途
 
@@ -58,6 +58,15 @@
     - `artifacts/t02_real_input_build/`
   - 证据强度：
     - `hard`（当前终端新跑结果时）
+- `analyze_mflow_divergence_score_v0_from_t02_real_input_v1.py`
+  - 当前作用：
+    - 基于 latest `T02` 候选真实宽表，派生 `mflow_divergence_score_v0` 并输出统计摘要与触发明细
+  - 默认输入：
+    - `artifacts/t02_real_input_build/t02_real_input_candidate_latest.csv`
+  - 默认产物：
+    - `artifacts/mflow_divergence_score_v0/`
+  - 证据强度：
+    - `hard`（当前终端新跑结果时）
 - `check_t02_tushare_env_v1.py`
   - 当前作用：
     - 先检查本机 `TUSHARE_TOKEN`、`pandas` 和 `tushare` 依赖是否就绪，避免 fetcher 直接撞环境错误
@@ -88,6 +97,18 @@
     - `--end-date`
   - 默认产物：
     - `data/t02_sources/moneyflow_tushare/`
+  - 证据强度：
+    - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
+- `fetch_t02_daily_batch_tushare_v1.py`
+  - 当前作用：
+    - 读取多标的样本清单，批量拉取 `daily` 日线 OHLCV 源表，用于 `mflow_divergence_score` 的最小派生审计
+  - 默认输入：
+    - `data/t02_multi_symbol_sample_v1.csv`
+    - 当前 latest 已扩到：`data/t02_multi_symbol_sample_v3.csv`
+    - `--start-date`
+    - `--end-date`
+  - 默认产物：
+    - `data/t02_sources/daily_tushare/`
   - 证据强度：
     - `hard`（成功 CSV 或失败 metadata 均为当前终端新跑证据）
 - `fetch_t02_northbound_tushare_v1.py`
