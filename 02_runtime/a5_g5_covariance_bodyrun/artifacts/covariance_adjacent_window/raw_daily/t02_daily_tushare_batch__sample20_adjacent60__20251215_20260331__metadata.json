@@ -1,0 +1,196 @@
+{
+  "producer": "fetch_t02_daily_batch_tushare_v1.py",
+  "scope": "A股 P0 首轮离线验证 T02 多标的日线 OHLCV 真实源表",
+  "status": "success",
+  "start_date": "20251215",
+  "end_date": "20260331",
+  "symbol_list_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_multi_symbol_sample_v3.csv",
+  "batch_label": "sample20_adjacent60",
+  "token_source": "C:\\Users\\91883\\.tushare\\token",
+  "output_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/raw_daily/t02_daily_tushare_batch__sample20_adjacent60__20251215_20260331.csv",
+  "unit_note": "amount uses 千元; volume uses 手; open/high/low/close/pre_close uses 元",
+  "columns": [
+    "trade_date",
+    "symbol",
+    "symbol_name",
+    "open",
+    "high",
+    "low",
+    "close",
+    "pre_close",
+    "volume",
+    "amount",
+    "data_source",
+    "asof_date",
+    "notes"
+  ],
+  "rows": 1380,
+  "symbols_requested": 20,
+  "symbols_succeeded": 20,
+  "symbols_failed": 0,
+  "per_symbol_results": [
+    {
+      "symbol": "000001.SZ",
+      "symbol_name": "平安银行",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600030.SH",
+      "symbol_name": "中信证券",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "000002.SZ",
+      "symbol_name": "万科A",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600519.SH",
+      "symbol_name": "贵州茅台",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "300750.SZ",
+      "symbol_name": "宁德时代",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "601318.SH",
+      "symbol_name": "中国平安",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "000651.SZ",
+      "symbol_name": "格力电器",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600276.SH",
+      "symbol_name": "恒瑞医药",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "601899.SH",
+      "symbol_name": "紫金矿业",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600050.SH",
+      "symbol_name": "中国联通",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "688981.SH",
+      "symbol_name": "中芯国际",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600760.SH",
+      "symbol_name": "中航沈飞",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600900.SH",
+      "symbol_name": "长江电力",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "002594.SZ",
+      "symbol_name": "比亚迪",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600309.SH",
+      "symbol_name": "万华化学",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "601225.SH",
+      "symbol_name": "陕西煤业",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "000725.SZ",
+      "symbol_name": "京东方A",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "601012.SH",
+      "symbol_name": "隆基绿能",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "002230.SZ",
+      "symbol_name": "科大讯飞",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    },
+    {
+      "symbol": "600019.SH",
+      "symbol_name": "宝钢股份",
+      "status": "success",
+      "rows": 69,
+      "first_trade_date": "20251215",
+      "last_trade_date": "20260331"
+    }
+  ],
+  "failures": [],
+  "first_trade_date": "20251215",
+  "last_trade_date": "20260331"
+}

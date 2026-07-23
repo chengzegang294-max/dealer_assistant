@@ -1,0 +1,90 @@
+{
+  "run_id": "A5_G5_FV_GATE_V2_THIRD_WINDOW_SUMMARY",
+  "producer": "manual",
+  "scope": "a5_g5_financial_validity_gate_v2_third_window",
+  "status": "success",
+  "evidence_mode": "hard",
+  "window_consistency_label": "cross_window_return_sign_majority_positive__active_sign_majority_negative__still_need_evidence",
+  "selected_third_window": {
+    "window_start": "20250909",
+    "window_end": "20251212",
+    "selection_reason": "nearest_non_overlapping_complete_window_before_v1_adjacent",
+    "rejected_candidate": {
+      "window_start": "20250701",
+      "window_end": "20250930",
+      "reject_reason": "asset_universe_incomplete_for_688981_SH_on_20250901_to_20250908"
+    }
+  },
+  "windows": [
+    {
+      "window_tag": "v0_current_best",
+      "window_start": "20260401",
+      "window_end": "20260630",
+      "net_total_return": -0.00947495,
+      "holdout_net_total_return": -0.00291711,
+      "net_active_total_return": -0.12843922,
+      "net_max_drawdown": -0.01794461
+    },
+    {
+      "window_tag": "v1_adjacent",
+      "window_start": "20251215",
+      "window_end": "20260331",
+      "net_total_return": 0.00197364,
+      "holdout_net_total_return": 0.00485478,
+      "net_active_total_return": 0.03054991,
+      "net_max_drawdown": -0.00983588
+    },
+    {
+      "window_tag": "v2_third",
+      "window_start": "20250909",
+      "window_end": "20251212",
+      "net_total_return": 0.00740809,
+      "holdout_net_total_return": 0.00072619,
+      "net_active_total_return": -0.0179673,
+      "net_max_drawdown": -0.00699902
+    }
+  ],
+  "majority_observation": {
+    "net_total_return_sign": {
+      "positive_windows": 2,
+      "negative_windows": 1
+    },
+    "holdout_net_total_return_sign": {
+      "positive_windows": 2,
+      "negative_windows": 1
+    },
+    "net_active_total_return_sign": {
+      "positive_windows": 1,
+      "negative_windows": 2
+    },
+    "net_max_drawdown_ordering": "v2_best__v1_second__v0_worst"
+  },
+  "delta_observation": {
+    "v2_minus_v0_net_total_return": 0.01688304,
+    "v2_minus_v1_net_total_return": 0.00543445,
+    "v2_minus_v0_holdout_net_total_return": 0.0036433,
+    "v2_minus_v1_holdout_net_total_return": -0.00412859,
+    "v2_minus_v0_net_active_total_return": 0.11047192,
+    "v2_minus_v1_net_active_total_return": -0.04851721,
+    "v2_minus_v0_net_max_drawdown": 0.01094559,
+    "v2_minus_v1_net_max_drawdown": 0.00283686
+  },
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "cross_window_consistency_passed_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite",
+    "cross_window_metric_alignment"
+  ],
+  "input_trace": {
+    "v0_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_current_best_scorecard_latest.json",
+    "v1_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json",
+    "v2_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v2_third_window/fv_gate_v2_third_window_scorecard_latest.json"
+  }
+}

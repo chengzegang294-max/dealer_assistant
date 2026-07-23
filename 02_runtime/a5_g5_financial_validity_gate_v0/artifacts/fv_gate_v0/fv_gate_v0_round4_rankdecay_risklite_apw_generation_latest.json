@@ -1,0 +1,67 @@
+{
+  "run_id": "APW_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+  "producer": "generate_adjusted_position_weight_v1.py",
+  "scope": "adjusted_position_weight_generation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_apw_input_latest.json",
+  "generation_executed": true,
+  "observed_abort_reason": "",
+  "payload": {
+    "run_id": "APW_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+    "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+    "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+    "target_weight_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_target_weight_generation_latest.json",
+    "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_pte_generation_latest.json",
+    "final_size_scalar": 0.5,
+    "final_size_scalar_method": "round4_rankdecay_risklite_override_after_round3_improvement",
+    "degrade_flags": [
+      "degraded_risk_handling",
+      "final_fusion_consumes_upstream_generation",
+      "risklite_round4_scalar_override",
+      "rank_decay_round4_override"
+    ],
+    "audit_note": "fv_gate_round2_consumes_round2_pte_output",
+    "forbidden_claim": [
+      "output_passed",
+      "final_output_ready",
+      "g5_ready"
+    ]
+  },
+  "generated_weights": [
+    {
+      "ticker": "300750.SZ",
+      "target_weight": 0.1,
+      "final_size_scalar": 0.5,
+      "adjusted_position_weight": 0.05
+    },
+    {
+      "ticker": "600519.SH",
+      "target_weight": 0.1,
+      "final_size_scalar": 0.5,
+      "adjusted_position_weight": 0.05
+    },
+    {
+      "ticker": "000001.SZ",
+      "target_weight": 0.041979,
+      "final_size_scalar": 0.5,
+      "adjusted_position_weight": 0.02099
+    }
+  ],
+  "result_summary": {
+    "weight_count": 3,
+    "gross_adjusted_weight": 0.12099,
+    "formula_traceable": true,
+    "final_size_scalar_method": "round4_rankdecay_risklite_override_after_round3_improvement",
+    "portfolio_tracking_error": 0.00089636,
+    "target_weight_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_target_weight_generation_latest.json",
+    "portfolio_tracking_error_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_pte_generation_latest.json"
+  },
+  "audit_fields": {
+    "success_sample_has_explicit_formula": true,
+    "failure_path_has_abort_reason_contract": true,
+    "degrade_flags_expanded": true,
+    "upstream_generation_consumed": true,
+    "forbidden_claim": "output_passed"
+  }
+}

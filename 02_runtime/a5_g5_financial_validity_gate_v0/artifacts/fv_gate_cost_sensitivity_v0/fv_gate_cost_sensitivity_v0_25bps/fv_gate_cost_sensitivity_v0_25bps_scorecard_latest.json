@@ -1,0 +1,123 @@
+{
+  "run_id": "A5_G5_FV_GATE_COST_SENSITIVITY_V0_25BPS",
+  "producer": "run_fv_gate_v0_minimal_backtest_v1.py",
+  "scope": "a5_g5_financial_validity_gate_cost_sensitivity_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "signal_combo": {
+    "signal_hypothesis_id": "trend_pullback_confirmation_v1",
+    "filter_layer_id": "none",
+    "weight_logic_id": "filtered_alpha_rank_to_target_weight_rank_decay_v2",
+    "signal_combo_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u4fe1\u53f7\u7ec4\u5408\u5361__20260719.md"
+  },
+  "evaluation": {
+    "evaluation_card_id": "cost_sensitivity_v0_25bps",
+    "evaluation_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u8bc4\u4ef7\u5361__20260719.md",
+    "baseline_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_current_best_scorecard_latest.json"
+  },
+  "consumed_artifact_id": "APW_FV_GATE_V1_SAMPLE_BOUNDARY_TREND_PULLBACK_V1",
+  "window_start": "20251215",
+  "window_end": "20260331",
+  "benchmark_id": "CSI300",
+  "holdout_split_rule": {
+    "mode": "last_n_trade_days",
+    "holdout_trade_days": 15,
+    "in_sample_trade_days": 54
+  },
+  "cost_model": {
+    "model_id": "degraded_fixed_cost",
+    "one_way_cost_bps": 25.0
+  },
+  "gross_metrics": {
+    "trade_days": 69,
+    "positive_days": 30,
+    "avg_daily_return": 3.215e-05,
+    "volatility": 0.00130124,
+    "total_return": 0.00216258,
+    "max_drawdown": -0.00983588,
+    "benchmark_total_return": -0.02857627,
+    "active_total_return": 0.03073885
+  },
+  "net_metrics": {
+    "trade_days": 69,
+    "positive_days": 30,
+    "avg_daily_return": 2.76e-05,
+    "volatility": 0.00130022,
+    "total_return": 0.00184768,
+    "max_drawdown": -0.00983588,
+    "benchmark_total_return": -0.02857627,
+    "active_total_return": 0.03042395
+  },
+  "in_sample_metrics": {
+    "gross": {
+      "trade_days": 54,
+      "positive_days": 21,
+      "avg_daily_return": -4.889e-05,
+      "volatility": 0.00125832,
+      "total_return": -0.00267919,
+      "max_drawdown": -0.00983588,
+      "benchmark_total_return": 0.02047788,
+      "active_total_return": -0.02315707
+    },
+    "net": {
+      "trade_days": 54,
+      "positive_days": 21,
+      "avg_daily_return": -5.471e-05,
+      "volatility": 0.00125659,
+      "total_return": -0.00299257,
+      "max_drawdown": -0.00983588,
+      "benchmark_total_return": 0.02047788,
+      "active_total_return": -0.02347044
+    }
+  },
+  "holdout_metrics": {
+    "gross": {
+      "trade_days": 15,
+      "positive_days": 9,
+      "avg_daily_return": 0.00032391,
+      "volatility": 0.0014071,
+      "total_return": 0.00485478,
+      "max_drawdown": -0.00547142,
+      "benchmark_total_return": -0.04806978,
+      "active_total_return": 0.05292456
+    },
+    "net": {
+      "trade_days": 15,
+      "positive_days": 9,
+      "avg_daily_return": 0.00032391,
+      "volatility": 0.0014071,
+      "total_return": 0.00485478,
+      "max_drawdown": -0.00547142,
+      "benchmark_total_return": -0.04806978,
+      "active_total_return": 0.05292456
+    }
+  },
+  "turnover": {
+    "entry_turnover": 0.125747,
+    "exit_turnover": 0.0,
+    "turnover_assumption": "single_entry_static_weight_minimal_backtest"
+  },
+  "run_status": "success",
+  "abort_reason": "",
+  "gate_result": "FV_gate_v0_evidence_produced",
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "runtime_params_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_cost_sensitivity_v0/params/fv_gate_cost_sensitivity_v0_25bps_params_latest.json",
+    "same_batch_apw_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_apw_generation_latest.json",
+    "apw_success_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_apw_generation_latest.json",
+    "asset_ohlcv_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/raw_daily/t02_daily_tushare_batch__sample20_adjacent60__20251215_20260331.csv",
+    "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/benchmark/covariance_benchmark_series__000300_SH__20251215_20260331.csv",
+    "covariance_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json"
+  }
+}

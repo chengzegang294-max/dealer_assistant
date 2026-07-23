@@ -1,0 +1,65 @@
+{
+  "run_id": "PTE_REAL_INPUT_GENERATION_FAIL_V1",
+  "producer": "generate_portfolio_tracking_error_v1.py",
+  "scope": "portfolio_tracking_error_generation",
+  "status": "aborted",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/data/portfolio_tracking_error_real_input_failure_template_v1.json",
+  "generation_executed": false,
+  "observed_abort_reason": "missing_covariance_matrix_csv",
+  "payload": {
+    "run_id": "PTE_REAL_INPUT_GENERATION_FAIL_V1",
+    "benchmark_id": "CSI300_PROXY",
+    "benchmark_mode": true,
+    "risk_mode": "degraded_risk_handling",
+    "tracking_error_limit": 0.03,
+    "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+    "covariance_model_id_status": "ready_judgement_conditional__downstream_still_locked",
+    "covariance_matrix_csv": "",
+    "degrade_flags": [
+      "covariance_still_conditional",
+      "matrix_expected_but_missing"
+    ],
+    "audit_note": "minimal_degraded_tracking_error_failure_sample",
+    "target_weight_entries": [
+      {
+        "ticker": "000001.SZ",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "600519.SH",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "300750.SZ",
+        "target_weight": 0.093103
+      }
+    ],
+    "benchmark_weight_entries": [
+      {
+        "ticker": "000001.SZ",
+        "benchmark_weight": 0.095
+      },
+      {
+        "ticker": "600519.SH",
+        "benchmark_weight": 0.102
+      },
+      {
+        "ticker": "300750.SZ",
+        "benchmark_weight": 0.098
+      }
+    ],
+    "expected_abort_reason": "missing_covariance_matrix_csv",
+    "forbidden_claim": [
+      "output_passed",
+      "benchmark_risk_output_ready",
+      "covariance_model_id_ready"
+    ]
+  },
+  "portfolio_tracking_error": null,
+  "result_summary": {
+    "benchmark_mode": true,
+    "risk_mode": "degraded_risk_handling",
+    "within_limit": false
+  }
+}

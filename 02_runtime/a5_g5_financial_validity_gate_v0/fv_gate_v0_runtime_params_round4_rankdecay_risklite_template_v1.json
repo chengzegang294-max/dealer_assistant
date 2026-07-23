@@ -1,0 +1,57 @@
+{
+  "run_id": "A5_G5_FV_GATE_V0_ROUND4_RANKDECAY_RISKLITE_TEMPLATE",
+  "scope": "a5_g5_financial_validity_gate_v0",
+  "entry_shape": "contract_first_minimal_backtest_entry",
+  "signal_combo": {
+    "signal_hypothesis_id": "trend_pullback_confirmation_v1",
+    "filter_layer_id": "none",
+    "weight_logic_id": "filtered_alpha_rank_to_target_weight_rank_decay_v2",
+    "signal_combo_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u4fe1\u53f7\u7ec4\u5408\u5361__20260719.md"
+  },
+  "evaluation": {
+    "evaluation_card_id": "fv_gate_v0_round4_rankdecay_risklite_improvement",
+    "evaluation_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u8bc4\u4ef7\u5361__20260719.md",
+    "baseline_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round3_risklite_scorecard_latest.json"
+  },
+  "cost_model": {
+    "model_id": "degraded_fixed_cost",
+    "one_way_cost_bps": 15.0
+  },
+  "holdout_rule": {
+    "mode": "last_n_trade_days",
+    "holdout_trade_days": 15
+  },
+  "apw_override": {
+    "final_size_scalar": 0.5,
+    "final_size_scalar_method": "round4_rankdecay_risklite_override_after_round3_improvement",
+    "degrade_flags_append": [
+      "risklite_round4_scalar_override",
+      "rank_decay_round4_override"
+    ]
+  },
+  "input_paths": {
+    "same_batch_apw_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_apw_generation_latest.json",
+    "apw_success_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_apw_generation_latest.json",
+    "baseline_pte_input_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_input_latest.json",
+    "baseline_apw_input_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_input_latest.json",
+    "asset_ohlcv_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/daily_tushare/t02_daily_tushare_batch__sample20_q2__20260401_20260630.csv",
+    "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_benchmark_series/covariance_benchmark_series__000300_SH__20260401_20260630.csv",
+    "covariance_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json"
+  },
+  "output_paths": {
+    "round2_target_weight_input_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_target_weight_input_latest.json",
+    "round2_target_weight_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_target_weight_generation_latest.json",
+    "round2_pte_input_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_pte_input_latest.json",
+    "round2_pte_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_pte_generation_latest.json",
+    "round2_apw_input_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_apw_input_latest.json",
+    "round2_apw_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_apw_generation_latest.json",
+    "scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_scorecard_latest.json",
+    "scorecard_tsv": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round4_rankdecay_risklite_scorecard_latest.tsv"
+  },
+  "forbidden_claims": [
+    "financial-valid",
+    "output_passed",
+    "ready_to_deploy"
+  ],
+  "notes": "round4_rank_decay_plus_risklite_refinement_on_trend_pullback_candidate"
+}

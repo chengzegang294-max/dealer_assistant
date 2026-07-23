@@ -1,0 +1,23 @@
+{
+  "producer": "build_covariance_returns_input_v1.py",
+  "scope": "covariance first fresh-run returns input builder",
+  "status": "success",
+  "runtime_params_json": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+  "asset_ohlcv_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/raw_daily/t02_daily_tushare_batch__sample20_adjacent60__20251215_20260331.csv",
+  "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/benchmark/covariance_benchmark_series__000300_SH__20251215_20260331.csv",
+  "universe_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_multi_symbol_sample_v3.csv",
+  "asset_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/returns/asset_returns_panel_adjacent_latest.csv",
+  "benchmark_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/returns/benchmark_returns_series_adjacent_latest.csv",
+  "active_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/returns/active_returns_panel_adjacent_latest.csv",
+  "selected_trade_dates": 60,
+  "first_trade_date": "20251226",
+  "last_trade_date": "20260331",
+  "symbol_count": 20,
+  "benchmark_id": "CSI300",
+  "asset_universe_id": "a5_top_liquid_20",
+  "candidate_model_family": "benchmark_relative_sample_covariance",
+  "asset_rows": 1200,
+  "benchmark_rows": 60,
+  "active_rows": 1200,
+  "audit_note": "returns_input_built_from_existing_tushare_daily_assets"
+}

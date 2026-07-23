@@ -1,0 +1,46 @@
+{
+  "run_id": "covariance_bodyrun_preflight_latest",
+  "producer": "run_covariance_bodyrun_preflight_v1.py",
+  "scope": "covariance_bodyrun_preflight",
+  "status": "success",
+  "evidence_mode": "hard",
+  "preflight_passed": true,
+  "candidate_model_family": "benchmark_relative_sample_covariance",
+  "entry_mode": "first_fresh_run_prep_only",
+  "notes": "preflight_only__still_not_body_matrix_fresh_run",
+  "checks": [
+    {
+      "check_name": "runtime_params_boundary",
+      "passed": true,
+      "details": [],
+      "source_path": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json"
+    },
+    {
+      "check_name": "success_input_assembly_latest",
+      "passed": true,
+      "details": [],
+      "source_path": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_input/covariance_bodyrun_input_success_latest.json"
+    },
+    {
+      "check_name": "failure_input_assembly_latest",
+      "passed": true,
+      "details": [],
+      "source_path": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_input/covariance_bodyrun_input_failure_latest.json"
+    },
+    {
+      "check_name": "success_prep_smoke_run",
+      "passed": true,
+      "details": [],
+      "source_path": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun/covariance_bodyrun_success_latest.json"
+    },
+    {
+      "check_name": "failure_prep_smoke_run",
+      "passed": true,
+      "details": [],
+      "source_path": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun/covariance_bodyrun_failure_latest.json"
+    }
+  ],
+  "next_step_if_passed": "prepare_first_fresh_run_execution_for_benchmark_relative_sample_covariance",
+  "forbidden_claim": "risk_model_ready",
+  "runtime_params_json": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json"
+}

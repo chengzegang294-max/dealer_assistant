@@ -1,0 +1,25 @@
+{
+  "producer": "fetch_covariance_benchmark_series_v1.py",
+  "scope": "covariance benchmark daily series for first fresh-run",
+  "status": "success",
+  "benchmark_id": "CSI300",
+  "index_code": "000300.SH",
+  "start_date": "20251215",
+  "end_date": "20260331",
+  "token_source": "C:\\Users\\91883\\.tushare\\token",
+  "output_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/benchmark/covariance_benchmark_series__000300_SH__20251215_20260331.csv",
+  "rows": 69,
+  "columns": [
+    "trade_date",
+    "benchmark_id",
+    "benchmark_index_code",
+    "close",
+    "pct_chg",
+    "benchmark_return_1d",
+    "data_source",
+    "asof_date",
+    "notes"
+  ],
+  "first_trade_date": "20251215",
+  "last_trade_date": "20260331"
+}

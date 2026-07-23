@@ -1,0 +1,123 @@
+{
+  "run_id": "A5_G5_FV_GATE_V0_MINIMAL_BACKTEST_LATEST",
+  "producer": "run_fv_gate_v0_minimal_backtest_v1.py",
+  "scope": "a5_g5_financial_validity_gate_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "signal_combo": {
+    "signal_hypothesis_id": "alpha_model_or_factor_rank_proxy_v1",
+    "filter_layer_id": "none",
+    "weight_logic_id": "alpha_rank_to_target_weight_proxy_v1",
+    "signal_combo_card_md": ""
+  },
+  "evaluation": {
+    "evaluation_card_id": "fv_gate_v0_round1_baseline",
+    "evaluation_card_md": "",
+    "baseline_scorecard_json": ""
+  },
+  "consumed_artifact_id": "COVARIANCE_TARGET_WEIGHT_PTE_APW_SAME_BATCH_V1",
+  "window_start": "20260401",
+  "window_end": "20260630",
+  "benchmark_id": "CSI300",
+  "holdout_split_rule": {
+    "mode": "last_n_trade_days",
+    "holdout_trade_days": 15,
+    "in_sample_trade_days": 45
+  },
+  "cost_model": {
+    "model_id": "degraded_fixed_cost",
+    "one_way_cost_bps": 15.0
+  },
+  "gross_metrics": {
+    "trade_days": 60,
+    "positive_days": 25,
+    "avg_daily_return": -0.0003025,
+    "volatility": 0.00296679,
+    "total_return": -0.01824819,
+    "max_drawdown": -0.03063092,
+    "benchmark_total_return": 0.11896427,
+    "active_total_return": -0.13721246
+  },
+  "net_metrics": {
+    "trade_days": 60,
+    "positive_days": 25,
+    "avg_daily_return": -0.00030851,
+    "volatility": 0.00296286,
+    "total_return": -0.01860149,
+    "max_drawdown": -0.03063092,
+    "benchmark_total_return": 0.11896427,
+    "active_total_return": -0.13756576
+  },
+  "in_sample_metrics": {
+    "gross": {
+      "trade_days": 45,
+      "positive_days": 19,
+      "avg_daily_return": -0.00023503,
+      "volatility": 0.00272152,
+      "total_return": -0.01068653,
+      "max_drawdown": -0.02106394,
+      "benchmark_total_return": 0.05923536,
+      "active_total_return": -0.0699219
+    },
+    "net": {
+      "trade_days": 45,
+      "positive_days": 19,
+      "avg_daily_return": -0.00024304,
+      "volatility": 0.002716,
+      "total_return": -0.01104255,
+      "max_drawdown": -0.02106394,
+      "benchmark_total_return": 0.05923536,
+      "active_total_return": -0.07027791
+    }
+  },
+  "holdout_metrics": {
+    "gross": {
+      "trade_days": 15,
+      "positive_days": 6,
+      "avg_daily_return": -0.00050492,
+      "volatility": 0.00359622,
+      "total_return": -0.00764334,
+      "max_drawdown": -0.01623534,
+      "benchmark_total_return": 0.0563887,
+      "active_total_return": -0.06403204
+    },
+    "net": {
+      "trade_days": 15,
+      "positive_days": 6,
+      "avg_daily_return": -0.00050492,
+      "volatility": 0.00359622,
+      "total_return": -0.00764334,
+      "max_drawdown": -0.01623534,
+      "benchmark_total_return": 0.0563887,
+      "active_total_return": -0.06403204
+    }
+  },
+  "turnover": {
+    "entry_turnover": 0.240344,
+    "exit_turnover": 0.0,
+    "turnover_assumption": "single_entry_static_weight_minimal_backtest"
+  },
+  "run_status": "success",
+  "abort_reason": "",
+  "gate_result": "FV_gate_v0_evidence_produced",
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "runtime_params_json": "02_runtime/a5_g5_financial_validity_gate_v0/fv_gate_v0_runtime_params_template_v1.json",
+    "same_batch_apw_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/covariance_target_weight_pte_apw_same_batch_latest.json",
+    "apw_success_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_latest.json",
+    "asset_ohlcv_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_sources/daily_tushare/t02_daily_tushare_batch__sample20_q2__20260401_20260630.csv",
+    "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_benchmark_series/covariance_benchmark_series__000300_SH__20260401_20260630.csv",
+    "covariance_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json"
+  }
+}

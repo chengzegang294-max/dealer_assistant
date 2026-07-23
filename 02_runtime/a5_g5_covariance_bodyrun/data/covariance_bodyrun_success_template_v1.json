@@ -1,0 +1,24 @@
+{
+  "run_id": "covariance_bodyrun_success_template_v1",
+  "candidate_family": "benchmark_relative_sample_covariance",
+  "portfolio_date": "2026-07-16",
+  "benchmark_id": "CSI300",
+  "asset_universe_id": "a5_top_liquid_20",
+  "returns_window_spec": {
+    "lookback_days": 60,
+    "frequency": "1d"
+  },
+  "tracking_error_limit": 0.06,
+  "active_risk_aversion": 3.0,
+  "matrix_summary": {
+    "matrix_shape": [
+      20,
+      20
+    ],
+    "diagonal_positive": true,
+    "is_psd": true
+  },
+  "covariance_model_id": "benchmark_relative_sample_covariance__lookback60__v1",
+  "abort_reason": "",
+  "audit_note": "template_level_only__not_body_matrix_fresh_run"
+}

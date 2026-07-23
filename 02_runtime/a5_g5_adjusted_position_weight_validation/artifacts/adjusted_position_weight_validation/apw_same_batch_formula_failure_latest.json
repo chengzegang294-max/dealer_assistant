@@ -1,0 +1,31 @@
+{
+  "run_id": "APW_REAL_INPUT_FORMULA_FAIL_V1",
+  "producer": "generate_adjusted_position_weight_v1.py",
+  "scope": "adjusted_position_weight_generation",
+  "status": "aborted",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_formula_failure_input_latest.json",
+  "generation_executed": false,
+  "observed_abort_reason": "final_size_scalar_below_abort_threshold",
+  "payload": {
+    "run_id": "APW_REAL_INPUT_FORMULA_FAIL_V1",
+    "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+    "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+    "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+    "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json",
+    "final_size_scalar": 0.03,
+    "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+    "degrade_flags": [
+      "degraded_risk_handling",
+      "final_size_scalar_below_threshold"
+    ],
+    "audit_note": "same_batch_formula_failure_consumes_pte_same_batch_success_output",
+    "expected_abort_reason": "final_size_scalar_below_abort_threshold",
+    "forbidden_claim": [
+      "output_passed",
+      "final_output_ready",
+      "g5_ready"
+    ]
+  },
+  "generated_weights": []
+}

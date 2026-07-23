@@ -1,0 +1,77 @@
+{
+  "run_id": "PTE_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+  "producer": "generate_portfolio_tracking_error_v1.py",
+  "scope": "portfolio_tracking_error_generation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round2_pte_input_latest.json",
+  "generation_executed": true,
+  "observed_abort_reason": "",
+  "payload": {
+    "run_id": "PTE_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+    "benchmark_id": "CSI300_PROXY",
+    "benchmark_mode": true,
+    "risk_mode": "degraded_risk_handling",
+    "tracking_error_limit": 0.03,
+    "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+    "covariance_model_id_status": "ready_judgement_conditional__downstream_still_locked",
+    "covariance_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+    "degrade_flags": [
+      "covariance_still_conditional",
+      "matrix_consumed_under_degraded_mode"
+    ],
+    "audit_note": "fv_gate_round2_consumes_trend_pullback_target_weight",
+    "target_weight_entries": [
+      {
+        "ticker": "300750.SZ",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "600519.SH",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "000001.SZ",
+        "target_weight": 0.071179
+      }
+    ],
+    "benchmark_weight_entries": [
+      {
+        "ticker": "000001.SZ",
+        "benchmark_weight": 0.095
+      },
+      {
+        "ticker": "600519.SH",
+        "benchmark_weight": 0.102
+      },
+      {
+        "ticker": "300750.SZ",
+        "benchmark_weight": 0.098
+      }
+    ],
+    "forbidden_claim": [
+      "output_passed",
+      "benchmark_risk_output_ready",
+      "covariance_model_id_ready"
+    ]
+  },
+  "portfolio_tracking_error": 0.00041723,
+  "result_summary": {
+    "benchmark_mode": true,
+    "risk_mode": "degraded_risk_handling",
+    "tracking_error_limit": 0.03,
+    "within_limit": true,
+    "calculation_method": "active_weight_covariance_quadratic_proxy",
+    "symbol_count": 3,
+    "overlap_symbol_count": 3,
+    "tracking_error_variance": 1.74083e-07,
+    "covariance_matrix_csv": "D:/Stock/trading_assistant/02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv"
+  },
+  "audit_fields": {
+    "success_sample_has_explicit_risk_output": true,
+    "failure_path_has_abort_reason_contract": true,
+    "degrade_flags_expanded": true,
+    "covariance_matrix_consumed": true,
+    "forbidden_claim": "output_passed"
+  }
+}

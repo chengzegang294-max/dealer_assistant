@@ -1,0 +1,26 @@
+{
+  "run_id": "TW_VALIDATION_RUN_FAIL_V1",
+  "producer": "run_target_weight_validation_v1.py",
+  "scope": "target_weight_validation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "case_name": "failure",
+  "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_failure_template_v1.json",
+  "validation_passed": true,
+  "validation_errors": [],
+  "payload": {
+    "run_id": "TW_VALIDATION_RUN_FAIL_V1",
+    "producer": "run_target_weight_validation_v1.py",
+    "scope": "target_weight_validation",
+    "status": "template",
+    "evidence_mode": "template",
+    "failure_trigger": "missing_constraint_set_or_untraceable_alpha_input",
+    "input_assumption": {
+      "alpha_input_mode": "untraceable_proxy",
+      "constraint_set_id": ""
+    },
+    "weights": [],
+    "observed_abort_reason": "missing_constraint_set_or_untraceable_alpha_input",
+    "path_consistency_note": "failure_sample_and_abort_reason_are_consistent"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "run_id": "A5_G5_FV_GATE_ACTIVE_UNDERPERFORMANCE_V0_SUMMARY",
+  "producer": "manual",
+  "scope": "a5_g5_financial_validity_gate_active_underperformance_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "source_mode": "derived_from_existing_hard_scorecards_only",
+  "window_consistency_label": "cross_window_return_sign_majority_positive__active_sign_majority_negative__still_need_evidence",
+  "explanation_focus": "active_underperformance",
+  "summary_claim": {
+    "return_sign_majority_positive": true,
+    "holdout_return_sign_majority_positive": true,
+    "active_sign_majority_negative": true,
+    "cross_window_consistency_passed": false,
+    "financial_valid": false,
+    "output_passed": false
+  },
+  "windows": [
+    {
+      "window_tag": "v0_current_best",
+      "window_start": "20260401",
+      "window_end": "20260630",
+      "benchmark_total_return": 0.11896427,
+      "net_total_return": -0.00947495,
+      "holdout_net_total_return": -0.00291711,
+      "net_active_total_return": -0.12843922,
+      "net_max_drawdown": -0.01794461
+    },
+    {
+      "window_tag": "v1_adjacent",
+      "window_start": "20251215",
+      "window_end": "20260331",
+      "benchmark_total_return": -0.02857627,
+      "net_total_return": 0.00197364,
+      "holdout_net_total_return": 0.00485478,
+      "net_active_total_return": 0.03054991,
+      "net_max_drawdown": -0.00983588
+    },
+    {
+      "window_tag": "v2_third",
+      "window_start": "20250909",
+      "window_end": "20251212",
+      "benchmark_total_return": 0.02537539,
+      "net_total_return": 0.00740809,
+      "holdout_net_total_return": 0.00072619,
+      "net_active_total_return": -0.0179673,
+      "net_max_drawdown": -0.00699902
+    }
+  ],
+  "majority_observation": {
+    "benchmark_total_return_sign": {
+      "positive_windows": 2,
+      "negative_windows": 1
+    },
+    "net_total_return_sign": {
+      "positive_windows": 2,
+      "negative_windows": 1
+    },
+    "holdout_net_total_return_sign": {
+      "positive_windows": 2,
+      "negative_windows": 1
+    },
+    "net_active_total_return_sign": {
+      "positive_windows": 1,
+      "negative_windows": 2
+    },
+    "net_max_drawdown_ordering": "v2_best__v1_second__v0_worst"
+  },
+  "interpretation": {
+    "primary_tension": "portfolio_absolute_returns_partially_recovered_but_relative_performance_against_benchmark_remains_majority_negative",
+    "why_still_need_evidence": [
+      "active_sign_majority_negative_is_not_resolved",
+      "cross_window_metric_alignment_not_achieved",
+      "derived_explanation_is_not_a_new_generalization_proof"
+    ],
+    "allowed_use": "formal_explanation_layer_only",
+    "forbidden_use": [
+      "financial-valid",
+      "output_passed",
+      "cross_window_consistency_passed",
+      "new_runtime_or_new_backtest_claim"
+    ]
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite",
+    "cross_window_metric_alignment"
+  ],
+  "input_trace": {
+    "v0_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_current_best_scorecard_latest.json",
+    "v1_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json",
+    "v2_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v2_third_window/fv_gate_v2_third_window_scorecard_latest.json",
+    "v2_summary_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v2_third_window/fv_gate_v2_third_window_summary_latest.json"
+  }
+}

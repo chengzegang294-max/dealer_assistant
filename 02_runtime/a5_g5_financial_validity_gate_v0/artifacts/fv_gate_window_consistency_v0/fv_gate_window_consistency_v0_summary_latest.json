@@ -1,0 +1,77 @@
+{
+  "run_id": "A5_G5_FV_GATE_WINDOW_CONSISTENCY_V0",
+  "producer": "manual_existing_scorecard_compare",
+  "scope": "a5_g5_financial_validity_gate_window_consistency_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "window_consistency_label": "cross_window_sign_divergence__still_need_evidence",
+  "comparison_mode": "frozen_contract_existing_scorecard_compare_only",
+  "frozen_contract": {
+    "signal_hypothesis_id": "trend_pullback_confirmation_v1",
+    "filter_layer_id": "none",
+    "weight_logic_id": "filtered_alpha_rank_to_target_weight_rank_decay_v2",
+    "final_size_scalar": 0.5,
+    "cost_model": "degraded_fixed_cost",
+    "one_way_cost_bps": 15.0,
+    "holdout_trade_days": 15
+  },
+  "current_best_window": {
+    "window_label": "v0_current_best_window_q2_20260401_20260630",
+    "scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_current_best_scorecard_latest.json",
+    "net_metrics": {
+      "total_return": -0.00947495,
+      "active_total_return": -0.12843922,
+      "max_drawdown": -0.01794461
+    },
+    "holdout_metrics": {
+      "net_total_return": -0.00291711
+    }
+  },
+  "adjacent_window": {
+    "window_label": "v1_adjacent_window_20251215_20260331",
+    "scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json",
+    "net_metrics": {
+      "total_return": 0.00197364,
+      "active_total_return": 0.03054991,
+      "max_drawdown": -0.00983588
+    },
+    "holdout_metrics": {
+      "net_total_return": 0.00485478
+    }
+  },
+  "delta_adjacent_vs_current_best": {
+    "delta_net_total_return": 0.01144859,
+    "delta_holdout_net_total_return": 0.00777189,
+    "delta_net_active_total_return": 0.15898913,
+    "delta_net_max_drawdown": 0.00810873
+  },
+  "sign_check": {
+    "net_total_return_sign_diverged": true,
+    "holdout_net_total_return_sign_diverged": true,
+    "net_active_total_return_sign_diverged": true,
+    "max_drawdown_improved_in_adjacent_window": true
+  },
+  "summary_judgement": {
+    "sample_boundary_reproduced_still_true": true,
+    "cross_window_consistency_passed": false,
+    "cross_window_sign_divergence_observed": true
+  },
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "third_calendar_window_or_equivalent",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "stage_page_md": "00_entry/全库资料整理收口__20260713/A5_FV_gate_window_consistency_v0阶段页__20260719.md",
+    "current_best_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_current_best_scorecard_latest.json",
+    "adjacent_window_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "run_id": "TW_REAL_INPUT_GENERATION_FAIL_V1",
+  "producer": "generate_target_weight_v1.py",
+  "scope": "target_weight_generation",
+  "status": "aborted",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_failure_template_v1.json",
+  "generation_executed": false,
+  "observed_abort_reason": "missing_constraint_set",
+  "payload": {
+    "run_id": "TW_REAL_INPUT_GENERATION_FAIL_V1",
+    "producer": "manual_template",
+    "scope": "target_weight_real_input",
+    "status": "template",
+    "evidence_mode": "template",
+    "as_of_date": "2026-07-16",
+    "input_contract": {
+      "alpha_input_mode": "ranked_scores",
+      "alpha_source_type": "contract_frozen_proxy",
+      "alpha_source_id": "alpha_model_or_factor_rank_proxy",
+      "constraint_set_id": "",
+      "risk_handling_mode": "degraded_risk_handling",
+      "benchmark_id": "CSI300_PROXY",
+      "universe_id": "ASHARE_TOP3_SAMPLE_V1"
+    },
+    "alpha_vector": [
+      {
+        "ticker": "000001.SZ",
+        "alpha_score": 0.92,
+        "rank": 1
+      },
+      {
+        "ticker": "600519.SH",
+        "alpha_score": 0.88,
+        "rank": 2
+      },
+      {
+        "ticker": "300750.SZ",
+        "alpha_score": 0.81,
+        "rank": 3
+      }
+    ],
+    "constraint_set": {
+      "weight_lower_bound": 0.0,
+      "weight_upper_bound": 0.1,
+      "long_only_flag": true,
+      "turnover_limit": 0.25
+    },
+    "expected_abort_reason": "missing_constraint_set",
+    "forbidden_claim": [
+      "output_passed",
+      "formalized_risk_model_ready",
+      "implementation_ready"
+    ]
+  },
+  "generated_weights": []
+}

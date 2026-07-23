@@ -1,0 +1,63 @@
+{
+  "run_id": "TW_REAL_INPUT_SUCCESS_CASE_V1",
+  "producer": "run_target_weight_validation_v1.py",
+  "scope": "target_weight_validation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "case_name": "real_input_success",
+  "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_success_case_template_v1.json",
+  "validation_passed": true,
+  "validation_errors": [],
+  "payload": {
+    "run_id": "TW_REAL_INPUT_SUCCESS_CASE_V1",
+    "producer": "run_target_weight_validation_v1.py",
+    "scope": "target_weight_real_input",
+    "status": "template",
+    "evidence_mode": "template",
+    "input_template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+    "input_contract": {
+      "alpha_input_mode": "ranked_scores",
+      "alpha_source_type": "contract_frozen_proxy",
+      "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1",
+      "risk_handling_mode": "degraded_risk_handling"
+    },
+    "alpha_vector": [
+      {
+        "ticker": "000001.SZ",
+        "alpha_score": 0.92,
+        "rank": 1
+      },
+      {
+        "ticker": "600519.SH",
+        "alpha_score": 0.88,
+        "rank": 2
+      },
+      {
+        "ticker": "300750.SZ",
+        "alpha_score": 0.81,
+        "rank": 3
+      }
+    ],
+    "generated_weights": [
+      {
+        "ticker": "000001.SZ",
+        "target_weight": 0.08
+      },
+      {
+        "ticker": "600519.SH",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "300750.SZ",
+        "target_weight": 0.06
+      }
+    ],
+    "result_summary": {
+      "non_empty": true,
+      "within_bounds": true,
+      "weight_sum_traceable": true,
+      "generated_from_real_input_template": true
+    },
+    "abort_reason": ""
+  }
+}

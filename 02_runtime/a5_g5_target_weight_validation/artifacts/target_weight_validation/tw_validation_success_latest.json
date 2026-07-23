@@ -1,0 +1,49 @@
+{
+  "run_id": "TW_VALIDATION_RUN_OK_V1",
+  "producer": "run_target_weight_validation_v1.py",
+  "scope": "target_weight_validation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "case_name": "success",
+  "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_success_template_v1.json",
+  "validation_passed": true,
+  "validation_errors": [],
+  "payload": {
+    "run_id": "TW_VALIDATION_RUN_OK_V1",
+    "producer": "run_target_weight_validation_v1.py",
+    "scope": "target_weight_validation",
+    "status": "template",
+    "evidence_mode": "template",
+    "input_assumption": {
+      "alpha_input_mode": "ranked_scores",
+      "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1"
+    },
+    "risk_handling_mode": "degraded_risk_handling",
+    "weights": [
+      {
+        "ticker": "000001.SZ",
+        "target_weight": 0.08
+      },
+      {
+        "ticker": "600519.SH",
+        "target_weight": 0.1
+      },
+      {
+        "ticker": "300750.SZ",
+        "target_weight": 0.06
+      }
+    ],
+    "result_summary": {
+      "weight_count": 3,
+      "weight_sum_traceable": true,
+      "non_empty": true,
+      "within_bounds": true
+    },
+    "checks": [
+      "single_name_cap_applied",
+      "long_only_enforced",
+      "turnover_control_checked"
+    ],
+    "abort_reason": ""
+  }
+}

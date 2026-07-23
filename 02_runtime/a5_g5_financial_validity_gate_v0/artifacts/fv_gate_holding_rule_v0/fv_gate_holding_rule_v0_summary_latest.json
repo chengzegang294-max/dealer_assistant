@@ -1,0 +1,53 @@
+{
+  "run_id": "A5_G5_FV_GATE_HOLDING_RULE_V0_PROBE",
+  "producer": "run_fv_gate_holding_rule_v0_probe_v1.py",
+  "scope": "a5_g5_financial_validity_gate_holding_rule_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "window_label": "v1_sample_boundary_window_15bps",
+  "baseline_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json",
+  "holding_rule": {
+    "holding_rule_id": "fixed_period_rebalance_v0",
+    "rebalance_every_trade_days": 20
+  },
+  "scenario_count": 1,
+  "holding_rule_label": "holding_rule_stable__still_need_evidence",
+  "baseline_metrics": {
+    "net_total_return": 0.00197364,
+    "holdout_net_total_return": 0.00485478,
+    "net_active_total_return": 0.03054991,
+    "net_max_drawdown": -0.00983588,
+    "entry_turnover": 0.125747
+  },
+  "scenario_metrics": {
+    "net_total_return": 0.00149584,
+    "holdout_net_total_return": 0.00461705,
+    "net_active_total_return": 0.03007211,
+    "net_max_drawdown": -0.00966033,
+    "entry_turnover": 0.125747,
+    "rebalance_turnover_total": 0.00655254,
+    "rebalance_event_count": 3
+  },
+  "delta_vs_baseline": {
+    "delta_net_total_return": -0.0004778,
+    "delta_holdout_net_total_return": -0.00023773,
+    "delta_net_active_total_return": -0.0004778,
+    "delta_net_max_drawdown": 0.00017555
+  },
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "probe_template_json": "02_runtime/a5_g5_financial_validity_gate_v0/fv_gate_holding_rule_v0_probe_template_v1.json",
+    "scenario_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_holding_rule_v0/fv_gate_holding_rule_v0_fixed_period_rebalance_v0_20d/fv_gate_holding_rule_v0_fixed_period_rebalance_v0_20d_scorecard_latest.json"
+  }
+}

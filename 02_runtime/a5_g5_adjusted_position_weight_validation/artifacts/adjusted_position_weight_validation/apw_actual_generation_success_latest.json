@@ -1,0 +1,65 @@
+{
+  "run_id": "APW_REAL_INPUT_SMOKERUN_V1",
+  "producer": "generate_adjusted_position_weight_v1.py",
+  "scope": "adjusted_position_weight_generation",
+  "status": "success",
+  "evidence_mode": "hard",
+  "input_json": "02_runtime/a5_g5_adjusted_position_weight_validation/data/adjusted_position_weight_real_input_template_v1.json",
+  "generation_executed": true,
+  "observed_abort_reason": "",
+  "payload": {
+    "run_id": "APW_REAL_INPUT_SMOKERUN_V1",
+    "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+    "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+    "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+    "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json",
+    "final_size_scalar": 0.82,
+    "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+    "degrade_flags": [
+      "degraded_risk_handling",
+      "final_fusion_consumes_upstream_generation"
+    ],
+    "audit_note": "minimal_adjusted_position_weight_success_sample",
+    "forbidden_claim": [
+      "output_passed",
+      "final_output_ready",
+      "g5_ready"
+    ]
+  },
+  "generated_weights": [
+    {
+      "ticker": "000001.SZ",
+      "target_weight": 0.1,
+      "final_size_scalar": 0.82,
+      "adjusted_position_weight": 0.082
+    },
+    {
+      "ticker": "600519.SH",
+      "target_weight": 0.1,
+      "final_size_scalar": 0.82,
+      "adjusted_position_weight": 0.082
+    },
+    {
+      "ticker": "300750.SZ",
+      "target_weight": 0.093103,
+      "final_size_scalar": 0.82,
+      "adjusted_position_weight": 0.076344
+    }
+  ],
+  "result_summary": {
+    "weight_count": 3,
+    "gross_adjusted_weight": 0.240344,
+    "formula_traceable": true,
+    "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+    "portfolio_tracking_error": 0.00012553,
+    "target_weight_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+    "portfolio_tracking_error_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json"
+  },
+  "audit_fields": {
+    "success_sample_has_explicit_formula": true,
+    "failure_path_has_abort_reason_contract": true,
+    "degrade_flags_expanded": true,
+    "upstream_generation_consumed": true,
+    "forbidden_claim": "output_passed"
+  }
+}

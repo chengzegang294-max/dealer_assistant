@@ -1,0 +1,19 @@
+{
+  "run_id": "APW_REAL_INPUT_SMOKERUN_V1",
+  "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+  "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+  "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+  "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json",
+  "final_size_scalar": 0.82,
+  "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+  "degrade_flags": [
+    "degraded_risk_handling",
+    "final_fusion_consumes_upstream_generation"
+  ],
+  "audit_note": "minimal_adjusted_position_weight_success_sample",
+  "forbidden_claim": [
+    "output_passed",
+    "final_output_ready",
+    "g5_ready"
+  ]
+}

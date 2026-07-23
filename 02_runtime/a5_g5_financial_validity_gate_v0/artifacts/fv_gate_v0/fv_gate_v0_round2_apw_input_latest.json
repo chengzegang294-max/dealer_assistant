@@ -1,0 +1,19 @@
+{
+  "run_id": "APW_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+  "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+  "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+  "target_weight_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round2_target_weight_generation_latest.json",
+  "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v0/fv_gate_v0_round2_pte_generation_latest.json",
+  "final_size_scalar": 0.82,
+  "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+  "degrade_flags": [
+    "degraded_risk_handling",
+    "final_fusion_consumes_upstream_generation"
+  ],
+  "audit_note": "fv_gate_round2_consumes_round2_pte_output",
+  "forbidden_claim": [
+    "output_passed",
+    "final_output_ready",
+    "g5_ready"
+  ]
+}

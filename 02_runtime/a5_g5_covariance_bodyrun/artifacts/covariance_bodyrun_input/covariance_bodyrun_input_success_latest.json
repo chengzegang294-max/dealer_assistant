@@ -1,0 +1,24 @@
+{
+  "run_id": "covariance_bodyrun_input_success_template_v1",
+  "producer": "build_covariance_bodyrun_input_v1.py",
+  "scope": "covariance_bodyrun_input",
+  "status": "success",
+  "evidence_mode": "hard",
+  "assembly_passed": true,
+  "abort_reason": "",
+  "assembled_input": {
+    "candidate_model_family": "benchmark_relative_sample_covariance",
+    "portfolio_date": "2026-07-16",
+    "benchmark_id": "CSI300",
+    "asset_universe_id": "a5_top_liquid_20",
+    "returns_window_spec": {
+      "lookback_days": 60,
+      "frequency": "1d"
+    },
+    "tracking_error_limit": 0.06,
+    "active_risk_aversion": 3.0
+  },
+  "audit_note": "template_level_input_assembly_only__not_body_matrix_fresh_run",
+  "validation_errors": [],
+  "template_json": "02_runtime/a5_g5_covariance_bodyrun/data/covariance_bodyrun_input_template_v1.json"
+}

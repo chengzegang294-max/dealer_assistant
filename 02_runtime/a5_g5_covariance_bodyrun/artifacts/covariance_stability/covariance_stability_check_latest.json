@@ -1,0 +1,39 @@
+{
+  "producer": "run_covariance_stability_check_v1.py",
+  "scope": "covariance minimum stability check",
+  "status": "success",
+  "evidence_mode": "hard",
+  "current_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json",
+  "current_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+  "adjacent_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json",
+  "adjacent_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv",
+  "stability_check_passed": true,
+  "structural_pass": true,
+  "scale_gap_within_guardrail": true,
+  "current_window": {
+    "first_trade_date": "20260401",
+    "last_trade_date": "20260630",
+    "min_eigenvalue": 2.0584972694271718e-05
+  },
+  "adjacent_window": {
+    "first_trade_date": "20251226",
+    "last_trade_date": "20260331",
+    "min_eigenvalue": 1.5005948977740515e-05
+  },
+  "matrix_shape": [
+    20,
+    20
+  ],
+  "symbol_count": 20,
+  "trace_current": 0.010032149359699299,
+  "trace_adjacent": 0.00649973422442069,
+  "trace_ratio_current_over_adjacent": 1.5434707040799727,
+  "relative_trace_gap": 0.3521095040180391,
+  "fro_norm_current": 0.003845994348373619,
+  "fro_norm_adjacent": 0.0020578993750609005,
+  "fro_norm_diff": 0.0031268017889339757,
+  "relative_fro_diff": 0.8130021798540153,
+  "diag_ratio_mean_current_over_adjacent": 1.9869537110869337,
+  "audit_note": "minimum_stability_check_across_two_60d_windows",
+  "forbidden_claim": "risk_model_ready"
+}

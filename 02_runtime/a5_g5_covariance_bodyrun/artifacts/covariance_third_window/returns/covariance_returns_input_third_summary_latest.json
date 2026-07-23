@@ -1,0 +1,21 @@
+{
+  "producer": "build_covariance_returns_input_v1.py",
+  "scope": "covariance first fresh-run returns input builder",
+  "status": "failed",
+  "runtime_params_json": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+  "asset_ohlcv_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_third_window/raw_daily/t02_daily_tushare_batch__sample20_q3__20250701_20250930.csv",
+  "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_third_window/benchmark/covariance_benchmark_series__000300_SH__20250701_20250930.csv",
+  "universe_csv": "02_runtime/ashare_p0_first_round_validation/data/t02_multi_symbol_sample_v3.csv",
+  "asset_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_third_window/returns/asset_returns_panel_third_latest.csv",
+  "benchmark_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_third_window/returns/benchmark_returns_series_third_latest.csv",
+  "active_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_third_window/returns/active_returns_panel_third_latest.csv",
+  "failure_reason": "asset_universe_not_complete_for_selected_window",
+  "incomplete_dates": [
+    "20250901",
+    "20250902",
+    "20250903",
+    "20250904",
+    "20250905",
+    "20250908"
+  ]
+}

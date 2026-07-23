@@ -1,0 +1,1022 @@
+{
+  "run_id": "COVARIANCE_TARGET_WEIGHT_PTE_APW_SAME_BATCH_V1",
+  "producer": "run_covariance_target_weight_pte_apw_same_batch_v1.py",
+  "scope": "covariance_target_weight_pte_apw_same_batch",
+  "status": "success",
+  "evidence_mode": "hard",
+  "covariance_target_weight_pte_chain_passed": true,
+  "apw_chain_passed": true,
+  "same_batch_sources": {
+    "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+    "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json"
+  },
+  "same_batch_formula_failure_alignment": {
+    "apw_formula_failure_reason": "final_size_scalar_below_abort_threshold",
+    "expected_reason": "final_size_scalar_below_abort_threshold"
+  },
+  "steps": [
+    {
+      "step": "covariance_target_weight_pte_same_batch",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_portfolio_tracking_error_validation\\run_covariance_target_weight_pte_same_batch_v1.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/covariance_target_weight_pte_same_batch_latest.json",
+      "output_exists": true,
+      "step_passed": true,
+      "expected_mode": "covariance_target_weight_chain_passed_and_pte_chain_passed",
+      "status": "success",
+      "payload_summary": {
+        "run_id": "COVARIANCE_TARGET_WEIGHT_PTE_SAME_BATCH_V1",
+        "producer": "run_covariance_target_weight_pte_same_batch_v1.py",
+        "scope": "covariance_target_weight_pte_same_batch",
+        "status": "success",
+        "evidence_mode": "hard",
+        "covariance_target_weight_chain_passed": true,
+        "pte_chain_passed": true,
+        "same_batch_target_weight_source": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+        "same_batch_generated_weight_count": 3,
+        "same_batch_failure_alignment": {
+          "pte_failure_reason": "missing_covariance_matrix_csv",
+          "expected_reason": "missing_covariance_matrix_csv"
+        },
+        "steps": [
+          {
+            "step": "covariance_target_weight_same_batch",
+            "command": [
+              "D:\\Work\\Python312\\python.exe",
+              "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\run_covariance_target_weight_same_batch_v1.py"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/covariance_target_weight_same_batch_latest.json",
+            "output_exists": true,
+            "step_passed": true,
+            "expected_mode": "covariance_chain_passed_and_target_weight_chain_passed",
+            "status": "success",
+            "payload_summary": {
+              "run_id": "COVARIANCE_TARGET_WEIGHT_SAME_BATCH_V1",
+              "producer": "run_covariance_target_weight_same_batch_v1.py",
+              "scope": "covariance_target_weight_same_batch",
+              "status": "success",
+              "evidence_mode": "hard",
+              "covariance_chain_passed": true,
+              "target_weight_chain_passed": true,
+              "failure_reason_alignment": {
+                "template_level_reason": "missing_constraint_set_or_untraceable_alpha_input",
+                "real_input_reason": "missing_constraint_set",
+                "actual_generation_reason": "missing_constraint_set",
+                "real_input_and_generation_aligned": true
+              },
+              "steps": [
+                {
+                  "step": "covariance_current_fresh",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_covariance_bodyrun\\run_covariance_bodyrun_fresh_v1.py",
+                    "--runtime-params-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+                    "--active-returns-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_returns_input/active_returns_panel_latest.csv",
+                    "--output-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json",
+                    "--matrix-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "fresh_run_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "covariance_bodyrun_fresh_latest",
+                    "producer": "run_covariance_bodyrun_fresh_v1.py",
+                    "scope": "covariance_bodyrun_fresh",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "runtime_params_json": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+                    "active_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_returns_input/active_returns_panel_latest.csv",
+                    "matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+                    "fresh_run_passed": true,
+                    "candidate_family": "benchmark_relative_sample_covariance",
+                    "covariance_model_id": "benchmark_relative_sample_covariance__CSI300__lookback60__a5_top_liquid_20__v1",
+                    "portfolio_date": "2026-07-16",
+                    "benchmark_id": "CSI300",
+                    "asset_universe_id": "a5_top_liquid_20",
+                    "returns_window_spec": {
+                      "lookback_days": 60,
+                      "frequency": "1d"
+                    },
+                    "matrix_shape": [
+                      20,
+                      20
+                    ],
+                    "effective_trade_dates": 60,
+                    "asset_count": 20,
+                    "diagonal_positive": true,
+                    "is_psd": true,
+                    "min_eigenvalue": 2.0584972694271718e-05,
+                    "first_trade_date": "20260401",
+                    "last_trade_date": "20260630",
+                    "notes": "first_body_matrix_fresh_run_completed__still_not_ready",
+                    "forbidden_claim": "risk_model_ready",
+                    "matrix_output_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv"
+                  }
+                },
+                {
+                  "step": "covariance_adjacent_fresh",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_covariance_bodyrun\\run_covariance_bodyrun_fresh_v1.py",
+                    "--runtime-params-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+                    "--active-returns-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/returns/active_returns_panel_adjacent_latest.csv",
+                    "--output-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json",
+                    "--matrix-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "fresh_run_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "covariance_bodyrun_fresh_latest",
+                    "producer": "run_covariance_bodyrun_fresh_v1.py",
+                    "scope": "covariance_bodyrun_fresh",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "runtime_params_json": "02_runtime/a5_g5_covariance_bodyrun/covariance_bodyrun_runtime_params_template_v1.json",
+                    "active_returns_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/returns/active_returns_panel_adjacent_latest.csv",
+                    "matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv",
+                    "fresh_run_passed": true,
+                    "candidate_family": "benchmark_relative_sample_covariance",
+                    "covariance_model_id": "benchmark_relative_sample_covariance__CSI300__lookback60__a5_top_liquid_20__v1",
+                    "portfolio_date": "2026-07-16",
+                    "benchmark_id": "CSI300",
+                    "asset_universe_id": "a5_top_liquid_20",
+                    "returns_window_spec": {
+                      "lookback_days": 60,
+                      "frequency": "1d"
+                    },
+                    "matrix_shape": [
+                      20,
+                      20
+                    ],
+                    "effective_trade_dates": 60,
+                    "asset_count": 20,
+                    "diagonal_positive": true,
+                    "is_psd": true,
+                    "min_eigenvalue": 1.5005948977740515e-05,
+                    "first_trade_date": "20251226",
+                    "last_trade_date": "20260331",
+                    "notes": "first_body_matrix_fresh_run_completed__still_not_ready",
+                    "forbidden_claim": "risk_model_ready",
+                    "matrix_output_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv"
+                  }
+                },
+                {
+                  "step": "covariance_stability",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_covariance_bodyrun\\run_covariance_stability_check_v1.py",
+                    "--current-fresh-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json",
+                    "--current-matrix-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+                    "--adjacent-fresh-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json",
+                    "--adjacent-matrix-csv",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv",
+                    "--output-json",
+                    "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_stability/covariance_stability_check_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_stability/covariance_stability_check_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "stability_check_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "producer": "run_covariance_stability_check_v1.py",
+                    "scope": "covariance minimum stability check",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "current_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_bodyrun_fresh_latest.json",
+                    "current_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+                    "adjacent_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json",
+                    "adjacent_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_matrix_adjacent_latest.csv",
+                    "stability_check_passed": true,
+                    "structural_pass": true,
+                    "scale_gap_within_guardrail": true,
+                    "current_window": {
+                      "first_trade_date": "20260401",
+                      "last_trade_date": "20260630",
+                      "min_eigenvalue": 2.0584972694271718e-05
+                    },
+                    "adjacent_window": {
+                      "first_trade_date": "20251226",
+                      "last_trade_date": "20260331",
+                      "min_eigenvalue": 1.5005948977740515e-05
+                    },
+                    "matrix_shape": [
+                      20,
+                      20
+                    ],
+                    "symbol_count": 20,
+                    "trace_current": 0.010032149359699299,
+                    "trace_adjacent": 0.00649973422442069,
+                    "trace_ratio_current_over_adjacent": 1.5434707040799727,
+                    "relative_trace_gap": 0.3521095040180391,
+                    "fro_norm_current": 0.003845994348373619,
+                    "fro_norm_adjacent": 0.0020578993750609005,
+                    "fro_norm_diff": 0.0031268017889339757,
+                    "relative_fro_diff": 0.8130021798540153,
+                    "diag_ratio_mean_current_over_adjacent": 1.9869537110869337,
+                    "audit_note": "minimum_stability_check_across_two_60d_windows",
+                    "forbidden_claim": "risk_model_ready"
+                  }
+                },
+                {
+                  "step": "target_weight_validation_success",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\run_target_weight_validation_v1.py",
+                    "--case",
+                    "success",
+                    "--template-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_success_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_validation_success_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_validation_success_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "validation_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "TW_VALIDATION_RUN_OK_V1",
+                    "producer": "run_target_weight_validation_v1.py",
+                    "scope": "target_weight_validation",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "case_name": "success",
+                    "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_success_template_v1.json",
+                    "validation_passed": true,
+                    "validation_errors": [],
+                    "payload": {
+                      "run_id": "TW_VALIDATION_RUN_OK_V1",
+                      "producer": "run_target_weight_validation_v1.py",
+                      "scope": "target_weight_validation",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "input_assumption": {
+                        "alpha_input_mode": "ranked_scores",
+                        "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1"
+                      },
+                      "risk_handling_mode": "degraded_risk_handling",
+                      "weights": [
+                        {
+                          "ticker": "000001.SZ",
+                          "target_weight": 0.08
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "target_weight": 0.1
+                        },
+                        {
+                          "ticker": "300750.SZ",
+                          "target_weight": 0.06
+                        }
+                      ],
+                      "result_summary": {
+                        "weight_count": 3,
+                        "weight_sum_traceable": true,
+                        "non_empty": true,
+                        "within_bounds": true
+                      },
+                      "checks": [
+                        "single_name_cap_applied",
+                        "long_only_enforced",
+                        "turnover_control_checked"
+                      ],
+                      "abort_reason": ""
+                    }
+                  }
+                },
+                {
+                  "step": "target_weight_validation_failure",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\run_target_weight_validation_v1.py",
+                    "--case",
+                    "failure",
+                    "--template-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_failure_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_validation_failure_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_validation_failure_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "validation_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "TW_VALIDATION_RUN_FAIL_V1",
+                    "producer": "run_target_weight_validation_v1.py",
+                    "scope": "target_weight_validation",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "case_name": "failure",
+                    "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_validation_failure_template_v1.json",
+                    "validation_passed": true,
+                    "validation_errors": [],
+                    "payload": {
+                      "run_id": "TW_VALIDATION_RUN_FAIL_V1",
+                      "producer": "run_target_weight_validation_v1.py",
+                      "scope": "target_weight_validation",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "failure_trigger": "missing_constraint_set_or_untraceable_alpha_input",
+                      "input_assumption": {
+                        "alpha_input_mode": "untraceable_proxy",
+                        "constraint_set_id": ""
+                      },
+                      "weights": [],
+                      "observed_abort_reason": "missing_constraint_set_or_untraceable_alpha_input",
+                      "path_consistency_note": "failure_sample_and_abort_reason_are_consistent"
+                    }
+                  }
+                },
+                {
+                  "step": "target_weight_real_input_success",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\run_target_weight_validation_v1.py",
+                    "--case",
+                    "real_input_success",
+                    "--template-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_success_case_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_real_input_success_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_real_input_success_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "validation_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "TW_REAL_INPUT_SUCCESS_CASE_V1",
+                    "producer": "run_target_weight_validation_v1.py",
+                    "scope": "target_weight_validation",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "case_name": "real_input_success",
+                    "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_success_case_template_v1.json",
+                    "validation_passed": true,
+                    "validation_errors": [],
+                    "payload": {
+                      "run_id": "TW_REAL_INPUT_SUCCESS_CASE_V1",
+                      "producer": "run_target_weight_validation_v1.py",
+                      "scope": "target_weight_real_input",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "input_template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+                      "input_contract": {
+                        "alpha_input_mode": "ranked_scores",
+                        "alpha_source_type": "contract_frozen_proxy",
+                        "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1",
+                        "risk_handling_mode": "degraded_risk_handling"
+                      },
+                      "alpha_vector": [
+                        {
+                          "ticker": "000001.SZ",
+                          "alpha_score": 0.92,
+                          "rank": 1
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "alpha_score": 0.88,
+                          "rank": 2
+                        },
+                        {
+                          "ticker": "300750.SZ",
+                          "alpha_score": 0.81,
+                          "rank": 3
+                        }
+                      ],
+                      "generated_weights": [
+                        {
+                          "ticker": "000001.SZ",
+                          "target_weight": 0.08
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "target_weight": 0.1
+                        },
+                        {
+                          "ticker": "300750.SZ",
+                          "target_weight": 0.06
+                        }
+                      ],
+                      "result_summary": {
+                        "non_empty": true,
+                        "within_bounds": true,
+                        "weight_sum_traceable": true,
+                        "generated_from_real_input_template": true
+                      },
+                      "abort_reason": ""
+                    }
+                  }
+                },
+                {
+                  "step": "target_weight_real_input_failure",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\run_target_weight_validation_v1.py",
+                    "--case",
+                    "real_input_failure",
+                    "--template-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_failure_case_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_real_input_failure_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_real_input_failure_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "validation_passed",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "TW_REAL_INPUT_FAILURE_CASE_V1",
+                    "producer": "run_target_weight_validation_v1.py",
+                    "scope": "target_weight_validation",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "case_name": "real_input_failure",
+                    "template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_failure_case_template_v1.json",
+                    "validation_passed": true,
+                    "validation_errors": [],
+                    "payload": {
+                      "run_id": "TW_REAL_INPUT_FAILURE_CASE_V1",
+                      "producer": "run_target_weight_validation_v1.py",
+                      "scope": "target_weight_real_input",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "input_template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+                      "failure_trigger": "missing_constraint_set",
+                      "input_contract": {
+                        "alpha_input_mode": "ranked_scores",
+                        "alpha_source_type": "contract_frozen_proxy",
+                        "constraint_set_id": "",
+                        "risk_handling_mode": "degraded_risk_handling"
+                      },
+                      "alpha_vector": [
+                        {
+                          "ticker": "000001.SZ",
+                          "alpha_score": 0.92,
+                          "rank": 1
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "alpha_score": 0.88,
+                          "rank": 2
+                        }
+                      ],
+                      "generated_weights": [],
+                      "observed_abort_reason": "missing_constraint_set",
+                      "path_consistency_note": "real_input_failure_path_is_consistent"
+                    }
+                  }
+                },
+                {
+                  "step": "target_weight_actual_generation_success",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\generate_target_weight_v1.py",
+                    "--input-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "generation_executed_true",
+                  "status": "success",
+                  "payload_summary": {
+                    "run_id": "TW_REAL_INPUT_SMOKERUN_V1",
+                    "producer": "generate_target_weight_v1.py",
+                    "scope": "target_weight_generation",
+                    "status": "success",
+                    "evidence_mode": "hard",
+                    "input_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+                    "generation_executed": true,
+                    "observed_abort_reason": "",
+                    "payload": {
+                      "run_id": "TW_REAL_INPUT_SMOKERUN_V1",
+                      "producer": "manual_template",
+                      "scope": "target_weight_real_input",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "as_of_date": "2026-07-16",
+                      "input_contract": {
+                        "alpha_input_mode": "ranked_scores",
+                        "alpha_source_type": "contract_frozen_proxy",
+                        "alpha_source_id": "alpha_model_or_factor_rank_proxy",
+                        "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1",
+                        "risk_handling_mode": "degraded_risk_handling",
+                        "benchmark_id": "CSI300_PROXY",
+                        "universe_id": "ASHARE_TOP3_SAMPLE_V1"
+                      },
+                      "alpha_vector": [
+                        {
+                          "ticker": "000001.SZ",
+                          "alpha_score": 0.92,
+                          "rank": 1
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "alpha_score": 0.88,
+                          "rank": 2
+                        },
+                        {
+                          "ticker": "300750.SZ",
+                          "alpha_score": 0.81,
+                          "rank": 3
+                        }
+                      ],
+                      "constraint_set": {
+                        "weight_lower_bound": 0.0,
+                        "weight_upper_bound": 0.1,
+                        "long_only_flag": true,
+                        "turnover_limit": 0.25
+                      },
+                      "expected_checks": {
+                        "non_empty": true,
+                        "within_bounds": true,
+                        "weight_sum_traceable": true,
+                        "abort_reason_empty": true
+                      },
+                      "forbidden_claim": [
+                        "output_passed",
+                        "formalized_risk_model_ready",
+                        "implementation_ready"
+                      ]
+                    },
+                    "generated_weights": [
+                      {
+                        "ticker": "000001.SZ",
+                        "target_weight": 0.1,
+                        "alpha_score": 0.92,
+                        "rank": 1
+                      },
+                      {
+                        "ticker": "600519.SH",
+                        "target_weight": 0.1,
+                        "alpha_score": 0.88,
+                        "rank": 2
+                      },
+                      {
+                        "ticker": "300750.SZ",
+                        "target_weight": 0.093103,
+                        "alpha_score": 0.81,
+                        "rank": 3
+                      }
+                    ],
+                    "result_summary": {
+                      "weight_count": 3,
+                      "non_empty": true,
+                      "within_bounds": true,
+                      "weight_sum_traceable": true,
+                      "gross_weight": 0.293103,
+                      "allocation_method": "alpha_proportional_with_single_name_cap"
+                    }
+                  }
+                },
+                {
+                  "step": "target_weight_actual_generation_failure",
+                  "command": [
+                    "D:\\Work\\Python312\\python.exe",
+                    "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\generate_target_weight_v1.py",
+                    "--input-json",
+                    "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_failure_template_v1.json",
+                    "--output-json",
+                    "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_failure_latest.json"
+                  ],
+                  "exit_code": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_failure_latest.json",
+                  "output_exists": true,
+                  "step_passed": true,
+                  "expected_mode": "generation_executed_false_with_expected_abort_reason",
+                  "status": "aborted",
+                  "payload_summary": {
+                    "run_id": "TW_REAL_INPUT_GENERATION_FAIL_V1",
+                    "producer": "generate_target_weight_v1.py",
+                    "scope": "target_weight_generation",
+                    "status": "aborted",
+                    "evidence_mode": "hard",
+                    "input_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_failure_template_v1.json",
+                    "generation_executed": false,
+                    "observed_abort_reason": "missing_constraint_set",
+                    "payload": {
+                      "run_id": "TW_REAL_INPUT_GENERATION_FAIL_V1",
+                      "producer": "manual_template",
+                      "scope": "target_weight_real_input",
+                      "status": "template",
+                      "evidence_mode": "template",
+                      "as_of_date": "2026-07-16",
+                      "input_contract": {
+                        "alpha_input_mode": "ranked_scores",
+                        "alpha_source_type": "contract_frozen_proxy",
+                        "alpha_source_id": "alpha_model_or_factor_rank_proxy",
+                        "constraint_set_id": "",
+                        "risk_handling_mode": "degraded_risk_handling",
+                        "benchmark_id": "CSI300_PROXY",
+                        "universe_id": "ASHARE_TOP3_SAMPLE_V1"
+                      },
+                      "alpha_vector": [
+                        {
+                          "ticker": "000001.SZ",
+                          "alpha_score": 0.92,
+                          "rank": 1
+                        },
+                        {
+                          "ticker": "600519.SH",
+                          "alpha_score": 0.88,
+                          "rank": 2
+                        },
+                        {
+                          "ticker": "300750.SZ",
+                          "alpha_score": 0.81,
+                          "rank": 3
+                        }
+                      ],
+                      "constraint_set": {
+                        "weight_lower_bound": 0.0,
+                        "weight_upper_bound": 0.1,
+                        "long_only_flag": true,
+                        "turnover_limit": 0.25
+                      },
+                      "expected_abort_reason": "missing_constraint_set",
+                      "forbidden_claim": [
+                        "output_passed",
+                        "formalized_risk_model_ready",
+                        "implementation_ready"
+                      ]
+                    },
+                    "generated_weights": []
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "step": "pte_same_batch_success",
+            "command": [
+              "D:\\Work\\Python312\\python.exe",
+              "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_portfolio_tracking_error_validation\\generate_portfolio_tracking_error_v1.py",
+              "--input-json",
+              "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_input_latest.json",
+              "--output-json",
+              "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "output_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json",
+            "output_exists": true,
+            "step_passed": true,
+            "expected_mode": "generation_executed_true_with_covariance_consumed",
+            "status": "success",
+            "payload_summary": {
+              "run_id": "PTE_REAL_INPUT_SMOKERUN_V1",
+              "producer": "generate_portfolio_tracking_error_v1.py",
+              "scope": "portfolio_tracking_error_generation",
+              "status": "success",
+              "evidence_mode": "hard",
+              "input_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_input_latest.json",
+              "generation_executed": true,
+              "observed_abort_reason": "",
+              "payload": {
+                "run_id": "PTE_REAL_INPUT_SMOKERUN_V1",
+                "benchmark_id": "CSI300_PROXY",
+                "benchmark_mode": true,
+                "risk_mode": "degraded_risk_handling",
+                "tracking_error_limit": 0.03,
+                "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+                "covariance_model_id_status": "ready_judgement_conditional__downstream_still_locked",
+                "covariance_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+                "degrade_flags": [
+                  "covariance_still_conditional",
+                  "matrix_consumed_under_degraded_mode"
+                ],
+                "audit_note": "same_batch_consumes_target_weight_generated_weights",
+                "target_weight_entries": [
+                  {
+                    "ticker": "000001.SZ",
+                    "target_weight": 0.1
+                  },
+                  {
+                    "ticker": "600519.SH",
+                    "target_weight": 0.1
+                  },
+                  {
+                    "ticker": "300750.SZ",
+                    "target_weight": 0.093103
+                  }
+                ],
+                "benchmark_weight_entries": [
+                  {
+                    "ticker": "000001.SZ",
+                    "benchmark_weight": 0.095
+                  },
+                  {
+                    "ticker": "600519.SH",
+                    "benchmark_weight": 0.102
+                  },
+                  {
+                    "ticker": "300750.SZ",
+                    "benchmark_weight": 0.098
+                  }
+                ],
+                "forbidden_claim": [
+                  "output_passed",
+                  "benchmark_risk_output_ready",
+                  "covariance_model_id_ready"
+                ]
+              },
+              "portfolio_tracking_error": 0.00012553,
+              "result_summary": {
+                "benchmark_mode": true,
+                "risk_mode": "degraded_risk_handling",
+                "tracking_error_limit": 0.03,
+                "within_limit": true,
+                "calculation_method": "active_weight_covariance_quadratic_proxy",
+                "symbol_count": 3,
+                "overlap_symbol_count": 3,
+                "tracking_error_variance": 1.5758e-08,
+                "covariance_matrix_csv": "D:/Stock/trading_assistant/02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv"
+              },
+              "audit_fields": {
+                "success_sample_has_explicit_risk_output": true,
+                "failure_path_has_abort_reason_contract": true,
+                "degrade_flags_expanded": true,
+                "covariance_matrix_consumed": true,
+                "forbidden_claim": "output_passed"
+              }
+            }
+          },
+          {
+            "step": "pte_same_batch_failure",
+            "command": [
+              "D:\\Work\\Python312\\python.exe",
+              "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_portfolio_tracking_error_validation\\generate_portfolio_tracking_error_v1.py",
+              "--input-json",
+              "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_failure_input_latest.json",
+              "--output-json",
+              "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_failure_latest.json"
+            ],
+            "exit_code": 0,
+            "stdout": "",
+            "stderr": "",
+            "output_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_failure_latest.json",
+            "output_exists": true,
+            "step_passed": true,
+            "expected_mode": "generation_executed_false_with_expected_abort_reason",
+            "status": "aborted",
+            "payload_summary": {
+              "run_id": "PTE_REAL_INPUT_GENERATION_FAIL_V1",
+              "producer": "generate_portfolio_tracking_error_v1.py",
+              "scope": "portfolio_tracking_error_generation",
+              "status": "aborted",
+              "evidence_mode": "hard",
+              "input_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_failure_input_latest.json",
+              "generation_executed": false,
+              "observed_abort_reason": "missing_covariance_matrix_csv",
+              "payload": {
+                "run_id": "PTE_REAL_INPUT_GENERATION_FAIL_V1",
+                "benchmark_id": "CSI300_PROXY",
+                "benchmark_mode": true,
+                "risk_mode": "degraded_risk_handling",
+                "tracking_error_limit": 0.03,
+                "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+                "covariance_model_id_status": "ready_judgement_conditional__downstream_still_locked",
+                "covariance_matrix_csv": "",
+                "degrade_flags": [
+                  "covariance_still_conditional",
+                  "matrix_expected_but_missing"
+                ],
+                "audit_note": "same_batch_failure_consumes_target_weight_generated_weights",
+                "target_weight_entries": [
+                  {
+                    "ticker": "000001.SZ",
+                    "target_weight": 0.1
+                  },
+                  {
+                    "ticker": "600519.SH",
+                    "target_weight": 0.1
+                  },
+                  {
+                    "ticker": "300750.SZ",
+                    "target_weight": 0.093103
+                  }
+                ],
+                "benchmark_weight_entries": [
+                  {
+                    "ticker": "000001.SZ",
+                    "benchmark_weight": 0.095
+                  },
+                  {
+                    "ticker": "600519.SH",
+                    "benchmark_weight": 0.102
+                  },
+                  {
+                    "ticker": "300750.SZ",
+                    "benchmark_weight": 0.098
+                  }
+                ],
+                "expected_abort_reason": "missing_covariance_matrix_csv",
+                "forbidden_claim": [
+                  "output_passed",
+                  "benchmark_risk_output_ready",
+                  "covariance_model_id_ready"
+                ]
+              },
+              "portfolio_tracking_error": null,
+              "result_summary": {
+                "benchmark_mode": true,
+                "risk_mode": "degraded_risk_handling",
+                "within_limit": false
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "step": "apw_same_batch_success",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_adjusted_position_weight_validation\\generate_adjusted_position_weight_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_input_latest.json",
+        "--output-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_latest.json",
+      "output_exists": true,
+      "step_passed": true,
+      "expected_mode": "generation_executed_true_with_upstream_generation_consumed",
+      "status": "success",
+      "payload_summary": {
+        "run_id": "APW_REAL_INPUT_SMOKERUN_V1",
+        "producer": "generate_adjusted_position_weight_v1.py",
+        "scope": "adjusted_position_weight_generation",
+        "status": "success",
+        "evidence_mode": "hard",
+        "input_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_success_input_latest.json",
+        "generation_executed": true,
+        "observed_abort_reason": "",
+        "payload": {
+          "run_id": "APW_REAL_INPUT_SMOKERUN_V1",
+          "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+          "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+          "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+          "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json",
+          "final_size_scalar": 0.82,
+          "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+          "degrade_flags": [
+            "degraded_risk_handling",
+            "final_fusion_consumes_upstream_generation"
+          ],
+          "audit_note": "same_batch_consumes_pte_same_batch_success_output",
+          "forbidden_claim": [
+            "output_passed",
+            "final_output_ready",
+            "g5_ready"
+          ]
+        },
+        "generated_weights": [
+          {
+            "ticker": "000001.SZ",
+            "target_weight": 0.1,
+            "final_size_scalar": 0.82,
+            "adjusted_position_weight": 0.082
+          },
+          {
+            "ticker": "600519.SH",
+            "target_weight": 0.1,
+            "final_size_scalar": 0.82,
+            "adjusted_position_weight": 0.082
+          },
+          {
+            "ticker": "300750.SZ",
+            "target_weight": 0.093103,
+            "final_size_scalar": 0.82,
+            "adjusted_position_weight": 0.076344
+          }
+        ],
+        "result_summary": {
+          "weight_count": 3,
+          "gross_adjusted_weight": 0.240344,
+          "formula_traceable": true,
+          "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+          "portfolio_tracking_error": 0.00012553,
+          "target_weight_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+          "portfolio_tracking_error_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json"
+        },
+        "audit_fields": {
+          "success_sample_has_explicit_formula": true,
+          "failure_path_has_abort_reason_contract": true,
+          "degrade_flags_expanded": true,
+          "upstream_generation_consumed": true,
+          "forbidden_claim": "output_passed"
+        }
+      }
+    },
+    {
+      "step": "apw_same_batch_formula_failure",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_adjusted_position_weight_validation\\generate_adjusted_position_weight_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_formula_failure_input_latest.json",
+        "--output-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_formula_failure_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_formula_failure_latest.json",
+      "output_exists": true,
+      "step_passed": true,
+      "expected_mode": "generation_executed_false_with_formula_threshold_abort",
+      "status": "aborted",
+      "payload_summary": {
+        "run_id": "APW_REAL_INPUT_FORMULA_FAIL_V1",
+        "producer": "generate_adjusted_position_weight_v1.py",
+        "scope": "adjusted_position_weight_generation",
+        "status": "aborted",
+        "evidence_mode": "hard",
+        "input_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_same_batch_formula_failure_input_latest.json",
+        "generation_executed": false,
+        "observed_abort_reason": "final_size_scalar_below_abort_threshold",
+        "payload": {
+          "run_id": "APW_REAL_INPUT_FORMULA_FAIL_V1",
+          "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+          "portfolio_tracking_error_status": "pass_conditions_frozen__not_output_passed",
+          "target_weight_generation_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+          "portfolio_tracking_error_generation_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_same_batch_success_latest.json",
+          "final_size_scalar": 0.03,
+          "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+          "degrade_flags": [
+            "degraded_risk_handling",
+            "final_size_scalar_below_threshold"
+          ],
+          "audit_note": "same_batch_formula_failure_consumes_pte_same_batch_success_output",
+          "expected_abort_reason": "final_size_scalar_below_abort_threshold",
+          "forbidden_claim": [
+            "output_passed",
+            "final_output_ready",
+            "g5_ready"
+          ]
+        },
+        "generated_weights": []
+      }
+    }
+  ]
+}

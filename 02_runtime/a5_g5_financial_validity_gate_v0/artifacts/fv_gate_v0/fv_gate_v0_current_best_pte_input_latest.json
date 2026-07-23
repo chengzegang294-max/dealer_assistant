@@ -1,0 +1,48 @@
+{
+  "run_id": "PTE_FV_GATE_V0_ROUND2_TREND_PULLBACK_V1",
+  "benchmark_id": "CSI300_PROXY",
+  "benchmark_mode": true,
+  "risk_mode": "degraded_risk_handling",
+  "tracking_error_limit": 0.03,
+  "target_weight_status": "verified_with_degraded_risk__upstream_min_integration_verified__not_output_passed",
+  "covariance_model_id_status": "ready_judgement_conditional__downstream_still_locked",
+  "covariance_matrix_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv",
+  "degrade_flags": [
+    "covariance_still_conditional",
+    "matrix_consumed_under_degraded_mode"
+  ],
+  "audit_note": "fv_gate_round2_consumes_trend_pullback_target_weight",
+  "target_weight_entries": [
+    {
+      "ticker": "300750.SZ",
+      "target_weight": 0.1
+    },
+    {
+      "ticker": "600519.SH",
+      "target_weight": 0.1
+    },
+    {
+      "ticker": "000001.SZ",
+      "target_weight": 0.041979
+    }
+  ],
+  "benchmark_weight_entries": [
+    {
+      "ticker": "000001.SZ",
+      "benchmark_weight": 0.095
+    },
+    {
+      "ticker": "600519.SH",
+      "benchmark_weight": 0.102
+    },
+    {
+      "ticker": "300750.SZ",
+      "benchmark_weight": 0.098
+    }
+  ],
+  "forbidden_claim": [
+    "output_passed",
+    "benchmark_risk_output_ready",
+    "covariance_model_id_ready"
+  ]
+}

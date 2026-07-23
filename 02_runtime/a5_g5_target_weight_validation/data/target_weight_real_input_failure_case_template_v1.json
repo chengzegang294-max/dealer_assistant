@@ -1,0 +1,30 @@
+{
+  "run_id": "TW_REAL_INPUT_FAILURE_CASE_V1",
+  "producer": "run_target_weight_validation_v1.py",
+  "scope": "target_weight_real_input",
+  "status": "template",
+  "evidence_mode": "template",
+  "input_template_json": "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+  "failure_trigger": "missing_constraint_set",
+  "input_contract": {
+    "alpha_input_mode": "ranked_scores",
+    "alpha_source_type": "contract_frozen_proxy",
+    "constraint_set_id": "",
+    "risk_handling_mode": "degraded_risk_handling"
+  },
+  "alpha_vector": [
+    {
+      "ticker": "000001.SZ",
+      "alpha_score": 0.92,
+      "rank": 1
+    },
+    {
+      "ticker": "600519.SH",
+      "alpha_score": 0.88,
+      "rank": 2
+    }
+  ],
+  "generated_weights": [],
+  "observed_abort_reason": "missing_constraint_set",
+  "path_consistency_note": "real_input_failure_path_is_consistent"
+}

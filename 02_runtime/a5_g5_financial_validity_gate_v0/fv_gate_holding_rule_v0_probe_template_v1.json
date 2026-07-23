@@ -1,0 +1,17 @@
+{
+  "run_id": "A5_G5_FV_GATE_HOLDING_RULE_V0_PROBE",
+  "scope": "a5_g5_financial_validity_gate_holding_rule_v0",
+  "base_runtime_params_json": "02_runtime/a5_g5_financial_validity_gate_v0/fv_gate_v1_sample_boundary_runtime_params_template_v1.json",
+  "baseline_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json",
+  "scenario_tag_prefix": "fv_gate_holding_rule_v0",
+  "window_label": "v1_sample_boundary_window_15bps",
+  "holding_rule": {
+    "holding_rule_id": "fixed_period_rebalance_v0",
+    "rebalance_every_trade_days": 20
+  },
+  "output_paths": {
+    "scenario_params_dir": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_holding_rule_v0/params",
+    "summary_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_holding_rule_v0/fv_gate_holding_rule_v0_summary_latest.json",
+    "summary_tsv": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_holding_rule_v0/fv_gate_holding_rule_v0_summary_latest.tsv"
+  }
+}

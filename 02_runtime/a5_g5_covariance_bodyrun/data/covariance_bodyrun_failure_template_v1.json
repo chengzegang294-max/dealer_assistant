@@ -1,0 +1,24 @@
+{
+  "run_id": "covariance_bodyrun_failure_template_v1",
+  "candidate_family": "benchmark_relative_sample_covariance",
+  "portfolio_date": "2026-07-16",
+  "benchmark_id": "",
+  "asset_universe_id": "a5_top_liquid_20",
+  "returns_window_spec": {
+    "lookback_days": 60,
+    "frequency": "1d"
+  },
+  "tracking_error_limit": 0.06,
+  "active_risk_aversion": 3.0,
+  "matrix_summary": {
+    "matrix_shape": [
+      0,
+      0
+    ],
+    "diagonal_positive": false,
+    "is_psd": false
+  },
+  "covariance_model_id": null,
+  "abort_reason": "invalid_benchmark_context",
+  "audit_note": "failure_template_and_abort_reason_are_consistent"
+}

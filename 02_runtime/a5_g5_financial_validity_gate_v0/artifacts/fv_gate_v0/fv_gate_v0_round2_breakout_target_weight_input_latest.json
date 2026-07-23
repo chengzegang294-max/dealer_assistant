@@ -1,0 +1,51 @@
+{
+  "run_id": "TW_FV_GATE_V0_ROUND2_BREAKOUT_CONFIRMATION_V1",
+  "producer": "run_fv_gate_v0_round2_chain_v1.py",
+  "scope": "target_weight_real_input",
+  "status": "template",
+  "evidence_mode": "template",
+  "as_of_date": "20260630",
+  "input_contract": {
+    "alpha_input_mode": "ranked_scores",
+    "alpha_source_type": "contract_frozen_proxy",
+    "alpha_source_id": "breakout_close_volume_confirmation_v1",
+    "constraint_set_id": "TW_MIN_CONSTRAINT_SET_V1",
+    "risk_handling_mode": "degraded_risk_handling",
+    "benchmark_id": "CSI300_PROXY",
+    "universe_id": "ASHARE_TOP3_SAMPLE_V1"
+  },
+  "alpha_vector": [
+    {
+      "ticker": "000001.SZ",
+      "alpha_score": 0.01,
+      "rank": 1
+    },
+    {
+      "ticker": "600519.SH",
+      "alpha_score": 0.01,
+      "rank": 2
+    },
+    {
+      "ticker": "300750.SZ",
+      "alpha_score": 0.01,
+      "rank": 3
+    }
+  ],
+  "constraint_set": {
+    "weight_lower_bound": 0.0,
+    "weight_upper_bound": 0.1,
+    "long_only_flag": true,
+    "turnover_limit": 0.25
+  },
+  "expected_checks": {
+    "non_empty": true,
+    "within_bounds": true,
+    "weight_sum_traceable": true,
+    "abort_reason_empty": true
+  },
+  "forbidden_claim": [
+    "output_passed",
+    "formalized_risk_model_ready",
+    "implementation_ready"
+  ]
+}

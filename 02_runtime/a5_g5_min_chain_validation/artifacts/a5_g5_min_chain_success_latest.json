@@ -1,0 +1,98 @@
+{
+  "run_id": "A5_G5_MIN_CHAIN_SUCCESS",
+  "producer": "run_a5_g5_min_chain_v1.py",
+  "scope": "a5_g5_min_chain_validation",
+  "chain_case": "success",
+  "status": "success",
+  "chain_completed": true,
+  "final_step": "adjusted_position_weight",
+  "final_status": "success",
+  "observed_abort_reason": "",
+  "steps": [
+    {
+      "step": "target_weight_success",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\generate_target_weight_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+        "--output-json",
+        "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+      "output_exists": true,
+      "status": "success",
+      "generation_executed": true,
+      "observed_abort_reason": "",
+      "result_summary": {
+        "weight_count": 3,
+        "non_empty": true,
+        "within_bounds": true,
+        "weight_sum_traceable": true,
+        "gross_weight": 0.293103,
+        "allocation_method": "alpha_proportional_with_single_name_cap"
+      }
+    },
+    {
+      "step": "portfolio_tracking_error_success",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_portfolio_tracking_error_validation\\generate_portfolio_tracking_error_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_portfolio_tracking_error_validation/data/portfolio_tracking_error_real_input_template_v1.json",
+        "--output-json",
+        "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json",
+      "output_exists": true,
+      "status": "success",
+      "generation_executed": true,
+      "observed_abort_reason": "",
+      "result_summary": {
+        "benchmark_mode": true,
+        "risk_mode": "degraded_risk_handling",
+        "tracking_error_limit": 0.03,
+        "within_limit": true,
+        "calculation_method": "active_weight_covariance_quadratic_proxy",
+        "symbol_count": 3,
+        "overlap_symbol_count": 3,
+        "tracking_error_variance": 1.5758e-08,
+        "covariance_matrix_csv": "D:/Stock/trading_assistant/02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_bodyrun_fresh/covariance_matrix_latest.csv"
+      }
+    },
+    {
+      "step": "adjusted_position_weight_success",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_adjusted_position_weight_validation\\generate_adjusted_position_weight_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/data/adjusted_position_weight_real_input_template_v1.json",
+        "--output-json",
+        "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_actual_generation_success_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/apw_actual_generation_success_latest.json",
+      "output_exists": true,
+      "status": "success",
+      "generation_executed": true,
+      "observed_abort_reason": "",
+      "result_summary": {
+        "weight_count": 3,
+        "gross_adjusted_weight": 0.240344,
+        "formula_traceable": true,
+        "final_size_scalar_method": "min(kelly_size_scalar, vt_size_scalar, pq_position_max_size, 1.0)",
+        "portfolio_tracking_error": 0.00012553,
+        "target_weight_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+        "portfolio_tracking_error_generation_json": "D:/Stock/trading_assistant/02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_success_latest.json"
+      }
+    }
+  ]
+}

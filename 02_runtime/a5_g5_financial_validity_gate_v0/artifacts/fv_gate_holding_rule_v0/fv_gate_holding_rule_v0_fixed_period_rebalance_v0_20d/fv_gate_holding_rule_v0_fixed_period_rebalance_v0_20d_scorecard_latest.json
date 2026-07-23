@@ -1,0 +1,135 @@
+{
+  "run_id": "A5_G5_FV_GATE_HOLDING_RULE_V0_FIXED_PERIOD_REBALANCE_V0_20D",
+  "producer": "run_fv_gate_holding_rule_minimal_backtest_v1.py",
+  "scope": "a5_g5_financial_validity_gate_holding_rule_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "signal_combo": {
+    "signal_hypothesis_id": "trend_pullback_confirmation_v1",
+    "filter_layer_id": "none",
+    "weight_logic_id": "filtered_alpha_rank_to_target_weight_rank_decay_v2",
+    "signal_combo_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u4fe1\u53f7\u7ec4\u5408\u5361__20260719.md"
+  },
+  "evaluation": {
+    "evaluation_card_id": "holding_rule_v0_fixed_period_rebalance_v0_20d",
+    "evaluation_card_md": "00_entry/\u5168\u5e93\u8d44\u6599\u6574\u7406\u6536\u53e3__20260713/A5_FV_gate_v0_\u6700\u5c0f\u8bc4\u4ef7\u5361__20260719.md",
+    "baseline_scorecard_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_scorecard_latest.json"
+  },
+  "holding_rule": {
+    "holding_rule_id": "fixed_period_rebalance_v0",
+    "rebalance_every_trade_days": 20
+  },
+  "consumed_artifact_id": "APW_FV_GATE_V1_SAMPLE_BOUNDARY_TREND_PULLBACK_V1",
+  "window_start": "20251215",
+  "window_end": "20260331",
+  "benchmark_id": "CSI300",
+  "holdout_split_rule": {
+    "mode": "last_n_trade_days",
+    "holdout_trade_days": 15,
+    "in_sample_trade_days": 54
+  },
+  "cost_model": {
+    "model_id": "degraded_fixed_cost",
+    "one_way_cost_bps": 15.0
+  },
+  "gross_metrics": {
+    "trade_days": 69,
+    "positive_days": 30,
+    "avg_daily_return": 2.535e-05,
+    "volatility": 0.0012787,
+    "total_return": 0.00169453,
+    "max_drawdown": -0.00965788,
+    "benchmark_total_return": -0.02857627,
+    "active_total_return": 0.0302708
+  },
+  "net_metrics": {
+    "trade_days": 69,
+    "positive_days": 30,
+    "avg_daily_return": 2.248e-05,
+    "volatility": 0.00127804,
+    "total_return": 0.00149584,
+    "max_drawdown": -0.00966033,
+    "benchmark_total_return": -0.02857627,
+    "active_total_return": 0.03007211
+  },
+  "in_sample_metrics": {
+    "gross": {
+      "trade_days": 54,
+      "positive_days": 21,
+      "avg_daily_return": -5.325e-05,
+      "volatility": 0.00123391,
+      "total_return": -0.00291233,
+      "max_drawdown": -0.00965788,
+      "benchmark_total_return": 0.02047788,
+      "active_total_return": -0.0233902
+    },
+    "net": {
+      "trade_days": 54,
+      "positive_days": 21,
+      "avg_daily_return": -5.686e-05,
+      "volatility": 0.00123274,
+      "total_return": -0.00310687,
+      "max_drawdown": -0.00966033,
+      "benchmark_total_return": 0.02047788,
+      "active_total_return": -0.02358474
+    }
+  },
+  "holdout_metrics": {
+    "gross": {
+      "trade_days": 15,
+      "positive_days": 9,
+      "avg_daily_return": 0.00030833,
+      "volatility": 0.00139211,
+      "total_return": 0.00462031,
+      "max_drawdown": -0.00545405,
+      "benchmark_total_return": -0.04806978,
+      "active_total_return": 0.05269009
+    },
+    "net": {
+      "trade_days": 15,
+      "positive_days": 9,
+      "avg_daily_return": 0.00030811,
+      "volatility": 0.00139232,
+      "total_return": 0.00461705,
+      "max_drawdown": -0.00545727,
+      "benchmark_total_return": -0.04806978,
+      "active_total_return": 0.05268683
+    }
+  },
+  "turnover": {
+    "entry_turnover": 0.125747,
+    "rebalance_turnover_total": 0.00655254,
+    "rebalance_event_count": 3,
+    "rebalance_trade_dates": [
+      "20260113",
+      "20260210",
+      "20260318"
+    ],
+    "exit_turnover": 0.0,
+    "total_turnover": 0.13229954,
+    "turnover_assumption": "fixed_period_rebalance_v0_minimal_backtest"
+  },
+  "run_status": "success",
+  "abort_reason": "",
+  "gate_result": "FV_gate_v0_evidence_produced",
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "runtime_params_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_holding_rule_v0/params/fv_gate_holding_rule_v0_fixed_period_rebalance_v0_20d_params_latest.json",
+    "same_batch_apw_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_apw_generation_latest.json",
+    "apw_success_json": "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_v1_sample_boundary/fv_gate_v1_sample_boundary_apw_generation_latest.json",
+    "asset_ohlcv_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/raw_daily/t02_daily_tushare_batch__sample20_adjacent60__20251215_20260331.csv",
+    "benchmark_series_csv": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/benchmark/covariance_benchmark_series__000300_SH__20251215_20260331.csv",
+    "covariance_fresh_json": "02_runtime/a5_g5_covariance_bodyrun/artifacts/covariance_adjacent_window/fresh/covariance_bodyrun_fresh_adjacent_latest.json"
+  }
+}

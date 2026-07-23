@@ -1,0 +1,72 @@
+{
+  "run_id": "A5_G5_FV_GATE_COST_SENSITIVITY_V0_BAND",
+  "producer": "run_fv_gate_cost_sensitivity_v0_band_v1.py",
+  "scope": "a5_g5_financial_validity_gate_cost_sensitivity_v0",
+  "status": "success",
+  "evidence_mode": "hard",
+  "selected_window_label": "v1_sample_boundary_window",
+  "base_runtime_params_json": "02_runtime/a5_g5_financial_validity_gate_v0/fv_gate_v1_sample_boundary_runtime_params_template_v1.json",
+  "cost_bps_band": [
+    5.0,
+    15.0,
+    25.0
+  ],
+  "scenario_count": 3,
+  "band_label": "cost_band_stable__still_need_evidence",
+  "scenarios": [
+    {
+      "scenario_id": "fv_gate_cost_sensitivity_v0_5bps",
+      "cost_bps": 5.0,
+      "net_total_return": 0.0020996,
+      "holdout_net_total_return": 0.00485478,
+      "net_active_total_return": 0.03067587,
+      "net_max_drawdown": -0.00983588
+    },
+    {
+      "scenario_id": "fv_gate_cost_sensitivity_v0_15bps",
+      "cost_bps": 15.0,
+      "net_total_return": 0.00197364,
+      "holdout_net_total_return": 0.00485478,
+      "net_active_total_return": 0.03054991,
+      "net_max_drawdown": -0.00983588
+    },
+    {
+      "scenario_id": "fv_gate_cost_sensitivity_v0_25bps",
+      "cost_bps": 25.0,
+      "net_total_return": 0.00184768,
+      "holdout_net_total_return": 0.00485478,
+      "net_active_total_return": 0.03042395,
+      "net_max_drawdown": -0.00983588
+    }
+  ],
+  "band_summary": {
+    "min_net_total_return": 0.00184768,
+    "max_net_total_return": 0.0020996,
+    "min_holdout_net_total_return": 0.00485478,
+    "max_holdout_net_total_return": 0.00485478,
+    "min_net_active_total_return": 0.03042395,
+    "max_net_active_total_return": 0.03067587,
+    "worst_net_max_drawdown": -0.00983588,
+    "best_net_max_drawdown": -0.00983588
+  },
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ],
+  "input_trace": {
+    "band_template_json": "02_runtime/a5_g5_financial_validity_gate_v0/fv_gate_cost_sensitivity_v0_band_template_v1.json",
+    "scenario_scorecard_paths": [
+      "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_cost_sensitivity_v0/fv_gate_cost_sensitivity_v0_5bps/fv_gate_cost_sensitivity_v0_5bps_scorecard_latest.json",
+      "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_cost_sensitivity_v0/fv_gate_cost_sensitivity_v0_15bps/fv_gate_cost_sensitivity_v0_15bps_scorecard_latest.json",
+      "02_runtime/a5_g5_financial_validity_gate_v0/artifacts/fv_gate_cost_sensitivity_v0/fv_gate_cost_sensitivity_v0_25bps/fv_gate_cost_sensitivity_v0_25bps_scorecard_latest.json"
+    ]
+  }
+}

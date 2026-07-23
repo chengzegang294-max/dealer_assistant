@@ -1,0 +1,64 @@
+{
+  "run_id": "A5_G5_MIN_CHAIN_FAILURE",
+  "producer": "run_a5_g5_min_chain_v1.py",
+  "scope": "a5_g5_min_chain_validation",
+  "chain_case": "failure",
+  "status": "partial",
+  "chain_completed": false,
+  "final_step": "portfolio_tracking_error",
+  "final_status": "aborted",
+  "observed_abort_reason": "missing_covariance_matrix_csv",
+  "steps": [
+    {
+      "step": "target_weight_success",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_target_weight_validation\\generate_target_weight_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_target_weight_validation/data/target_weight_real_input_template_v1.json",
+        "--output-json",
+        "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/tw_actual_generation_success_latest.json",
+      "output_exists": true,
+      "status": "success",
+      "generation_executed": true,
+      "observed_abort_reason": "",
+      "result_summary": {
+        "weight_count": 3,
+        "non_empty": true,
+        "within_bounds": true,
+        "weight_sum_traceable": true,
+        "gross_weight": 0.293103,
+        "allocation_method": "alpha_proportional_with_single_name_cap"
+      }
+    },
+    {
+      "step": "portfolio_tracking_error_failure",
+      "command": [
+        "D:\\Work\\Python312\\python.exe",
+        "D:\\Stock\\trading_assistant\\02_runtime\\a5_g5_portfolio_tracking_error_validation\\generate_portfolio_tracking_error_v1.py",
+        "--input-json",
+        "02_runtime/a5_g5_portfolio_tracking_error_validation/data/portfolio_tracking_error_real_input_failure_template_v1.json",
+        "--output-json",
+        "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_failure_latest.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "output_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/pte_actual_generation_failure_latest.json",
+      "output_exists": true,
+      "status": "aborted",
+      "generation_executed": false,
+      "observed_abort_reason": "missing_covariance_matrix_csv",
+      "result_summary": {
+        "benchmark_mode": true,
+        "risk_mode": "degraded_risk_handling",
+        "within_limit": false
+      }
+    }
+  ]
+}

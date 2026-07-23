@@ -1,0 +1,49 @@
+{
+  "run_id": "A5_G5_SAME_BATCH_BOUNDARY_AUDIT_V1",
+  "producer": "run_g5_same_batch_boundary_audit_v1.py",
+  "scope": "a5_g5_same_batch_boundary_audit",
+  "status": "success",
+  "evidence_mode": "hard",
+  "covariance_downstream_lock_reason": "downstream_single_segment_not_output_passed_boundary_not_formally_released",
+  "all_segment_boundaries_runtime_backed": true,
+  "covariance_lock_reason_now_has_runtime_backing": true,
+  "target_weight_boundary": {
+    "boundary_name": "explicit_validation_run_plus_failure_path_consistency",
+    "same_batch_chain_passed": true,
+    "real_input_success_passed": true,
+    "real_input_failure_reason": "missing_constraint_set",
+    "actual_generation_success_executed": true,
+    "actual_generation_failure_reason": "missing_constraint_set",
+    "failure_reason_alignment_passed": true,
+    "runtime_backed": true
+  },
+  "portfolio_tracking_error_boundary": {
+    "boundary_name": "explicit_success_risk_output_plus_failure_abort_reason_consistency",
+    "same_batch_chain_passed": true,
+    "success_generation_executed": true,
+    "success_has_explicit_risk_output": true,
+    "success_consumes_covariance_matrix": true,
+    "failure_abort_reason": "missing_covariance_matrix_csv",
+    "runtime_backed": true
+  },
+  "adjusted_position_weight_boundary": {
+    "boundary_name": "explicit_adjusted_position_weight_formula_plus_failure_abort_reason_and_degrade_flags_consistency",
+    "same_batch_chain_passed": true,
+    "success_generation_executed": true,
+    "success_formula_traceable": true,
+    "success_consumes_same_batch_pte": true,
+    "failure_abort_reason": "final_size_scalar_below_abort_threshold",
+    "failure_degrade_flag_present": true,
+    "runtime_backed": true
+  },
+  "artifact_sources": {
+    "target_weight_same_batch_json": "02_runtime/a5_g5_target_weight_validation/artifacts/target_weight_validation/covariance_target_weight_same_batch_latest.json",
+    "portfolio_tracking_error_same_batch_json": "02_runtime/a5_g5_portfolio_tracking_error_validation/artifacts/portfolio_tracking_error_validation/covariance_target_weight_pte_same_batch_latest.json",
+    "adjusted_position_weight_same_batch_json": "02_runtime/a5_g5_adjusted_position_weight_validation/artifacts/adjusted_position_weight_validation/covariance_target_weight_pte_apw_same_batch_latest.json"
+  },
+  "forbidden_claim": [
+    "output_passed",
+    "implementation_ready",
+    "covariance_model_id_ready"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "run_id": "covariance_bodyrun_input_success_template_v1",
+  "candidate_model_family": "benchmark_relative_sample_covariance",
+  "candidate_priority": 1,
+  "portfolio_date": "2026-07-16",
+  "benchmark_id": "CSI300",
+  "asset_universe_id": "a5_top_liquid_20",
+  "returns_window_spec": {
+    "lookback_days": 60,
+    "frequency": "1d"
+  },
+  "tracking_error_limit": 0.06,
+  "active_risk_aversion": 3.0,
+  "notes": "template_level_input_assembly_only"
+}

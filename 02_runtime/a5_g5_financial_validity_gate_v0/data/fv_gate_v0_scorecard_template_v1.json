@@ -1,0 +1,40 @@
+{
+  "run_id": "",
+  "producer": "run_fv_gate_v0_minimal_backtest_v1.py",
+  "scope": "a5_g5_financial_validity_gate_v0",
+  "status": "success_or_contract_abort",
+  "evidence_mode": "hard",
+  "consumed_artifact_id": "",
+  "window_start": "",
+  "window_end": "",
+  "benchmark_id": "",
+  "holdout_split_rule": {
+    "mode": "last_n_trade_days",
+    "holdout_trade_days": 0,
+    "in_sample_trade_days": 0
+  },
+  "cost_model": {
+    "model_id": "degraded_fixed_cost",
+    "one_way_cost_bps": 0.0
+  },
+  "gross_metrics": {},
+  "net_metrics": {},
+  "in_sample_metrics": {},
+  "holdout_metrics": {},
+  "turnover": {},
+  "run_status": "success_or_contract_abort",
+  "abort_reason": "",
+  "gate_result": "FV_gate_v0_evidence_produced_or_FV_gate_v0_not_passed",
+  "forbidden_claim_check": {
+    "financial_valid_claimed": false,
+    "output_passed_claimed": false,
+    "ready_to_deploy_claimed": false
+  },
+  "need_evidence_items": [
+    "financial-valid",
+    "output_passed",
+    "strict_out_of_time_generalization",
+    "full_impact_model",
+    "robustness_suite"
+  ]
+}
