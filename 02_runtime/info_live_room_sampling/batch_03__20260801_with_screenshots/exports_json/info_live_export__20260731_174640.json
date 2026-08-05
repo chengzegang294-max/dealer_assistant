@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:46:40.950Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-27",
+  "room_anchor": "混江龙",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/27",
+  "display_time": "10:15:40",
+  "topic_anchor": "藏龙岛:早盘资金回流.科技比较强.同时我觉得今天应该是没啥太大风险的.其他的票暂时也没看到特别好的.就挑了一个成交比较大的.当时北方华创成交应该是最大的.打点底",
+  "excerpt": "藏龙岛:早盘资金回流.科技比较强.同时我觉得今天应该是没啥太大风险的.其他的票暂时也没看到特别好的.就挑了一个成交比较大的.当时北方华创成交应该是最大的.打点底仓再说了。 ---------------------------",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 19007,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "藏龙岛:早盘资金回流.科技比较强.同时我觉得今天应该是没啥太大风险的.其他的票暂时也没看到特别好的.就挑了一个成交比较大的.当时北方华创成交应该是最大的.打点底仓再说了。 ---------------------------",
+    "room_anchor_candidate": "混江龙",
+    "topic_anchor_candidate": "藏龙岛:早盘资金回流.科技比较强.同时我觉得今天应该是没啥太大风险的.其他的票暂时也没看到特别好的.就挑了一个成交比较大的.当时北方华创成交应该是最大的.打点底"
+  }
+}

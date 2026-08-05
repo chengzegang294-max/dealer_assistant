@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:39:24.915Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-29",
+  "room_anchor": "梅森",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/29",
+  "display_time": "13:38:54",
+  "topic_anchor": "哈哈 可以了！20260729 12:10:36认知纠察队:昨天梅大提示后，紫光立马见好就收，瑞芯微也是今天等一个反弹走了。在这种震荡行情还能在市场里偷鸡摸狗赚",
+  "excerpt": "哈哈 可以了！20260729 12:10:36认知纠察队:昨天梅大提示后，紫光立马见好就收，瑞芯微也是今天等一个反弹走了。在这种震荡行情还能在市场里偷鸡摸狗赚点小钱，非常感谢了 讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 11170,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "哈哈 可以了！20260729 12:10:36认知纠察队:昨天梅大提示后，紫光立马见好就收，瑞芯微也是今天等一个反弹走了。在这种震荡行情还能在市场里偷鸡摸狗赚点小钱，非常感谢了 讲师",
+    "room_anchor_candidate": "梅森",
+    "topic_anchor_candidate": "哈哈 可以了！20260729 12:10:36认知纠察队:昨天梅大提示后，紫光立马见好就收，瑞芯微也是今天等一个反弹走了。在这种震荡行情还能在市场里偷鸡摸狗赚"
+  }
+}

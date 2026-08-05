@@ -1,0 +1,309 @@
+{
+  "probe_version": "live_info_message_card_probe_v1",
+  "exported_at": "2026-08-01T12:51:42.622Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "viewport": {
+    "width": 1542,
+    "height": 1274
+  },
+  "content_root_path": "uni-page-body > uni-view.back > uni-view.flex.align-center > uni-view.bg-white.radius > uni-view.flex > uni-view",
+  "content_root_rect": {
+    "top": 35,
+    "left": 516,
+    "width": 925,
+    "height": 1204
+  },
+  "visible_leaf_count": 57,
+  "visible_time_anchor_count": 16,
+  "time_anchors": [
+    {
+      "time_text": "讲师 2026/07/27 14:48:25",
+      "time_path": "uni-view#z-paging-136856783 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-136856783 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      },
+      "card_preview": "讲师 2026/07/27 14:48:25 盘面已经走成创业板的结构性高潮了。 五洲把接力高度顶住，米奥、陇神、日科把近期辨识度重新带回来，低位这边又连续补了矩阵、国际复材、亚康这些，涨停从8只扩到12只。 今天资金做的已经不只是某一条路径，而是在交易创业板整体的高弹性赚钱效应。 但这个高潮目前主要发生在创业板，北交还没回来，科创也只是刚开始补位。 所以前面的试错和确认有依据，现在我的策略是守住强仓，不再往后排继续铺。"
+    },
+    {
+      "time_text": "2026/07/27 14:48:25",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 104,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-136856783 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      },
+      "card_preview": "讲师 2026/07/27 14:48:25 盘面已经走成创业板的结构性高潮了。 五洲把接力高度顶住，米奥、陇神、日科把近期辨识度重新带回来，低位这边又连续补了矩阵、国际复材、亚康这些，涨停从8只扩到12只。 今天资金做的已经不只是某一条路径，而是在交易创业板整体的高弹性赚钱效应。 但这个高潮目前主要发生在创业板，北交还没回来，科创也只是刚开始补位。 所以前面的试错和确认有依据，现在我的策略是守住强仓，不再往后排继续铺。"
+    },
+    {
+      "time_text": "讲师 2026/07/27 14:50:25",
+      "time_path": "uni-view#z-paging-136860240 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 291,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-136860240 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 291,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      },
+      "card_preview": "讲师 2026/07/27 14:50:25 益坤下午已经撤兵完成！因为审核两次都没发出来！这里口头说一声！超卓的试错目前继续成立！早上买的是周五科创涨停后的分歧承接！后面纬德信息封住31cm！超卓自己也维持在6个点附近！说明科创这边虽然宽度不大！但它的承接还在！目前兵力再2.5！后面不加仓！也不再开第三只！接下来只看收盘！超卓能不能守住分时均线！纬德能不能继续封住！尾盘有没有明显兑现！今日盘面从早上的4只！到午间8只！再到下午12只！机会是一步步确认出来的！但确认越往后！位置也越差！前面有仓位就拿好！后面再冲起来的普通票！先不追！"
+    },
+    {
+      "time_text": "2026/07/27 14:50:25",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 310,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-136860240 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 291,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      },
+      "card_preview": "讲师 2026/07/27 14:50:25 益坤下午已经撤兵完成！因为审核两次都没发出来！这里口头说一声！超卓的试错目前继续成立！早上买的是周五科创涨停后的分歧承接！后面纬德信息封住31cm！超卓自己也维持在6个点附近！说明科创这边虽然宽度不大！但它的承接还在！目前兵力再2.5！后面不加仓！也不再开第三只！接下来只看收盘！超卓能不能守住分时均线！纬德能不能继续封住！尾盘有没有明显兑现！今日盘面从早上的4只！到午间8只！再到下午12只！机会是一步步确认出来的！但确认越往后！位置也越差！前面有仓位就拿好！后面再冲起来的普通票！先不追！"
+    },
+    {
+      "time_text": "讲师 2026/07/27 14:50:27",
+      "time_path": "uni-view#z-paging-136860297 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 476,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-136860297 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 476,
+        "left": 576,
+        "width": 845,
+        "height": 248
+      },
+      "card_preview": "讲师 2026/07/27 14:50:27 益坤下午已经撤兵完成，因为审核两次都没发出来，这里口头说一声。 超卓的试错目前继续成立。 早上买的是周五科创涨停后的分歧承接，后面纬德信息封住20cm，超卓自己也维持在6个点附近，说明科创这边虽然宽度不大，但它的承接还在。 现在兵力再2.5，后面不加仓，也不再开第三只。 接下来只看收盘，超卓能不能守住分时均线，纬德能不能继续封住，尾盘有没有明显兑现。 今天盘面从早上的4只，到午间8只，再到下午12只，机会是一步步确认出来的。 但确认越往后，位置也越差。前面有仓位就拿好，后面再冲起来的普通票，先不追。"
+    },
+    {
+      "time_text": "2026/07/27 14:50:27",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 495,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-136860297 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 476,
+        "left": 576,
+        "width": 845,
+        "height": 248
+      },
+      "card_preview": "讲师 2026/07/27 14:50:27 益坤下午已经撤兵完成，因为审核两次都没发出来，这里口头说一声。 超卓的试错目前继续成立。 早上买的是周五科创涨停后的分歧承接，后面纬德信息封住20cm，超卓自己也维持在6个点附近，说明科创这边虽然宽度不大，但它的承接还在。 现在兵力再2.5，后面不加仓，也不再开第三只。 接下来只看收盘，超卓能不能守住分时均线，纬德能不能继续封住，尾盘有没有明显兑现。 今天盘面从早上的4只，到午间8只，再到下午12只，机会是一步步确认出来的。 但确认越往后，位置也越差。前面有仓位就拿好，后面再冲起来的普通票，先不追。"
+    },
+    {
+      "time_text": "讲师 2026/07/28 09:49:36",
+      "time_path": "uni-view#z-paging-137069594 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 724,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137069594 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 724,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "讲师 2026/07/28 09:49:36 自己感受 肉能锁定吃在嘴里，任何颠簸伤不到你的应对"
+    },
+    {
+      "time_text": "2026/07/28 09:49:36",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 743,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137069594 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 724,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "讲师 2026/07/28 09:49:36 自己感受 肉能锁定吃在嘴里，任何颠簸伤不到你的应对"
+    },
+    {
+      "time_text": "讲师 2026/07/28 10:03:48",
+      "time_path": "uni-view#z-paging-137091479 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 846,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137091479 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 846,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "card_preview": "讲师 2026/07/28 10:03:48 我今天的任务就是把昨天接近6%的果实安全的带出来，目前是完成的"
+    },
+    {
+      "time_text": "2026/07/28 10:03:48",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 865,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137091479 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 846,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "card_preview": "讲师 2026/07/28 10:03:48 我今天的任务就是把昨天接近6%的果实安全的带出来，目前是完成的"
+    },
+    {
+      "time_text": "讲师 2026/07/28 10:09:56",
+      "time_path": "uni-view#z-paging-137100630 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 947,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137100630 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 947,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "讲师 2026/07/28 10:09:56 黄色先手处理 白色新开发酵"
+    },
+    {
+      "time_text": "2026/07/28 10:09:56",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 966,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137100630 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 947,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "讲师 2026/07/28 10:09:56 黄色先手处理 白色新开发酵"
+    },
+    {
+      "time_text": "讲师 2026/07/28 10:28:34",
+      "time_path": "uni-view#z-paging-137126626 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 1069,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137126626 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1069,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "card_preview": "讲师 2026/07/28 10:28:34 去弱，留强，换强"
+    },
+    {
+      "time_text": "2026/07/28 10:28:34",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 1088,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137126626 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1069,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "card_preview": "讲师 2026/07/28 10:28:34 去弱，留强，换强"
+    },
+    {
+      "time_text": "讲师 2026/07/28 11:01:23",
+      "time_path": "uni-view#z-paging-137167615 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center",
+      "time_rect": {
+        "top": 1170,
+        "left": 576,
+        "width": 845,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137167615 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1170,
+        "left": 576,
+        "width": 845,
+        "height": 311
+      },
+      "card_preview": "讲师 2026/07/28 11:01:23 昨天12只涨停完成修复确认，我昨晚留下的核心命题是：今天这些资金还能不能继续赚钱。 早盘走出来一半： 爱朋继续涨停，陇神超过10%，五洲、米奥保持强承接，昨天12只里还有8只红盘。 涨停数量虽然收缩到6只，但修复资金没有被集体兑现。 因此，我会把今天定位为修复后的第一次筛选，市场正在把前排和普通后排重新分开。 那么接下来跟踪的就是：前排赚到的钱，会不会继续往新的低位扩散。 如果爱朋、陇神、五洲继续强，今天的涨停数量又往8只以上增加，说明前排赚钱已经开始带动第二轮进攻，接下来机会会从少数核心往新的低位种子扩散。 如果前排继续强，新启动却始终增加不了，"
+    },
+    {
+      "time_text": "2026/07/28 11:01:23",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 1189,
+        "left": 616,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137167615 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1170,
+        "left": 576,
+        "width": 845,
+        "height": 311
+      },
+      "card_preview": "讲师 2026/07/28 11:01:23 昨天12只涨停完成修复确认，我昨晚留下的核心命题是：今天这些资金还能不能继续赚钱。 早盘走出来一半： 爱朋继续涨停，陇神超过10%，五洲、米奥保持强承接，昨天12只里还有8只红盘。 涨停数量虽然收缩到6只，但修复资金没有被集体兑现。 因此，我会把今天定位为修复后的第一次筛选，市场正在把前排和普通后排重新分开。 那么接下来跟踪的就是：前排赚到的钱，会不会继续往新的低位扩散。 如果爱朋、陇神、五洲继续强，今天的涨停数量又往8只以上增加，说明前排赚钱已经开始带动第二轮进攻，接下来机会会从少数核心往新的低位种子扩散。 如果前排继续强，新启动却始终增加不了，"
+    }
+  ]
+}

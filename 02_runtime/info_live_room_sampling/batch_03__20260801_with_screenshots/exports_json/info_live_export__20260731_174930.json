@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:49:30.388Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-09",
+  "room_anchor": "新生代",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/09",
+  "display_time": "10:53:56",
+  "topic_anchor": "其实可以这么理解 2万多亿的成交.基本没啥活人交易.那就是量化自己看图为主了.所以国产区能反复活跃。 半导体越拉.市场越冰.说明还是得靠海外链反弹才行。 大反弹",
+  "excerpt": "其实可以这么理解 2万多亿的成交.基本没啥活人交易.那就是量化自己看图为主了.所以国产区能反复活跃。 半导体越拉.市场越冰.说明还是得靠海外链反弹才行。 大反弹的前提是大量活人进场做多。 讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 9779,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "其实可以这么理解 2万多亿的成交.基本没啥活人交易.那就是量化自己看图为主了.所以国产区能反复活跃。 半导体越拉.市场越冰.说明还是得靠海外链反弹才行。 大反弹的前提是大量活人进场做多。 讲师",
+    "room_anchor_candidate": "新生代",
+    "topic_anchor_candidate": "其实可以这么理解 2万多亿的成交.基本没啥活人交易.那就是量化自己看图为主了.所以国产区能反复活跃。 半导体越拉.市场越冰.说明还是得靠海外链反弹才行。 大反弹"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:13:41.079Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-28",
+  "room_anchor": "混江龙",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/28",
+  "display_time": "10:52:30",
+  "topic_anchor": "藏龙岛:没赚也没亏.先看看再说.控制好仓位哈 ---------------------------",
+  "excerpt": "藏龙岛:没赚也没亏.先看看再说.控制好仓位哈 ---------------------------",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 13870,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "藏龙岛:没赚也没亏.先看看再说.控制好仓位哈 ---------------------------",
+    "room_anchor_candidate": "混江龙",
+    "topic_anchor_candidate": "藏龙岛:没赚也没亏.先看看再说.控制好仓位哈 ---------------------------"
+  }
+}

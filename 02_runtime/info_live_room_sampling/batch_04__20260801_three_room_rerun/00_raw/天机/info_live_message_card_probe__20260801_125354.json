@@ -1,0 +1,201 @@
+{
+  "probe_version": "live_info_message_card_probe_v1",
+  "exported_at": "2026-08-01T12:53:54.971Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "viewport": {
+    "width": 1542,
+    "height": 1274
+  },
+  "content_root_path": "uni-page-body > uni-view.back > uni-view.flex.align-center > uni-view.bg-white.radius > uni-view.flex > uni-view",
+  "content_root_rect": {
+    "top": 35,
+    "left": 516,
+    "width": 925,
+    "height": 1204
+  },
+  "visible_leaf_count": 66,
+  "visible_time_anchor_count": 10,
+  "time_anchors": [
+    {
+      "time_text": "2026/07/29 09:58:20",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 104,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137548732 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 09:58:20 李聪 2026-07-29 09:58:14 旭-创加一点吧."
+    },
+    {
+      "time_text": "2026/07/29 10:06:26",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 226,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137564268 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 207,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 10:06:26 李聪 2026-07-29 10:06:19 没法玩.易、中、天又新低。"
+    },
+    {
+      "time_text": "2026/07/29 10:10:05",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 348,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137572156 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 329,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 10:10:05 李聪 2026-07-29 10:09:58 现在就等韩国什么时候被打服.收编了。市场才能稳。"
+    },
+    {
+      "time_text": "2026/07/29 10:12:02",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 470,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137576341 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 451,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 10:12:02 李聪 2026-07-29 10:11:54 我给你们做了很多心理按摩.大局观 防止失联QQ群859780254"
+    },
+    {
+      "time_text": "2026/07/29 10:41:22",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 613,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137627086 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 594,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 10:41:22 李聪 2026-07-29 10:41:17 指数最低3782.很可能是第二只脚#AAA有心护的话.再加上外围不再出幺蛾子）"
+    },
+    {
+      "time_text": "2026/07/29 10:52:00",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 735,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137641995 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 716,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 10:52:00 李聪 2026-07-29 10:51:52 不想看那么多的.就先做好易、中、天.天天T.等外围企稳反弹就解套了 防止失联QQ群859780254"
+    },
+    {
+      "time_text": "2026/07/29 13:15:00",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 878,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137752295 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 859,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 13:15:00 李聪 2026-07-29 13:14:54 易、中.如果日内新高.就尽量在5、6点.相当于昨天阴线的1~3做T。自己看着哈"
+    },
+    {
+      "time_text": "2026/07/29 13:33:16",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 1000,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137772160 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 981,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 13:33:16 李聪 2026-07-29 13:33:08 不听招呼昨天满仓了的.就很被动。昨天确实没想到易、中会创历史跌幅.不然是先割再买"
+    },
+    {
+      "time_text": "2026/07/29 13:44:01",
+      "time_path": "uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view > uni-text > span",
+      "time_rect": {
+        "top": 1122,
+        "left": 841,
+        "width": 163,
+        "height": 22
+      },
+      "card_path": "uni-view#z-paging-137786329 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1103,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 13:44:01 李聪 2026-07-29 13:43:56 子弹满的.5、6个点减半"
+    },
+    {
+      "time_text": "2026/07/29 13:44:38",
+      "time_path": "uni-view#z-paging-137786979 > uni-view.flex > uni-view.cu-card > uni-view.flex.align-center > uni-view",
+      "time_rect": {
+        "top": 1225,
+        "left": 841,
+        "width": 163,
+        "height": 60
+      },
+      "card_path": "uni-view#z-paging-137786979 > uni-view.flex > uni-view.cu-card",
+      "card_rect": {
+        "top": 1225,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "card_preview": "更多资讯加微信好友aa1240458509 2026/07/29 13:44:38 李聪 2026-07-29 13:44:33 易、中.5、6个点减半。"
+    }
+  ]
+}

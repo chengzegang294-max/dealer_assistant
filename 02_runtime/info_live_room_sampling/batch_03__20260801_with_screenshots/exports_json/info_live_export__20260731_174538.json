@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:45:38.716Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-01",
+  "room_anchor": "七龙珠",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/01",
+  "display_time": "09:31:59",
+  "topic_anchor": "朱平",
+  "excerpt": "朱平",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 8180,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "朱平",
+    "room_anchor_candidate": "七龙珠",
+    "topic_anchor_candidate": "朱平"
+  }
+}

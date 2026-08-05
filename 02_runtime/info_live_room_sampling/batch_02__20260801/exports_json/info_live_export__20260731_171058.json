@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:10:58.895Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-30",
+  "room_anchor": "梅森",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/30",
+  "display_time": "12:00:05",
+  "topic_anchor": "7月盈利超厉害了，稳住20260730 11:26:46守纪律25.12:我也空仓中，身在梅家圈实在太幸运了，7月份做了几天锐捷，保住了利润，实现了总体仓位盈利",
+  "excerpt": "7月盈利超厉害了，稳住20260730 11:26:46守纪律25.12:我也空仓中，身在梅家圈实在太幸运了，7月份做了几天锐捷，保住了利润，实现了总体仓位盈利10% 讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 7430,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "7月盈利超厉害了，稳住20260730 11:26:46守纪律25.12:我也空仓中，身在梅家圈实在太幸运了，7月份做了几天锐捷，保住了利润，实现了总体仓位盈利10% 讲师",
+    "room_anchor_candidate": "梅森",
+    "topic_anchor_candidate": "7月盈利超厉害了，稳住20260730 11:26:46守纪律25.12:我也空仓中，身在梅家圈实在太幸运了，7月份做了几天锐捷，保住了利润，实现了总体仓位盈利"
+  }
+}

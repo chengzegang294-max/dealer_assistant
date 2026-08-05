@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:12:01.872Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-31",
+  "room_anchor": "讲师",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/31",
+  "display_time": "13:23:05",
+  "topic_anchor": "因为大成交大多还都在AI硬件方向，所以现在还是AI硬件和指数深度绑定，如果看指数反弹，AI硬件这个超跌反弹是避免不了的方向 讲师",
+  "excerpt": "因为大成交大多还都在AI硬件方向，所以现在还是AI硬件和指数深度绑定，如果看指数反弹，AI硬件这个超跌反弹是避免不了的方向 讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 4736,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "因为大成交大多还都在AI硬件方向，所以现在还是AI硬件和指数深度绑定，如果看指数反弹，AI硬件这个超跌反弹是避免不了的方向 讲师",
+    "room_anchor_candidate": "讲师",
+    "topic_anchor_candidate": "因为大成交大多还都在AI硬件方向，所以现在还是AI硬件和指数深度绑定，如果看指数反弹，AI硬件这个超跌反弹是避免不了的方向 讲师"
+  }
+}

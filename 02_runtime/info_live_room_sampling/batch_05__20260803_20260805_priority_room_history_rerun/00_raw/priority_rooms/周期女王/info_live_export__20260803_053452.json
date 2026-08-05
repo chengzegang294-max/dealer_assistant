@@ -1,0 +1,166 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-08-03T05:34:52.716Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-31",
+  "room_anchor": "周期女王（新一期，重新搞的）",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/31",
+  "display_time": "09:55:33",
+  "topic_anchor": "案例分享，北交的先手捷众，剩下一半的兵力，可以撤兵了。",
+  "excerpt": "案例分享，北交的先手捷众，剩下一半的兵力，可以撤兵了。",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:55:33",
+      "text": "案例分享，北交的先手捷众，剩下一半的兵力，可以撤兵了。",
+      "card_rect": {
+        "top": 82,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:59:40",
+      "text": "都是王的男人 新欢旧爱大团圆",
+      "card_rect": {
+        "top": 204,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:03:51",
+      "text": "案例分享，欢乐家也找撤兵，后面再换强一个。",
+      "card_rect": {
+        "top": 326,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:12:09",
+      "text": "案例分享，科蓝也撤兵了，昨天的先手今天都处理完了。",
+      "card_rect": {
+        "top": 427,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "11:04:23",
+      "text": "取意忘形： 这里就是我经常挂在嘴边讲的我们要捕捉的主升浪形态 连板，反包，趋势、一网打尽。",
+      "card_rect": {
+        "top": 528,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "14:41:48",
+      "text": "买入工商银行(601398),成交价7.96元,仓位从0%调到9.99%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决策,独立承担投资风险) 阿轩组合",
+      "card_rect": {
+        "top": 671,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "10:19:06",
+      "text": "各位早！目前先手依旧持有！没有开新！等市场磨合一下！",
+      "card_rect": {
+        "top": 814,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "10:19:07",
+      "text": "各位早，目前先手依旧持有，没有开新，等市场磨合一下。",
+      "card_rect": {
+        "top": 936,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "10:37:26",
+      "text": "买入建设银行(601939),成交价10.32元,仓位从10.48%调到15.46%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决策,独立承担投资风险) 阿轩组合",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:15:48",
+      "text": "案例分享，去弱近端修复位置的昊创，腾出兵力。",
+      "card_rect": {
+        "top": 1180,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "score": 1011.4,
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "meta": {
+          "text_length": 2114,
+          "time_anchor_count": 20,
+          "noise_hits": 0
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      },
+      "candidate_count": 24
+    },
+    "content_text_length": 2114,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "我今天的任务就是把昨天接近6%的果实安全的带出来，目前是完成的 讲师",
+    "visible_message_count": 10,
+    "primary_message_candidate": "案例分享，北交的先手捷众，剩下一半的兵力，可以撤兵了。",
+    "initial_room_anchor_candidate": "周期女王（新一期，重新搞的）",
+    "room_anchor_candidate": "周期女王（新一期，重新搞的）",
+    "topic_anchor_candidate": "案例分享，北交的先手捷众，剩下一半的兵力，可以撤兵了。"
+  }
+}

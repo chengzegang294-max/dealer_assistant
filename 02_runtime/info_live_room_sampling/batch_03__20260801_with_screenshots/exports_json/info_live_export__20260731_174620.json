@@ -1,0 +1,29 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T17:46:20.317Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-16",
+  "room_anchor": "周期女王（新一期，重新搞的）",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/16",
+  "display_time": "13:02:22",
+  "topic_anchor": "卖出亨通光电(600487),成交价67.33元,仓位从16.71%调到0%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决",
+  "excerpt": "卖出亨通光电(600487),成交价67.33元,仓位从16.71%调到0%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决策,独立承担投资风险) 阿轩组合 讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 14220,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "卖出亨通光电(600487),成交价67.33元,仓位从16.71%调到0%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决策,独立承担投资风险) 阿轩组合 讲师",
+    "room_anchor_candidate": "周期女王（新一期，重新搞的）",
+    "topic_anchor_candidate": "卖出亨通光电(600487),成交价67.33元,仓位从16.71%调到0%(调仓涉及具体证券存在潜在投资风险,投资顾问所示操作不保证投资收益.请自主做出投资决"
+  }
+}

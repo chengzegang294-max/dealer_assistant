@@ -1,0 +1,143 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-08-01T12:53:43.673Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-29",
+  "room_anchor": "天机短线试更新",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/29",
+  "display_time": "09:58:20",
+  "topic_anchor": "更多资讯加微信好友aa1240458509",
+  "excerpt": "更多资讯加微信好友aa1240458509",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:58:20",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:06:26",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 207,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:10:05",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 329,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:12:02",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 451,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:41:22",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 594,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:52:00",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 716,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:15:00",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 859,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:33:16",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 981,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:44:01",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 1103,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:44:38",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 1225,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 9022,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "李聪",
+    "visible_message_count": 10,
+    "primary_message_candidate": "更多资讯加微信好友aa1240458509",
+    "room_anchor_candidate": "天机短线试更新",
+    "topic_anchor_candidate": "更多资讯加微信好友aa1240458509"
+  }
+}

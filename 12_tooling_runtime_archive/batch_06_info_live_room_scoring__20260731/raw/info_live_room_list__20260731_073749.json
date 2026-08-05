@@ -1,0 +1,721 @@
+{
+  "export_version": "live_info_room_list_extract_v1_auto_scroll",
+  "exported_at": "2026-07-31T07:37:49.487Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "viewport": {
+    "width": 1542,
+    "height": 1274
+  },
+  "auto_scroll_enabled": true,
+  "scroll_container": {
+    "css_path": "uni-view:nth-of-type(2) > uni-view > uni-scroll-view > div.uni-scroll-view > div.uni-scroll-view > div.uni-scroll-view-content",
+    "client_height": 1104,
+    "scroll_height": 3190
+  },
+  "pass_count": 3,
+  "pass_summaries": [
+    {
+      "pass": 1,
+      "visible_count": 45,
+      "added_count": 45,
+      "scroll_top": 0,
+      "scroll_max_top": 2086
+    },
+    {
+      "pass": 2,
+      "visible_count": 45,
+      "added_count": 0,
+      "scroll_top": 0,
+      "scroll_max_top": 2086
+    },
+    {
+      "pass": 3,
+      "visible_count": 45,
+      "added_count": 0,
+      "scroll_top": 0,
+      "scroll_max_top": 2086
+    }
+  ],
+  "room_count": 45,
+  "rooms": [
+    {
+      "visible_order": 1,
+      "room_anchor": "机构电话会议纪要+小作文+情报",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25843 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -792,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 2,
+      "room_anchor": "大将潘凤（加盘面逻辑，新一期，试更新，看实力）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25977 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -722,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 3,
+      "room_anchor": "复盘哥",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25920 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -652,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 4,
+      "room_anchor": "格兰投研",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25962 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -582,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 5,
+      "room_anchor": "银河投递员",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25975 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -512,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 6,
+      "room_anchor": "混江龙",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25934 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -442,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 7,
+      "room_anchor": "梦幻一步（试着更新，看参考价值）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26035 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -372,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 8,
+      "room_anchor": "只爱主波浪",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26031 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -302,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 9,
+      "room_anchor": "机构研报资讯精选",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25911 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -232,
+        "width": 128,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 10,
+      "room_anchor": "七福潜伏低吸",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25945 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -162,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 11,
+      "room_anchor": "擒龙小师姐",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25927 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -92,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 12,
+      "room_anchor": "小作文嗅嗅+机构研报",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25929 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": -22,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 13,
+      "room_anchor": "猫哥竞价",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26030 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 48,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 14,
+      "room_anchor": "帝王通知群（务必把这个群置顶）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25870 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold",
+      "rect": {
+        "left": 249,
+        "top": 118,
+        "width": 240,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 15,
+      "room_anchor": "（这个老师暂时没有）laoduo",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25947 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 188,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 16,
+      "room_anchor": "大师兄擒妖",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room491 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 258,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 17,
+      "room_anchor": "独家老师5号",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25949 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 328,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 18,
+      "room_anchor": "招财大师姐（试更新）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25946 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 398,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 19,
+      "room_anchor": "将军段（清明节后试更新）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26019 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 468,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 20,
+      "room_anchor": "独家短线老师6号",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25914 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 538,
+        "width": 121,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 21,
+      "room_anchor": "老鱼论道新一期",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25899 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 608,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 22,
+      "room_anchor": "暴金一哥",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25963 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 678,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 23,
+      "room_anchor": "七龙珠",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25912 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 748,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 24,
+      "room_anchor": "听妈妈的话",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25917 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 818,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 25,
+      "room_anchor": "梅森",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25922 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 888,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 26,
+      "room_anchor": "周期女王（新一期，重新搞的）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26007 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 958,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 27,
+      "room_anchor": "奶爸（买了一期，看实力）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25901 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1028,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 28,
+      "room_anchor": "猎豹",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25951 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1098,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 29,
+      "room_anchor": "缠中说缠",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26024 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1168,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 30,
+      "room_anchor": "天赢居",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room263 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1238,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 31,
+      "room_anchor": "天机短线试更新",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25976 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1308,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 32,
+      "room_anchor": "妖股刺客",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room492 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1378,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 33,
+      "room_anchor": "顺势而为（借势）众筹中",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25924 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1448,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 34,
+      "room_anchor": "孙悟空金牌",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25944 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1518,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 35,
+      "room_anchor": "投星资产（虽然没有多少参考价值，清明节开始下一期更新）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25953 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1588,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 36,
+      "room_anchor": "核心逻辑社一期26.8.15",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room26010 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1658,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 37,
+      "room_anchor": "洛飞笔记（新一期开始）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25903 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1728,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 38,
+      "room_anchor": "k神",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25933 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1798,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 39,
+      "room_anchor": "独家一号（超短线）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25916 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1868,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 40,
+      "room_anchor": "游资胖大叔（到期）",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25960 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 1938,
+        "width": 134,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 41,
+      "room_anchor": "先知",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25895 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 2008,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 42,
+      "room_anchor": "上海老梁 新一期",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25986 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 2078,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 43,
+      "room_anchor": "鑫多多新",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25996 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 2148,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 44,
+      "room_anchor": "新生代",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25902 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 2218,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    },
+    {
+      "visible_order": 45,
+      "room_anchor": "姆爷",
+      "is_active": false,
+      "active_hint": "",
+      "role_hint": "",
+      "css_path": "uni-view#room25846 > uni-view.content:nth-of-type(2) > uni-view.flex.align-center:nth-of-type(1) > uni-view.text-black.text-bold:nth-of-type(1)",
+      "rect": {
+        "left": 249,
+        "top": 2288,
+        "width": 120,
+        "height": 26
+      },
+      "class_name": "text-black text-bold text-cut"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-07-31T08:07:56.224Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-07-26",
+  "room_anchor": "讲师",
+  "history_entry": "历史记录",
+  "display_date": "2026/07/26",
+  "display_time": "21:22:56",
+  "topic_anchor": "#嗅嗅信息#",
+  "excerpt": "小作文嗅嗅+机构研报 倒序观看历史记录 讲师 2026/07/26 21:22:56 #嗅嗅信息# #中岩大地#重大更新：2028年底全面达产12亿只/年！ 1??产能：来自官方最新信息，鑫寰宇将在2028年底全面达产12亿只/年PCB精密钻针，产能已经完全对标龙头鼎泰高科的11.3亿只/年。 2??客户：同样来自最新官方资料，公司客户已经拓展至胜宏科技、生益电子、方正集团、科翔股份、明阳电路等头部厂商。 鑫寰宇最小钻径0.03mm、长径比50倍，技术参数优于鼎泰高科#0.05mm）和中钨高新#0.075mm），之前市场担忧点主要在于产能，以及客户拓展落后同行；现鑫寰宇产能完全对标鼎泰高科，客户拓展进程加速，目前鼎泰高科市值1700亿，中岩大地35亿，存在及其重大的预期差。 讲师 2026/07/26 21:53:12 #嗅嗅信息# DeepSeek 这波融资停摆，绝对是今年 AI 圈最大的黑天鹅。 梁文锋内部讲话泄露这事儿，性质极其恶劣。 这不仅仅是得罪了一个创始人的问题，这是把国产算力的家底和地道全给暴露了。 简单看几个流出的硬数据，你就知道老美看了会多开心： 算力总量： Deep",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "content_text_length": 30300,
+    "content_root_tag": "uni-view",
+    "room_anchor_candidate": "讲师",
+    "topic_anchor_candidate": "#嗅嗅信息#"
+  }
+}
