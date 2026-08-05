@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>选股宝直播</title>
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">							
+			.fixedBox{
+				border: 1px solid #555555;				
+				white-space: normal;	
+			}
+			.fixedBox::-webkit-scrollbar {
+				width: 10px;     
+				height: 10px;				
+			}
+			input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+					-webkit-appearance:none;
+			}
+			input[type="number"]{
+				-moz-appearance: textfield; 
+			}
+			input[type="checkbox"] {
+			  width: 14px;
+			  height: 14px;
+			  line-height: 14px;
+			  display: inline-block;
+			  text-align: center;
+			  vertical-align: middle;
+			  position: relative;
+			  box-sizing: content-box;
+			}	
+			input[type="checkbox"]::before {
+			  content: "";
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  background: #fff;
+			  width: 80%;
+			  height: 80%;
+			  border: 1px solid rgba(0,0,0,0.40);
+			  border-radius: 1px;
+			}
+			input[type="checkbox"]:checked::before {
+			  content: "✔";
+			  background-color: #fff;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 80%;
+			  border: 1px solid #fff;
+			  border-radius: 1px;
+			  color: #000;
+			  font-size: 14px;
+			  font-weight: bold;
+			}
+		</style>
+		<script type="text/javascript" src="js/json2html.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="title"></div>
+		<div id="content" class="fixedBox"></div>		
+		<script>
+			window.onload = function() {			
+				changeStyle();
+				start();
+			}
+						
+			function time_range(beginTime, endTime) {
+				var strb = beginTime.split(":");
+				if (strb.length != 2) {
+					return false;
+				}
+
+				var stre = endTime.split(":");
+				if (stre.length != 2) {
+					return false;
+				}
+
+				var b = new Date();
+				var e = new Date();
+				var n = new Date();
+
+				b.setHours(strb[0]);
+				b.setMinutes(strb[1]);
+				e.setHours(stre[0]);
+				e.setMinutes(stre[1]);
+
+				if (n.getTime() - b.getTime() > 0 && n.getTime() - e.getTime() < 0) {
+					$("#ds").text('刷新……');
+					setTimeout(function(){getSource()}, 10);							
+					console.log(true)　　　　　　
+					return true;				
+				} else {
+					console.log(false)
+				    return false;     
+				}
+			}　　　
+   　　　
+			<!-- $(function() { -->
+				<!-- var dsq = setInterval(function() { -->
+					<!-- time_range("05:00","23:59") -->
+				<!-- }, -->
+				<!-- 10000); -->
+			<!-- }) -->
+			
+			
+			var interval = setInterval(function() {
+				$("#ds").text('刷新……');
+				setTimeout(function(){getSource()}, 10);	
+			},
+			10000);			
+		
+			function changeStyle() {				
+				var div = document.getElementById("title");				
+				div.style.left= "0px"; 				
+				div.style.width= "98%";	
+				div.style.height= "20px";	
+				
+				var div = document.getElementById("content");				
+				div.style.top= "30px"; 
+				div.style.left= "10px"; 				
+				div.style.width= "100%";	
+				div.style.height= "100%";
+				div.style.fontSize= "14px";	
+			}
+			
+			Date.prototype.Format = function (fmt) {
+				var o = {
+				"M+": this.getMonth() + 1, //月份
+				"d+": this.getDate(), //日
+				"h+": this.getHours(), //小时
+				"m+": this.getMinutes(), //分
+				"s+": this.getSeconds(), //秒
+				"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+				"S": this.getMilliseconds() //毫秒
+				};
+				if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+				for (var k in o)
+				if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				return fmt;
+			};
+			
+			function getLocalTime(nS) {			          
+			return new Date(parseInt(nS) * 1000).Format("hh:mm:ss")}
+			
+			function getLocalDay(nS) {			          
+			return new Date(parseInt(nS) * 1000).Format("yyyy-MM-dd")}
+			
+			function keepTwoDecimal(num) {  
+               var result = parseFloat(num);  
+               if (isNaN(result)) {  
+                   //alert('传递参数错误，请检查！');  
+                   return false;  
+               }  
+               result = Math.round(num * 100) / 100;  
+               return result;  
+			};
+			
+			function changeCss(obj,id){				
+				var alist = document.getElementById(id).getElementsByTagName("a");					
+				for(var i = 0; i < alist.length; i++){				
+					if(alist[i] == undefined){
+						break;
+					}
+					alist[i].style.color = "#E5E5E5"; //给所有a标签赋原色
+				}
+				obj.style.color = "#00FFFF"; //令当前标签高亮				
+			}
+						
+			function addInputWithAdjustBtn(inputId) {
+				var inputObj = document.getElementById(inputId);
+				var height = inputObj.offsetHeight + "px";
+				//var width = (inputObj.offsetWidth / 2) + "px";
+				var width = (inputObj.offsetWidth * 0.7) + "px";
+				var button_reduce = document.createElement("input");
+				button_reduce.type='button';
+				button_reduce.value='-';
+				button_reduce.id='reduce_btn_' + inputId;
+				button_reduce.style.marginLeft= "3px";
+				button_reduce.style.width= width;
+				button_reduce.style.height = height;
+				var button_add = document.createElement("input");
+				button_add.type='button';
+				button_add.value='+';
+				button_add.id='add_btn_' + inputId;
+				button_add.style.width= width;
+				button_add.style.height = height;
+				inputObj.parentNode.insertBefore(button_reduce,inputObj);
+			　	inputObj.parentNode.insertBefore(button_add,inputObj.nextSibling);
+			　    
+				addEvent(button_reduce,'click',function(){
+					var num_reduce = parseInt($("#"+inputId).val()) - 1;
+					if (num_reduce > 0) {
+						$('#'+inputId).val(num_reduce);
+						if(inputId == "val1"){
+							n = $("#val1").val();
+							clearInterval(interval);  //暂停刷新
+							$("#ds").text('请稍等……');
+							setTimeout(function(){getSource()}, 10);
+							interval = setInterval(function() {time_range("05:00","23:59");},10000);							
+						}		
+					}
+					
+				});
+				
+				addEvent(button_add,'click',function(){
+					var num_add = parseInt($("#"+inputId).val()) + 1;
+					if (num_add <= 5) {
+						$('#'+inputId).val(num_add);
+						if(inputId == "val1"){
+							n = $("#val1").val();
+							clearInterval(interval);  //暂停刷新
+							$("#ds").text('请稍等……');
+							setTimeout(function(){getSource()}, 10);
+							interval = setInterval(function() {time_range("05:00","23:59");},10000);
+						}		
+					}
+				});
+			};
+			
+			function addEvent(el, type, myFunction) {
+				if(el.addEventListener){  //所有主流浏览器，除了 IE 8 及更早 IE版本
+					el.addEventListener(type,myFunction);
+				}else if(el.attachEvent()){   // IE 8 及更早 IE 版本
+					el.attachEvent('on' + type,myFunction);
+				}else{
+				　return false;
+				}
+			};
+			
+			$(function () {   //动态追加的元素触发事件
+				$("body").delegate("input",
+					"change",
+					function () {
+						var ss1 = "";
+						if($("#10").is(":checked")){
+							ss1 = "10";
+						}else{
+							ss1 = "";
+						}
+						
+						var ss2 = "";
+						if($("#723").is(":checked")){
+							ss2 = "723";
+						}else{
+							ss2 = "";
+						}
+						
+						var ss3 = "";
+						if($("#35").is(":checked")){
+							ss3 = "35";
+						}else{
+							ss3 = "";
+						}
+						
+						var ss4 = "";
+						if($("#469").is(":checked")){
+							ss4 = "469";
+						}else{
+							ss4 = "";
+						}
+												
+						ids = ss1 + " " + ss2 + " " + ss3 + " " + ss4;
+						ids = ids.trim();
+						ids = ids.replace(/   /g," ").replace(/  /g," ").replace(/ /g,",")
+						if(ids == ""){
+							ids = "9,10,723,35,469";
+						}
+						clearInterval(interval);  //暂停刷新
+						$("#ds").text('请稍等……');
+						setTimeout(function(){getSource()}, 10);
+						interval = setInterval(function() {time_range("05:00","23:59");},10000);						
+					});
+			});
+			
+			function start() {
+				var div = document.getElementById('title');
+				var ck1 = '<span style="padding-left:10px;color:#FFFFFF;"><input type="checkbox" id="10"/>大新闻</span>';
+				var ck2 = '<span style="padding-left:10px;color:#FFFFFF;"><input type="checkbox" id="723"/>公告</span>';
+				var ck3 = '<span style="padding-left:10px;color:#FFFFFF;"><input type="checkbox" id="35"/>盘中异动</span>';
+				var ck4 = '<span style="padding-left:10px;color:#FFFFFF;"><input type="checkbox" id="469"/>市场机会</span>';
+				var page = '<span style="padding-left:15px;color:#FFFFFF;font-size:12px;">页数<input type="number" style="width:25px;" id="val1" value=' + n + ' min="1" max="5" step="1" /></span>'
+				var ds = "<span id='ds' style='padding-left:50px;color:#FFFFFF;'><span>";
+				div.innerHTML = '<font size="4">选股宝直播</font>' + ck1 + ck2 + ck3 + ck4 + page + ds;
+				addInputWithAdjustBtn("val1");				
+				getSource();
+			}
+			
+			var n = 1; //显示页数(越多越卡)			
+			var ids = "9,10,723,35,469";
+			function getSource() {
+				var div = document.getElementById('content');
+				div.innerHTML = "";
+				var TailMark = "";
+				var TailMsgId = "";
+				var rq = "";
+				for (var i = 0; i < n; i++){  
+					var url = "https://api.xuangubao.cn/api/pc/msgs?subjids=" + ids + "&limit=30"; 
+					if(i > 0){
+						url = "https://api.xuangubao.cn/api/pc/msgs?subjids=" + ids + "&limit=50&tailmark=" + TailMark + "&msgIdMark=" + TailMsgId; 	                
+					}
+					console.log(url)　
+					var res = [];
+					$.ajax({
+						type: "get",
+						url: url,
+						dataType: "json",
+						async : false,
+						cache:false,
+						timeout:3000,					
+						success: function(data) {
+							//alert(JSON.stringify(data))						
+							//document.write(JSON.stringify(data));	
+							res = data.NewMsgs;
+							TailMark = data.TailMark;
+							TailMsgId = data.TailMsgId;
+						}
+					});		
+					//document.write(JSON.stringify(res));
+										
+					for (var j = 0; j < res.length; j++){
+						var aa = res[j];						
+						var t = getLocalDay(aa.CreatedAtInSec);
+						if(t != rq){
+							div.innerHTML += "<p style='margin:10px 0px -10px -5px;color:#00FF00;'>【" + t + "】</p>";
+							rq = t;
+						}
+						div.innerHTML += "<p style='color:#00FFFF;'>" + getLocalTime(aa.CreatedAtInSec) + "</p>";
+						div.innerHTML += "<p style='margin-top:-15px;color:#FFFF00;'>" + aa.Title + "</p>"
+						div.innerHTML += "<p style='margin-top:-15px;color:#FFFFFF;'>" + aa.Summary + "</p>"
+						var stock = aa.Stocks;
+						if(stock != null){
+							for (var k = 0; k < stock.length; k++){
+								var bb = stock[k];
+								var code = bb.Symbol;
+								code = code.replace(/(.SZ)|(.SS)/g,"");
+								div.innerHTML += "<a style='color:#FFE6E6;' href=http://www.treeid/code_" + code + ">" + bb.Name + "</a>";
+							
+							}
+						}
+						
+					}
+				}
+				$("#ds").text('');
+			}
+		</script>	
+	</body>
+</html>

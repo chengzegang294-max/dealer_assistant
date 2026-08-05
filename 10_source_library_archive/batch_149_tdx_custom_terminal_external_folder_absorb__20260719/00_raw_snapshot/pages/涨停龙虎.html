@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>涨停龙虎</title>
+		<meta name="description" content="书溧收集">
+		<link href="css/text.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">				
+			p {margin:3px}
+			ul {margin:1px}			
+			h4 {margin:0px}				
+			.fixedBox{
+				border: 1px solid #555555;			
+				white-space: nowrap;	
+			}
+			.fixedBox::-webkit-scrollbar {
+				width: 0px;     
+				height: 0px;				
+			}			
+		</style>		
+		<script type="text/javascript" src="js/json2html.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+                               <iframe width="" height="" id="sl2" name="sl2" src="" border="0" frameborder="0"></iframe>
+		<script>
+			var count = 15; //股票数量，多于此数折叠	
+			window.onload = function() {			
+				getSource();
+				changeStyle();
+			}
+			
+			var z = 1;
+			$(function() {
+				setInterval(function() {
+					if(z == 1){					
+						getSource();										
+					}					
+				},
+				500);
+			})
+			
+			
+			function changeStyle() {
+				var obj = document.getElementById("towrite");								
+				obj.style.left= "0px"; 
+				obj.style.width= "66px";						
+				obj.style.fontSize="12px";
+
+				var obj1 = document.getElementById("sl2");
+				obj1.style.position= "relative"; 
+				obj1.style.float= "left";
+				obj1.style.marginLeft= "68px";				
+				obj1.style.width= "88vw";
+				obj1.style.height= "95vh";
+				obj1.style.fontSize= "12px";				
+			}			
+			
+			function changeCss(obj,id){				
+				var alist = document.getElementById(id).getElementsByTagName("a");					
+				for(var i = 0; i < alist.length; i++){									
+					alist[i].style.color = "#E5E5E5"; //给所有a标签赋原色
+				}
+				obj.style.color = "#00FFFF"; //令当前标签高亮				
+			}
+			
+			function updatex() {				
+				aObj = document.getElementById('sx');
+				if(aObj.innerText == "停止刷新"){
+					z = 0;
+					aObj.innerText = "自动刷新";
+					aObj.style.color = "#ADFF2F";
+				}else if(aObj.innerText == "自动刷新"){
+					z = 1;
+					aObj.innerText = "停止刷新";
+					aObj.style.color = "#E5E5E5";					
+				}
+			}
+						
+			function updated() {
+				z = 0;			
+				aObj = document.getElementById('sx');
+				if(aObj.innerText == "停止刷新"){					
+					aObj.innerText = "自动刷新";
+					aObj.style.color = "#ADFF2F";
+				}					
+			}
+			
+			function UnUnicode(str) {
+				return unescape(str.replace(/\\/g, "%"));
+			}
+				
+			
+			var gpdm = "";
+			var gpmc = "";				
+			function getSource() {					
+				var u = decodeURI(window.location.href);								
+				if(u.indexOf("##") > -1){
+					var gp = u.split('##');				
+					dm = gp[1];
+					gpmc = gp[2];										
+				}else{
+					dm = "600000";
+					gpmc = "浦发银行";
+									
+				}
+
+				if(dm != gpdm){	
+					gpdm = dm;
+
+					if(dm.substr(0,1)=="6"){
+						dms = "SH" + dm;
+						dmt = "1." + dm;
+						zdjc = "SH"+dm  ;
+						zsl= "SH" ;
+
+					}else{
+						dms = "SZ" + dm;
+						dmt = "0." + dm;
+						zdjc= "SZ"+dm ;
+						zsl= "SZ" ;	
+					}
+
+					temp = "";					
+					div = document.getElementById('towrite');
+
+				var iframe = document.getElementById('sl2');
+				//iframe.src = 'http://webf10.gw.com.cn/' + zsl + '/B1/' + zdjc + '_B1.html';
+				iframe.src = 'http://page.tdx.com.cn:7615/site/kggx/tk_ygzl_lhb.html?info=' + gpdm + '&amp;pageId=dpyd&amp;color=0&amp;bkcolor=000000';
+
+
+		div.innerHTML = "<h4><a  href='http://page.tdx.com.cn:7615/site/kggx/tk_ygzl_lhb.html?info=" + gpdm + "&amp;pageId=dpyd&amp;color=0&amp;bkcolor=000000' target=sl2><font color=#fd7e14 size=2>龙虎榜单</font></a>" + "</h4>";
+
+		div.innerHTML += '<p style="font-size:14px;"><a  href="http://zx.10jqka.com.cn/event/harden/stockhistory/code/' + gpdm + '" target="sl2"><font color="#fd7e14">涨停分析</font></a></p>';
+
+		div.innerHTML += '<p style="font-size:14px;"><a  href="http://hot.icfqs.com:7615/site/pcwebcall/html/pc_cbl_zdtfx.html?&gpcode=' + gpdm + '" target="sl2"><font color="#fd7e14">涨停原因</font></a></p>';
+		div.innerHTML += '<p style="font-size:14px;"><a href="https://emweb.eastmoney.com/PC_HSF10/CompanyBigNews/Index?type=soft&code=' + zdjc + '" target="sl2"><font color="#fd7e14">东财F10</font></a></p>';
+
+		div.innerHTML += '<p style="font-size:14px;"><a  href="http://webclient.vsatauth.com/ycpj/cachehtml/StockF10/CPBD/' + gpdm + '.html" target="sl2"><font color="#FFFF00">维赛F10</font></a></p>';
+		div.innerHTML += '<p style="font-size:14px;"><a href="https://gushitong.baidu.com/stock/ab-' + gpdm + '" target="sl2"><font color="#FF8C00">百度F10</font></a></p>';
+
+		div.innerHTML += '<p style="font-size:14px;">' + gpdm + '</p>';	
+		div.innerHTML += '<p style="font-size:14px;">' + gpmc  + '</p>';
+					
+		}	
+		}		
+			
+		</script>
+	</head>
+	<body>					
+		<div id="towrite" class="fixedBox"></div>										
+	</body>
+</html>

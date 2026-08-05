@@ -1,0 +1,48 @@
+{
+  "sample_id": "A5_R2_BATCH150_2026-07-29_SAMPLE_V1",
+  "sample_date": "2026-07-29",
+  "source_family": "eastmoney_pc_screenshot_batch150",
+  "input_pack_id": "A5_R2_EASTMONEY_SCREENSHOT_INPUT_PACK_2026-07-29_V1",
+  "background_objects": [
+    "沪深涨跌停"
+  ],
+  "trigger_objects": [
+    "上榜资金"
+  ],
+  "primary_linkage_type": "background_to_trigger_candidate_chain",
+  "source_anchor": "batch150/README.md + manifest_v1.tsv",
+  "provenance_anchor": "batch150/provenance.md",
+  "manifest_anchor": "batch150/manifest_v1.tsv",
+  "page_evidence_list": [
+    "市场情绪总览",
+    "市场宽度涨停跌停",
+    "龙虎榜异动资金",
+    "题材中心",
+    "看盘工作台",
+    "涨停",
+    "炸板"
+  ],
+  "occurredAt": "date_level_confirmed",
+  "occurredAt_window": "optional",
+  "occurredAt_exact": "still_need_evidence",
+  "maturity_level": "candidate_ready_not_financial_truth",
+  "degrade_flags": [
+    "hydb_zsdb_strict_same_day_pending",
+    "board_funds_formula_equivalent_pending",
+    "occurredAt_exact_pending"
+  ],
+  "still_need_evidence": [
+    "need_second_distinct_sample_date_input_pack",
+    "need_hydb_zsdb_strict_same_day_input",
+    "need_board_funds_strict_formula_equivalent_page"
+  ],
+  "not_financial_truth": "yes",
+  "not_trade_ready": "yes",
+  "candidate_background_objects": [
+    "HYDB候选",
+    "ZSDB候选"
+  ],
+  "candidate_trigger_objects": [
+    "打板资金候选"
+  ]
+}

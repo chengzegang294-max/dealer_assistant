@@ -1,0 +1,43 @@
+{
+  "acceptance_id": "A5_FIN_STD_INPUT_PACK_ACCEPTANCE_V1",
+  "input_pack_id": "A5_R2_EASTMONEY_SCREENSHOT_INPUT_PACK_2026-07-29_V1",
+  "source_root": "D:\\Stock\\trading_assistant\\10_source_library_archive\\batch_150_quicktiny_second_round_manual_sample__20260730",
+  "checks": [
+    {
+      "field": "source_root_exists",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "batch_required_file::README.md",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "batch_required_file::provenance.md",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "batch_required_file::manifest_v1.tsv",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required_files_present",
+      "expected": "present",
+      "actual": "present"
+    },
+    {
+      "field": "optional_files_present",
+      "expected": "allow_missing",
+      "actual": "present"
+    },
+    {
+      "field": "manifest_covers_required_files",
+      "expected": "covered",
+      "actual": "covered"
+    }
+  ],
+  "passed": true
+}

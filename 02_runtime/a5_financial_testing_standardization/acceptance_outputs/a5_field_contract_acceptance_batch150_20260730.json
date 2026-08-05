@@ -1,0 +1,109 @@
+{
+  "acceptance_id": "A5_FIN_STD_FIELD_CONTRACT_ACCEPTANCE_V1",
+  "sample_json": "D:\\Stock\\trading_assistant\\02_runtime\\a5_financial_testing_standardization\\batch150_field_contract_sample_v1.json",
+  "contract_tsv": "D:\\Stock\\trading_assistant\\02_runtime\\a5_financial_testing_standardization\\a5_field_contract_template_v1.tsv",
+  "missing_required_fields": [],
+  "checks": [
+    {
+      "field": "required::sample_id",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::sample_date",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::source_family",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::input_pack_id",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::background_objects",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::trigger_objects",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::primary_linkage_type",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::source_anchor",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::provenance_anchor",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::manifest_anchor",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::page_evidence_list",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::occurredAt",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::maturity_level",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::degrade_flags",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::still_need_evidence",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::not_financial_truth",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "required::not_trade_ready",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "candidate_mode_requires_downgrade_fields",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "not_financial_truth_is_yes",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "field": "not_trade_ready_is_yes",
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "passed": true
+}

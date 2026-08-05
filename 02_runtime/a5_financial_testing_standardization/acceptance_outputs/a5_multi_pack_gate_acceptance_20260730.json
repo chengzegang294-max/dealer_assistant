@@ -1,0 +1,17 @@
+{
+  "acceptance_id": "A5_FIN_STD_MULTI_PACK_GATE_ACCEPTANCE_V1",
+  "gate_id": "A5_FIN_STD_GATE_MIN_TWO_DATES_V1",
+  "min_distinct_sample_dates": 2,
+  "distinct_dates_passed": [
+    "2026-07-29"
+  ],
+  "pending_input_pack_ids": [
+    "NEED_EVIDENCE_SECOND_DATE_INPUT_PACK_V1"
+  ],
+  "missing_outputs": [],
+  "failed_outputs": [],
+  "passed": false,
+  "still_need_evidence": [
+    "need_second_distinct_sample_date_input_pack"
+  ]
+}

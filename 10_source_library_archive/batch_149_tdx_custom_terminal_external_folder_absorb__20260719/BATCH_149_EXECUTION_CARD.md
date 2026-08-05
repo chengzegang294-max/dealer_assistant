@@ -52,6 +52,11 @@
     - `pages/热点提醒.html`
     - `pages/龙头股.html`
     - `pages/龙头股1.json`
+  - 第三组历史载体补件：
+    - `pages/复盘.html`
+    - `pages/直播.html`
+    - `pages/涨停龙虎.html`
+    - `pages/选股宝直播.html`
   - 真实公式样本补件：
     - `formula_export_samples/*.png`
     - `formula_export_samples/*.txt`
@@ -88,6 +93,9 @@
   - 补抓更多页面入口
   - 沿 `files/f11` 与 `九菜插件配置层` 继续补原位样本
   - 在三分表基础上继续补 `company/*.html` 高价值页面
+  - 继续验证
+    `复盘.html / 直播.html`
+    是否能稳定回到指定历史日期
   - 用当前 `17` 组公式样本直接进入首轮正式映射
   - 从吸收批进入 `03_quantize/` 做对象卡
   - 当前已按 `方案C` 落 `6` 张对象卡与 `1` 张六卡字段桥
@@ -98,6 +106,14 @@
   - `F11 联动解释`
   - `company 高价值页面补进三分表`
   - `极窄公式截图链补洞`
+- 当前若围绕
+  `batch150`
+  第三手继续推进，
+  默认先复用：
+  - `pages/复盘.html`
+  - `pages/直播.html`
+  再决定是否需要
+  `pages/涨停龙虎.html / pages/选股宝直播.html`
 - 当前明确不作为 `方案A` 默认下一手的，是：
   - `批量源码导出`
   - `DLL 行为深挖`

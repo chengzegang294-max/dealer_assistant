@@ -1,0 +1,7 @@
+source_family	role_layer	current_value_level	key_assets_absorbed	minimum_next_input	recommended_next_action	payment_recommendation	status
+tushare	正式源候选	high	HTML权限页+截图	字段列表或最小导出样本	做来源审计与字段目录	yes_priority_1	absorbed_pending_audit
+东方财富	当前样本源	high	截图+说明	稳定页面清单与第二日期三图	继续作为样本锚点	no_new_payment_now	absorbed_active
+信息直播间	增强源_解释层	medium	HTML首页+截图	同一日期的截图/摘录/回放时间点	做解释层旁证卡	no_priority	absorbed_pending_structuring
+同花顺	增强源_备选样本源	medium	截图	是否可导出/是否有L2权限说明	评估是否值得补充或仅作备选	not_now_l2_deprioritized	absorbed_pending_decision
+微信网页—金十报告&黄金盯盘	参考层_宏观跨市场	low	多张截图+说明	日期锚点与栏目清单	登记为参考层不进A5主轴	no_priority	absorbed_reference_only
+连扳天梯网站	增强源_高度结构层	high	HTML页面+截图	单日/多日导出或固定截图口径	做高度结构对象卡与增强字段	yes_if_has_history_export	absorbed_pending_structuring

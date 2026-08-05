@@ -1,0 +1,2 @@
+gate_id	min_distinct_sample_dates	source_plan_tsv
+A5_FIN_STD_GATE_MIN_TWO_DATES_V1	2	02_runtime/a5_financial_testing_standardization/a5_input_pack_sample_plan_v1.tsv
