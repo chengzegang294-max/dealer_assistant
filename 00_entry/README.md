@@ -5,12 +5,12 @@
 ## 当前先看这几页
 
 1. [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
-2. [A5_GitHub推送失败_大文件历史清理与新远程推送方案__20260807.md](file:///d:/Stock/trading_assistant/00_entry/A5_GitHub推送失败_大文件历史清理与新远程推送方案__20260807.md)
-3. [A5_Cursor同步_最近Git推送与信息直播间编程收口__20260807.md](file:///d:/Stock/trading_assistant/00_entry/A5_Cursor同步_最近Git推送与信息直播间编程收口__20260807.md)
+2. [A5_信息直播间档案建档与列表哨兵动态抓取裁决页__20260807.md](file:///d:/Stock/trading_assistant/00_entry/全库资料整理收口__20260713/A5_信息直播间档案建档与列表哨兵动态抓取裁决页__20260807.md)
+3. [A5_Cursor同步包_信息直播间列表哨兵与档案分层裁决__20260807.md](file:///d:/Stock/trading_assistant/00_entry/A5_Cursor同步包_信息直播间列表哨兵与档案分层裁决__20260807.md)
 4. [A5_信息直播间房间状态总表__20260806.md](file:///d:/Stock/trading_assistant/00_entry/全库资料整理收口__20260713/A5_信息直播间房间状态总表__20260806.md)
-5. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
-6. [A5_文件分层与暂时存放清理裁决__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_文件分层与暂时存放清理裁决__20260806.md)
-7. [A5_文件角色总表与第一批退场建议__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_文件角色总表与第一批退场建议__20260806.md)
+5. [A5_信息直播间文字抓取与核心留存优化页__20260807.md](file:///d:/Stock/trading_assistant/00_entry/全库资料整理收口__20260713/A5_信息直播间文字抓取与核心留存优化页__20260807.md)
+6. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
+7. [A5_GitHub推送失败_大文件历史清理与新远程推送方案__20260807.md](file:///d:/Stock/trading_assistant/00_entry/A5_GitHub推送失败_大文件历史清理与新远程推送方案__20260807.md)
 
 ## 目录口径
 
