@@ -25,13 +25,14 @@
 - `live_info_current_page_export_v1.js`
   - 在已登录且停在目标历史记录页时，对当前页做半自动导出
   - 导出 `info_live_export__*.json`
-  - 当前版本：`v1.3`
-  - 关键口径：优先 `cu-card`；倒序取最新可见消息；`至尊宝→孙悟空金牌` / `陈子瞻→龙头交易猿`
+  - 当前版本：`v1.5`
+  - 关键口径：去广告壳抓核心正文；优先房抗混标签；超长粘连卡按时间拆分；`forced_room_anchor` 可强制纠偏
+  - 别名：`至尊宝→孙悟空金牌` / `陈子瞻→龙头交易猿`；`天机短线试更新→天机`
 
 - `live_info_incremental_export_v1.js`
   - 增量滚动导出（checkpoint / 去重）
-  - 说话人别名逻辑已与当前页导出对齐
-  - 孙悟空金牌：工作脚本已推到通过条件，但活跃 runtime 里的新版复测证据仍待补跑
+  - 当前版本：`v1.3`（跟随当前页 v1.5；同步优先房 / 漂移降权 / forced_room_anchor）
+  - 孙悟空金牌：工作脚本已推到通过条件，活跃 runtime 证据已补吸收
 
 - `live_info_message_card_probe_v1.js`
   - 在目标历史记录页输出：

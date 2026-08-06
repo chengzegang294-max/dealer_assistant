@@ -1,9 +1,26 @@
 (function () {
-  const EXPORT_VERSION = "live_info_current_page_export_v1.4";
+  const EXPORT_VERSION = "live_info_current_page_export_v1.5";
   const ROOM_SPEAKER_ALIAS_MAP = {
     "至尊宝": "孙悟空金牌",
     "陈子瞻": "龙头交易猿",
   };
+  // Canonical room names for first-batch pinned / template rooms.
+  // Expand later when 置顶名单正式冻结.
+  const ROOM_NAME_ALIAS_MAP = {
+    "天机短线试更新": "天机",
+    "周期女王（新一期，重新搞的）": "周期女王",
+  };
+  const PRIORITY_ROOM_NAMES = [
+    "格兰投研",
+    "周期女王",
+    "天机",
+    "天机短线试更新",
+    "龙头交易猿",
+    "孙悟空金牌",
+  ];
+  // Short names that often win sidebar/hashtag contests due to bot mixed tags.
+  const DRIFT_ANCHOR_NAMES = new Set(["k神", "先知", "浮光", "知行合一"]);
+  const runtimePageOptions = window.__infoLiveCurrentPageExportV1Options || {};
 
   function cleanText(text) {
     return String(text || "")
@@ -124,6 +141,82 @@
     return /^(历史记录|倒序观看历史记录|正序观看历史记录|倒序观看|正序观看|直播间列表|搜索直播间名称|搜索直播间消息|搜索|选择日期|时间|刷新|导出|下载|返回|公告|今天|昨日)$/.test(
       value
     ) || /历史记录|直播间列表|搜索直播间名称|搜索直播间消息|选择日期|倒序观看|正序观看/.test(value);
+  }
+
+  function normalizeKnownRoomName(text) {
+    const value = cleanText(text);
+    if (!value) return "";
+    if (ROOM_NAME_ALIAS_MAP[value]) return ROOM_NAME_ALIAS_MAP[value];
+    // Sidebar titles may truncate with ellipsis / fullwidth dots.
+    const truncated = value.replace(/[…\.．]{1,}$/g, "").replace(/（新.*$/g, "").trim();
+    if (ROOM_NAME_ALIAS_MAP[truncated]) return ROOM_NAME_ALIAS_MAP[truncated];
+    if (/^周期女王/.test(value)) return "周期女王";
+    if (/^天机/.test(value)) return "天机";
+    return value;
+  }
+
+  function isPriorityRoomName(text) {
+    const value = normalizeKnownRoomName(text);
+    if (!value) return false;
+    return PRIORITY_ROOM_NAMES.some((name) => value === name || value.startsWith(name) || name.startsWith(value));
+  }
+
+  function isDriftAnchorName(text) {
+    return DRIFT_ANCHOR_NAMES.has(cleanText(text));
+  }
+
+  function isPromoNoiseText(text) {
+    const value = cleanText(text);
+    if (!value) return true;
+    if (/^更多资讯加微信好友/i.test(value)) return true;
+    if (/加微信好友aa\d+/i.test(value) && value.length <= 40) return true;
+    if (/^防止失联QQ群\d+$/i.test(value)) return true;
+    if (/^QQ群\d+$/i.test(value)) return true;
+    // Pure emoji / sticker hashtags that bots inject into tag streams.
+    if (/^#(捂脸|破涕为笑|流泪|笑哭|微笑)#$/.test(value)) return true;
+    if (/^(捂脸|破涕为笑|流泪)$/.test(value)) return true;
+    return false;
+  }
+
+  function stripPromoFragments(text) {
+    return cleanText(text)
+      .replace(/更多资讯加微信好友aa\d+/gi, " ")
+      .replace(/防止失联QQ群\d+/gi, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function composeCoreBodyText(bodyTexts, cardRoot) {
+    const filtered = (bodyTexts || [])
+      .map((t) => cleanText(t))
+      .filter(Boolean)
+      .filter((t) => !isPromoNoiseText(t));
+
+    let core = "";
+    if (filtered.length) {
+      // Prefer the longest substantive leaf; join others only if they add meaningful length.
+      const ranked = filtered.slice().sort((a, b) => b.length - a.length);
+      const longest = ranked[0];
+      if (longest.length >= 40) {
+        const extras = ranked
+          .slice(1)
+          .filter((t) => t.length >= 24 && !longest.includes(t))
+          .slice(0, 3);
+        core = [longest].concat(extras).join(" ");
+      } else {
+        core = filtered.join(" ");
+      }
+    }
+
+    if (!core || core.length < 8) {
+      const raw = stripPromoFragments(getText(cardRoot));
+      // Drop leading chrome datetime / speaker chrome if present as only short residue.
+      core = stripPromoFragments(raw);
+    } else {
+      core = stripPromoFragments(core);
+    }
+
+    return stripSpeakerLabel(core);
   }
 
   function stripSpeakerLabel(text) {
@@ -286,7 +379,7 @@
       .map((el) => ({
         el,
         rect: el.getBoundingClientRect(),
-        text: getText(el),
+        text: cleanText(getText(el)),
       }))
       .filter((item) => item.rect.left >= 0 && item.rect.left < 330 && item.rect.width > 60 && item.rect.height > 20)
       .filter((item) => {
@@ -296,20 +389,26 @@
         if (/20\d{2}[\/-]\d{1,2}[\/-]\d{1,2}/.test(text)) return false;
         if (/\[图片\]/.test(text)) return false;
         if (/\d{2}:\d{2}/.test(text) && text.length > 12) return false;
-        return text.length >= 2 && text.length <= 24;
+        return text.length >= 2 && text.length <= 28;
+      })
+      .map((item) => {
+        const className = (item.el.className || "").toString();
+        const active = /active|current|selected|focus|on|checked/i.test(className) ? 1 : 0;
+        const priority = isPriorityRoomName(item.text) ? 1 : 0;
+        const drift = isDriftAnchorName(item.text) ? 1 : 0;
+        // Prefer pure room titles (not long previews). Soft length preference, not hard shortest-wins.
+        const lengthScore = item.text.length <= 16 ? 8 : Math.max(0, 20 - item.text.length);
+        const score = active * 100 + priority * 60 - drift * 40 + lengthScore + Math.min(item.rect.width, 240) / 20;
+        return { ...item, active, priority, drift, score };
       });
 
     leftCandidates.sort((a, b) => {
-      const classA = /active|current|selected|focus|on|checked/i.test((a.el.className || "").toString()) ? 1 : 0;
-      const classB = /active|current|selected|focus|on|checked/i.test((b.el.className || "").toString()) ? 1 : 0;
-      if (classB !== classA) return classB - classA;
-      // Prefer shorter pure room titles over long previews.
-      if (a.text.length !== b.text.length) return a.text.length - b.text.length;
-      if (b.rect.width !== a.rect.width) return b.rect.width - a.rect.width;
+      if (b.score !== a.score) return b.score - a.score;
       return a.rect.top - b.rect.top;
     });
 
-    return leftCandidates[0]?.text || "";
+    const picked = leftCandidates[0];
+    return picked ? normalizeKnownRoomName(picked.text) : "";
   }
 
   function isLeafLike(el) {
@@ -375,8 +474,11 @@
       .filter((text) => !timeOnlyPattern.test(text))
       .filter((text) => !isUiNoiseText(text, roomAnchor));
 
-    const text = stripSpeakerLabel(bodyTexts.join(" "));
-    if (!text) return null;
+    const text = composeCoreBodyText(bodyTexts, cardRoot);
+    if (!text || text.length < 4) return null;
+    // If only promo survived stripping, drop the card (avoid 天机-style false bodies).
+    if (isPromoNoiseText(text) && text.length <= 40) return null;
+
     const rect = cardRoot.getBoundingClientRect();
     return {
       display_date: dt.display_date || "",
@@ -389,6 +491,35 @@
         height: Math.round(rect.height),
       },
     };
+  }
+
+  function expandMergedCardMessages(message) {
+    if (!message || !message.text) return [];
+    const text = cleanText(message.text);
+    // 格兰等房偶发一张卡粘连多条；按日期时间边界拆成多条核心记录。
+    if (text.length < 600) return [message];
+    const dtRe = /(20\d{2}[\/-]\d{1,2}[\/-]\d{1,2})\s+(\d{2}:\d{2}(?::\d{2})?)/g;
+    const hits = Array.from(text.matchAll(dtRe));
+    if (hits.length < 2) return [message];
+
+    const parts = [];
+    for (let i = 0; i < hits.length; i += 1) {
+      const start = hits[i].index || 0;
+      const end = i + 1 < hits.length ? hits[i + 1].index : text.length;
+      const chunk = cleanText(text.slice(start, end));
+      if (!chunk || chunk.length < 8) continue;
+      const body = stripSpeakerLabel(
+        stripPromoFragments(chunk.replace(hits[i][0], " ").replace(/^老师\s*/g, " "))
+      );
+      if (!body || body.length < 4 || isPromoNoiseText(body)) continue;
+      parts.push({
+        display_date: normalizeDateText(hits[i][1]),
+        display_time: hits[i][2],
+        text: body,
+        card_rect: message.card_rect,
+      });
+    }
+    return parts.length >= 2 ? parts : [message];
   }
 
   function sortMessagesByViewport(messages) {
@@ -425,8 +556,10 @@
     for (const cardRoot of cards) {
       const message = extractCardMessage(cardRoot, roomAnchor, null);
       if (!message || !message.text || message.text.length < 4) continue;
-      const key = `${message.display_date} ${message.display_time} ${message.text.slice(0, 80)}`;
-      if (!map.has(key)) map.set(key, message);
+      for (const part of expandMergedCardMessages(message)) {
+        const key = `${part.display_date} ${part.display_time} ${part.text.slice(0, 80)}`;
+        if (!map.has(key)) map.set(key, part);
+      }
     }
     return sortMessagesByViewport(Array.from(map.values()));
   }
@@ -667,36 +800,58 @@
       const text = cleanText((item && item.text) || "");
       const matches = text.matchAll(/#([^#\n]{2,30})#/g);
       for (const m of matches) {
-        const name = cleanText(m[1] || "");
+        const raw = cleanText(m[1] || "");
+        const name = normalizeKnownRoomName(raw);
         if (!name || isWeakRoomAnchor(name)) continue;
-        // Ignore generic tags that are not room names.
-        if (/^(嗅嗅信息|重要提示)$/.test(name)) continue;
+        // Ignore generic / strategy / promo tags that are not room names.
+        if (/^(嗅嗅信息|重要提示|素材来自朋友贡献|我承认我不行)$/.test(name)) continue;
+        if (isDriftAnchorName(name) && !isPriorityRoomName(name)) continue;
+        if (name.length > 16 && !isPriorityRoomName(name)) continue;
         freq[name] = (freq[name] || 0) + 1;
       }
     }
-    const top = Object.entries(freq).sort((a, b) => b[1] - a[1])[0];
+    const ranked = Object.entries(freq).sort((a, b) => {
+      const pa = isPriorityRoomName(a[0]) ? 1 : 0;
+      const pb = isPriorityRoomName(b[0]) ? 1 : 0;
+      if (pb !== pa) return pb - pa;
+      return b[1] - a[1];
+    });
+    const top = ranked[0];
     if (!top) return "";
     const [name, count] = top;
     return count >= 1 ? name : "";
   }
 
   function inferRoomAnchorFromMessages(initialRoomAnchor, visibleMessages, topicAnchor) {
-    // 1) Known speaker alias (至尊宝 -> 孙悟空金牌)
+    const forced = normalizeKnownRoomName(runtimePageOptions.forced_room_anchor || runtimePageOptions.forcedRoomAnchor || "");
+    if (forced && !isWeakRoomAnchor(forced)) return forced;
+
+    // 1) Known speaker alias (至尊宝 -> 孙悟空金牌 / 陈子瞻 -> 龙头交易猿)
     const aliasRoom = inferRoomAnchorBySpeakerAlias("", visibleMessages);
     if (aliasRoom) return aliasRoom;
 
-    // 2) Majority #房间名# in bodies beats wrong sidebar picks (e.g. k神 vs #格兰投研#)
+    const initialNorm = normalizeKnownRoomName(initialRoomAnchor);
+    // 2) If sidebar/title already resolves to a priority template room, keep it.
+    //    Do not let bot-injected mixed tags override (周期女王/天机 现场教训).
+    if (initialNorm && isPriorityRoomName(initialNorm) && !isDriftAnchorName(initialNorm)) {
+      return normalizeKnownRoomName(initialNorm);
+    }
+
+    // 3) Majority / priority #房间名# in bodies (still demote drift names)
     const hashRoom = inferRoomAnchorByHashTag(visibleMessages);
     if (hashRoom) return hashRoom;
 
     if (topicAnchor) {
       const topicHash = cleanText(topicAnchor).match(/#([^#\n]{2,30})#/);
-      if (topicHash && !isWeakRoomAnchor(topicHash[1])) return cleanText(topicHash[1]);
+      if (topicHash) {
+        const topicName = normalizeKnownRoomName(topicHash[1]);
+        if (topicName && !isWeakRoomAnchor(topicName) && !isDriftAnchorName(topicName)) return topicName;
+      }
     }
 
-    if (!isWeakRoomAnchor(initialRoomAnchor)) {
-      const simplified = simplifyRoomAnchor(initialRoomAnchor);
-      return simplified || initialRoomAnchor;
+    if (initialNorm && !isWeakRoomAnchor(initialNorm)) {
+      const simplified = simplifyRoomAnchor(initialNorm);
+      return normalizeKnownRoomName(simplified || initialNorm);
     }
 
     const sources = [];
@@ -712,9 +867,11 @@
     const prefixMatch = normalizedSources
       .map((text) => text.match(/^([\u4e00-\u9fa5A-Za-z0-9（）()·\-_]{2,20})\s+\d{2}:\d{2}(?::\d{2})?\b/))
       .find(Boolean);
-    if (prefixMatch && !isWeakRoomAnchor(prefixMatch[1])) return cleanText(prefixMatch[1]);
+    if (prefixMatch && !isWeakRoomAnchor(prefixMatch[1]) && !isDriftAnchorName(prefixMatch[1])) {
+      return normalizeKnownRoomName(prefixMatch[1]);
+    }
 
-    return initialRoomAnchor || "";
+    return initialNorm || "";
   }
 
   function detectHistoryViewOrder(contentRoot) {
@@ -775,9 +932,9 @@
   }
 
   function run(options) {
-    const runtimeOptions = options || {};
+    const runtimeOptions = Object.assign({}, runtimePageOptions, options || {});
     const contentRoot = chooseContentRoot();
-    const topCenterTitle = chooseTopCenterTitle();
+    const topCenterTitle = normalizeKnownRoomName(chooseTopCenterTitle());
     const activeLeftRoom = chooseActiveLeftRoom();
     const initialRoomAnchor = !isWeakRoomAnchor(activeLeftRoom)
       ? activeLeftRoom
@@ -787,7 +944,8 @@
     const viewOrder = detectHistoryViewOrder(contentRoot);
     const primaryMessage = choosePrimaryMessage(visibleMessages, viewOrder);
     const topicAnchor = chooseTopicAnchor(primaryMessage, initialRoomAnchor);
-    const roomAnchor = inferRoomAnchorFromMessages(initialRoomAnchor, visibleMessages, topicAnchor);
+    let roomAnchor = inferRoomAnchorFromMessages(initialRoomAnchor, visibleMessages, topicAnchor);
+    roomAnchor = normalizeKnownRoomName(roomAnchor || initialRoomAnchor || "");
     if (roomAnchor !== initialRoomAnchor) {
       visibleMessages = extractVisibleMessages(contentRoot, roomAnchor);
     }
@@ -843,6 +1001,9 @@
         initial_room_anchor_candidate: initialRoomAnchor,
         room_anchor_candidate: roomAnchor || initialRoomAnchor || "",
         topic_anchor_candidate: finalTopicAnchor,
+        forced_room_anchor: runtimeOptions.forced_room_anchor || runtimeOptions.forcedRoomAnchor || "",
+        promo_strip_enabled: true,
+        merged_card_split_enabled: true,
       },
     };
 

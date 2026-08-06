@@ -1,11 +1,45 @@
 (async function () {
-  const RUNNER_VERSION = "live_info_incremental_export_v1.2";
+  const RUNNER_VERSION = "live_info_incremental_export_v1.3";
   const CHECKPOINT_PREFIX = "__infoLiveIncrementalCheckpointV1__";
   const runtimeOptions = window.__infoLiveIncrementalExportV1Options || {};
   const ROOM_SPEAKER_ALIAS_MAP = {
     "至尊宝": "孙悟空金牌",
     "陈子瞻": "龙头交易猿",
   };
+  const ROOM_NAME_ALIAS_MAP = {
+    "天机短线试更新": "天机",
+    "周期女王（新一期，重新搞的）": "周期女王",
+  };
+  const PRIORITY_ROOM_NAMES = [
+    "格兰投研",
+    "周期女王",
+    "天机",
+    "天机短线试更新",
+    "龙头交易猿",
+    "孙悟空金牌",
+  ];
+  const DRIFT_ANCHOR_NAMES = new Set(["k神", "先知", "浮光", "知行合一"]);
+
+  function normalizeKnownRoomName(text) {
+    const value = normalizeText(text);
+    if (!value) return "";
+    if (ROOM_NAME_ALIAS_MAP[value]) return ROOM_NAME_ALIAS_MAP[value];
+    const truncated = value.replace(/[…\.．]{1,}$/g, "").replace(/（新.*$/g, "").trim();
+    if (ROOM_NAME_ALIAS_MAP[truncated]) return ROOM_NAME_ALIAS_MAP[truncated];
+    if (/^周期女王/.test(value)) return "周期女王";
+    if (/^天机/.test(value)) return "天机";
+    return value;
+  }
+
+  function isPriorityRoomName(text) {
+    const value = normalizeKnownRoomName(text);
+    if (!value) return false;
+    return PRIORITY_ROOM_NAMES.some((name) => value === name || value.startsWith(name) || name.startsWith(value));
+  }
+
+  function isDriftAnchorName(text) {
+    return DRIFT_ANCHOR_NAMES.has(normalizeText(text));
+  }
 
   function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
@@ -371,35 +405,54 @@
       const text = normalizeText((item && item.text) || "");
       const matches = text.matchAll(/#([^#\n]{2,30})#/g);
       for (const m of matches) {
-        const name = normalizeText(m[1] || "");
+        const name = normalizeKnownRoomName(m[1] || "");
         if (!name || isWeakRoomAnchor(name)) continue;
-        if (/^(嗅嗅信息|重要提示)$/.test(name)) continue;
+        if (/^(嗅嗅信息|重要提示|素材来自朋友贡献|我承认我不行)$/.test(name)) continue;
+        if (isDriftAnchorName(name) && !isPriorityRoomName(name)) continue;
+        if (name.length > 16 && !isPriorityRoomName(name)) continue;
         freq[name] = (freq[name] || 0) + 1;
       }
     }
-    const top = Object.entries(freq).sort((a, b) => b[1] - a[1])[0];
+    const ranked = Object.entries(freq).sort((a, b) => {
+      const pa = isPriorityRoomName(a[0]) ? 1 : 0;
+      const pb = isPriorityRoomName(b[0]) ? 1 : 0;
+      if (pb !== pa) return pb - pa;
+      return b[1] - a[1];
+    });
+    const top = ranked[0];
     if (!top) return "";
     const [name, count] = top;
     return count >= 1 ? name : "";
   }
 
   const initial = await waitForStableViewport({});
-  let roomAnchor = initial.room_anchor || "unknown_room";
-  // Prefer speaker alias / #房间名# even when sidebar mis-picks (先知 / k神).
-  const aliasRoom = inferRoomAnchorBySpeakerAlias(roomAnchor, initial.visible_messages || []);
-  const hashRoom = inferRoomAnchorByHashTag(initial.visible_messages || []);
-  if (aliasRoom) {
-    roomAnchor = aliasRoom;
-  } else if (hashRoom) {
-    roomAnchor = hashRoom;
-  } else if (isWeakRoomAnchor(roomAnchor)) {
-    const heur = (initial && initial.heuristics) || {};
-    const candidates = [
-      heur.initial_room_anchor_candidate,
-      heur.room_anchor_candidate,
-      heur.topic_anchor_candidate,
-    ].filter((x) => x && !isWeakRoomAnchor(x));
-    if (candidates[0]) roomAnchor = candidates[0];
+  let roomAnchor = normalizeKnownRoomName(initial.room_anchor || "unknown_room");
+  const forcedRoom = normalizeKnownRoomName(
+    runtimeOptions.forced_room_anchor || runtimeOptions.forcedRoomAnchor || ""
+  );
+  if (forcedRoom && !isWeakRoomAnchor(forcedRoom)) {
+    roomAnchor = forcedRoom;
+  } else {
+    // Prefer speaker alias; keep priority room from current-page; only then use hashtag.
+    const aliasRoom = inferRoomAnchorBySpeakerAlias(roomAnchor, initial.visible_messages || []);
+    const hashRoom = inferRoomAnchorByHashTag(initial.visible_messages || []);
+    if (aliasRoom) {
+      roomAnchor = aliasRoom;
+    } else if (isPriorityRoomName(roomAnchor) && !isDriftAnchorName(roomAnchor)) {
+      roomAnchor = normalizeKnownRoomName(roomAnchor);
+    } else if (hashRoom) {
+      roomAnchor = hashRoom;
+    } else if (isWeakRoomAnchor(roomAnchor) || isDriftAnchorName(roomAnchor)) {
+      const heur = (initial && initial.heuristics) || {};
+      const candidates = [
+        heur.initial_room_anchor_candidate,
+        heur.room_anchor_candidate,
+        heur.topic_anchor_candidate,
+      ]
+        .map((x) => normalizeKnownRoomName(x))
+        .filter((x) => x && !isWeakRoomAnchor(x) && !isDriftAnchorName(x));
+      if (candidates[0]) roomAnchor = candidates[0];
+    }
   }
   if (resetCheckpoint) {
     clearCheckpoint(roomAnchor);
