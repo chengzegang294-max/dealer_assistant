@@ -13,12 +13,11 @@
 ## 当前内容
 
 - `00_raw/priority_rooms/格兰投研`
-- `00_raw/priority_rooms/天机`
-- `00_raw/priority_rooms/周期女王`
+- `00_raw/priority_rooms/天机`（新证 `163229`/`163547` 抽检#3=`scroll_end`/486；脚本误锚先知；广告覆盖仍在）
+- `00_raw/priority_rooms/周期女王`（含旧 `054021`；新证 `153333`/`153634`/`155043`/`155438` 已归入，抽检#2=`scroll_end`）
 - `00_raw/priority_rooms/龙头交易猿`
 - `00_raw/priority_rooms/孙悟空金牌`
-- `00_raw/priority_rooms/浮光`（2026-08-06 顺带吸收：`153333` 当前页 + `153634` 增量 `scroll_end`/251）
-- `00_raw/priority_rooms/k神`（2026-08-06：`155043`+`155438`；锚点可疑，截图侧栏似为知行合一）
+- `00_raw/priority_rooms/浮光` / `k神`（周期女王误锚点副本，对照保留）
 
 ## 角色
 
