@@ -17,6 +17,8 @@
 - `00_raw/priority_rooms/周期女王`
 - `00_raw/priority_rooms/龙头交易猿`
 - `00_raw/priority_rooms/孙悟空金牌`
+- `00_raw/priority_rooms/浮光`（2026-08-06 顺带吸收：`153333` 当前页 + `153634` 增量 `scroll_end`/251）
+- `00_raw/priority_rooms/k神`（2026-08-06：`155043`+`155438`；锚点可疑，截图侧栏似为知行合一）
 
 ## 角色
 
