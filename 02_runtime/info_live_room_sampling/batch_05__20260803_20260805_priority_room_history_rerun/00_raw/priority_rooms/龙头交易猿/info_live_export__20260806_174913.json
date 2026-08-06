@@ -1,0 +1,109 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-06T17:49:13.990Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "龙头交易猿",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "13:39:26",
+  "topic_anchor": "#龙头交易猿#",
+  "excerpt": "陈子瞻 13:39:24 结合大面数正常去弱留强即可，科技分化，传智整体负反馈， 明要么趋势反包或情绪高位反包修复良性高位震荡， 要么分歧加大大面发散进入短期亏米效应，五五开， 稳健观望等标准节点开新。其他等收盘 稳健医疗-1.58% 传智教育-7.16%",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:35:43",
+      "text": "陈子瞻 11:35:40 上午盘面除了老的光模块易中天等受利空影响水下震荡外， 其他科技，mlcc/半导体材料/pcb等，暂都低开上拉，借美股大涨，资金做T走法，风华格局大就依旧5均防守， 推升指数难得往上，涨跌比二连高潮，看午后是继续拉升一步到位， 还是类似昨天量化做T冲高回落了，还有的暂先手5均格局或滚动都可， 下午看。 风华高科+7.68% 中天火箭+1.09%",
+      "card_rect": {
+        "top": 44,
+        "left": 576,
+        "width": 845,
+        "height": 282
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:34:04",
+      "text": "陈子瞻 09:34:01 大伙早上好，盘前外围科技分化走迭下，竞价大A科技相关也正常分化， 结合大面数良性度和自身承接情况，5均防守看。 其他高标爱丽复牌资金暂多空博弈，但传智8板次日直接低开无溢价略低于预期， 稳健等大周期数掉下来的下一轮金叉看。 稳健医疗-0.44% 爱丽家居+9.98% 传智教育-3.41%",
+      "card_rect": {
+        "top": 326,
+        "left": 576,
+        "width": 845,
+        "height": 282
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:46:38",
+      "text": "陈子瞻 10:46:36 上午盘面，昨二连高潮，今分化是预期内，各题材内部淘汰赛，盘前外围美韩走迭反而小情绪低点开， 给一些趋势激进资金金字塔T或T减的机会，风华就相关范畴，稳健减，剩余等收破5均清。 哈药若还有的正常找分时脉冲止盈格局大博不续杯也至少减半。情绪流这块，爱丽复牌资金继续博弈顶是预期内，但昨8板的实体板传智直接低开弱势震荡就略低于预期，说明资金对冲击稳定强生态还是信心不足，无先手稳健就如早上说的等下轮情绪流周期金叉点，总体，上午整体暂大面数可控，午后也能维持就良性分化看待，正常先手去弱留强局，高潮次日无什么标准开新点。反之若大面数发散一堆，高标也出现地板，就还是混沌反复，行情不看太高预期。其他下午看。",
+      "card_rect": {
+        "top": 608,
+        "left": 576,
+        "width": 845,
+        "height": 248
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:36:53",
+      "text": "陈子瞻 13:36:50 午后来看，盘面和上午差不多，高潮次日的正常弱势震荡分化局",
+      "card_rect": {
+        "top": 856,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:39:26",
+      "text": "陈子瞻 13:39:24 结合大面数正常去弱留强即可，科技分化，传智整体负反馈， 明要么趋势反包或情绪高位反包修复良性高位震荡， 要么分歧加大大面发散进入短期亏米效应，五五开， 稳健观望等标准节点开新。其他等收盘 稳健医疗-1.58% 传智教育-7.16%",
+      "card_rect": {
+        "top": 978,
+        "left": 576,
+        "width": 845,
+        "height": 261
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 4044,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "陈子瞻 13:39:24 结合大面数正常去弱留强即可，科技分化，传智整体负反馈， 明要么趋势反包或情绪高位反包修复良性高位震荡， 要么分歧加大大面发散进入短期亏米效应，五五开， 稳健观望等标准节点开新。其他等收盘 稳健医疗-1.58% 传智教育-7.16%",
+    "visible_message_count": 5,
+    "primary_message_candidate": "陈子瞻 13:39:24 结合大面数正常去弱留强即可，科技分化，传智整体负反馈， 明要么趋势反包或情绪高位反包修复良性高位震荡， 要么分歧加大大面发散进入短期亏米效应，五五开， 稳健观望等标准节点开新。其他等收盘 稳健医疗-1.58% 传智教育-7.16%",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "龙头交易猿",
+    "topic_anchor_candidate": "#龙头交易猿#",
+    "forced_room_anchor": "",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-06T17:27:38.712Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "周期女王",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "14:13:16",
+  "topic_anchor": "#周期女王#",
+  "excerpt": "2026/08/06 14:13:16 #格兰投研#：中际旭创也是哦 都是的 也是 港股流动性好 2026-08-06 14:10:38 劍指青雲:港股立讯筹码干净 资金流动性也好！",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:04:59",
+      "text": "2026/08/05 14:04:59 #格兰投研#：必须的回馈社会是必须 peace and love 2026-08-05 13:59:42 芊芊#五期生）:赚钱了，回馈社会，老师，大爱无疆?",
+      "card_rect": {
+        "top": 60,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:06:42",
+      "text": "2026/08/05 14:06:42 #格兰投研#：书院必须满满正能量的陪伴大家 度过最危险的时候 2026-08-05 14:04:54 学习赚钱-四期生:在书院有满满的正能量！",
+      "card_rect": {
+        "top": 199,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:07:37",
+      "text": "2026/08/05 14:07:37 #格兰投研#：伊朗 落地了 市场肯定会反馈的 晚上还有小非农 2026-08-05 14:05:48 踏晨雨燕 5期生:紫金太舒服了，真的就是躺赢。",
+      "card_rect": {
+        "top": 359,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:08:12",
+      "text": "#格兰投研#:周五还有大非农呢而且jacksonhole 也是利好",
+      "card_rect": {
+        "top": 498,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:21:32",
+      "text": "#格兰投研#：海峡也开了 最大鬼故事 昨天也出来了 还能有啥",
+      "card_rect": {
+        "top": 620,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:31:17",
+      "text": "2026/08/06 13:31:17 #格兰投研#：有震荡很正常的不慌哈 这个位置肯定有震荡 2026-08-06 13:30:07 佳丽003-四期生:红讯的60分中轨又向下了，多看一根就是不能加仓",
+      "card_rect": {
+        "top": 721,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:39:31",
+      "text": "2026/08/06 13:39:31 #格兰投研#：可以的问题不大 金融这个位置稳一点 2026-08-06 13:35:32 我#五期生）:同花顺可以加仓吗",
+      "card_rect": {
+        "top": 860,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:39:47",
+      "text": "#格兰投研#：宁德没事其他锂电产业链不要碰",
+      "card_rect": {
+        "top": 999,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:13:16",
+      "text": "2026/08/06 14:13:16 #格兰投研#：中际旭创也是哦 都是的 也是 港股流动性好 2026-08-06 14:10:38 劍指青雲:港股立讯筹码干净 资金流动性也好！",
+      "card_rect": {
+        "top": 1100,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2290,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "2026/08/06 14:13:16 #格兰投研#：中际旭创也是哦 都是的 也是 港股流动性好 2026-08-06 14:10:38 劍指青雲:港股立讯筹码干净 资金流动性也好！",
+    "visible_message_count": 9,
+    "primary_message_candidate": "2026/08/06 14:13:16 #格兰投研#：中际旭创也是哦 都是的 也是 港股流动性好 2026-08-06 14:10:38 劍指青雲:港股立讯筹码干净 资金流动性也好！",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "周期女王",
+    "topic_anchor_candidate": "#周期女王#",
+    "forced_room_anchor": "",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

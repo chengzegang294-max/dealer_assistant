@@ -1,0 +1,164 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-06T17:21:06.056Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "周期女王",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "14:18:34",
+  "topic_anchor": "#周期女王#",
+  "excerpt": "2026/08/06 14:18:34 李聪 2026-08-06 14:18:28 下午你能想到拉老登的煤炭？",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:23:15",
+      "text": "2026/08/06 09:23:20 李聪 2026-08-06 09:23:15 易、中.昨天最低点.画条线过去.最好是缩量.不跌破。自己看着点",
+      "card_rect": {
+        "top": -23,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:33:39",
+      "text": "2026/08/06 09:33:39 李聪 2026-08-06 09:33:28 国产链承接还好.海外易中不好",
+      "card_rect": {
+        "top": 99,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:42:39",
+      "text": "2026/08/06 09:42:39 李聪 2026-08-06 09:42:28 易、中守住昨天最低点的箱体了。科技情绪稳住就好。",
+      "card_rect": {
+        "top": 221,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:55:20",
+      "text": "2026/08/06 09:55:20 李聪 2026-08-06 09:55:10 中-微-公司.之前已经减半.剩下的.翻绿就清仓哈",
+      "card_rect": {
+        "top": 343,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:03:19",
+      "text": "2026/08/06 10:03:19 李聪 2026-08-06 10:03:10 你们有多少人抄底了易、中的？光模块.如果不是外围出利空.我们早就吃票子了。现在只能让你们自己决定.我给抄底位.帮忙看着",
+      "card_rect": {
+        "top": 486,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:35:30",
+      "text": "2026/08/06 10:35:30 李聪 2026-08-06 10:35:24 我很负责的.就收800.一天到晚腰椎病都出来了。还担心你们半天",
+      "card_rect": {
+        "top": 629,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:13:26",
+      "text": "2026/08/06 13:13:26 李聪 2026-08-06 13:13:20 但是风险点在于.外围我不知道怎么走。所以.自己决定",
+      "card_rect": {
+        "top": 751,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:13:47",
+      "text": "2026/08/06 13:13:47 李聪 2026-08-06 13:13:41 再出利空.不是我能控制的",
+      "card_rect": {
+        "top": 873,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:17:24",
+      "text": "2026/08/06 14:17:24 李聪 2026-08-06 14:17:18 情绪流都是.跌下来有人沿着5、10日低吃.强更强没人追",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:18:34",
+      "text": "2026/08/06 14:18:34 李聪 2026-08-06 14:18:28 下午你能想到拉老登的煤炭？",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2966,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "2026/08/06 14:18:34 李聪 2026-08-06 14:18:28 下午你能想到拉老登的煤炭？",
+    "visible_message_count": 10,
+    "primary_message_candidate": "2026/08/06 14:18:34 李聪 2026-08-06 14:18:28 下午你能想到拉老登的煤炭？",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "周期女王",
+    "topic_anchor_candidate": "#周期女王#",
+    "forced_room_anchor": "",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}
