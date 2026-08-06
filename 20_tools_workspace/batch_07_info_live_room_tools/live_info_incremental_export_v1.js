@@ -1,5 +1,5 @@
 (async function () {
-  const RUNNER_VERSION = "live_info_incremental_export_v1.1";
+  const RUNNER_VERSION = "live_info_incremental_export_v1.2";
   const CHECKPOINT_PREFIX = "__infoLiveIncrementalCheckpointV1__";
   const runtimeOptions = window.__infoLiveIncrementalExportV1Options || {};
   const ROOM_SPEAKER_ALIAS_MAP = {
@@ -365,12 +365,33 @@
     }
   }
 
+  function inferRoomAnchorByHashTag(visibleMessages) {
+    const freq = {};
+    for (const item of visibleMessages || []) {
+      const text = normalizeText((item && item.text) || "");
+      const matches = text.matchAll(/#([^#\n]{2,30})#/g);
+      for (const m of matches) {
+        const name = normalizeText(m[1] || "");
+        if (!name || isWeakRoomAnchor(name)) continue;
+        if (/^(嗅嗅信息|重要提示)$/.test(name)) continue;
+        freq[name] = (freq[name] || 0) + 1;
+      }
+    }
+    const top = Object.entries(freq).sort((a, b) => b[1] - a[1])[0];
+    if (!top) return "";
+    const [name, count] = top;
+    return count >= 1 ? name : "";
+  }
+
   const initial = await waitForStableViewport({});
   let roomAnchor = initial.room_anchor || "unknown_room";
-  // Prefer speaker alias even when sidebar mis-picks a short wrong room name (e.g. 先知).
+  // Prefer speaker alias / #房间名# even when sidebar mis-picks (先知 / k神).
   const aliasRoom = inferRoomAnchorBySpeakerAlias(roomAnchor, initial.visible_messages || []);
+  const hashRoom = inferRoomAnchorByHashTag(initial.visible_messages || []);
   if (aliasRoom) {
     roomAnchor = aliasRoom;
+  } else if (hashRoom) {
+    roomAnchor = hashRoom;
   } else if (isWeakRoomAnchor(roomAnchor)) {
     const heur = (initial && initial.heuristics) || {};
     const candidates = [

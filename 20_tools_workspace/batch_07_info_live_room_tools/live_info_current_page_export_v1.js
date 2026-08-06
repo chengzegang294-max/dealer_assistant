@@ -1,5 +1,5 @@
 (function () {
-  const EXPORT_VERSION = "live_info_current_page_export_v1.3";
+  const EXPORT_VERSION = "live_info_current_page_export_v1.4";
   const ROOM_SPEAKER_ALIAS_MAP = {
     "至尊宝": "孙悟空金牌",
     "陈子瞻": "龙头交易猿",
@@ -661,11 +661,38 @@
     return sortMessagesByViewport(Array.from(map.values()));
   }
 
+  function inferRoomAnchorByHashTag(visibleMessages) {
+    const freq = {};
+    for (const item of visibleMessages || []) {
+      const text = cleanText((item && item.text) || "");
+      const matches = text.matchAll(/#([^#\n]{2,30})#/g);
+      for (const m of matches) {
+        const name = cleanText(m[1] || "");
+        if (!name || isWeakRoomAnchor(name)) continue;
+        // Ignore generic tags that are not room names.
+        if (/^(嗅嗅信息|重要提示)$/.test(name)) continue;
+        freq[name] = (freq[name] || 0) + 1;
+      }
+    }
+    const top = Object.entries(freq).sort((a, b) => b[1] - a[1])[0];
+    if (!top) return "";
+    const [name, count] = top;
+    return count >= 1 ? name : "";
+  }
+
   function inferRoomAnchorFromMessages(initialRoomAnchor, visibleMessages, topicAnchor) {
-    // Speaker alias wins when message bodies clearly belong to a known host alias.
-    // Example: bodies start with "至尊宝" -> room_anchor "孙悟空金牌", even if sidebar mis-picked "先知".
+    // 1) Known speaker alias (至尊宝 -> 孙悟空金牌)
     const aliasRoom = inferRoomAnchorBySpeakerAlias("", visibleMessages);
     if (aliasRoom) return aliasRoom;
+
+    // 2) Majority #房间名# in bodies beats wrong sidebar picks (e.g. k神 vs #格兰投研#)
+    const hashRoom = inferRoomAnchorByHashTag(visibleMessages);
+    if (hashRoom) return hashRoom;
+
+    if (topicAnchor) {
+      const topicHash = cleanText(topicAnchor).match(/#([^#\n]{2,30})#/);
+      if (topicHash && !isWeakRoomAnchor(topicHash[1])) return cleanText(topicHash[1]);
+    }
 
     if (!isWeakRoomAnchor(initialRoomAnchor)) {
       const simplified = simplifyRoomAnchor(initialRoomAnchor);
@@ -681,11 +708,6 @@
     const normalizedSources = sources
       .map((text) => stripSpeakerLabel(text))
       .filter(Boolean);
-
-    const hashMatch = normalizedSources
-      .map((text) => cleanText(text).match(/#([^#\n]{2,30})#/))
-      .find(Boolean);
-    if (hashMatch && !isWeakRoomAnchor(hashMatch[1])) return cleanText(hashMatch[1]);
 
     const prefixMatch = normalizedSources
       .map((text) => text.match(/^([\u4e00-\u9fa5A-Za-z0-9（）()·\-_]{2,20})\s+\d{2}:\d{2}(?::\d{2})?\b/))
