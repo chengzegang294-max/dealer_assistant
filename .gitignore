@@ -6,7 +6,12 @@ __pycache__/
 .ruff_cache/
 .pyright/
 .vscode/settings.json
-.trae/
+!.trae/
+.trae/*
+!.trae/skills/
+.trae/skills/*
+!.trae/skills/dual-repo-workflow-cn/
+!.trae/skills/dual-repo-workflow-cn/SKILL.md
 .dbg/
 trae-debug-log-*.ndjson
 debug-*.md
