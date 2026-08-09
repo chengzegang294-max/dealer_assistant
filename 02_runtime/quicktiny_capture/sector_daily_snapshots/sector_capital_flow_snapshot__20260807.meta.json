@@ -1,0 +1,14 @@
+{
+  "trade_date": "20260807",
+  "input_json": "d:\\Stock\\trading_assistant\\02_runtime\\quicktiny_capture\\batch_05_min_day_sample__20260807\\00_raw\\sector_capital_flow_snapshot__20260807.json",
+  "output_json": "d:\\Stock\\trading_assistant\\02_runtime\\quicktiny_capture\\sector_daily_snapshots\\sector_capital_flow_snapshot__20260807.json",
+  "output_tsv": "d:\\Stock\\trading_assistant\\02_runtime\\quicktiny_capture\\sector_daily_snapshots\\sector_capital_flow_snapshot__20260807.tsv",
+  "row_count": 271,
+  "success": true,
+  "actual_trade_date": "20260807",
+  "snapshot_minute": "15:00",
+  "universe": "featured",
+  "returned": 271,
+  "notes": [],
+  "scope": "same_day_archive_only_no_historical_fetch"
+}

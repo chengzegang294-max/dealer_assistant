@@ -15,7 +15,7 @@
 ## 一、回包来源
 
 - 临时路径：
-  - `D:\Stock\trading_assistant\暂时存放\粘贴区.md`
+  - `d:\Stock\dealer_assistant\暂时存放\粘贴区.md`
 - 材料类型：
   - `TEMPORARY / 多AI回包中转`
 - 是否值得吸收：

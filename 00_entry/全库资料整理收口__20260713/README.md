@@ -1,6 +1,6 @@
 # 全库资料整理收口
 
-更新时间：2026-07-27
+更新时间：2026-08-09
 
 ## 作用
 
@@ -18,22 +18,49 @@
 
 第一批已迁出的历史过程稿，统一见：
 
-- [batch_131_entry_history_process_docs__20260806](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_131_entry_history_process_docs__20260806)
-- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_131_entry_history_process_docs__20260806/migration_manifest.tsv)
+- [batch_131_entry_history_process_docs__20260806](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_131_entry_history_process_docs__20260806)
+- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_131_entry_history_process_docs__20260806/migration_manifest.tsv)
 
 第二批已迁出的准备与前情提要稿，统一见：
 
-- [batch_132_entry_prep_and_briefing_docs__20260806](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_132_entry_prep_and_briefing_docs__20260806)
-- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_132_entry_prep_and_briefing_docs__20260806/migration_manifest.tsv)
+- [batch_132_entry_prep_and_briefing_docs__20260806](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_132_entry_prep_and_briefing_docs__20260806)
+- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_132_entry_prep_and_briefing_docs__20260806/migration_manifest.tsv)
 
 当前这个目录为什么还保留这么多文件，见：
 
-- [A5_全库资料整理收口目录当前保留对象说明__20260806.md](file:///d:/Stock/trading_assistant/00_entry/全库资料整理收口__20260713/A5_全库资料整理收口目录当前保留对象说明__20260806.md)
+- [A5_全库资料整理收口目录当前保留对象说明__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_全库资料整理收口目录当前保留对象说明__20260806.md)
+
+## 现在先走四个子入口
+
+如果你不是来翻历史，而是来继续当前主线，先不要直接在这 300 多页里乱找。
+
+当前先从这 4 张子入口进：
+
+1. [A5_直播间入口与长期保留口径__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_直播间入口与长期保留口径__20260809.md)
+   - 看直播间怎么评级、哪些房长期保留、哪些只留片段
+2. [A5_连板天梯入口与最小使用说明__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_连板天梯入口与最小使用说明__20260809.md)
+   - 看连板天梯现在真正可用的模块、字段和日常怎么用
+3. [A5_短线缺口外补入口与P1执行说明__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_短线缺口外补入口与P1执行说明__20260809.md)
+   - 看当前真缺什么、P1 怎么连续记、sector 快照怎么积
+4. [A5_历史遗留入口与后看边界__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_历史遗留入口与后看边界__20260809.md)
+   - 看哪些是历史遗留、哪些默认不要再占当前视野
+
+与这四条入口配套的当前裁决页，补看：
+
+- [A5_私人短线工作台与最终输出形态_多家AI回收记录与主负责人裁决__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_私人短线工作台与最终输出形态_多家AI回收记录与主负责人裁决__20260809.md)
+  - 已正式冻结：`先自动抓数据，再自动预填判断，最后才谈更完整的自动链`
+
+这轮新增两张更短的日用页：
+
+- [A5_直播间长期保留_vs_片段优先正式短名单__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_直播间长期保留_vs_片段优先正式短名单__20260809.md)
+  - 直播间当前正式短名单
+- [A5_连板天梯盘后3分钟怎么看__极简版__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/A5_连板天梯盘后3分钟怎么看__极简版__20260809.md)
+  - 盘后最短使用页
 
 第三批已迁出的元流程协同页，统一见：
 
-- [batch_133_entry_meta_coordination_docs__20260806](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_133_entry_meta_coordination_docs__20260806)
-- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/trading_assistant/11_frozen_summaries_archive/batch_133_entry_meta_coordination_docs__20260806/migration_manifest.tsv)
+- [batch_133_entry_meta_coordination_docs__20260806](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_133_entry_meta_coordination_docs__20260806)
+- 对应关系清单：[migration_manifest.tsv](file:///d:/Stock/dealer_assistant/11_frozen_summaries_archive/batch_133_entry_meta_coordination_docs__20260806/migration_manifest.tsv)
 
 ## 默认阅读顺序
 

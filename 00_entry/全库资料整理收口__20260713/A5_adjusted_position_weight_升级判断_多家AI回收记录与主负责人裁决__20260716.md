@@ -14,7 +14,7 @@
 ## 一、临时回包吸收记录
 
 - 原临时路径：
-  - `D:\Stock\trading_assistant\暂时存放\粘贴区.md`
+  - `d:\Stock\dealer_assistant\暂时存放\粘贴区.md`
 - 材料类型：
   - `adjusted_position_weight 单点升级判断多模型回包`
 - 是否值得吸收：
