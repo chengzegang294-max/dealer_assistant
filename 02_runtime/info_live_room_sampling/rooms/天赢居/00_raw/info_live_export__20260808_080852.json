@@ -1,0 +1,131 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:08:52.227Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "天赢居",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:04:50",
+  "topic_anchor": "#天赢居#",
+  "excerpt": "#天赢居# 在3918的时候惯性较大,所以继续向上滑行了一点,但是现在阻力位更加沉重了,洗盘的概率更大了,如图",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:30:24",
+      "text": "#天赢居# 冲到3918之前的速度是快的,而且流畅,几乎是一气呵成. 但到了3918之后,分时图歪歪扭扭,速度明显慢了,但也没有撤退信号,所以借助惯性碎步小阳爬升,一点一点摸上去.",
+      "card_rect": {
+        "top": 133,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:43:53",
+      "text": "#天赢居# 有色资源前期上涨已经积累了一定利润,上午部分品种冲高以后转为高位震荡. 如果科技继续强化,有色可能暂时进入休息；如果科技短线过热,则资源能源又可能重新承接资金. 所以现阶段不适合频繁追着每天涨幅最大的板块切换,反而应该把不同方向放在各自趋势里观察. 操作层面,下午更应该利用分化而不是害怕分化. 高位加速的品种等待回踩,不在3918附近继续追；已经建立上升通道的核心品种,只要没有破坏自己的趋势,就让利润继续运行；还在均线密集区下方、只能依赖板块情绪跟涨的后排品种,则趁指数强势逐步去弱.",
+      "card_rect": {
+        "top": 276,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:43:55",
+      "text": "#天赢居# 有色资源前期上涨已经积累了一定利润,上午部分品种冲高以后转为高位震荡. 如果科技继续强化,有色可能暂时进入休息；如果科技短线过热,则资源能源又可能重新承接资金. 所以现阶段不适合频繁追着每天涨幅最大的板块切换,反而应该把不同方向放在各自趋势里观察. 操作层面,下午更应该利用分化而不是害怕分化. 高位加速的品种等待回踩,不在3918附近继续追；已经建立上升通道的核心品种,只要没有破坏自己的趋势,就让利润继续运行；还在均线密集区下方、只能依赖板块情绪跟涨的后排品种,则趁指数强势逐步去弱.",
+      "card_rect": {
+        "top": 482,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:46:33",
+      "text": "#天赢居# 指数能不能把3918变成支撑,核心热点能不能重新扩散到整个硬件或有色资源. 前者决定大盘还能不能继续向3950—4000升级,后者决定这段上涨到底是“指数行情”,还是能够真正带来较好赚钱效应的大涨阶段.",
+      "card_rect": {
+        "top": 688,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:46:37",
+      "text": "#天赢居# 指数能不能把3918变成支撑,核心热点能不能重新扩散到整个硬件或有色资源. 前者决定大盘还能不能继续向3950—4000升级,后者决定这段上涨到底是“指数行情”,还是能够真正带来较好赚钱效应的大涨阶段.",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:04:49",
+      "text": "#天赢居# 在3918的时候惯性较大,所以继续向上滑行了一点,但是现在阻力位更加沉重了,洗盘的概率更大了,如图",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:04:50",
+      "text": "#天赢居# 在3918的时候惯性较大,所以继续向上滑行了一点,但是现在阻力位更加沉重了,洗盘的概率更大了,如图",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 7251,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "#天赢居# 在3918的时候惯性较大,所以继续向上滑行了一点,但是现在阻力位更加沉重了,洗盘的概率更大了,如图",
+    "visible_message_count": 7,
+    "primary_message_candidate": "#天赢居# 在3918的时候惯性较大,所以继续向上滑行了一点,但是现在阻力位更加沉重了,洗盘的概率更大了,如图",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "天赢居",
+    "topic_anchor_candidate": "#天赢居#",
+    "forced_room_anchor": "天赢居",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

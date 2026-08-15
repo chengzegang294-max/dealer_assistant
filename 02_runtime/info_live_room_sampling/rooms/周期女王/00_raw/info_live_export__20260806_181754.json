@@ -1,0 +1,164 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-06T18:17:54.655Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "孙悟空金牌",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "14:35:46",
+  "topic_anchor": "#孙悟空金牌#",
+  "excerpt": "投研圈下午看下来！大盘持续缩量！煤炭、农林业、银行等防守板块比较活跃！尾盘科技有资金在尝试拿先手！参与难度大！看戏吧！",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:31:57",
+      "text": "至尊宝这段时间的龟兔模式太好用了啊！不少兄弟掌握的都很好！今日这个无人驾驶大立科技和兴民智通！也是标准的厂字板乌龟！金融科技金一文化和博彦科技！非常标准",
+      "card_rect": {
+        "top": 61,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:33:19",
+      "text": "至尊宝所以说我讲了！只要有投机行情！龟兔就是最好用的模式！没有之一",
+      "card_rect": {
+        "top": 183,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:33:52",
+      "text": "至尊宝这种级别的东西！好几家量化机构花几十万费用请我去讲！他们想做成模型！我全部拒绝！兄弟们好好珍惜吧",
+      "card_rect": {
+        "top": 284,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:38:25",
+      "text": "至尊宝如果这种模式被量化做成模型因子了！后果！！！！又是一个大型收割模型！而且是超高胜率那种",
+      "card_rect": {
+        "top": 406,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:43:22",
+      "text": "至尊宝哈哈！我拒绝这些量化的邀请！所以！我在咱们圈子里手把手通过实战案例教兄弟们！这是不是间接算兄弟们赚了几十个￥",
+      "card_rect": {
+        "top": 507,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:46:07",
+      "text": "至尊宝聊着聊着！神龙摆尾的利通电子就上板了",
+      "card_rect": {
+        "top": 629,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:07:16",
+      "text": "至尊宝我一直在讲！做交易讲究的是顺势而为！你要清楚市场的风格偏好在哪里！比如5,6月份！量能在3.5万亿！市场偏好就在科技趋势大票！这时候你非要干投机！你不亏谁亏￥然后目前！量能下来了！市场偏好又回到连板投机！你非要去干百亿成交的大票！能好做吗￥市场就是最好的老师！专治不服！继续不服就把不服的消灭",
+      "card_rect": {
+        "top": 730,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:51:31",
+      "text": "投研圈又在拉银行了！！！",
+      "card_rect": {
+        "top": 894,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:10:09",
+      "text": "投研圈林业这突然集体上拉！不知道又触发了什么量化语料了",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:35:46",
+      "text": "投研圈下午看下来！大盘持续缩量！煤炭、农林业、银行等防守板块比较活跃！尾盘科技有资金在尝试拿先手！参与难度大！看戏吧！",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2433,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "投研圈下午看下来！大盘持续缩量！煤炭、农林业、银行等防守板块比较活跃！尾盘科技有资金在尝试拿先手！参与难度大！看戏吧！",
+    "visible_message_count": 10,
+    "primary_message_candidate": "投研圈下午看下来！大盘持续缩量！煤炭、农林业、银行等防守板块比较活跃！尾盘科技有资金在尝试拿先手！参与难度大！看戏吧！",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "孙悟空金牌",
+    "topic_anchor_candidate": "#孙悟空金牌#",
+    "forced_room_anchor": "孙悟空金牌",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

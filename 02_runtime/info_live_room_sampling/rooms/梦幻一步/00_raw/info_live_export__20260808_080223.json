@@ -1,0 +1,175 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:02:23.123Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "梦幻一步",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:07:59",
+  "topic_anchor": "#梦幻一步#",
+  "excerpt": "盘面 2026/08/07 14:07:59 打野",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:38:13",
+      "text": "盘面 传，，rubin要用盛科的芯片这种利好都有？",
+      "card_rect": {
+        "top": 86,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:23:16",
+      "text": "盘面 网络安全.竞价没啥反应呀。还是市场情绪转防守？",
+      "card_rect": {
+        "top": 187,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:32:56",
+      "text": "兆易完成第一目标400后.后面持仓与否靠大家自己了。不跟踪了。空间必然有的.我怕有人追.难受。",
+      "card_rect": {
+        "top": 288,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:38:51",
+      "text": "盘面 瑞芯微.结合兑。不跟踪了。",
+      "card_rect": {
+        "top": 389,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:38:54",
+      "text": "盘面 瑞芯微.结合兑。不跟踪了。",
+      "card_rect": {
+        "top": 490,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:39:26",
+      "text": "兆易完成第一目标400后.后面持仓与否靠大家自己了。不跟踪了。空间必然有的.我怕有人追.难受。想拿参考我的第二目标区间.表格有。但是后面介入的.不管了。我不跟了。",
+      "card_rect": {
+        "top": 591,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:19:54",
+      "text": "盘面 新增一个688的。",
+      "card_rect": {
+        "top": 713,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:30:02",
+      "text": "盘面 胜宏大哥地位是不是回来了？",
+      "card_rect": {
+        "top": 835,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:09:31",
+      "text": "盘面 中线有更新！上午那个文档发错了！",
+      "card_rect": {
+        "top": 936,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:32:40",
+      "text": "盘面 三环拿着不动",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:07:59",
+      "text": "盘面 2026/08/07 14:07:59 打野",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 1622,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "盘面 2026/08/07 14:07:59 打野",
+    "visible_message_count": 11,
+    "primary_message_candidate": "盘面 2026/08/07 14:07:59 打野",
+    "initial_room_anchor_candidate": "格兰投研",
+    "room_anchor_candidate": "梦幻一步",
+    "topic_anchor_candidate": "#梦幻一步#",
+    "forced_room_anchor": "梦幻一步",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

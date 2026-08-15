@@ -1,0 +1,8 @@
+room_anchor	current_bucket	suggested_retention_action	reason_short	followup_frequency	downgrade_to	message_count	history_depth_hint	old_auto_tier	date_span
+孙悟空金牌	C_downgrade	summary_only	模板房，抓取已够，不再全文常更	偶发抽检	摘要+评分+必要锚点	663	high	C	2026/07/08 ~ 2026/08/06
+上海老梁	C_downgrade	summary_only	轻量历史，旧 tier 偏低	低频抽检	摘要	119	light	C	2026/07/09 ~ 2026/08/07
+七龙珠	C_downgrade	summary_only	轻量历史，旧 tier 偏低	低频抽检	摘要	113	light	C	2026/07/09 ~ 2026/08/07
+兄安	C_downgrade	summary_only	轻量历史，独特性待证实	低频抽检	摘要	113	light		2026/07/09 ~ 2026/08/05
+浮光	C_downgrade	summary_only	轻量历史，先降权	偶发抽检	摘要或评分	94	light		2026/07/09 ~ 2026/08/07
+大师兄擒妖	C_downgrade	summary_only	轻量历史，先降权	偶发抽检	摘要或评分	72	light	A	09:31 ~ 2026/08/07
+招财大师姐	D_score_only_or_archive	score_only	短留存，全文价值低	不常更	仅评分	18	light	C	2026/07/13 ~ 2026/08/06

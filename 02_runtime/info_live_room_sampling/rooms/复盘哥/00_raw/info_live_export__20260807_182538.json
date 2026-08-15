@@ -1,0 +1,131 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-07T18:25:38.097Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "复盘哥",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "15:33:42",
+  "topic_anchor": "#复盘哥#",
+  "excerpt": "2026/08/07 15:33:42 李朋 2026-08-07 15:33:34 886",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:24:19",
+      "text": "2026/08/07 15:24:19 李朋 2026-08-07 15:24:06 节奏买点应对：泛微网络如何？回复：感觉一般。今天尾盘如果是赌应用中位股反包，我觉得天融信和博彦科技不错。",
+      "card_rect": {
+        "top": 83,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:29:53",
+      "text": "2026/08/07 15:29:53 李朋 2026-08-07 15:29:45 一觉醒来：明哥，比如行云科技，昨天买它分歧，赌它今天反包，结果上午始终震荡，红盘就走了，等不到它下午拉升，这种也是要平衡敏感应对或者看个1-3天等反包吧回复：这种其实是最难的。难在两点： 1，不是最 2，终完美，盯着的是尾盘结果。但又怕，没有。",
+      "card_rect": {
+        "top": 226,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:30:29",
+      "text": "2026/08/07 15:30:29 李朋 2026-08-07 15:30:09最，你盯着利tong，上午就给四五个点了啊。",
+      "card_rect": {
+        "top": 411,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:30:31",
+      "text": "2026/08/07 15:30:31",
+      "card_rect": {
+        "top": 512,
+        "left": 576,
+        "width": 845,
+        "height": 323
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:32:43",
+      "text": "2026/08/07 15:32:43 永不言弃983 2026-08-07 15:31:23明哥，中美对抗，海外链式因为早上你的的消息，资金理解为利好了吗？？？搞不明白，pcb为什么大涨？李朋 2026-08-07 15:32:32 抓大放小。 因为都有反弹预期，没有消息的，可能会涨，有消息的，直接就涨了。",
+      "card_rect": {
+        "top": 835,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:33:16",
+      "text": "2026/08/07 15:33:16 李朋 2026-08-07 15:33:04 没啥消息了。 那今天到这了啊。",
+      "card_rect": {
+        "top": 1020,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "15:33:42",
+      "text": "2026/08/07 15:33:42 李朋 2026-08-07 15:33:34 886",
+      "card_rect": {
+        "top": 1163,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2949,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "2026/08/07 15:33:42 李朋 2026-08-07 15:33:34 886",
+    "visible_message_count": 7,
+    "primary_message_candidate": "2026/08/07 15:33:42 李朋 2026-08-07 15:33:34 886",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "复盘哥",
+    "topic_anchor_candidate": "#复盘哥#",
+    "forced_room_anchor": "复盘哥",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

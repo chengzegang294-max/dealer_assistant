@@ -1,0 +1,53 @@
+{
+  "export_version": "live_info_current_page_export_v1.6",
+  "exported_at": "2026-08-11T17:37:18.013Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "",
+  "room_anchor": "机构研报资讯精选（独角兽）",
+  "history_entry": "历史记录",
+  "display_date": "",
+  "display_time": "",
+  "topic_anchor": "#机构研报资讯精选（独角兽）#",
+  "excerpt": "",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 465,
+          "left": 570,
+          "width": 403,
+          "height": 344
+        },
+        "tag": "uni-view",
+        "class_name": "cu-dialog"
+      }
+    },
+    "content_text_length": 86,
+    "content_root_tag": "uni-view",
+    "first_message_candidate": "",
+    "visible_message_count": 0,
+    "primary_message_candidate": "",
+    "initial_room_anchor_candidate": "机构研报资讯精选（独角兽）",
+    "room_anchor_candidate": "机构研报资讯精选（独角兽）",
+    "topic_anchor_candidate": "#机构研报资讯精选（独角兽）#",
+    "forced_room_anchor": "",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

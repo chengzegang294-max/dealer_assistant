@@ -1,0 +1,20 @@
+{
+    "source":  "refetch:https://stock.quicktiny.cn/api/ladder/day/20260811",
+    "tradeDate":  "20260811",
+    "acceptRows":  58,
+    "ladderMinJson":  {
+                          "sizeBytes":  72584,
+                          "sha256":  "20fc92fd916fd3cee14a6729d93644ec8d73cc2c9ae2c1c1cf5d829eac80a7e4"
+                      },
+    "mismatchBoardLevelVsLevel":  0,
+    "generatedAt":  "2026-08-11 15:20:58",
+    "batchRel":  "batch_08_daily_close__20260811",
+    "ladderMinTsv":  {
+                         "sizeBytes":  16487,
+                         "sha256":  "7f41a3b44358dc0bb0d5ca9734dee3c5ba743445560611f888c3524acb91e7d9"
+                     },
+    "ladder16colTsv":  {
+                           "sizeBytes":  6978,
+                           "sha256":  "b43ce6a1ee5363ddb1d61635af01a4ab47a6af09337a78267cae1ad1f9ef7c7d"
+                       }
+}

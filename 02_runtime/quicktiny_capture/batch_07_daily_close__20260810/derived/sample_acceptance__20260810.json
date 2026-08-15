@@ -1,0 +1,69 @@
+{
+  "date": "20260810",
+  "passed": true,
+  "ladder_source": "refetch:https://stock.quicktiny.cn/api/ladder/day/20260810",
+  "sector_source": "refetch:https://stock.quicktiny.cn/api/sector-capital-flow/snapshot?tradeDate=20260810&universe=featured&order=desc&limit=500",
+  "ladder_totalStocks": 99,
+  "ladder_stock_rows": 99,
+  "sector_returned": 271,
+  "sector_row_rows": 271,
+  "plate_join_overlap_count": 39,
+  "plate_join_ratio_vs_ladder_plates": 1.0,
+  "checks": [
+    {
+      "name": "ladder_dates_non_empty",
+      "ok": true,
+      "detail": "dates_len=1"
+    },
+    {
+      "name": "ladder_date_match",
+      "ok": true,
+      "detail": "got=20260810"
+    },
+    {
+      "name": "ladder_boards_non_empty",
+      "ok": true,
+      "detail": "boards_len=4"
+    },
+    {
+      "name": "ladder_stocks_non_empty",
+      "ok": true,
+      "detail": "stock_rows=99"
+    },
+    {
+      "name": "ladder_totalStocks_vs_rows",
+      "ok": true,
+      "detail": "totalStocks=99 rows=99"
+    },
+    {
+      "name": "ladder_required_fields",
+      "ok": true,
+      "detail": "stocks_with_required_missing=0"
+    },
+    {
+      "name": "sector_success",
+      "ok": true,
+      "detail": "success=True"
+    },
+    {
+      "name": "sector_actualTradeDate_match",
+      "ok": true,
+      "detail": "got=20260810"
+    },
+    {
+      "name": "sector_rows_non_empty",
+      "ok": true,
+      "detail": "rows=271"
+    },
+    {
+      "name": "sector_returned_vs_rows",
+      "ok": true,
+      "detail": "returned=271 rows=271"
+    },
+    {
+      "name": "no_third_endpoint",
+      "ok": true,
+      "detail": "only ladder/day + sector-capital-flow/snapshot"
+    }
+  ]
+}

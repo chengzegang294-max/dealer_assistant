@@ -1,0 +1,175 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:18:06.014Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "独家竞价低吸",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "13:55:37",
+  "topic_anchor": "#独家竞价低吸#",
+  "excerpt": "2点视频号开播闲聊",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:50:43",
+      "text": "超4000+下跌.市场情绪较差.控制仓位了",
+      "card_rect": {
+        "top": 86,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:55:35",
+      "text": "3进4目前能看的就云南好点",
+      "card_rect": {
+        "top": 187,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:00:35",
+      "text": "利通 今天没板块加持.更多算是抱团 了.有被板块带下来的风险",
+      "card_rect": {
+        "top": 309,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:01:51",
+      "text": "有研再次封板成功.还是得等到10点才行.不然又得卖飞",
+      "card_rect": {
+        "top": 410,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:05:47",
+      "text": "套利的 光智也是继续高举高打",
+      "card_rect": {
+        "top": 511,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:14:39",
+      "text": "3进4没啥好的下手点。博杰有点后排了",
+      "card_rect": {
+        "top": 612,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:18:51",
+      "text": "计划就是周五把仓位控制在5成以下的.就不开新仓了.提前下班",
+      "card_rect": {
+        "top": 734,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:19:03",
+      "text": "华正也封板了.算是逻辑被市场验证了",
+      "card_rect": {
+        "top": 835,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:19:37",
+      "text": "看着光智的表现.感觉有研也不香了",
+      "card_rect": {
+        "top": 936,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:36:45",
+      "text": "周五还是的悠着点.容易冲高回落.不追高",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:55:37",
+      "text": "2点视频号开播闲聊",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 1310,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "2点视频号开播闲聊",
+    "visible_message_count": 11,
+    "primary_message_candidate": "2点视频号开播闲聊",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "独家竞价低吸",
+    "topic_anchor_candidate": "#独家竞价低吸#",
+    "forced_room_anchor": "独家竞价低吸",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

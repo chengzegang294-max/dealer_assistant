@@ -1,0 +1,175 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-07T17:58:53.687Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "独家短线老师6号",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:13:59",
+  "topic_anchor": "#独家短线老师6号#",
+  "excerpt": "中际可能是这个原因",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:22:10",
+      "text": "2026/08/07 11:22:10 嗯",
+      "card_rect": {
+        "top": 69,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:23:41",
+      "text": "金一也是AI应用",
+      "card_rect": {
+        "top": 170,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:30:02",
+      "text": "2026/08/07 11:30:02 不知道",
+      "card_rect": {
+        "top": 271,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:30:06",
+      "text": "2026/08/07 11:30:06 没板块分析不了",
+      "card_rect": {
+        "top": 372,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "12:05:33",
+      "text": "买持仓.给自己抬.总比给别人抬好",
+      "card_rect": {
+        "top": 473,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "12:09:25",
+      "text": "2026/08/07 12:09:25 那你很优秀了",
+      "card_rect": {
+        "top": 574,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "12:55:09",
+      "text": "好像科技全盛时期也没有大票四连？ ------- 那时候是纯趋势.现在是筹码+题材",
+      "card_rect": {
+        "top": 675,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:14:21",
+      "text": "中红亏了20多个点",
+      "card_rect": {
+        "top": 814,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:14:23",
+      "text": "2026/08/07 13:14:23 曹尼玛",
+      "card_rect": {
+        "top": 936,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:36:09",
+      "text": "牛哇.天天涨都不行.还要骂",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:13:59",
+      "text": "中际可能是这个原因",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 1092,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "中际可能是这个原因",
+    "visible_message_count": 11,
+    "primary_message_candidate": "中际可能是这个原因",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "独家短线老师6号",
+    "topic_anchor_candidate": "#独家短线老师6号#",
+    "forced_room_anchor": "独家短线老师6号",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

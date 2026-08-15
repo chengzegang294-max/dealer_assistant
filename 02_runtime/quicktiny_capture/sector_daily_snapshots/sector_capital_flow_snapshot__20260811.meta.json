@@ -1,0 +1,15 @@
+{
+    "source":  "refetch:https://stock.quicktiny.cn/api/sector-capital-flow/snapshot?tradeDate=20260811\u0026universe=featured\u0026order=desc\u0026limit=500",
+    "acceptRows":  271,
+    "generatedAt":  "2026-08-11 15:20:58",
+    "batchRel":  "batch_08_daily_close__20260811",
+    "tradeDate":  "20260811",
+    "sectorMinJson":  {
+                          "sizeBytes":  149358,
+                          "sha256":  "966458194d52e80fb5bf090a5ff4b011973c71a4086973d377aaad00f4aaef02"
+                      },
+    "sectorMinTsv":  {
+                         "sizeBytes":  45194,
+                         "sha256":  "d0dc5be6f4ca03c49a3c30ea5ed9ccaebd8199066491f78c43ffaba0cca47d2d"
+                     }
+}

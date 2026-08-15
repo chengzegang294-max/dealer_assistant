@@ -1,0 +1,166 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-08-03T16:35:08.144Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-08-03",
+  "room_anchor": "格兰投研",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/03",
+  "display_time": "13:45:39",
+  "topic_anchor": "#格兰投研#",
+  "excerpt": "#格兰投研#：凭什么你赚钱？",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:45:39",
+      "text": "#格兰投研#：凭什么你赚钱？",
+      "card_rect": {
+        "top": 82,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:46:01",
+      "text": "#格兰投研#：还不是因为要么你能力比别人强 要么你心态比别人好",
+      "card_rect": {
+        "top": 183,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:46:04",
+      "text": "#格兰投研#：两者都不占 凭什么要超额收益？",
+      "card_rect": {
+        "top": 284,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:46:28",
+      "text": "#格兰投研#：按周策略规划来，有迷茫的时候，回去多读两遍，把脑子理清楚。",
+      "card_rect": {
+        "top": 406,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:52:28",
+      "text": "#格兰投研#",
+      "card_rect": {
+        "top": 507,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "13:53:17",
+      "text": "#格兰助理#：做T的课程有讲到哈～四分之一到三分之一，最多不超过三分之一2026-08-03 13:47:48 小小叶子#五期生）:求老师翻牌子，一般保留多少仓位做T，仓位管理那节课没讲。老师一次都没翻过我的牌子",
+      "card_rect": {
+        "top": 608,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "14:00:36",
+      "text": "#小小叶子#五期生）#：谢谢助理回复，我再去复习一下",
+      "card_rect": {
+        "top": 730,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "14:00:37",
+      "text": "#格兰投研#：像kimi zhipu 这种模型公司不是啥好的生意模式 他没有应用场景 而且竞争很激烈2026-08-03 13:57:59 丁蛤#二期）:阿里这个闭源的模型价格比kimi开源的还便宜，这是要大开杀戒啊",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "14:00:39",
+      "text": "#格兰投研#：说明你之前赚麻了所以有信仰相信产业趋势2026-08-03 13:58:01 vivian+五期生:8月的第一天还是没放过坚持科技的股民",
+      "card_rect": {
+        "top": 1012,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "14:24:56",
+      "text": "#格兰投研#：共度艰难 同学们 现在这种缩量市场是比较难2026-08-03 14:20:50 三月aaa五期生:好难熬呀老师",
+      "card_rect": {
+        "top": 1134,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "score": 1000.6,
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "meta": {
+          "text_length": 2006,
+          "time_anchor_count": 20,
+          "noise_hits": 0
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      },
+      "candidate_count": 21
+    },
+    "content_text_length": 2006,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "#格兰投研#：那会按老师说的阿里补仓补重了的 现在却都在窃喜。 防止失联QQ群859780254 讲师",
+    "visible_message_count": 10,
+    "primary_message_candidate": "#格兰投研#：凭什么你赚钱？",
+    "initial_room_anchor_candidate": "直播间列表 V:4.2.3 搜索直播间名称",
+    "room_anchor_candidate": "格兰投研",
+    "topic_anchor_candidate": "#格兰投研#"
+  }
+}

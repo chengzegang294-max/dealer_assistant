@@ -1,0 +1,4 @@
+﻿scenario_name	max_lv	N	T1_pct	Purity_ge2_pct	sec5_sum_yi	alignment	div_days	fake_strength_warning	p1_advice_1	p1_advice_2
+场景A_零对齐	5	99	12.1	61.5	72.5	0	1	NO	T1分散→多看少动	中高位抱团→盯前排
+场景B_超大蓝筹1200亿	5	99	12.1	61.5	1200.0	0	0	NO	T1分散→多看少动	中高位抱团→盯前排
+场景C_8连板极高封单	8	99	12.1	61.5	72.5	0	1	NO	T1分散→多看少动	中高位抱团→盯前排

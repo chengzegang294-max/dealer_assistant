@@ -1,0 +1,115 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-08-04T19:32:39.199Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/04",
+  "room_anchor": "陈子瞻 09:40:54 科技高开后高位震荡，银行和油气权重回落， 整体指数就没咋大涨，还是震荡状态，昨电力轮涨，今目前又轮到创新药， 连板，传智暂主动异动，其他无大新标准机会暂观望。 传智教育+10.01%",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/04",
+  "display_time": "09:40:57",
+  "topic_anchor": "#陈子瞻 09:40:54 科技高开后高位震荡，银行和油气权重回落， 整体指数就没咋大涨，还是震荡状态，昨电力轮涨，今目前又轮到创新药， 连板，传智暂主动异动，其他无大新标准机会暂观望。 传智教育+10.01%#",
+  "excerpt": "讲师",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:40:57",
+      "text": "讲师",
+      "card_rect": {
+        "top": 40,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:52:37",
+      "text": "讲师 陈子瞻 09:52:34 韩市水下捞起，部分资金就开始平铺科技线老龙超跌反弹首板。 #风险提示：观点仅供参考，据此操作风险自担；投资有风险，入市需谨慎#",
+      "card_rect": {
+        "top": 225,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:58:05",
+      "text": "讲师 陈子瞻 09:57:59 市场量能上略小幅放量未明显放量，韩市午后随机性， 午后顺指数方向是反弹加强，还是回落依旧待定， 稳健型观望等指数站稳5均/10均再看。 稳健医疗-1.86%",
+      "card_rect": {
+        "top": 368,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "11:37:41",
+      "text": "讲师 陈子瞻 11:37:37 上午AI云算力加强，AI应用保持活跃，传智7板，易点，蓝色惯性活跃， 属于外围这几天亚马逊微软等云大厂领头大涨刺激， 背后也是AI行业从上半场的纯硬件，转向下半场的云服务，AI应用， 今光通信属于前两天没涨，今属刺激跟涨轮涨，超跌首板一堆， 然后前期各科技细分日内反推跟涨 创新药，在行业龙药明业绩超预期刺激下，也保持活跃， 两板块并行，大多5均防守型。 下午看是延续单日修复日，还是冲高回落继续震荡了 下午看。 易点天下+15.83% 药明康德+10.00% 传智教育+10.01%",
+      "card_rect": {
+        "top": 553,
+        "left": 576,
+        "width": 845,
+        "height": 404
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "15:10:48",
+      "text": "讲师 陈子瞻 15:10:42哈药股份+7.68%",
+      "card_rect": {
+        "top": 957,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "15:11:49",
+      "text": "讲师",
+      "card_rect": {
+        "top": 1058,
+        "left": 576,
+        "width": 845,
+        "height": 181
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 3789,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "讲师",
+    "visible_message_count": 6,
+    "primary_message_candidate": "讲师",
+    "initial_room_anchor_candidate": "陈子瞻 09:40:54 科技高开后高位震荡，银行和油气权重回落， 整体指数就没咋大涨，还是震荡状态，昨电力轮涨，今目前又轮到创新药， 连板，传智暂主动异动，其他无大新标准机会暂观望。 传智教育+10.01%",
+    "room_anchor_candidate": "陈子瞻 09:40:54 科技高开后高位震荡，银行和油气权重回落， 整体指数就没咋大涨，还是震荡状态，昨电力轮涨，今目前又轮到创新药， 连板，传智暂主动异动，其他无大新标准机会暂观望。 传智教育+10.01%",
+    "topic_anchor_candidate": "#陈子瞻 09:40:54 科技高开后高位震荡，银行和油气权重回落， 整体指数就没咋大涨，还是震荡状态，昨电力轮涨，今目前又轮到创新药， 连板，传智暂主动异动，其他无大新标准机会暂观望。 传智教育+10.01%#"
+  }
+}

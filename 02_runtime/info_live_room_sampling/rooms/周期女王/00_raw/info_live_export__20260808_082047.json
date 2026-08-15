@@ -1,0 +1,164 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:20:47.593Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "上海老梁",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "13:53:04",
+  "topic_anchor": "#上海老梁#",
+  "excerpt": "..付费微博..下图是创业板指的120分钟通道图表，， 创业板指120分钟走势较上证指数强.已经突破了上轨。",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:21:56",
+      "text": "..付费微博..8月5日.大家早上好！ 集合竞价开盘时候.预期五大指数开盘平稳。",
+      "card_rect": {
+        "top": 82,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:27:27",
+      "text": "..付费微博..已经9点25分集合竞价开盘.五大指数低开。",
+      "card_rect": {
+        "top": 225,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:26:32",
+      "text": "..付费微博..已经9点25分集合竞价开盘.五大指数小幅低开。",
+      "card_rect": {
+        "top": 347,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:54:34",
+      "text": "..付费微博..上证指数无论每天怎么走.都不影响77.5周均线是本周的极强支撑.破不下去。",
+      "card_rect": {
+        "top": 448,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:51:09",
+      "text": "..付费微博..上证指数3900一线今天很难上去了.上午最高曾到了3896.是今天高点附近了。",
+      "card_rect": {
+        "top": 549,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:39:01",
+      "text": "..付费微博..刚刚最高3902.已经来到了3900一线.这里今天有阻力.收盘前很难再上去。",
+      "card_rect": {
+        "top": 650,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:03:59",
+      "text": "..付费微博..已经9点25分集合竞价开盘.五大指数开盘平稳.在昨天收盘点位附近开盘。",
+      "card_rect": {
+        "top": 751,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:48:34",
+      "text": "..付费微博..这是上证指数120分钟通道图表，， 1、前期预判的近期能够向上“中轴”.已经验证.已经有效突破。 2、今天#目前）来到了上轨附近.这里大概率会有较大的压力.今天收盘前不会向上突破。",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:51:44",
+      "text": "..付费微博..下图是沪深300指数120分钟通道图表，， 沪深300走势较上证指数强.已经突破了上轨。",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:53:04",
+      "text": "..付费微博..下图是创业板指的120分钟通道图表，， 创业板指120分钟走势较上证指数强.已经突破了上轨。",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2273,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "..付费微博..下图是创业板指的120分钟通道图表，， 创业板指120分钟走势较上证指数强.已经突破了上轨。",
+    "visible_message_count": 10,
+    "primary_message_candidate": "..付费微博..下图是创业板指的120分钟通道图表，， 创业板指120分钟走势较上证指数强.已经突破了上轨。",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "上海老梁",
+    "topic_anchor_candidate": "#上海老梁#",
+    "forced_room_anchor": "上海老梁",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

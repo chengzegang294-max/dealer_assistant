@@ -1,0 +1,166 @@
+{
+  "export_version": "live_info_current_page_export_v1",
+  "exported_at": "2026-08-04T17:43:20.928Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026-08-04",
+  "room_anchor": "天机短线试更新",
+  "history_entry": "历史记录",
+  "display_date": "2026-08-04",
+  "display_time": "10:04:39",
+  "topic_anchor": "一些资金预判晚间美股可能分歧",
+  "excerpt": "一些资金预判晚间美股可能分歧",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026-08-04",
+      "display_time": "10:04:39",
+      "text": "一些资金预判晚间美股可能分歧",
+      "card_rect": {
+        "top": -23,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:12:32",
+      "text": "那么.易、中、天三个就集体构建了圆弧底。最危险的时候就过去了",
+      "card_rect": {
+        "top": 99,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:20:10",
+      "text": "有能力的.就自己做T。",
+      "card_rect": {
+        "top": 221,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:29:35",
+      "text": "8月份有可能是.科技硬核机构趋势",
+      "card_rect": {
+        "top": 343,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:40:27",
+      "text": "我最近腰不好。你们的问题.可能不能立刻回答。各位多看圈子的拆解",
+      "card_rect": {
+        "top": 465,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:50:35",
+      "text": "易、中、天3个都改变了修复被砸的局面.创业板真正止跌了啊。 就等科创止跌.然后三大指数一起反弹",
+      "card_rect": {
+        "top": 587,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:53:19",
+      "text": "再次提醒.上证还是没选方向.还在筑底。不要满仓。",
+      "card_rect": {
+        "top": 730,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "13:35:22",
+      "text": "双创修复.但上证还是无法突破.就还在筑底形态",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "14:20:10",
+      "text": "现在上证与双创背离.这样拉.上证都不突破。不知道明天会不会突破",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "14:21:19",
+      "text": "机构都减的差不多了.今天易、中、天都有量化拉的感觉",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "score": 992.1,
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "meta": {
+          "text_length": 2721,
+          "time_anchor_count": 9,
+          "noise_hits": 0
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      },
+      "candidate_count": 24
+    },
+    "content_text_length": 2721,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "李聪",
+    "visible_message_count": 10,
+    "primary_message_candidate": "一些资金预判晚间美股可能分歧",
+    "initial_room_anchor_candidate": "天机短线试更新",
+    "room_anchor_candidate": "天机短线试更新",
+    "topic_anchor_candidate": "一些资金预判晚间美股可能分歧"
+  }
+}

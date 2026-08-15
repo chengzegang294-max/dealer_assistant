@@ -1,0 +1,175 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T07:38:44.951Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "游资胖大叔",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:30:20",
+  "topic_anchor": "#游资胖大叔#",
+  "excerpt": "这时候是看个古分化最好的时候",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:46:35",
+      "text": "今日科技线情绪明显差很多",
+      "card_rect": {
+        "top": 86,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:58:13",
+      "text": "中国稀土一般！稀土永磁都跟起来",
+      "card_rect": {
+        "top": 187,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:58:15",
+      "text": "中国稀土一板！稀土永磁都跟起来",
+      "card_rect": {
+        "top": 288,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:35:25",
+      "text": "科翔A回去了！耐得住寂寞才能守得住繁华！总结吧！",
+      "card_rect": {
+        "top": 389,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:50:57",
+      "text": "科技继续普反行情！好事！周一再考虑兑现局吧！",
+      "card_rect": {
+        "top": 511,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:03:59",
+      "text": "2026/08/07 14:03:59 中际旭创下来",
+      "card_rect": {
+        "top": 612,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:07:29",
+      "text": "有资金害怕中际旭创周末又幺蛾子！不过这种分时走势！都是机构承接点",
+      "card_rect": {
+        "top": 713,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:12:44",
+      "text": "尾盘中际旭创分时承接很关键",
+      "card_rect": {
+        "top": 814,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:13:00",
+      "text": "有些品种会被带下来！不过核心品种不会！",
+      "card_rect": {
+        "top": 915,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:26:13",
+      "text": "炸板率开始快速上升",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:30:20",
+      "text": "这时候是看个古分化最好的时候",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2101,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "这时候是看个古分化最好的时候",
+    "visible_message_count": 11,
+    "primary_message_candidate": "这时候是看个古分化最好的时候",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "游资胖大叔",
+    "topic_anchor_candidate": "#游资胖大叔#",
+    "forced_room_anchor": "游资胖大叔",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

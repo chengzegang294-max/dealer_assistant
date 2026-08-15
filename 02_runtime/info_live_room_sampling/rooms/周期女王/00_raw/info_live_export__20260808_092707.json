@@ -1,0 +1,98 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T09:27:07.626Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/05",
+  "room_anchor": "兄安",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/05",
+  "display_time": "13:19:52",
+  "topic_anchor": "#兄安#",
+  "excerpt": "..兄安游资.. 自从量化管控以来,A股盘中跳水仿佛变的少了. ---- 没有跳水的日子,真幸福！ ---- 大家觉得呢？",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "10:13:16",
+      "text": "..兄安游资.. boz 观点 ---- 今天涨幅有点大了,我们可以考虑做个倒y,那些没有涨停的,可以考虑先抛三分之一,等回落慢慢再接. ---- 相关股票，，",
+      "card_rect": {
+        "top": 105,
+        "left": 576,
+        "width": 845,
+        "height": 198
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "10:29:32",
+      "text": "..兄安游资.. ..特战营.. ---- 特战营#短线）隔日止盈及新开仓提示，，止盈落袋兴业科技,后续不再跟踪. ---- 日期，，2026.8.5 ---- 股票名称，，福达合金 ---- 股票代码，，603045 ---- 关注区间，，现价50.75考虑分批次低吸 ---- 仓位建议，，1成以内. ---- 目标，，58 ---- 预警价，，49 ---- 适当性匹配等级，，t4 ---- 逻辑，，数据中心 贵金属. ---- 相关股票，，",
+      "card_rect": {
+        "top": 303,
+        "left": 576,
+        "width": 845,
+        "height": 540
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:13:58",
+      "text": "..兄安游资.. boz 观点 ---- 昨天惠丰钻石68.5附近关注或回补的部分,看看今天能不能有30va首板,等y出提示. 耐心点 ---- 相关股票，，",
+      "card_rect": {
+        "top": 843,
+        "left": 576,
+        "width": 845,
+        "height": 198
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "13:19:52",
+      "text": "..兄安游资.. 自从量化管控以来,A股盘中跳水仿佛变的少了. ---- 没有跳水的日子,真幸福！ ---- 大家觉得呢？",
+      "card_rect": {
+        "top": 1041,
+        "left": 576,
+        "width": 845,
+        "height": 198
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 4273,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "..兄安游资.. 自从量化管控以来,A股盘中跳水仿佛变的少了. ---- 没有跳水的日子,真幸福！ ---- 大家觉得呢？",
+    "visible_message_count": 4,
+    "primary_message_candidate": "..兄安游资.. 自从量化管控以来,A股盘中跳水仿佛变的少了. ---- 没有跳水的日子,真幸福！ ---- 大家觉得呢？",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "兄安",
+    "topic_anchor_candidate": "#兄安#",
+    "forced_room_anchor": "兄安",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

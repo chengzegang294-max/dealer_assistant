@@ -1,0 +1,153 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T07:50:12.287Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "潜伏王者",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:27:30",
+  "topic_anchor": "#潜伏王者#",
+  "excerpt": "> 天哥520 14:27:26 挺好",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:38:23",
+      "text": "> 天哥520 13:38:18 大家兑现没有",
+      "card_rect": {
+        "top": 57,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:40:24",
+      "text": "> 天哥520 13:40:20 我讲一下.这周3个操作。",
+      "card_rect": {
+        "top": 200,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:40:33",
+      "text": "> 天哥520 13:40:28 1.蓝色光标.周一提示",
+      "card_rect": {
+        "top": 322,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:41:36",
+      "text": "> 天哥520 13:41:31 周二拉升.提示套利",
+      "card_rect": {
+        "top": 444,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:43:31",
+      "text": "> 天哥520 13:43:26 2.风华高科。我是周三上午9.36提示.当天拉升涨停.但被炸板.昨天等了一天。今天一直等到拉升5%提示套利.风华高科的利润是9%",
+      "card_rect": {
+        "top": 566,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:50:07",
+      "text": "> 天哥520 13:50:03 我这里客观讲一下.我最近的风格是小精快.这个打法的精髓就是布局核心.做核心2-3天的快拉快出.做到收益的及时落袋.用最稳健的打法获取收益",
+      "card_rect": {
+        "top": 709,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:51:30",
+      "text": "> 天哥520 13:51:25 这个打法并不是说.大家通过一个票做到翻倍做到多少个点的收益.而是通过一连串的股票.比如说这个8月.张江高科贡献5%收益.风华高科贡献9%收益.蓝色光标贡献9%",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:19:20",
+      "text": "> 天哥520 14:19:16 周末愉快兄弟们.我溜了",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:27:30",
+      "text": "> 天哥520 14:27:26 挺好",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2139,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "> 天哥520 14:27:26 挺好",
+    "visible_message_count": 9,
+    "primary_message_candidate": "> 天哥520 14:27:26 挺好",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "潜伏王者",
+    "topic_anchor_candidate": "#潜伏王者#",
+    "forced_room_anchor": "潜伏王者",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

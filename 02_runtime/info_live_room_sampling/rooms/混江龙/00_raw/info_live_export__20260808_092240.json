@@ -1,0 +1,131 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T09:22:40.891Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "混江龙",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "10:49:15",
+  "topic_anchor": "#混江龙#",
+  "excerpt": "..群主..，，",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:12:10",
+      "text": "2026/08/07 10:16:23 藏龙岛:药明康德每天小跌？ --------------------------- 2026-08-07 10:12:10 红遍半边天:你说科技上涨乏力.已经拉了一周了.还是逼空拉的.白马躺了一周.每天小跌",
+      "card_rect": {
+        "top": -40,
+        "left": 576,
+        "width": 845,
+        "height": 207
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:21:36",
+      "text": "2026/08/07 10:21:36 藏龙岛:确实挺勇敢的.祝发财咯 --------------------------- 2026-08-07 10:20:28 长歌有和:今天比较勇敢 186买了光迅科技 27.5买了中巨芯.还是科技猛",
+      "card_rect": {
+        "top": 167,
+        "left": 576,
+        "width": 845,
+        "height": 207
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:25:19",
+      "text": "2026/08/07 10:25:19 藏龙岛:这货比药明康德强多了.肯定是继续拿着啊 --------------------------- 2026-08-07 10:22:50 跟着龙哥吃大肉:龙哥.凯莱英封涨了.还能继续拿吗.海康可以加点仓吧",
+      "card_rect": {
+        "top": 374,
+        "left": 576,
+        "width": 845,
+        "height": 207
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:26:23",
+      "text": "2026/08/07 10:26:23 藏龙岛:之前跌的够猛.所以反弹够呛.也没啥特别的逻辑吧.有点2015年第一次古灾反弹的意思.也是反弹了一周.后面分化 --------------------------- 2026-08-07 10:21:40 孟辉 武汉沿江大道:沃格光电算反制么 ？我感觉不算啊 有研新材 江钨 云南 我觉得算啊.沃格玻璃基板它也不算逻辑很硬啊 直接2板多一点就卖了 这4板了 没理解",
+      "card_rect": {
+        "top": 581,
+        "left": 576,
+        "width": 845,
+        "height": 249
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:42:46",
+      "text": "..群主..，，",
+      "card_rect": {
+        "top": 830,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:45:23",
+      "text": "2026/08/07 10:45:23 藏龙岛:不跑.拿着 --------------------------- 2026-08-07 10:41:19 完了完了快跑啊:龙哥.美的如果跌破20日线收不回来是不是要撤？",
+      "card_rect": {
+        "top": 931,
+        "left": 576,
+        "width": 845,
+        "height": 207
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:49:15",
+      "text": "..群主..，，",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 4724,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "..群主..，，",
+    "visible_message_count": 7,
+    "primary_message_candidate": "..群主..，，",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "混江龙",
+    "topic_anchor_candidate": "#混江龙#",
+    "forced_room_anchor": "混江龙",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

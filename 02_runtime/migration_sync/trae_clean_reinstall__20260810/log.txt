@@ -1,0 +1,14 @@
+﻿00:36:02 === START Trae clean wipe ===
+00:36:04 processes left=0
+00:36:04 running uninstaller /VERYSILENT
+00:36:09 uninstaller exit=0
+00:36:09 deleting D:\Work\Trae ...
+00:36:09 after delete exists=False
+00:36:09 deleting C:\Users\91883\AppData\Roaming\Trae ...
+00:38:22 after delete exists=False
+00:38:22 deleting C:\Users\91883\.trae ...
+00:38:26 after delete exists=False
+00:38:26 === DONE ===
+00:38:26 final D:\Work\Trae => exists=False
+00:38:26 final C:\Users\91883\AppData\Roaming\Trae => exists=False
+00:38:26 final C:\Users\91883\.trae => exists=False

@@ -1,0 +1,109 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-07T15:22:44.844Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "先知",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "21:22:24",
+  "topic_anchor": "#先知#",
+  "excerpt": "几条消息都指向国产算力自主可控半导体扩产，但是海外B300服务器560万的进价运过来就是1300万的售价，也禁不了的，而且算力租赁公司基本都是白手套，上面负责搞资源搭桥牵线的其实是这几个不愿意被美国盯上的互联网大厂老大哥，最近和华强北的大佬聊了下，花样真是层出不穷五花八门超乎想象，由于是人家的饭碗我就不在这细说了，总之算力租赁如果有情绪影响的话调整下去又是机会，参见前两条关于算力租赁的点评。iRVi01Vb4d3",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "20:10:57",
+      "text": "发展国家自主可控才是正解啊，教员早就说过相信美国轻则家破人亡，重则国家困顿，相信祖国，相信国产链率，哪怕暂时落后llQF",
+      "card_rect": {
+        "top": 126,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "20:39:25",
+      "text": "几条消息都指向国产算力自主可控半导体扩产，但是海外B300服务器560万的进价运过来就是1300万的售价，也禁不了的，而且算力租赁公司基本都是白手套，上面负责搞资源搭桥牵线的其实是这几个不愿意被美国盯上的互联网大厂老大哥，最近和华强北的大佬聊了下，花样真是层出不穷五花八门超乎想象，由于是人家的饭碗我就不在这细说了，总之算力租赁如果有情绪影响的话调整下去又是机会，参见前两条关于算力租赁的点评。6p63r2j",
+      "card_rect": {
+        "top": 248,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "21:21:03",
+      "text": "2026/08/07 21:21:03",
+      "card_rect": {
+        "top": 412,
+        "left": 576,
+        "width": 845,
+        "height": 323
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "21:21:38",
+      "text": "2026/08/07 21:21:38",
+      "card_rect": {
+        "top": 735,
+        "left": 576,
+        "width": 845,
+        "height": 323
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "21:22:24",
+      "text": "几条消息都指向国产算力自主可控半导体扩产，但是海外B300服务器560万的进价运过来就是1300万的售价，也禁不了的，而且算力租赁公司基本都是白手套，上面负责搞资源搭桥牵线的其实是这几个不愿意被美国盯上的互联网大厂老大哥，最近和华强北的大佬聊了下，花样真是层出不穷五花八门超乎想象，由于是人家的饭碗我就不在这细说了，总之算力租赁如果有情绪影响的话调整下去又是机会，参见前两条关于算力租赁的点评。iRVi01Vb4d3",
+      "card_rect": {
+        "top": 1058,
+        "left": 576,
+        "width": 845,
+        "height": 181
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2844,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "几条消息都指向国产算力自主可控半导体扩产，但是海外B300服务器560万的进价运过来就是1300万的售价，也禁不了的，而且算力租赁公司基本都是白手套，上面负责搞资源搭桥牵线的其实是这几个不愿意被美国盯上的互联网大厂老大哥，最近和华强北的大佬聊了下，花样真是层出不穷五花八门超乎想象，由于是人家的饭碗我就不在这细说了，总之算力租赁如果有情绪影响的话调整下去又是机会，参见前两条关于算力租赁的点评。iRVi01Vb4d3",
+    "visible_message_count": 5,
+    "primary_message_candidate": "几条消息都指向国产算力自主可控半导体扩产，但是海外B300服务器560万的进价运过来就是1300万的售价，也禁不了的，而且算力租赁公司基本都是白手套，上面负责搞资源搭桥牵线的其实是这几个不愿意被美国盯上的互联网大厂老大哥，最近和华强北的大佬聊了下，花样真是层出不穷五花八门超乎想象，由于是人家的饭碗我就不在这细说了，总之算力租赁如果有情绪影响的话调整下去又是机会，参见前两条关于算力租赁的点评。iRVi01Vb4d3",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "先知",
+    "topic_anchor_candidate": "#先知#",
+    "forced_room_anchor": "先知",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

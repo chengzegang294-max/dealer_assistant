@@ -1,0 +1,44 @@
+﻿rooms root: D:\Stock\dealer_assistant\02_runtime\info_live_room_sampling\rooms
+扫描 batch 00_raw 目录数: 3
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw
+  - D:\Stock\dealer_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw
+  - D:\Stock\dealer_assistant\02_runtime\info_live_room_sampling\batch_07_daily_close__20260810\00_raw
+
+命中 22 房；拟搬 97 文件；54 个同大小已存在跳过；37 个未能识别房名
+  [k神] -> 11 个文件
+  [先知] -> 7 个文件
+  [周期女王] -> 13 个文件
+  [复盘哥] -> 6 个文件
+  [天机] -> 3 个文件
+  [天赢居] -> 3 个文件
+  [小锦鲤] -> 2 个文件
+  [擒龙小师姐] -> 2 个文件
+  [新生代] -> 2 个文件
+  [机构电话会议纪要+小作文+情报] -> 8 个文件
+  [核心逻辑社] -> 2 个文件
+  [格兰投研] -> 6 个文件
+  [梅森] -> 3 个文件
+  [梦幻一步] -> 2 个文件
+  [混江龙] -> 3 个文件
+  [游资胖大叔] -> 2 个文件
+  [潜伏王者] -> 2 个文件
+  [独家短线老师6号] -> 3 个文件
+  [独家竞价低吸] -> 2 个文件
+  [独家老师5号] -> 4 个文件
+  [顺势而为] -> 2 个文件
+  [龙头交易猿] -> 9 个文件
+
+未能识别房名的文件（共37，示例前10个）：
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\七龙珠\info_live_export__20260808_080037.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\七龙珠\info_live_incremental_export__20260808_080117.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\上海老梁\info_live_incremental_export__20260808_082124.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\兄安\info_live_incremental_export__20260808_092754.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\大师兄擒妖\info_live_export__20260808_074345.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\大师兄擒妖\info_live_incremental_export__20260808_074417.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\孙悟空金牌\info_live_export__20260804_185613.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\孙悟空金牌\info_live_export__20260805_085727.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\孙悟空金牌\info_live_export__20260805_120043.json
+  - D:\Stock\trading_assistant\02_runtime\info_live_room_sampling\batch_05__20260803_20260805_priority_room_history_rerun\00_raw\priority_rooms\孙悟空金牌\info_live_export__20260805_120510.json
+
+复制完成。成功: 97/97（原文件保留不动）
+时间戳: 2026-08-11 01:42:55

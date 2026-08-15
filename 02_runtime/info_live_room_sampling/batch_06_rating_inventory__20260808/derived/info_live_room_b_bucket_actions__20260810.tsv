@@ -1,0 +1,16 @@
+room_anchor	current_bucket	suggested_retention_action	b_subtype	reason_short	followup_frequency	downgrade_to	message_count	history_depth_hint	old_auto_tier	date_span	in_sample12	notes
+天机	B_observe	keep_fragments	anchor_high_overlap	模板已过；与连板结构重合偏高，不作扩档	偶发抽检	关键片段/摘要	517	high	C	2026/07/07 ~ 2026/08/06	yes	已在正式短名单「片段优先」
+周期女王	B_observe	keep_fragments	anchor_template	模板已过；锚点对照，不作扩档优先	低频抽检	关键片段	267	medium	C	10:41 ~ 2026/08/06	no	
+格兰投研	B_observe	keep_fragments	anchor_template	模板已过；旧分偏A，仍先不扩档	低频抽检	关键片段	259	medium	A	2026/07/07 ~ 2026/07/08	no	历史窗口偏短要注意
+龙头交易猿	B_observe	keep_fragments	anchor_template	模板已过；轻量历史锚点	低频抽检	关键片段	149	light		09:15:02 ~ 2026/08/06	no	
+k神	B_observe	keep_fragments	style_shortchat	短聊风格；结构重复偏多	偶发抽检	有用点/片段	293	medium	C	2026/07/09 ~ 2026/08/07	yes	已在正式短名单「片段优先」
+梦幻一步	B_observe	keep_fragments	style_shortchat	短聊/风格房；中等深度	偶发抽检	有用点/片段	156	medium	C	2026/07/16 ~ 2026/08/07	no	
+游资胖大叔	B_observe	keep_fragments	mid_depth_observe	中等深度；先观察独特性与可操作性	常规观察	关键片段	360	medium	C	2026/07/09 ~ 2026/08/07	no	
+潜伏王者	B_observe	keep_fragments	mid_depth_observe	中等深度；先观察独特性	常规观察	关键片段	351	medium		09:33:19 ~ 2026/08/07	no	
+擒龙小师姐	B_observe	keep_fragments	mid_depth_observe	中等深度；旧分偏A，仍先观察	常规观察	关键片段	256	medium	A	2026/07/09 ~ 2026/08/07	no	
+独家竞价低吸	B_observe	keep_fragments	mid_depth_observe	中等深度；竞价向，查是否有独特口径	常规观察	关键片段	247	medium		2026/07/09 ~ 2026/08/07	no	
+小锦鲤	B_observe	keep_fragments	mid_depth_observe	中等深度；先观察	常规观察	关键片段	229	medium		2026/07/09 ~ 2026/08/07	no	
+核心逻辑社	B_observe	keep_fragments	mid_depth_observe	中等深度；逻辑口是否真有增量待证	常规观察	关键片段	217	medium	C	2026/07/09 ~ 2026/08/07	no	
+新生代	B_observe	keep_fragments	mid_depth_observe	中等偏浅；先观察	常规观察	关键片段	150	medium	C	2026/07/09 ~ 2026/08/07	no	
+机构研报资讯精选	B_observe	keep_fragments	research_short_history	情报向但历史短；观察是否值得常更	常规观察	研究片段	70	light	A	2026/08/04 ~ 2026/08/07	no	升A前提：连续常更且补天梯没有的原料
+小作文嗅嗅+机构研报	B_observe	keep_fragments	research_short_history	情报向但历史短；观察是否值得常更	常规观察	研究片段	40	light	A	2026/08/05 ~ 2026/08/07	no	升A前提：连续常更且与长研报房不重复

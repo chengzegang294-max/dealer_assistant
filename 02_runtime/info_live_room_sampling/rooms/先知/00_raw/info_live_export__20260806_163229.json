@@ -1,0 +1,150 @@
+{
+  "export_version": "live_info_current_page_export_v1.4",
+  "exported_at": "2026-08-06T16:32:29.279Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "先知",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "14:18:34",
+  "topic_anchor": "#先知#",
+  "excerpt": "更多资讯加微信好友aa1240458509",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:33:39",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 99,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:42:39",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 221,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:55:20",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 343,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:03:19",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 486,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:35:30",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 629,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:13:26",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 751,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:13:47",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 873,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:17:24",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 995,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:18:34",
+      "text": "更多资讯加微信好友aa1240458509",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2966,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "更多资讯加微信好友aa1240458509",
+    "visible_message_count": 9,
+    "primary_message_candidate": "更多资讯加微信好友aa1240458509",
+    "initial_room_anchor_candidate": "先知",
+    "room_anchor_candidate": "先知",
+    "topic_anchor_candidate": "#先知#"
+  }
+}

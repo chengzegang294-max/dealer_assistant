@@ -1,0 +1,120 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:14:26.114Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "小锦鲤",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "13:58:15",
+  "topic_anchor": "#小锦鲤#",
+  "excerpt": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:08:39",
+      "text": "小锦 下午就是应用冲锋了",
+      "card_rect": {
+        "top": 154,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:00:44",
+      "text": "小锦 万邦+4接回了",
+      "card_rect": {
+        "top": 276,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:22:17",
+      "text": "小锦 普联正古就不用继续加了，尾盘再说，板块太差了。 医药轮动完，就看什么时候拉科技。 早上我们也撸了转债，及时处理了普联，做完踢以后等待就好。",
+      "card_rect": {
+        "top": 398,
+        "left": 576,
+        "width": 845,
+        "height": 181
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:58:41",
+      "text": "小锦 普联早上没来得及减的 这波踢一下",
+      "card_rect": {
+        "top": 579,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:58:02",
+      "text": "小锦 普联今天是为了调空间,所以只 有债的套利机会,周一正古就正 常了。 管理员 小锦 反正医药科技都拿了,剩下的交 给市场 管理员 小锦 药就看好龙神跟万邦这两个(低 位药轮动不好把握节奏) 科技也是做普联债为主(低位超 跌反弹每天换一批聚焦不了)",
+      "card_rect": {
+        "top": 722,
+        "left": 576,
+        "width": 845,
+        "height": 374
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:58:15",
+      "text": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+      "card_rect": {
+        "top": 1096,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 1633,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+    "visible_message_count": 6,
+    "primary_message_candidate": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "小锦鲤",
+    "topic_anchor_candidate": "#小锦鲤#",
+    "forced_room_anchor": "小锦鲤",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

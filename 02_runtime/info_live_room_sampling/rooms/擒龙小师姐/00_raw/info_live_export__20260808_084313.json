@@ -1,0 +1,120 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:43:13.117Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "擒龙小师姐",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "13:17:05",
+  "topic_anchor": "#擒龙小师姐#",
+  "excerpt": "2026/08/07 13:17:05",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "13:52:41",
+      "text": "李娟有同学问我：今日怎么调整了啊￥今日调整是很正常的啊！我开盘前就告诉大家了：今日大概率就是分歧调整目前4000家回落！我们跟踪的个古调整一下也是正常的没什么好担心的该处理的处理该等待的等待每天下午收盘前10分钟14：50左右我都会告诉大家哪些当天必须处理当前还跟踪哪些的ID:100039",
+      "card_rect": {
+        "top": 42,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "14:19:22",
+      "text": "李娟指数还并没有走坏！问题不大上证指数！只要今日收涨那么近3天整体问题都不大要么继续向上要么调整！也会在2天内有修复上冲ID:100039",
+      "card_rect": {
+        "top": 185,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:16:59",
+      "text": "李娟盛达资源多氟多都起来了！大家有跟上节奏吗?跟上的同学！回复：888ID:100039",
+      "card_rect": {
+        "top": 328,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:17:00",
+      "text": "李娟 前天开盘推送的： 集合竞价表现最好的：义翘神州 今天20cm涨停 3天冲高25个点 跟上的同学，回复：888",
+      "card_rect": {
+        "top": 429,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:17:02",
+      "text": "2026/08/07 13:17:02",
+      "card_rect": {
+        "top": 635,
+        "left": 576,
+        "width": 845,
+        "height": 323
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:17:05",
+      "text": "2026/08/07 13:17:05",
+      "card_rect": {
+        "top": 958,
+        "left": 576,
+        "width": 845,
+        "height": 323
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2864,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "2026/08/07 13:17:05",
+    "visible_message_count": 6,
+    "primary_message_candidate": "2026/08/07 13:17:05",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "擒龙小师姐",
+    "topic_anchor_candidate": "#擒龙小师姐#",
+    "forced_room_anchor": "擒龙小师姐",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

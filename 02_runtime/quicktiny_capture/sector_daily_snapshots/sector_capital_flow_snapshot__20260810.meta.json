@@ -1,0 +1,14 @@
+{
+  "trade_date": "20260810",
+  "input_json": "d:\\Stock\\dealer_assistant\\02_runtime\\quicktiny_capture\\batch_07_daily_close__20260810\\00_raw\\sector_capital_flow_snapshot__20260810.json",
+  "output_json": "d:\\Stock\\dealer_assistant\\02_runtime\\quicktiny_capture\\sector_daily_snapshots\\sector_capital_flow_snapshot__20260810.json",
+  "output_tsv": "d:\\Stock\\dealer_assistant\\02_runtime\\quicktiny_capture\\sector_daily_snapshots\\sector_capital_flow_snapshot__20260810.tsv",
+  "row_count": 271,
+  "success": true,
+  "actual_trade_date": "20260810",
+  "snapshot_minute": "15:00",
+  "universe": "featured",
+  "returned": 271,
+  "notes": [],
+  "scope": "same_day_archive_only_no_historical_fetch"
+}

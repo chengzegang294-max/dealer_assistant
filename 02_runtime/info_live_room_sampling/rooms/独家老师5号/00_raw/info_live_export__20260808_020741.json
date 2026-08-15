@@ -1,0 +1,175 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T02:07:41.006Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "独家老师5号",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:59:46",
+  "topic_anchor": "#独家老师5号#",
+  "excerpt": "量能继续温和放量，情绪端今天也是修复的，整体表现都比较良性",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:49:10",
+      "text": "临近尾盘电力轮动拉升 指数离年线一步之遥了",
+      "card_rect": {
+        "top": 44,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:54:53",
+      "text": "久违的连续上涨，大家赚钱的一周，周末快乐！行情好转了就干起来。",
+      "card_rect": {
+        "top": 166,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:54:54",
+      "text": "久违的连续上涨，大家赚钱的一周，周末快乐！行情好转了就干起来。",
+      "card_rect": {
+        "top": 267,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:55:44",
+      "text": "当下持仓 景旺电子 2成 宝鼎科技 云南锗业各1成 百花药业小仓位。今天止盈江钨装备和利通电子",
+      "card_rect": {
+        "top": 368,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:55:45",
+      "text": "当下持仓 景旺电子 2成 宝鼎科技 云南锗业各1成 百花药业小仓位。今天止盈江钨装备和利通电子",
+      "card_rect": {
+        "top": 511,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:55:57",
+      "text": "总仓位保持半仓左右",
+      "card_rect": {
+        "top": 633,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:55:59",
+      "text": "总仓位保持半仓左右",
+      "card_rect": {
+        "top": 734,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:57:56",
+      "text": "光头大阳线，提示变盘后连续3根大阳线。",
+      "card_rect": {
+        "top": 835,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:58:00",
+      "text": "光头大阳线，提示变盘后连续3根大阳线。",
+      "card_rect": {
+        "top": 936,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:59:44",
+      "text": "量能继续温和放量，情绪端今天也是修复的，整体表现都比较良性",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:59:46",
+      "text": "量能继续温和放量，情绪端今天也是修复的，整体表现都比较良性",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 1703,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "量能继续温和放量，情绪端今天也是修复的，整体表现都比较良性",
+    "visible_message_count": 11,
+    "primary_message_candidate": "量能继续温和放量，情绪端今天也是修复的，整体表现都比较良性",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "独家老师5号",
+    "topic_anchor_candidate": "#独家老师5号#",
+    "forced_room_anchor": "独家老师5号",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

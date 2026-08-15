@@ -1,0 +1,2 @@
+date	max_level	total_stocks	ge2_stocks	first_panel_count	T1_dynamic_threshold	T1_pct	T3_pct	Purity_ge2_pct	sector_top5_sum_yi	align_top3_top5_count	consecutive_divergence_days	top4_di_list	top4_risk_list	p1_position_advice	fake_strength_warning
+20260811	6	58	16	42	30.0	13.8	34.5	25.0	187.1	1	0	6,144,0,60	Y,R,G,R	中性	0

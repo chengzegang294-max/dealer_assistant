@@ -1,0 +1,8 @@
+StepOrder	StepCN	TargetBucket	AutoOrManual	Status20260812	DeliverableFileOrCommand	BlockerOrNote
+1	Step1 增量导出A桶9房	A桶9	Manual	8/9房OK	00_raw/info_live_incremental_export__20260811_*.json	先知A9漏
+2	Step2 Raw迁移进rooms家族00_raw	A桶9	Auto(已跑)	13/13 SHA全就位 CONFLICT=0	migrate_raw + 2件别名补CopyOK	无反向覆盖冲突
+3	Step3 抽machine_draft A9桶9房	A桶9	Prefill待跑	8房草稿待生成 先知=SKIP	prefill_A9_rooms_notes_v1.py --apply-draft	先知无Raw跳过
+4	Step4 Prefill A9 NOTES_partial A桶9	A桶9	Prefill待跑	8房事实字段待填	10_ingest/*_NOTES_partial_prefill.md	判断格全留空
+5	Step5 人工回填 20_absorb/NOTES.md	A桶9	Manual	待做（跳过不影响积累）	20_absorb/NOTES.md	只判情绪/价值位
+6	Step6 刷新SENTINEL_INDEX	全局24房	Auto	待跑刷新	sentinel_update_rooms_index_v1.py --rooms-root rooms	自动刷新最后Raw日期
+7	Step7 扫每日盯梢总表TSV	全局24房	DryRun(已跑)	rooms_daily_status_20260812.tsv	scaffold_rooms_daily_sentinel.ps1	先知A9标红漏导出

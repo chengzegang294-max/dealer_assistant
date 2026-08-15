@@ -1,0 +1,153 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:07:39.321Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "新生代",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:06:02",
+  "topic_anchor": "#新生代#",
+  "excerpt": "还是大哥牛逼.怕大家太亢奋.主动跳水降温",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "13:26:33",
+      "text": "长江存储大概率今年也要上市.然后像半导体设备材料、洁净室这些股票.长江和长鑫受益股是一样的。 ? 长鑫有股权或者董事长关联的.之前主要炒的合肥城建#同一大股东）、兆易创新#同一董事长）。 ? 长江类似的股票主要就下面几个.目前资金介入不明显.先观察。",
+      "card_rect": {
+        "top": 107,
+        "left": 576,
+        "width": 845,
+        "height": 177
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:11:04",
+      "text": "昨天跟着美股大涨.今天利空崩盘开.日内大幅拉升.晚上美股又有调整预期.所以并没有找打今天买了明天特别踏实的",
+      "card_rect": {
+        "top": 284,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:19:37",
+      "text": "胜宏回落可以关注.低位小作文.第一根放量大阳线.从今天的角度应该比追别的要好",
+      "card_rect": {
+        "top": 406,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "08:46:43",
+      "text": "点评，，这东西反正最近走的很强.吹的人也很多.但主要问题是不太容易看懂。 包括我现在也是看的云里雾里的.下面这堆机构吹的股票都涨挺好.但我找不到最正宗最终绕不开的票.你们可以自己研究下。",
+      "card_rect": {
+        "top": 507,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:27:28",
+      "text": "涨停溢价非常一般.无论是反制还是软件.很多低开.云南锗业不是大单一字",
+      "card_rect": {
+        "top": 650,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "09:35:40",
+      "text": "昨天强的还是上游金属开的强一些.烟.钨.可能和黄金高开有关系.互相助攻",
+      "card_rect": {
+        "top": 772,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:15:21",
+      "text": "胜宏也顺势突破了 大概率就是做个高点就集体回落了.能单边持续拉升就属于超预期走势。 随缘找个相对高点卖光就是了。",
+      "card_rect": {
+        "top": 894,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:47:01",
+      "text": "长电没啥成交量和强度.红盘走人为主",
+      "card_rect": {
+        "top": 1037,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:06:02",
+      "text": "还是大哥牛逼.怕大家太亢奋.主动跳水降温",
+      "card_rect": {
+        "top": 1138,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2882,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "还是大哥牛逼.怕大家太亢奋.主动跳水降温",
+    "visible_message_count": 9,
+    "primary_message_candidate": "还是大哥牛逼.怕大家太亢奋.主动跳水降温",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "新生代",
+    "topic_anchor_candidate": "#新生代#",
+    "forced_room_anchor": "新生代",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

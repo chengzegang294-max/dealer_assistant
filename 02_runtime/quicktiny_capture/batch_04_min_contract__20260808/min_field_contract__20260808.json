@@ -1,0 +1,128 @@
+{
+  "contract_id": "quicktiny_min_field_contract_v0",
+  "updated_at": "2026-08-08",
+  "status": "candidate_freeze",
+  "source_field_dicts": {
+    "ladder_day": "02_runtime/quicktiny_capture/batch_03_field_dict__20260808/ladder_day__field_dict__20260807.tsv",
+    "sector_capital_flow_snapshot": "02_runtime/quicktiny_capture/batch_03_field_dict__20260808/sector_capital_flow_snapshot__field_dict__20260807.tsv"
+  },
+  "endpoints": [
+    {
+      "module": "连板天梯",
+      "name": "ladder_day",
+      "method": "GET",
+      "url_template": "https://stock.quicktiny.cn/api/ladder/day/{date}"
+    },
+    {
+      "module": "板块资金",
+      "name": "sector_capital_flow_snapshot",
+      "method": "GET",
+      "url_template": "https://stock.quicktiny.cn/api/sector-capital-flow/snapshot?tradeDate={date}&universe=featured&order=desc&limit=500"
+    }
+  ],
+  "levels": ["required", "recommended", "optional", "exclude"],
+  "ladder_day": {
+    "day_fields": [
+      {"path": "dates[].date", "type": "str", "level": "required"},
+      {"path": "dates[].dayOfWeek", "type": "str", "level": "recommended"},
+      {"path": "dates[].totalStocks", "type": "int", "level": "required"},
+      {"path": "dates[].pauseRatio", "type": "float", "level": "recommended"},
+      {"path": "dates[].boards", "type": "list", "level": "required"},
+      {"path": "dateRange", "type": "str", "level": "recommended"},
+      {"path": "meta.totalStocks", "type": "int", "level": "recommended"},
+      {"path": "meta.uniqueStocks", "type": "int", "level": "recommended"},
+      {"path": "meta.hasRealtimeData", "type": "bool", "level": "optional"},
+      {"path": "meta.cacheKey", "type": "str", "level": "optional"},
+      {"path": "meta.queryTime", "type": "str", "level": "optional"},
+      {"path": "meta.serverTime", "type": "str", "level": "optional"}
+    ],
+    "board_fields": [
+      {"path": "dates[].boards[].level", "type": "int", "level": "required"},
+      {"path": "dates[].boards[].stocks", "type": "list", "level": "required"}
+    ],
+    "stock_fields": [
+      {"path": "code", "type": "str", "level": "required"},
+      {"path": "name", "type": "str", "level": "required"},
+      {"path": "level", "type": "int", "level": "required"},
+      {"path": "continue_num", "type": "int", "level": "required"},
+      {"path": "change_rate", "type": "float|int", "level": "required"},
+      {"path": "latest", "type": "float|int", "level": "required"},
+      {"path": "first_limit_up_time", "type": "str", "level": "required"},
+      {"path": "last_limit_up_time", "type": "str", "level": "required"},
+      {"path": "primary_theme", "type": "str", "level": "required"},
+      {"path": "limit_up_type", "type": "str", "level": "required"},
+      {"path": "high_days", "type": "str", "level": "recommended"},
+      {"path": "open_num", "type": "int|null", "level": "recommended"},
+      {"path": "trading_amount", "type": "int", "level": "recommended"},
+      {"path": "order_amount", "type": "int", "level": "recommended"},
+      {"path": "amount", "type": "int", "level": "recommended"},
+      {"path": "turnover_rate", "type": "float", "level": "recommended"},
+      {"path": "industry", "type": "str", "level": "recommended"},
+      {"path": "kpl_primary_theme", "type": "str", "level": "recommended"},
+      {"path": "kpl_theme_tags", "type": "list[str]", "level": "recommended"},
+      {"path": "kpl_plate_code", "type": "str", "level": "recommended"},
+      {"path": "reason_type", "type": "str", "level": "recommended"},
+      {"path": "tags", "type": "list[str]", "level": "recommended"},
+      {"path": "auto_position", "type": "str", "level": "recommended"},
+      {"path": "change_tag", "type": "str", "level": "recommended"},
+      {"path": "market_type", "type": "str", "level": "recommended"},
+      {"path": "currency_value", "type": "int", "level": "recommended"},
+      {"path": "actual_currency_value", "type": "int", "level": "recommended"},
+      {"path": "price", "type": "str", "level": "optional"},
+      {"path": "change", "type": "str", "level": "optional"},
+      {"path": "tradeAmount", "type": "str", "level": "optional"},
+      {"path": "limitAmount", "type": "str", "level": "optional"},
+      {"path": "changeColor", "type": "str", "level": "optional"},
+      {"path": "business_scope", "type": "str", "level": "exclude"},
+      {"path": "main_business", "type": "str", "level": "exclude"},
+      {"path": "reason_info", "type": "str", "level": "exclude"}
+    ]
+  },
+  "sector_capital_flow_snapshot": {
+    "header_fields": [
+      {"path": "success", "type": "bool", "level": "required"},
+      {"path": "data.tradeDate", "type": "str", "level": "required"},
+      {"path": "data.actualTradeDate", "type": "str", "level": "required"},
+      {"path": "data.universe", "type": "str", "level": "required"},
+      {"path": "data.mode", "type": "str", "level": "recommended"},
+      {"path": "data.snapshotMinute", "type": "str", "level": "required"},
+      {"path": "data.quoteSnapshotMinute", "type": "str", "level": "recommended"},
+      {"path": "data.snapshotTime", "type": "str", "level": "recommended"},
+      {"path": "data.total", "type": "int", "level": "required"},
+      {"path": "data.returned", "type": "int", "level": "required"},
+      {"path": "data.rows", "type": "list", "level": "required"},
+      {"path": "data.quality", "type": "dict", "level": "optional"},
+      {"path": "data.fieldDefinitions", "type": "dict", "level": "optional"}
+    ],
+    "row_fields": [
+      {"path": "sectorCode", "type": "str", "level": "required"},
+      {"path": "sectorName", "type": "str", "level": "required"},
+      {"path": "mainNetAmount", "type": "int", "level": "required"},
+      {"path": "strength", "type": "int", "level": "required"},
+      {"path": "pctChg", "type": "float", "level": "required"},
+      {"path": "relativeInflow", "type": "float|null", "level": "required"},
+      {"path": "themeCode", "type": "str", "level": "recommended"},
+      {"path": "themeName", "type": "str", "level": "recommended"},
+      {"path": "bigOrderNetAmount", "type": "int", "level": "recommended"},
+      {"path": "mainBuyAmount", "type": "int", "level": "recommended"},
+      {"path": "mainSellAmount", "type": "int", "level": "recommended"},
+      {"path": "floatMarketCap", "type": "int|null", "level": "recommended"},
+      {"path": "changeFromOpen", "type": "int", "level": "recommended"},
+      {"path": "memberCount", "type": "int", "level": "recommended"},
+      {"path": "universe", "type": "str", "level": "recommended"},
+      {"path": "pctChgCoverage", "type": "int", "level": "optional"}
+    ]
+  },
+  "join_hints": [
+    {
+      "left": "ladder.dates[].date",
+      "right": "sector.data.actualTradeDate",
+      "note": "both YYYYMMDD"
+    },
+    {
+      "left": "ladder.stocks[].kpl_plate_code",
+      "right": "sector.rows[].sectorCode",
+      "note": "sectorCode often has trailing k suffix"
+    }
+  ]
+}

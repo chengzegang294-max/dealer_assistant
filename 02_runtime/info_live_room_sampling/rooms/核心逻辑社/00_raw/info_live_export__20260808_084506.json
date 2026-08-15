@@ -1,0 +1,142 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T08:45:06.735Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "核心逻辑社",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "11:08:01",
+  "topic_anchor": "#核心逻辑社#",
+  "excerpt": "付费v+：最新格局",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:04:48",
+      "text": "付费v+：算力金属炸裂的逻辑是这样的 产业链位置：高纯铟 → 磷化铟 → 磷化铟衬底 → 光芯片 → 光模块 全球 70% 原生铟产量在咱这边 此外，铜是之前讲过的，和算力连动。",
+      "card_rect": {
+        "top": 137,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:11:15",
+      "text": "付费v+：划重点：存储纯纯错杀，逻辑很硬。 但鑫王估值不便宜，赵姨、君子都是间接受益。 所以资金在猛干半导体设备，存储和设备高度连动、强相关。",
+      "card_rect": {
+        "top": 301,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:48:10",
+      "text": "7月20日回调抄底，21日大阳线吃肉，23日感觉不对劲就减仓，节奏踩得很准，可惜留了点底仓被后面大跌回吐了利润。 昨天8月4号继续抄底，开启炸裂模式，今天大阳线稳稳吃肉。 只要是抄底，错了也有纠错机会，很难套住；对了就是主升浪，可能会翻倍。 买在无人问津，卖在人声鼎沸，要信早信！！！",
+      "card_rect": {
+        "top": 444,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "13:23:07",
+      "text": "走势完美复刻昨天的推土机拉升！ 盘中回落后推土机式拉升，把不坚定筹码直接洗下车，边洗边拉，节奏丝滑。",
+      "card_rect": {
+        "top": 629,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:53:36",
+      "text": "先进封装双龙继续炸裂， 继续全面冲板，太牛逼炸裂了！！！",
+      "card_rect": {
+        "top": 751,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:28:13",
+      "text": "机器人和工业大模型，懒得看了 不如算力炸裂",
+      "card_rect": {
+        "top": 852,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:41:15",
+      "text": "看看，是不是干死空头了？ 是不是短线资金都卖飞了？ 是不是怂包蛋都踏空了？",
+      "card_rect": {
+        "top": 974,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "11:08:01",
+      "text": "付费v+：最新格局",
+      "card_rect": {
+        "top": 1117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 2068,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "付费v+：最新格局",
+    "visible_message_count": 8,
+    "primary_message_candidate": "付费v+：最新格局",
+    "initial_room_anchor_candidate": "周期女王",
+    "room_anchor_candidate": "核心逻辑社",
+    "topic_anchor_candidate": "#核心逻辑社#",
+    "forced_room_anchor": "核心逻辑社",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

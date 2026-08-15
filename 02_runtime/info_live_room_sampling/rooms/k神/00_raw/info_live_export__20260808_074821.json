@@ -1,0 +1,142 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-08T07:48:21.082Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/07",
+  "room_anchor": "k神",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/07",
+  "display_time": "14:40:38",
+  "topic_anchor": "#k神#",
+  "excerpt": "情绪铆钉k神 k神我说句实话啊.单月20个点k神我觉得努努力能达到.但那种50个点的确实有点难度...... 然后优惠券. 这一次单月优惠288.1888-288等于1600. 双鱼优惠588.3666-588等于3078.至于季度k神我就不发优惠券咯.因为之前给你们送时长这些.加上优惠券都得k神我自己掏腰包。",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/07",
+      "display_time": "09:46:52",
+      "text": "情绪铆钉k神 整体来说今天市场达芬奇.所以中国科传跌了.然后这个恒银主观认为是被网红效应影响导致的错杀.后续有修复预期.你们可以去看成交量昨天的大资金都出不来的。",
+      "card_rect": {
+        "top": 53,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:15:01",
+      "text": "情绪铆钉k神 哈药这个票从来没坑过后山k神会.就包括前天进后山的同学昨天亏3个点.今天也能赚5个点的.你们之前有利润的老粉丝那就更不用说.所以就会一直做.做到他亏钱为止。 看看能否模仿东信和平！",
+      "card_rect": {
+        "top": 196,
+        "left": 576,
+        "width": 845,
+        "height": 185
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:15:09",
+      "text": "情绪铆钉k神 哈药这个票从来没坑过后山k神会.就包括前天进后山的同学昨天亏3个点.今天也能赚5个点的.你们之前有利润的老粉丝那就更不用说.所以就会一直做.做到他亏钱为止。 看看能否模仿东信和平！",
+      "card_rect": {
+        "top": 381,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:13:16",
+      "text": "情绪铆钉k神 保险起见.恒银建议排单出来.全部取关亏3个点。如果周一超预期在接回去！",
+      "card_rect": {
+        "top": 545,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:59:20",
+      "text": "情绪铆钉k神 这会再问一遍.k神我说的八月要红.你们还有信心不？？？",
+      "card_rect": {
+        "top": 667,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:17:59",
+      "text": "情绪铆钉k神 行情应该是真要好起来了.开始频繁卖飞.珍惜8月吧.8月赚钱的9月买大月饼吃。",
+      "card_rect": {
+        "top": 789,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:22:14",
+      "text": "情绪铆钉k神 我没说要发优惠券.k神我是真的觉得行情要起来咯.优惠券等你们赚到钱再发！",
+      "card_rect": {
+        "top": 911,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      }
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "14:40:38",
+      "text": "情绪铆钉k神 k神我说句实话啊.单月20个点k神我觉得努努力能达到.但那种50个点的确实有点难度...... 然后优惠券. 这一次单月优惠288.1888-288等于1600. 双鱼优惠588.3666-588等于3078.至于季度k神我就不发优惠券咯.因为之前给你们送时长这些.加上优惠券都得k神我自己掏腰包。",
+      "card_rect": {
+        "top": 1033,
+        "left": 576,
+        "width": 845,
+        "height": 206
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 3070,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "情绪铆钉k神 k神我说句实话啊.单月20个点k神我觉得努努力能达到.但那种50个点的确实有点难度...... 然后优惠券. 这一次单月优惠288.1888-288等于1600. 双鱼优惠588.3666-588等于3078.至于季度k神我就不发优惠券咯.因为之前给你们送时长这些.加上优惠券都得k神我自己掏腰包。",
+    "visible_message_count": 8,
+    "primary_message_candidate": "情绪铆钉k神 k神我说句实话啊.单月20个点k神我觉得努努力能达到.但那种50个点的确实有点难度...... 然后优惠券. 这一次单月优惠288.1888-288等于1600. 双鱼优惠588.3666-588等于3078.至于季度k神我就不发优惠券咯.因为之前给你们送时长这些.加上优惠券都得k神我自己掏腰包。",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "k神",
+    "topic_anchor_candidate": "#k神#",
+    "forced_room_anchor": "k神",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

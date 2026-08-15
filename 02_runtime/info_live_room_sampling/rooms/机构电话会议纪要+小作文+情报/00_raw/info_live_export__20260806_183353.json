@@ -1,0 +1,65 @@
+{
+  "export_version": "live_info_current_page_export_v1.5",
+  "exported_at": "2026-08-06T18:33:53.426Z",
+  "page_title": "萌侠博客",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "source_url": "https://mx2025.hhhuu.com/#/",
+  "access_mode": "login_state_required",
+  "sample_date": "2026/08/06",
+  "room_anchor": "机构电话会议纪要+小作文+情报",
+  "history_entry": "历史记录",
+  "display_date": "2026/08/06",
+  "display_time": "23:54:48",
+  "topic_anchor": "#机构电话会议纪要+小作文+情报#",
+  "excerpt": "加q群534660411，更多服务",
+  "image_evidence": "no",
+  "image_count": 0,
+  "image_urls": [],
+  "visible_messages": [
+    {
+      "display_date": "2026/08/06",
+      "display_time": "23:54:48",
+      "text": "加q群534660411，更多服务",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 3154
+      }
+    }
+  ],
+  "content_form": "static_text_and_image",
+  "a5_role_layer": "explanation_layer_or_side_evidence",
+  "notes": "",
+  "heuristics": {
+    "export_failed_reason": "",
+    "history_view_order": "reverse",
+    "primary_pick": "latest_visible",
+    "content_root_pick": {
+      "has_left_room_list": true,
+      "min_left": 150,
+      "picked": {
+        "rect": {
+          "top": 85,
+          "left": 516,
+          "width": 925,
+          "height": 1154
+        },
+        "tag": "uni-scroll-view",
+        "class_name": ""
+      }
+    },
+    "content_text_length": 65938,
+    "content_root_tag": "uni-scroll-view",
+    "first_message_candidate": "加q群534660411，更多服务",
+    "visible_message_count": 1,
+    "primary_message_candidate": "加q群534660411，更多服务",
+    "initial_room_anchor_candidate": "孙悟空金牌",
+    "room_anchor_candidate": "机构电话会议纪要+小作文+情报",
+    "topic_anchor_candidate": "#机构电话会议纪要+小作文+情报#",
+    "forced_room_anchor": "机构电话会议纪要+小作文+情报",
+    "promo_strip_enabled": true,
+    "merged_card_split_enabled": true
+  }
+}

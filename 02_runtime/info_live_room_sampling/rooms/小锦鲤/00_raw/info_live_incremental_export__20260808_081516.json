@@ -1,0 +1,2799 @@
+{
+  "export_version": "live_info_incremental_export_v1.3",
+  "exported_at": "2026-08-08T08:15:16.250Z",
+  "room_anchor": "小锦鲤",
+  "page_url": "https://mx2025.hhhuu.com/#/",
+  "source_family": "信息直播间",
+  "access_mode": "login_state_required",
+  "checkpoint_key": "__infoLiveIncrementalCheckpointV1__小锦鲤",
+  "stop_reason": "scroll_end",
+  "rounds_completed": 29,
+  "message_count": 229,
+  "resumed_from_checkpoint": false,
+  "checkpoint_loaded_count": 0,
+  "newly_added_count": 229,
+  "start_scroll_top": 2983,
+  "end_scroll_top": 40,
+  "runtime_options": {
+    "reset_checkpoint": true,
+    "max_rounds": 80,
+    "max_no_new_rounds": 3,
+    "viewport_step": 1038
+  },
+  "sample_range": {
+    "first": {
+      "display_date": "2026/07/09",
+      "display_time": "09:29:05",
+      "text": "Typhoooon 关注国力债#向下2个止损）",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:29:05||Typhoooon 关注国力债#向下2个止损）"
+    },
+    "last": {
+      "display_date": "2026/08/07",
+      "display_time": "13:58:15",
+      "text": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+      "card_rect": {
+        "top": 1096,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/07||13:58:15||小锦 目前万邦(医药)普联(软件) 欣天(独立)"
+    }
+  },
+  "messages": [
+    {
+      "display_date": "2026/07/09",
+      "display_time": "09:29:05",
+      "text": "Typhoooon 关注国力债#向下2个止损）",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:29:05||Typhoooon 关注国力债#向下2个止损）"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "09:31:38",
+      "text": "Typhoooon 债+6落袋了",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:31:38||Typhoooon 债+6落袋了"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "09:35:01",
+      "text": "Typhoooon 甬矽+5降低关注",
+      "card_rect": {
+        "top": 104,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:35:01||Typhoooon 甬矽+5降低关注"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "09:35:57",
+      "text": "Typhoooon 破均线全部取关了",
+      "card_rect": {
+        "top": 222,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:35:57||Typhoooon 破均线全部取关了"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "09:50:28",
+      "text": "Typhoooon 低吃格科w埋伏",
+      "card_rect": {
+        "top": 340,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||09:50:28||Typhoooon 低吃格科w埋伏"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "10:04:28",
+      "text": "Typhoooon etf自行走或者多等等都行",
+      "card_rect": {
+        "top": 458,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/09||10:04:28||Typhoooon etf自行走或者多等等都行"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "10:13:28",
+      "text": "小锦 欧了，华天版了，甬矽可以冲了",
+      "card_rect": {
+        "top": 576,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||10:13:28||小锦 欧了，华天版了，甬矽可以冲了"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "10:57:12",
+      "text": "小锦 之前环境正常，有研甬矽这种票我能很专注做完的 目前环境实在是，强行给自己信心跟踪 还好没弄丢甬矽",
+      "card_rect": {
+        "top": 698,
+        "left": 576,
+        "width": 845,
+        "height": 181
+      },
+      "dedup_key": "小锦鲤||2026/07/09||10:57:12||小锦 之前环境正常，有研甬矽这种票我能很专注做完的 目前环境实在是，强行给自己信心跟踪 还好没弄丢甬矽"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "10:57:58",
+      "text": "小锦 这图不就是我们之前做的联瑞么",
+      "card_rect": {
+        "top": 879,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||10:57:58||小锦 这图不就是我们之前做的联瑞么"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "13:29:39",
+      "text": "小锦 格科w也来了",
+      "card_rect": {
+        "top": 1001,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||13:29:39||小锦 格科w也来了"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "13:45:13",
+      "text": "小锦 牛逼了甬矽！",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||13:45:13||小锦 牛逼了甬矽！"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "13:46:59",
+      "text": "小锦 ??etf都有5个了",
+      "card_rect": {
+        "top": 207,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||13:46:59||小锦 ??etf都有5个了"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "13:54:01",
+      "text": "小锦 总算回口老血 前面几天波折了些，不过也没啥，不痛不长教训，我们以后的路会更顺畅的",
+      "card_rect": {
+        "top": 329,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/09||13:54:01||小锦 总算回口老血 前面几天波折了些，不过也没啥，不痛不长教训，我们以后的路会更顺畅的"
+    },
+    {
+      "display_date": "2026/07/09",
+      "display_time": "13:55:23",
+      "text": "小锦 有低位挖掘有研跟甬矽的能力，就有从头再来的勇气，七月加油！",
+      "card_rect": {
+        "top": 472,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/09||13:55:23||小锦 有低位挖掘有研跟甬矽的能力，就有从头再来的勇气，七月加油！"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "09:45:22",
+      "text": "Typhoooon 其他没太多想开的，今天踢一下甬矽就可以，有跳水分批接回",
+      "card_rect": {
+        "top": 594,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||09:45:22||Typhoooon 其他没太多想开的，今天踢一下甬矽就可以，有跳水分批接回"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "09:53:02",
+      "text": "Typhoooon 市场发酵的是我们之前的华丰，国产算力，这个方向太折磨了我就不去了",
+      "card_rect": {
+        "top": 82,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||09:53:02||Typhoooon 市场发酵的是我们之前的华丰，国产算力，这个方向太折磨了我就不去了"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:09:59",
+      "text": "Typhoooon 0附近埋伏了电锐捷",
+      "card_rect": {
+        "top": 200,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:09:59||Typhoooon 0附近埋伏了电锐捷"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:10:18",
+      "text": "Typhoooon 0附近埋伏了点锐捷",
+      "card_rect": {
+        "top": 318,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:10:18||Typhoooon 0附近埋伏了点锐捷"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:10:35",
+      "text": "Typhoooon 轻微",
+      "card_rect": {
+        "top": 436,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:10:35||Typhoooon 轻微"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:13:07",
+      "text": "2026/07/10 10:13:07 Typhoooon 今天佛系点，明天有新的",
+      "card_rect": {
+        "top": 1184,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:13:07||2026/07/10 10:13:07 Typhoooon 今天佛系点，明天有新的"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:13:07",
+      "text": "Typhoooon 今天佛系点，明天有新的",
+      "card_rect": {
+        "top": 554,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:13:07||Typhoooon 今天佛系点，明天有新的"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "10:25:41",
+      "text": "Typhoooon 锐捷突突突了",
+      "card_rect": {
+        "top": 672,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||10:25:41||Typhoooon 锐捷突突突了"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "11:04:54",
+      "text": "Typhoooon 华天明天断版，甬矽还有低吃点，控制好仓。",
+      "card_rect": {
+        "top": 790,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/10||11:04:54||Typhoooon 华天明天断版，甬矽还有低吃点，控制好仓。"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "11:05:03",
+      "text": "Typhoooon 其他的轮动我不想做，除非有大分歧。 市场就一个题材线#国产），一个业绩线。 题材就是封测，硅料#有研硅没空间），业绩线就是东岳跟锐捷",
+      "card_rect": {
+        "top": 908,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      },
+      "dedup_key": "小锦鲤||2026/07/10||11:05:03||Typhoooon 其他的轮动我不想做，除非有大分歧。 市场就一个题材线#国产），一个业绩线。 题材就是封测，硅料#有研硅没空间），业绩线就是东岳跟锐捷"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "13:41:24",
+      "text": "小锦 科技今天加大分歧挺好的，消化完周一才有预期",
+      "card_rect": {
+        "top": 30,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/10||13:41:24||小锦 科技今天加大分歧挺好的，消化完周一才有预期"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "14:20:45",
+      "text": "2026/07/10 14:20:45 小锦 今天最优解还是踢甬夕，拿啥都容易亏",
+      "card_rect": {
+        "top": 1190,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/10||14:20:45||2026/07/10 14:20:45 小锦 今天最优解还是踢甬夕，拿啥都容易亏"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "14:20:45",
+      "text": "小锦 今天最优解还是踢甬夕，拿啥都容易亏",
+      "card_rect": {
+        "top": 152,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/10||14:20:45||小锦 今天最优解还是踢甬夕，拿啥都容易亏"
+    },
+    {
+      "display_date": "2026/07/10",
+      "display_time": "14:39:27",
+      "text": "小锦 今天啥都不加，有好的周一再?，不然也是卖飞",
+      "card_rect": {
+        "top": 274,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/10||14:39:27||小锦 今天啥都不加，有好的周一再?，不然也是卖飞"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "09:30:02",
+      "text": "Typhoooon 先做好手上的",
+      "card_rect": {
+        "top": 417,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/13||09:30:02||Typhoooon 先做好手上的"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "09:33:16",
+      "text": "Typhoooon 锐捷+8附近开始降低关注",
+      "card_rect": {
+        "top": 556,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/13||09:33:16||Typhoooon 锐捷+8附近开始降低关注"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "09:33:30",
+      "text": "Typhoooon 动弹不得",
+      "card_rect": {
+        "top": 674,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/13||09:33:30||Typhoooon 动弹不得"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "09:36:46",
+      "text": "Typhoooon 取关了锐捷",
+      "card_rect": {
+        "top": 792,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/13||09:36:46||Typhoooon 取关了锐捷"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "09:51:21",
+      "text": "Typhoooon 甬矽就只剩底了，所以放着看看，重的人冲高降低关注",
+      "card_rect": {
+        "top": 910,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/13||09:51:21||Typhoooon 甬矽就只剩底了，所以放着看看，重的人冲高降低关注"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "10:32:32",
+      "text": "小锦 甬矽回落我?点",
+      "card_rect": {
+        "top": 1049,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/13||10:32:32||小锦 甬矽回落我?点"
+    },
+    {
+      "display_date": "2026/07/13",
+      "display_time": "11:02:16",
+      "text": "小锦 我知道大家现在很难受，不破不立，咱们只能等，严格控制好c",
+      "card_rect": {
+        "top": 133,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/13||11:02:16||小锦 我知道大家现在很难受，不破不立，咱们只能等，严格控制好c"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:29:07",
+      "text": "Typhoooon 关注国力债 低吃中芯gj",
+      "card_rect": {
+        "top": 276,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:29:07||Typhoooon 关注国力债 低吃中芯gj"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:32:00",
+      "text": "Typhoooon 国力债落袋了",
+      "card_rect": {
+        "top": 394,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:32:00||Typhoooon 国力债落袋了"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:32:40",
+      "text": "Typhoooon 中芯没去的不用吸",
+      "card_rect": {
+        "top": 512,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:32:40||Typhoooon 中芯没去的不用吸"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:38:47",
+      "text": "Typhoooon 甬矽走了，差别太大",
+      "card_rect": {
+        "top": 651,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:38:47||Typhoooon 甬矽走了，差别太大"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:41:54",
+      "text": "Typhoooon 每天都是反杀补跌，这种市场烂掉了",
+      "card_rect": {
+        "top": 769,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:41:54||Typhoooon 每天都是反杀补跌，这种市场烂掉了"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:44:59",
+      "text": "Typhoooon 有研降低关注",
+      "card_rect": {
+        "top": 887,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:44:59||Typhoooon 有研降低关注"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "09:53:41",
+      "text": "Typhoooon 想做反弹的看中际跟长光",
+      "card_rect": {
+        "top": 1005,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||09:53:41||Typhoooon 想做反弹的看中际跟长光"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "10:01:23",
+      "text": "Typhoooon 没权限的考虑东山",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/14||10:01:23||Typhoooon 没权限的考虑东山"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "10:49:57",
+      "text": "2026/07/14 10:49:57 小锦",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/14||10:49:57||2026/07/14 10:49:57 小锦"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "10:53:34",
+      "text": "小锦 除了护指数的没法看，都是补跌",
+      "card_rect": {
+        "top": 304,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/14||10:53:34||小锦 除了护指数的没法看，都是补跌"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "12:56:16",
+      "text": "小锦 韩国拉红了，下午估计继续回暖",
+      "card_rect": {
+        "top": 426,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/14||12:56:16||小锦 韩国拉红了，下午估计继续回暖"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "13:05:39",
+      "text": "小锦 东山版！长光也快了？",
+      "card_rect": {
+        "top": 548,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/14||13:05:39||小锦 东山版！长光也快了？"
+    },
+    {
+      "display_date": "2026/07/14",
+      "display_time": "13:25:37",
+      "text": "小锦 反弹三大核心，权重中际，光芯片东山、长光一大早就说了，ccl中午也做了补充。 就看他们走到哪了",
+      "card_rect": {
+        "top": 670,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/14||13:25:37||小锦 反弹三大核心，权重中际，光芯片东山、长光一大早就说了，ccl中午也做了补充。 就看他们走到哪了"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:38:41",
+      "text": "Typhoooon 全走了 包括中芯",
+      "card_rect": {
+        "top": 146,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:38:41||Typhoooon 全走了 包括中芯"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:38:44",
+      "text": "Typhoooon 手上的冲高先落袋",
+      "card_rect": {
+        "top": 264,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:38:44||Typhoooon 手上的冲高先落袋"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:38:50",
+      "text": "Typhoooon 长光中际东山取关",
+      "card_rect": {
+        "top": 382,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:38:50||Typhoooon 长光中际东山取关"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:45:34",
+      "text": "2026/07/15 09:45:34 Typhoooon 还好跑得快，国产把海外给带崩了，真是搅屎棍",
+      "card_rect": {
+        "top": 1188,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:45:34||2026/07/15 09:45:34 Typhoooon 还好跑得快，国产把海外给带崩了，真是搅屎棍"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:45:34",
+      "text": "Typhoooon 还好跑得快，国产把海外给带崩了，真是搅屎棍",
+      "card_rect": {
+        "top": 521,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:45:34||Typhoooon 还好跑得快，国产把海外给带崩了，真是搅屎棍"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:53:27",
+      "text": "Typhoooon 想做药的考虑513780",
+      "card_rect": {
+        "top": 660,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:53:27||Typhoooon 想做药的考虑513780"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:54:28",
+      "text": "Typhoooon 这个可以日内撸的",
+      "card_rect": {
+        "top": 778,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:54:28||Typhoooon 这个可以日内撸的"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "09:57:22",
+      "text": "Typhoooon 会做的撸 不会带的",
+      "card_rect": {
+        "top": 896,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||09:57:22||Typhoooon 会做的撸 不会带的"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "10:01:18",
+      "text": "Typhoooon etf走了",
+      "card_rect": {
+        "top": 1014,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/15||10:01:18||Typhoooon etf走了"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "13:31:46",
+      "text": "小锦 高潮次日乱来怕是要被收割两次了... 早上医药我敢给的还是t+0的etf??",
+      "card_rect": {
+        "top": 94,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/15||13:31:46||小锦 高潮次日乱来怕是要被收割两次了... 早上医药我敢给的还是t+0的etf??"
+    },
+    {
+      "display_date": "2026/07/15",
+      "display_time": "13:42:41",
+      "text": "2026/07/15 13:42:41 小锦",
+      "card_rect": {
+        "top": 237,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/15||13:42:41||2026/07/15 13:42:41 小锦"
+    },
+    {
+      "display_date": "2026/07/16",
+      "display_time": "10:27:40",
+      "text": "暂时没有消息",
+      "card_rect": {
+        "top": 338,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/16||10:27:40||暂时没有消息"
+    },
+    {
+      "display_date": "2026/07/16",
+      "display_time": "10:30:42",
+      "text": "小锦 整体是休息的，想做的分歧埋伏pcb跟大光",
+      "card_rect": {
+        "top": 439,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/16||10:30:42||小锦 整体是休息的，想做的分歧埋伏pcb跟大光"
+    },
+    {
+      "display_date": "2026/07/16",
+      "display_time": "14:24:56",
+      "text": "暂时没有消息",
+      "card_rect": {
+        "top": 561,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/16||14:24:56||暂时没有消息"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:36:13",
+      "text": "Typhoooon 科技全清了",
+      "card_rect": {
+        "top": 662,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:36:13||Typhoooon 科技全清了"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:39:24",
+      "text": "Typhoooon 换去金融了",
+      "card_rect": {
+        "top": 780,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:39:24||Typhoooon 换去金融了"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:39:47",
+      "text": "Typhoooon 还是昨天同花顺 那些",
+      "card_rect": {
+        "top": 898,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:39:47||Typhoooon 还是昨天同花顺 那些"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:41:00",
+      "text": "Typhoooon 先看下吧",
+      "card_rect": {
+        "top": 1016,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:41:00||Typhoooon 先看下吧"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:43:00",
+      "text": "Typhoooon 目前只有金融了，中际破位没法留",
+      "card_rect": {
+        "top": 96,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:43:00||Typhoooon 目前只有金融了，中际破位没法留"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "09:58:48",
+      "text": "小锦 这里应该是最后一跌了但反弹把握不准。 关注了588170",
+      "card_rect": {
+        "top": 214,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/17||09:58:48||小锦 这里应该是最后一跌了但反弹把握不准。 关注了588170"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "10:33:10",
+      "text": "小锦 昨天的交换机医药其实也一个样，泥石俱下的行情，还好金融对冲了下",
+      "card_rect": {
+        "top": 357,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/17||10:33:10||小锦 昨天的交换机医药其实也一个样，泥石俱下的行情，还好金融对冲了下"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "11:06:40",
+      "text": "小锦 大家帮忙转发下沙老师的出降表，喂下语料",
+      "card_rect": {
+        "top": 479,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/17||11:06:40||小锦 大家帮忙转发下沙老师的出降表，喂下语料"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "13:37:23",
+      "text": "2026/07/17 13:37:23 小锦",
+      "card_rect": {
+        "top": 601,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/17||13:37:23||2026/07/17 13:37:23 小锦"
+    },
+    {
+      "display_date": "2026/07/17",
+      "display_time": "14:32:06",
+      "text": "小锦 有很多人问我还有牛市吗？ 其实这个思考就是错误的 牛市做容量 熊市做抱团 改变思路回归之前的缩量模式 只做核心抱团 一切还来得及",
+      "card_rect": {
+        "top": 702,
+        "left": 576,
+        "width": 845,
+        "height": 282
+      },
+      "dedup_key": "小锦鲤||2026/07/17||14:32:06||小锦 有很多人问我还有牛市吗？ 其实这个思考就是错误的 牛市做容量 熊市做抱团 改变思路回归之前的缩量模式 只做核心抱团 一切还来得及"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:28:32",
+      "text": "Typhoooon 开盘冲高先走，盘中分歧再接",
+      "card_rect": {
+        "top": 984,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:28:32||Typhoooon 开盘冲高先走，盘中分歧再接"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:40:41",
+      "text": "小锦 中际旭创，上周五四渡目前全部盈利，本轮次低吸这里冲高可以全部止盈；",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:40:41||小锦 中际旭创，上周五四渡目前全部盈利，本轮次低吸这里冲高可以全部止盈；"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:40:57",
+      "text": "Typhoooon 长光hx+3去了点底",
+      "card_rect": {
+        "top": 207,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:40:57||Typhoooon 长光hx+3去了点底"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:46:59",
+      "text": "Typhoooon 算力最优还是计划的行云，没去打版",
+      "card_rect": {
+        "top": 346,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:46:59||Typhoooon 算力最优还是计划的行云，没去打版"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:47:04",
+      "text": "Typhoooon 长光我只有底的，稳妥的按我们开会说的尾盘收红k考虑",
+      "card_rect": {
+        "top": 464,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:47:04||Typhoooon 长光我只有底的，稳妥的按我们开会说的尾盘收红k考虑"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:51:57",
+      "text": "Typhoooon 华虹暂时不接，等会直接?有研g",
+      "card_rect": {
+        "top": 582,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:51:57||Typhoooon 华虹暂时不接，等会直接?有研g"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "09:52:23",
+      "text": "Typhoooon 看看有没有+4附近",
+      "card_rect": {
+        "top": 122,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/20||09:52:23||Typhoooon 看看有没有+4附近"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "10:07:45",
+      "text": "小锦 今天有研跟万邦都是最优解，一个代表医药一个代表科技，我比较喜欢调整过的所以有研g了",
+      "card_rect": {
+        "top": 240,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||10:07:45||小锦 今天有研跟万邦都是最优解，一个代表医药一个代表科技，我比较喜欢调整过的所以有研g了"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "10:34:02",
+      "text": "小锦 九安都炸了，绞肉机市场",
+      "card_rect": {
+        "top": 362,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||10:34:02||小锦 九安都炸了，绞肉机市场"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "10:35:25",
+      "text": "小锦 不能怪高开就砸，lh就如此",
+      "card_rect": {
+        "top": 484,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||10:35:25||小锦 不能怪高开就砸，lh就如此"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "10:58:51",
+      "text": "2026/07/20 10:58:51 小锦 刚才龙神上版就是科技的最低点了",
+      "card_rect": {
+        "top": 1184,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||10:58:51||2026/07/20 10:58:51 小锦 刚才龙神上版就是科技的最低点了"
+    },
+    {
+      "display_date": "2026/07/20",
+      "display_time": "10:58:51",
+      "text": "小锦 刚才龙神上版就是科技的最低点了",
+      "card_rect": {
+        "top": 606,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/20||10:58:51||小锦 刚才龙神上版就是科技的最低点了"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "09:27:33",
+      "text": "Typhoooon 抢高开，手上的冲高走",
+      "card_rect": {
+        "top": 728,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/21||09:27:33||Typhoooon 抢高开，手上的冲高走"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "09:33:03",
+      "text": "Typhoooon 空了",
+      "card_rect": {
+        "top": 867,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/21||09:33:03||Typhoooon 空了"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "09:45:30",
+      "text": "Typhoooon 有研补跌的剧本昨天预告了的，完美躲过，等补跌完再说",
+      "card_rect": {
+        "top": 985,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/21||09:45:30||Typhoooon 有研补跌的剧本昨天预告了的，完美躲过，等补跌完再说"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "09:46:13",
+      "text": "Typhoooon -20接了点",
+      "card_rect": {
+        "top": 65,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/21||09:46:13||Typhoooon -20接了点"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "09:55:05",
+      "text": "2026/07/21 09:55:05 小锦",
+      "card_rect": {
+        "top": 183,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/21||09:55:05||2026/07/21 09:55:05 小锦"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:08:02",
+      "text": "小锦 抢高开先跑路就对了，这样才有心态在恐慌捡东西 这两天都是竞价喊大家跑路，盘中再切强的。",
+      "card_rect": {
+        "top": 284,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:08:02||小锦 抢高开先跑路就对了，这样才有心态在恐慌捡东西 这两天都是竞价喊大家跑路，盘中再切强的。"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:09:03",
+      "text": "小锦 性子慢的等指s右脚",
+      "card_rect": {
+        "top": 444,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:09:03||小锦 性子慢的等指s右脚"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:17:13",
+      "text": "小锦 华虹也挺好的，不过做下来也差不多，有研今天也快十个了",
+      "card_rect": {
+        "top": 566,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:17:13||小锦 华虹也挺好的，不过做下来也差不多，有研今天也快十个了"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:31:15",
+      "text": "小锦 盘面上v的还是国产半导体，我就不动了",
+      "card_rect": {
+        "top": 688,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:31:15||小锦 盘面上v的还是国产半导体，我就不动了"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:39:11",
+      "text": "小锦 补跌也是提前告诉你们的",
+      "card_rect": {
+        "top": 810,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:39:11||小锦 补跌也是提前告诉你们的"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "10:53:51",
+      "text": "小锦 有研又救命了，回血了 日内16",
+      "card_rect": {
+        "top": 932,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/21||10:53:51||小锦 有研又救命了，回血了 日内16"
+    },
+    {
+      "display_date": "2026/07/21",
+      "display_time": "11:08:18",
+      "text": "2026/07/21 11:08:18 小锦",
+      "card_rect": {
+        "top": 1054,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/21||11:08:18||2026/07/21 11:08:18 小锦"
+    },
+    {
+      "display_date": "2026/07/22",
+      "display_time": "10:51:39",
+      "text": "小锦 有研等有大分歧再回去吧，这波将近30个也够了",
+      "card_rect": {
+        "top": 117,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/22||10:51:39||小锦 有研等有大分歧再回去吧，这波将近30个也够了"
+    },
+    {
+      "display_date": "2026/07/22",
+      "display_time": "13:25:11",
+      "text": "小锦 从昨天我拿万邦起，几十个人问我别的药，真别问了。。。再问我都要生气了",
+      "card_rect": {
+        "top": 239,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/22||13:25:11||小锦 从昨天我拿万邦起，几十个人问我别的药，真别问了。。。再问我都要生气了"
+    },
+    {
+      "display_date": "2026/07/22",
+      "display_time": "13:26:16",
+      "text": "小锦 你们忘记我老本行就是炒妖的？ 去年你们喊的上话的20妖古哪个我不在",
+      "card_rect": {
+        "top": 361,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/22||13:26:16||小锦 你们忘记我老本行就是炒妖的？ 去年你们喊的上话的20妖古哪个我不在"
+    },
+    {
+      "display_date": "2026/07/22",
+      "display_time": "13:32:04",
+      "text": "小锦 什么叫杀人诛心，早上科技延续冲高骗你们进去，狂吹下午分歧",
+      "card_rect": {
+        "top": 504,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/22||13:32:04||小锦 什么叫杀人诛心，早上科技延续冲高骗你们进去，狂吹下午分歧"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:35:32",
+      "text": "2026/07/23 09:35:32 丫丫 好的",
+      "card_rect": {
+        "top": 626,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:35:32||2026/07/23 09:35:32 丫丫 好的"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:43:03",
+      "text": "Typhoooon -6吸了有研g",
+      "card_rect": {
+        "top": 748,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:43:03||Typhoooon -6吸了有研g"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:43:04",
+      "text": "Typhoooon 万邦仓位重的0轴踢一点",
+      "card_rect": {
+        "top": 887,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:43:04||Typhoooon 万邦仓位重的0轴踢一点"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:43:40",
+      "text": "Typhoooon 不重的继续等",
+      "card_rect": {
+        "top": 1005,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:43:40||Typhoooon 不重的继续等"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:45:52",
+      "text": "Typhoooon +3减了一点",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:45:52||Typhoooon +3减了一点"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "09:58:57",
+      "text": "Typhoooon 今天轮动的是mlcc 不过没有做抱团舒服，万邦今天又踢了8 个",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/23||09:58:57||Typhoooon 今天轮动的是mlcc 不过没有做抱团舒服，万邦今天又踢了8 个"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:09:32",
+      "text": "小锦 +8附近把底c踢完",
+      "card_rect": {
+        "top": 342,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:09:32||小锦 +8附近把底c踢完"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:13:46",
+      "text": "小锦 万邦今天踢完了，爽不爽",
+      "card_rect": {
+        "top": 464,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:13:46||小锦 万邦今天踢完了，爽不爽"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:31:10",
+      "text": "小锦 都是提前预判说的，有手就行",
+      "card_rect": {
+        "top": 586,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:31:10||小锦 都是提前预判说的，有手就行"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:33:03",
+      "text": "小锦 今天没晒我的，给你们下群友的。 是不是按预判来可以做到标准答案？做不到的反省一下，都这样手把手了",
+      "card_rect": {
+        "top": 89,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:33:03||小锦 今天没晒我的，给你们下群友的。 是不是按预判来可以做到标准答案？做不到的反省一下，都这样手把手了"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:33:14",
+      "text": "小锦 今天没晒我的，给你们看下群友的。 是不是按预判来可以做到标准答案？做不到的反省一下，都这样手把手了",
+      "card_rect": {
+        "top": 232,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:33:14||小锦 今天没晒我的，给你们看下群友的。 是不是按预判来可以做到标准答案？做不到的反省一下，都这样手把手了"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "10:37:50",
+      "text": "2026/07/23 10:37:50 小锦",
+      "card_rect": {
+        "top": 396,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/23||10:37:50||2026/07/23 10:37:50 小锦"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "11:08:42",
+      "text": "小锦 今天就是前面两天说的，长鑫上市之前还会调整一波。",
+      "card_rect": {
+        "top": 497,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/23||11:08:42||小锦 今天就是前面两天说的，长鑫上市之前还会调整一波。"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "12:59:47",
+      "text": "2026/07/23 12:59:47 小锦",
+      "card_rect": {
+        "top": 640,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/23||12:59:47||2026/07/23 12:59:47 小锦"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:00:57",
+      "text": "2026/07/23 13:00:57 小锦",
+      "card_rect": {
+        "top": 741,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:00:57||2026/07/23 13:00:57 小锦"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:01:11",
+      "text": "小锦 市场没量 所以很多容量今天补跌",
+      "card_rect": {
+        "top": 842,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:01:11||小锦 市场没量 所以很多容量今天补跌"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:09:25",
+      "text": "小锦 华虹开始回拉了，有研跟上？",
+      "card_rect": {
+        "top": 964,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:09:25||小锦 华虹开始回拉了，有研跟上？"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:18:11",
+      "text": "小锦 真狠 军工都轮动了",
+      "card_rect": {
+        "top": 48,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:18:11||小锦 真狠 军工都轮动了"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:35:56",
+      "text": "2026/07/23 13:35:56 小锦 万邦上午爽完 下午有研爽 不知道拿什么输",
+      "card_rect": {
+        "top": 1208,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:35:56||2026/07/23 13:35:56 小锦 万邦上午爽完 下午有研爽 不知道拿什么输"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:35:56",
+      "text": "小锦 万邦上午爽完 下午有研爽 不知道拿什么输",
+      "card_rect": {
+        "top": 170,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:35:56||小锦 万邦上午爽完 下午有研爽 不知道拿什么输"
+    },
+    {
+      "display_date": "2026/07/23",
+      "display_time": "13:37:57",
+      "text": "小锦 别人唱多科技的时候我提醒风险，今天都不看了抄底有研g 这波怎么说？",
+      "card_rect": {
+        "top": 313,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/23||13:37:57||小锦 别人唱多科技的时候我提醒风险，今天都不看了抄底有研g 这波怎么说？"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "09:27:16",
+      "text": "Typhoooon 竞价冰点开，而且中芯是红开的。 手上的冲高减",
+      "card_rect": {
+        "top": 456,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/24||09:27:16||Typhoooon 竞价冰点开，而且中芯是红开的。 手上的冲高减"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "09:31:40",
+      "text": "Typhoooon 都走了",
+      "card_rect": {
+        "top": 595,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/24||09:31:40||Typhoooon 都走了"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "09:40:58",
+      "text": "Typhoooon 没给深水不是很想接，再看看",
+      "card_rect": {
+        "top": 713,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/24||09:40:58||Typhoooon 没给深水不是很想接，再看看"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "09:45:15",
+      "text": "Typhoooon 300534下来点打个底，-10左右",
+      "card_rect": {
+        "top": 831,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/24||09:45:15||Typhoooon 300534下来点打个底，-10左右"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "09:46:19",
+      "text": "Typhoooon 均线先去了",
+      "card_rect": {
+        "top": 970,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/24||09:46:19||Typhoooon 均线先去了"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:01:19",
+      "text": "Typhoooon 万邦-2接回了一半",
+      "card_rect": {
+        "top": 50,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:01:19||Typhoooon 万邦-2接回了一半"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:05:56",
+      "text": "2026/07/24 10:05:56 小锦 科技修复预判对了，就是没选好，对有研有感情了，不过也没什么损失。 按计划吸的医药，长鑫落地前佛系点",
+      "card_rect": {
+        "top": 1206,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:05:56||2026/07/24 10:05:56 小锦 科技修复预判对了，就是没选好，对有研有感情了，不过也没什么损失。 按计划吸的医药，长鑫落地前佛系点"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:05:56",
+      "text": "小锦 科技修复预判对了，就是没选好，对有研有感情了，不过也没什么损失。 按计划吸的医药，长鑫落地前佛系点",
+      "card_rect": {
+        "top": 168,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:05:56||小锦 科技修复预判对了，就是没选好，对有研有感情了，不过也没什么损失。 按计划吸的医药，长鑫落地前佛系点"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:08:13",
+      "text": "小锦 大哥还是大哥，调整的少拉的猛",
+      "card_rect": {
+        "top": 311,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:08:13||小锦 大哥还是大哥，调整的少拉的猛"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:23:37",
+      "text": "2026/07/24 10:23:37 小锦",
+      "card_rect": {
+        "top": 433,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:23:37||2026/07/24 10:23:37 小锦"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:42:18",
+      "text": "2026/07/24 10:42:18 小锦",
+      "card_rect": {
+        "top": 534,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:42:18||2026/07/24 10:42:18 小锦"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:42:26",
+      "text": "小锦 两万亿都没了",
+      "card_rect": {
+        "top": 635,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:42:26||小锦 两万亿都没了"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:44:13",
+      "text": "2026/07/24 10:44:13 小锦",
+      "card_rect": {
+        "top": 757,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:44:13||2026/07/24 10:44:13 小锦"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "10:46:19",
+      "text": "小锦 科技回流是预期内的，昨晚文章说了修复是取关点，没人追科技吧？",
+      "card_rect": {
+        "top": 858,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/24||10:46:19||小锦 科技回流是预期内的，昨晚文章说了修复是取关点，没人追科技吧？"
+    },
+    {
+      "display_date": "2026/07/24",
+      "display_time": "14:33:31",
+      "text": "小锦 下午科技又护盘了，整体没什么弹性，缩量市场佛系踢踢手上的也行了。",
+      "card_rect": {
+        "top": 1001,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/24||14:33:31||小锦 下午科技又护盘了，整体没什么弹性，缩量市场佛系踢踢手上的也行了。"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:27:58",
+      "text": "Typhoooon 万邦开盘下杀小加一点，如果直接拉高就等高点取关",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:27:58||Typhoooon 万邦开盘下杀小加一点，如果直接拉高就等高点取关"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:35:56",
+      "text": "Typhoooon 万邦+5减了",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:35:56||Typhoooon 万邦+5减了"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:37:36",
+      "text": "Typhoooon 龙神12清完",
+      "card_rect": {
+        "top": 321,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:37:36||Typhoooon 龙神12清完"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:39:28",
+      "text": "Typhoooon 万邦10左右清底c",
+      "card_rect": {
+        "top": 439,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:39:28||Typhoooon 万邦10左右清底c"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:40:26",
+      "text": "Typhoooon 爽不爽兄弟萌",
+      "card_rect": {
+        "top": 557,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:40:26||Typhoooon 爽不爽兄弟萌"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:42:58",
+      "text": "Typhoooon 万邦只剩今天加的了啊",
+      "card_rect": {
+        "top": 675,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:42:58||Typhoooon 万邦只剩今天加的了啊"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "09:59:16",
+      "text": "Typhoooon +4接回来了踢出去的",
+      "card_rect": {
+        "top": 121,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/27||09:59:16||Typhoooon +4接回来了踢出去的"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "10:29:06",
+      "text": "小锦 主做的万邦，没去接回龙神了，横竖都是爽 下班！",
+      "card_rect": {
+        "top": 239,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/27||10:29:06||小锦 主做的万邦，没去接回龙神了，横竖都是爽 下班！"
+    },
+    {
+      "display_date": "2026/07/27",
+      "display_time": "13:24:48",
+      "text": "#小8S2MG9XP锦） 其实每堂课都挺重要的，7.19是不是跟你们说后面我们只做抱团了，长时间就抱一个？ 开完会先做的有研35个，做完就切万邦也跟你们说先做到周五，每天至少踢10个吧？ 昨晚没开是人不太舒服，也觉得没啥新补充的 下堂课好好跟你们聊下抱团玩法",
+      "card_rect": {
+        "top": 382,
+        "left": 576,
+        "width": 845,
+        "height": 219
+      },
+      "dedup_key": "小锦鲤||2026/07/27||13:24:48||#小8S2MG9XP锦） 其实每堂课都挺重要的，7.19是不是跟你们说后面我们只做抱团了，长时间就抱一个？ 开完会先做的有研35个，做完就切万邦也跟你们说先做到周五，每天至少踢10个吧？ 昨晚没开是人不太舒服，也觉得没啥新补充的 下堂课好好跟你们聊下抱团玩法"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "09:30:29",
+      "text": "Ayphoooon 万邦冲高取关",
+      "card_rect": {
+        "top": 601,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/28||09:30:29||Ayphoooon 万邦冲高取关"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "09:32:38",
+      "text": "Ayphoooon 0去了点五洲底",
+      "card_rect": {
+        "top": 719,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/28||09:32:38||Ayphoooon 0去了点五洲底"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "09:32:59",
+      "text": "Ayphoooon 万邦红盘清了",
+      "card_rect": {
+        "top": 837,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/28||09:32:59||Ayphoooon 万邦红盘清了"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "09:38:08",
+      "text": "Ayphoooon 万邦说了会有红盘出的吧，根本不用慌",
+      "card_rect": {
+        "top": 955,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/28||09:38:08||Ayphoooon 万邦说了会有红盘出的吧，根本不用慌"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "09:39:23",
+      "text": "Ayphoooon 301234，计划写了",
+      "card_rect": {
+        "top": 35,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/28||09:39:23||Ayphoooon 301234，计划写了"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "10:09:15",
+      "text": "2026/07/28 10:09:15 小锦 万邦安稳出来又去五洲吃了，又是捡米的一天～ 今天先这样我去休息会",
+      "card_rect": {
+        "top": 1191,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/28||10:09:15||2026/07/28 10:09:15 小锦 万邦安稳出来又去五洲吃了，又是捡米的一天～ 今天先这样我去休息会"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "10:09:15",
+      "text": "小锦 万邦安稳出来又去五洲吃了，又是捡米的一天～ 今天先这样我去休息会",
+      "card_rect": {
+        "top": 153,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/28||10:09:15||小锦 万邦安稳出来又去五洲吃了，又是捡米的一天～ 今天先这样我去休息会"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "10:42:28",
+      "text": "小锦 ??又赚麻了兄弟萌",
+      "card_rect": {
+        "top": 296,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/28||10:42:28||小锦 ??又赚麻了兄弟萌"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "11:05:06",
+      "text": "2026/07/28 11:05:06 小锦",
+      "card_rect": {
+        "top": 439,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/28||11:05:06||2026/07/28 11:05:06 小锦"
+    },
+    {
+      "display_date": "2026/07/28",
+      "display_time": "11:05:24",
+      "text": "小锦 昨天提醒大家了，万邦给歇一歇，新品种上，今天知行合一切了五洲",
+      "card_rect": {
+        "top": 540,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/28||11:05:24||小锦 昨天提醒大家了，万邦给歇一歇，新品种上，今天知行合一切了五洲"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:28:22",
+      "text": "Typhoooon 五洲yl开盘下杀的时候增加关注",
+      "card_rect": {
+        "top": 662,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/29||09:28:22||Typhoooon 五洲yl开盘下杀的时候增加关注"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:31:05",
+      "text": "Typhoooon -9加了",
+      "card_rect": {
+        "top": 780,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/29||09:31:05||Typhoooon -9加了"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:39:07",
+      "text": "Typhoooon 万邦-8加了",
+      "card_rect": {
+        "top": 898,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/29||09:39:07||Typhoooon 万邦-8加了"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:41:13",
+      "text": "Typhoooon 科技修复抱团给承压的，等十点后踢出去",
+      "card_rect": {
+        "top": 1016,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/29||09:41:13||Typhoooon 科技修复抱团给承压的，等十点后踢出去"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "09:49:07",
+      "text": "Typhoooon -3附近踢出去万邦",
+      "card_rect": {
+        "top": 96,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/29||09:49:07||Typhoooon -3附近踢出去万邦"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:41:33",
+      "text": "小锦 五洲-13加完了",
+      "card_rect": {
+        "top": 235,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/29||10:41:33||小锦 五洲-13加完了"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "10:41:43",
+      "text": "小锦 -4也踢了，剩下的交给市场",
+      "card_rect": {
+        "top": 357,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/29||10:41:43||小锦 -4也踢了，剩下的交给市场"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "11:07:22",
+      "text": "小锦 -16接了万邦",
+      "card_rect": {
+        "top": 479,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/29||11:07:22||小锦 -16接了万邦"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:29:31",
+      "text": "小锦 ??拉券商了",
+      "card_rect": {
+        "top": 622,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/29||13:29:31||小锦 ??拉券商了"
+    },
+    {
+      "display_date": "2026/07/29",
+      "display_time": "13:42:40",
+      "text": "小锦 五洲这波记得踢出去",
+      "card_rect": {
+        "top": 744,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/29||13:42:40||小锦 五洲这波记得踢出去"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "09:27:59",
+      "text": "Typhoooon 先看下修复力度",
+      "card_rect": {
+        "top": 866,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/30||09:27:59||Typhoooon 先看下修复力度"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "09:31:31",
+      "text": "Typhoooon 五洲走了",
+      "card_rect": {
+        "top": 984,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/30||09:31:31||Typhoooon 五洲走了"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "09:32:21",
+      "text": "Typhoooon 万邦也走了",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/30||09:32:21||Typhoooon 万邦也走了"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "09:46:04",
+      "text": "Typhoooon 万邦拉起来也是卖点的，主动性没了",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/30||09:46:04||Typhoooon 万邦拉起来也是卖点的，主动性没了"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:38:26",
+      "text": "小锦 五洲昨天-4清的先手，万邦-2。 接也是五洲-10跟-13，万邦跟收盘差不多成本。 今天怎么卖也亏不了啥 别贪了，看看科技啥样了，耐心等节点，大概周二",
+      "card_rect": {
+        "top": 321,
+        "left": 576,
+        "width": 845,
+        "height": 202
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:38:26||小锦 五洲昨天-4清的先手，万邦-2。 接也是五洲-10跟-13，万邦跟收盘差不多成本。 今天怎么卖也亏不了啥 别贪了，看看科技啥样了，耐心等节点，大概周二"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:38:49",
+      "text": "小锦 后面我还是看抱团，等他们横盘消化下",
+      "card_rect": {
+        "top": 523,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:38:49||小锦 后面我还是看抱团，等他们横盘消化下"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:43:45",
+      "text": "2026/07/30 10:43:45 小锦",
+      "card_rect": {
+        "top": 109,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:43:45||2026/07/30 10:43:45 小锦"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:44:27",
+      "text": "小锦 每个人接收信息跟处理能力不一样，小盘也不好带做踢，有重点节点我再说",
+      "card_rect": {
+        "top": 210,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:44:27||小锦 每个人接收信息跟处理能力不一样，小盘也不好带做踢，有重点节点我再说"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:55:16",
+      "text": "2026/07/30 10:55:16 小锦",
+      "card_rect": {
+        "top": 353,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:55:16||2026/07/30 10:55:16 小锦"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:55:21",
+      "text": "2026/07/30 10:55:21 小锦",
+      "card_rect": {
+        "top": 454,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:55:21||2026/07/30 10:55:21 小锦"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:56:13",
+      "text": "2026/07/30 10:56:13 小锦 昨天追科技的一样带不走，这种行情急不来。 也赚了这么多天米了，等补跌完毕重点做做。",
+      "card_rect": {
+        "top": 1213,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:56:13||2026/07/30 10:56:13 小锦 昨天追科技的一样带不走，这种行情急不来。 也赚了这么多天米了，等补跌完毕重点做做。"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "10:56:13",
+      "text": "小锦 昨天追科技的一样带不走，这种行情急不来。 也赚了这么多天米了，等补跌完毕重点做做。",
+      "card_rect": {
+        "top": 555,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      },
+      "dedup_key": "小锦鲤||2026/07/30||10:56:13||小锦 昨天追科技的一样带不走，这种行情急不来。 也赚了这么多天米了，等补跌完毕重点做做。"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "14:17:30",
+      "text": "小锦 这盘面坑不坑？下午拉科技权重，托伦斯是砸的",
+      "card_rect": {
+        "top": 719,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/30||14:17:30||小锦 这盘面坑不坑？下午拉科技权重，托伦斯是砸的"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "14:28:47",
+      "text": "小锦 与其说是修复科技，不如说是修复超跌的业绩 德名l信号，风华、国际也是老龙业绩线，科技抱团反而补跌",
+      "card_rect": {
+        "top": 841,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/07/30||14:28:47||小锦 与其说是修复科技，不如说是修复超跌的业绩 德名l信号，风华、国际也是老龙业绩线，科技抱团反而补跌"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "14:29:45",
+      "text": "小锦 科技高潮以后又是反手拉的立新这种抱团，敢追能把人玩死",
+      "card_rect": {
+        "top": 984,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/30||14:29:45||小锦 科技高潮以后又是反手拉的立新这种抱团，敢追能把人玩死"
+    },
+    {
+      "display_date": "2026/07/30",
+      "display_time": "14:37:58",
+      "text": "小锦 最后指s修复了，??没了，老老实实抱团吧",
+      "card_rect": {
+        "top": 68,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/30||14:37:58||小锦 最后指s修复了，??没了，老老实实抱团吧"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:11:46",
+      "text": "2026/07/31 09:11:46 小锦 今天追给分批，盘中肯定有分歧的",
+      "card_rect": {
+        "top": 1228,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:11:46||2026/07/31 09:11:46 小锦 今天追给分批，盘中肯定有分歧的"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:11:46",
+      "text": "小锦 今天追给分批，盘中肯定有分歧的",
+      "card_rect": {
+        "top": 190,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:11:46||小锦 今天追给分批，盘中肯定有分歧的"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:31:25",
+      "text": "Typhoooon 五洲开盘先减，科技等兑现看承接去备选国际fc 国瓷",
+      "card_rect": {
+        "top": 312,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:31:25||Typhoooon 五洲开盘先减，科技等兑现看承接去备选国际fc 国瓷"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:34:02",
+      "text": "Typhoooon -10接了五洲",
+      "card_rect": {
+        "top": 430,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:34:02||Typhoooon -10接了五洲"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:41:40",
+      "text": "Typhoooon 风偏高的回落考虑920238 迷你",
+      "card_rect": {
+        "top": 548,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:41:40||Typhoooon 风偏高的回落考虑920238 迷你"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:42:33",
+      "text": "Typhoooon 风偏低的还是国瓷那些 分批控着吸",
+      "card_rect": {
+        "top": 666,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:42:33||Typhoooon 风偏低的还是国瓷那些 分批控着吸"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:45:41",
+      "text": "Typhoooon 国瓷不继续吸",
+      "card_rect": {
+        "top": 784,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:45:41||Typhoooon 国瓷不继续吸"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:54:35",
+      "text": "Typhoooon 其他的不知道整啥了，长鹰30预备？",
+      "card_rect": {
+        "top": 902,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:54:35||Typhoooon 其他的不知道整啥了，长鹰30预备？"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "09:58:37",
+      "text": "Typhoooon 目前就长鹰 五洲 国瓷国际",
+      "card_rect": {
+        "top": 1041,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||09:58:37||Typhoooon 目前就长鹰 五洲 国瓷国际"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:00:40",
+      "text": "Typhoooon 长鹰30下班",
+      "card_rect": {
+        "top": 121,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:00:40||Typhoooon 长鹰30下班"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:04:19",
+      "text": "2026/07/31 10:04:19 小锦",
+      "card_rect": {
+        "top": 239,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:04:19||2026/07/31 10:04:19 小锦"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:04:38",
+      "text": "小锦 大部分高开低走，高难度选了一个30，一个-10抄底五洲，我尽力了兄弟萌",
+      "card_rect": {
+        "top": 340,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:04:38||小锦 大部分高开低走，高难度选了一个30，一个-10抄底五洲，我尽力了兄弟萌"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:16:34",
+      "text": "小锦 五洲-2我把先手全清",
+      "card_rect": {
+        "top": 462,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:16:34||小锦 五洲-2我把先手全清"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:33:11",
+      "text": "小锦 在a古 大部分人只能当反指 哎",
+      "card_rect": {
+        "top": 584,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:33:11||小锦 在a古 大部分人只能当反指 哎"
+    },
+    {
+      "display_date": "2026/07/31",
+      "display_time": "10:40:02",
+      "text": "小锦 今天共振走出来的是软件，开盘吸五洲去了没来得及追，有长鹰也够了，后面还是会抱团他的。 反向的就是五洲龙神这种，正向抱团反向抱团咱们两手都抓",
+      "card_rect": {
+        "top": 706,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      },
+      "dedup_key": "小锦鲤||2026/07/31||10:40:02||小锦 今天共振走出来的是软件，开盘吸五洲去了没来得及追，有长鹰也够了，后面还是会抱团他的。 反向的就是五洲龙神这种，正向抱团反向抱团咱们两手都抓"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:30:20",
+      "text": "Typhoooon 先看看再说",
+      "card_rect": {
+        "top": 866,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:30:20||Typhoooon 先看看再说"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:32:26",
+      "text": "Typhoooon 托伦s符合预期",
+      "card_rect": {
+        "top": 1005,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:32:26||Typhoooon 托伦s符合预期"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:38:15",
+      "text": "Typhoooon 科技都减点",
+      "card_rect": {
+        "top": 85,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:38:15||Typhoooon 科技都减点"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:38:21",
+      "text": "Typhoooon 国瓷啥的取关了-1附近",
+      "card_rect": {
+        "top": 203,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:38:21||Typhoooon 国瓷啥的取关了-1附近"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:42:25",
+      "text": "Typhoooon 科技都处理完了 包括长鹰",
+      "card_rect": {
+        "top": 321,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:42:25||Typhoooon 科技都处理完了 包括长鹰"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:55:58",
+      "text": "Typhoooon 五洲反抽分批减了底",
+      "card_rect": {
+        "top": 439,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:55:58||Typhoooon 五洲反抽分批减了底"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "09:56:13",
+      "text": "Typhoooon -2附近自行",
+      "card_rect": {
+        "top": 557,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/03||09:56:13||Typhoooon -2附近自行"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "10:29:50",
+      "text": "小锦 科技最强的还是长鹰，不过也是先手取关点。 市场没量，除了抱团活口都是核按钮，十分割裂",
+      "card_rect": {
+        "top": 675,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/03||10:29:50||小锦 科技最强的还是长鹰，不过也是先手取关点。 市场没量，除了抱团活口都是核按钮，十分割裂"
+    },
+    {
+      "display_date": "2026/08/03",
+      "display_time": "14:14:12",
+      "text": "小锦 量化关机了，明天两万亿都没？",
+      "card_rect": {
+        "top": 818,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/03||14:14:12||小锦 量化关机了，明天两万亿都没？"
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:13:21",
+      "text": "小锦 今天处理先手为主",
+      "card_rect": {
+        "top": 155,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/04||09:13:21||小锦 今天处理先手为主"
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:29:05",
+      "text": "2026/08/04 09:29:05 Typhoooon 龙神冲高落袋/高开低走也取关",
+      "card_rect": {
+        "top": 1184,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/08/04||09:29:05||2026/08/04 09:29:05 Typhoooon 龙神冲高落袋/高开低走也取关"
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:29:05",
+      "text": "Typhoooon 龙神冲高落袋/高开低走也取关",
+      "card_rect": {
+        "top": 277,
+        "left": 576,
+        "width": 845,
+        "height": 139
+      },
+      "dedup_key": "小锦鲤||2026/08/04||09:29:05||Typhoooon 龙神冲高落袋/高开低走也取关"
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "09:47:11",
+      "text": "Typhoooon 五洲0附近分批接回来#有差价就可以）",
+      "card_rect": {
+        "top": 416,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/04||09:47:11||Typhoooon 五洲0附近分批接回来#有差价就可以）"
+    },
+    {
+      "display_date": "2026/08/04",
+      "display_time": "10:10:16",
+      "text": "小锦 本来这几天抱团跟医药都是大收获的，被科技败了点怪恶心再也不碰了。",
+      "card_rect": {
+        "top": 534,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/04||10:10:16||小锦 本来这几天抱团跟医药都是大收获的，被科技败了点怪恶心再也不碰了。"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:00:15",
+      "text": "小锦 今天还是打算在妖古做做题，做过外面题材的人都知道，电风扇今天拿了次日不知道能不能带走，不如做踢几个点来的安稳",
+      "card_rect": {
+        "top": 656,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/05||09:00:15||小锦 今天还是打算在妖古做做题，做过外面题材的人都知道，电风扇今天拿了次日不知道能不能带走，不如做踢几个点来的安稳"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:00:57",
+      "text": "小锦 别嫌弃人家没有大涨，你打个版都不一定有做踢吃的多",
+      "card_rect": {
+        "top": 799,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/05||09:00:57||小锦 别嫌弃人家没有大涨，你打个版都不一定有做踢吃的多"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:30:19",
+      "text": "Typhoooon 中红yl开盘急跌打算吸",
+      "card_rect": {
+        "top": 921,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/05||09:30:19||Typhoooon 中红yl开盘急跌打算吸"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:39:15",
+      "text": "Typhoooon -3吸了",
+      "card_rect": {
+        "top": 1039,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/05||09:39:15||Typhoooon -3吸了"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "09:43:19",
+      "text": "Typhoooon 五洲+4以上减",
+      "card_rect": {
+        "top": 119,
+        "left": 576,
+        "width": 845,
+        "height": 118
+      },
+      "dedup_key": "小锦鲤||2026/08/05||09:43:19||Typhoooon 五洲+4以上减"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "11:57:41",
+      "text": "小锦 科技走的都是超跌次日会换一批拉没确定性，除非做普联债，后续等传智分歧再配个科技 尾盘科技高潮明天会有人拿药的。",
+      "card_rect": {
+        "top": 237,
+        "left": 576,
+        "width": 845,
+        "height": 160
+      },
+      "dedup_key": "小锦鲤||2026/08/05||11:57:41||小锦 科技走的都是超跌次日会换一批拉没确定性，除非做普联债，后续等传智分歧再配个科技 尾盘科技高潮明天会有人拿药的。"
+    },
+    {
+      "display_date": "2026/08/05",
+      "display_time": "14:31:23",
+      "text": "小锦 五洲早上没踢的可以考虑踢一下 +4附近",
+      "card_rect": {
+        "top": 397,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/05||14:31:23||小锦 五洲早上没踢的可以考虑踢一下 +4附近"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "10:26:02",
+      "text": "小锦 +5附近接回了普联正古",
+      "card_rect": {
+        "top": 540,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/06||10:26:02||小锦 +5附近接回了普联正古"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:02:16",
+      "text": "小锦 五洲昨天跟大家提醒了，今天有破十日的低吃机会，这不是刚好？",
+      "card_rect": {
+        "top": 662,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:02:16||小锦 五洲昨天跟大家提醒了，今天有破十日的低吃机会，这不是刚好？"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:04:04",
+      "text": "小锦 开盘先撸普联债砸普联正古，反手-6吸五洲。 科技医药两手抓",
+      "card_rect": {
+        "top": 784,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:04:04||小锦 开盘先撸普联债砸普联正古，反手-6吸五洲。 科技医药两手抓"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:06:02",
+      "text": "2026/08/06 11:06:02 小锦",
+      "card_rect": {
+        "top": 927,
+        "left": 576,
+        "width": 845,
+        "height": 101
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:06:02||2026/08/06 11:06:02 小锦"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:06:43",
+      "text": "小锦 认真看思路执行的已经吃爽了，别看每天不怎么涨。 做做踢很舒服",
+      "card_rect": {
+        "top": 1028,
+        "left": 576,
+        "width": 845,
+        "height": 164
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:06:43||小锦 认真看思路执行的已经吃爽了，别看每天不怎么涨。 做做踢很舒服"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:08:39",
+      "text": "2026/08/06 11:08:39 小锦 下午就是应用冲锋了",
+      "card_rect": {
+        "top": 1192,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:08:39||2026/08/06 11:08:39 小锦 下午就是应用冲锋了"
+    },
+    {
+      "display_date": "2026/08/06",
+      "display_time": "11:08:39",
+      "text": "小锦 下午就是应用冲锋了",
+      "card_rect": {
+        "top": 154,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/06||11:08:39||小锦 下午就是应用冲锋了"
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:00:44",
+      "text": "小锦 万邦+4接回了",
+      "card_rect": {
+        "top": 276,
+        "left": 576,
+        "width": 845,
+        "height": 122
+      },
+      "dedup_key": "小锦鲤||2026/08/07||10:00:44||小锦 万邦+4接回了"
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:22:17",
+      "text": "小锦 普联正古就不用继续加了，尾盘再说，板块太差了。 医药轮动完，就看什么时候拉科技。 早上我们也撸了转债，及时处理了普联，做完踢以后等待就好。",
+      "card_rect": {
+        "top": 398,
+        "left": 576,
+        "width": 845,
+        "height": 181
+      },
+      "dedup_key": "小锦鲤||2026/08/07||10:22:17||小锦 普联正古就不用继续加了，尾盘再说，板块太差了。 医药轮动完，就看什么时候拉科技。 早上我们也撸了转债，及时处理了普联，做完踢以后等待就好。"
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "10:58:41",
+      "text": "小锦 普联早上没来得及减的 这波踢一下",
+      "card_rect": {
+        "top": 579,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/07||10:58:41||小锦 普联早上没来得及减的 这波踢一下"
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:58:02",
+      "text": "小锦 普联今天是为了调空间,所以只 有债的套利机会,周一正古就正 常了。 管理员 小锦 反正医药科技都拿了,剩下的交 给市场 管理员 小锦 药就看好龙神跟万邦这两个(低 位药轮动不好把握节奏) 科技也是做普联债为主(低位超 跌反弹每天换一批聚焦不了)",
+      "card_rect": {
+        "top": 722,
+        "left": 576,
+        "width": 845,
+        "height": 374
+      },
+      "dedup_key": "小锦鲤||2026/08/07||13:58:02||小锦 普联今天是为了调空间,所以只 有债的套利机会,周一正古就正 常了。 管理员 小锦 反正医药科技都拿了,剩下的交 给市场 管理员 小锦 药就看好龙神跟万邦这两个(低 位药轮动不好把握节奏) 科技也是做普联债为主(低位超 跌反弹每天换一批聚焦不了)"
+    },
+    {
+      "display_date": "2026/08/07",
+      "display_time": "13:58:15",
+      "text": "小锦 目前万邦(医药)普联(软件) 欣天(独立)",
+      "card_rect": {
+        "top": 1096,
+        "left": 576,
+        "width": 845,
+        "height": 143
+      },
+      "dedup_key": "小锦鲤||2026/08/07||13:58:15||小锦 目前万邦(医药)普联(软件) 欣天(独立)"
+    }
+  ]
+}
