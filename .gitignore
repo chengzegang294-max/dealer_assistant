@@ -16,6 +16,7 @@ __pycache__/
 trae-debug-log-*.ndjson
 debug-*.md
 暂时存放/
+临时存放/
 02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/_tmp_*.ini
 02_runtime/mt_indicator_probes/batch_01_volty_xbreaking/artifacts/**/runtime_config/_tmp_*.ini
 .venv/
@@ -23,3 +24,11 @@ venv/
 ENV/
 .env
 *.log
+*.dist-info/
+*.egg-info/
+20_tools_workspace/*/site-packages/
+20_tools_workspace/*/Lib/
+20_tools_workspace/*/Scripts/
+20_tools_workspace/*/__pycache__/
+20_tools_workspace/**/*.dist-info/
+20_tools_workspace/**/*.egg-info/
