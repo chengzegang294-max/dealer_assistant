@@ -1,0 +1,24 @@
+{
+  "snapshot_meta": {
+    "data_source": "东方财富网 Web data.eastmoney.com/bkzj/hy.html（板块资金流=行业板块，抓完再抓概念版就能凑齐6件中的02）",
+    "page_url": "https://data.eastmoney.com/bkzj/hy.html",
+    "page_title": "行业板块资金流向排行_数据中心_东方财富网",
+    "captured_at_utc": "2026-08-12T17:42:57.219Z",
+    "captured_by": "Trae integrated_browser evaluate（实抓）",
+    "note": "2026-08-13 展示的是2026-08-12 周三收盘后行业板块主力净流入，通信设备130亿>半导体54亿>元件27亿，真实数据全量50行",
+    "tables_captured": [
+      {
+        "table_zh": "行业板块主力净流入排行",
+        "row_count": 50,
+        "headers_zh": ["序号","名称","相关","今日涨跌幅","今日主力净流入(净额/净占比)","今日超大单净流入(净额/净占比)","今日大单净流入(净额/净占比)","今日中单净流入(净额/净占比)","今日小单净流入(净额/净占比)","今日主力净流入最大股"],
+        "sample_first_5_rows": [
+          {"1_rank":"1","2_name":"通信设备","3_zdf_pct":"2.95%","4_zhuli_jiner_yuan":"130.94亿","4_zhuli_zhanbi_pct":"7.90%","5_chaoda_jiner_yuan":"98.14亿","5_chaoda_zhanbi_pct":"5.92%","6_da_jiner_yuan":"32.80亿","6_da_zhanbi_pct":"1.98%","7_zhong_jiner_yuan":"-83.93亿","7_zhong_zhanbi_pct":"-5.06%","8_xiao_jiner_yuan":"-46.46亿","8_xiao_zhanbi_pct":"-2.80%","9_max_jiner_gu":"中际旭创"},
+          {"1_rank":"2","2_name":"半导体","3_zdf_pct":"2.07%","4_zhuli_jiner_yuan":"54.50亿","4_zhuli_zhanbi_pct":"1.78%","5_chaoda_jiner_yuan":"49.91亿","5_chaoda_zhanbi_pct":"1.63%","6_da_jiner_yuan":"4.59亿","6_da_zhanbi_pct":"0.15%","7_zhong_jiner_yuan":"-24.24亿","7_zhong_zhanbi_pct":"-0.79%","8_xiao_jiner_yuan":"-29.96亿","8_xiao_zhanbi_pct":"-0.98%","9_max_jiner_gu":"长鑫科技"},
+          {"1_rank":"3","2_name":"元件","3_zdf_pct":"2.39%","4_zhuli_jiner_yuan":"27.84亿","4_zhuli_zhanbi_pct":"2.16%","5_chaoda_jiner_yuan":"25.75亿","5_chaoda_zhanbi_pct":"2.00%","6_da_jiner_yuan":"2.10亿","6_da_zhanbi_pct":"0.16%","7_zhong_jiner_yuan":"-17.90亿","7_zhong_zhanbi_pct":"-1.39%","8_xiao_jiner_yuan":"-9.78亿","8_xiao_zhanbi_pct":"-0.76%","9_max_jiner_gu":"生益科技"},
+          {"1_rank":"4","2_name":"光伏设备","3_zdf_pct":"2.29%","4_zhuli_jiner_yuan":"17.97亿","4_zhuli_zhanbi_pct":"5.25%","5_chaoda_jiner_yuan":"9.84亿","5_chaoda_zhanbi_pct":"2.87%","6_da_jiner_yuan":"8.13亿","6_da_zhanbi_pct":"2.37%","7_zhong_jiner_yuan":"-2.32亿","7_zhong_zhanbi_pct":"-0.68%","8_xiao_jiner_yuan":"-15.34亿","8_xiao_zhanbi_pct":"-4.48%","9_max_jiner_gu":"通威股份"},
+          {"1_rank":"5","2_name":"通用设备","3_zdf_pct":"1.80%","4_zhuli_jiner_yuan":"12.44亿","4_zhuli_zhanbi_pct":"1.90%","5_chaoda_jiner_yuan":"10.91亿","5_chaoda_zhanbi_pct":"1.66%","6_da_jiner_yuan":"1.53亿","6_da_zhanbi_pct":"0.23%","7_zhong_jiner_yuan":"-3.68亿","7_zhong_zhanbi_pct":"-0.56%","8_xiao_jiner_yuan":"-8.79亿","8_xiao_zhanbi_pct":"-1.34%","9_max_jiner_gu":"宗申动力"}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+﻿页面区块	插槽名	设计锚点行号	实际数据源字段	实际JSON路径	填充状态	HTML文件名	匹配规则类型
+盘前方向卡/preopen	trade_date / 交易日	空壳合同#67	trade_date / dates[].date	ladder_day__*.json > dates[0].date	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	bias_preopen / 今日偏强偏弱(判断格)	空壳合同#68	人工判断(不可预填)	—	待补(人工)	(V1 base contract)	V1继承
+盘前方向卡/preopen	watch_sectors / 该盯板块(判断格)	空壳合同#69	人工判断(可参考sector前5)	sector.data.rows[:5].sectorName	待补(人工)	(V1 base contract)	V1继承
+盘前方向卡/preopen	watch_symbols / 该盯标的(判断格)	空壳合同#70	人工判断(可参考天梯高标)	ladder.boards[-1].stocks[].name	待补(人工)	(V1 base contract)	V1继承
+盘前方向卡/preopen	最高板 / T1 / 市场高度	预填设计稿#L12	MAX(boards[].level) + 首只标的名	ladder.dates[0].boards[-1].level / stocks[0].name	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	P_ge2 / ≥2板数 / 连板梯队	预填设计稿#L12	SUM(boards[level>=2].stocks.Count)	ladder.dates[0].boards[level>=2].stocks.length 求和	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	总连板池 / totalStocks	预填设计稿#L12	totalStocks	ladder.dates[0].totalStocks	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	梯队分布(5板x2/3板x2/2板x9/1板x86)	workbench_0810#L12	boards[].(level, len(stocks))	ladder.dates[0].boards[*].[level,stocks.length]	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	ladder_yesterday_fact / 连板结构摘要	空壳合同#71	昨日 ladder json 聚合	ladder_day_min__{prev_date}.json	已就绪(有昨日快照)	(V1 base contract)	V1继承
+盘前方向卡/preopen	sector_snapshot_ref / 行业快照路径	空壳合同#72	最近sector文件绝对路径	sector_capital_flow_snapshot__{date}.json	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	行业Top5 / 主力净额前5板块	workbench_0810#L14	rows[:5].sectorName + mainNetAmount	sector.data.rows[:5].[sectorName,mainNetAmount]	已就绪	(V1 base contract)	V1继承
+盘前方向卡/preopen	p1_auction_ref / P1竞价段引用	空壳合同#73	P1 日记录 md 路径	shortline_funding_gap/.../daily/p1_day__{date}.md	已就绪(有同批)	(V1 base contract)	V1继承
+盘前方向卡/preopen	live_room_note / 直播间方向摘要	空壳合同#74	A桶9房 NOTES.今日要点 合并	rooms/<A9房>/20_absorb/NOTES.md > 今日要点	待补(需导出Raw)	(V1 base contract)	V1继承
+盘前方向卡/preopen	情绪标签	工作台裁决#L20	人工(可参考 pauseRatio/连板扩张)	ladder.dates[0].pauseRatio + totalStocks.diff(prev)	待补(半可推导)	(V1 base contract)	V1继承
+盘前方向卡/preopen	one_liner / 盘前一句话(判断格)	空壳合同#75	人工	—	待补(人工)	(V1 base contract)	V1继承
+盘中确认卡/intraday	trade_date / 交易日	空壳合同#87	同盘前	同盘前	已就绪	(V1 base contract)	V1继承
+盘中确认卡/intraday	confirm_10_00 / 10:00资金确认(判断格)	空壳合同#88	人工+P1盘中段	p1_day.md > 10:00段	待补(人工)	(V1 base contract)	V1继承
+盘中确认卡/intraday	confirm_13_30 / 13:30资金确认(判断格)	空壳合同#89	人工+P1盘中段	p1_day.md > 13:30段	待补(人工)	(V1 base contract)	V1继承
+盘中确认卡/intraday	confirm_14_30 / 14:30确认(可选判断格)	空壳合同#90	人工	—	待补(人工)	(V1 base contract)	V1继承
+盘中确认卡/intraday	still_watch / 仍值得盯(判断格)	空壳合同#91	人工+天梯盘中变化	实时连板(暂无)	待补(人工)	(V1 base contract)	V1继承
+盘中确认卡/intraday	live_turn_note / 直播间转折解释	空壳合同#92	片段优先房 NOTES.盘中转折	rooms/<B片段房>/20_absorb/NOTES.md	待补(需导出Raw)	(V1 base contract)	V1继承
+盘中确认卡/intraday	one_liner / 盘中一句话(判断格)	空壳合同#93	人工	—	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	trade_date / 交易日	空壳合同#105	同盘前	同盘前	已就绪	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	judge_ok / 判断对不对(判断格)	空壳合同#106	人工回看	—	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	most_useful / 最有用信息来源(判断格)	空壳合同#107	人工回看	—	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	most_useless / 最没用(判断格)	空壳合同#108	人工回看	—	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	ladder_result_fact / 当日连板结果	空壳合同#109	当日 ladder 聚合	ladder_day__{当日}.json 聚合	已就绪	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	sector_eod_ref / 当日行业快照	空壳合同#110	sector当日快照路径	sector_capital_flow_snapshot__{当日}.json	已就绪	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	keep_to_longterm / 沉长期库(判断格)	空壳合同#111	人工+NOTES.值得沉	rooms/*/20_absorb/NOTES.md > 值得沉淀	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	p1_incremental_value / P1增量价值(判断格)	空壳合同#112	人工回看P1	p1_day__{date}.md	待补(人工)	(V1 base contract)	V1继承
+盘后复盘卡/afterclose	one_liner / 盘后一句话(判断格)	空壳合同#113	人工	—	待补(人工)	(V1 base contract)	V1继承
+连板天梯/stock_row	name / 股票名称	ladder_json#L14	name	boards[].stocks[].name	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	code / 代码	ladder_json#L15	code	boards[].stocks[].code	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	level / continue_num / 连板数	ladder_json#L30/L69	continue_num + level	boards[].stocks[].continue_num	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	high_days / N天N板	ladder_json#L31	high_days	boards[].stocks[].high_days	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	change_rate / 涨跌幅%	ladder_json#L33	change_rate	boards[].stocks[].change_rate	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	industry / 行业	ladder_json#L23	industry	boards[].stocks[].industry	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	primary_theme / 主线题材	ladder_json#L24	primary_theme / kpl_primary_theme	boards[].stocks[].primary_theme	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	kpl_theme_tags / 题材标签(CRO/减肥药)	ladder_json#L50	kpl_theme_tags[]	boards[].stocks[].kpl_theme_tags	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	tradeAmount / 成交额	ladder_json#L20	tradeAmount / trading_amount	boards[].stocks[].tradeAmount	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	actual_turnover_rate / 真实换手率	ladder_json#L37	actual_turnover_rate	boards[].stocks[].actual_turnover_rate	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	封单率 / limit_up_suc_rate	插槽例	limit_up_suc_rate	boards[].stocks[].limit_up_suc_rate	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	limitAmount / 封单额	ladder_json#L21	limitAmount / order_amount	boards[].stocks[].limitAmount	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	limit_up_type / 板型(一字/T字/实体)	ladder_json#L28	limit_up_type	boards[].stocks[].limit_up_type	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	first_limit_up_time_text / 首封时间	ladder_json#L71	first_limit_up_time_text	boards[].stocks[].first_limit_up_time_text	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	reason_type / 连板原因(一句话)	ladder_json#L47	reason_type	boards[].stocks[].reason_type	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	auto_position / tags / 总龙头/一字龙定位	ladder_json#L64-L68	auto_position + tags[]	boards[].stocks[].auto_position,tags	已就绪	(V1 base contract)	V1继承
+连板天梯/stock_row	risk / 风险(炸板率/开板次数)	插槽例	open_num + pauseRatio(日级)	stocks[].open_num / dates[0].pauseRatio	部分就绪(缺个股炸板)	(V1 base contract)	V1继承
+行业板块/sector_row	sectorName / 板块名称	sector_json#L26	sectorName/themeName	sector.data.rows[].sectorName	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	mainNetAmount / 主力净流入额	sector_json#L29	mainNetAmount	sector.data.rows[].mainNetAmount	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	bigOrderNetAmount / 大单净额	sector_json#L30	bigOrderNetAmount	sector.data.rows[].bigOrderNetAmount	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	strength / 板块强度	sector_json#L31	strength	sector.data.rows[].strength	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	pctChg / 涨跌幅%	sector_json#L32	pctChg	sector.data.rows[].pctChg	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	memberCount / 成分股数	sector_json#L35	memberCount	sector.data.rows[].memberCount	已就绪	(V1 base contract)	V1继承
+行业板块/sector_row	relativeInflow / 相对流入比	sector_json#L38	relativeInflow	sector.data.rows[].relativeInflow	已就绪	(V1 base contract)	V1继承
+直播间/rooms_index	房名(24房完整名单)	SENTINEL#L7-L30	SENTINEL_INDEX.房间名列	rooms/SENTINEL_INDEX.md > 房间名	已就绪	(V1 base contract)	V1继承
+直播间/rooms_index	A桶(9房) / Tier1 方向房	README#L60	SENTINEL 分桶=A 共9房	SENTINEL_INDEX 分桶=A rows	已就绪	(V1 base contract)	V1继承
+直播间/rooms_index	B桶(15房) / Tier2 片段房	README#L62	SENTINEL 分桶=B 共15房	SENTINEL_INDEX 分桶=B rows	已就绪	(V1 base contract)	V1继承
+直播间/room_NOTES	今日要点 / 人话摘要	复盘哥NOTES#L11	NOTES.今日要点	rooms/<房>/20_absorb/NOTES.md > 今日要点	待补(需✅吸收)	(V1 base contract)	V1继承
+直播间/room_NOTES	提到的标的/金股池	复盘哥NOTES#L12	NOTES.提到的标的/金股	rooms/<房>/20_absorb/NOTES.md > 提到的标的	待补(需✅吸收)	(V1 base contract)	V1继承
+直播间/room_NOTES	次日方向/风险提示	复盘哥NOTES#L13	NOTES.次日方向/风险提示	rooms/<房>/20_absorb/NOTES.md > 风险提示	待补(需✅吸收)	(V1 base contract)	V1继承
+直播间/room_NOTES	P1建议 / 策略建议	插槽例	NOTES自由文本提取(无固定字段)	"全文搜索""建议""/""关注""关键字"	待补(无固定合同)	(V1 base contract)	V1继承
+ladder_stock	name / 股票名称	HTML_hgtye_detail.html_class_name	name	boards[].stocks[].name	AUTO_MATCH_16pts	hgtye_detail.html	class命中
+ladder_stock	kpl_theme_tags / 题材标签	HTML_hgtye_detail.html_text_标签下的	kpl_theme_tags[]	boards[].stocks[].kpl_theme_tags	AUTO_MATCH_3pts	hgtye_detail.html	中文语义
+sector_row	mainNetAmount 主力净流入额	HTML_jgzjlx_detail.html_text_净流入	mainNetAmount	sector.data.rows[].mainNetAmount	AUTO_MATCH_8pts	jgzjlx_detail.html	中文语义
+preopen	totalStocks 总连板池	HTML_buy_ui.html_id_BlockStockBoard	totalStocks	ladder.dates[0].totalStocks	AUTO_MATCH_6pts	buy_ui.html	id命中
+ladder_stock	code / 代码	HTML_buy_ui.html_id_InputStockCode	code	boards[].stocks[].code	AUTO_MATCH_7pts	buy_ui.html	id命中
+ladder_stock	封单率 limit_up_suc_rate	HTML_buy_ui.html_class_up	limit_up_suc_rate	boards[].stocks[].limit_up_suc_rate	AUTO_MATCH_10pts	buy_ui.html	class命中
+ladder_stock	change_rate / 涨跌幅%	HTML_buy_ui.html_text_涨跌幅	change_rate	boards[].stocks[].change_rate	AUTO_MATCH_8pts	buy_ui.html	中文语义
+ladder_stock	reason_type 连板原因	HTML_buy_ui.html_text_通讯等原因	reason_type	boards[].stocks[].reason_type	AUTO_MATCH_3pts	buy_ui.html	中文语义
+room_NOTES	NOTES.提到的标的/金股池	HTML_buy_ui.html_text_监控标的	NOTES mentioned_stocks	rooms/<R>/20_absorb/NOTES.md > 提到的标的	AUTO_MATCH_3pts	buy_ui.html	中文语义
+room_NOTES	NOTES.今日要点 人话摘要	HTML_condition.html_id_not	NOTES key_points	rooms/<R>/20_absorb/NOTES.md > 今日要点	AUTO_MATCH_21pts	condition.html	id命中
+p1_six_cols	P1:盘中确认 10:00-13:30	HTML_condition.html_id_id	p1.midday	p1_day__{date}.md > 盘中段	AUTO_MATCH_5pts	condition.html	id命中
+ladder_stock	first_limit_up_time 首封时间	HTML_condition.html_id_time	first_limit_up_time_text	boards[].stocks[].first_limit_up_time_text	AUTO_MATCH_10pts	condition.html	id命中
+p1_six_cols	P1:竞价段 9:15-9:30	HTML_condition.html_id_1	p1.auction	p1_day__{date}.md > 竞价段	AUTO_MATCH_8pts	condition.html	id命中
+ladder_stock	level / continue_num 连板数	HTML_condition.html_class_num	continue_num	boards[].stocks[].continue_num	AUTO_MATCH_10pts	condition.html	class命中
+ladder_stock	tradeAmount / 成交额	HTML_detail_ui.html_text_成交价格	tradeAmount	boards[].stocks[].tradeAmount	AUTO_MATCH_3pts	detail_ui.html	中文语义
+p1_six_cols	P1:午盘后 13:30-14:30	HTML_instruction_details.html_text_收盘后设置涨停买入条件单则监控到下一交易日	p1.afternoon	p1_day__{date}.md > 午盘段	AUTO_MATCH_3pts	instruction_details.html	中文语义
+room_NOTES	NOTES.次日方向/风险提示	HTML_instruction_details.html_text_停顿或者中断风险	NOTES next_risk	rooms/<R>/20_absorb/NOTES.md > 风险提示	AUTO_MATCH_3pts	instruction_details.html	中文语义
+room_NOTES	NOTES.盘前方向总结	HTML_national_debt.html_text_次日开盘前本息到账	NOTES preopen_summary	rooms/<A桶>/20_absorb/NOTES.md > 盘前	AUTO_MATCH_3pts	national_debt.html	中文语义
+ladder_stock	actual_turnover_rate 换手率	HTML_xgsg.html_class_ver	actual_turnover_rate	boards[].stocks[].actual_turnover_rate	AUTO_MATCH_16pts	xgsg.html	class命中
+ladder_stock	industry / 行业	HTML_xgsg.html_text_行业市盈率	industry	boards[].stocks[].industry	AUTO_MATCH_3pts	xgsg.html	中文语义
+sector_row	sectorName 板块名称	HTML_ggxq.html_text_常规板块	sectorName	sector.data.rows[].sectorName	AUTO_MATCH_3pts	ggxq.html	中文语义
+sector_row	strength 板块强度	HTML_ggxq.html_text_强度	strength	sector.data.rows[].strength	AUTO_MATCH_8pts	ggxq.html	中文语义
+sector_row	bigOrderNetAmount 大单净额	HTML_ggxq.html_text_超大单净比	bigOrderNetAmount	sector.data.rows[].bigOrderNetAmount	AUTO_MATCH_3pts	ggxq.html	中文语义
+preopen	watch_symbols 该盯标的参考	HTML_东财天梯.html_text_东财天梯	天梯高标参考	ladder.boards[-1].stocks[].name	AUTO_MATCH_3pts	东财天梯.html	中文语义
+ladder_stock	limitAmount 封单额	HTML_东财天梯.html_text_封单额	limitAmount	boards[].stocks[].limitAmount	AUTO_MATCH_8pts	东财天梯.html	中文语义
+ladder_stock	primary_theme / 主线题材	HTML_个股全情.html_text_题材	primary_theme	boards[].stocks[].primary_theme	AUTO_MATCH_5pts	个股全情.html	中文语义
+ladder_stock	auto_position/tags 定位标签	HTML_同花顺个股新闻fx.html_id_i	auto_position + tags[]	boards[].stocks[].auto_position,tags	AUTO_MATCH_6pts	同花顺个股新闻fx.html	id命中
+preopen	P_ge2 >=2板数 梯队规模	HTML_复盘.html_text_市场梯队	SUM level>=2 stocks	ladder.dates[0].boards[level>=2].stocks|sum len	AUTO_MATCH_3pts	复盘.html	中文语义
+preopen	梯队分布 5B/3B/2B/1B	HTML_昨日关注.html_id_sl	boards (level,len) pairs	ladder.dates[0].boards[*].[level,stocks.length]	AUTO_MATCH_5pts	昨日关注.html	id命中
+room_NOTES	NOTES.主播名/直播时段	HTML_直播(定).html_title_直播	NOTES anchor_meta	rooms/<R>/20_absorb/NOTES.md > 主播	AUTO_MATCH_8pts	直播(定).html	父子节点
+sector_row	memberCount 成分股数	HTML_跌停股.html_class_mb	memberCount	sector.data.rows[].memberCount	AUTO_MATCH_10pts	跌停股.html	class命中
+room_NOTES	NOTES.盘中转折时点	HTML_选股宝直播.html_text_盘中异动	NOTES intraday_turn	rooms/<B桶>/20_absorb/NOTES.md > 转折	AUTO_MATCH_3pts	选股宝直播.html	中文语义
+room_NOTES	NOTES.值得沉淀长期库	HTML_shortstat.html_class_long	NOTES keep_longterm	rooms/*/NOTES.md > 值得沉淀	AUTO_MATCH_5pts	shortstat.html	class命中
+ladder_stock	pauseRatio 日级炸板率	EXT_连板天梯(东财)_pauseratio日级炸板率	pauseRatio	ladder.dates[0].pauseRatio	READY_EXTENSION	连板天梯(东财).html	id命中
+ladder_stock	open_num 个股开板次数	EXT_涨停龙虎_opennum个股开板次数	open_num	boards[].stocks[].open_num	READY_EXTENSION	涨停龙虎.html	中文语义
+ladder_stock	market_cap 流通市值	EXT_个股全情_marketcap流通市值	market_cap	boards[].stocks[].market_cap	READY_EXTENSION	个股全情.html	class命中
+ladder_stock	pe_ratio 市盈率(动)	EXT_个股详情_peratio市盈率动	pe_ratio	boards[].stocks[].pe_ratio	READY_EXTENSION	个股详情.html	id命中
+ladder_stock	fund 东财主力资金字段	EXT_连板天梯(东财日期)_fund东财主力资金字段	fund	东财ZTPOOL pool[].fund	READY_EXTENSION	连板天梯(东财日期).html	父子节点
+ladder_stock	hybk 东财行业板块字段	EXT_东财资金流_hybk东财行业板块字段	hybk	东财ZTPOOL pool[].hybk	READY_EXTENSION	东财资金流.html	id命中
+ladder_stock	lbc 东财连板次数字段	EXT_连板天梯(东财)_lbc东财连板次数字段	lbc	东财ZTPOOL pool[].lbc	READY_EXTENSION	连板天梯(东财).html	父子节点
+ladder_stock	n 东财股票名字段	EXT_连板天梯(东财日期)_n东财股票名字段	n	东财ZTPOOL pool[].n	READY_EXTENSION	连板天梯(东财日期).html	class命中
+ladder_stock	c 东财股票代码字段	EXT_涨停龙虎_c东财股票代码字段	c	东财ZTPOOL pool[].c	READY_EXTENSION	涨停龙虎.html	id命中
+ladder_stock	risk 风险分/炸板风险	EXT_异动解析(个股)_risk风险分炸板风险	risk_score	stocks[].(open_num,pauseRatio)	READY_EXTENSION	异动解析(个股).html	中文语义
+sector_row	zt_count 板块内涨停股数	EXT_今日板块涨停_ztcount板块内涨停股数	zt_count	sector.data.rows[].zt_count	READY_EXTENSION	今日板块涨停.html	中文语义
+sector_row	zha_count 板块内炸板数	EXT_市场情绪_zhacount板块内炸板数	zha_count	sector.data.rows[].zha_count	READY_EXTENSION	市场情绪.html	中文语义
+sector_row	leader_stock 板块领涨股	EXT_精选板块(表2)_leaderstock板块领涨股	leader_stock	sector.data.rows[].leader_stock	READY_EXTENSION	精选板块(表2).html	class命中
+sector_row	rank 资金榜排名	EXT_同花顺板块掘金_rank资金榜排名	rank	sector.data.rows[].rank	READY_EXTENSION	同花顺板块掘金.html	id命中
+sector_row	bk_rank 板块涨跌排名	EXT_板块轮动A_bkrank板块涨跌排名	bk_rank	BK轮动页 rows[].rank	READY_EXTENSION	板块轮动A.html	父子节点
+sector_row	concept_sector 概念板块列表	EXT_概念板块(定)_conceptsector概念板块列表	concept_sector	概念板块(定) 行集合	READY_EXTENSION	概念板块(定).html	中文语义
+sector_row	selected_sector 精选板块集合	EXT_精选板块(叠加3)fx_selectedsector精选板块集合	selected_sector	精选板块(叠加3) 分层行	READY_EXTENSION	精选板块(叠加3)fx.html	id命中
+sector_row	bk_lundong 精选板块轮动	EXT_精选板块轮动_bklundong精选板块轮动	bk_rotate	精选板块轮动 排序行	READY_EXTENSION	精选板块轮动.html	父子节点
+sector_row	ths_hot 同花顺热榜板块	EXT_同花顺热榜(定)_thshot同花顺热榜板块	ths_hot	同花顺热榜(定) 列表	READY_EXTENSION	同花顺热榜(定).html	class命中
+preopen	auction_pct 竞价涨幅集合	EXT_涨停竞价_auctionpct竞价涨幅集合	auction_pct	p1_day 竞价段 涨幅列	READY_EXTENSION	涨停竞价.html	父子节点
+preopen	auction_vol 竞价量能	EXT_竞价+人气_auctionvol竞价量能	auction_vol	p1_day 竞价段 量能列	READY_EXTENSION	竞价+人气.html	中文语义
+preopen	qx_zhishu 情绪指数综合值	EXT_市场情绪_qxzhishu情绪指数综合值	qx_index	HomeDingPan 多接口聚合	READY_EXTENSION	市场情绪.html	父子节点
+preopen	zt_count_day 当日涨停家数	EXT_涨停龙虎_ztcountday当日涨停家数	zt_count_day	ZhangFuDetail.ztCount	READY_EXTENSION	涨停龙虎.html	中文语义
+preopen	dt_count_day 当日跌停家数	EXT_跌停股_dtcountday当日跌停家数	dt_count_day	ZhangFuDetail.dtCount	READY_EXTENSION	跌停股.html	父子节点
+preopen	zb_count_day 当日炸板家数	EXT_异动解析(个股)_zbcountday当日炸板家数	zb_count_day	ZhangTingExpression.zbCount	READY_EXTENSION	异动解析(个股).html	中文语义
+preopen	rank_top 人气榜Top10	EXT_人气榜_ranktop人气榜top10	rank_top10	人气榜 rows[:10].name	READY_EXTENSION	人气榜.html	class命中

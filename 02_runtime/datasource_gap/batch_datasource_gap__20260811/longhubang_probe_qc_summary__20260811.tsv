@@ -1,0 +1,4 @@
+﻿接口名	字段数	行数	空值率TOP3列
+stock_lhb_detail_em(trade_date/start_date,end_date)	21	70	上榜后1日=1.0000;上榜后10日=1.0000;上榜后5日=1.0000
+stock_lhb_ggtj_em(start_date,end_date)	0	0	
+stock_lhb_stock_statistic_em(symbol=近一月)	20	772	序号=0.0000;代码=0.0000;名称=0.0000

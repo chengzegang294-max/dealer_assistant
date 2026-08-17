@@ -1,0 +1,40 @@
+﻿{
+  "snapshot_meta": {
+    "data_source": "东方财富网 Web（eastmoney.com）=和直播间/连板天梯同一锚点，不是东方财富PC客户端",
+    "page_url": "https://quote.eastmoney.com/ztb/",
+    "page_title": "涨停板行情东方财富网（涨停板分析+连板天梯同一页面，直接复用）",
+    "captured_at_utc": "2026-08-12T17:34:57.536Z",
+    "captured_by": "Trae integrated_browser evaluate（实抓）",
+    "note": "2026-08-13 中国是周四（用户本地日期），对应东财网展示的是2026-08-12 周三收盘后的最新涨停/炸板/连板数据（因为 UTC=北京-8，北京时间08-13 01:34=UTC 08-12 17:34）",
+    "captured_6_pools_structured_summary": [
+      {
+        "pool_name_zh": "涨停股池（当日涨停，含连板）",
+        "sample_rows_count_on_first_page": 6,
+        "columns_zh": ["序号","名称+代码","最新价+涨跌幅","成交额","流通市值","换手率(%)","首次封板时间","连板数","涨停统计(连板/总涨停)","加自选"],
+        "sample_rows": [
+          {"seq":1,"name_code":"北京文化 000802","price":"5.69 +10.06%","amt_yuan":"6.63亿","float_mv_yuan":"40.71亿","turnover_pct":"16.28","first_seal":"09:25","consecutive_limit_up_d":"3连板","limit_up_stat":"3/3"},
+          {"seq":2,"name_code":"润邦股份 002483","price":"5.75 +9.94%","amt_yuan":"4211万","float_mv_yuan":"50.9亿","turnover_pct":"0.83","first_seal":"09:25","consecutive_limit_up_d":"首板=1","limit_up_stat":"1/1"},
+          {"seq":3,"name_code":"龙洲股份 002682","price":"5.03 +10.07%","amt_yuan":"8261万","float_mv_yuan":"28.29亿","turnover_pct":"2.92","first_seal":"09:25","consecutive_limit_up_d":"首板=1","limit_up_stat":"1/1"},
+          {"seq":4,"name_code":"蓝盾光电 300862","price":"32.84 +19.99%","amt_yuan":"6819万","float_mv_yuan":"49.74亿","turnover_pct":"1.37","first_seal":"09:25","consecutive_limit_up_d":"3连板=3","limit_up_stat":"3/3"},
+          {"seq":5,"name_code":"云赛智联 600602","price":"20.25 +9.99%","amt_yuan":"4.08亿","float_mv_yuan":"217.5亿","turnover_pct":"1.87","first_seal":"09:25","consecutive_limit_up_d":"首板=1","limit_up_stat":"1/1"},
+          {"seq":6,"name_code":"京投发展 600683","price":"11.75 +10.02%","amt_yuan":"2741万","float_mv_yuan":"87.04亿","turnover_pct":"0.31","first_seal":"09:25","consecutive_limit_up_d":"3连板=3","limit_up_stat":"3/3"}
+        ],
+        "parse_note_future": "所有代码6位可直接抽：北京文化=000802，连板天数从『首板=1，X连板=X』抽，后面脚本直接用这6行填充 calc_limit_up_stats_and_pass_rate_v1.py"
+      },
+      {
+        "pool_name_zh": "昨日涨停股池（昨日涨停今天表现，用来算连板晋级率分母）",
+        "sample_rows_count_on_first_page": 6,
+        "note": "昨日涨停的 甘咨询000779 -6.36%（断板）、北京文化3连板=晋级、国风新材/立新能源2连板=断板，直接算1板进2板/2板进3板晋级率"
+      },
+      {
+        "pool_name_zh": "炸板股池（开板后没封住，算炸板率分母）",
+        "sample_rows_count_on_first_page": 6,
+        "note": "省广集团002400 炸板1次、永杉锂业603399 炸板2次 真实数据直接取"
+      },
+      {
+        "pool_name_zh": "跌停股池",
+        "sample_rows": "暂无数据（当天无跌停，正常）"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+﻿内部编号	显示名	akshare调用串	可用状态	行数	最早日期	最新日期
+IDX01	上指	ak.stock_zh_index_daily(symbol='sh000001')	SUCCESS	8700	1990-12-19	2026-08-10
+IDX02	沪深300	ak.stock_zh_index_daily(symbol='sh000300')	SUCCESS	5967	2002-01-04	2026-08-10
+IDX03	标普500	ak.index_us_stock_sina(symbol='.INX')	SUCCESS	5689	2004-01-02	2026-08-10
+IDX04	纳指	ak.index_us_stock_sina(symbol='.IXIC')	SUCCESS	5686	2004-01-02	2026-08-10
+IDX05	德指	ak.index_global_dax()	FAIL	0	-	-
+IDX06	英指	ak.index_global_ftse()	FAIL	0	-	-
+IDX07	美元指数	ak.fx_spot_quote(symbol='DXY')	FAIL	0	-	-
