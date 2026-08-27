@@ -11,7 +11,7 @@
   - 当前文件
   - `01_index/entry_map_v1.tsv`
 - raw snapshot 侧：
-  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/README.md`
+  - `file:///D:/Stock/trading_assistant/10_source_library_archive//_raw_snapshot_batch09//10_%E6%9D%A5%E6%BA%90%E5%BA%93_SOURCE_LIBRARY//02_%E5%8E%9F%E5%AD%90%E5%8C%96%E6%8B%86%E8%A7%A3%E6%96%87%E4%BB%B6//README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/INDEX_phase1_v1.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/RULE_FAMILY_INDEX_v1.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/02_原子化拆解文件/PROMOTED_OBJECT_STATUS_v1.tsv`

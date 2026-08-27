@@ -9,7 +9,7 @@
 
 - `source_bucket=GROUP_10_A5_财报_估值_组合管理/01_A5_cutpack_v1_final/5073_Quantitative_Equity_Portfolio_Management`
 - `incoming_root=10_source_library_archive/batch_09_legacy_source_library_alignment__20260707/mirror_kimi_inbox_incoming`
-- `ledger=10_source_library_archive/batch_09_legacy_source_library_alignment__20260707/mirror_gap_decision_ledger__20260707.tsv`
+- `ledger=file:///D:/Stock/trading_assistant/10_source_library_archive//batch_09_legacy_source_library_alignment__20260707//mirror_gap_decision_ledger__20260707.tsv`
 
 ## 当前裁决
 

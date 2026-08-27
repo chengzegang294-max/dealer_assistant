@@ -12,7 +12,7 @@
   - `01_index/entry_map_v1.tsv`
   - `public_methods_boundary_manifest__20260713.tsv`
 - raw snapshot 侧：
-  - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/README.md`
+  - `file:///D:/Stock/trading_assistant/10_source_library_archive//_raw_snapshot_batch09//10_%E6%9D%A5%E6%BA%90%E5%BA%93_SOURCE_LIBRARY//00_%E5%A4%96%E9%83%A8%E5%85%AC%E5%BC%80%E8%B5%84%E6%96%99%E4%B8%8E%E6%96%B9%E6%B3%95%E8%AE%BA%E5%8F%82%E8%80%83//README.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/INDEX_phase1_v1.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/SECOND_HOP_TRACK_INDEX_v1.md`
   - `10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_外部公开资料与方法论参考/PROMOTED_BUNDLE_STATUS_v1.tsv`

@@ -1,7 +1,7 @@
 entry_type	entry_path	current_role	default_entry	notes
 INDEX_NOTE	10_source_library_archive/batch_99_non_kimi_tkfx_boundary__20260707/README.md	batch_boundary_entry	yes	先看本批 README，确认这是 TK 外汇 boundary 收口批
 INDEX_NOTE	10_source_library_archive/batch_99_non_kimi_tkfx_boundary__20260707/tkfx_boundary_manifest__20260712.tsv	batch_manifest	no	看目录角色分层、最小搬迁清单与当前入口绑定
-INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/README.md	raw_snapshot_entry	no	原件层与过程层的默认主入口
+INDEX_NOTE	D:\Stock\trading_assistant\10_source_library_archive\_raw_snapshot_batch09\10_来源库_SOURCE_LIBRARY\00_TK外汇\README.md	raw_snapshot_entry	no	原件层与过程层的默认主入口
 INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/INDEX_phase1_v1.md	raw_snapshot_index	no	看 TK 外汇目录下的 first-hop 阅读顺序
 INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/SECOND_HOP_TRACK_INDEX_v1.md	second_hop_track_index	no	TK second-hop 轨道索引；适合先看过程吸收线/对象入口线/手工证据线/原件保留线
 INDEX_NOTE	10_source_library_archive/_raw_snapshot_batch09/10_来源库_SOURCE_LIBRARY/00_TK外汇/PROMOTED_OBJECT_STATUS_v1.tsv	second_hop_object_status	no	TK second-hop 对象提升状态表；适合看 TK-R6/TK-R7/TK-R8 与原件/工具/证据的关系

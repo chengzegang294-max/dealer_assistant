@@ -104,7 +104,7 @@
 
 - 状态与对齐台账：
   - `00_entry/LEGACY_ALIGNMENT_STATUS__20260707.md`
-  - `10_source_library_archive/batch_09_legacy_source_library_alignment__20260707/README.md`
+  - `file:///D:/Stock/trading_assistant/10_source_library_archive//batch_09_legacy_source_library_alignment__20260707//README.md`
 - 边界卡：
   - `10_source_library_archive/batch_100_non_kimi_public_methods_boundary__20260707/README.md`
 - 长期维护包：
