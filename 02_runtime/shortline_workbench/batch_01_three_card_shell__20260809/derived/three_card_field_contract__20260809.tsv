@@ -21,6 +21,7 @@ afterclose	most_useful	judgment	yes	human	回看	真正有用的信息来自哪�
 afterclose	most_useless	judgment	no	human	回看	最没用的是什么
 afterclose	ladder_result_fact	fact	no	prefill_ok	连板天梯当日结构	结构结果事实
 afterclose	sector_eod_ref	fact	no	prefill_ok	sector当日快照	板块资金收盘引用
+afterclose	p1_day_ref	fact	no	prefill_ok	P1 当日日记录路径	P1 日记录引用
 afterclose	keep_to_longterm	judgment	no	human	直播间短名单口径	哪些值得沉长期库
 afterclose	p1_incremental_value	judgment	yes	human	P1收盘回看	P1是否有增量价值
 afterclose	one_liner	judgment	yes	human	综合	盘后一句话
