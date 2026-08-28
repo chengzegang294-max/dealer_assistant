@@ -161,7 +161,7 @@
 
 - 当前仓库里没有找到按“财经新闻日历/经济日历/新闻日历”命名的正式专题文档。
 - 但已找到一份实际保存的历史经济事件数据：
-  - `12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\news_2007-01 to 2026-05 CSV; sorted date, time; UTC.csv`
+  - `D:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\news_2007-01 to 2026-05 CSV; sorted date, time; UTC.csv`
 - 说明这条线更像是：
   - 数据已保存
   - 但尚未收成“正式研究专题/主文档章节”

@@ -2,7 +2,7 @@
 
 - source_type: txt_strategy_sample_raw
 - project_role: A股 future research/data capability
-- origin_path: 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\GROUP_08_A股量化_数据研究__SOURCE_RAW\新的参考书\《Python股票量化交易从入门到实践》完整版\1.量化策略代码(99份)（赠品）\71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.txt
+- origin_path: D:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\10_来源库_SOURCE_LIBRARY\01_Kimi拆书待入库\GROUP_08_A股量化_数据研究__SOURCE_RAW\新的参考书\《Python股票量化交易从入门到实践》完整版\1.量化策略代码(99份)（赠品）\71 【投资学】CAPM单因子回归模型+ROE股票池（含止损）.txt
 - origin_encoding_guess: gb18030
 - cluster_id: TX-02
 - cluster_name: 因子/价值/财务/机器学习

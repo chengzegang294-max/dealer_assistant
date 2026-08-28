@@ -15,7 +15,7 @@
 
 ## 当前跨线入口（唯一）
 
-- 旧库跨线入口：`12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_manifest_index_v1.md`
+- 旧库跨线入口：`D:/Stock/trading_assistant/12_tooling_runtime_archive/batch_09_legacy_analysis_migration__20260707/lifted_trading_analysis/12_工具运行时_TOOLING_RUNTIME/cross_line_frozen_manifest_index_v1.md`
 
 ## 旧链路映射（ARCHIVE_ONLY）
 

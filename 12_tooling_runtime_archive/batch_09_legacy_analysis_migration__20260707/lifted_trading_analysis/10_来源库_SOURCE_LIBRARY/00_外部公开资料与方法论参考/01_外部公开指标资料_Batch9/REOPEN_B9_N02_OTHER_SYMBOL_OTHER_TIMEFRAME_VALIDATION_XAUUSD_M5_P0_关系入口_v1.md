@@ -42,7 +42,7 @@
 ## 2026-07-05 fresh-run
 
 - 运行入口：
-  - `python real_input_samples\n02_mt5_export_ingest_v1.py --input 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\mt_exports_drop\jobs\xauusd_m5.csv --symbol XAUUSD --timeframe M5 --source-timezone UTC --dest real_input_samples\n02_real_input_xauusd_m5_jobs_v1.csv`
+  - `python real_input_samples\n02_mt5_export_ingest_v1.py --input D:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\mt_exports_drop\jobs\xauusd_m5.csv --symbol XAUUSD --timeframe M5 --source-timezone UTC --dest real_input_samples\n02_real_input_xauusd_m5_jobs_v1.csv`
   - `python real_input_samples\n02_proof_of_mapping_v2.py --input real_input_samples\n02_real_input_xauusd_m5_jobs_v1.csv --output real_input_samples\n02_proof_of_mapping_output_xauusd_m5_jobs_v1.csv`
   - `python real_input_samples\n02_ib_proof_of_mapping_v1.py --input real_input_samples\n02_real_input_xauusd_m5_jobs_v1.csv --symbol XAUUSD --timeframe M5 --skip-partial-days --output real_input_samples\n02_ib_proof_of_mapping_output_xauusd_m5_jobs_v1.csv`
   - `python n02_other_symbol_other_timeframe_validation_xauusd_m5_build_v1.py`

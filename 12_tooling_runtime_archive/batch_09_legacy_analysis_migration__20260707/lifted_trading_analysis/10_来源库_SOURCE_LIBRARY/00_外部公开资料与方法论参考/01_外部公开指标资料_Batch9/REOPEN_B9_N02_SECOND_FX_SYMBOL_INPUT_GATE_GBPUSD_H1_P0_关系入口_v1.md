@@ -45,7 +45,7 @@
 ## 2026-07-05 fresh-run
 
 - 运行入口：
-  - `python real_input_samples\n02_mt5_export_ingest_v1.py --input 12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\gbpusd_1h.csv --symbol GBPUSD --timeframe H1 --source-timezone UTC --dest real_input_samples\n02_real_input_gbpusd_h1_v1.csv`
+  - `python real_input_samples\n02_mt5_export_ingest_v1.py --input D:\Stock\trading_assistant\12_tooling_runtime_archive\batch_09_legacy_analysis_migration__20260707\lifted_trading_analysis\data\gbpusd_1h.csv --symbol GBPUSD --timeframe H1 --source-timezone UTC --dest real_input_samples\n02_real_input_gbpusd_h1_v1.csv`
   - `python real_input_samples\n02_ib_proof_of_mapping_v1.py --input real_input_samples\n02_real_input_gbpusd_h1_v1.csv --symbol GBPUSD --timeframe H1 --skip-partial-days --output real_input_samples\n02_ib_proof_of_mapping_output_gbpusd_h1_v1.csv`
   - `python real_input_samples\n02_proof_of_mapping_v2.py --input real_input_samples\n02_real_input_gbpusd_h1_v1.csv --output real_input_samples\n02_proof_of_mapping_output_gbpusd_h1_v1.csv`
   - `python n02_second_fx_symbol_input_gate_gbpusd_h1_build_v1.py`
