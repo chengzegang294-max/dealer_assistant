@@ -17,13 +17,15 @@
 
 1. [A5_新仓交接总记录__20260809.md](file:///d:/Stock/dealer_assistant/00_entry/A5_新仓交接总记录__20260809.md)
    - 切到新仓或聊天历史丢失时，先看这页
-2. [PROJECT_STATUS_CARD__统领地图.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STATUS_CARD__统领地图.md)
-3. [PROJECT_STAGE_TASKS__阶段任务卡.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STAGE_TASKS__阶段任务卡.md)
-4. [AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md](file:///d:/Stock/dealer_assistant/00_entry/AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md)
-5. [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
-6. [A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md](file:///d:/Stock/dealer_assistant/00_entry/A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md)
-7. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
-8. [全库资料整理收口__20260713/README.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/README.md)
+2. [A5_双仓资产地图与旧仓证据复用入口__20260830.md](file:///D:/Stock/dealer_assistant/00_entry/A5_双仓资产地图与旧仓证据复用入口__20260830.md)
+   - 双仓清理总索引、旧仓查证顺序和 TA 主线恢复入口
+3. [PROJECT_STATUS_CARD__统领地图.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STATUS_CARD__统领地图.md)
+4. [PROJECT_STAGE_TASKS__阶段任务卡.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STAGE_TASKS__阶段任务卡.md)
+5. [AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md](file:///d:/Stock/dealer_assistant/00_entry/AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md)
+6. [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
+7. [A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md](file:///d:/Stock/dealer_assistant/00_entry/A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md)
+8. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
+9. [全库资料整理收口__20260713/README.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/README.md)
    - 已拆成“直播间 / 连板天梯 / 缺口外补 / 历史遗留”四个子入口
 
 ## 新目录分层
