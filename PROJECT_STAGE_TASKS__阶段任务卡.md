@@ -8,7 +8,7 @@
 - **大阶段目标**：`A5 金融测试标准化阶段 A`
 - **对应统领地图位置**：`PROJECT_STATUS_CARD__统领地图.md` 第 3 条 + 第 6 条
 - **上游依据文档**：
-  - [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
+  - [A5_信息源主线当前进度与下一步__20260806.md](file:///D:/Stock/dealer_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
   - [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/trading_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
 
 ## 本阶段 3 条待办（一次只做 1 条，做完验收再开下一条）
