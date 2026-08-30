@@ -19,13 +19,15 @@
    - 切到新仓或聊天历史丢失时，先看这页
 2. [A5_双仓资产地图与旧仓证据复用入口__20260830.md](file:///D:/Stock/dealer_assistant/00_entry/A5_双仓资产地图与旧仓证据复用入口__20260830.md)
    - 双仓清理总索引、旧仓查证顺序和 TA 主线恢复入口
-3. [PROJECT_STATUS_CARD__统领地图.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STATUS_CARD__统领地图.md)
-4. [PROJECT_STAGE_TASKS__阶段任务卡.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STAGE_TASKS__阶段任务卡.md)
-5. [AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md](file:///d:/Stock/dealer_assistant/00_entry/AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md)
-6. [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
-7. [A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md](file:///d:/Stock/dealer_assistant/00_entry/A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md)
-8. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
-9. [全库资料整理收口__20260713/README.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/README.md)
+3. [A5_A股技术分析事实字段与数据来源合同__20260830.md](file:///d:/Stock/dealer_assistant/00_entry/%E5%85%A8%E5%BA%93%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86%E6%94%B6%E5%8F%A3__20260713/A5_A%E8%82%A1%E6%8A%80%E6%9C%AF%E5%88%86%E6%9E%90%E4%BA%8B%E5%AE%9E%E5%AD%97%E6%AE%B5%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%9D%A5%E6%BA%90%E5%90%88%E5%90%8C__20260830.md)
+   - TA-01 正式合同入口；先看这页再接 TA-02 / TA-03
+4. [PROJECT_STATUS_CARD__统领地图.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STATUS_CARD__统领地图.md)
+5. [PROJECT_STAGE_TASKS__阶段任务卡.md](file:///d:/Stock/dealer_assistant/00_entry/PROJECT_STAGE_TASKS__阶段任务卡.md)
+6. [AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md](file:///d:/Stock/dealer_assistant/00_entry/AI_USAGE_PLAYBOOK__Cursor_Trae_开工手册.md)
+7. [A5_信息源主线当前进度与下一步__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_信息源主线当前进度与下一步__20260806.md)
+8. [A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md](file:///d:/Stock/dealer_assistant/00_entry/A5_Cursor同步包_直播间评级收口与连板天梯抓取执行包__20260808.md)
+9. [A5_02_runtime活跃批次索引__20260806.md](file:///d:/Stock/dealer_assistant/00_entry/A5_02_runtime活跃批次索引__20260806.md)
+10. [全库资料整理收口__20260713/README.md](file:///d:/Stock/dealer_assistant/00_entry/全库资料整理收口__20260713/README.md)
    - 已拆成“直播间 / 连板天梯 / 缺口外补 / 历史遗留”四个子入口
 
 ## 新目录分层
