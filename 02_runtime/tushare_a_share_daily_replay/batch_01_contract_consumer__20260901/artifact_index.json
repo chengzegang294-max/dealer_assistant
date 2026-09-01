@@ -1,0 +1,20 @@
+{
+  "batch_id": "batch_01_contract_consumer__20260901",
+  "runtime_family": "tushare_a_share_daily_replay",
+  "status": "skeleton_only",
+  "files": [
+    {
+      "path": "README.md",
+      "role": "runtime_usage_note"
+    },
+    {
+      "path": "INPUT_OUTPUT_CONTRACT__20260901.md",
+      "role": "runtime_input_output_contract"
+    },
+    {
+      "path": "examples/external_snapshot_manifest__example.json",
+      "role": "external_manifest_example"
+    }
+  ],
+  "upstream_tool": "D:/Stock/dealer_assistant/20_tools_workspace/batch_16_tushare_daily_replay_tools/tushare_daily_replay_consumer.py"
+}

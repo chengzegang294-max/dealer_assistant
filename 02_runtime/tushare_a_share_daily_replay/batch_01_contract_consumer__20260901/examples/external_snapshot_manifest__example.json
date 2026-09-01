@@ -1,0 +1,110 @@
+{
+  "manifest_name": "external_tushare_daily_replay_manifest_example",
+  "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+  "notes": [
+    "snapshot_path must stay relative to the external snapshot root passed by CLI",
+    "replace every SHA and row_count placeholder before use",
+    "do not commit real external snapshots into dealer_assistant"
+  ],
+  "entries": [
+    {
+      "manifest_key": "stock_basic_active",
+      "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+      "snapshot_path": "SRCSEL_04_source_stock_basic_extended_active__20260901.json",
+      "api_name": "stock_basic",
+      "capture_time_utc": "2026-09-01T08:56:43.808Z",
+      "source_response_sha256": "REPLACE_WITH_REAL_SHA256",
+      "snapshot_file_sha256": "REPLACE_WITH_REAL_SHA256",
+      "row_count": 0,
+      "field_list": [
+        "ts_code",
+        "symbol",
+        "market",
+        "exchange",
+        "list_status",
+        "list_date",
+        "delist_date"
+      ],
+      "scope": "ACTIVE_STOCKS_L",
+      "status": "ready"
+    },
+    {
+      "manifest_key": "trade_cal_sse",
+      "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+      "snapshot_path": "SRCSEL_04_source_trade_cal_SSE__20260901.json",
+      "api_name": "trade_cal",
+      "capture_time_utc": "2026-09-01T08:56:51.719Z",
+      "source_response_sha256": "REPLACE_WITH_REAL_SHA256",
+      "snapshot_file_sha256": "REPLACE_WITH_REAL_SHA256",
+      "row_count": 0,
+      "field_list": [
+        "exchange",
+        "cal_date",
+        "is_open",
+        "pretrade_date"
+      ],
+      "scope": "SSE_CALENDAR",
+      "status": "ready"
+    },
+    {
+      "manifest_key": "trade_cal_szse",
+      "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+      "snapshot_path": "SRCSEL_04_source_trade_cal_SZSE__20260901.json",
+      "api_name": "trade_cal",
+      "capture_time_utc": "2026-09-01T08:56:57.342Z",
+      "source_response_sha256": "REPLACE_WITH_REAL_SHA256",
+      "snapshot_file_sha256": "REPLACE_WITH_REAL_SHA256",
+      "row_count": 0,
+      "field_list": [
+        "exchange",
+        "cal_date",
+        "is_open",
+        "pretrade_date"
+      ],
+      "scope": "SZSE_CALENDAR",
+      "status": "ready"
+    },
+    {
+      "manifest_key": "daily_all_market",
+      "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+      "snapshot_path": "SRCSEL_02_source_daily_trade_date_20260831__20260901.json",
+      "api_name": "daily",
+      "capture_time_utc": "2026-09-01T06:51:04.364Z",
+      "source_response_sha256": "REPLACE_WITH_REAL_SHA256",
+      "snapshot_file_sha256": "REPLACE_WITH_REAL_SHA256",
+      "row_count": 0,
+      "field_list": [
+        "ts_code",
+        "trade_date",
+        "open",
+        "high",
+        "low",
+        "close",
+        "pre_close",
+        "change",
+        "pct_chg",
+        "vol",
+        "amount"
+      ],
+      "scope": "ALL_MARKET_DAILY",
+      "status": "ready"
+    },
+    {
+      "manifest_key": "adj_factor_all_market",
+      "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+      "snapshot_path": "SRCSEL_02_source_adj_factor_trade_date_20260831__20260901.json",
+      "api_name": "adj_factor",
+      "capture_time_utc": "2026-09-01T06:50:28.863Z",
+      "source_response_sha256": "REPLACE_WITH_REAL_SHA256",
+      "snapshot_file_sha256": "REPLACE_WITH_REAL_SHA256",
+      "row_count": 0,
+      "field_list": [
+        "ts_code",
+        "trade_date",
+        "adj_factor"
+      ],
+      "scope": "ALL_MARKET_ADJ_FACTOR",
+      "status": "ready"
+    }
+  ]
+}
