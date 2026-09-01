@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import csv
 import sys
 import tempfile
 import unittest
@@ -88,6 +89,8 @@ class ReplayConsumerTestCase(unittest.TestCase):
         source_response_sha256 = self._sha256_text(source_response_text)
         snapshot_payload = {
             "snapshot_id": manifest_key,
+            "snapshot_role": "DERIVED_PAGE_AGGREGATE",
+            "source_response_origin": "DERIVED_PAGE_AGGREGATE_NOT_VENDOR_RAW",
             "api_name": api_name,
             "capture_time_utc": capture_time_utc,
             "http_status": 200,
@@ -102,6 +105,17 @@ class ReplayConsumerTestCase(unittest.TestCase):
             "source_response_text": source_response_text,
             "source_response_sha256": source_response_sha256,
             "source_response_json": response_payload,
+            "derived_from_page_responses": [
+                {
+                    "page_index": 1,
+                    "raw_page_path": f"raw_pages/{manifest_key}/page_0001.json",
+                    "capture_time_utc": capture_time_utc,
+                    "source_response_sha256": source_response_sha256,
+                    "snapshot_file_sha256": "raw_page_file_sha256_placeholder",
+                    "row_count": len(items),
+                    "field_list": fields,
+                }
+            ],
         }
         path = self.snapshot_root / file_name
         path.write_text(json.dumps(snapshot_payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -215,7 +229,7 @@ class ReplayConsumerTestCase(unittest.TestCase):
 
     def _write_manifest(self, entries: list[dict[str, object]]) -> None:
         self.manifest_path.write_text(
-            json.dumps({"entries": entries}, ensure_ascii=False, indent=2) + "\n",
+            json.dumps({"run_status": "SUCCESS", "entries": entries}, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
 
@@ -261,6 +275,16 @@ class ReplayConsumerTestCase(unittest.TestCase):
         self._write_manifest(entries)
         with self.assertRaises(MODULE.ReplayValidationError):
             MODULE.consume_snapshots(self.manifest_path, self.snapshot_root)
+
+    def test_missing_run_status_is_rejected(self) -> None:
+        entries = self._base_entries()
+        self.manifest_path.write_text(
+            json.dumps({"entries": entries}, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        with self.assertRaises(MODULE.ReplayValidationError) as ctx:
+            MODULE.consume_snapshots(self.manifest_path, self.snapshot_root)
+        self.assertIn("run_status must be SUCCESS", str(ctx.exception))
 
     def test_required_field_missing_raises(self) -> None:
         entries = self._base_entries()
@@ -318,6 +342,42 @@ class ReplayConsumerTestCase(unittest.TestCase):
         self.assertNotIn("hfq_close", output_columns)
         self.assertNotIn("turnover_rate", output_columns)
         self.assertNotIn("sma5", output_columns)
+
+    def test_provenance_fields_flow_to_final_rows(self) -> None:
+        result = self._build_success_result()
+        normalized_row = result.normalized_rows[0]
+        exclusion_row = result.exclusion_rows[0]
+        self.assertEqual(normalized_row["snapshot_role"], "DERIVED_PAGE_AGGREGATE")
+        self.assertEqual(
+            normalized_row["source_response_origin"],
+            "DERIVED_PAGE_AGGREGATE_NOT_VENDOR_RAW",
+        )
+        self.assertEqual(exclusion_row["snapshot_role"], "DERIVED_PAGE_AGGREGATE")
+        self.assertEqual(
+            exclusion_row["source_response_origin"],
+            "DERIVED_PAGE_AGGREGATE_NOT_VENDOR_RAW",
+        )
+
+    def test_written_tsvs_carry_provenance_columns(self) -> None:
+        result = self._build_success_result()
+        output_dir = self.root / "output"
+        MODULE.write_success_outputs(output_dir, result)
+
+        with (output_dir / "normalized_daily_output.tsv").open(encoding="utf-8", newline="") as handle:
+            normalized_rows = list(csv.DictReader(handle, delimiter="\t"))
+        with (output_dir / "exclusion_register.tsv").open(encoding="utf-8", newline="") as handle:
+            exclusion_rows = list(csv.DictReader(handle, delimiter="\t"))
+
+        self.assertEqual(normalized_rows[0]["snapshot_role"], "DERIVED_PAGE_AGGREGATE")
+        self.assertEqual(
+            normalized_rows[0]["source_response_origin"],
+            "DERIVED_PAGE_AGGREGATE_NOT_VENDOR_RAW",
+        )
+        self.assertEqual(exclusion_rows[0]["snapshot_role"], "DERIVED_PAGE_AGGREGATE")
+        self.assertEqual(
+            exclusion_rows[0]["source_response_origin"],
+            "DERIVED_PAGE_AGGREGATE_NOT_VENDOR_RAW",
+        )
 
     def test_daily_primary_key_duplicate_blocks(self) -> None:
         entries = self._base_entries()

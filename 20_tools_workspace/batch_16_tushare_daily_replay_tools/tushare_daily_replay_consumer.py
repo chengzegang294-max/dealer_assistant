@@ -93,6 +93,8 @@ NORMALIZED_OUTPUT_COLUMNS = [
     "capture_time_utc",
     "source_response_sha256",
     "snapshot_file_sha256",
+    "snapshot_role",
+    "source_response_origin",
     "scope",
     "freshness_status",
     "replay_status",
@@ -126,6 +128,8 @@ EXCLUSION_COLUMNS = [
     "capture_time_utc",
     "source_response_sha256",
     "snapshot_file_sha256",
+    "snapshot_role",
+    "source_response_origin",
     "scope",
     "freshness_status",
     "replay_status",
@@ -178,6 +182,10 @@ class LoadedSnapshot:
     response_fields: list[str]
     response_items: list[list[Any]]
     records: list[dict[str, Any]]
+    snapshot_role: str
+    source_response_origin: str
+    has_page_response_chain: bool
+    page_response_chain_count: int
 
 
 @dataclass
@@ -300,6 +308,11 @@ def ensure_manifest_entry(raw_entry: dict[str, Any]) -> ManifestEntry:
 
 def load_manifest(manifest_path: Path) -> dict[str, ManifestEntry]:
     raw_manifest = read_json(manifest_path)
+    run_status = str(raw_manifest.get("run_status") or "").strip()
+    if run_status != "SUCCESS":
+        raise ReplayValidationError(
+            f"Collector manifest run_status must be SUCCESS for replay, got {run_status or 'MISSING'}"
+        )
     raw_entries = raw_manifest.get("entries")
     if not isinstance(raw_entries, list) or not raw_entries:
         raise ReplayValidationError("Manifest must contain a non-empty 'entries' list.")
@@ -390,6 +403,8 @@ def validate_snapshot(entry: ManifestEntry, snapshot_root: Path) -> LoadedSnapsh
         )
 
     records = [dict(zip(response_fields, row)) for row in response_items]
+    page_chain = snapshot.get("derived_from_page_responses")
+    has_page_response_chain = isinstance(page_chain, list) and len(page_chain) > 0
     return LoadedSnapshot(
         entry=entry,
         absolute_path=absolute_path,
@@ -399,6 +414,12 @@ def validate_snapshot(entry: ManifestEntry, snapshot_root: Path) -> LoadedSnapsh
         response_fields=response_fields,
         response_items=response_items,
         records=records,
+        snapshot_role=str(snapshot.get("snapshot_role") or "UNSPECIFIED_SNAPSHOT_ROLE"),
+        source_response_origin=str(
+            snapshot.get("source_response_origin") or "UNSPECIFIED_SOURCE_RESPONSE_ORIGIN"
+        ),
+        has_page_response_chain=has_page_response_chain,
+        page_response_chain_count=len(page_chain) if isinstance(page_chain, list) else 0,
     )
 
 
@@ -443,6 +464,8 @@ def build_exclusion_row(
     capture_time_utc: str,
     source_response_sha256: str,
     snapshot_file_sha256: str,
+    snapshot_role: str,
+    source_response_origin: str,
     scope: str,
     freshness_status: str,
     exclusion_reason: str,
@@ -458,6 +481,8 @@ def build_exclusion_row(
         "capture_time_utc": capture_time_utc,
         "source_response_sha256": source_response_sha256,
         "snapshot_file_sha256": snapshot_file_sha256,
+        "snapshot_role": snapshot_role,
+        "source_response_origin": source_response_origin,
         "scope": scope,
         "freshness_status": freshness_status,
         "replay_status": REPLAY_VALIDATED,
@@ -869,6 +894,8 @@ def consume_snapshots(manifest_path: Path, snapshot_root: Path) -> ReplayResult:
                     capture_time_utc=stock_basic.entry.capture_time_utc,
                     source_response_sha256=stock_basic.response_sha256,
                     snapshot_file_sha256=stock_basic.file_sha256,
+                    snapshot_role=stock_basic.snapshot_role,
+                    source_response_origin=stock_basic.source_response_origin,
                     scope=EXCLUDED_BSE_SCOPE,
                     freshness_status="OUT_OF_SCOPE",
                     exclusion_reason="BSE_EXCLUDED_BY_FORMAL_SCOPE",
@@ -908,6 +935,8 @@ def consume_snapshots(manifest_path: Path, snapshot_root: Path) -> ReplayResult:
                     capture_time_utc=daily.entry.capture_time_utc,
                     source_response_sha256=daily.response_sha256,
                     snapshot_file_sha256=daily.file_sha256,
+                    snapshot_role=daily.snapshot_role,
+                    source_response_origin=daily.source_response_origin,
                     scope=EXCLUDED_BSE_SCOPE,
                     freshness_status="OUT_OF_SCOPE",
                     exclusion_reason="EXCHANGE_OUT_OF_FORMAL_SCOPE",
@@ -976,6 +1005,8 @@ def consume_snapshots(manifest_path: Path, snapshot_root: Path) -> ReplayResult:
                     capture_time_utc=daily.entry.capture_time_utc,
                     source_response_sha256=daily.response_sha256,
                     snapshot_file_sha256=daily.file_sha256,
+                    snapshot_role=daily.snapshot_role,
+                    source_response_origin=daily.source_response_origin,
                     scope=FORMAL_SCOPE,
                     freshness_status=freshness_status,
                     exclusion_reason="|".join(row_reasons),
@@ -994,6 +1025,8 @@ def consume_snapshots(manifest_path: Path, snapshot_root: Path) -> ReplayResult:
                 "capture_time_utc": daily.entry.capture_time_utc,
                 "source_response_sha256": daily.response_sha256,
                 "snapshot_file_sha256": daily.file_sha256,
+                "snapshot_role": daily.snapshot_role,
+                "source_response_origin": daily.source_response_origin,
                 "scope": FORMAL_SCOPE,
                 "freshness_status": freshness_status,
                 "replay_status": REPLAY_VALIDATED,

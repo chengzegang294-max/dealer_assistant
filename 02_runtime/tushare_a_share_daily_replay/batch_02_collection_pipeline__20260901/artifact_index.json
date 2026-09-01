@@ -1,0 +1,15 @@
+{
+  "runtime_family": "tushare_a_share_daily_replay",
+  "batch_id": "batch_02_collection_pipeline__20260901",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "role": "collection_runtime_usage_note"
+    },
+    {
+      "path": "COLLECTOR_RUNTIME_CONTRACT__20260901.md",
+      "role": "collection_runtime_contract"
+    }
+  ],
+  "upstream_tool": "D:/Stock/dealer_assistant/20_tools_workspace/batch_17_tushare_daily_collection_tools/tushare_daily_snapshot_collector.py"
+}

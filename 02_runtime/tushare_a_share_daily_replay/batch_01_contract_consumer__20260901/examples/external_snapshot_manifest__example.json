@@ -1,6 +1,7 @@
 {
   "manifest_name": "external_tushare_daily_replay_manifest_example",
   "source_id": "TUSHARE_A_SHARE_DAILY_SSE_SZSE_V1",
+  "run_status": "SUCCESS",
   "notes": [
     "snapshot_path must stay relative to the external snapshot root passed by CLI",
     "replace every SHA and row_count placeholder before use",

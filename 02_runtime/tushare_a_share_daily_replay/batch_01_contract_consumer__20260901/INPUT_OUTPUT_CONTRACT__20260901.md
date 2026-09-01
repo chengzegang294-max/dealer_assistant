@@ -40,6 +40,10 @@ python "D:\Stock\dealer_assistant\20_tools_workspace\batch_16_tushare_daily_repl
 - `scope`
 - `status`
 
+顶层 manifest 还必须显式包含：
+
+- `run_status = SUCCESS`
+
 必需 `manifest_key`：
 
 - `stock_basic_active`
@@ -104,6 +108,8 @@ python "D:\Stock\dealer_assistant\20_tools_workspace\batch_16_tushare_daily_repl
 - `capture_time_utc`
 - `source_response_sha256`
 - `snapshot_file_sha256`
+- `snapshot_role`
+- `source_response_origin`
 - `scope`
 - `freshness_status`
 - `replay_status`
@@ -124,6 +130,14 @@ raw 标准化输出另外保留：
 - `vol`
 - `amount`
 - `adj_factor`
+
+其中 provenance 口径冻结如下：
+
+- `source_response_sha256`
+  - 在派生聚合模式下，表示 `DERIVED_PAGE_AGGREGATE` 的聚合响应 SHA
+  - 不是 vendor raw page response SHA
+- vendor 原始分页响应必须沿 aggregate snapshot 内的 `page_response_chain / derived_from_page_responses` 回查
+- 不得把聚合 SHA 表述为 vendor raw SHA
 
 ## 6. 阻断项
 
